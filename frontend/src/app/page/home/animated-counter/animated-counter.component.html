@@ -1,0 +1,42 @@
+<!--i have already done with html and css part will work on only angular part-->
+<div class="animated__counter">
+  <div class="container col-10 col-md-5 p-5">
+    <div align="center">
+      <circle-progress [percent]="100"  [space]="-10" [radius]="100" [outerStrokeWidth]="10"
+        [innerStrokeWidth]="14" [outerStrokeColor]="'orchid'" [innerStrokeColor]="'#e7e8ea'" [animation]="true"
+        [animationDuration]="1000" [title]="'100%'" [animateTitle]="true" [titleFontSize]="'34'"
+        [subtitle]="'Clear code'" [subtitleFontSize]="'16'"></circle-progress>
+    </div>
+
+      <div class="heading">
+          <h4>Our Numbers</h4>
+      </div>
+      <div class="client-count-wrp-inner">
+          <div class="cards">
+              <h4>{{ projectCount }}</h4>
+              <p>Project Completed</p>
+          </div>
+          <!--card-->
+          <div class="cards">
+              <h4>{{ accurateCount + "%" }}</h4>
+              <!--concat % sign-->
+              <div class="bar__container col-8">
+                <div class="bar"></div>
+              </div>
+              <p>Accuracy</p>
+          </div>
+          <!--card-->
+          <div class="cards">
+              <h4>{{ clientCount }}</h4>
+              <p>Clients</p>
+          </div>
+          <!--card-->
+          <div class="cards">
+              <h4>{{ customerfeedback + "%" }}</h4>
+              <p>Customer Satisfaction</p>
+          </div>
+          <!--card-->
+      </div>
+  </div>
+
+</div>

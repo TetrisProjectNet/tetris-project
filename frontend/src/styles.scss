@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: tetris;
+  src: url(./assets/fonts/Tetris.ttf) format("TrueType");
+}
+@font-face {
+  font-family: championship;
+  src: url(./assets/fonts/Championship.ttf) format("TrueType");
+}
+@font-face {
+  font-family: game-played;
+  src: url(./assets/fonts/GamePlayed-vYL7.ttf) format("TrueType");
+}
+@font-face {
+  font-family: game-played-outline;
+  src: url(./assets/fonts/GamePlayedOutline-wrX8.ttf) format("TrueType");
+}
+
