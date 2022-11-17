@@ -14,6 +14,8 @@ import { AnimatedCounterComponent } from './page/home/animated-counter/animated-
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ShopComponent } from './page/shop/shop.component';
+import { StatisticsComponent } from './page/statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     SignupComponent,
     LoginComponent,
     SidebarComponent,
-    AnimatedCounterComponent
+    AnimatedCounterComponent,
+    ShopComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,

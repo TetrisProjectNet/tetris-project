@@ -6,6 +6,7 @@
 
 }
 
+// ----- LINKS -----
 a {
   &:not(:target) {
     color: white;
@@ -23,10 +24,17 @@ a {
 
 }
 
+.navbar-toggler {
+  & span {
+    color: white;
+  }
+  &-icon {
+    stroke: white;
+  }
+}
 
+// ----- LOGIN BUTTON -----
 .content__item {
-	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	counter-increment: itemcounter;
@@ -51,8 +59,8 @@ a {
 	pointer-events: auto;
 	cursor: pointer;
 	background: #e7e7e7;
-	border: none;
-	padding: 1.5rem 3rem;
+  border: none;
+	padding: 0.45rem 2rem;
 	margin: 0;
 	font-family: inherit;
 	font-size: inherit;
@@ -69,9 +77,9 @@ a {
 	height: 100%;
 }
 
-
 .button--anthe {
-	font-family: bely-display, sans-serif;
+	// font-family: bely-display, sans-serif;
+	font-family: game-played;
 	color: #fff;
 	background: none;
 }
@@ -82,6 +90,7 @@ a {
 	-webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 	transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
+  border-radius: 10px;
 }
 
 .button--anthe:hover::before {
@@ -96,6 +105,10 @@ a {
 	transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
-.button--anthe:hover span {
+.button--anthe:hover span  {
 	transform: translate3d(-10px,0,0);
+}
+
+.button--anthe:hover .login__icon {
+  color: aqua;
 }
