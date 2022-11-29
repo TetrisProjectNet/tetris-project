@@ -21,7 +21,7 @@
   <div class="container-fluid">
     <a class="navbar-brand active" [routerLink]="['/home']" routerLinkActive="active-link">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="small">Menu</span><span class="navbar-toggler-icon small"></span>
+      <span class="small">Menu </span><span class="small bold"><fa-icon [icon]="faBars"></fa-icon></span>
     </button>
     <div class="collapse navbar-collapse d-lg-flex justify-content-between me-lg-3" id="navbarNav">
       <ul class="navbar-nav">
@@ -40,7 +40,7 @@
       </ul>
 
       <div class="nav-item content__item my-2 my-lg-0">
-        <button class="button button--anthe" [routerLink]="['/signup']"><span>Login <fa-icon class="login__icon" [icon]="faRightToBracket"></fa-icon></span></button>
+        <button class="button button--anthe" [routerLink]="['/login']"><span>Login <fa-icon class="login__icon" [icon]="faRightToBracket"></fa-icon></span></button>
       </div>
 
 

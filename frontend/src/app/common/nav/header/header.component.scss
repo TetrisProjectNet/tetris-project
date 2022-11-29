@@ -6,6 +6,13 @@
 
 }
 
+.navbar-toggler {
+  &:focus, &:active, &-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 // ----- LINKS -----
 a {
   &:not(:target) {

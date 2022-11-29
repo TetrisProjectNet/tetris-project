@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { faCoffee, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCoffee, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
 
   faCoffee = faCoffee;
   faRightToBracket = faRightToBracket;
+  faBars = faBars;
 
   @HostListener('window:scroll', []) onWindowScroll() {
     // do some stuff here when the window is scrolled
