@@ -8,22 +8,24 @@
     font-size: small;
     margin: 1rem 0;
     position: relative;
+
     &+.form-group {
       margin-top: 30px;
     }
   }
 
   &-control {
-    padding: 6px 10px;
     position: relative;
-    transition: box-shadow 0.3s ease-out;
+    padding: 6px 10px;
     background: transparent;
-    border: none;
-    border-bottom: 1px solid aqua;
-    -webkit-box-shadow: none;
     box-shadow: none;
-    border-radius: 0;
+    -webkit-box-shadow: none;
     box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid aqua;
+    transition: box-shadow 0.3s ease-out;
+
     &:active,
     &:focus,
     &:target {
@@ -34,9 +36,13 @@
       box-shadow: none;
       border-radius: 0;
     }
+
     &:focus {
-      // box-shadow: 0 1px 0 0 aqua;
-      border-bottom: 1px solid orchid;
+      box-shadow: 0 6px 7px -7px aqua;
+    }
+
+    &:-webkit-autofill {
+      -webkit-background-clip: text;
     }
   }
 
