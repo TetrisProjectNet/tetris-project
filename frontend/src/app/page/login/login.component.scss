@@ -42,6 +42,7 @@
     }
 
     &:-webkit-autofill {
+      background-clip: text;
       -webkit-background-clip: text;
     }
   }
