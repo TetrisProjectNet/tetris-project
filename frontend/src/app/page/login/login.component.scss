@@ -25,6 +25,9 @@
     border-radius: 0;
     border-bottom: 1px solid aqua;
     transition: box-shadow 0.3s ease-out;
+    z-index: 1;
+    color: white;
+
 
     &:active,
     &:focus,
@@ -51,9 +54,8 @@
     padding: 0 10px;
     position: absolute;
     left: 0;
-    top: 0.6rem;
-    color: #999;
-    z-index: -1;
+    top: 0.5rem;
+    color: #aaa;
     transition: transform 0.3s ease-out, font-size 0.3s ease-out;
   }
 }
@@ -61,5 +63,5 @@
 .focused {
   transform: translateY(-145%);
   font-size: .75em;
-  color: black;
+  color: white;
 }

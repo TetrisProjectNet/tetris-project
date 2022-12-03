@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { faBars, faCoffee, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCoins, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -8,12 +8,14 @@ import { faBars, faCoffee, faRightToBracket } from '@fortawesome/free-solid-svg-
 })
 export class HeaderComponent implements OnInit {
 
-  faCoffee = faCoffee;
   faRightToBracket = faRightToBracket;
   faBars = faBars;
+  faCoins = faCoins;
+  coins = 100;
 
   @HostListener('window:scroll', []) onWindowScroll() {
     // do some stuff here when the window is scrolled
+    console.log('asd');
     const verticalOffset =
       window.pageYOffset ||
       document.documentElement.scrollTop ||

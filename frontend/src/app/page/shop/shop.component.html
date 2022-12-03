@@ -1,1 +1,39 @@
-<p>shop works!</p>
+<main>
+  <div class="container">
+    <section class="d-flex flex-column flex-md-row flex-wrap mt-5">
+
+      <div *ngFor="let shopItem of shopItems" class="card__wrapper col-md-6 col-lg-4 col-xl-3">
+        <button class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
+        <div class="card m-3">
+          <div class="imgBox">
+            <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
+              alt="mouse corsair" class="mouse">
+          </div>
+          <div class="contentBox">
+            <h3>Mouse Corsair M65</h3>
+            <h2 class="price">61 <fa-icon [icon]="faCoins"></fa-icon></h2>
+            <button class="buy">Buy Now</button>
+            <button class="buy">Edit this item</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="add-new-card__wrapper col-md-6 col-lg-4 col-xl-3">
+        <div class="add-new-card card m-3">
+          <div class="imgBox add-new__wrapper">
+            <!-- <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
+              alt="mouse corsair" class="mouse"> -->
+              <fa-icon class="add-new__icon my-auto" [icon]="faSquarePlus"></fa-icon>
+          </div>
+          <div class="contentBox">
+            <h3>New item</h3>
+            <h2 class="price"><fa-icon [icon]="faCirclePlus"></fa-icon></h2>
+            <button class="buy">Add new</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+

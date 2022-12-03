@@ -39,8 +39,11 @@
         </li>
       </ul>
 
-      <div class="nav-item content__item my-2 my-lg-0">
-        <button class="button button--anthe" [routerLink]="['/login']"><span>Login <fa-icon class="login__icon" [icon]="faRightToBracket"></fa-icon></span></button>
+      <div class="d-flex flex-row">
+        <a class="nav-item coins d-flex align-items-center me-auto me-lg-0" [routerLink]="['/shop']">{{ coins }}<fa-icon class="ms-1 me-3" [icon]="faCoins"></fa-icon></a>
+        <div class="nav-item content__item my-2 my-lg-0">
+          <button class="button button--anthe" [routerLink]="['/login']"><span>Login <fa-icon class="login__icon" [icon]="faRightToBracket"></fa-icon></span></button>
+        </div>
       </div>
 
 

@@ -15,6 +15,9 @@
 
 // ----- LINKS -----
 a {
+  text-decoration: none;
+  cursor: pointer;
+
   &:not(:target) {
     color: white;
   }
@@ -39,6 +42,17 @@ a {
     stroke: white;
   }
 }
+
+// ----- COINS -----
+.coins {
+  color: white;
+  font-size: larger;
+
+  &:hover {
+    color: white;
+  }
+}
+
 
 // ----- LOGIN BUTTON -----
 .content__item {
