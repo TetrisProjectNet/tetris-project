@@ -1,1 +1,31 @@
-<p>signup works!</p>
+<div class="login__wrapper row d-flex justify-content-center align-items-center m-0">
+  <h1 class="signup-title game-played animate__animated animate__backInDown text-white text-center mt-5">We are happy to welcome you!</h1>
+  <div class="login col-10 col-md-6 col-xl-3 mb-5 p-5">
+    <form class="animate__animated animate__fadeInUp animate__faster">
+    <!-- <form (ngSubmit)="onLogin()"> -->
+      <div class="form-group">
+        <input class="form-control e-mail" name="userName" type="text" (focus)="userNameFocusToggler($event)" (blur)="userNameFocusToggler($event)">
+        <label class="form-label" [class]="userNameClass">User name</label>
+        <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
+        <!-- <input class="form-control" name="userName" [(ngModel)]="loginData.userName" type="userName"> -->
+      </div>
+      <div class="form-group">
+        <input class="form-control e-mail" name="email" type="email" (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
+        <label class="form-label" [class]="emailClass">E-mail</label>
+        <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
+        <!-- <input class="form-control" name="email" [(ngModel)]="loginData.email" type="email"> -->
+      </div>
+      <div class="form-group">
+        <input class="form-control" name="password" type="password" (focus)="passwordFocusToggler($event)" (blur)="passwordFocusToggler($event)">
+        <label class="form-label" [class]="passwordClass">Password</label>
+        <!-- <input class="form-control" name="password" [(ngModel)]="loginData.password" type="password"> -->
+      </div>
+      <div class="form-group">
+        <input class="form-control" name="password" type="password" (focus)="passwordAgainFocusToggler($event)" (blur)="passwordAgainFocusToggler($event)">
+        <label class="form-label" [class]="passwordAgainClass">Password again</label>
+        <!-- <input class="form-control" name="passwordAgain" [(ngModel)]="loginData.passwordAgain" type="passwordAgain"> -->
+      </div>
+      <button type="submit" class="game-played btn btn-info col-12 my-3">Sign up</button>
+    </form>
+  </div>
+</div>

@@ -1,5 +1,5 @@
-.btn {
-  font-family: game-played;
+.login__wrapper {
+  overflow: hidden;
 }
 
 .form {
@@ -47,6 +47,7 @@
     &:-webkit-autofill {
       background-clip: text;
       -webkit-background-clip: text;
+      -webkit-text-fill-color: white;
     }
   }
 
@@ -64,4 +65,15 @@
   transform: translateY(-145%);
   font-size: .75em;
   color: white;
+}
+
+.no-acc {
+  color: #aaa;
+  & a {
+    text-decoration: none;
+    color: #ddd;
+    &:hover {
+      color: aqua;
+    }
+  }
 }

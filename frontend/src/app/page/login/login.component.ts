@@ -9,42 +9,33 @@ export class LoginComponent implements OnInit {
 
   emailClass: string = '';
   passwordClass: string = '';
+  selectedElement: any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-  selectedElement: any;
-  isEmpty: any = true;
 
-  emailFocusToggler(event: Event): void {
-    event.type == 'focus' ? this.emailClass= 'focused' : this.emailClass='';
+  focusToggler(event: Event, className: string): string {
+    event.type == 'focus' ? className= 'focused' : className='';
 
     if(event) {
       this.selectedElement = event.target;
-      console.log(this.selectedElement);
     } else {
       this.selectedElement = null;
     }
 
     if (this.selectedElement.value != '') {
-      this.emailClass= 'focused';
+      className= 'focused';
     }
+    return className;
+  }
+
+  emailFocusToggler(event: Event): void {
+    this.emailClass = this.focusToggler(event, this.emailClass)
   }
 
   passwordFocusToggler(event: Event): void {
-    event.type == 'focus' ? this.passwordClass= 'focused' : this.passwordClass='';
-
-    if(event) {
-      this.selectedElement = event.target;
-      console.log(this.selectedElement);
-    } else {
-      this.selectedElement = null;
-    }
-
-    if (this.selectedElement.value != '') {
-      this.passwordClass= 'focused';
-    }
+    this.passwordClass = this.focusToggler(event, this.passwordClass)
   }
-
 }
