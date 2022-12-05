@@ -1,13 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
-
+import { trigger, state, style, animate, transition } from '@angular/animations';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -36,6 +29,9 @@ import {
 })
 export class FooterComponent implements OnInit {
 
+  faGithub = faGithub;
+  faLinkedinIn = faLinkedinIn;
+
   isOpen = true;
 
   toggle() {
@@ -45,6 +41,10 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  goToBottom() {
+    window.scrollTo(10,document.body.scrollHeight);
   }
 
 }
