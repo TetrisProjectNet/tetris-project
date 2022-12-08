@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ShopComponent } from './page/shop/shop.component';
 import { StatisticsComponent } from './page/statistics/statistics.component';
+import { UserComponent } from './page/user/user.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { StatisticsComponent } from './page/statistics/statistics.component';
     SidebarComponent,
     AnimatedCounterComponent,
     ShopComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
