@@ -11,6 +11,7 @@ export class User {
 
   // ----- STATISZTIKÁKHOZ -----
   joinDate: string = '';
+  lastOnlineDate: string = '';
   scores?: string[] = [];
 
   // ----- SHOP -----
