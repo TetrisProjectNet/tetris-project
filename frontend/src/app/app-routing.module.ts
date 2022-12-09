@@ -5,6 +5,8 @@ import { LoginComponent } from './page/login/login.component';
 import { ShopComponent } from './page/shop/shop.component';
 import { SignupComponent } from './page/signup/signup.component';
 import { StatisticsComponent } from './page/statistics/statistics.component';
+import { UserEditorComponent } from './page/user-editor/user-editor.component';
+import { UserComponent } from './page/user/user.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,18 @@ const routes: Routes = [
   {
     path: 'statistics',
     component: StatisticsComponent,
+  },
+  {
+    path: 'user',
+    component: UserComponent,
+  },
+  {
+    path: 'user/:id',
+    component: UserEditorComponent,
+  },
+  {
+    path: '**',
+    redirectTo: 'home'
   }
 
 ];

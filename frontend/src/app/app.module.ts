@@ -17,6 +17,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ShopComponent } from './page/shop/shop.component';
 import { StatisticsComponent } from './page/statistics/statistics.component';
 import { UserComponent } from './page/user/user.component';
+import { UserEditorComponent } from './page/user-editor/user-editor.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UserComponent } from './page/user/user.component';
     AnimatedCounterComponent,
     ShopComponent,
     StatisticsComponent,
-    UserComponent
+    UserComponent,
+    UserEditorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,101 @@
-<p>user works!</p>
+<!-- Search -->
+<!-- <div class="search bg-light border rounded p-3 m-3">
+    <div class="fw-bold text-uppercase text-center pb-3">Szűrés oszlopok szerint</div>
+    <div class="search d-flex flex-row">
+      <span class="fw-bold text-uppercase col-1 pt-2">Oszlop :</span>
+      <select class="form-control border col" [(ngModel)]="filterKey">
+        <option *ngFor="let key of filterKeys" [value]="[key[0]]">{{key[1]}}</option>
+      </select>
+      <input [(ngModel)]="phrase" class="filter-search border rounded col-6 px-3 ms-3" type="text"
+        placeholder="Keresés . . .">
+    </div>
+  </div>-->
+
+<!-- Add new -->
+<!-- <div class="card card-plain mx-3 d-grid gap-2 my-5">
+    <button [routerLink]="['/', entity, '']" type="button" class="add__new btn fw-bold text-uppercase">
+      Új elem felvétele
+      <i class="fa fa-angle-right mx-2"></i>
+    </button>
+  </div> -->
+
+<!-- List -->
+<div class="table-responsive">
+    <table class="table table-striped table-light table-sm">
+        <thead>
+            <tr>
+                <!-- <th *ngFor="let col of columns" scope="col" (click)="onColumnSelect(col.key)">
+            <div class="d-flex flex-row"><i class="fa fa-sort mt-1 me-1"></i> {{col.title}}</div>
+          </th> -->
+                <th>#</th>
+                <th>Username</th>
+                <th>E-mail</th>
+                <th>Role</th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr *ngFor="let row of list | filter:phrase:filterKey | sorter:sortColumn:direction | slice:startSlice:endSlice">
+          <td *ngFor="let col of columns">
+            <span *ngIf="!col.htmlOutput; else elseBlock">
+              <span *ngIf="col.key !== 'image'">
+                {{ row[col.key] | xPipe:col.pipes:col.pipeArgs }}
+              </span>
+              <span *ngIf="col.key === 'image'">
+                <img class="image" [src]="row[col.key]">
+              </span>
+            </span>
+            <ng-template #elseBlock>
+              <span [innerHTML]="col.htmlOutput(row[col.key])"></span>
+  
+            </ng-template>
+          </td>
+          <td>
+            <button (click)="onSelect(row)" class="m-1 edit__button btn">
+              <i class="fa fa-pencil"></i>
+            </button>
+            <button (click)="onDelete(row)" class="m-1 delete__button btn">
+              <i class="fa fa-trash"></i>
+            </button>
+          </td>
+        </tr> -->
+            <tr *ngFor="let user of users">
+                <td>{{ user.id }}</td>
+                <td>{{ user.userName }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.role }}</td>
+                <td>
+                    <button (click)="onEditOne(user)" class="m-1 edit__button btn"> <!-- (click)="onSelect(row)" -->
+                        <fa-icon [icon]="faUserPen"></fa-icon>
+                    </button>
+                    <button class="m-1 delete__button btn">
+                        <fa-icon [icon]="faUserMinus"></fa-icon>
+                        <!-- <fa-icon [icon]="faUserXmark"></fa-icon> -->
+                    </button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- <nav aria-label="Page navigation">
+    <ul class="pagination mt-4 d-flex flex-row flex-wrap justify-content-center">
+      <li class="page-item">
+        <button class="page-link" (click)="jumpToPage(page-1)" [disabled]="page === 1">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </button>
+      </li>
+      <li *ngFor="let pageNum of pageList" class="page-item">
+        <button class="page-link" (click)="jumpToPage(pageNum)">
+          {{ pageNum }}
+        </button>
+      </li>
+      <li class="page-item">
+        <button class="page-link" (click)="jumpToPage(page+1)" [disabled]="page === pageList.length">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+      </li>
+    </ul>
+  </nav> -->
