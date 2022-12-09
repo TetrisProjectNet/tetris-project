@@ -7,6 +7,7 @@ export class User {
   email: string = '';
   password: string = '';
   role: string = '';  //  player / admin
+  banned: boolean = false;  //  ha szeretnénk banolási lehetőséget
 
   // ----- STATISZTIKÁKHOZ -----
   joinDate: string = '';
