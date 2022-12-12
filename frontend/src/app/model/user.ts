@@ -1,8 +1,6 @@
 export class User {
   // ----- ALAPVETŐ -----
   _id: string = '';
-  // firstName: string = '';  - nem hiszem, hogy kell
-  // lastName: string = '';  - nem hiszem, hogy kell
   username: string = '';
   email: string = '';
   password: string = '';

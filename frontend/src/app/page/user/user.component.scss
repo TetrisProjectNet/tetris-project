@@ -1,51 +1,93 @@
 thead {
-    background-color: rgba(0, 152, 121, 0.2);
-    text-align: left;
-    position: sticky;
-    top: 0;
+  background-color: rgba(0, 152, 121, 0.2);
+  text-align: left;
+  position: sticky;
+  top: 0;
 }
 
 button {
-    background-color: #eee;
-    color: #000;
-    border: none;
-    border-radius: 0.3rem;
+  background-color: #eee;
+  color: #000;
+  border: none;
+  border-radius: 0.3rem;
 }
 
 .add__new {
-    background-color: rgba(0, 162, 255, 0.3);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: rgba(0, 162, 255, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .add__new:hover {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .edit__button:hover {
-    box-shadow: rgba(0, 162, 255, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
+  box-shadow: rgba(0, 162, 255, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .delete__button:hover {
-    box-shadow: rgba(255, 0, 0, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    color: black;
-
+  box-shadow: rgba(255, 0, 0, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: black;
 }
 
 tr:nth-child(odd)>td>button {
-    background-color: white;
+  background-color: white;
 }
 
 .image {
-    height: 100px;
+  height: 100px;
 }
 
 // TH
 th:not(:last-child) {
-    cursor: pointer;
-    font-weight: bold;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 th:hover:not(:last-child) {
-    box-shadow: rgba(0, 255, 255, 7) 0px 50px 26px -28px inset;
+  box-shadow: rgba(0, 255, 255, 7) 0px 50px 26px -28px inset;
+}
+
+
+
+.wrapper {
+  padding: 5rem 0;
+}
+
+.table-responsive {
+  font-family: verdana;
+}
+
+.table {
+  color: white;
+}
+
+tbody tr {
+  // background:  radial-gradient(ellipse at center, rgba(0, 255, 255, 0.9) 0%, rgba(0,0,0,0) 75%);
+  border-bottom: thin solid transparent;
+  border-image: radial-gradient(ellipse at center, rgba(0, 255, 255, 0.9) 60%, rgba(0,0,0,0) 100%);
+  border-image-slice: 1;
+  width:100%;
+
+
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+td {
+  // border: none;
+}
+
+
+
+.bordertry {
+  color: white;
+  text-align: center;
+  border-bottom: thin solid transparent;
+  border-image: radial-gradient(ellipse at center, rgba(0, 255, 255, 0.9) 60%, rgba(0,0,0,0) 100%);
+  border-image-slice: 1;
+  width:100%;
+
 }
