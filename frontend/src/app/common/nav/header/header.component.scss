@@ -1,56 +1,66 @@
-.navbar {
-  box-shadow: inset 0 -7px 10px -9px rgba(0, 255, 255, 0.8), 0px 0px 30px 0.5px rgba(0, 255, 255, 0.8);
-  // box-shadow: 0px 0px 30px 0.5px rgba(0, 255, 255, 0.8); //rgba(0,0,0,0.68)
-  display: block;
-  font-family: game-played;
+@use '../../../../styles' as styles;
 
+.navbar {
+	box-shadow: inset 0 -7px 10px -9px rgba(styles.$theme, 0.8);
+	// box-shadow: 0px 0px 30px 0.5px rgba(0, 255, 255, 0.8); //rgba(0,0,0,0.68)
+	display: block;
+	font-family: game-played;
+	transition: box-shadow 0.5s;
 }
 
 .navbar-toggler {
-  &:focus, &:active, &-icon:focus {
-    outline: none;
-    box-shadow: none;
-  }
+
+	&:focus,
+	&:active,
+	&-icon:focus {
+		outline: none;
+		box-shadow: none;
+	}
 }
 
 // ----- LINKS -----
 a {
-  text-decoration: none;
-  cursor: pointer;
+	text-decoration: none;
+	cursor: pointer;
 
-  &:not(:target) {
-    color: white;
-  }
-  &:hover, &:active, &:focus, &:target {
-    // text-shadow: 0px 0px 3px  orchid;
-    color: aqua;
-    text-shadow: 0px 0px 5px rgba(0, 255, 255, 1);
-  }
+	&:not(:target) {
+		color: styles.$white;
+	}
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:target {
+		// text-shadow: 0px 0px 3px  orchid;
+		color: styles.$theme;
+		text-shadow: 0px 0px 5px styles.$theme;
+	}
 }
 
 .active-link {
-  color: aqua !important;
-  text-shadow: 0px 0px 5px rgba(0, 255, 255, 1);
+	color: styles.$theme  !important;
+	text-shadow: 0px 0px 5px styles.$theme;
 
 }
 
 .navbar-toggler {
-  & span {
-    color: white;
-  }
-  &-icon {
-    stroke: white;
-  }
+	& span {
+		color: styles.$white;
+	}
+
+	&-icon {
+		stroke: styles.$white;
+	}
 }
 
 // ----- COINS -----
 .coins {
-  color: white;
-  font-size: larger;
+	color: styles.$white;
+	font-size: larger;
 
-  &:hover {
-    color: white;
-  }
+	&:hover {
+		color: styles.$white;
+	}
 }
 
 
@@ -79,8 +89,8 @@ a {
 .button {
 	pointer-events: auto;
 	cursor: pointer;
-	background: #e7e7e7;
-  border: none;
+	background: styles.$white;
+	border: none;
 	padding: 0.45rem 2rem;
 	margin: 0;
 	font-family: inherit;
@@ -101,21 +111,21 @@ a {
 .button--anthe {
 	// font-family: bely-display, sans-serif;
 	font-family: game-played;
-	color: #fff;
+	color: styles.$white;
 	background: none;
 }
 
 .button--anthe::before {
 	content: '';
-	background: #000;
+	background: styles.$black;
 	-webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
 	transition: clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1), -webkit-clip-path 0.4s cubic-bezier(0.2, 1, 0.8, 1);
-  border-radius: 10px;
+	border-radius: 10px;
 }
 
 .button--anthe:hover::before {
-	background: #000;
+	background: styles.$black;
 	-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
@@ -126,10 +136,15 @@ a {
 	transition: transform 0.4s cubic-bezier(0.2, 1, 0.8, 1);
 }
 
-.button--anthe:hover span  {
-	transform: translate3d(-10px,0,0);
+.button--anthe:hover span {
+	transform: translate3d(-10px, 0, 0);
 }
 
 .button--anthe:hover .login__icon {
-  color: aqua;
+	color: styles.$theme;
+}
+
+// ----- ON SCROLL -----
+.scroll {
+	box-shadow: inset 0 -7px 10px -9px rgba(styles.$theme, 0.8), 0px 0px 30px 0.5px rgba(styles.$theme, 0.8);
 }

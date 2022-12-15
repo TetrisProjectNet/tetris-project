@@ -1,3 +1,5 @@
+@use '../../../styles.scss' as styles;
+
 .card__wrapper {
   position: relative;
 }
@@ -16,7 +18,7 @@
   }
 
   &:hover .price {
-    text-shadow: 0px 0px 5px rgba(0, 255, 255, 1);
+    text-shadow: 0px 0px 5px rgba(styles.$theme, 1);
   }
 }
 
@@ -25,8 +27,8 @@
   top: -5px;
   right: -5px;
   z-index: 10;
-  background: red;
-  color: white;
+  background: styles.$red;
+  color: styles.$white;
   height: 2.8rem;
   width: 2.8rem;
   border: thin solid #212529;
@@ -37,7 +39,7 @@
 }
 
 .close:hover {
-  box-shadow: 0px 0px 5px 1px red;
+  box-shadow: 0px 0px 5px 1px styles.$red;
   font-size: larger;
 }
 
@@ -47,7 +49,7 @@
   top: -50%;
   width: 100%;
   height: 100%;
-  background: #ffce00;
+  background: styles.$gold;
   transform: skewY(345deg);
   transition: 0.5s;
 }
@@ -103,7 +105,7 @@
 
 .card .contentBox h3 {
   font-size: 18px;
-  color: white;
+  color: styles.$white;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -111,7 +113,7 @@
 
 .card .contentBox .price {
   font-size: 24px;
-  color: white;
+  color: styles.$white;
   font-weight: 700;
   letter-spacing: 3px;
   font-family: game-played;
@@ -123,9 +125,9 @@
   opacity: 0;
   padding: 10px 30px;
   margin-top: 15px;
-  color: #000000;
+  color: styles.$black;
   text-decoration: none;
-  background: #ffce00;
+  background: styles.$gold;
   border-radius: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -158,7 +160,7 @@
   }
 
   &:hover .add-new__icon {
-    color: aqua;
-    filter: drop-shadow(0px 0px 5px rgba(0, 255, 255, 1));
+    color: styles.$theme;
+    filter: drop-shadow(0px 0px 5px rgba(styles.$theme, 1));
   }
 }

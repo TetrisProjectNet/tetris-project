@@ -1,3 +1,5 @@
+@use '../../../styles.scss' as styles;
+
 .form {
   &-group {
     font-family: verdana;
@@ -19,34 +21,34 @@
     box-sizing: border-box;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid aqua;
+    border-bottom: 1px solid styles.$theme;
     transition: box-shadow 0.3s ease-out;
     z-index: 1;
-    color: white;
+    color: styles.$white;
 
     &:active,
     &:focus,
     &:target {
       background: transparent;
       border: none;
-      border-bottom: 1px solid aqua;
+      border-bottom: 1px solid styles.$theme;
       -webkit-box-shadow: none;
       box-shadow: none;
       border-radius: 0;
     }
 
     &:focus {
-      box-shadow: 0 6px 7px -7px aqua;
+      box-shadow: 0 6px 7px -7px styles.$theme;
     }
 
     &:-webkit-autofill {
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: white;
+      -webkit-text-fill-color: styles.$white;
     }
 
     &:disabled {
-      color: #aaa;
+      color: styles.$gray;
     }
   }
 
@@ -55,7 +57,7 @@
     position: absolute;
     left: 0;
     top: 0.5rem;
-    color: #aaa;
+    color: styles.$gray;
     transition: transform 0.3s ease-out, font-size 0.3s ease-out;
   }
 }
@@ -71,10 +73,10 @@ select {
   box-sizing: border-box;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid aqua;
+  border-bottom: 1px solid styles.$theme;
   transition: box-shadow 0.3s ease-out;
   z-index: 1;
-  color: white;
+  color: styles.$white;
 
   &:focus,
   &:active,
@@ -82,25 +84,25 @@ select {
     box-shadow: none;
     -webkit-box-shadow: none;
     outline: none;
-    border-bottom: 1px solid aqua;
-    box-shadow: 0 6px 7px -7px aqua;
+    border-bottom: 1px solid styles.$theme;
+    box-shadow: 0 6px 7px -7px styles.$theme;
   }
 
   &:hover+.form-label {
-    color: white;
+    color: styles.$white;
   }
 
   &:focus+.form-label {
-    color: white;
+    color: styles.$white;
   }
 }
 
 option {
-  color: black;
+  color: styles.$black;
 }
 
 .focused {
   transform: translateY(-145%);
   font-size: .75em;
-  color: white;
+  color: styles.$white;
 }

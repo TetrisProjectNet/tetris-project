@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+// ----- FONT FAMILIES ------
 @font-face {
   font-family: tetris;
   src: url(./assets/fonts/Tetris.ttf) format("TrueType");
@@ -20,10 +20,22 @@
   src: url(./assets/fonts/Montserrat-Regular.ttf) format("TrueType");
 }
 
+// ----- VARIABLES ------
+$background-color: #212121;
+$theme: #00ffff;
+// $theme: #7fff00;
+$theme-2: #da70d6;
+$white: #fff;
+$black: #000;
+$gold: #ffd700;
+$gray: #aaa;
+$red: #ff0000;
+
+// ----- GLOBAL CLASSES ------
 .game-played {
   font-family: game-played;
 }
 
 .fa-coins {
-  color: #ffd700;
+  color: $gold;
 }

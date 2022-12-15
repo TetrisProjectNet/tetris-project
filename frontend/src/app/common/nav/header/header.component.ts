@@ -13,6 +13,9 @@ export class HeaderComponent implements OnInit {
   faCoins = faCoins;
   coins = 100;
 
+  className: string = '';
+
+
   @HostListener('window:scroll', []) onWindowScroll() {
     // do some stuff here when the window is scrolled
     console.log('asd');
@@ -21,6 +24,12 @@ export class HeaderComponent implements OnInit {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
+      console.log(verticalOffset);
+
+      verticalOffset != 0 ? this.className = 'scroll' : this.className = '';
+    // if () {
+    //   this.className = 'scroll';
+    // }
   }
 
   constructor() {}

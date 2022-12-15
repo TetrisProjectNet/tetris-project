@@ -20,5 +20,5 @@ export class User {
   friends?: string[] = [];  //  barátok id-jeinek tömbje
 
   //  ha szeretnénk visszajátszási lehetőséget
-  games?: number[] = [];  //  játékok id-jeinek tömbje
+  // games?: number[] = [];  //  játékok id-jeinek tömbje
 }

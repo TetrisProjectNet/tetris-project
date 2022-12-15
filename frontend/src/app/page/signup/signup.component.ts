@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  userNameClass: string = '';
+  usernameClass: string = '';
   emailClass: string = '';
   passwordClass: string = '';
   passwordAgainClass: string = '';
@@ -33,8 +33,8 @@ export class SignupComponent implements OnInit {
     return className;
   }
 
-  userNameFocusToggler(event: Event): void {
-    this.userNameClass = this.focusToggler(event, this.userNameClass)
+  usernameFocusToggler(event: Event): void {
+    this.usernameClass = this.focusToggler(event, this.usernameClass)
   }
 
   emailFocusToggler(event: Event): void {

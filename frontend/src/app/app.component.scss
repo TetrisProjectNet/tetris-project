@@ -1,4 +1,6 @@
-.home {
-  background: #212121;
+@use '../styles.scss' as styles;
+
+.page {
+  background: styles.$background-color;
   padding-top: 50px;
 }

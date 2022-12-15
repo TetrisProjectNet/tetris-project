@@ -1,19 +1,21 @@
+@use '../../../../styles.scss' as styles;
+
 .animated__counter {
-  background-color: rgb(218, 113, 215);
+  background-color: styles.$theme-2;
   padding: 10vh 0;
   transform: skewY(-3deg);
-  background: linear-gradient(-45deg, orchid, white, orchid);
+  background: linear-gradient(-45deg, styles.$theme-2, styles.$white, styles.$theme-2);
 
   // transform: rotate(-0deg);
 
   // background: repeating-linear-gradient(
   //   45deg,
-  // orchid 0 18px,
+  // styles.$theme-2 0 18px,
   // dimgrey 18px 20px
   // )
   // repeating-linear-gradient(
   // 45deg,
-  // orchid 0 19px,
+  // styles.$theme-2 0 19px,
   // dimgrey 19px 20px
   // )
 }
@@ -29,10 +31,9 @@
 // rgba(0, 0, 0, 0.3) 20px
 
 .container {
-  background-color: aqua;
+  background-color: styles.$theme;
   font-family: game-played;
-  // border: ;
-  box-shadow: 0px 0px 100px 16px rgba(0, 255, 255, 0.95); //rgba(0,0,0,0.68)
+  box-shadow: 0px 0px 100px 16px rgba(styles.$theme, 0.95); //rgba(0,0,0,0.68)
   border: 8px double rgba(255, 255, 255, 0.5);
   border-radius: 40px;
 }
@@ -43,7 +44,7 @@
 }
 
 .bar {
-  background-color: orchid;
+  background-color: styles.$theme-2;
 }
 
 // circle-progress {

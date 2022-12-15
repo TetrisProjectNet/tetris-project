@@ -1,3 +1,5 @@
+@use '../../../styles' as styles;
+
 thead {
   background-color: rgba(0, 152, 121, 0.2);
   text-align: left;
@@ -51,7 +53,7 @@ th:hover:not(:last-child) {
 
 
 .wrapper {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .table-responsive {
@@ -95,7 +97,7 @@ table tbody tr::after {
   height: 100%;
   // border-bottom: 1px solid green; // Style your border here, choose if you want a border bottom, top, left, etc ...
     border-bottom: thin solid transparent;
-  border-image: radial-gradient(ellipse at center, rgba(0, 255, 255, 0.9) 70%, rgba(0,0,0,0) 100%);
+  border-image: radial-gradient(ellipse at center, rgba(styles.$theme, 0.9) 70%, rgba(0,0,0,0) 100%);
   border-image-slice: 1;
 
 }

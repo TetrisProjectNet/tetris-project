@@ -1,3 +1,5 @@
+@use '../../../styles.scss' as styles;
+
 .login__wrapper {
   overflow: hidden;
 }
@@ -23,10 +25,10 @@
     box-sizing: border-box;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid aqua;
+    border-bottom: 1px solid styles.$theme;
     transition: box-shadow 0.3s ease-out;
     z-index: 1;
-    color: white;
+    color: styles.$white;
 
 
     &:active,
@@ -34,20 +36,20 @@
     &:target {
       background: transparent;
       border: none;
-      border-bottom: 1px solid aqua;
+      border-bottom: 1px solid styles.$theme;
       -webkit-box-shadow: none;
       box-shadow: none;
       border-radius: 0;
     }
 
     &:focus {
-      box-shadow: 0 6px 7px -7px aqua;
+      box-shadow: 0 6px 7px -7px styles.$theme;
     }
 
     &:-webkit-autofill {
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: white;
+      -webkit-text-fill-color: styles.$white;
     }
   }
 
@@ -56,7 +58,7 @@
     position: absolute;
     left: 0;
     top: 0.5rem;
-    color: #aaa;
+    color: styles.$gray;
     transition: transform 0.3s ease-out, font-size 0.3s ease-out;
   }
 }
@@ -64,16 +66,16 @@
 .focused {
   transform: translateY(-145%);
   font-size: .75em;
-  color: white;
+  color: styles.$white;
 }
 
 .no-acc {
-  color: #aaa;
+  color: styles.$gray;
   & a {
     text-decoration: none;
     color: #ddd;
     &:hover {
-      color: aqua;
+      color: styles.$theme;
     }
   }
 }
