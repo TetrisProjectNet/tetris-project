@@ -69,6 +69,12 @@
       "email": "mclausen9@archive.org",
       "role": "Project Manager",
       "banned": false
+    },
+    {
+      "username": "Created",
+      "email": "created.gmail.com",
+      "role": "player",
+      "id": 11
     }
   ]
 }

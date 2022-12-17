@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { faUserCheck, faUserMinus, faUserPen, faUserXmark } from '@fortawesome/free-solid-svg-icons';
+import { faUserCheck, faUserMinus, faUserPen, faUserPlus, faUserXmark } from '@fortawesome/free-solid-svg-icons';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
 
@@ -94,6 +94,7 @@ export class UserComponent implements OnInit {
   faUserMinus = faUserMinus;
   faUserXmark = faUserXmark;
   faUserCheck = faUserCheck;
+  faUserPlus = faUserPlus;
 
   constructor(
     private userService: UserService,
