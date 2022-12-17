@@ -11,59 +11,81 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class UserComponent implements OnInit {
 
-  // users: any = [
-  //   {
-  //     "id": 1,
-  //     "userName": "bconnew0",
-  //     "email": "mbedford0@diigo.com",
-  //     "role": "Subcontractor"
-  //   }, {
-  //     "id": 2,
-  //     "userName": "ffabler1",
-  //     "email": "gparley1@salon.com",
-  //     "role": "Construction Foreman"
-  //   }, {
-  //     "id": 3,
-  //     "userName": "ecrewther2",
-  //     "email": "mpilmore2@paginegialle.it",
-  //     "role": "Construction Manager"
-  //   }, {
-  //     "id": 4,
-  //     "userName": "csessions3",
-  //     "email": "orobottham3@theglobeandmail.com",
-  //     "role": "Estimator"
-  //   }, {
-  //     "id": 5,
-  //     "userName": "ssmiths4",
-  //     "email": "kbatchan4@sohu.com",
-  //     "role": "Architect"
-  //   }, {
-  //     "id": 6,
-  //     "userName": "jwakely5",
-  //     "email": "egavrielli5@i2i.jp",
-  //     "role": "Construction Expeditor"
-  //   }, {
-  //     "id": 7,
-  //     "userName": "khorick6",
-  //     "email": "ryair6@uiuc.edu",
-  //     "role": "Engineer"
-  //   }, {
-  //     "id": 8,
-  //     "userName": "vleadbeater7",
-  //     "email": "mspaduzza7@spiegel.de",
-  //     "role": "Project Manager"
-  //   }, {
-  //     "id": 9,
-  //     "userName": "wgoldman8",
-  //     "email": "jpaskerful8@guardian.co.uk",
-  //     "role": "Architect"
-  //   }, {
-  //     "id": 10,
-  //     "userName": "skomorowski9",
-  //     "email": "mclausen9@archive.org",
-  //     "role": "Project Manager"
-  //   }
-  // ]
+  // {
+  //   "user": [
+  //     {
+  //       "id": 1,
+  //       "username": "bconnew0",
+  //       "email": "mbedford0@diigo.com",
+  //       "role": "Subcontractor",
+  //       "banned": true
+  //     },
+  //     {
+  //       "id": 2,
+  //       "username": "ffabler1",
+  //       "email": "gparley1@salon.com",
+  //       "role": "Construction Foreman",
+  //       "banned": true
+  //     },
+  //     {
+  //       "id": 3,
+  //       "username": "ecrewther2",
+  //       "email": "mpilmore2@paginegialle.it",
+  //       "role": "Construction Manager",
+  //       "banned": false
+  //     },
+  //     {
+  //       "id": 4,
+  //       "username": "csessions3",
+  //       "email": "orobottham3@theglobeandmail.com",
+  //       "role": "Estimator",
+  //       "banned": false
+  //     },
+  //     {
+  //       "id": 5,
+  //       "username": "ssmiths4",
+  //       "email": "kbatchan4@sohu.com",
+  //       "role": "Architect",
+  //       "banned": false
+  //     },
+  //     {
+  //       "id": 6,
+  //       "username": "jwakely5",
+  //       "email": "egavrielli5@i2i.jp",
+  //       "role": "Construction Expeditor",
+  //       "banned": false
+  //     },
+  //     {
+  //       "id": 7,
+  //       "username": "khorick6",
+  //       "email": "ryair6@uiuc.edu",
+  //       "role": "Engineer",
+  //       "banned": false
+  //     },
+  //     {
+  //       "id": 8,
+  //       "username": "vleadbeater7",
+  //       "email": "mspaduzza7@spiegel.de",
+  //       "role": "Project Manager",
+  //       "banned": false
+  //     },
+  //     {
+  //       "id": 9,
+  //       "username": "wgoldman8",
+  //       "email": "jpaskerful8@guardian.co.uk",
+  //       "role": "Architect",
+  //       "banned": false
+  //     },
+  //     {
+  //       "id": 10,
+  //       "username": "skomorowski9",
+  //       "email": "mclausen9@archive.org",
+  //       "role": "Project Manager",
+  //       "banned": false
+  //     }
+  //   ]
+  // }
+
 
   list$ = this.userService.getAll();
   entity = 'user';
@@ -88,13 +110,20 @@ export class UserComponent implements OnInit {
     this.router.navigate(['/', 'user', user.id])
   }
 
-  onBan(id: number): void {
+  onDeleteOne(id: number): void {
+    if (window.confirm('Are you sure about deleting this user?')) {
+      this.userService.remove(id)
+        .subscribe(() => (this.list$ = this.userService.getAll()));
+    }
+  }
+
+  onBanOne(id: number): void {
     if (window.confirm('Are you sure about banning this user?')) {
       this.userService.ban(id).subscribe(() => (this.list$ = this.userService.getAll()));
     }
   }
 
-  onUnban(id: number): void {
+  onUnbanOne(id: number): void {
     if (window.confirm('Are you sure about unbanning this user?')) {
       this.userService.unban(id).subscribe(() => (this.list$ = this.userService.getAll()));
     }
