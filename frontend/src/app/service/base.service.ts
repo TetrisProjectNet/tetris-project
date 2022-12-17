@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class BaseService<T extends { _id?: string }> {
+export class BaseService<T extends { id?: number, banned: boolean }> {
 
   apiUrl = environment.apiUrl;
   entity: string = '';
@@ -20,8 +20,8 @@ export class BaseService<T extends { _id?: string }> {
     return this.http.get<T[]>(`${this.apiUrl}${this.entity}`);
   }
 
-  get(_id: string): Observable<T> {
-    return this.http.get<T>(`${this.apiUrl}${this.entity}/${_id}`);
+  get(id: number): Observable<T> {
+    return this.http.get<T>(`${this.apiUrl}${this.entity}/${id}`);
   }
 
   create(entity: T): Observable<T> {
@@ -29,10 +29,19 @@ export class BaseService<T extends { _id?: string }> {
   }
 
   update(entity: T): Observable<T> {
-    return this.http.patch<T>(`${this.apiUrl}${this.entity}/${entity._id}`, entity);
+    return this.http.patch<T>(`${this.apiUrl}${this.entity}/${entity.id}`, entity);
   }
 
-  remove(_id: string): Observable<T> {
-    return this.http.delete<T>(`${this.apiUrl}${this.entity}/${_id}`);
+  remove(id: number): Observable<T> {
+    return this.http.delete<T>(`${this.apiUrl}${this.entity}/${id}`);
   }
+
+  ban(id: number): Observable<T> {
+    return this.http.patch<T>(`${this.apiUrl}${this.entity}/${id}`, {'banned': true});
+  }
+
+  unban(id: number): Observable<T> {
+    return this.http.patch<T>(`${this.apiUrl}${this.entity}/${id}`, {'banned': false});
+  }
+
 }

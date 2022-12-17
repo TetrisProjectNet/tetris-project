@@ -85,7 +85,19 @@ export class UserComponent implements OnInit {
   }
 
   onEditOne(user: User): void {
-    this.router.navigate(['/', 'user', user._id])
+    this.router.navigate(['/', 'user', user.id])
+  }
+
+  onBan(id: number): void {
+    if (window.confirm('Are you sure about banning this user?')) {
+      this.userService.ban(id).subscribe(() => (this.list$ = this.userService.getAll()));
+    }
+  }
+
+  onUnban(id: number): void {
+    if (window.confirm('Are you sure about unbanning this user?')) {
+      this.userService.unban(id).subscribe(() => (this.list$ = this.userService.getAll()));
+    }
   }
 
 }

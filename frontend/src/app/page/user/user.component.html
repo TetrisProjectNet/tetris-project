@@ -69,7 +69,7 @@
             </td>
           </tr> -->
         <tr *ngFor="let user of list$ | async">
-          <td>{{ user._id }}</td>
+          <td>{{ user.id }}</td>
           <td>{{ user.username }}</td>
           <td>{{ user.email }}</td>
           <td>{{ user.joinDate }}</td>
@@ -81,11 +81,11 @@
           <td>{{ user.banned }}</td>
           <td class="">
             <div class="d-flex flex-row">
-              <button class="m-1 ban__button btn">
+              <button *ngIf="!user.banned" (click)="onBan(user.id)" class="m-1 ban__button btn">
                 <!-- <fa-icon [icon]="faUserMinus"></fa-icon> -->
                 <fa-icon [icon]="faUserXmark"></fa-icon>
               </button>
-              <button class="m-1 unban__button btn">
+              <button *ngIf="user.banned" (click)="onUnban(user.id)" class="m-1 unban__button btn">
                 <fa-icon [icon]="faUserCheck"></fa-icon>
               </button>
               <button (click)="onEditOne(user)" class="m-1 edit__button btn">
