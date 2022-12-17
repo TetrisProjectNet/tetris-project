@@ -1,5 +1,5 @@
 export class ShopItem {
-  id: number = 0;
+  _id: string = '';
   title: string = '';
   image: string = '';
   price: number = 0;

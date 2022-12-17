@@ -1,0 +1,64 @@
+{
+  "user": [
+    {
+      "_id": "1",
+      "username": "bconnew0",
+      "email": "mbedford0@diigo.com",
+      "role": "Subcontractor"
+    },
+    {
+      "_id": "2",
+      "username": "ffabler1",
+      "email": "gparley1@salon.com",
+      "role": "Construction Foreman"
+    },
+    {
+      "_id": "3",
+      "username": "ecrewther2",
+      "email": "mpilmore2@paginegialle.it",
+      "role": "Construction Manager"
+    },
+    {
+      "_id": "4",
+      "username": "csessions3",
+      "email": "orobottham3@theglobeandmail.com",
+      "role": "Estimator"
+    },
+    {
+      "_id": "5",
+      "username": "ssmiths4",
+      "email": "kbatchan4@sohu.com",
+      "role": "Architect"
+    },
+    {
+      "_id": "6",
+      "username": "jwakely5",
+      "email": "egavrielli5@i2i.jp",
+      "role": "Construction Expeditor"
+    },
+    {
+      "_id": "7",
+      "username": "khorick6",
+      "email": "ryair6@uiuc.edu",
+      "role": "Engineer"
+    },
+    {
+      "_id": "8",
+      "username": "vleadbeater7",
+      "email": "mspaduzza7@spiegel.de",
+      "role": "Project Manager"
+    },
+    {
+      "_id": "9",
+      "username": "wgoldman8",
+      "email": "jpaskerful8@guardian.co.uk",
+      "role": "Architect"
+    },
+    {
+      "_id": "10",
+      "username": "skomorowski9",
+      "email": "mclausen9@archive.org",
+      "role": "Project Manager"
+    }
+  ]
+}

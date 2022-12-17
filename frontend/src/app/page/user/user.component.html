@@ -18,12 +18,12 @@
       <i class="fa fa-angle-right mx-2"></i>
     </button>
   </div> -->
-  
+
 <!-- List -->
 <div class="wrapper">
 
   <div class="table-responsive col-xl-10 offset-xl-1">
-    <table class="table-sm m-0">
+    <table class="table table-sm m-0">
       <caption>List of users</caption>
       <thead>
         <tr>
@@ -68,9 +68,9 @@
               </button>
             </td>
           </tr> -->
-        <tr *ngFor="let user of users">
-          <td>{{ user.id }}</td>
-          <td>{{ user.userName }}</td>
+        <tr *ngFor="let user of list$ | async">
+          <td>{{ user._id }}</td>
+          <td>{{ user.username }}</td>
           <td>{{ user.email }}</td>
           <td>{{ user.joinDate }}</td>
           <td>{{ user.lastOnlineDate }}</td>

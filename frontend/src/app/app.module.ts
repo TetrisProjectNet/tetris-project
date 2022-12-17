@@ -18,6 +18,7 @@ import { ShopComponent } from './page/shop/shop.component';
 import { StatisticsComponent } from './page/statistics/statistics.component';
 import { UserComponent } from './page/user/user.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { UserEditorComponent } from './page/user-editor/user-editor.component';
       "showBackground": false,
       "clockwise": false,
       "startFromZero": false,
-      "lazy": true})
+      "lazy": true}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
