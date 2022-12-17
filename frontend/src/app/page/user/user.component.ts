@@ -98,10 +98,7 @@ export class UserComponent implements OnInit {
   constructor(
     private userService: UserService,
     private router: Router
-  ) {
-    console.log(this.list$);
-
-  }
+  ) { }
 
   ngOnInit(): void {
   }

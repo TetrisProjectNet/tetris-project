@@ -1,35 +1,36 @@
 <div class="container my-5">
   <div class="row">
-    <div class="col-lg-6 offset-lg-3">
-      <!-- *ngIf="(user$ | async) as user" -->
-      <form class="animate__animated animate__fadeInUp animate__faster">
+    <div *ngIf="(user$ | async) as user" class="col-lg-6 offset-lg-3">
+      <form class="animate__animated animate__fadeInUp animate__faster" #userForm="ngForm"
+        (ngSubmit)="onUpdate(userForm, user)">
         <!-- <form (ngSubmit)="onLogin()"> -->
         <div class="form-group">
-          <input class="form-control" name="id" type="text" value="123" disabled>
+          <input [(ngModel)]="user.id" class="form-control" name="id" type="text" disabled>
           <label class="focused form-label">#</label>
           <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-          <!-- <input class="form-control" name="username" [(ngModel)]="loginData.username" type="username"> -->
+          <!-- <input class="form-control" name="username" [(ngModel)]="user.username" type="username"> -->
         </div>
 
         <div class="form-group">
-          <input class="form-control" name="username" type="text" (focus)="usernameFocusToggler($event)"
-            (blur)="usernameFocusToggler($event)">
+          <input [(ngModel)]="user.username" class="form-control" name="username" type="text"
+            (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)">
           <label class="form-label" [class]="usernameClass">Username</label>
           <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-          <!-- <input class="form-control" name="username" [(ngModel)]="loginData.username" type="username"> -->
+          <!-- <input class="form-control" name="username" [(ngModel)]="user.username" type="username"> -->
         </div>
 
         <div class="form-group">
-          <input class="form-control" name="email" type="email" (focus)="emailFocusToggler($event)"
-            (blur)="emailFocusToggler($event)">
+          <input [(ngModel)]="user.email" class="form-control" name="email" type="email"
+            (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
           <label class="form-label" [class]="emailClass">E-mail</label>
           <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-          <!-- <input class="form-control" name="email" [(ngModel)]="loginData.email" type="email"> -->
+          <!-- <input class="form-control" name="email" [(ngModel)]="user.email" type="email"> -->
         </div>
 
         <div class="form-group">
           <!-- <input class="form-control" name="role" type="role" (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)"> -->
-          <select class="form-select custom-select col-12 mr-5" name="product" required  (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)">
+          <select [(ngModel)]="user.role" class="form-select custom-select col-12 mr-5" name="role" required
+            (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)">
             <!-- <option [value]="workoutExercise.workoutType.type" selected disabled hidden>
               {{workoutExercise.workoutType.type}}</option>
             <option *ngFor="let workoutType of workoutTypes$ | async" [value]="workoutType._id">{{ workoutType.type }}
@@ -38,31 +39,28 @@
             <option value="player">Player</option>
             <option value="admin">Admin</option>
           </select>
-          <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label"><fa-icon class="select-icon" [icon]="faSquareCaretDown"></fa-icon></label>
+          <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
+            <fa-icon class="select-icon" [icon]="faSquareCaretDown"></fa-icon>
+          </label>
           <label class="form-label" [class]="roleClass">Role</label>
-          <!-- <input class="form-control" name="role" [(ngModel)]="loginData.role" type="role"> -->
+          <!-- <input class="form-control" name="role" [(ngModel)]="user.role" type="role"> -->
         </div>
 
-        <div class="form-group">
-          <input class="form-control" name="coins" type="number" (focus)="coinsFocusToggler($event)"
+        <!-- <div class="form-group">
+          <input [(ngModel)]="user.username" class="form-control" name="coins" type="number" (focus)="coinsFocusToggler($event)"
             (blur)="coinsFocusToggler($event)">
           <label class="form-label" [class]="coinsClass">Coins</label>
-          <!-- <input class="form-control" name="coins" [(ngModel)]="loginData.coins" type="coins"> -->
         </div>
 
         <div class="form-group">
-          <input class="form-control" name="last-online-date" type="text" value="#placeholder" disabled>
+          <input [(ngModel)]="user.username" class="form-control" name="last-online-date" type="text" value="#placeholder" disabled>
           <label class="focused form-label">Last online</label>
-          <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-          <!-- <input class="form-control" name="username" [(ngModel)]="loginData.username" type="username"> -->
         </div>
 
         <div class="form-group">
-          <input class="form-control" name="join-date" type="text" value="#placeholder" disabled>
+          <input [(ngModel)]="user.username" class="form-control" name="join-date" type="text" value="#placeholder" disabled>
           <label class="focused form-label">Join date</label>
-          <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-          <!-- <input class="form-control" name="username" [(ngModel)]="loginData.username" type="username"> -->
-        </div>
+        </div> -->
 
         <button type="submit" class="game-played btn btn-info col-12 my-3">Save changes</button>
       </form>

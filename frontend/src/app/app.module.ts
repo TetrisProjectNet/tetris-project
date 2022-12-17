@@ -19,6 +19,7 @@ import { StatisticsComponent } from './page/statistics/statistics.component';
 import { UserComponent } from './page/user/user.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { HttpClientModule } from '@angular/common/http';
       "clockwise": false,
       "startFromZero": false,
       "lazy": true}),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

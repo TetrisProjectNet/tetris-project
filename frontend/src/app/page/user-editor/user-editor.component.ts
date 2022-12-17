@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
 import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { Observable, switchMap, of } from 'rxjs';
+import { User } from 'src/app/model/user';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-user-editor',
@@ -12,16 +17,16 @@ export class UserEditorComponent {
   faCircleChevronDown = faCircleChevronDown;
   faSquareCaretDown = faSquareCaretDown;
 
-  // user$: Observable<User> = this.activatedRoute.params.pipe(
-  //   switchMap(params => {
-  //     if (params['_id']) {
-  //       return this.userService.get(params['_id'])
-  //     }
-  //     return of(new User())
-  //   })
-  // );
+  user$: Observable<User> = this.activatedRoute.params.pipe(
+    switchMap(params => {
+      if (params['id']) {
+        return this.userService.get(params['id'])
+      }
+      return of(new User())
+    })
+  );
 
-  // clicked: boolean = false;
+  clicked: boolean = false;
 
   usernameClass: string = '';
   emailClass: string = '';
@@ -30,9 +35,9 @@ export class UserEditorComponent {
   selectedElement: any;
 
   constructor(
-    // private activatedRoute: ActivatedRoute,
-    // private userService: UserService,
-    // private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private userService: UserService,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -69,19 +74,19 @@ export class UserEditorComponent {
     this.coinsClass = this.focusToggler(event, this.coinsClass)
   }
 
-  // onUpdate(form: NgForm, user: User): void {
-  //   this.clicked = true;
-  //   if (user._id === '') {
-  //     this.userService.create(form.value).subscribe(
-  //       () => this.router.navigate(['user']),
-  //       err => console.error(err)
-  //     );
-  //   } else {
-  //     this.userService.update(user).subscribe(
-  //       () => this.router.navigate(['user']),
-  //       err => console.error(err)
-  //     );
-  //   }
-  // }
+  onUpdate(form: NgForm, user: User): void {
+    this.clicked = true;
+    if (user.id === 0) {
+      this.userService.create(form.value).subscribe(
+        () => this.router.navigate(['user']),
+        err => console.error(err)
+      );
+    } else {
+      this.userService.update(user).subscribe(
+        () => this.router.navigate(['user']),
+        err => console.error(err)
+      );
+    }
+  }
 
 }

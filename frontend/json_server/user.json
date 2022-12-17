@@ -2,9 +2,9 @@
   "user": [
     {
       "id": 1,
-      "username": "bconnew0",
-      "email": "mbedford0@diigo.com",
-      "role": "Subcontractor",
+      "username": "updatedUser",
+      "email": "updated@diigo.com",
+      "role": "admin",
       "banned": true
     },
     {
@@ -44,7 +44,7 @@
     },
     {
       "id": 7,
-      "username": "khorick6",
+      "username": "rigo130",
       "email": "ryair6@uiuc.edu",
       "role": "Engineer",
       "banned": false
