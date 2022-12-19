@@ -14,7 +14,11 @@
         <label class="form-label" [class]="passwordClass">Password</label>
         <!-- <input class="form-control" name="password" [(ngModel)]="loginData.password" type="password"> -->
       </div>
-      <small class="no-acc">Don't have an account yet? <a [routerLink]="['/signup']">Sign up!</a></small>
+      <div class="d-flex flex-column">
+        <small class="no-acc mt-2">Forgot password? <a [routerLink]="['/forgot-password']">Click here!</a></small>
+        <small class="no-acc mt-2">Don't have an account yet? <a [routerLink]="['/signup']">Sign up!</a></small>
+
+      </div>
       <button type="submit" class="game-played btn btn-info col-12 my-4">Login</button>
     </form>
   </div>

@@ -20,6 +20,8 @@ import { UserComponent } from './page/user/user.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.component';
+import { NewPasswordComponent } from './page/new-password/new-password.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { FormsModule } from '@angular/forms';
     ShopComponent,
     StatisticsComponent,
     UserComponent,
-    UserEditorComponent
+    UserEditorComponent,
+    ForgotPasswordComponent,
+    NewPasswordComponent
   ],
   imports: [
     BrowserModule,
