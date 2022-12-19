@@ -1,4 +1,4 @@
-@use '../../../styles'as styles;
+@use '../../../styles' as styles;
 
 .wrapper {
   padding: 3rem 0;
@@ -63,12 +63,12 @@ tbody {
   }
 }
 
-button {
-  background-color: #eee;
-  color: #000;
-  border: none;
-  border-radius: 0.3rem;
-}
+// button {
+//   background-color: #eee;
+//   color: #000;
+//   border: none;
+//   border-radius: 0.3rem;
+// }
 
 .add__new {
   background-color: rgba(0, 162, 255, 0.3);
@@ -79,18 +79,48 @@ button {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+.admin__buttons {
+
+  & button {
+    // width: 2.6rem;
+    // height: 2.2rem;
+    // padding: 0;
+    // background-color: styles.$white;
+
+    color: styles.$white;
+    &:hover {
+    }
+  }
+
+  & .ban__button:hover {
+    color: styles.$ban-color;
+  }
+
+  & .unban__button:hover {
+    color: styles.$unban-color;
+  }
+
+  & .edit__button:hover {
+    color: styles.$edit-color;
+  }
+
+  & .delete__button:hover {
+    color: styles.$delete-color;
+  }
+}
+
+
 .edit__button:hover {
-  box-shadow: rgba(0, 162, 255, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  // box-shadow: rgba(0, 162, 255, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .delete__button:hover {
-  box-shadow: rgba(255, 0, 0, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  color: black;
+  // box-shadow: rgba(255, 0, 0, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-tr:nth-child(odd)>td>button {
-  background-color: styles.$white;
-}
+// tr:nth-child(odd)>td>button {
+//   background-color: styles.$white;
+// }
 
 .image {
   height: 100px;

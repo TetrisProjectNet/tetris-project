@@ -78,17 +78,16 @@
           <td>{{ user.shopItems }}</td>
           <td>{{ user.role }}</td>
           <td>{{ user.banned }}</td>
-          <td class="">
-            <div class="d-flex flex-row">
+          <td>
+            <div class="admin__buttons d-flex flex-row">
               <button *ngIf="!user.banned" (click)="onBanOne(user.id)" class="m-1 ban__button btn">
-                <!-- <fa-icon [icon]="faUserMinus"></fa-icon> -->
                 <fa-icon [icon]="faUserXmark"></fa-icon>
+                <!-- <fa-icon [icon]="faGavel"></fa-icon> -->
               </button>
               <button *ngIf="user.banned" (click)="onUnbanOne(user.id)" class="m-1 unban__button btn">
                 <fa-icon [icon]="faUserCheck"></fa-icon>
               </button>
               <button (click)="onEditOne(user)" class="m-1 edit__button btn">
-                <!-- (click)="onSelect(row)" -->
                 <fa-icon [icon]="faUserPen"></fa-icon>
               </button>
               <button (click)="onDeleteOne(user.id)" class="m-1 delete__button btn">

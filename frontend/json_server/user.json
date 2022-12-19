@@ -74,7 +74,15 @@
       "username": "Created",
       "email": "created.gmail.com",
       "role": "player",
-      "id": 11
+      "id": 11,
+      "banned": false
+    },
+    {
+      "username": "halo",
+      "email": "halo@gmail.com",
+      "role": "player",
+      "id": 12,
+      "banned": true
     }
   ]
 }

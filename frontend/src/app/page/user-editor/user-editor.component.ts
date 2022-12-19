@@ -41,6 +41,7 @@ export class UserEditorComponent {
   ) { }
 
   ngOnInit(): void {
+    // this.usernameFocusToggler('clicked');
   }
 
   focusToggler(event: Event, className: string): string {
