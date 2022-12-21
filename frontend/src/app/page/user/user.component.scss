@@ -1,4 +1,4 @@
-@use '../../../styles' as styles;
+@use '../../../styles'as styles;
 
 .wrapper {
   padding: 3rem 0;
@@ -79,6 +79,10 @@ tbody {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
+@function tableButtonShadowGenerator($color) {
+  @return drop-shadow(0px 0px 4px rgba($color, 1));
+}
+
 .admin__buttons {
 
   & button {
@@ -86,37 +90,52 @@ tbody {
     // height: 2.2rem;
     // padding: 0;
     // background-color: styles.$white;
-
     color: styles.$white;
-    &:hover {
-    }
+
+    // &:hover {}
   }
 
   & .ban__button:hover {
-    color: styles.$ban-color;
+    // color: styles.$ban-color;
+
+    & fa-icon {
+      filter: tableButtonShadowGenerator(styles.$ban-color);
+    }
   }
 
   & .unban__button:hover {
-    color: styles.$unban-color;
+    // color: styles.$unban-color;
+
+    & fa-icon {
+      filter: tableButtonShadowGenerator(styles.$unban-color);
+    }
   }
 
   & .edit__button:hover {
-    color: styles.$edit-color;
+    // color: styles.$edit-color;
+
+    & fa-icon {
+      filter: tableButtonShadowGenerator(styles.$edit-color);
+    }
   }
 
   & .delete__button:hover {
-    color: styles.$delete-color;
+    // color: styles.$delete-color;
+
+    & fa-icon {
+      filter: tableButtonShadowGenerator(styles.$delete-color);
+    }
   }
 }
 
 
-.edit__button:hover {
-  // box-shadow: rgba(0, 162, 255, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
+// .edit__button:hover {
+//   box-shadow: rgba(0, 162, 255, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+// }
 
-.delete__button:hover {
-  // box-shadow: rgba(255, 0, 0, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
+// .delete__button:hover {
+//   box-shadow: rgba(255, 0, 0, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+// }
 
 // tr:nth-child(odd)>td>button {
 //   background-color: styles.$white;
@@ -124,4 +143,79 @@ tbody {
 
 .image {
   height: 100px;
+}
+
+
+
+
+
+
+
+
+// TOGGLE BUTTON
+input[type="checkbox"] {
+  margin-left: 4px;
+  position: relative;
+  width: 3rem;
+  height: 1rem;
+  -webkit-appearance: none;
+  background: linear-gradient(0deg, #333, #000);
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+input:checked[type="checkbox"]:nth-of-type(1) {
+  background: linear-gradient(0deg, #e67e22, #f39c12);
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1);
+}
+
+// input:checked[type="checkbox"]:nth-of-type(2) {
+//   background: linear-gradient(0deg, #70a1ff, #1e90ff);
+//   box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+// }
+
+input[type="checkbox"]:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 1rem;
+  background: linear-gradient(0deg, #000, #6b6b6b);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #232323;
+  transform: scale(.98, .96);
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+  left: 1rem;
+}
+
+input[type="checkbox"]:after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  // left:1.55rem;
+  // width:4px;
+  // height:4px;
+  // border-radius: 50%;
+  // background: linear-gradient(0deg, #6b6b6b, #000);
+  left: 1.4em;
+  width: 5px;
+  height: 1.5px;
+  background: aqua;
+  border-radius: 1px;
+  transition: .5s;
+}
+
+input:checked[type="checkbox"]:after {
+  // left: 2.55rem;
+  left: 2.42rem;
 }

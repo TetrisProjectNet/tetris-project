@@ -5,7 +5,7 @@
       "username": "updatedUser",
       "email": "updated@diigo.com",
       "role": "admin",
-      "banned": true
+      "banned": false
     },
     {
       "id": 2,
@@ -19,7 +19,7 @@
       "username": "ecrewther2",
       "email": "mpilmore2@paginegialle.it",
       "role": "Construction Manager",
-      "banned": false
+      "banned": true
     },
     {
       "id": 4,
@@ -40,7 +40,7 @@
       "username": "jwakely5",
       "email": "egavrielli5@i2i.jp",
       "role": "Construction Expeditor",
-      "banned": false
+      "banned": true
     },
     {
       "id": 7,
@@ -75,14 +75,14 @@
       "email": "created.gmail.com",
       "role": "player",
       "id": 11,
-      "banned": false
+      "banned": true
     },
     {
       "username": "halo",
       "email": "halo@gmail.com",
       "role": "player",
       "id": 12,
-      "banned": true
+      "banned": false
     }
   ]
 }

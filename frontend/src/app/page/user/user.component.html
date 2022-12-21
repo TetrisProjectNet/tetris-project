@@ -77,16 +77,16 @@
           <td>{{ user.coins }}</td>
           <td>{{ user.shopItems }}</td>
           <td>{{ user.role }}</td>
-          <td>{{ user.banned }}</td>
+          <td><input [(ngModel)]="user.banned" (change)="checkValue(user.banned?'true':'false', user.id)" type="checkbox" name=""></td> <!-- {{ user.banned }} <br> -->
           <td>
             <div class="admin__buttons d-flex flex-row">
-              <button *ngIf="!user.banned" (click)="onBanOne(user.id)" class="m-1 ban__button btn">
+              <!-- <fa-icon [icon]="faGavel"></fa-icon> -->
+              <!-- <button *ngIf="!user.banned" (click)="onBanOne(user.id)" class="m-1 ban__button btn">
                 <fa-icon [icon]="faUserXmark"></fa-icon>
-                <!-- <fa-icon [icon]="faGavel"></fa-icon> -->
               </button>
               <button *ngIf="user.banned" (click)="onUnbanOne(user.id)" class="m-1 unban__button btn">
                 <fa-icon [icon]="faUserCheck"></fa-icon>
-              </button>
+              </button> -->
               <button (click)="onEditOne(user)" class="m-1 edit__button btn">
                 <fa-icon [icon]="faUserPen"></fa-icon>
               </button>

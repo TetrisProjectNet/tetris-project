@@ -1,16 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { faGavel, faUserCheck, faUserMinus, faUserPen, faUserPlus, faUserXmark } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGavel,
+  faUserCheck,
+  faUserMinus,
+  faUserPen,
+  faUserPlus,
+  faUserXmark,
+} from '@fortawesome/free-solid-svg-icons';
+import { delay } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
-  styleUrls: ['./user.component.scss']
+  styleUrls: ['./user.component.scss'],
 })
 export class UserComponent implements OnInit {
-
   // {
   //   "user": [
   //     {
@@ -86,7 +93,6 @@ export class UserComponent implements OnInit {
   //   ]
   // }
 
-
   list$ = this.userService.getAll();
   entity = 'user';
 
@@ -97,35 +103,47 @@ export class UserComponent implements OnInit {
   faUserPlus = faUserPlus;
   faGavel = faGavel;
 
-  constructor(
-    private userService: UserService,
-    private router: Router
-  ) { }
+  constructor(private userService: UserService, private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onEditOne(user: User): void {
-    this.router.navigate(['/', 'user', user.id])
+    this.router.navigate(['/', 'user', user.id]);
   }
 
   onDeleteOne(id: number): void {
     if (window.confirm('Are you sure about deleting this user?')) {
-      this.userService.remove(id)
+      this.userService
+        .remove(id)
         .subscribe(() => (this.list$ = this.userService.getAll()));
     }
   }
 
   onBanOne(id: number): void {
     if (window.confirm('Are you sure about banning this user?')) {
-      this.userService.ban(id).subscribe(() => (this.list$ = this.userService.getAll()));
+      this.userService
+        .ban(id)
+        .subscribe(() => (this.list$ = this.userService.getAll()));
     }
   }
 
   onUnbanOne(id: number): void {
     if (window.confirm('Are you sure about unbanning this user?')) {
-      this.userService.unban(id).subscribe(() => (this.list$ = this.userService.getAll()));
+      this.userService
+        .unban(id)
+        .subscribe(() => (this.list$ = this.userService.getAll()));
     }
   }
 
+  checkValue(value: any, id: number) {
+    console.log(value);
+    console.log(id);
+    if (value === 'true') {
+      this.onBanOne(id)
+    } else {
+      this.onUnbanOne(id);
+    }
+    // setTimeout(() => {
+    // }, 500);
+  }
 }
