@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div *ngIf="list$ | async as list" class="wrapper">
   <!-- Search -->
   <!-- <div class="search bg-light border rounded p-3 m-3">
       <div class="fw-bold text-uppercase text-center pb-3">Szűrés oszlopok szerint</div>
@@ -23,7 +23,9 @@
   <!-- List -->
   <div class="table-responsive col-xl-10 offset-xl-1">
     <table class="table table-sm m-0">
-      <caption>List of users</caption>
+      <caption>
+        List of users
+      </caption>
       <thead>
         <tr>
           <!-- <th *ngFor="let col of columns" scope="col" (click)="onColumnSelect(col.key)">
@@ -67,7 +69,7 @@
               </button>
             </td>
           </tr> -->
-        <tr *ngFor="let user of list$ | async" class="align-middle">
+        <tr *ngFor="let user of list | paginate: { itemsPerPage: 10, currentPage: p }" class="align-middle">
           <td>{{ user.id }}</td>
           <td>{{ user.username }}</td>
           <td>{{ user.email }}</td>
@@ -77,7 +79,11 @@
           <td>{{ user.coins }}</td>
           <td>{{ user.shopItems }}</td>
           <td>{{ user.role }}</td>
-          <td><input [(ngModel)]="user.banned" (change)="checkValue(user.banned?'true':'false', user.id)" type="checkbox" name=""></td> <!-- {{ user.banned }} <br> -->
+          <td>
+            <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
+              type="checkbox" name="" />
+          </td>
+          <!-- {{ user.banned }} <br> -->
           <td>
             <div class="admin__buttons d-flex flex-row">
               <!-- <fa-icon [icon]="faGavel"></fa-icon> -->
@@ -94,35 +100,20 @@
                 <fa-icon [icon]="faUserMinus"></fa-icon>
                 <!-- <fa-icon [icon]="faUserXmark"></fa-icon> -->
               </button>
-
             </div>
           </td>
-
         </tr>
       </tbody>
     </table>
   </div>
 
-
+  <div class="d-flex justify-content-center mb-5">
+    <pagination-controls
+      class="my-pagination"
+      (pageChange)="p=$event"
+      previousLabel="Prev"
+      nextLabel="Next">
+    </pagination-controls>
+  </div>
 
 </div>
-
-<!-- <nav aria-label="Page navigation">
-    <ul class="pagination mt-4 d-flex flex-row flex-wrap justify-content-center">
-      <li class="page-item">
-        <button class="page-link" (click)="jumpToPage(page-1)" [disabled]="page === 1">
-          <i class="fa fa-angle-left" aria-hidden="true"></i>
-        </button>
-      </li>
-      <li *ngFor="let pageNum of pageList" class="page-item">
-        <button class="page-link" (click)="jumpToPage(pageNum)">
-          {{ pageNum }}
-        </button>
-      </li>
-      <li class="page-item">
-        <button class="page-link" (click)="jumpToPage(page+1)" [disabled]="page === pageList.length">
-          <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </button>
-      </li>
-    </ul>
-  </nav> -->

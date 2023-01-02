@@ -83,6 +83,69 @@
       "role": "player",
       "id": 12,
       "banned": false
+    },
+    {
+      "id": 13,
+      "username": "ffabler1",
+      "email": "gparley1@salon.com",
+      "role": "Construction Foreman",
+      "banned": true
+    },
+    {
+      "id": 14,
+      "username": "ecrewther2",
+      "email": "mpilmore2@paginegialle.it",
+      "role": "Construction Manager",
+      "banned": true
+    },
+    {
+      "id": 15,
+      "username": "csessions3",
+      "email": "orobottham3@theglobeandmail.com",
+      "role": "Estimator",
+      "banned": false
+    },
+    {
+      "id": 16,
+      "username": "ssmiths4",
+      "email": "kbatchan4@sohu.com",
+      "role": "Architect",
+      "banned": false
+    },
+    {
+      "id": 17,
+      "username": "jwakely5",
+      "email": "egavrielli5@i2i.jp",
+      "role": "Construction Expeditor",
+      "banned": true
+    },
+    {
+      "id": 18,
+      "username": "rigo130",
+      "email": "ryair6@uiuc.edu",
+      "role": "Engineer",
+      "banned": false
+    },
+    {
+      "id": 19,
+      "username": "vleadbeater7",
+      "email": "mspaduzza7@spiegel.de",
+      "role": "Project Manager",
+      "banned": false
+    },
+    {
+      "id": 20,
+      "username": "wgoldman8",
+      "email": "jpaskerful8@guardian.co.uk",
+      "role": "Architect",
+      "banned": false
+    },
+    {
+      "id": 21,
+      "username": "skomorowski9",
+      "email": "mclausen9@archive.org",
+      "role": "Project Manager",
+      "banned": false
     }
   ]
 }

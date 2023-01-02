@@ -96,6 +96,8 @@ export class UserComponent implements OnInit {
   list$ = this.userService.getAll();
   entity = 'user';
 
+  p: number = 1;
+
   faUserPen = faUserPen;
   faUserMinus = faUserMinus;
   faUserXmark = faUserXmark;
@@ -103,7 +105,10 @@ export class UserComponent implements OnInit {
   faUserPlus = faUserPlus;
   faGavel = faGavel;
 
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(
+    private userService: UserService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {}
 

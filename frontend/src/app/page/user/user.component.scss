@@ -5,8 +5,12 @@
   font-family: verdana;
 }
 
-table {
+.table {
   color: styles.$white;
+
+  &-responsive {
+    min-height: 615px;
+  }
 }
 
 // TH
@@ -145,14 +149,7 @@ tbody {
   height: 100px;
 }
 
-
-
-
-
-
-
-
-// TOGGLE BUTTON
+// ----- TOGGLE BUTTON -----
 input[type="checkbox"] {
   margin-left: 4px;
   position: relative;
@@ -168,7 +165,6 @@ input[type="checkbox"] {
   &:hover {
     cursor: pointer;
   }
-
 }
 
 input:checked[type="checkbox"]:nth-of-type(1) {
@@ -219,4 +215,32 @@ input[type="checkbox"]:after {
 input:checked[type="checkbox"]:after {
   // left: 2.55rem;
   left: 2.42rem;
+}
+
+// ----- PAGINATION -----
+.my-pagination ::ng-deep .ngx-pagination {
+
+  & li {
+
+    &.disabled {
+      color: styles.$gray;
+    }
+
+    & a {
+      color: styles.$white;
+      text-decoration: none;
+
+      &:hover {
+        border-radius: 3px;
+        color: styles.$theme;
+        background: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+  & .current {
+    border-radius: 3px;
+    color: styles.$theme;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

@@ -65,8 +65,9 @@
 select {
   position: relative;
   padding: 6px 10px;
-  -webkit-appearance: none;
+  appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
   background: transparent;
   box-shadow: none;
   -webkit-box-shadow: none;
