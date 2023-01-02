@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
@@ -14,8 +14,8 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class UserEditorComponent {
 
-  faCircleChevronDown = faCircleChevronDown;
-  faSquareCaretDown = faSquareCaretDown;
+  // @ViewChild('inputRef') input!: ElementRef;
+  @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
 
   user$: Observable<User> = this.activatedRoute.params.pipe(
     switchMap(params => {
@@ -24,7 +24,10 @@ export class UserEditorComponent {
       }
       return of(new User())
     })
-  );
+    );
+
+  faCircleChevronDown = faCircleChevronDown;
+  faSquareCaretDown = faSquareCaretDown;
 
   clicked: boolean = false;
 
@@ -42,6 +45,74 @@ export class UserEditorComponent {
 
   ngOnInit(): void {
     // this.usernameFocusToggler('clicked');
+  }
+
+  ngAfterViewInit() {
+    // console.log('inputRef: ', this.inputs);
+
+    // const inputElements: any[] = [];
+
+    this.inputs.changes.subscribe(sub =>{
+      // sub.toArray().forEach((element: any) => inputElements.push(element.nativeElement))
+      // console.log(inputElements);
+      sub.toArray().forEach((element: any) => {
+        console.log(element.nativeElement);
+        setTimeout(()=>{
+
+          if (element.nativeElement.value != '') {
+            switch(element.nativeElement.name) {
+              case 'username': {
+                this.usernameClass = 'focused';
+                break;
+              }
+              case 'email': {
+                this.emailClass = 'focused';
+                break;
+              }
+              case 'role': {
+                this.roleClass = 'focused';
+                break;
+              }
+            }
+          }
+
+          // const name: string = element.nativeElement.name;
+          // const className: string = `${name}Class`;
+
+          // if(element.nativeElement.value != '') {
+          //   this.usernameClass = 'focused';
+          //   this.emailClass = 'focused';
+          // }
+          // console.log(element.nativeElement.value);
+          // console.log(element.nativeElement.name);
+        },1)
+
+      })
+
+    });
+
+
+    // setTimeout(()=>{
+
+
+    //   // inputElements.forEach(e=>console.log('ggg',e));
+    // },1400
+    // )
+
+
+    // console.log(this.inputs.get(0));
+
+    // for( let oneInput in this.inputs) {
+    //   console.log(oneInput);
+    // }
+
+    // console.log(this.inputs);
+
+    // this.inputs.toArray().forEach(ref => {
+    //   console.log(ref.nativeElement)
+    // })
+
+    // this.inputs.toArray().forEach(divRef => console.log(divRef));
   }
 
   focusToggler(event: Event, className: string): string {

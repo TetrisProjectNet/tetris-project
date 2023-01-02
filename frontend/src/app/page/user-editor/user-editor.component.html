@@ -4,6 +4,7 @@
       <form class="animate__animated animate__fadeInUp animate__faster" #userForm="ngForm"
         (ngSubmit)="onUpdate(userForm, user)">
         <!-- <form (ngSubmit)="onLogin()"> -->
+
         <div class="form-group">
           <input [(ngModel)]="user.id" class="form-control" name="id" type="text" disabled>
           <label class="focused form-label">#</label>
@@ -12,7 +13,7 @@
         </div>
 
         <div class="form-group">
-          <input [(ngModel)]="user.username" class="form-control" name="username" type="text"
+          <input #inputRef [(ngModel)]="user.username" class="form-control" name="username" type="text"
             (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)">
           <label class="form-label" [class]="usernameClass">Username</label>
           <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
@@ -20,7 +21,7 @@
         </div>
 
         <div class="form-group">
-          <input [(ngModel)]="user.email" class="form-control" name="email" type="email"
+          <input #inputRef [(ngModel)]="user.email" class="form-control" name="email" type="email"
             (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
           <label class="form-label" [class]="emailClass">E-mail</label>
           <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
@@ -29,7 +30,7 @@
 
         <div class="form-group">
           <!-- <input class="form-control" name="role" type="role" (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)"> -->
-          <select [(ngModel)]="user.role" class="form-select custom-select col-12 mr-5" name="role" required
+          <select #inputRef [(ngModel)]="user.role" class="form-select custom-select col-12 mr-5" name="role" required
             (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)">
             <!-- <option [value]="workoutExercise.workoutType.type" selected disabled hidden>
               {{workoutExercise.workoutType.type}}</option>

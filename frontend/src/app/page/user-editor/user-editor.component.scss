@@ -57,7 +57,7 @@
     position: absolute;
     left: 0;
     top: 0.5rem;
-    color: styles.$gray;
+    color: styles.$white;
     transition: transform 0.3s ease-out, font-size 0.3s ease-out;
   }
 }
@@ -104,5 +104,5 @@ option {
 .focused {
   transform: translateY(-145%);
   font-size: .75em;
-  color: styles.$white;
+  color: styles.$gray;
 }
