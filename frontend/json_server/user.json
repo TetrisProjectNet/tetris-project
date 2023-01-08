@@ -26,7 +26,7 @@
       "username": "csessions3",
       "email": "orobottham3@theglobeandmail.com",
       "role": "Estimator",
-      "banned": false
+      "banned": true
     },
     {
       "id": 5,
@@ -146,6 +146,24 @@
       "email": "mclausen9@archive.org",
       "role": "Project Manager",
       "banned": false
+    }
+  ],
+  "shop": [
+    {
+      "id": 1,
+      "title": "Mouse Corsair M65",
+      "image": "https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png",
+      "price": 77,
+      "color": "orange",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "title": "Mouse Corsair M65",
+      "image": "https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png",
+      "price": 77,
+      "color": "yellow",
+      "description": ""
     }
   ]
 }

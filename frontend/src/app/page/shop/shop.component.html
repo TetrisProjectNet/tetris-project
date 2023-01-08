@@ -1,19 +1,18 @@
 <main>
   <div class="container">
-    <section class="d-flex flex-column flex-md-row flex-wrap mt-5">
+    <section *ngIf="list$ | async as list" class="d-flex flex-column flex-md-row flex-wrap mt-5">
 
-      <div *ngFor="let shopItem of shopItems" class="card__wrapper col-md-6 col-lg-4 col-xl-3">
-        <button class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
+      <div *ngFor="let shopItem of list" class="card__wrapper col-md-6 col-lg-4 col-xl-3">
+        <button (click)="onDeleteOne(shopItem.id)" class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
         <div class="card m-3">
           <div class="imgBox">
-            <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
-              alt="mouse corsair" class="mouse">
+            <img [src]="shopItem.image" alt="mouse corsair" class="mouse">
           </div>
           <div class="contentBox">
-            <h3>Mouse Corsair M65</h3>
-            <h2 class="price">77<fa-icon class="ms-1" [icon]="faCoins"></fa-icon></h2>
+            <h3>{{ shopItem.title }}</h3>
+            <h2 class="price">{{ shopItem.price }}<fa-icon class="ms-1" [icon]="faCoins"></fa-icon></h2>
             <button class="buy">Buy Now</button>
-            <button class="buy">Edit this item</button>
+            <button (click)="onEditOne(shopItem)" class="buy">Edit this item</button>
           </div>
         </div>
       </div>
@@ -28,7 +27,7 @@
           <div class="contentBox">
             <h3>New item</h3>
             <h2 class="price"><fa-icon [icon]="faCirclePlus"></fa-icon></h2>
-            <button class="buy">Add new</button>
+            <button [routerLink]="['/', entity, '']" class="buy">Add new</button>
           </div>
         </div>
       </div>

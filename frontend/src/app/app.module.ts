@@ -23,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.component';
 import { NewPasswordComponent } from './page/new-password/new-password.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { ShopItemEditorComponent } from './page/shop-item-editor/shop-item-editor.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     UserComponent,
     UserEditorComponent,
     ForgotPasswordComponent,
-    NewPasswordComponent
+    NewPasswordComponent,
+    ShopItemEditorComponent
   ],
   imports: [
     BrowserModule,

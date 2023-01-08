@@ -64,3 +64,16 @@
   font-size: .75em;
   color: styles.$white;
 }
+
+.no-acc {
+  color: styles.$gray;
+  line-height: 2.5rem;
+
+  & a {
+    text-decoration: none;
+    color: #ddd;
+    &:hover {
+      color: styles.$theme;
+    }
+  }
+}
