@@ -4,14 +4,14 @@
         <form class="animate__animated animate__fadeInUp animate__faster" #shopItemForm="ngForm"
           (ngSubmit)="onUpdate(shopItemForm, shopItem)">
           <!-- <form (ngSubmit)="onLogin()"> -->
-  
+
           <div class="form-group">
             <input [(ngModel)]="shopItem.id" class="form-control" name="id" type="text" disabled>
             <label class="focused form-label">#</label>
             <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
             <!-- <input class="form-control" name="shopItemname" [(ngModel)]="shopItem.shopItemname" type="shopItemname"> -->
           </div>
-  
+
           <div class="form-group">
             <input #inputRef [(ngModel)]="shopItem.title" class="form-control" name="title" type="text"
               (focus)="titleFocusToggler($event)" (blur)="titleFocusToggler($event)">
@@ -19,36 +19,32 @@
             <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
             <!-- <input class="form-control" name="shopItemname" [(ngModel)]="shopItem.shopItemname" type="shopItemname"> -->
           </div>
-  
+
           <div class="form-group">
             <input #inputRef [(ngModel)]="shopItem.image" class="form-control" name="image" type="text"
               (focus)="imageFocusToggler($event)" (blur)="imageFocusToggler($event)">
             <label class="form-label" [class]="imageClass">Image link</label>
           </div>
-  
+
           <div class="form-group">
-            <input #inputRef [value]="intitialValue" [(ngModel)]="shopItem.price" class="form-control" name="price" type="number"
+            <input #inputRef [(ngModel)]="shopItem.price" class="form-control" name="price" type="number"
               (focus)="priceFocusToggler($event)" (blur)="priceFocusToggler($event)">
             <label class="form-label" [class]="priceClass">Price</label>
           </div>
-  
-          <!-- <div class="form-group">
-            <input class="form-control" name="price" type="number">
-            <label class="form-label" [class]="priceClass">Price</label>
-          </div> -->
-  
+
           <div class="form-group">
+            <!-- {{ shopItem.color.length }} -->
             <input #inputRef [(ngModel)]="shopItem.color" class="form-control" name="color" type="color"
               (focus)="colorFocusToggler($event)" (blur)="colorFocusToggler($event)">
             <label class="form-label" [class]="colorClass">Color</label>
           </div>
-  
+
           <div class="form-group">
             <input #inputRef [(ngModel)]="shopItem.description" class="form-control" name="description" type="text"
               (focus)="descriptionFocusToggler($event)" (blur)="descriptionFocusToggler($event)">
             <label class="form-label" [class]="descriptionClass">Description</label>
           </div>
-  
+
           <!-- <div class="form-group">
             <select #inputRef [(ngModel)]="shopItem.role" class="form-select custom-select col-12 mr-5" name="role" required
               (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)">
@@ -60,12 +56,11 @@
               <fa-icon class="select-icon" [icon]="faSquareCaretDown"></fa-icon>
             </label>
             <label class="form-label" [class]="roleClass">Role</label>
-          </div> -->  
- 
+          </div> -->
+
           <button type="submit" class="game-played btn btn-info col-12 my-3">Save changes</button>
         </form>
-  
+
       </div>
     </div>
   </div>
-  

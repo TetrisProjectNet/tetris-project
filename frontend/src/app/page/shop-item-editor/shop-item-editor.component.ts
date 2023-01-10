@@ -33,7 +33,7 @@ export class ShopItemEditorComponent {
   titleClass: string = '';
   imageClass: string = '';
   priceClass: string = '';
-  colorClass: string = '';
+  colorClass: string = 'focused';
   descriptionClass: string = '';
   selectedElement: any;
   intitialValue: string = '10';
@@ -51,12 +51,10 @@ export class ShopItemEditorComponent {
   ngAfterViewInit() {
 
     this.inputs.changes.subscribe(sub =>{
-      // sub.toArray().forEach((element: any) => inputElements.push(element.nativeElement))
-      // console.log(inputElements);
       sub.toArray().forEach((element: any) => {
         setTimeout(()=>{
 
-          if (element.nativeElement.value != '' || element.nativeElement.value === '0') {
+          if (element.nativeElement.value != '' || element.nativeElement.value === '#ffffff') {
             switch(element.nativeElement.name) {
               case 'title': {
                 this.titleClass = 'focused';
@@ -71,6 +69,7 @@ export class ShopItemEditorComponent {
                 break;
               }
               case 'color': {
+                console.log('colored focused');
                 this.colorClass = 'focused';
                 break;
               }
@@ -83,8 +82,8 @@ export class ShopItemEditorComponent {
 
         }, 1)
       })
-
     });
+
   }
 
   focusToggler(event: Event, className: string): string {

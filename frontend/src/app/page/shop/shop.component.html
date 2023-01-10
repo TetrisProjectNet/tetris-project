@@ -4,7 +4,7 @@
 
       <div *ngFor="let shopItem of list" class="card__wrapper col-md-6 col-lg-4 col-xl-3">
         <button (click)="onDeleteOne(shopItem.id)" class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
-        <div class="card m-3">
+        <div class="card m-3" [ngStyle]="{ 'background-color': shopItem.color }">
           <div class="imgBox">
             <img [src]="shopItem.image" alt="mouse corsair" class="mouse">
           </div>

@@ -18,13 +18,13 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', []) onWindowScroll() {
     // do some stuff here when the window is scrolled
-    console.log('asd');
+    // console.log('asd');
     const verticalOffset =
       window.pageYOffset ||
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-      console.log(verticalOffset);
+      // console.log(verticalOffset);
 
       verticalOffset != 0 ? this.className = 'scroll' : this.className = '';
     // if () {
