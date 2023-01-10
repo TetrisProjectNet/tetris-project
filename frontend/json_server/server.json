@@ -151,16 +151,24 @@
   "shop": [
     {
       "id": 1,
-      "title": "Mouse Corsair M65",
-      "image": "https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png",
-      "price": 77,
+      "title": "Fancy flower blocks",
+      "image": "https://cdn-icons-png.flaticon.com/512/1006/1006986.png?w=740&t=st=1673248581~exp=1673249181~hmac=0cb7fd2eeaeefb122310f61a021660a2b0821e434d4a3110d6f97d0726ae93d8",
+      "price": 53,
       "color": "orange",
       "description": ""
     },
     {
       "id": 2,
-      "title": "Mouse Corsair M65",
-      "image": "https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png",
+      "title": "Colorful dia blocks",
+      "image": "https://cdn-icons-png.flaticon.com/512/706/706010.png?w=740&t=st=1673248907~exp=1673249507~hmac=9a6ea3aa0bcf268d6b5947a2ba0109e7876666dc2ef440e787b48174fd918153",
+      "price": 1,
+      "color": "yellow",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "title": "Blue dia blocks",
+      "image": "https://cdn-icons-png.flaticon.com/512/705/705956.png?w=740&t=st=1673249454~exp=1673250054~hmac=f52c6cf0c24b23ada12ecc985322fe848a563b437170efccd2e637bee7edd4b0",
       "price": 77,
       "color": "yellow",
       "description": ""
