@@ -24,6 +24,9 @@ import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.
 import { NewPasswordComponent } from './page/new-password/new-password.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ShopItemEditorComponent } from './page/shop-item-editor/shop-item-editor.component';
+import { VerificationComponent } from './page/verification/verification.component';
+import { NgOtpInputModule } from 'ng-otp-input';
+import { EmailHiderPipe } from './pipe/email-hider.pipe';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { ShopItemEditorComponent } from './page/shop-item-editor/shop-item-edito
     UserEditorComponent,
     ForgotPasswordComponent,
     NewPasswordComponent,
-    ShopItemEditorComponent
+    ShopItemEditorComponent,
+    VerificationComponent,
+    EmailHiderPipe
   ],
   imports: [
     BrowserModule,
@@ -67,7 +72,8 @@ import { ShopItemEditorComponent } from './page/shop-item-editor/shop-item-edito
       "lazy": true}),
     HttpClientModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    NgOtpInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

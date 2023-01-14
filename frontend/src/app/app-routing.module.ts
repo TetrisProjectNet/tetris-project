@@ -10,6 +10,7 @@ import { SignupComponent } from './page/signup/signup.component';
 import { StatisticsComponent } from './page/statistics/statistics.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
 import { UserComponent } from './page/user/user.component';
+import { VerificationComponent } from './page/verification/verification.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'forgot-password',
     component: ForgotPasswordComponent,
+  },
+  {
+    path: 'verification',
+    component: VerificationComponent,
   },
   {
     path: 'new-password',

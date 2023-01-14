@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgot-password',
@@ -10,7 +11,9 @@ export class ForgotPasswordComponent {
   emailClass: string = '';
   selectedElement: any;
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -33,4 +36,9 @@ export class ForgotPasswordComponent {
   emailFocusToggler(event: Event): void {
     this.emailClass = this.focusToggler(event, this.emailClass)
   }
+
+  onSubmit(): void {
+    this.router.navigate(['/verification'])
+  }
+
 }
