@@ -49,6 +49,7 @@ footer {
 
 a {
   color: styles.$gray;
+  text-decoration: none;
 
   &:hover {
     color: styles.$white;
@@ -60,4 +61,8 @@ fa-icon {
   &:hover {
     color: styles.$white;
   }
+}
+
+.icon-width {
+  width: 5rem;
 }
