@@ -30,7 +30,7 @@ export class VerificationComponent {
   ngOnInit(): void { }
 
   onSubmit(): void {
-    this.router.navigate(['/verification'])
+    this.router.navigate(['/new-password'])
   }
 
 }

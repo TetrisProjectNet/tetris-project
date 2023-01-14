@@ -7,4 +7,36 @@ import { Component } from '@angular/core';
 })
 export class NewPasswordComponent {
 
+  passwordClass: string = '';
+  passwordAgainClass: string = '';
+  selectedElement: any;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  focusToggler(event: Event, className: string): string {
+    event.type == 'focus' ? className= 'focused' : className='';
+
+    if(event) {
+      this.selectedElement = event.target;
+    } else {
+      this.selectedElement = null;
+    }
+
+    if (this.selectedElement.value != '') {
+      className= 'focused';
+    }
+    return className;
+  }
+
+  passwordFocusToggler(event: Event): void {
+    this.passwordClass = this.focusToggler(event, this.passwordClass)
+  }
+
+  passwordAgainFocusToggler(event: Event): void {
+    this.passwordAgainClass = this.focusToggler(event, this.passwordAgainClass)
+  }
+
 }
