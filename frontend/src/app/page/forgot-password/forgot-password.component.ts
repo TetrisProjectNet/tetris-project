@@ -37,8 +37,8 @@ export class ForgotPasswordComponent {
     this.emailClass = this.focusToggler(event, this.emailClass)
   }
 
-  onSubmit(): void {
-    this.router.navigate(['/verification'])
+  onSubmit(email: string): void {
+    this.router.navigate(['/verification'], {state: {data: email}})
   }
 
 }

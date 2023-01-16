@@ -105,6 +105,27 @@
   }
 }
 
+a[data-bs-toggle] {
+  cursor: pointer;
+}
+
+.modal {
+
+  &-header {
+    & fa-icon {
+      color: styles.$gold;
+    }
+  }
+
+  &-body {
+    color: styles.$dark;
+  }
+
+  &-footer {
+    color: styles.$dark;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .form__wrapper {
     max-width: 340px;

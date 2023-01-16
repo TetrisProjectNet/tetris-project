@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-verification',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class VerificationComponent {
 
-  email: string = 'example@gmail.com';
+  email: string = history.state.data;
   config = {
     length: 6,
     allowNumbersOnly: true,
@@ -22,6 +24,9 @@ export class VerificationComponent {
       // 'height': '50px'
     }
   };
+
+  faSquareEnvelope = faSquareEnvelope;
+  faEnvelope = faEnvelope;
 
   constructor(
     private router: Router,

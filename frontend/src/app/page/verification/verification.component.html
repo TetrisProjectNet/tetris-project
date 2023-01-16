@@ -8,12 +8,35 @@
 
       <div class="d-flex flex-column">
         <small class="no-acc">Enter the 6-digit code sent to {{ email | emailHider }}</small>
-        <small class="no-acc mt-2"><a>Not receiving code?</a></small>
+        <small class="no-acc mt-2"><a data-bs-toggle="modal" data-bs-target="#staticBackdrop">Not receiving code?</a></small>
       </div>
       <button [routerLink]="['/verification']" type="submit" class="game-played btn btn-info col-12 my-4">Submit</button>
     </form>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="verdana modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-header d-flex flex-column border-0 py-0">
+        <fa-icon [icon]="faEnvelope" class="fa-4x"></fa-icon>
+        <h5 class="modal-title text-center w-100" id="staticBackdropLabel">Didn't receive email code?</h5>
+      </div>
+      <div class="modal-body">
+        <p>We sent a code to your email. If you have not received the code after several attempts, please try：</p>
+        <ol>
+          <li>Check if it is in your junk/spam mail</li>
+          <li>Ensure your email address is {{ email }}</li> <!--{{ email | emailHider }}-->
+          <li>The message may be delayed for a few minutes, please try again after 10 minutes.</li>
+        </ol>
+      </div>
+      <div class="modal-footer d-flex justify-content-center border-0">
+        <button type="button" class="btn btn-warning col-12" data-bs-dismiss="modal" aria-label="Close">I understand</button>
+      </div>
+    </div>
+  </div>
+</div>faSquareEnvelope
 
 <!-- Didn't receive email code?
 We sent a code to your email. If you have not received the code after several attempts, please try：
