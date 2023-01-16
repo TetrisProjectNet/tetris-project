@@ -141,14 +141,10 @@ export class UserComponent implements OnInit {
   }
 
   checkValue(value: any, id: number) {
-    console.log(value);
-    console.log(id);
     if (value === 'true') {
       this.onBanOne(id)
     } else {
       this.onUnbanOne(id);
     }
-    // setTimeout(() => {
-    // }, 500);
   }
 }

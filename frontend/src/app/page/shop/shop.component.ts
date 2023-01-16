@@ -14,13 +14,12 @@ export class ShopComponent implements OnInit {
 
   list$ = this.shopService.getAll();
   entity = 'shop';
+  adminView: boolean = true;
 
   faCoins = faCoins;
   faTrashCan = faTrashCan;
   faSquarePlus = faSquarePlus;
   faCirclePlus = faCirclePlus;
-
-  shopItems = [0, 0, 0, 0, 0, 0, 0]
 
   constructor(
     private shopService: ShopService,
@@ -59,15 +58,16 @@ export class ShopComponent implements OnInit {
   }
 
   checkValue(value: any, id: number) {
-    console.log(value);
-    console.log(id);
     if (value === 'true') {
       this.onBanOne(id)
     } else {
       this.onUnbanOne(id);
     }
-    // setTimeout(() => {
-    // }, 500);
+  }
+
+  toggleView(value: any) {
+    this.adminView = value;
+    console.log(this.adminView);
   }
 
 }

@@ -1,23 +1,30 @@
 <main>
   <div class="container">
-    <section *ngIf="list$ | async as list" class="d-flex flex-column flex-md-row flex-wrap mt-5">
+    <div class="admin-view__wrapper d-flex justify-content-end align-items-center mt-4 mb-3">
+      <label class="admin-view-label form-label mb-0 me-2">Switch to {{ adminView ? 'user' : 'admin' }} view</label>
+      <input [(ngModel)]="adminView" type="checkbox" name="" />
+    </div>
+
+    <section *ngIf="list$ | async as list" class="d-flex flex-column flex-md-row flex-wrap">
 
       <div *ngFor="let shopItem of list" class="card__wrapper col-md-6 col-lg-4 col-xl-3">
-        <button (click)="onDeleteOne(shopItem.id)" class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
+        <button *ngIf="adminView" (click)="onDeleteOne(shopItem.id)" class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
         <div class="card m-3" [ngStyle]="{ 'background-color': shopItem.color }">
           <div class="imgBox">
             <img [src]="shopItem.image" alt="mouse corsair" class="mouse">
           </div>
           <div class="contentBox">
-            <h3>{{ shopItem.title }}</h3>
+            <div class="title__wrapper">
+              <h3 class="text-center">{{ shopItem.title }}</h3>
+            </div>
             <h2 class="price">{{ shopItem.price }}<fa-icon class="ms-1" [icon]="faCoins"></fa-icon></h2>
             <button class="buy">Buy Now</button>
-            <button (click)="onEditOne(shopItem)" class="buy">Edit this item</button>
+            <button *ngIf="adminView" (click)="onEditOne(shopItem)" class="buy">Edit this item</button>
           </div>
         </div>
       </div>
 
-      <div class="add-new-card__wrapper col-md-6 col-lg-4 col-xl-3">
+      <div *ngIf="adminView" class="add-new-card__wrapper col-md-6 col-lg-4 col-xl-3">
         <div class="add-new-card card m-3">
           <div class="imgBox add-new__wrapper">
             <!-- <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
@@ -25,7 +32,9 @@
               <fa-icon class="add-new__icon my-auto" [icon]="faSquarePlus"></fa-icon>
           </div>
           <div class="contentBox">
-            <h3>New item</h3>
+            <div class="title__wrapper">
+              <h3>New item</h3>
+            </div>
             <h2 class="price"><fa-icon [icon]="faCirclePlus"></fa-icon></h2>
             <button [routerLink]="['/', entity, '']" class="buy">Add new</button>
           </div>
