@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { faAngular, faGithub, faGoogle, faInstagram, faLinkedinIn, faSass, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faDatabase, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons';
 import { FaConfig } from '@fortawesome/angular-fontawesome';
 
@@ -42,6 +42,8 @@ export class FooterComponent implements OnInit {
   faLocationDot = faLocationDot;
   faEnvelopeOpen = faEnvelopeOpen;
   faPhone = faPhone;
+  faDatabase = faDatabase;
+  faCode = faCode;
 
   isOpen = true;
 
