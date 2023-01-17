@@ -73,6 +73,10 @@ export class UserEditorComponent {
                 this.roleClass = 'focused';
                 break;
               }
+              case 'coins': {
+                this.coinsClass = 'focused';
+                break;
+              }
             }
           }
 

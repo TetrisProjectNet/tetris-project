@@ -47,21 +47,11 @@
           <!-- <input class="form-control" name="role" [(ngModel)]="user.role" type="role"> -->
         </div>
 
-        <!-- <div class="form-group">
-          <input [(ngModel)]="user.username" class="form-control" name="coins" type="number" (focus)="coinsFocusToggler($event)"
-            (blur)="coinsFocusToggler($event)">
+        <div class="form-group">
+          <input #inputRef [(ngModel)]="user.coins" class="form-control" name="coins" type="number"
+            (focus)="coinsFocusToggler($event)" (blur)="coinsFocusToggler($event)">
           <label class="form-label" [class]="coinsClass">Coins</label>
         </div>
-
-        <div class="form-group">
-          <input [(ngModel)]="user.username" class="form-control" name="last-online-date" type="text" value="#placeholder" disabled>
-          <label class="focused form-label">Last online</label>
-        </div>
-
-        <div class="form-group">
-          <input [(ngModel)]="user.username" class="form-control" name="join-date" type="text" value="#placeholder" disabled>
-          <label class="focused form-label">Join date</label>
-        </div> -->
 
         <button type="submit" class="game-played btn btn-info col-12 my-3">Save changes</button>
       </form>

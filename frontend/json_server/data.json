@@ -1,126 +1,2562 @@
-{"user":[{"id":1,"username":"elobley0","email":"cboulter0@usa.gov","role":"Engineer","banned":true,"joinDate":"15/11/2022","lastOnlineDate":"12/05/2022","coins":83,"shopItems":[3,3,2],"scores":[60],"friends":[17,27,92,15,85,68,74]},
-{"id":2,"username":"kdalgleish1","email":"troselli1@xrea.com","role":"Supervisor","banned":false,"joinDate":"27/08/2022","lastOnlineDate":"29/03/2022","coins":24,"shopItems":[2,2,2],"scores":[70,54,7,64,69],"friends":[44,97,97,5,73,10,30,23]},
-{"id":3,"username":"trawlison2","email":"toneill2@wix.com","role":"Construction Foreman","banned":true,"joinDate":"25/07/2022","lastOnlineDate":"23/02/2022","coins":21,"shopItems":[4,1],"scores":[10],"friends":[30,24,28,59,32,30,20,74,28]},
-{"id":4,"username":"ctisun3","email":"sfeast3@sbwire.com","role":"Construction Worker","banned":true,"joinDate":"22/06/2022","lastOnlineDate":"10/05/2022","coins":70,"shopItems":[4,2],"scores":[80,46],"friends":[95]},
-{"id":5,"username":"mwile4","email":"gwhiteside4@hatena.ne.jp","role":"Estimator","banned":false,"joinDate":"21/12/2022","lastOnlineDate":"23/08/2022","coins":97,"shopItems":[],"scores":[25,20,65,54,7],"friends":[5,6,89,76,43,12,60]},
-{"id":6,"username":"rfasey5","email":"csandbach5@dyndns.org","role":"Subcontractor","banned":true,"joinDate":"15/03/2022","lastOnlineDate":"01/06/2022","coins":39,"shopItems":[2],"scores":[84,66,64,75,9],"friends":[]},
-{"id":7,"username":"emadre6","email":"hmuddicliffe6@hibu.com","role":"Surveyor","banned":true,"joinDate":"09/12/2022","lastOnlineDate":"23/11/2022","coins":56,"shopItems":[2,1,1],"scores":[76,49,19,62],"friends":[9,72,65,16]},
-{"id":8,"username":"kswatheridge7","email":"epenhall7@imageshack.us","role":"Construction Expeditor","banned":false,"joinDate":"11/02/2022","lastOnlineDate":"17/06/2022","coins":43,"shopItems":[3],"scores":[55,6],"friends":[96,27,74,6]},
-{"id":9,"username":"ahallt8","email":"enutley8@digg.com","role":"Construction Foreman","banned":false,"joinDate":"07/04/2022","lastOnlineDate":"23/09/2022","coins":97,"shopItems":[2,2,2,1],"scores":[26,41,93],"friends":[89,65,64]},
-{"id":10,"username":"aburdass9","email":"vsly9@about.com","role":"Construction Manager","banned":false,"joinDate":"24/12/2022","lastOnlineDate":"16/10/2022","coins":8,"shopItems":[],"scores":[],"friends":[40,20,75,41,16,1,14,69,50]},
-{"id":11,"username":"cfechniea","email":"pskarmana@ebay.com","role":"Construction Worker","banned":false,"joinDate":"30/01/2022","lastOnlineDate":"12/11/2022","coins":44,"shopItems":[4],"scores":[],"friends":[95,30,66,34,41,44,94]},
-{"id":12,"username":"bllorensb","email":"acuellb@angelfire.com","role":"Construction Worker","banned":true,"joinDate":"10/02/2022","lastOnlineDate":"11/09/2022","coins":11,"shopItems":[1,2],"scores":[17],"friends":[60,10,66,57]},
-{"id":13,"username":"cendersbyc","email":"salbonc@mail.ru","role":"Construction Worker","banned":true,"joinDate":"24/12/2022","lastOnlineDate":"17/08/2022","coins":25,"shopItems":[4],"scores":[77,63,72],"friends":[39,9,65,36,82,52,4,85]},
-{"id":14,"username":"zhelstripd","email":"kdeyesd@ameblo.jp","role":"Construction Expeditor","banned":true,"joinDate":"29/09/2022","lastOnlineDate":"26/12/2022","coins":41,"shopItems":[4,4,4,4],"scores":[63,18,6],"friends":[80,89,80,55,67,39,30,36,52]},
-{"id":15,"username":"tpheasante","email":"sstairse@digg.com","role":"Surveyor","banned":false,"joinDate":"17/05/2022","lastOnlineDate":"25/11/2022","coins":60,"shopItems":[],"scores":[73,6,98],"friends":[58,12,89]},
-{"id":16,"username":"blinbohmf","email":"vmashrof@hud.gov","role":"Surveyor","banned":false,"joinDate":"02/10/2022","lastOnlineDate":"21/12/2022","coins":90,"shopItems":[4],"scores":[71,28,3],"friends":[59,81,71]},
-{"id":17,"username":"rdominguezg","email":"snearsg@cbc.ca","role":"Surveyor","banned":true,"joinDate":"14/09/2022","lastOnlineDate":"14/10/2022","coins":99,"shopItems":[],"scores":[],"friends":[39,11,41,74]},
-{"id":18,"username":"dhueh","email":"rweatherhoggh@noaa.gov","role":"Subcontractor","banned":true,"joinDate":"06/07/2022","lastOnlineDate":"25/03/2022","coins":90,"shopItems":[4],"scores":[39,66],"friends":[73,33,34,96,56,36,51,70]},
-{"id":19,"username":"wmillikeni","email":"dkohlermani@baidu.com","role":"Construction Foreman","banned":true,"joinDate":"22/06/2022","lastOnlineDate":"12/06/2022","coins":4,"shopItems":[1,3,3],"scores":[44],"friends":[70,9,32,66,18,29,29,50,61,93]},
-{"id":20,"username":"abrauntonj","email":"tmacqueenj@fema.gov","role":"Subcontractor","banned":true,"joinDate":"10/05/2022","lastOnlineDate":"18/07/2022","coins":58,"shopItems":[],"scores":[87],"friends":[80,16,87,11,58]},
-{"id":21,"username":"proddenk","email":"sricciardellok@jugem.jp","role":"Construction Worker","banned":true,"joinDate":"04/09/2022","lastOnlineDate":"16/11/2022","coins":65,"shopItems":[4,2,4,3],"scores":[],"friends":[72]},
-{"id":22,"username":"gdugol","email":"cnuttyl@google.ca","role":"Engineer","banned":true,"joinDate":"12/02/2022","lastOnlineDate":"11/04/2022","coins":72,"shopItems":[1,3],"scores":[30,99],"friends":[27,53,86,85,40,3,10,37]},
-{"id":23,"username":"cofenm","email":"rrevelm@liveinternet.ru","role":"Construction Manager","banned":false,"joinDate":"06/01/2023","lastOnlineDate":"01/07/2022","coins":49,"shopItems":[1,2],"scores":[25,95],"friends":[10,73,8,61,2,19]},
-{"id":24,"username":"acolloffn","email":"dconaghann@meetup.com","role":"Electrician","banned":true,"joinDate":"22/03/2022","lastOnlineDate":"12/02/2022","coins":76,"shopItems":[2,1],"scores":[60,25],"friends":[53,42,86,27]},
-{"id":25,"username":"abrendeo","email":"atuxello@nsw.gov.au","role":"Construction Worker","banned":false,"joinDate":"23/04/2022","lastOnlineDate":"08/12/2022","coins":56,"shopItems":[3],"scores":[80],"friends":[51,32,47,96,74,100,2,15,39,26]},
-{"id":26,"username":"akindleyp","email":"mstickensp@wufoo.com","role":"Surveyor","banned":true,"joinDate":"31/12/2022","lastOnlineDate":"13/08/2022","coins":68,"shopItems":[2,1,4],"scores":[79,29,6,34,44],"friends":[55,31,78,47,69,49,69,16,25,8]},
-{"id":27,"username":"srennieq","email":"mcrameq@aol.com","role":"Engineer","banned":false,"joinDate":"09/10/2022","lastOnlineDate":"08/08/2022","coins":58,"shopItems":[],"scores":[29,90,91,56,58],"friends":[68,5,7,71,91,96]},
-{"id":28,"username":"klangforthr","email":"molongainr@cbsnews.com","role":"Construction Expeditor","banned":false,"joinDate":"17/05/2022","lastOnlineDate":"27/05/2022","coins":45,"shopItems":[2],"scores":[57,62],"friends":[32,26,28,53,96,54]},
-{"id":29,"username":"aallebones","email":"ghugnets@trellian.com","role":"Subcontractor","banned":true,"joinDate":"05/09/2022","lastOnlineDate":"16/10/2022","coins":75,"shopItems":[3,1,4,3],"scores":[60],"friends":[36,92,93,66,15,52,33]},
-{"id":30,"username":"idaughtreyt","email":"cmartit@icio.us","role":"Construction Foreman","banned":false,"joinDate":"24/09/2022","lastOnlineDate":"13/09/2022","coins":11,"shopItems":[2],"scores":[],"friends":[]},
-{"id":31,"username":"jcanepeu","email":"aarnowitzu@unicef.org","role":"Surveyor","banned":false,"joinDate":"09/07/2022","lastOnlineDate":"02/09/2022","coins":100,"shopItems":[3,1,4,4],"scores":[58,67,69,4,2],"friends":[10,88,89,37,93,90,76]},
-{"id":32,"username":"vbreadv","email":"asommervillev@free.fr","role":"Construction Foreman","banned":true,"joinDate":"12/12/2022","lastOnlineDate":"11/07/2022","coins":20,"shopItems":[3,1,1,1],"scores":[17,80,24,67],"friends":[47,14,21]},
-{"id":33,"username":"aarnow","email":"bgaffneyw@liveinternet.ru","role":"Estimator","banned":false,"joinDate":"18/02/2022","lastOnlineDate":"25/01/2022","coins":44,"shopItems":[2,1],"scores":[7],"friends":[40,45,75,17]},
-{"id":34,"username":"gheadingsx","email":"rnultyx@fotki.com","role":"Estimator","banned":true,"joinDate":"09/05/2022","lastOnlineDate":"27/12/2022","coins":29,"shopItems":[4,4],"scores":[21,65,58,97],"friends":[]},
-{"id":35,"username":"adelamainey","email":"lwilloughbyy@apple.com","role":"Architect","banned":false,"joinDate":"25/03/2022","lastOnlineDate":"29/08/2022","coins":67,"shopItems":[],"scores":[85,65,40,33,29],"friends":[]},
-{"id":36,"username":"bcoatsworthz","email":"bwyantz@java.com","role":"Engineer","banned":false,"joinDate":"26/07/2022","lastOnlineDate":"20/03/2022","coins":71,"shopItems":[4,1,2,1],"scores":[2,51],"friends":[65,27,100,92,66,56,37]},
-{"id":37,"username":"lruoss10","email":"lgoade10@phoca.cz","role":"Construction Foreman","banned":true,"joinDate":"14/12/2022","lastOnlineDate":"30/06/2022","coins":65,"shopItems":[],"scores":[1,53],"friends":[56,75,6,89,79,39,16]},
-{"id":38,"username":"fkirckman11","email":"aroullier11@virginia.edu","role":"Engineer","banned":true,"joinDate":"03/08/2022","lastOnlineDate":"08/08/2022","coins":60,"shopItems":[2,4],"scores":[40],"friends":[30,29,22,90,48,23,97,60,58]},
-{"id":39,"username":"vnairne12","email":"modunneen12@ed.gov","role":"Architect","banned":false,"joinDate":"17/12/2022","lastOnlineDate":"18/08/2022","coins":27,"shopItems":[1,4],"scores":[44,21,14,57],"friends":[23,94,52]},
-{"id":40,"username":"smclucky13","email":"bbamsey13@rediff.com","role":"Subcontractor","banned":false,"joinDate":"26/07/2022","lastOnlineDate":"05/10/2022","coins":96,"shopItems":[1,2,1],"scores":[4,30,51],"friends":[12,96,41,24]},
-{"id":41,"username":"hhabbijam14","email":"adoxey14@miitbeian.gov.cn","role":"Construction Worker","banned":false,"joinDate":"23/08/2022","lastOnlineDate":"15/09/2022","coins":31,"shopItems":[1,4],"scores":[23,53],"friends":[25,81]},
-{"id":42,"username":"ddavidge15","email":"eraggett15@ft.com","role":"Project Manager","banned":true,"joinDate":"03/11/2022","lastOnlineDate":"22/02/2022","coins":72,"shopItems":[1,2,1,1],"scores":[73,12],"friends":[73,29]},
-{"id":43,"username":"tdowbiggin16","email":"gwebster16@free.fr","role":"Construction Expeditor","banned":true,"joinDate":"17/12/2022","lastOnlineDate":"08/09/2022","coins":95,"shopItems":[3,2,2,1],"scores":[20,49],"friends":[5,49,85,7]},
-{"id":44,"username":"hcaldes17","email":"kcrebo17@mozilla.com","role":"Architect","banned":true,"joinDate":"03/07/2022","lastOnlineDate":"11/04/2022","coins":26,"shopItems":[4,4,1,4],"scores":[62,13,81,67],"friends":[42,90,48,3,5,36,31,46,100,98]},
-{"id":45,"username":"rissacof18","email":"asolon18@npr.org","role":"Estimator","banned":true,"joinDate":"31/10/2022","lastOnlineDate":"22/07/2022","coins":49,"shopItems":[],"scores":[70,86],"friends":[]},
-{"id":46,"username":"jwrate19","email":"ulydford19@google.cn","role":"Architect","banned":true,"joinDate":"20/03/2022","lastOnlineDate":"18/10/2022","coins":47,"shopItems":[1,1,3,1],"scores":[71,36,25,99,14],"friends":[99,37,81,83,94,57,75,16,86]},
-{"id":47,"username":"dbaxstair1a","email":"alewens1a@gov.uk","role":"Subcontractor","banned":false,"joinDate":"02/07/2022","lastOnlineDate":"14/10/2022","coins":74,"shopItems":[1,1,1],"scores":[78,39],"friends":[12,1,18,12]},
-{"id":48,"username":"zcassin1b","email":"dciccotti1b@earthlink.net","role":"Engineer","banned":true,"joinDate":"29/11/2022","lastOnlineDate":"05/02/2022","coins":26,"shopItems":[3],"scores":[52,36,62,20,92],"friends":[66,9,89,29,42,88,26,17]},
-{"id":49,"username":"jnovak1c","email":"mfenlon1c@webs.com","role":"Construction Foreman","banned":true,"joinDate":"19/01/2022","lastOnlineDate":"08/05/2022","coins":57,"shopItems":[1,1],"scores":[99,40,80,6,94],"friends":[15,73,92]},
-{"id":50,"username":"ebonicelli1d","email":"jhargie1d@purevolume.com","role":"Architect","banned":false,"joinDate":"28/10/2022","lastOnlineDate":"17/03/2022","coins":26,"shopItems":[2,2],"scores":[57,45,75,61,86],"friends":[45,25,13,44,88,45,60,30,77,91]},
-{"id":51,"username":"mcorran1e","email":"msywell1e@multiply.com","role":"Subcontractor","banned":false,"joinDate":"02/01/2023","lastOnlineDate":"24/12/2022","coins":49,"shopItems":[4],"scores":[35,96],"friends":[21]},
-{"id":52,"username":"dluto1f","email":"spoter1f@jimdo.com","role":"Construction Foreman","banned":true,"joinDate":"02/08/2022","lastOnlineDate":"16/09/2022","coins":13,"shopItems":[4,4,1],"scores":[],"friends":[]},
-{"id":53,"username":"lalekhov1g","email":"bputten1g@tamu.edu","role":"Subcontractor","banned":false,"joinDate":"19/08/2022","lastOnlineDate":"27/11/2022","coins":44,"shopItems":[],"scores":[28],"friends":[75,73,47,74,16,48,47,46,72,63]},
-{"id":54,"username":"imacinerney1h","email":"kmoret1h@studiopress.com","role":"Supervisor","banned":true,"joinDate":"31/05/2022","lastOnlineDate":"28/02/2022","coins":61,"shopItems":[],"scores":[16,67,8,2,18],"friends":[76,81,47]},
-{"id":55,"username":"lsnowball1i","email":"hstivers1i@acquirethisname.com","role":"Engineer","banned":false,"joinDate":"17/03/2022","lastOnlineDate":"16/10/2022","coins":6,"shopItems":[3],"scores":[74,65,51,35,17],"friends":[3,19,96,36,38,85]},
-{"id":56,"username":"mmccrachen1j","email":"mclaussen1j@simplemachines.org","role":"Construction Foreman","banned":false,"joinDate":"18/04/2022","lastOnlineDate":"03/04/2022","coins":0,"shopItems":[],"scores":[13,47,18],"friends":[]},
-{"id":57,"username":"bchazotte1k","email":"acawthry1k@army.mil","role":"Construction Worker","banned":true,"joinDate":"02/11/2022","lastOnlineDate":"18/10/2022","coins":9,"shopItems":[3],"scores":[51,75,19,85],"friends":[60,67,1,20,44,99,92]},
-{"id":58,"username":"mlafont1l","email":"hgetty1l@networkadvertising.org","role":"Construction Foreman","banned":true,"joinDate":"02/11/2022","lastOnlineDate":"28/06/2022","coins":92,"shopItems":[1],"scores":[28],"friends":[41,66,58,94]},
-{"id":59,"username":"pcardwell1m","email":"gguerrazzi1m@free.fr","role":"Electrician","banned":false,"joinDate":"29/04/2022","lastOnlineDate":"14/09/2022","coins":30,"shopItems":[3],"scores":[66,11,50,100],"friends":[4,66]},
-{"id":60,"username":"sayars1n","email":"wmarke1n@deliciousdays.com","role":"Estimator","banned":false,"joinDate":"05/04/2022","lastOnlineDate":"07/01/2023","coins":19,"shopItems":[4,1],"scores":[51,70],"friends":[20,70,35,89,94,19]},
-{"id":61,"username":"afleg1o","email":"sstuchberry1o@baidu.com","role":"Surveyor","banned":false,"joinDate":"13/04/2022","lastOnlineDate":"27/05/2022","coins":44,"shopItems":[3],"scores":[22,70,97,44],"friends":[67,81,26,97,2]},
-{"id":62,"username":"lmartignoni1p","email":"rfilkin1p@w3.org","role":"Supervisor","banned":true,"joinDate":"02/07/2022","lastOnlineDate":"14/04/2022","coins":51,"shopItems":[2,3,3,2],"scores":[54,10],"friends":[54,34,94,73,14,32,97,40,87]},
-{"id":63,"username":"kyoxall1q","email":"ewarrack1q@businesswire.com","role":"Engineer","banned":false,"joinDate":"06/01/2023","lastOnlineDate":"30/12/2022","coins":33,"shopItems":[],"scores":[],"friends":[21,69,2,38]},
-{"id":64,"username":"fbrasse1r","email":"lchessell1r@omniture.com","role":"Engineer","banned":true,"joinDate":"16/02/2022","lastOnlineDate":"20/10/2022","coins":50,"shopItems":[],"scores":[],"friends":[95,57,59,41,64,98,100]},
-{"id":65,"username":"btomashov1s","email":"lmiddleweek1s@shinystat.com","role":"Engineer","banned":false,"joinDate":"11/11/2022","lastOnlineDate":"24/08/2022","coins":63,"shopItems":[1,3,1,4],"scores":[49,37,15,40,15],"friends":[1,44,70,33,89,50,42]},
-{"id":66,"username":"pgregorace1t","email":"adraycott1t@seattletimes.com","role":"Architect","banned":false,"joinDate":"10/02/2022","lastOnlineDate":"16/01/2023","coins":66,"shopItems":[2,3],"scores":[100],"friends":[64,95,25,51,42,4,25]},
-{"id":67,"username":"kspillard1u","email":"tugolini1u@merriam-webster.com","role":"Electrician","banned":false,"joinDate":"08/12/2022","lastOnlineDate":"23/04/2022","coins":81,"shopItems":[],"scores":[5,24,44],"friends":[]},
-{"id":68,"username":"cquincey1v","email":"mdevers1v@mayoclinic.com","role":"Construction Manager","banned":false,"joinDate":"05/01/2023","lastOnlineDate":"21/03/2022","coins":69,"shopItems":[1,1,2],"scores":[58,65,51,83,25],"friends":[72]},
-{"id":69,"username":"dsouthan1w","email":"lhue1w@tinypic.com","role":"Estimator","banned":true,"joinDate":"26/08/2022","lastOnlineDate":"21/12/2022","coins":68,"shopItems":[4,2],"scores":[54],"friends":[62,81,38,100,88,72,70]},
-{"id":70,"username":"gfarrow1x","email":"damey1x@twitter.com","role":"Construction Worker","banned":false,"joinDate":"16/06/2022","lastOnlineDate":"20/02/2022","coins":30,"shopItems":[2],"scores":[33,61,6,14,27],"friends":[91,90,44,27,65,43,10,58,56,26]},
-{"id":71,"username":"lrawlin1y","email":"dferrari1y@opensource.org","role":"Surveyor","banned":true,"joinDate":"14/04/2022","lastOnlineDate":"30/04/2022","coins":23,"shopItems":[],"scores":[51],"friends":[17]},
-{"id":72,"username":"stapsfield1z","email":"chatherleigh1z@bloglines.com","role":"Supervisor","banned":true,"joinDate":"04/11/2022","lastOnlineDate":"04/08/2022","coins":95,"shopItems":[2,2,2,1],"scores":[72,25,53,5],"friends":[98,44,50,53,65,89,26,42,59,75]},
-{"id":73,"username":"kedelmann20","email":"othorneloe20@hao123.com","role":"Supervisor","banned":false,"joinDate":"26/06/2022","lastOnlineDate":"28/10/2022","coins":45,"shopItems":[4,3],"scores":[27,97,22,46],"friends":[24,89,92,61,11,95,53,35,25]},
-{"id":74,"username":"vgreenhaugh21","email":"fyoseloff21@gizmodo.com","role":"Estimator","banned":false,"joinDate":"22/10/2022","lastOnlineDate":"04/03/2022","coins":24,"shopItems":[3,3,4,1],"scores":[35],"friends":[]},
-{"id":75,"username":"rtumber22","email":"wmorbey22@elegantthemes.com","role":"Construction Manager","banned":true,"joinDate":"16/04/2022","lastOnlineDate":"04/05/2022","coins":59,"shopItems":[3,3,3],"scores":[79,56,20,18,54],"friends":[93,97,68,48,49,67]},
-{"id":76,"username":"rtockell23","email":"fmcowan23@nature.com","role":"Estimator","banned":true,"joinDate":"22/08/2022","lastOnlineDate":"04/07/2022","coins":82,"shopItems":[4,4,1],"scores":[7,12,67,36,81],"friends":[87,91,1,25,62]},
-{"id":77,"username":"jspread24","email":"dalyutin24@qq.com","role":"Engineer","banned":false,"joinDate":"25/09/2022","lastOnlineDate":"24/11/2022","coins":67,"shopItems":[2,4,3],"scores":[],"friends":[46,72,25,31,89,74,46]},
-{"id":78,"username":"rbattrick25","email":"bgrgic25@yolasite.com","role":"Construction Foreman","banned":true,"joinDate":"16/02/2022","lastOnlineDate":"14/11/2022","coins":18,"shopItems":[2,1,3],"scores":[],"friends":[49,14]},
-{"id":79,"username":"sfaiers26","email":"csimko26@nytimes.com","role":"Architect","banned":true,"joinDate":"30/06/2022","lastOnlineDate":"05/07/2022","coins":81,"shopItems":[4,1],"scores":[18,10,5,9],"friends":[]},
-{"id":80,"username":"clehrle27","email":"ctimberlake27@nydailynews.com","role":"Architect","banned":true,"joinDate":"13/12/2022","lastOnlineDate":"22/11/2022","coins":38,"shopItems":[2,4,1,1],"scores":[100,37],"friends":[60]},
-{"id":81,"username":"tjohansen28","email":"mbrownsall28@comcast.net","role":"Engineer","banned":true,"joinDate":"24/03/2022","lastOnlineDate":"21/08/2022","coins":19,"shopItems":[],"scores":[],"friends":[98,80,9,88,38,27,67,92,99]},
-{"id":82,"username":"phemphill29","email":"jverrell29@disqus.com","role":"Engineer","banned":true,"joinDate":"03/06/2022","lastOnlineDate":"10/06/2022","coins":66,"shopItems":[],"scores":[83,15],"friends":[43,33]},
-{"id":83,"username":"vhatzar2a","email":"arembaud2a@cnet.com","role":"Supervisor","banned":false,"joinDate":"17/12/2022","lastOnlineDate":"08/04/2022","coins":89,"shopItems":[2,3],"scores":[],"friends":[44,63,37,29,61,96,36]},
-{"id":84,"username":"epirdue2b","email":"mbalaisot2b@jalbum.net","role":"Estimator","banned":true,"joinDate":"17/07/2022","lastOnlineDate":"20/11/2022","coins":61,"shopItems":[1,1],"scores":[20],"friends":[83,22]},
-{"id":85,"username":"ikillingbeck2c","email":"rjiroudek2c@blogspot.com","role":"Construction Manager","banned":false,"joinDate":"06/06/2022","lastOnlineDate":"20/12/2022","coins":79,"shopItems":[1,3,4],"scores":[88],"friends":[77,61,53,55,62,18]},
-{"id":86,"username":"medgeworth2d","email":"eneeves2d@reuters.com","role":"Construction Expeditor","banned":true,"joinDate":"21/12/2022","lastOnlineDate":"29/11/2022","coins":11,"shopItems":[1],"scores":[59],"friends":[20,15,72,13,24,44,31,52,8,96]},
-{"id":87,"username":"agillmor2e","email":"zmarl2e@mozilla.com","role":"Supervisor","banned":false,"joinDate":"14/04/2022","lastOnlineDate":"15/05/2022","coins":95,"shopItems":[],"scores":[51,52,29],"friends":[3,21]},
-{"id":88,"username":"mgilberthorpe2f","email":"rbindon2f@friendfeed.com","role":"Estimator","banned":true,"joinDate":"01/08/2022","lastOnlineDate":"04/07/2022","coins":97,"shopItems":[3,2],"scores":[58,73,54,84,61],"friends":[50,85,4,20,50,79,58]},
-{"id":89,"username":"jkells2g","email":"cabrahamoff2g@google.es","role":"Construction Worker","banned":true,"joinDate":"25/12/2022","lastOnlineDate":"30/09/2022","coins":23,"shopItems":[2,4],"scores":[71,13,32,89],"friends":[12,17,19,9,68]},
-{"id":90,"username":"crentilll2h","email":"wewestace2h@360.cn","role":"Architect","banned":false,"joinDate":"16/02/2022","lastOnlineDate":"19/09/2022","coins":86,"shopItems":[4,3,1],"scores":[57,3,42,37],"friends":[92,47,84,3,26,91,68]},
-{"id":91,"username":"ehallin2i","email":"bpavelka2i@unesco.org","role":"Supervisor","banned":true,"joinDate":"25/04/2022","lastOnlineDate":"08/12/2022","coins":36,"shopItems":[2,4,4,2],"scores":[78,34],"friends":[1,77,70,38,53,44,47,38,92,10]},
-{"id":92,"username":"lwheildon2j","email":"nivison2j@purevolume.com","role":"Construction Foreman","banned":false,"joinDate":"20/11/2022","lastOnlineDate":"09/09/2022","coins":25,"shopItems":[1,4],"scores":[9,65],"friends":[86,60,83,87,54,44,78,89,96,7]},
-{"id":93,"username":"kjager2k","email":"nrysom2k@sourceforge.net","role":"Electrician","banned":true,"joinDate":"23/12/2022","lastOnlineDate":"17/05/2022","coins":49,"shopItems":[1,1,4],"scores":[1,46,79,80],"friends":[]},
-{"id":94,"username":"sosanne2l","email":"lrase2l@com.com","role":"Construction Expeditor","banned":false,"joinDate":"16/03/2022","lastOnlineDate":"04/10/2022","coins":7,"shopItems":[1,4,3,3],"scores":[23,21,35,67],"friends":[14,73,54,83,54,43,88,46,16]},
-{"id":95,"username":"kissitt2m","email":"mlaurand2m@lulu.com","role":"Project Manager","banned":false,"joinDate":"24/10/2022","lastOnlineDate":"11/01/2023","coins":59,"shopItems":[4,4,4,1],"scores":[13,45],"friends":[63,32,69,26,84,63]},
-{"id":96,"username":"rdiment2n","email":"bstothard2n@chicagotribune.com","role":"Surveyor","banned":true,"joinDate":"05/08/2022","lastOnlineDate":"23/11/2022","coins":37,"shopItems":[3,4,1,4],"scores":[65,31],"friends":[29,89]},
-{"id":97,"username":"pjerams2o","email":"mdemangel2o@technorati.com","role":"Architect","banned":false,"joinDate":"24/11/2022","lastOnlineDate":"01/12/2022","coins":76,"shopItems":[4,4],"scores":[],"friends":[6,3,25]},
-{"id":98,"username":"gmacduffie2p","email":"rmaren2p@ow.ly","role":"Construction Foreman","banned":true,"joinDate":"30/04/2022","lastOnlineDate":"18/05/2022","coins":51,"shopItems":[3],"scores":[25],"friends":[90,20,87,1]},
-{"id":99,"username":"smarsy2q","email":"sstormouth2q@gmpg.org","role":"Engineer","banned":false,"joinDate":"18/10/2022","lastOnlineDate":"02/02/2022","coins":8,"shopItems":[3,4,4,1],"scores":[87,53,72,45],"friends":[62,98,97]},
-{"id":100,"username":"ccheng2r","email":"vbefroy2r@chronoengine.com","role":"Architect","banned":false,"joinDate":"07/06/2022","lastOnlineDate":"28/12/2022","coins":98,"shopItems":[4,3,3],"scores":[36,37,23,83,26],"friends":[6,45,42,11,28,74,98,20,50]}],
-"shop": [
-  {
-    "id": 1,
-    "title": "Fancy flower blocks",
-    "image": "https://cdn-icons-png.flaticon.com/512/1006/1006986.png?w=740&t=st=1673248581~exp=1673249181~hmac=0cb7fd2eeaeefb122310f61a021660a2b0821e434d4a3110d6f97d0726ae93d8",
-    "price": 53,
-    "color": "orange",
-    "description": ""
-  },
-  {
-    "id": 2,
-    "title": "Colorful dia blocks",
-    "image": "https://cdn-icons-png.flaticon.com/512/706/706010.png?w=740&t=st=1673248907~exp=1673249507~hmac=9a6ea3aa0bcf268d6b5947a2ba0109e7876666dc2ef440e787b48174fd918153",
-    "price": 1,
-    "color": "yellow",
-    "description": ""
-  },
-  {
-    "id": 3,
-    "title": "Blue dia blocks",
-    "image": "https://cdn-icons-png.flaticon.com/512/705/705956.png?w=740&t=st=1673249454~exp=1673250054~hmac=f52c6cf0c24b23ada12ecc985322fe848a563b437170efccd2e637bee7edd4b0",
-    "price": 77,
-    "color": "#00ddfa",
-    "description": ""
-  }
-]}
+{
+  "user": [
+    {
+      "id": 1,
+      "username": "elobley0",
+      "email": "cboulter0@usa.gov",
+      "role": "player",
+      "banned": true,
+      "joinDate": "15/11/2022",
+      "lastOnlineDate": "12/05/2022",
+      "coins": 83,
+      "shopItems": [
+        3,
+        3,
+        2
+      ],
+      "scores": [
+        60
+      ],
+      "friends": [
+        17,
+        27,
+        92,
+        15,
+        85,
+        68,
+        74
+      ]
+    },
+    {
+      "id": 2,
+      "username": "kdalgleish1",
+      "email": "troselli1@xrea.com",
+      "role": "Supervisor",
+      "banned": false,
+      "joinDate": "27/08/2022",
+      "lastOnlineDate": "29/03/2022",
+      "coins": 24,
+      "shopItems": [
+        2,
+        2,
+        2
+      ],
+      "scores": [
+        70,
+        54,
+        7,
+        64,
+        69
+      ],
+      "friends": [
+        44,
+        97,
+        97,
+        5,
+        73,
+        10,
+        30,
+        23
+      ]
+    },
+    {
+      "id": 3,
+      "username": "trawlison2",
+      "email": "toneill2@wix.com",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "25/07/2022",
+      "lastOnlineDate": "23/02/2022",
+      "coins": 21,
+      "shopItems": [
+        4,
+        1
+      ],
+      "scores": [
+        10
+      ],
+      "friends": [
+        30,
+        24,
+        28,
+        59,
+        32,
+        30,
+        20,
+        74,
+        28
+      ]
+    },
+    {
+      "id": 4,
+      "username": "ctisun3",
+      "email": "sfeast3@sbwire.com",
+      "role": "Construction Worker",
+      "banned": true,
+      "joinDate": "22/06/2022",
+      "lastOnlineDate": "10/05/2022",
+      "coins": 70,
+      "shopItems": [
+        4,
+        2
+      ],
+      "scores": [
+        80,
+        46
+      ],
+      "friends": [
+        95
+      ]
+    },
+    {
+      "id": 5,
+      "username": "mwile4",
+      "email": "gwhiteside4@hatena.ne.jp",
+      "role": "Estimator",
+      "banned": false,
+      "joinDate": "21/12/2022",
+      "lastOnlineDate": "23/08/2022",
+      "coins": 97,
+      "shopItems": [],
+      "scores": [
+        25,
+        20,
+        65,
+        54,
+        7
+      ],
+      "friends": [
+        5,
+        6,
+        89,
+        76,
+        43,
+        12,
+        60
+      ]
+    },
+    {
+      "id": 6,
+      "username": "rfasey5",
+      "email": "csandbach5@dyndns.org",
+      "role": "Subcontractor",
+      "banned": true,
+      "joinDate": "15/03/2022",
+      "lastOnlineDate": "01/06/2022",
+      "coins": 39,
+      "shopItems": [
+        2
+      ],
+      "scores": [
+        84,
+        66,
+        64,
+        75,
+        9
+      ],
+      "friends": []
+    },
+    {
+      "id": 7,
+      "username": "emadre6",
+      "email": "hmuddicliffe6@hibu.com",
+      "role": "Surveyor",
+      "banned": true,
+      "joinDate": "09/12/2022",
+      "lastOnlineDate": "23/11/2022",
+      "coins": 56,
+      "shopItems": [
+        2,
+        1,
+        1
+      ],
+      "scores": [
+        76,
+        49,
+        19,
+        62
+      ],
+      "friends": [
+        9,
+        72,
+        65,
+        16
+      ]
+    },
+    {
+      "id": 8,
+      "username": "kswatheridge7",
+      "email": "epenhall7@imageshack.us",
+      "role": "Construction Expeditor",
+      "banned": false,
+      "joinDate": "11/02/2022",
+      "lastOnlineDate": "17/06/2022",
+      "coins": 43,
+      "shopItems": [
+        3
+      ],
+      "scores": [
+        55,
+        6
+      ],
+      "friends": [
+        96,
+        27,
+        74,
+        6
+      ]
+    },
+    {
+      "id": 9,
+      "username": "ahallt8",
+      "email": "enutley8@digg.com",
+      "role": "Construction Foreman",
+      "banned": false,
+      "joinDate": "07/04/2022",
+      "lastOnlineDate": "23/09/2022",
+      "coins": 97,
+      "shopItems": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "scores": [
+        26,
+        41,
+        93
+      ],
+      "friends": [
+        89,
+        65,
+        64
+      ]
+    },
+    {
+      "id": 10,
+      "username": "aburdass9",
+      "email": "vsly9@about.com",
+      "role": "Construction Manager",
+      "banned": false,
+      "joinDate": "24/12/2022",
+      "lastOnlineDate": "16/10/2022",
+      "coins": 8,
+      "shopItems": [],
+      "scores": [],
+      "friends": [
+        40,
+        20,
+        75,
+        41,
+        16,
+        1,
+        14,
+        69,
+        50
+      ]
+    },
+    {
+      "id": 11,
+      "username": "cfechniea",
+      "email": "pskarmana@ebay.com",
+      "role": "Construction Worker",
+      "banned": false,
+      "joinDate": "30/01/2022",
+      "lastOnlineDate": "12/11/2022",
+      "coins": 44,
+      "shopItems": [
+        4
+      ],
+      "scores": [],
+      "friends": [
+        95,
+        30,
+        66,
+        34,
+        41,
+        44,
+        94
+      ]
+    },
+    {
+      "id": 12,
+      "username": "bllorensb",
+      "email": "acuellb@angelfire.com",
+      "role": "Construction Worker",
+      "banned": true,
+      "joinDate": "10/02/2022",
+      "lastOnlineDate": "11/09/2022",
+      "coins": 11,
+      "shopItems": [
+        1,
+        2
+      ],
+      "scores": [
+        17
+      ],
+      "friends": [
+        60,
+        10,
+        66,
+        57
+      ]
+    },
+    {
+      "id": 13,
+      "username": "cendersbyc",
+      "email": "salbonc@mail.ru",
+      "role": "Construction Worker",
+      "banned": true,
+      "joinDate": "24/12/2022",
+      "lastOnlineDate": "17/08/2022",
+      "coins": 25,
+      "shopItems": [
+        4
+      ],
+      "scores": [
+        77,
+        63,
+        72
+      ],
+      "friends": [
+        39,
+        9,
+        65,
+        36,
+        82,
+        52,
+        4,
+        85
+      ]
+    },
+    {
+      "id": 14,
+      "username": "zhelstripd",
+      "email": "kdeyesd@ameblo.jp",
+      "role": "Construction Expeditor",
+      "banned": true,
+      "joinDate": "29/09/2022",
+      "lastOnlineDate": "26/12/2022",
+      "coins": 41,
+      "shopItems": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "scores": [
+        63,
+        18,
+        6
+      ],
+      "friends": [
+        80,
+        89,
+        80,
+        55,
+        67,
+        39,
+        30,
+        36,
+        52
+      ]
+    },
+    {
+      "id": 15,
+      "username": "tpheasante",
+      "email": "sstairse@digg.com",
+      "role": "Surveyor",
+      "banned": false,
+      "joinDate": "17/05/2022",
+      "lastOnlineDate": "25/11/2022",
+      "coins": 60,
+      "shopItems": [],
+      "scores": [
+        73,
+        6,
+        98
+      ],
+      "friends": [
+        58,
+        12,
+        89
+      ]
+    },
+    {
+      "id": 16,
+      "username": "blinbohmf",
+      "email": "vmashrof@hud.gov",
+      "role": "Surveyor",
+      "banned": false,
+      "joinDate": "02/10/2022",
+      "lastOnlineDate": "21/12/2022",
+      "coins": 90,
+      "shopItems": [
+        4
+      ],
+      "scores": [
+        71,
+        28,
+        3
+      ],
+      "friends": [
+        59,
+        81,
+        71
+      ]
+    },
+    {
+      "id": 17,
+      "username": "rdominguezg",
+      "email": "snearsg@cbc.ca",
+      "role": "Surveyor",
+      "banned": true,
+      "joinDate": "14/09/2022",
+      "lastOnlineDate": "14/10/2022",
+      "coins": 99,
+      "shopItems": [],
+      "scores": [],
+      "friends": [
+        39,
+        11,
+        41,
+        74
+      ]
+    },
+    {
+      "id": 18,
+      "username": "dhueh",
+      "email": "rweatherhoggh@noaa.gov",
+      "role": "Subcontractor",
+      "banned": true,
+      "joinDate": "06/07/2022",
+      "lastOnlineDate": "25/03/2022",
+      "coins": 90,
+      "shopItems": [
+        4
+      ],
+      "scores": [
+        39,
+        66
+      ],
+      "friends": [
+        73,
+        33,
+        34,
+        96,
+        56,
+        36,
+        51,
+        70
+      ]
+    },
+    {
+      "id": 19,
+      "username": "wmillikeni",
+      "email": "dkohlermani@baidu.com",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "22/06/2022",
+      "lastOnlineDate": "12/06/2022",
+      "coins": 4,
+      "shopItems": [
+        1,
+        3,
+        3
+      ],
+      "scores": [
+        44
+      ],
+      "friends": [
+        70,
+        9,
+        32,
+        66,
+        18,
+        29,
+        29,
+        50,
+        61,
+        93
+      ]
+    },
+    {
+      "id": 20,
+      "username": "abrauntonj",
+      "email": "tmacqueenj@fema.gov",
+      "role": "Subcontractor",
+      "banned": true,
+      "joinDate": "10/05/2022",
+      "lastOnlineDate": "18/07/2022",
+      "coins": 58,
+      "shopItems": [],
+      "scores": [
+        87
+      ],
+      "friends": [
+        80,
+        16,
+        87,
+        11,
+        58
+      ]
+    },
+    {
+      "id": 21,
+      "username": "proddenk",
+      "email": "sricciardellok@jugem.jp",
+      "role": "Construction Worker",
+      "banned": true,
+      "joinDate": "04/09/2022",
+      "lastOnlineDate": "16/11/2022",
+      "coins": 65,
+      "shopItems": [
+        4,
+        2,
+        4,
+        3
+      ],
+      "scores": [],
+      "friends": [
+        72
+      ]
+    },
+    {
+      "id": 22,
+      "username": "gdugol",
+      "email": "cnuttyl@google.ca",
+      "role": "Engineer",
+      "banned": true,
+      "joinDate": "12/02/2022",
+      "lastOnlineDate": "11/04/2022",
+      "coins": 72,
+      "shopItems": [
+        1,
+        3
+      ],
+      "scores": [
+        30,
+        99
+      ],
+      "friends": [
+        27,
+        53,
+        86,
+        85,
+        40,
+        3,
+        10,
+        37
+      ]
+    },
+    {
+      "id": 23,
+      "username": "cofenm",
+      "email": "rrevelm@liveinternet.ru",
+      "role": "Construction Manager",
+      "banned": false,
+      "joinDate": "06/01/2023",
+      "lastOnlineDate": "01/07/2022",
+      "coins": 49,
+      "shopItems": [
+        1,
+        2
+      ],
+      "scores": [
+        25,
+        95
+      ],
+      "friends": [
+        10,
+        73,
+        8,
+        61,
+        2,
+        19
+      ]
+    },
+    {
+      "id": 24,
+      "username": "acolloffn",
+      "email": "dconaghann@meetup.com",
+      "role": "Electrician",
+      "banned": true,
+      "joinDate": "22/03/2022",
+      "lastOnlineDate": "12/02/2022",
+      "coins": 76,
+      "shopItems": [
+        2,
+        1
+      ],
+      "scores": [
+        60,
+        25
+      ],
+      "friends": [
+        53,
+        42,
+        86,
+        27
+      ]
+    },
+    {
+      "id": 25,
+      "username": "abrendeo",
+      "email": "atuxello@nsw.gov.au",
+      "role": "Construction Worker",
+      "banned": false,
+      "joinDate": "23/04/2022",
+      "lastOnlineDate": "08/12/2022",
+      "coins": 56,
+      "shopItems": [
+        3
+      ],
+      "scores": [
+        80
+      ],
+      "friends": [
+        51,
+        32,
+        47,
+        96,
+        74,
+        100,
+        2,
+        15,
+        39,
+        26
+      ]
+    },
+    {
+      "id": 26,
+      "username": "akindleyp",
+      "email": "mstickensp@wufoo.com",
+      "role": "Surveyor",
+      "banned": true,
+      "joinDate": "31/12/2022",
+      "lastOnlineDate": "13/08/2022",
+      "coins": 68,
+      "shopItems": [
+        2,
+        1,
+        4
+      ],
+      "scores": [
+        79,
+        29,
+        6,
+        34,
+        44
+      ],
+      "friends": [
+        55,
+        31,
+        78,
+        47,
+        69,
+        49,
+        69,
+        16,
+        25,
+        8
+      ]
+    },
+    {
+      "id": 27,
+      "username": "srennieq",
+      "email": "mcrameq@aol.com",
+      "role": "Engineer",
+      "banned": false,
+      "joinDate": "09/10/2022",
+      "lastOnlineDate": "08/08/2022",
+      "coins": 58,
+      "shopItems": [],
+      "scores": [
+        29,
+        90,
+        91,
+        56,
+        58
+      ],
+      "friends": [
+        68,
+        5,
+        7,
+        71,
+        91,
+        96
+      ]
+    },
+    {
+      "id": 28,
+      "username": "klangforthr",
+      "email": "molongainr@cbsnews.com",
+      "role": "Construction Expeditor",
+      "banned": false,
+      "joinDate": "17/05/2022",
+      "lastOnlineDate": "27/05/2022",
+      "coins": 45,
+      "shopItems": [
+        2
+      ],
+      "scores": [
+        57,
+        62
+      ],
+      "friends": [
+        32,
+        26,
+        28,
+        53,
+        96,
+        54
+      ]
+    },
+    {
+      "id": 29,
+      "username": "aallebones",
+      "email": "ghugnets@trellian.com",
+      "role": "Subcontractor",
+      "banned": true,
+      "joinDate": "05/09/2022",
+      "lastOnlineDate": "16/10/2022",
+      "coins": 75,
+      "shopItems": [
+        3,
+        1,
+        4,
+        3
+      ],
+      "scores": [
+        60
+      ],
+      "friends": [
+        36,
+        92,
+        93,
+        66,
+        15,
+        52,
+        33
+      ]
+    },
+    {
+      "id": 30,
+      "username": "idaughtreyt",
+      "email": "cmartit@icio.us",
+      "role": "Construction Foreman",
+      "banned": false,
+      "joinDate": "24/09/2022",
+      "lastOnlineDate": "13/09/2022",
+      "coins": 11,
+      "shopItems": [
+        2
+      ],
+      "scores": [],
+      "friends": []
+    },
+    {
+      "id": 31,
+      "username": "jcanepeu",
+      "email": "aarnowitzu@unicef.org",
+      "role": "Surveyor",
+      "banned": false,
+      "joinDate": "09/07/2022",
+      "lastOnlineDate": "02/09/2022",
+      "coins": 100,
+      "shopItems": [
+        3,
+        1,
+        4,
+        4
+      ],
+      "scores": [
+        58,
+        67,
+        69,
+        4,
+        2
+      ],
+      "friends": [
+        10,
+        88,
+        89,
+        37,
+        93,
+        90,
+        76
+      ]
+    },
+    {
+      "id": 32,
+      "username": "vbreadv",
+      "email": "asommervillev@free.fr",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "12/12/2022",
+      "lastOnlineDate": "11/07/2022",
+      "coins": 20,
+      "shopItems": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "scores": [
+        17,
+        80,
+        24,
+        67
+      ],
+      "friends": [
+        47,
+        14,
+        21
+      ]
+    },
+    {
+      "id": 33,
+      "username": "aarnow",
+      "email": "bgaffneyw@liveinternet.ru",
+      "role": "Estimator",
+      "banned": false,
+      "joinDate": "18/02/2022",
+      "lastOnlineDate": "25/01/2022",
+      "coins": 44,
+      "shopItems": [
+        2,
+        1
+      ],
+      "scores": [
+        7
+      ],
+      "friends": [
+        40,
+        45,
+        75,
+        17
+      ]
+    },
+    {
+      "id": 34,
+      "username": "gheadingsx",
+      "email": "rnultyx@fotki.com",
+      "role": "Estimator",
+      "banned": true,
+      "joinDate": "09/05/2022",
+      "lastOnlineDate": "27/12/2022",
+      "coins": 29,
+      "shopItems": [
+        4,
+        4
+      ],
+      "scores": [
+        21,
+        65,
+        58,
+        97
+      ],
+      "friends": []
+    },
+    {
+      "id": 35,
+      "username": "adelamainey",
+      "email": "lwilloughbyy@apple.com",
+      "role": "Architect",
+      "banned": false,
+      "joinDate": "25/03/2022",
+      "lastOnlineDate": "29/08/2022",
+      "coins": 67,
+      "shopItems": [],
+      "scores": [
+        85,
+        65,
+        40,
+        33,
+        29
+      ],
+      "friends": []
+    },
+    {
+      "id": 36,
+      "username": "bcoatsworthz",
+      "email": "bwyantz@java.com",
+      "role": "Engineer",
+      "banned": false,
+      "joinDate": "26/07/2022",
+      "lastOnlineDate": "20/03/2022",
+      "coins": 71,
+      "shopItems": [
+        4,
+        1,
+        2,
+        1
+      ],
+      "scores": [
+        2,
+        51
+      ],
+      "friends": [
+        65,
+        27,
+        100,
+        92,
+        66,
+        56,
+        37
+      ]
+    },
+    {
+      "id": 37,
+      "username": "lruoss10",
+      "email": "lgoade10@phoca.cz",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "14/12/2022",
+      "lastOnlineDate": "30/06/2022",
+      "coins": 65,
+      "shopItems": [],
+      "scores": [
+        1,
+        53
+      ],
+      "friends": [
+        56,
+        75,
+        6,
+        89,
+        79,
+        39,
+        16
+      ]
+    },
+    {
+      "id": 38,
+      "username": "fkirckman11",
+      "email": "aroullier11@virginia.edu",
+      "role": "Engineer",
+      "banned": true,
+      "joinDate": "03/08/2022",
+      "lastOnlineDate": "08/08/2022",
+      "coins": 60,
+      "shopItems": [
+        2,
+        4
+      ],
+      "scores": [
+        40
+      ],
+      "friends": [
+        30,
+        29,
+        22,
+        90,
+        48,
+        23,
+        97,
+        60,
+        58
+      ]
+    },
+    {
+      "id": 39,
+      "username": "vnairne12",
+      "email": "modunneen12@ed.gov",
+      "role": "Architect",
+      "banned": false,
+      "joinDate": "17/12/2022",
+      "lastOnlineDate": "18/08/2022",
+      "coins": 27,
+      "shopItems": [
+        1,
+        4
+      ],
+      "scores": [
+        44,
+        21,
+        14,
+        57
+      ],
+      "friends": [
+        23,
+        94,
+        52
+      ]
+    },
+    {
+      "id": 40,
+      "username": "smclucky13",
+      "email": "bbamsey13@rediff.com",
+      "role": "Subcontractor",
+      "banned": false,
+      "joinDate": "26/07/2022",
+      "lastOnlineDate": "05/10/2022",
+      "coins": 96,
+      "shopItems": [
+        1,
+        2,
+        1
+      ],
+      "scores": [
+        4,
+        30,
+        51
+      ],
+      "friends": [
+        12,
+        96,
+        41,
+        24
+      ]
+    },
+    {
+      "id": 41,
+      "username": "hhabbijam14",
+      "email": "adoxey14@miitbeian.gov.cn",
+      "role": "Construction Worker",
+      "banned": false,
+      "joinDate": "23/08/2022",
+      "lastOnlineDate": "15/09/2022",
+      "coins": 31,
+      "shopItems": [
+        1,
+        4
+      ],
+      "scores": [
+        23,
+        53
+      ],
+      "friends": [
+        25,
+        81
+      ]
+    },
+    {
+      "id": 42,
+      "username": "ddavidge15",
+      "email": "eraggett15@ft.com",
+      "role": "Project Manager",
+      "banned": true,
+      "joinDate": "03/11/2022",
+      "lastOnlineDate": "22/02/2022",
+      "coins": 72,
+      "shopItems": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "scores": [
+        73,
+        12
+      ],
+      "friends": [
+        73,
+        29
+      ]
+    },
+    {
+      "id": 43,
+      "username": "tdowbiggin16",
+      "email": "gwebster16@free.fr",
+      "role": "Construction Expeditor",
+      "banned": true,
+      "joinDate": "17/12/2022",
+      "lastOnlineDate": "08/09/2022",
+      "coins": 95,
+      "shopItems": [
+        3,
+        2,
+        2,
+        1
+      ],
+      "scores": [
+        20,
+        49
+      ],
+      "friends": [
+        5,
+        49,
+        85,
+        7
+      ]
+    },
+    {
+      "id": 44,
+      "username": "hcaldes17",
+      "email": "kcrebo17@mozilla.com",
+      "role": "Architect",
+      "banned": true,
+      "joinDate": "03/07/2022",
+      "lastOnlineDate": "11/04/2022",
+      "coins": 26,
+      "shopItems": [
+        4,
+        4,
+        1,
+        4
+      ],
+      "scores": [
+        62,
+        13,
+        81,
+        67
+      ],
+      "friends": [
+        42,
+        90,
+        48,
+        3,
+        5,
+        36,
+        31,
+        46,
+        100,
+        98
+      ]
+    },
+    {
+      "id": 45,
+      "username": "rissacof18",
+      "email": "asolon18@npr.org",
+      "role": "Estimator",
+      "banned": true,
+      "joinDate": "31/10/2022",
+      "lastOnlineDate": "22/07/2022",
+      "coins": 49,
+      "shopItems": [],
+      "scores": [
+        70,
+        86
+      ],
+      "friends": []
+    },
+    {
+      "id": 46,
+      "username": "jwrate19",
+      "email": "ulydford19@google.cn",
+      "role": "Architect",
+      "banned": true,
+      "joinDate": "20/03/2022",
+      "lastOnlineDate": "18/10/2022",
+      "coins": 47,
+      "shopItems": [
+        1,
+        1,
+        3,
+        1
+      ],
+      "scores": [
+        71,
+        36,
+        25,
+        99,
+        14
+      ],
+      "friends": [
+        99,
+        37,
+        81,
+        83,
+        94,
+        57,
+        75,
+        16,
+        86
+      ]
+    },
+    {
+      "id": 47,
+      "username": "dbaxstair1a",
+      "email": "alewens1a@gov.uk",
+      "role": "Subcontractor",
+      "banned": false,
+      "joinDate": "02/07/2022",
+      "lastOnlineDate": "14/10/2022",
+      "coins": 74,
+      "shopItems": [
+        1,
+        1,
+        1
+      ],
+      "scores": [
+        78,
+        39
+      ],
+      "friends": [
+        12,
+        1,
+        18,
+        12
+      ]
+    },
+    {
+      "id": 48,
+      "username": "zcassin1b",
+      "email": "dciccotti1b@earthlink.net",
+      "role": "Engineer",
+      "banned": true,
+      "joinDate": "29/11/2022",
+      "lastOnlineDate": "05/02/2022",
+      "coins": 26,
+      "shopItems": [
+        3
+      ],
+      "scores": [
+        52,
+        36,
+        62,
+        20,
+        92
+      ],
+      "friends": [
+        66,
+        9,
+        89,
+        29,
+        42,
+        88,
+        26,
+        17
+      ]
+    },
+    {
+      "id": 49,
+      "username": "jnovak1c",
+      "email": "mfenlon1c@webs.com",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "19/01/2022",
+      "lastOnlineDate": "08/05/2022",
+      "coins": 57,
+      "shopItems": [
+        1,
+        1
+      ],
+      "scores": [
+        99,
+        40,
+        80,
+        6,
+        94
+      ],
+      "friends": [
+        15,
+        73,
+        92
+      ]
+    },
+    {
+      "id": 50,
+      "username": "ebonicelli1d",
+      "email": "jhargie1d@purevolume.com",
+      "role": "Architect",
+      "banned": false,
+      "joinDate": "28/10/2022",
+      "lastOnlineDate": "17/03/2022",
+      "coins": 26,
+      "shopItems": [
+        2,
+        2
+      ],
+      "scores": [
+        57,
+        45,
+        75,
+        61,
+        86
+      ],
+      "friends": [
+        45,
+        25,
+        13,
+        44,
+        88,
+        45,
+        60,
+        30,
+        77,
+        91
+      ]
+    },
+    {
+      "id": 51,
+      "username": "mcorran1e",
+      "email": "msywell1e@multiply.com",
+      "role": "Subcontractor",
+      "banned": false,
+      "joinDate": "02/01/2023",
+      "lastOnlineDate": "24/12/2022",
+      "coins": 49,
+      "shopItems": [
+        4
+      ],
+      "scores": [
+        35,
+        96
+      ],
+      "friends": [
+        21
+      ]
+    },
+    {
+      "id": 52,
+      "username": "dluto1f",
+      "email": "spoter1f@jimdo.com",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "02/08/2022",
+      "lastOnlineDate": "16/09/2022",
+      "coins": 13,
+      "shopItems": [
+        4,
+        4,
+        1
+      ],
+      "scores": [],
+      "friends": []
+    },
+    {
+      "id": 53,
+      "username": "lalekhov1g",
+      "email": "bputten1g@tamu.edu",
+      "role": "Subcontractor",
+      "banned": false,
+      "joinDate": "19/08/2022",
+      "lastOnlineDate": "27/11/2022",
+      "coins": 44,
+      "shopItems": [],
+      "scores": [
+        28
+      ],
+      "friends": [
+        75,
+        73,
+        47,
+        74,
+        16,
+        48,
+        47,
+        46,
+        72,
+        63
+      ]
+    },
+    {
+      "id": 54,
+      "username": "imacinerney1h",
+      "email": "kmoret1h@studiopress.com",
+      "role": "Supervisor",
+      "banned": true,
+      "joinDate": "31/05/2022",
+      "lastOnlineDate": "28/02/2022",
+      "coins": 61,
+      "shopItems": [],
+      "scores": [
+        16,
+        67,
+        8,
+        2,
+        18
+      ],
+      "friends": [
+        76,
+        81,
+        47
+      ]
+    },
+    {
+      "id": 55,
+      "username": "lsnowball1i",
+      "email": "hstivers1i@acquirethisname.com",
+      "role": "Engineer",
+      "banned": false,
+      "joinDate": "17/03/2022",
+      "lastOnlineDate": "16/10/2022",
+      "coins": 6,
+      "shopItems": [
+        3
+      ],
+      "scores": [
+        74,
+        65,
+        51,
+        35,
+        17
+      ],
+      "friends": [
+        3,
+        19,
+        96,
+        36,
+        38,
+        85
+      ]
+    },
+    {
+      "id": 56,
+      "username": "mmccrachen1j",
+      "email": "mclaussen1j@simplemachines.org",
+      "role": "Construction Foreman",
+      "banned": false,
+      "joinDate": "18/04/2022",
+      "lastOnlineDate": "03/04/2022",
+      "coins": 0,
+      "shopItems": [],
+      "scores": [
+        13,
+        47,
+        18
+      ],
+      "friends": []
+    },
+    {
+      "id": 57,
+      "username": "bchazotte1k",
+      "email": "acawthry1k@army.mil",
+      "role": "Construction Worker",
+      "banned": true,
+      "joinDate": "02/11/2022",
+      "lastOnlineDate": "18/10/2022",
+      "coins": 9,
+      "shopItems": [
+        3
+      ],
+      "scores": [
+        51,
+        75,
+        19,
+        85
+      ],
+      "friends": [
+        60,
+        67,
+        1,
+        20,
+        44,
+        99,
+        92
+      ]
+    },
+    {
+      "id": 58,
+      "username": "mlafont1l",
+      "email": "hgetty1l@networkadvertising.org",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "02/11/2022",
+      "lastOnlineDate": "28/06/2022",
+      "coins": 92,
+      "shopItems": [
+        1
+      ],
+      "scores": [
+        28
+      ],
+      "friends": [
+        41,
+        66,
+        58,
+        94
+      ]
+    },
+    {
+      "id": 59,
+      "username": "pcardwell1m",
+      "email": "gguerrazzi1m@free.fr",
+      "role": "Electrician",
+      "banned": false,
+      "joinDate": "29/04/2022",
+      "lastOnlineDate": "14/09/2022",
+      "coins": 30,
+      "shopItems": [
+        3
+      ],
+      "scores": [
+        66,
+        11,
+        50,
+        100
+      ],
+      "friends": [
+        4,
+        66
+      ]
+    },
+    {
+      "id": 60,
+      "username": "sayars1n",
+      "email": "wmarke1n@deliciousdays.com",
+      "role": "Estimator",
+      "banned": false,
+      "joinDate": "05/04/2022",
+      "lastOnlineDate": "07/01/2023",
+      "coins": 19,
+      "shopItems": [
+        4,
+        1
+      ],
+      "scores": [
+        51,
+        70
+      ],
+      "friends": [
+        20,
+        70,
+        35,
+        89,
+        94,
+        19
+      ]
+    },
+    {
+      "id": 61,
+      "username": "afleg1o",
+      "email": "sstuchberry1o@baidu.com",
+      "role": "Surveyor",
+      "banned": false,
+      "joinDate": "13/04/2022",
+      "lastOnlineDate": "27/05/2022",
+      "coins": 44,
+      "shopItems": [
+        3
+      ],
+      "scores": [
+        22,
+        70,
+        97,
+        44
+      ],
+      "friends": [
+        67,
+        81,
+        26,
+        97,
+        2
+      ]
+    },
+    {
+      "id": 62,
+      "username": "lmartignoni1p",
+      "email": "rfilkin1p@w3.org",
+      "role": "Supervisor",
+      "banned": true,
+      "joinDate": "02/07/2022",
+      "lastOnlineDate": "14/04/2022",
+      "coins": 51,
+      "shopItems": [
+        2,
+        3,
+        3,
+        2
+      ],
+      "scores": [
+        54,
+        10
+      ],
+      "friends": [
+        54,
+        34,
+        94,
+        73,
+        14,
+        32,
+        97,
+        40,
+        87
+      ]
+    },
+    {
+      "id": 63,
+      "username": "kyoxall1q",
+      "email": "ewarrack1q@businesswire.com",
+      "role": "Engineer",
+      "banned": false,
+      "joinDate": "06/01/2023",
+      "lastOnlineDate": "30/12/2022",
+      "coins": 33,
+      "shopItems": [],
+      "scores": [],
+      "friends": [
+        21,
+        69,
+        2,
+        38
+      ]
+    },
+    {
+      "id": 64,
+      "username": "fbrasse1r",
+      "email": "lchessell1r@omniture.com",
+      "role": "Engineer",
+      "banned": true,
+      "joinDate": "16/02/2022",
+      "lastOnlineDate": "20/10/2022",
+      "coins": 50,
+      "shopItems": [],
+      "scores": [],
+      "friends": [
+        95,
+        57,
+        59,
+        41,
+        64,
+        98,
+        100
+      ]
+    },
+    {
+      "id": 65,
+      "username": "btomashov1s",
+      "email": "lmiddleweek1s@shinystat.com",
+      "role": "Engineer",
+      "banned": false,
+      "joinDate": "11/11/2022",
+      "lastOnlineDate": "24/08/2022",
+      "coins": 63,
+      "shopItems": [
+        1,
+        3,
+        1,
+        4
+      ],
+      "scores": [
+        49,
+        37,
+        15,
+        40,
+        15
+      ],
+      "friends": [
+        1,
+        44,
+        70,
+        33,
+        89,
+        50,
+        42
+      ]
+    },
+    {
+      "id": 66,
+      "username": "pgregorace1t",
+      "email": "adraycott1t@seattletimes.com",
+      "role": "Architect",
+      "banned": false,
+      "joinDate": "10/02/2022",
+      "lastOnlineDate": "16/01/2023",
+      "coins": 66,
+      "shopItems": [
+        2,
+        3
+      ],
+      "scores": [
+        100
+      ],
+      "friends": [
+        64,
+        95,
+        25,
+        51,
+        42,
+        4,
+        25
+      ]
+    },
+    {
+      "id": 67,
+      "username": "kspillard1u",
+      "email": "tugolini1u@merriam-webster.com",
+      "role": "Electrician",
+      "banned": false,
+      "joinDate": "08/12/2022",
+      "lastOnlineDate": "23/04/2022",
+      "coins": 81,
+      "shopItems": [],
+      "scores": [
+        5,
+        24,
+        44
+      ],
+      "friends": []
+    },
+    {
+      "id": 68,
+      "username": "cquincey1v",
+      "email": "mdevers1v@mayoclinic.com",
+      "role": "Construction Manager",
+      "banned": false,
+      "joinDate": "05/01/2023",
+      "lastOnlineDate": "21/03/2022",
+      "coins": 69,
+      "shopItems": [
+        1,
+        1,
+        2
+      ],
+      "scores": [
+        58,
+        65,
+        51,
+        83,
+        25
+      ],
+      "friends": [
+        72
+      ]
+    },
+    {
+      "id": 69,
+      "username": "dsouthan1w",
+      "email": "lhue1w@tinypic.com",
+      "role": "Estimator",
+      "banned": true,
+      "joinDate": "26/08/2022",
+      "lastOnlineDate": "21/12/2022",
+      "coins": 68,
+      "shopItems": [
+        4,
+        2
+      ],
+      "scores": [
+        54
+      ],
+      "friends": [
+        62,
+        81,
+        38,
+        100,
+        88,
+        72,
+        70
+      ]
+    },
+    {
+      "id": 70,
+      "username": "gfarrow1x",
+      "email": "damey1x@twitter.com",
+      "role": "Construction Worker",
+      "banned": false,
+      "joinDate": "16/06/2022",
+      "lastOnlineDate": "20/02/2022",
+      "coins": 30,
+      "shopItems": [
+        2
+      ],
+      "scores": [
+        33,
+        61,
+        6,
+        14,
+        27
+      ],
+      "friends": [
+        91,
+        90,
+        44,
+        27,
+        65,
+        43,
+        10,
+        58,
+        56,
+        26
+      ]
+    },
+    {
+      "id": 71,
+      "username": "lrawlin1y",
+      "email": "dferrari1y@opensource.org",
+      "role": "Surveyor",
+      "banned": true,
+      "joinDate": "14/04/2022",
+      "lastOnlineDate": "30/04/2022",
+      "coins": 23,
+      "shopItems": [],
+      "scores": [
+        51
+      ],
+      "friends": [
+        17
+      ]
+    },
+    {
+      "id": 72,
+      "username": "stapsfield1z",
+      "email": "chatherleigh1z@bloglines.com",
+      "role": "Supervisor",
+      "banned": true,
+      "joinDate": "04/11/2022",
+      "lastOnlineDate": "04/08/2022",
+      "coins": 95,
+      "shopItems": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "scores": [
+        72,
+        25,
+        53,
+        5
+      ],
+      "friends": [
+        98,
+        44,
+        50,
+        53,
+        65,
+        89,
+        26,
+        42,
+        59,
+        75
+      ]
+    },
+    {
+      "id": 73,
+      "username": "kedelmann20",
+      "email": "othorneloe20@hao123.com",
+      "role": "Supervisor",
+      "banned": false,
+      "joinDate": "26/06/2022",
+      "lastOnlineDate": "28/10/2022",
+      "coins": 45,
+      "shopItems": [
+        4,
+        3
+      ],
+      "scores": [
+        27,
+        97,
+        22,
+        46
+      ],
+      "friends": [
+        24,
+        89,
+        92,
+        61,
+        11,
+        95,
+        53,
+        35,
+        25
+      ]
+    },
+    {
+      "id": 74,
+      "username": "vgreenhaugh21",
+      "email": "fyoseloff21@gizmodo.com",
+      "role": "Estimator",
+      "banned": false,
+      "joinDate": "22/10/2022",
+      "lastOnlineDate": "04/03/2022",
+      "coins": 24,
+      "shopItems": [
+        3,
+        3,
+        4,
+        1
+      ],
+      "scores": [
+        35
+      ],
+      "friends": []
+    },
+    {
+      "id": 75,
+      "username": "rtumber22",
+      "email": "wmorbey22@elegantthemes.com",
+      "role": "Construction Manager",
+      "banned": true,
+      "joinDate": "16/04/2022",
+      "lastOnlineDate": "04/05/2022",
+      "coins": 59,
+      "shopItems": [
+        3,
+        3,
+        3
+      ],
+      "scores": [
+        79,
+        56,
+        20,
+        18,
+        54
+      ],
+      "friends": [
+        93,
+        97,
+        68,
+        48,
+        49,
+        67
+      ]
+    },
+    {
+      "id": 76,
+      "username": "rtockell23",
+      "email": "fmcowan23@nature.com",
+      "role": "Estimator",
+      "banned": true,
+      "joinDate": "22/08/2022",
+      "lastOnlineDate": "04/07/2022",
+      "coins": 82,
+      "shopItems": [
+        4,
+        4,
+        1
+      ],
+      "scores": [
+        7,
+        12,
+        67,
+        36,
+        81
+      ],
+      "friends": [
+        87,
+        91,
+        1,
+        25,
+        62
+      ]
+    },
+    {
+      "id": 77,
+      "username": "jspread24",
+      "email": "dalyutin24@qq.com",
+      "role": "Engineer",
+      "banned": false,
+      "joinDate": "25/09/2022",
+      "lastOnlineDate": "24/11/2022",
+      "coins": 67,
+      "shopItems": [
+        2,
+        4,
+        3
+      ],
+      "scores": [],
+      "friends": [
+        46,
+        72,
+        25,
+        31,
+        89,
+        74,
+        46
+      ]
+    },
+    {
+      "id": 78,
+      "username": "rbattrick25",
+      "email": "bgrgic25@yolasite.com",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "16/02/2022",
+      "lastOnlineDate": "14/11/2022",
+      "coins": 18,
+      "shopItems": [
+        2,
+        1,
+        3
+      ],
+      "scores": [],
+      "friends": [
+        49,
+        14
+      ]
+    },
+    {
+      "id": 79,
+      "username": "sfaiers26",
+      "email": "csimko26@nytimes.com",
+      "role": "Architect",
+      "banned": true,
+      "joinDate": "30/06/2022",
+      "lastOnlineDate": "05/07/2022",
+      "coins": 81,
+      "shopItems": [
+        4,
+        1
+      ],
+      "scores": [
+        18,
+        10,
+        5,
+        9
+      ],
+      "friends": []
+    },
+    {
+      "id": 80,
+      "username": "clehrle27",
+      "email": "ctimberlake27@nydailynews.com",
+      "role": "Architect",
+      "banned": true,
+      "joinDate": "13/12/2022",
+      "lastOnlineDate": "22/11/2022",
+      "coins": 38,
+      "shopItems": [
+        2,
+        4,
+        1,
+        1
+      ],
+      "scores": [
+        100,
+        37
+      ],
+      "friends": [
+        60
+      ]
+    },
+    {
+      "id": 81,
+      "username": "tjohansen28",
+      "email": "mbrownsall28@comcast.net",
+      "role": "Engineer",
+      "banned": true,
+      "joinDate": "24/03/2022",
+      "lastOnlineDate": "21/08/2022",
+      "coins": 19,
+      "shopItems": [],
+      "scores": [],
+      "friends": [
+        98,
+        80,
+        9,
+        88,
+        38,
+        27,
+        67,
+        92,
+        99
+      ]
+    },
+    {
+      "id": 82,
+      "username": "phemphill29",
+      "email": "jverrell29@disqus.com",
+      "role": "Engineer",
+      "banned": true,
+      "joinDate": "03/06/2022",
+      "lastOnlineDate": "10/06/2022",
+      "coins": 66,
+      "shopItems": [],
+      "scores": [
+        83,
+        15
+      ],
+      "friends": [
+        43,
+        33
+      ]
+    },
+    {
+      "id": 83,
+      "username": "vhatzar2a",
+      "email": "arembaud2a@cnet.com",
+      "role": "Supervisor",
+      "banned": false,
+      "joinDate": "17/12/2022",
+      "lastOnlineDate": "08/04/2022",
+      "coins": 89,
+      "shopItems": [
+        2,
+        3
+      ],
+      "scores": [],
+      "friends": [
+        44,
+        63,
+        37,
+        29,
+        61,
+        96,
+        36
+      ]
+    },
+    {
+      "id": 84,
+      "username": "epirdue2b",
+      "email": "mbalaisot2b@jalbum.net",
+      "role": "Estimator",
+      "banned": true,
+      "joinDate": "17/07/2022",
+      "lastOnlineDate": "20/11/2022",
+      "coins": 61,
+      "shopItems": [
+        1,
+        1
+      ],
+      "scores": [
+        20
+      ],
+      "friends": [
+        83,
+        22
+      ]
+    },
+    {
+      "id": 85,
+      "username": "ikillingbeck2c",
+      "email": "rjiroudek2c@blogspot.com",
+      "role": "Construction Manager",
+      "banned": false,
+      "joinDate": "06/06/2022",
+      "lastOnlineDate": "20/12/2022",
+      "coins": 79,
+      "shopItems": [
+        1,
+        3,
+        4
+      ],
+      "scores": [
+        88
+      ],
+      "friends": [
+        77,
+        61,
+        53,
+        55,
+        62,
+        18
+      ]
+    },
+    {
+      "id": 86,
+      "username": "medgeworth2d",
+      "email": "eneeves2d@reuters.com",
+      "role": "Construction Expeditor",
+      "banned": true,
+      "joinDate": "21/12/2022",
+      "lastOnlineDate": "29/11/2022",
+      "coins": 11,
+      "shopItems": [
+        1
+      ],
+      "scores": [
+        59
+      ],
+      "friends": [
+        20,
+        15,
+        72,
+        13,
+        24,
+        44,
+        31,
+        52,
+        8,
+        96
+      ]
+    },
+    {
+      "id": 87,
+      "username": "agillmor2e",
+      "email": "zmarl2e@mozilla.com",
+      "role": "Supervisor",
+      "banned": false,
+      "joinDate": "14/04/2022",
+      "lastOnlineDate": "15/05/2022",
+      "coins": 95,
+      "shopItems": [],
+      "scores": [
+        51,
+        52,
+        29
+      ],
+      "friends": [
+        3,
+        21
+      ]
+    },
+    {
+      "id": 88,
+      "username": "mgilberthorpe2f",
+      "email": "rbindon2f@friendfeed.com",
+      "role": "Estimator",
+      "banned": true,
+      "joinDate": "01/08/2022",
+      "lastOnlineDate": "04/07/2022",
+      "coins": 97,
+      "shopItems": [
+        3,
+        2
+      ],
+      "scores": [
+        58,
+        73,
+        54,
+        84,
+        61
+      ],
+      "friends": [
+        50,
+        85,
+        4,
+        20,
+        50,
+        79,
+        58
+      ]
+    },
+    {
+      "id": 89,
+      "username": "jkells2g",
+      "email": "cabrahamoff2g@google.es",
+      "role": "Construction Worker",
+      "banned": true,
+      "joinDate": "25/12/2022",
+      "lastOnlineDate": "30/09/2022",
+      "coins": 23,
+      "shopItems": [
+        2,
+        4
+      ],
+      "scores": [
+        71,
+        13,
+        32,
+        89
+      ],
+      "friends": [
+        12,
+        17,
+        19,
+        9,
+        68
+      ]
+    },
+    {
+      "id": 90,
+      "username": "crentilll2h",
+      "email": "wewestace2h@360.cn",
+      "role": "Architect",
+      "banned": false,
+      "joinDate": "16/02/2022",
+      "lastOnlineDate": "19/09/2022",
+      "coins": 86,
+      "shopItems": [
+        4,
+        3,
+        1
+      ],
+      "scores": [
+        57,
+        3,
+        42,
+        37
+      ],
+      "friends": [
+        92,
+        47,
+        84,
+        3,
+        26,
+        91,
+        68
+      ]
+    },
+    {
+      "id": 91,
+      "username": "ehallin2i",
+      "email": "bpavelka2i@unesco.org",
+      "role": "Supervisor",
+      "banned": true,
+      "joinDate": "25/04/2022",
+      "lastOnlineDate": "08/12/2022",
+      "coins": 36,
+      "shopItems": [
+        2,
+        4,
+        4,
+        2
+      ],
+      "scores": [
+        78,
+        34
+      ],
+      "friends": [
+        1,
+        77,
+        70,
+        38,
+        53,
+        44,
+        47,
+        38,
+        92,
+        10
+      ]
+    },
+    {
+      "id": 92,
+      "username": "lwheildon2j",
+      "email": "nivison2j@purevolume.com",
+      "role": "Construction Foreman",
+      "banned": false,
+      "joinDate": "20/11/2022",
+      "lastOnlineDate": "09/09/2022",
+      "coins": 25,
+      "shopItems": [
+        1,
+        4
+      ],
+      "scores": [
+        9,
+        65
+      ],
+      "friends": [
+        86,
+        60,
+        83,
+        87,
+        54,
+        44,
+        78,
+        89,
+        96,
+        7
+      ]
+    },
+    {
+      "id": 93,
+      "username": "kjager2k",
+      "email": "nrysom2k@sourceforge.net",
+      "role": "Electrician",
+      "banned": true,
+      "joinDate": "23/12/2022",
+      "lastOnlineDate": "17/05/2022",
+      "coins": 49,
+      "shopItems": [
+        1,
+        1,
+        4
+      ],
+      "scores": [
+        1,
+        46,
+        79,
+        80
+      ],
+      "friends": []
+    },
+    {
+      "id": 94,
+      "username": "sosanne2l",
+      "email": "lrase2l@com.com",
+      "role": "Construction Expeditor",
+      "banned": false,
+      "joinDate": "16/03/2022",
+      "lastOnlineDate": "04/10/2022",
+      "coins": 7,
+      "shopItems": [
+        1,
+        4,
+        3,
+        3
+      ],
+      "scores": [
+        23,
+        21,
+        35,
+        67
+      ],
+      "friends": [
+        14,
+        73,
+        54,
+        83,
+        54,
+        43,
+        88,
+        46,
+        16
+      ]
+    },
+    {
+      "id": 95,
+      "username": "kissitt2m",
+      "email": "mlaurand2m@lulu.com",
+      "role": "Project Manager",
+      "banned": false,
+      "joinDate": "24/10/2022",
+      "lastOnlineDate": "11/01/2023",
+      "coins": 59,
+      "shopItems": [
+        4,
+        4,
+        4,
+        1
+      ],
+      "scores": [
+        13,
+        45
+      ],
+      "friends": [
+        63,
+        32,
+        69,
+        26,
+        84,
+        63
+      ]
+    },
+    {
+      "id": 96,
+      "username": "rdiment2n",
+      "email": "bstothard2n@chicagotribune.com",
+      "role": "Surveyor",
+      "banned": true,
+      "joinDate": "05/08/2022",
+      "lastOnlineDate": "23/11/2022",
+      "coins": 37,
+      "shopItems": [
+        3,
+        4,
+        1,
+        4
+      ],
+      "scores": [
+        65,
+        31
+      ],
+      "friends": [
+        29,
+        89
+      ]
+    },
+    {
+      "id": 97,
+      "username": "pjerams2o",
+      "email": "mdemangel2o@technorati.com",
+      "role": "Architect",
+      "banned": false,
+      "joinDate": "24/11/2022",
+      "lastOnlineDate": "01/12/2022",
+      "coins": 76,
+      "shopItems": [
+        4,
+        4
+      ],
+      "scores": [],
+      "friends": [
+        6,
+        3,
+        25
+      ]
+    },
+    {
+      "id": 98,
+      "username": "gmacduffie2p",
+      "email": "rmaren2p@ow.ly",
+      "role": "Construction Foreman",
+      "banned": true,
+      "joinDate": "30/04/2022",
+      "lastOnlineDate": "18/05/2022",
+      "coins": 51,
+      "shopItems": [
+        3
+      ],
+      "scores": [
+        25
+      ],
+      "friends": [
+        90,
+        20,
+        87,
+        1
+      ]
+    },
+    {
+      "id": 99,
+      "username": "smarsy2q",
+      "email": "sstormouth2q@gmpg.org",
+      "role": "Engineer",
+      "banned": false,
+      "joinDate": "18/10/2022",
+      "lastOnlineDate": "02/02/2022",
+      "coins": 8,
+      "shopItems": [
+        3,
+        4,
+        4,
+        1
+      ],
+      "scores": [
+        87,
+        53,
+        72,
+        45
+      ],
+      "friends": [
+        62,
+        98,
+        97
+      ]
+    },
+    {
+      "id": 100,
+      "username": "ccheng2r",
+      "email": "vbefroy2r@chronoengine.com",
+      "role": "Architect",
+      "banned": false,
+      "joinDate": "07/06/2022",
+      "lastOnlineDate": "28/12/2022",
+      "coins": 98,
+      "shopItems": [
+        4,
+        3,
+        3
+      ],
+      "scores": [
+        36,
+        37,
+        23,
+        83,
+        26
+      ],
+      "friends": [
+        6,
+        45,
+        42,
+        11,
+        28,
+        74,
+        98,
+        20,
+        50
+      ]
+    }
+  ],
+  "shop": [
+    {
+      "id": 1,
+      "title": "Fancy flower blocks",
+      "image": "https://cdn-icons-png.flaticon.com/512/1006/1006986.png?w=740&t=st=1673248581~exp=1673249181~hmac=0cb7fd2eeaeefb122310f61a021660a2b0821e434d4a3110d6f97d0726ae93d8",
+      "price": 53,
+      "color": "orange",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "title": "Colorful dia blocks",
+      "image": "https://cdn-icons-png.flaticon.com/512/706/706010.png?w=740&t=st=1673248907~exp=1673249507~hmac=9a6ea3aa0bcf268d6b5947a2ba0109e7876666dc2ef440e787b48174fd918153",
+      "price": 1,
+      "color": "yellow",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "title": "Blue dia blocks",
+      "image": "https://cdn-icons-png.flaticon.com/512/705/705956.png?w=740&t=st=1673249454~exp=1673250054~hmac=f52c6cf0c24b23ada12ecc985322fe848a563b437170efccd2e637bee7edd4b0",
+      "price": 77,
+      "color": "#00ddfa",
+      "description": ""
+    }
+  ]
+}
