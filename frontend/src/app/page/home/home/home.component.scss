@@ -1,0 +1,23 @@
+@use '../../../../styles.scss' as styles;
+
+.app-animated-counter__wrapper {
+  margin-bottom: 1500px;
+}
+
+.content-load {
+  height: 300px;
+  width: 700px;
+  background-color: styles.$gold;
+  margin: 0 auto 300px;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 200px auto;
+  padding-top: 75px;
+  background: #272c60;
+  text-align: center;
+  color: #de3428;
+  font-size: 2em;
+}

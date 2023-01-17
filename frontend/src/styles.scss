@@ -48,3 +48,11 @@ $red: #ff0000;
 .fa-coins {
   color: $gold;
 }
+
+.animate__animated {
+  visibility: visible !important;
+}
+
+.hide-on-init {
+  visibility: hidden;
+}

@@ -27,6 +27,7 @@ import { ShopItemEditorComponent } from './page/shop-item-editor/shop-item-edito
 import { VerificationComponent } from './page/verification/verification.component';
 import { NgOtpInputModule } from 'ng-otp-input';
 import { EmailHiderPipe } from './pipe/email-hider.pipe';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { EmailHiderPipe } from './pipe/email-hider.pipe';
     HttpClientModule,
     FormsModule,
     NgxPaginationModule,
-    NgOtpInputModule
+    NgOtpInputModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
