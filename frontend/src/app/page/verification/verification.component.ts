@@ -10,7 +10,8 @@ import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 })
 export class VerificationComponent {
 
-  email: string = history.state.data;
+  email: string = 'email@default.com';
+
   config = {
     length: 6,
     allowNumbersOnly: true,
@@ -19,10 +20,6 @@ export class VerificationComponent {
     placeholder: '',
     inputClass: 'ng-otp-input',
     containerClass: 'ng-otp-input-wrapper',
-    inputStyles: {
-      // 'width': '50px',
-      // 'height': '50px'
-    }
   };
 
   faSquareEnvelope = faSquareEnvelope;
@@ -30,7 +27,11 @@ export class VerificationComponent {
 
   constructor(
     private router: Router,
-  ) { }
+  ) {
+    if (history.state.data != '' && history.state.data != undefined) {
+      this.email = history.state.data;
+    }
+  }
 
   ngOnInit(): void { }
 
