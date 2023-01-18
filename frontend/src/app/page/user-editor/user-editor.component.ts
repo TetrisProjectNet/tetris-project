@@ -1,8 +1,9 @@
 import { Component, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FaConfig } from '@fortawesome/angular-fontawesome';
 import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
-import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faCircleChevronDown, faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import { Observable, switchMap, of } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
@@ -24,10 +25,11 @@ export class UserEditorComponent {
       }
       return of(new User())
     })
-    );
+  );
 
   faCircleChevronDown = faCircleChevronDown;
   faSquareCaretDown = faSquareCaretDown;
+  faCircleUser = faCircleUser;
 
   clicked: boolean = false;
 
@@ -41,7 +43,10 @@ export class UserEditorComponent {
     private activatedRoute: ActivatedRoute,
     private userService: UserService,
     private router: Router,
-  ) { }
+    faConfig: FaConfig
+  ) {
+    faConfig.fixedWidth = false;
+  }
 
   ngOnInit(): void {
     // this.usernameFocusToggler('clicked');
@@ -52,15 +57,15 @@ export class UserEditorComponent {
 
     // const inputElements: any[] = [];
 
-    this.inputs.changes.subscribe(sub =>{
+    this.inputs.changes.subscribe(sub => {
       // sub.toArray().forEach((element: any) => inputElements.push(element.nativeElement))
       // console.log(inputElements);
       sub.toArray().forEach((element: any) => {
         console.log(element.nativeElement);
-        setTimeout(()=>{
+        setTimeout(() => {
 
           if (element.nativeElement.value != '') {
-            switch(element.nativeElement.name) {
+            switch (element.nativeElement.name) {
               case 'username': {
                 this.usernameClass = 'focused';
                 break;
@@ -89,7 +94,7 @@ export class UserEditorComponent {
           // }
           // console.log(element.nativeElement.value);
           // console.log(element.nativeElement.name);
-        },1)
+        }, 1)
 
       })
 
@@ -120,16 +125,16 @@ export class UserEditorComponent {
   }
 
   focusToggler(event: Event, className: string): string {
-    event.type == 'focus' ? className= 'focused' : className='';
+    event.type == 'focus' ? className = 'focused' : className = '';
 
-    if(event) {
+    if (event) {
       this.selectedElement = event.target;
     } else {
       this.selectedElement = null;
     }
 
     if (this.selectedElement.value != '') {
-      className= 'focused';
+      className = 'focused';
     }
     return className;
   }
@@ -164,5 +169,30 @@ export class UserEditorComponent {
       );
     }
   }
+
+  onBanOne(id: number): void {
+    if (window.confirm('Are you sure about banning this user?')) {
+      this.userService
+        .ban(id)
+        .subscribe(() => (this.user$ = this.userService.get(id)));
+    }
+  }
+
+  onUnbanOne(id: number): void {
+    if (window.confirm('Are you sure about unbanning this user?')) {
+      this.userService
+        .unban(id)
+        .subscribe(() => (this.user$ = this.userService.get(id)));
+    }
+  }
+
+  checkValue(value: any, id: number) {
+    if (value === 'true') {
+      this.onBanOne(id)
+    } else {
+      this.onUnbanOne(id);
+    }
+  }
+
 
 }

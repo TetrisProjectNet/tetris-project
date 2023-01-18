@@ -2,10 +2,10 @@
   "user": [
     {
       "id": 1,
-      "username": "elobley0",
+      "username": "Elobley0",
       "email": "cboulter0@usa.gov",
       "role": "player",
-      "banned": true,
+      "banned": false,
       "joinDate": "15/11/2022",
       "lastOnlineDate": "12/05/2022",
       "coins": 83,
