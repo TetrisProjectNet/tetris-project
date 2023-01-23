@@ -20,6 +20,15 @@
     </button>
   </div>
 
+  <!-- Rows on page -->
+  <div class="col-xl-10 offset-xl-1">
+    <div class="rows__count ms-auto form-group">
+      <input #inputRef [(ngModel)]="itemsPerPage" class="form-control" name="rows" type="number"
+        (focus)="rowsFocusToggler($event)" (blur)="rowsFocusToggler($event)">
+      <label class="form-label" [class]="rowsClass">Rows</label>
+    </div>
+  </div>
+
   <!-- List -->
   <div class="table-responsive col-xl-10 offset-xl-1">
     <table class="table table-sm m-0">
@@ -69,7 +78,7 @@
               </button>
             </td>
           </tr> -->
-        <tr *ngFor="let user of list | paginate: { itemsPerPage: 10, currentPage: p }" class="align-middle">
+        <tr *ngFor="let user of list | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
           <td>{{ user.id }}</td>
           <td>{{ user.username }}</td>
           <td>{{ user.email }}</td>
@@ -107,6 +116,7 @@
     </table>
   </div>
 
+  <!-- Pagination -->
   <div class="d-flex justify-content-center mb-5">
     <pagination-controls
       class="my-pagination"

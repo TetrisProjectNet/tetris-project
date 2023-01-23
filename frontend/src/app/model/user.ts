@@ -1,3 +1,5 @@
+import { ShopItem } from "./shop-item";
+
 export class User {
   // ----- ALAPVETŐ -----
   id: number = 0;
@@ -14,10 +16,10 @@ export class User {
 
   // ----- SHOP -----
   coins: number = 0;  //  lehet default 100 mondjuk
-  shopItems?: number[] = [];  //  megvásárolt termékek id-jeinek tömbje
+  shopItems?: ShopItem[] = [];  //  megvásárolt termékek id-jeinek tömbje
 
   //  ha szeretnénk 1v1-et, vagy barátok listáját megjeleníteni (ez szerintem elég lehet csak weben)
-  friends?: string[] = [];  //  barátok id-jeinek tömbje
+  friends?: User[] = [];  //  barátok id-jeinek tömbje
 
   //  ha szeretnénk visszajátszási lehetőséget
   // games?: number[] = [];  //  játékok id-jeinek tömbje

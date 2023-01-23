@@ -49,18 +49,10 @@ export class UserEditorComponent {
     faConfig.fixedWidth = false;
   }
 
-  ngOnInit(): void {
-    // this.usernameFocusToggler('clicked');
-  }
+  ngOnInit(): void { }
 
   ngAfterViewInit() {
-    // console.log('inputRef: ', this.inputs);
-
-    // const inputElements: any[] = [];
-
     this.inputs.changes.subscribe(sub => {
-      // sub.toArray().forEach((element: any) => inputElements.push(element.nativeElement))
-      // console.log(inputElements);
       sub.toArray().forEach((element: any) => {
         console.log(element.nativeElement);
         setTimeout(() => {
@@ -86,43 +78,9 @@ export class UserEditorComponent {
             }
           }
 
-          // const name: string = element.nativeElement.name;
-          // const className: string = `${name}Class`;
-
-          // if(element.nativeElement.value != '') {
-          //   this.usernameClass = 'focused';
-          //   this.emailClass = 'focused';
-          // }
-          // console.log(element.nativeElement.value);
-          // console.log(element.nativeElement.name);
         }, 1)
-
       })
-
     });
-
-
-    // setTimeout(()=>{
-
-
-    //   // inputElements.forEach(e=>console.log('ggg',e));
-    // },1400
-    // )
-
-
-    // console.log(this.inputs.get(0));
-
-    // for( let oneInput in this.inputs) {
-    //   console.log(oneInput);
-    // }
-
-    // console.log(this.inputs);
-
-    // this.inputs.toArray().forEach(ref => {
-    //   console.log(ref.nativeElement)
-    // })
-
-    // this.inputs.toArray().forEach(divRef => console.log(divRef));
   }
 
   focusToggler(event: Event, className: string): string {

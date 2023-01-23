@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { Router } from '@angular/router';
 import {
   faGavel,
@@ -93,10 +93,16 @@ export class UserComponent implements OnInit {
   //   ]
   // }
 
+  @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
+
   list$ = this.userService.getAll();
   entity = 'user';
 
   p: number = 1;
+  itemsPerPage: number = 10;
+
+  rowsClass: string = '';
+  selectedElement: any;
 
   faUserPen = faUserPen;
   faUserMinus = faUserMinus;
@@ -111,6 +117,38 @@ export class UserComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {}
+
+  ngAfterViewInit() {
+    this.inputs.changes.subscribe(sub => {
+      sub.toArray().forEach((element: any) => {
+        console.log(element.nativeElement);
+        setTimeout(() => {
+
+          if (element.nativeElement.value != '') {
+            switch (element.nativeElement.name) {
+              // case 'username': {
+              //   this.usernameClass = 'focused';
+              //   break;
+              // }
+              // case 'email': {
+              //   this.emailClass = 'focused';
+              //   break;
+              // }
+              // case 'role': {
+              //   this.roleClass = 'focused';
+              //   break;
+              // }
+              case 'rows': {
+                this.rowsClass = 'focused';
+                break;
+              }
+            }
+          }
+
+        }, 1)
+      })
+    });
+  }
 
   onEditOne(user: User): void {
     this.router.navigate(['/', 'user', user.id]);
@@ -147,4 +185,24 @@ export class UserComponent implements OnInit {
       this.onUnbanOne(id);
     }
   }
+
+  focusToggler(event: Event, className: string): string {
+    event.type == 'focus' ? className = 'focused' : className = '';
+
+    if (event) {
+      this.selectedElement = event.target;
+    } else {
+      this.selectedElement = null;
+    }
+
+    if (this.selectedElement.value != '') {
+      className = 'focused';
+    }
+    return className;
+  }
+
+  rowsFocusToggler(event: Event): void {
+    this.rowsClass = this.focusToggler(event, this.rowsClass)
+  }
+
 }
