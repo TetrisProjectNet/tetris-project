@@ -39,7 +39,10 @@
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/aos/dist/aos.js"
-            ]
+            ],
+            "allowedCommonJsDependencies": [
+              "aos"
+           ]
           },
           "configurations": {
             "production": {
@@ -68,7 +71,7 @@
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true,
+              "sourceMap": false,
               "namedChunks": true
             }
           },
