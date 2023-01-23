@@ -3,11 +3,11 @@
 .user {
   &-title {
     font-variant: small-caps;
-    color: styles.$white;    
+    color: styles.$white;
   }
 
   &-data {
-    color: styles.$white;    
+    color: styles.$white;
   }
 }
 
@@ -100,12 +100,16 @@ select {
     box-shadow: 0 6px 7px -7px styles.$theme;
   }
 
-  &:hover+.form-label {
-    color: styles.$white;
+  &:hover {
+    cursor: pointer;
+
+    &+.form-label {
+      color: styles.$theme;
+    }
   }
 
   &:focus+.form-label {
-    color: styles.$white;
+    color: styles.$theme;
   }
 }
 
@@ -176,5 +180,22 @@ input:checked[type="checkbox"] {
 
   &:after {
     left: 2.42rem;
+  }
+}
+
+.summary__toggle {
+  color: styles.$white;
+  text-decoration: none;
+
+  &:hover fa-icon {
+    color: styles.$theme;
+  }
+
+  &[aria-expanded=false] .summary__expanded {
+    display: none;
+  }
+
+  &[aria-expanded=true] .summary__collapsed {
+    display: none;
   }
 }

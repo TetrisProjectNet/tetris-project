@@ -1,26 +1,67 @@
 <div class="container my-5">
   <div class="row">
-    <div *ngIf="(user$ | async) as user">      
+    <div *ngIf="(user$ | async) as user">
       <main class="d-flex flex-column flex-md-row">
         <aside class="user-data verdana col-md-6">
           <div class="offset-xl-1">
-            <h2 class="user-title"><fa-icon class="me-3" [icon]="faCircleUser"></fa-icon>{{ user.username }}</h2>
+            <h2 class="user-title">
+              <fa-icon class="me-3" [icon]="faCircleUser"></fa-icon>{{ user.username }}
+            </h2>
             <span class="focused">Joined</span>
             <p>{{ user.joinDate }}</p>
             <span class="focused">Last online</span>
             <p>{{ user.lastOnlineDate }}</p>
-            <span class="focused">Shop items</span>
-            <p>{{ user.shopItems }}</p>
-            <span class="focused">Scores</span>
-            <p>{{ user.scores }}</p>
-            <span class="focused">Friends</span>
-            <p>{{ user.friends }}</p>
+
+            <div class="mb-3">
+              <span class="focused">Shop items</span>
+              <p class="mb-0">
+                <a class="summary__toggle d-flex justify-content-between" data-bs-toggle="collapse" href="#shop-items"
+                  role="button" aria-expanded="false" aria-controls="shop-items">
+                  <span>Σ {{ user.shopItems?.length || 0 }}</span>
+                  <fa-icon class="summary__collapsed" [icon]="faCircleChevronDown"></fa-icon>
+                  <fa-icon class="summary__expanded" [icon]="faCircleChevronUp"></fa-icon>
+                </a>
+              </p>
+              <div class="collapse" id="shop-items">
+                {{ user.shopItems }}
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <span class="focused">Scores</span>
+              <p class="mb-0">
+                <a class="summary__toggle d-flex justify-content-between" data-bs-toggle="collapse" href="#scores"
+                  role="button" aria-expanded="false" aria-controls="scores">
+                  <span>Summary: {{ user.scores?.length || 0 }}</span>
+                  <fa-icon class="summary__collapsed" [icon]="faCircleChevronDown"></fa-icon>
+                  <fa-icon class="summary__expanded" [icon]="faCircleChevronUp"></fa-icon>
+                </a>
+              </p>
+              <div class="collapse" id="scores">
+                {{ user.scores }}
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <span class="focused">Friends</span>
+              <p class="mb-0">
+                <a class="summary__toggle d-flex justify-content-between" data-bs-toggle="collapse" href="#friends"
+                  role="button" aria-expanded="false" aria-controls="friends">
+                  <span>Summary: {{ user.friends?.length || 0 }}</span>
+                  <fa-icon class="summary__collapsed" [icon]="faCircleChevronDown"></fa-icon>
+                  <fa-icon class="summary__expanded" [icon]="faCircleChevronUp"></fa-icon>
+                </a>
+              </p>
+              <div class="collapse" id="friends">
+                {{ user.friends }}
+              </div>
+            </div>
+
             <span class="focused">Banned</span>
             <p class="mt-2">
               <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
                 type="checkbox" name="" />
             </p>
-
           </div>
         </aside>
 
@@ -63,7 +104,7 @@
               <option value="admin">Admin</option>
             </select>
             <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
-              <fa-icon class="select-icon" [icon]="faSquareCaretDown"></fa-icon>
+              <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
             </label>
             <label class="form-label" [class]="roleClass">Role</label>
             <!-- <input class="form-control" name="role" [(ngModel)]="user.role" type="role"> -->

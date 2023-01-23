@@ -3,7 +3,7 @@ import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FaConfig } from '@fortawesome/angular-fontawesome';
 import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
-import { faCircleChevronDown, faCircleUser } from '@fortawesome/free-solid-svg-icons';
+import { faCircleChevronDown, faCircleChevronUp, faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import { Observable, switchMap, of } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { UserService } from 'src/app/service/user.service';
@@ -28,6 +28,7 @@ export class UserEditorComponent {
   );
 
   faCircleChevronDown = faCircleChevronDown;
+  faCircleChevronUp = faCircleChevronUp;
   faSquareCaretDown = faSquareCaretDown;
   faCircleUser = faCircleUser;
 
