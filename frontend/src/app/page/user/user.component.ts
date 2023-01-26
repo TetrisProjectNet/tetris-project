@@ -1,7 +1,12 @@
 import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { Router } from '@angular/router';
+import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
 import {
+  faBars,
+  faFilter,
   faGavel,
+  faKey,
+  faTableColumns,
   faUserCheck,
   faUserMinus,
   faUserPen,
@@ -102,6 +107,8 @@ export class UserComponent implements OnInit {
   itemsPerPage: number = 10;
 
   rowsClass: string = '';
+  phraseClass: string = '';
+  keyClass: string = '';
   selectedElement: any;
 
   faUserPen = faUserPen;
@@ -110,6 +117,11 @@ export class UserComponent implements OnInit {
   faUserCheck = faUserCheck;
   faUserPlus = faUserPlus;
   faGavel = faGavel;
+  faBars = faBars;
+  faFilter = faFilter;
+  faSquareCaretDown = faSquareCaretDown;
+  faKey = faKey;
+  faTableColumns = faTableColumns;
 
   constructor(
     private userService: UserService,
@@ -140,6 +152,14 @@ export class UserComponent implements OnInit {
               // }
               case 'rows': {
                 this.rowsClass = 'focused';
+                break;
+              }
+              case 'phrase': {
+                this.phraseClass = 'focused';
+                break;
+              }
+              case 'key': {
+                this.keyClass = 'focused';
                 break;
               }
             }
@@ -203,6 +223,14 @@ export class UserComponent implements OnInit {
 
   rowsFocusToggler(event: Event): void {
     this.rowsClass = this.focusToggler(event, this.rowsClass)
+  }
+
+  phraseFocusToggler(event: Event): void {
+    this.phraseClass = this.focusToggler(event, this.phraseClass)
+  }
+
+  keyFocusToggler(event: Event): void {
+    this.keyClass = this.focusToggler(event, this.keyClass)
   }
 
 }

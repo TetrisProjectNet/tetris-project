@@ -6,6 +6,7 @@ import { faBars, faCoins, faRightToBracket } from '@fortawesome/free-solid-svg-i
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
+
 export class HeaderComponent implements OnInit {
 
   faRightToBracket = faRightToBracket;

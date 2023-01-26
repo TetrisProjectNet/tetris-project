@@ -90,6 +90,10 @@ select {
   z-index: 1;
   color: styles.$white;
 
+  &__wrapper {
+    height: min-content;
+  }
+
   &:focus,
   &:active,
   &:target {

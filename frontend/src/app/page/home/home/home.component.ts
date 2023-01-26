@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     AOS.init({
       duration: 1200,
-      offset: 600
+      offset: 130
     });
   }
 

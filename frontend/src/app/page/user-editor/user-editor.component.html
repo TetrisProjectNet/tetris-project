@@ -92,8 +92,14 @@
           </div>
 
           <div class="form-group">
+            <input #inputRef [(ngModel)]="user.coins" class="form-control" name="coins" type="number"
+              (focus)="coinsFocusToggler($event)" (blur)="coinsFocusToggler($event)">
+            <label class="form-label" [class]="coinsClass">Coins</label>
+          </div>
+
+          <div class="select__wrapper form-group mb-0">
             <!-- <input class="form-control" name="role" type="role" (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)"> -->
-            <select #inputRef [(ngModel)]="user.role" class="form-select custom-select col-12 mr-5" name="role" required
+            <select #inputRef [(ngModel)]="user.role" class="form-select custom-select col-12" name="role" required
               (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)">
               <!-- <option [value]="workoutExercise.workoutType.type" selected disabled hidden>
               {{workoutExercise.workoutType.type}}</option>
@@ -105,15 +111,9 @@
             </select>
             <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
               <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
-            </label>l
+            </label>
             <label class="form-label" [class]="roleClass">Role</label>
             <!-- <input class="form-control" name="role" [(ngModel)]="user.role" type="role"> -->
-          </div>
-
-          <div class="form-group">
-            <input #inputRef [(ngModel)]="user.coins" class="form-control" name="coins" type="number"
-              (focus)="coinsFocusToggler($event)" (blur)="coinsFocusToggler($event)">
-            <label class="form-label" [class]="coinsClass">Coins</label>
           </div>
 
           <button type="submit" class="game-played btn btn-info col-12 my-3">Save changes</button>

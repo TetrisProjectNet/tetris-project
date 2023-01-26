@@ -42,7 +42,7 @@
             ],
             "allowedCommonJsDependencies": [
               "aos"
-           ]
+            ]
           },
           "configurations": {
             "production": {

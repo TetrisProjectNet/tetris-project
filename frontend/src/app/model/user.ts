@@ -15,7 +15,7 @@ export class User {
   scores?: string[] = [];
 
   // ----- SHOP -----
-  coins: number = 0;  //  lehet default 100 mondjuk
+  coins: number | string = '';  //  lehet default 100 mondjuk
   shopItems?: ShopItem[] = [];  //  megvásárolt termékek id-jeinek tömbje
 
   //  ha szeretnénk 1v1-et, vagy barátok listáját megjeleníteni (ez szerintem elég lehet csak weben)

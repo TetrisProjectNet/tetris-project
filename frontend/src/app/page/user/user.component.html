@@ -20,19 +20,55 @@
     </button>
   </div>
 
-  <!-- Rows on page -->
-  <div class="col-xl-10 offset-xl-1">
-    <div class="rows__count ms-auto form-group">
-      <input #inputRef [(ngModel)]="itemsPerPage" class="form-control" name="rows" type="number"
-        (focus)="rowsFocusToggler($event)" (blur)="rowsFocusToggler($event)">
-      <label class="form-label" [class]="rowsClass">Rows</label>
+  <!-- Expert options -->
+  <section class="col-xl-10 offset-xl-1 d-flex flex-row justify-content-between pe-3 my-4">
+    <div class="d-flex flex-row ms-3">
+      <div class="d-flex flex-row me-3">
+        <div class="input__icon__wrapper d-flex align-items-center justify-content-end ms-auto">
+          <fa-icon class="text-center" [icon]="faKey"></fa-icon>
+        </div>
+        <div class="select__wrapper form-group my-0">
+          <select #inputRef class="form-select custom-select col-12" name="key" required (focus)="keyFocusToggler($event)"
+            (blur)="keyFocusToggler($event)">
+            <option selected value=""></option>
+            <option value="player">Player</option>
+            <option value="admin">Admin</option>
+          </select>
+          <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
+            <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
+          </label>
+          <label class="form-label" [class]="keyClass">Key</label>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-row me-3">
+        <div class="input__icon__wrapper d-flex align-items-center justify-content-end ms-auto">
+          <fa-icon class="text-center" [icon]="faFilter"></fa-icon>
+        </div>
+        <div class="phrase__wrapper form-group m-0">
+          <input #inputRef class="form-control" name="phrase" type="text" (focus)="phraseFocusToggler($event)"
+            (blur)="phraseFocusToggler($event)">
+          <label class="form-label" [class]="phraseClass">Filter</label>
+        </div>
+      </div>
     </div>
-  </div>
+
+    <div class="d-flex flex-row">
+      <div class="input__icon__wrapper d-flex align-items-center justify-content-end ms-auto">
+        <fa-icon class="text-center" [icon]="faBars"></fa-icon>
+      </div>
+      <div class="rows__wrapper form-group m-0">
+        <input #inputRef [(ngModel)]="itemsPerPage" class="form-control pe-0" name="rows" type="number"
+          (focus)="rowsFocusToggler($event)" (blur)="rowsFocusToggler($event)">
+        <label class="form-label" [class]="rowsClass">Rows</label>
+      </div>
+    </div>
+  </section>
 
   <!-- List -->
-  <div class="table-responsive col-xl-10 offset-xl-1">
+  <div class="table-responsive col-xl-10 offset-xl-1 px-3">
     <table class="table table-sm m-0">
-      <caption>
+      <caption class="text-center game-played">
         List of users
       </caption>
       <thead>
@@ -118,11 +154,7 @@
 
   <!-- Pagination -->
   <div class="d-flex justify-content-center mb-5">
-    <pagination-controls
-      class="my-pagination"
-      (pageChange)="p=$event"
-      previousLabel="Prev"
-      nextLabel="Next">
+    <pagination-controls class="my-pagination" (pageChange)="p=$event" previousLabel="Prev" nextLabel="Next">
     </pagination-controls>
   </div>
 

@@ -316,12 +316,74 @@ input:checked[type="checkbox"] {
   color: styles.$gray;
 }
 
-.rows__count {
-  width: 100px;
+select {
+  position: relative;
+  padding: 6px 10px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid styles.$theme;
+  transition: box-shadow 0.3s ease-out;
+  z-index: 1;
+  color: styles.$white;
+
+  &__wrapper {
+    height: min-content;
+  }
+
+  &:focus,
+  &:active,
+  &:target {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: none;
+    border-bottom: 1px solid styles.$theme;
+    box-shadow: 0 6px 7px -7px styles.$theme;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &+.form-label {
+      color: styles.$theme;
+    }
+  }
+
+  &:focus+.form-label {
+    color: styles.$theme;
+  }
+}
+
+option {
+  color: styles.$black;
+}
+
+.select__wrapper {
+  width: 236px;
+}
+
+.input__icon__wrapper {
+  width: min-content;
+  border-bottom: 1px solid styles.$theme;
+
+  & fa-icon {
+    color: styles.$white;
+  }
+}
+
+.rows__wrapper {
+  width: 55px;
 }
 
 // ----- PAGINATION -----
 .my-pagination ::ng-deep .ngx-pagination {
+  padding: 0;
 
   & li {
 
