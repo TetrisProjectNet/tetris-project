@@ -49,6 +49,10 @@ $red: #ff0000;
   color: $gold;
 }
 
+.h-min-content {
+  height: min-content;
+}
+
 .animate__animated {
   visibility: visible !important;
 }
