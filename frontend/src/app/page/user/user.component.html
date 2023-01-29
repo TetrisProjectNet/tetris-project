@@ -13,14 +13,14 @@
     </div>-->
 
   <!-- Add new -->
-  <div class="card card-plain col-xl-10 offset-xl-1 m-3 mx-xl-0">
-    <button [routerLink]="['/', entity, '']" type="button" class="add__new game-played btn fw-bold text-uppercase">
+  <div class="m-3">
+    <button [routerLink]="['/', entity, '']" type="button" class="add__new game-played btn fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
       <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
       Register user
     </button>
   </div>
 
-  <!-- Expert options -->
+  <!-- Display options -->
   <section class="col-xl-10 offset-xl-1 d-flex flex-row justify-content-between pe-3 my-4">
     <div class="d-flex flex-column flex-md-row ms-3">
       <div class="d-flex flex-row me-md-3">
@@ -28,11 +28,17 @@
           <fa-icon class="text-center" [icon]="faKey"></fa-icon>
         </div>
         <div class="select__wrapper form-group my-0">
-          <select #inputRef class="form-select custom-select col-12" name="key" required (focus)="keyFocusToggler($event)"
-            (blur)="keyFocusToggler($event)">
+          <select #inputRef [(ngModel)]="filterKey" class="form-select custom-select col-12" name="key" required
+            (focus)="keyFocusToggler($event)" (blur)="keyFocusToggler($event)">
             <option selected value=""></option>
-            <option value="player">Player</option>
-            <option value="admin">Admin</option>
+            <option value="id">Id</option>
+            <option value="username">Username</option>
+            <option value="email">Email</option>
+            <option value="coins">Coins</option>
+            <option value="joinDate">Join date</option>
+            <option value="lastOnlineDate">Last online</option>
+            <option value="role">Role</option>
+            <option value="banned">Banned</option>
           </select>
           <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
             <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
@@ -46,7 +52,7 @@
           <fa-icon class="text-center" [icon]="faFilter"></fa-icon>
         </div>
         <div class="phrase__wrapper form-group m-0">
-          <input #inputRef class="form-control" name="phrase" type="text" (focus)="phraseFocusToggler($event)"
+          <input #inputRef [(ngModel)]="phrase" class="form-control" name="phrase" type="text" (focus)="phraseFocusToggler($event)"
             (blur)="phraseFocusToggler($event)">
           <label class="form-label" [class]="phraseClass">Filter</label>
         </div>
@@ -114,7 +120,7 @@
               </button>
             </td>
           </tr> -->
-        <tr *ngFor="let user of list | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
+        <tr *ngFor="let user of list | filter:phrase:filterKey | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
           <td>{{ user.id }}</td>
           <td>{{ user.username }}</td>
           <td>{{ user.email }}</td>
@@ -122,7 +128,7 @@
           <td>{{ user.lastOnlineDate }}</td>
           <td>{{ user.scores }}</td>
           <td>{{ user.coins }}</td>
-          <td>{{ user.shopItems }}</td>
+          <td> <p *ngFor="let index of user.shopItems">{{ index.title }}</p> </td>
           <td>{{ user.role }}</td>
           <td>
             <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"

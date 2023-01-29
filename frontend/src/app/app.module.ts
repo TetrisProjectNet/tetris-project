@@ -28,6 +28,7 @@ import { VerificationComponent } from './page/verification/verification.componen
 import { NgOtpInputModule } from 'ng-otp-input';
 import { EmailHiderPipe } from './pipe/email-hider.pipe';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     NewPasswordComponent,
     ShopItemEditorComponent,
     VerificationComponent,
-    EmailHiderPipe
+    EmailHiderPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

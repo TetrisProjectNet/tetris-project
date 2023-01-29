@@ -23,7 +23,9 @@
                 </a>
               </p>
               <div class="collapse" id="shop-items">
-                {{ user.shopItems }}
+                <ul class="mb-0 mt-3">
+                  <li *ngFor="let index of user.shopItems" class="mb-0 mt-0">{{ index.title }}</li>
+                </ul>
               </div>
             </div>
 

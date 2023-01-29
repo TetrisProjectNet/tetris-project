@@ -1,5 +1,9 @@
 @use '../../../styles.scss' as styles;
 
+main {
+  font-size: 14px;
+}
+
 .admin-view {
   &__wrapper {
     height: 2rem;
@@ -57,11 +61,11 @@
 .card::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%;
   height: 100%;
   background: styles.$darker;
-  transform: skewY(345deg);
+  transform: skewY(352deg);
   transition: 0.5s;
 }
 
@@ -77,9 +81,9 @@
   left: -0;
   font-family: game-played;
   font-weight: 600;
-  font-size: 5.2em;
+  font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.1);
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .card .imgBox {
@@ -107,7 +111,7 @@
 
 .card .contentBox {
   position: relative;
-  padding: 20px;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +124,7 @@
 }
 
 .card .contentBox h3 {
-  font-size: 18px;
+  font-size: 0.8rem;
   color: styles.$white;
   font-weight: 500;
   text-transform: uppercase;
@@ -132,7 +136,7 @@
 }
 
 .card .contentBox .price {
-  font-size: 24px;
+  font-size: 1rem;
   color: styles.$white;
   font-weight: 700;
   letter-spacing: 3px;
@@ -143,12 +147,13 @@
   position: relative;
   top: 100px;
   opacity: 0;
-  padding: 10px 30px;
-  margin-top: 15px;
+  padding: 0.4rem 1rem;
+  margin-top: 0.5rem;
   color: styles.$black;
   text-decoration: none;
   background: styles.$gold;
   border-radius: 30px;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.5s;
@@ -160,23 +165,23 @@
 }
 
 .mouse {
-  height: 300px;
+  height: 100px;
   width: auto;
 }
 
 .add-new__wrapper {
-  height: 320px;
+  height: 120px;
   width: auto;
 }
 
 .add-new__icon {
-  font-size: 6rem;
+  font-size: 3rem;
   transition: color 0.3s, filter 0.3s;
 }
 
 .add-new-card {
   & .contentBox .buy {
-    margin: 39px 0;
+    margin: 1.625rem 0;
   }
 
   &:hover .add-new__icon {

@@ -103,6 +103,9 @@ export class UserComponent implements OnInit {
   list$ = this.userService.getAll();
   entity = 'user';
 
+  phrase: string = '';
+  filterKey: string = '';
+
   p: number = 1;
   itemsPerPage: number = 10;
 
