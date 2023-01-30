@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { faBars, faCoins, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { FaConfig } from '@fortawesome/angular-fontawesome';
+import { faBars, faCircleUser, faCoins, faRightFromBracket, faRightToBracket, faUser, faUserGear, faUserShield } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -10,8 +11,14 @@ import { faBars, faCoins, faRightToBracket } from '@fortawesome/free-solid-svg-i
 export class HeaderComponent implements OnInit {
 
   faRightToBracket = faRightToBracket;
+  faRightFromBracket = faRightFromBracket;
   faBars = faBars;
   faCoins = faCoins;
+  faCircleUser = faCircleUser;
+  faUser = faUser;
+  faUserGear = faUserGear;
+  faUserShield = faUserShield;
+
   coins = 100;
 
   className: string = '';
@@ -33,7 +40,11 @@ export class HeaderComponent implements OnInit {
     // }
   }
 
-  constructor() {}
+  constructor(
+    faConfig: FaConfig
+  ) {
+    faConfig.fixedWidth = true;
+  }
 
   ngOnInit(): void {}
 }

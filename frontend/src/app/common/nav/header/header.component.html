@@ -18,9 +18,9 @@
 </nav> -->
 
 <nav class="navbar fixed-top navbar-expand-lg bg-dark" [class]="className">
-  <div class="container-fluid">
+  <div class="container-fluid justify-content-start">
     <a class="navbar-brand active" [routerLink]="['/home']" routerLinkActive="active-link"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="small">
         Menu </span><span class="small bold"><fa-icon [icon]="faBars"></fa-icon>
       </span>
@@ -51,6 +51,7 @@
         <a class="nav-item coins d-flex align-items-center me-auto me-lg-0" [routerLink]="['/shop']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
           {{ coins }}<fa-icon class="ms-1 me-3" [icon]="faCoins"></fa-icon>
         </a>
+
         <div class="nav-item content__item my-2 my-lg-0">
           <button class="button button--anthe" [routerLink]="['/login']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
             <span>
@@ -60,13 +61,44 @@
         </div>
       </div>
 
-
       <!-- <button class="register__button" role="button" [routerLink]="['/login']">
         <span *ngIf="(user$ | async)">Kijelentkezés</span>
         <span *ngIf="!(user$ | async)">Bejelentkezés</span>
       </button> -->
-
     </div>
+
+    <div class="dropdown my-auto">
+      <a class="nav-link dropdown-toggle ps-0" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <fa-icon class="profile__icon fa-xl" [icon]="faCircleUser"></fa-icon>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+        <li class="my-2">
+          <p class="dropdown-item-text"><fa-icon class="me-3 fa-lg" [icon]="faUser"></fa-icon>Username</p>
+          <hr class="mx-3">
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">
+            <fa-icon class="me-3" [icon]="faUserGear"></fa-icon>
+            Profile
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">
+            <fa-icon class="me-3" [icon]="faUserShield"></fa-icon>
+            Privacy
+          </a>
+        </li>
+        <li>
+          <!-- <hr class="mx-3 mb-2 mt-3"> -->
+          <button class="button button--anthe mx-3 mt-3 mb-2" [routerLink]="['/home']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            <span class="d-flex">
+              Logout <fa-icon class="login__icon ms-1" [icon]="faRightFromBracket"></fa-icon>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </nav>
 
