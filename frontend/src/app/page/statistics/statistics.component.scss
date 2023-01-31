@@ -1,0 +1,95 @@
+@use '../../../styles'as styles;
+
+.wrapper {
+  // padding: 3rem 0;
+  font-family: verdana;
+}
+
+.table {
+  color: styles.$white;
+
+  // &-responsive {
+  //   min-height: 630px;
+  // }
+}
+
+// TH
+thead {
+  // background-color: rgba(0, 152, 121, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: sticky;
+  top: 0;
+  border: none !important; // bootstrap
+  height: 50px;
+
+  & th {
+    border: none;
+    margin: auto 0;
+    vertical-align: middle;
+
+    &:not(:last-child) {
+      cursor: pointer;
+      font-weight: 300;
+    }
+
+    &:hover:not(:last-child) {
+      // box-shadow: rgba(0, 255, 255, 7) 0px 50px 26px -28px inset;
+      // box-shadow: rgba(0, 255, 255, 7) 0px -40px 40px -42px inset;
+      box-shadow: rgba(0, 255, 255, 7) 0px -40px 26px -28px inset;
+    }
+
+    &:first-child {
+      border-top-left-radius: 0.6rem;
+    }
+
+    &:last-child {
+      border-top-right-radius: 0.6rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1; // Add a z-index below z-index on TD so you can still select data from your table rows :)
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      border-bottom: thin solid transparent;
+      border-image: radial-gradient(ellipse at center, rgba(styles.$theme, 0.9) 70%, rgba(0, 0, 0, 0) 100%);
+      border-image-slice: 1;
+    }
+
+  }
+}
+
+tbody {
+  border-top: none !important; // bootstrap
+
+  & tr {
+    position: relative; // to contain the ::after element within the table-row
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1; // Add a z-index below z-index on TD so you can still select data from your table rows :)
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      border-bottom: thin solid transparent;
+      border-image: radial-gradient(ellipse at center, rgba(styles.$theme, 0.9) 70%, rgba(0, 0, 0, 0) 100%);
+      border-image-slice: 1;
+    }
+
+    & td {
+      position: relative; // needed to apply a z-index
+      z-index: 2; // needs to be higher than the z-index on the tr::after element
+      border: none;
+    }
+  }
+}

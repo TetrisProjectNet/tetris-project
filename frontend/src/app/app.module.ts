@@ -29,6 +29,7 @@ import { NgOtpInputModule } from 'ng-otp-input';
 import { EmailHiderPipe } from './pipe/email-hider.pipe';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { FilterPipe } from './pipe/filter.pipe';
+import { SorterPipe } from './pipe/sorter.pipe';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { FilterPipe } from './pipe/filter.pipe';
     ShopItemEditorComponent,
     VerificationComponent,
     EmailHiderPipe,
-    FilterPipe
+    FilterPipe,
+    SorterPipe
   ],
   imports: [
     BrowserModule,

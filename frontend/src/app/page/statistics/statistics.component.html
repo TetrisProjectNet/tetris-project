@@ -1,1 +1,84 @@
-<p>statistics works!</p>
+<div *ngIf="list$ | async as list"  class="container d-flex justify-content-center">
+
+  <div class="col-4 my-4">
+    <table class="table table-sm m-0">
+      <caption class="text-center game-played">
+        Top players
+      </caption>
+      <thead>
+        <tr>
+          <!-- <th *ngFor="let col of columns" scope="col" (click)="onColumnSelect(col.key)">
+          <div class="d-flex flex-row"><i class="fa fa-sort mt-1 me-1"></i> {{col.title}}</div>
+        </th> -->
+          <th class="text-center" colspan="4">SINGLE GAME</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of list | sorter:'scores':false:10; index as i">
+          <td *ngIf="i == 0" class="text-center py-2">
+            <fa-icon class="fa-lg gold-text" [icon]="faStar"></fa-icon>
+          </td>
+          <td *ngIf="i == 1" class="text-center py-2">
+            <fa-icon class="silver-text" [icon]="faStar"></fa-icon>
+          </td>
+          <td *ngIf="i == 2" class="text-center py-2">
+            <fa-icon class="fa-sm bronze-text" [icon]="faStar"></fa-icon>
+          </td>
+          <td *ngIf="i > 2" class="text-center py-2">
+            <fa-icon class="fa-xs" [icon]="faStar"></fa-icon>
+          </td>
+          <td class="py-2"><p class="w-50 mb-0 text-end ">{{ i+1 }}</p></td>
+          <td class="py-2">{{ user.username }}</td>
+          <td class="py-2"><p class="w-50 mb-0 text-end ">{{ user.scores }}</p></td>
+        <!-- <td *ngFor="let col of columns">
+          <span *ngIf="!col.htmlOutput; else elseBlock">
+            <span *ngIf="col.key !== 'image'">
+              {{ row[col.key] | xPipe:col.pipes:col.pipeArgs }}
+            </span>
+            <span *ngIf="col.key === 'image'">
+              <img class="image" [src]="row[col.key]">
+            </span>
+          </span>
+          <ng-template #elseBlock>
+            <span [innerHTML]="col.htmlOutput(row[col.key])"></span>
+
+          </ng-template>
+        </td>
+        <td>
+          <button (click)="onSelect(row)" class="m-1 edit__button btn">
+            <i class="fa fa-pencil"></i>
+          </button>
+          <button (click)="onDelete(row)" class="m-1 delete__button btn">
+            <i class="fa fa-trash"></i>
+          </button>
+        </td> -->
+      </tr>
+        <!-- <tr *ngFor="let user of list | filter:phrase:filterKey | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
+      <td>{{ user.id }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.joinDate }}</td>
+      <td>{{ user.lastOnlineDate }}</td>
+      <td>{{ user.scores }}</td>
+      <td>{{ user.coins }}</td>
+      <td> <p *ngFor="let index of user.shopItems">{{ index.title }}</p> </td>
+      <td>{{ user.role }}</td>
+      <td>
+        <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
+          type="checkbox" name="" />
+      </td>
+      <td>
+        <div class="admin__buttons d-flex flex-row">
+          <button (click)="onEditOne(user)" class="m-1 edit__button btn">
+            <fa-icon [icon]="faUserPen"></fa-icon>
+          </button>
+          <button (click)="onDeleteOne(user.id)" class="m-1 delete__button btn">
+            <fa-icon [icon]="faUserMinus"></fa-icon>
+          </button>
+        </div>
+      </td>
+    </tr> -->
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -34,6 +34,8 @@ $darker: #191919;
 $dark: #212529;
 $gray: #aaa;
 $gold: #ffd700;
+$silver: #C0C0C0;
+$bronze: #b08d57;
 $red: #ff0000;
 
 // ----- GLOBAL CLASSES ------
@@ -59,4 +61,16 @@ $red: #ff0000;
 
 .hide-on-init {
   visibility: hidden;
+}
+
+.gold-text {
+  color: $gold;
+}
+
+.silver-text {
+  color: $silver;
+}
+
+.bronze-text {
+  color: $bronze;
 }

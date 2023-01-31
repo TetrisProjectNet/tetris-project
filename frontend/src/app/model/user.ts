@@ -12,7 +12,7 @@ export class User {
   // ----- STATISZTIKÁKHOZ -----
   joinDate: string = '';
   lastOnlineDate: string = '';
-  scores?: string[] = [];
+  scores?: number[] = [];
 
   // ----- SHOP -----
   coins: number | string = '';  //  lehet default 100 mondjuk
