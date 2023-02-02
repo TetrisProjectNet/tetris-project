@@ -2,6 +2,8 @@ import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular
 import { Router } from '@angular/router';
 import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
 import {
+  faArrowDownAZ,
+  faArrowDownZA,
   faBars,
   faFilter,
   faGavel,
@@ -15,6 +17,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { delay } from 'rxjs';
 import { User } from 'src/app/model/user';
+import { ConfigService } from 'src/app/service/config.service';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
@@ -101,10 +104,15 @@ export class UserComponent implements OnInit {
   @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
 
   list$ = this.userService.getAll();
+  columns = this.config.userTableColumns;
   entity = 'user';
 
   phrase: string = '';
   filterKey: string = '';
+
+  columnHead: string = '';
+  direction: boolean = false;
+  sortColumn: string = '';
 
   p: number = 1;
   itemsPerPage: number = 10;
@@ -125,8 +133,11 @@ export class UserComponent implements OnInit {
   faSquareCaretDown = faSquareCaretDown;
   faKey = faKey;
   faTableColumns = faTableColumns;
+  faArrowDownAZ = faArrowDownAZ;
+  faArrowDownZA = faArrowDownZA;
 
   constructor(
+    private config: ConfigService,
     private userService: UserService,
     private router: Router
   ) {}
@@ -236,4 +247,8 @@ export class UserComponent implements OnInit {
     this.keyClass = this.focusToggler(event, this.keyClass)
   }
 
+  onColumnSelect(columnHead: string): void {
+    this.sortColumn = columnHead;
+    this.direction = !this.direction;
+  }
 }

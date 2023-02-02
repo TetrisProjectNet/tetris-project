@@ -27,6 +27,7 @@ thead {
     border: none;
     margin: auto 0;
     vertical-align: middle;
+    padding: 1.3rem 0rem;
 
     &:not(:last-child) {
       cursor: pointer;
@@ -40,10 +41,12 @@ thead {
     }
 
     &:first-child {
+      padding-left: 1.5rem;
       border-top-left-radius: 0.6rem;
     }
 
     &:last-child {
+      // padding-right: 1.5rem;
       border-top-right-radius: 0.6rem;
     }
 
@@ -58,6 +61,11 @@ thead {
       border-bottom: thin solid transparent;
       border-image: radial-gradient(ellipse at center, rgba(styles.$theme, 0.9) 70%, rgba(0, 0, 0, 0) 100%);
       border-image-slice: 1;
+    }
+
+    & fa-icon {
+      // text-shadow: 0px 0px 5px styles.$theme;
+      filter: drop-shadow(0px 0px 4px rgba(styles.$theme, 1));
     }
 
   }
@@ -90,6 +98,14 @@ tbody {
       position: relative; // needed to apply a z-index
       z-index: 2; // needs to be higher than the z-index on the tr::after element
       border: none;
+
+      &:first-child {
+        padding-left: 1.5rem;
+      }
+
+      // &:last-child {
+      //   padding-right: 1.5rem;
+      // }
     }
   }
 }

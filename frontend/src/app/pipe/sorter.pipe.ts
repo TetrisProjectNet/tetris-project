@@ -5,13 +5,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SorterPipe implements PipeTransform {
 
-  transform(value: any[] | null, column: string, direct: boolean, length?: number, type?: string): any[] | null {
+  transform(value: any[] | null, column: string, direct: boolean, length?: number, type?: string): any {
+
     if (!Array.isArray(value) || !column) {
       return value;
     }
 
     if (column === 'scores' && length) {
-
       // single game
       if (type === 'single') {
         value.map((item) => {
@@ -40,7 +40,6 @@ export class SorterPipe implements PipeTransform {
         if (a[column] === b[column]) {
           return 0;
         }
-
         // nulls sort after anything else
         if (a[column] === undefined) {
           return 1;
@@ -52,9 +51,19 @@ export class SorterPipe implements PipeTransform {
         return b[column] - a[column];
       })
       .slice(0, length);
+
     }
 
     return value.sort((a: any, b: any) => {
+      if (Array.isArray(a[column]) && Array.isArray(b[column])) {
+        const aLength = a[column].length;
+        const bLength = b[column].length;
+        if (direct) {
+          return aLength - bLength;
+        }
+        return bLength - aLength;
+      }
+
       if (typeof a[column] === 'number' && typeof b[column] === 'number') {
         // ascending
         if (direct) {

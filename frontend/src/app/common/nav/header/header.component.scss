@@ -85,7 +85,7 @@ a:not(.dropdown-toggle) {
   font-size: larger;
 
   &:hover {
-    color: styles.$white;
+    color: styles.$white !important;
   }
 }
 
