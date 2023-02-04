@@ -14,7 +14,8 @@
 
   <!-- Add new -->
   <div class="m-3">
-    <button [routerLink]="['/', entity, '']" type="button" class="add__new game-played btn fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+    <button [routerLink]="['/', entity, '']" type="button"
+      class="add__new game-played btn fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
       <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
       Register user
     </button>
@@ -52,8 +53,8 @@
           <fa-icon class="text-center" [icon]="faFilter"></fa-icon>
         </div>
         <div class="phrase__wrapper form-group m-0">
-          <input #inputRef [(ngModel)]="phrase" class="form-control" name="phrase" type="text" (focus)="phraseFocusToggler($event)"
-            (blur)="phraseFocusToggler($event)">
+          <input #inputRef [(ngModel)]="phrase" class="form-control" name="phrase" type="text"
+            (focus)="phraseFocusToggler($event)" (blur)="phraseFocusToggler($event)">
           <label class="form-label" [class]="phraseClass">Filter</label>
         </div>
       </div>
@@ -79,7 +80,8 @@
       </caption>
       <thead>
         <tr>
-          <th *ngFor="let col of columns" scope="col" (click)="onColumnSelect(col.key)">
+          <th *ngFor="let col of columns; index as i" scope="col" (click)="onColumnSelect(col.key)" draggable="true"
+            (dragstart)="dragStartColumn(i)" (dragover)="allowDrop($event)" (drop)="dropColumn(i)">
             <div #thContent class="d-flex flex-row ">
               <fa-icon *ngIf="sortColumn==col.key && direction" class="me-1" [icon]="faArrowDownAZ"></fa-icon>
               <fa-icon *ngIf="sortColumn==col.key && !direction" class="me-1" [icon]="faArrowDownZA"></fa-icon>
@@ -90,38 +92,43 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let user of list | filter:phrase:filterKey | sorter:sortColumn:direction | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
-          <td>{{ user.id }}</td>
-          <td>{{ user.username }}</td>
-          <td>{{ user.email }}</td>
-          <td>{{ user.joinDate }}</td>
-          <td>{{ user.lastOnlineDate }}</td>
-          <td>{{ user.scores.length }}</td>
-          <td>{{ user.coins }}</td>
-          <!-- <td> <p *ngFor="let index of user.shopItems">{{ index.title }}</p> </td> -->
-          <td> {{ user.shopItems.length }}</td>
-          <td> {{ user.friends.length }}</td>
-          <td>{{ user.role }}</td>
-          <td>
-            <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
-              type="checkbox" name="" />
-          </td>
-          <!-- {{ user.banned }} <br> -->
+        <tr *ngFor="let user of list | filter:phrase:filterKey | sorter:sortColumn:direction
+          | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
+          <ng-container *ngFor="let col of columns; index as i;" draggable="true" (dragstart)="dragStartColumn(i)"
+            (dragover)="allowDrop($event)" (drop)="dropColumn(i)">
+            <td *ngIf="col.key!=='scores' && col.key!=='shopItems' && col.key!=='friends' && col.key!=='banned'">{{ user[col.key] }}</td>
+            <td *ngIf="col.key==='scores' || col.key==='shopItems' || col.key==='friends'">{{ user[col.key].length }}</td>
+            <td *ngIf="col.key==='banned'">
+              <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
+                type="checkbox" name="" />
+            </td>
+            <!-- <td>{{ user.scores.length }}</td>
+            <td> {{ user.shopItems.length }}</td>
+            <td> {{ user.friends.length }}</td> -->
+            <!-- <td>{{ user.id }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.joinDate }}</td>
+            <td>{{ user.lastOnlineDate }}</td>
+            <td>{{ user.scores.length }}</td>
+            <td>{{ user.coins }}</td> -->
+            <!-- <td> <p *ngFor="let index of user.shopItems">{{ index.title }}</p> </td> -->
+            <!-- <td> {{ user.shopItems.length }}</td>
+            <td> {{ user.friends.length }}</td>
+            <td>{{ user.role }}</td> -->
+            <!-- <td>
+              <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
+                type="checkbox" name="" />
+            </td> -->
+            <!-- {{ user.banned }} <br> -->
+          </ng-container>
           <td>
             <div class="admin__buttons d-flex flex-row">
-              <!-- <fa-icon [icon]="faGavel"></fa-icon> -->
-              <!-- <button *ngIf="!user.banned" (click)="onBanOne(user.id)" class="m-1 ban__button btn">
-                <fa-icon [icon]="faUserXmark"></fa-icon>
-              </button>
-              <button *ngIf="user.banned" (click)="onUnbanOne(user.id)" class="m-1 unban__button btn">
-                <fa-icon [icon]="faUserCheck"></fa-icon>
-              </button> -->
               <button (click)="onEditOne(user)" class="m-1 edit__button btn">
                 <fa-icon [icon]="faUserPen"></fa-icon>
               </button>
               <button (click)="onDeleteOne(user.id)" class="m-1 delete__button btn">
                 <fa-icon [icon]="faUserMinus"></fa-icon>
-                <!-- <fa-icon [icon]="faUserXmark"></fa-icon> -->
               </button>
             </div>
           </td>

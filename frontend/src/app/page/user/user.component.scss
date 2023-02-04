@@ -22,6 +22,7 @@ thead {
   top: 0;
   border: none !important; // bootstrap
   height: 50px;
+  // touch-action: none;
 
   & th {
     border: none;

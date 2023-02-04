@@ -114,6 +114,8 @@ export class UserComponent implements OnInit {
   direction: boolean = false;
   sortColumn: string = '';
 
+  draggedColumnIndex: number = 0;
+
   p: number = 1;
   itemsPerPage: number = 10;
 
@@ -250,5 +252,27 @@ export class UserComponent implements OnInit {
   onColumnSelect(columnHead: string): void {
     this.sortColumn = columnHead;
     this.direction = !this.direction;
+  }
+
+  public arrayMove(arr: any[], from: number, to: any) {
+    console.log('Arr: ', arr);
+    console.log('to: ', to);
+    console.log('from: ', from);
+    let cutOut = arr.splice(from, 1)[0]; // remove the dragged element at index 'from'
+    console.log('cutout: ', cutOut);
+    arr.splice(to, 0, cutOut);            // insert it at index 'to'
+    console.log('arr: ', arr);
+  }
+
+  public dragStartColumn(index: any) {
+    this.draggedColumnIndex = index;
+  }
+
+  public allowDrop(event: any) {
+    event.preventDefault();
+  }
+
+  public dropColumn(index: any) {
+    this.arrayMove(this.columns, this.draggedColumnIndex, index);
   }
 }
