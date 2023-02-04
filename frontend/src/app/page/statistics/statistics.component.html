@@ -1,6 +1,6 @@
-<div  class="container d-flex justify-content-center p-4">
+<div  class="container d-flex flex-column flex-lg-row align-items-center justify-content-center p-4">
   <!-- Single game -->
-  <div *ngIf="list$ | async as list" class="col-4 d-flex align-items-center p-3">
+  <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 d-flex align-items-center p-3 mb-5" data-aos="fade-up" data-aos-duration="900">
     <table class="table table-sm m-0">
       <caption class="text-center game-played">
         Top 5 player
@@ -32,7 +32,7 @@
     </table>
   </div>
   <!-- All games -->
-  <div *ngIf="list$ | async as list" class="col-4">
+  <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 mb-5" data-aos="fade-up">
     <table class="table table-sm m-0">
       <caption class="text-center game-played">
         Top 10 player
@@ -64,7 +64,7 @@
     </table>
   </div>
   <!-- AVG of games -->
-  <div *ngIf="list$ | async as list" class="col-4 d-flex align-items-center p-3">
+  <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 d-flex align-items-center p-3" data-aos="fade-up" data-aos-duration="900">
     <table class="table table-sm m-0">
       <caption class="text-center game-played">
         Top 5 player
