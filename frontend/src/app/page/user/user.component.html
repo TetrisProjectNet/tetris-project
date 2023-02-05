@@ -81,7 +81,7 @@
       <thead>
         <tr>
           <th *ngFor="let col of columns; index as i" scope="col" (click)="onColumnSelect(col.key)" draggable="true"
-            (dragstart)="dragStartColumn(i)" (dragover)="allowDrop($event)" (drop)="dropColumn(i)">
+            (dragstart)="dragStartColumn(i)" (dragover)="allowDrop($event)" (drop)="dropColumn(i)" [class]="draggingClass">
             <div #thContent class="d-flex flex-row ">
               <fa-icon *ngIf="sortColumn==col.key && direction" class="me-1" [icon]="faArrowDownAZ"></fa-icon>
               <fa-icon *ngIf="sortColumn==col.key && !direction" class="me-1" [icon]="faArrowDownZA"></fa-icon>
@@ -94,8 +94,8 @@
       <tbody>
         <tr *ngFor="let user of list | filter:phrase:filterKey | sorter:sortColumn:direction
           | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
-          <ng-container *ngFor="let col of columns; index as i;" draggable="true" (dragstart)="dragStartColumn(i)"
-            (dragover)="allowDrop($event)" (drop)="dropColumn(i)">
+          <ng-container *ngFor="let col of columns; index as i;" draggable="true"
+          (dragstart)="dragStartColumn(i)" (dragover)="allowDrop($event)" (drop)="dropColumn(i)">
             <td *ngIf="col.key!=='scores' && col.key!=='shopItems' && col.key!=='friends' && col.key!=='banned'">{{ user[col.key] }}</td>
             <td *ngIf="col.key==='scores' || col.key==='shopItems' || col.key==='friends'">{{ user[col.key].length }}</td>
             <td *ngIf="col.key==='banned'">

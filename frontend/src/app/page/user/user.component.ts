@@ -115,6 +115,7 @@ export class UserComponent implements OnInit {
   sortColumn: string = '';
 
   draggedColumnIndex: number = 0;
+  draggingClass: string = '';
 
   p: number = 1;
   itemsPerPage: number = 10;
@@ -255,20 +256,17 @@ export class UserComponent implements OnInit {
   }
 
   public arrayMove(arr: any[], from: number, to: any) {
-    console.log('Arr: ', arr);
-    console.log('to: ', to);
-    console.log('from: ', from);
     let cutOut = arr.splice(from, 1)[0]; // remove the dragged element at index 'from'
-    console.log('cutout: ', cutOut);
     arr.splice(to, 0, cutOut);            // insert it at index 'to'
-    console.log('arr: ', arr);
   }
 
   public dragStartColumn(index: any) {
+    this.draggingClass = 'dragged__item';
     this.draggedColumnIndex = index;
   }
 
   public allowDrop(event: any) {
+    this.draggingClass = '';
     event.preventDefault();
   }
 
