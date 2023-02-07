@@ -30,6 +30,7 @@ import { EmailHiderPipe } from './pipe/email-hider.pipe';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { FilterPipe } from './pipe/filter.pipe';
 import { SorterPipe } from './pipe/sorter.pipe';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { SorterPipe } from './pipe/sorter.pipe';
     FormsModule,
     NgxPaginationModule,
     NgOtpInputModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,99 +1,127 @@
-<div  class="container d-flex flex-column flex-lg-row align-items-center justify-content-center p-4">
-  <!-- Single game -->
-  <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 d-flex align-items-center p-3 mb-5" data-aos="fade-up" data-aos-duration="900">
-    <table class="table table-sm m-0">
-      <caption class="text-center game-played">
-        Top 5 players
-      </caption>
-      <thead>
-        <tr>
-          <th class="text-center" colspan="4">SINGLE GAME</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let user of list | sorter:'scores':false:5:'single'; index as i">
-          <td *ngIf="i == 0" class="text-center py-2">
-            <fa-icon class="fa-lg gold-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i == 1" class="text-center py-2">
-            <fa-icon class="silver-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i == 2" class="text-center py-2">
-            <fa-icon class="fa-sm bronze-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i > 2" class="text-center py-2">
-            <fa-icon class="fa-2xs" [icon]="faStar"></fa-icon>
-          </td>
-          <td class="py-2"><p class="w-50 mb-0 text-end ">{{ i+1 }}</p></td>
-          <td class="py-2">{{ user.username }}</td>
-          <td class="py-2"><p class="w-50 mb-0 text-end ">{{ user.scores }}</p></td>
-      </tr>
-      </tbody>
-    </table>
+<div class="container d-flex flex-column align-items-center justify-content-center">
+
+  <div class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-center p-4">
+    <!-- Single game -->
+    <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 d-flex align-items-center p-3 mb-5"
+      data-aos="fade-up" data-aos-duration="900">
+      <table class="table table-sm m-0">
+        <caption class="text-center game-played">
+          Top 5 players
+        </caption>
+        <thead>
+          <tr>
+            <th class="text-center" colspan="4">SINGLE GAME</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of list | sorter:'scores':false:5:'single'; index as i">
+            <td *ngIf="i == 0" class="text-center py-2">
+              <fa-icon class="fa-lg gold-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i == 1" class="text-center py-2">
+              <fa-icon class="silver-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i == 2" class="text-center py-2">
+              <fa-icon class="fa-sm bronze-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i > 2" class="text-center py-2">
+              <fa-icon class="fa-2xs" [icon]="faStar"></fa-icon>
+            </td>
+            <td class="py-2">
+              <p class="w-50 mb-0 text-end ">{{ i+1 }}</p>
+            </td>
+            <td class="py-2">{{ user.username }}</td>
+            <td class="py-2">
+              <p class="w-50 mb-0 text-end ">{{ user.scores }}</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- All games -->
+    <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 mb-5" data-aos="fade-up">
+      <table class="table table-sm m-0">
+        <caption class="text-center game-played">
+          Top 10 players
+        </caption>
+        <thead>
+          <tr>
+            <th class="text-center" colspan="4">ALL GAMES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of list | sorter:'scores':false:10:'all'; index as i">
+            <td *ngIf="i == 0" class="text-center py-2">
+              <fa-icon class="fa-lg gold-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i == 1" class="text-center py-2">
+              <fa-icon class="silver-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i == 2" class="text-center py-2">
+              <fa-icon class="fa-sm bronze-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i > 2" class="text-center py-2">
+              <fa-icon class="fa-2xs" [icon]="faStar"></fa-icon>
+            </td>
+            <td class="py-2">
+              <p class="w-50 mb-0 text-end ">{{ i+1 }}</p>
+            </td>
+            <td class="py-2">{{ user.username }}</td>
+            <td class="py-2">
+              <p class="w-50 mb-0 text-end ">{{ user.scores }}</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- AVG of games -->
+    <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 d-flex align-items-center mb-5 p-3"
+      data-aos="fade-up" data-aos-duration="900">
+      <table class="table table-sm m-0">
+        <caption class="text-center game-played">
+          Top 5 players
+        </caption>
+        <thead>
+          <tr>
+            <th class="text-center" colspan="4">AVG OF GAMES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of list | sorter:'scores':false:5:'avg'; index as i">
+            <td *ngIf="i == 0" class="text-center py-2">
+              <fa-icon class="fa-lg gold-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i == 1" class="text-center py-2">
+              <fa-icon class="silver-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i == 2" class="text-center py-2">
+              <fa-icon class="fa-sm bronze-text" [icon]="faStar"></fa-icon>
+            </td>
+            <td *ngIf="i > 2" class="text-center py-2">
+              <fa-icon class="fa-2xs" [icon]="faStar"></fa-icon>
+            </td>
+            <td class="py-2">
+              <p class="w-50 mb-0 text-end ">{{ i+1 }}</p>
+            </td>
+            <td class="py-2">{{ user.username }}</td>
+            <td class="py-2">
+              <p class="w-50 mb-0 text-start mx-auto">{{ user.scores }}</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <!-- All games -->
-  <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 mb-5" data-aos="fade-up">
-    <table class="table table-sm m-0">
-      <caption class="text-center game-played">
-        Top 10 players
-      </caption>
-      <thead>
-        <tr>
-          <th class="text-center" colspan="4">ALL GAMES</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let user of list | sorter:'scores':false:10:'all'; index as i">
-          <td *ngIf="i == 0" class="text-center py-2">
-            <fa-icon class="fa-lg gold-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i == 1" class="text-center py-2">
-            <fa-icon class="silver-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i == 2" class="text-center py-2">
-            <fa-icon class="fa-sm bronze-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i > 2" class="text-center py-2">
-            <fa-icon class="fa-2xs" [icon]="faStar"></fa-icon>
-          </td>
-          <td class="py-2"><p class="w-50 mb-0 text-end ">{{ i+1 }}</p></td>
-          <td class="py-2">{{ user.username }}</td>
-          <td class="py-2"><p class="w-50 mb-0 text-end ">{{ user.scores }}</p></td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-  <!-- AVG of games -->
-  <div *ngIf="list$ | async as list" class="col-12 col-md-8 col-lg-4 d-flex align-items-center mb-5 p-3" data-aos="fade-up" data-aos-duration="900">
-    <table class="table table-sm m-0">
-      <caption class="text-center game-played">
-        Top 5 players
-      </caption>
-      <thead>
-        <tr>
-          <th class="text-center" colspan="4">AVG OF GAMES</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let user of list | sorter:'scores':false:5:'avg'; index as i">
-          <td *ngIf="i == 0" class="text-center py-2">
-            <fa-icon class="fa-lg gold-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i == 1" class="text-center py-2">
-            <fa-icon class="silver-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i == 2" class="text-center py-2">
-            <fa-icon class="fa-sm bronze-text" [icon]="faStar"></fa-icon>
-          </td>
-          <td *ngIf="i > 2" class="text-center py-2">
-            <fa-icon class="fa-2xs" [icon]="faStar"></fa-icon>
-          </td>
-          <td class="py-2"><p class="w-50 mb-0 text-end ">{{ i+1 }}</p></td>
-          <td class="py-2">{{ user.username }}</td>
-          <td class="py-2"><p class="w-50 mb-0 text-start mx-auto">{{ user.scores }}</p></td>
-      </tr>
-      </tbody>
-    </table>
+
+  <div class="col-10 col-md-8 col-lg-4 pb-5">
+    <canvas *ngIf="loaded" baseChart
+      [type]="'pie'"
+      [datasets]="pieChartDatasets"
+      [labels]="pieChartLabels"
+      [options]="pieChartOptions"
+      [plugins]="pieChartPlugins"
+      [legend]="pieChartLegend">
+    </canvas>
   </div>
 
 </div>

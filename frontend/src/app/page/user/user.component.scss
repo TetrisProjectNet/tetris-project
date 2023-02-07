@@ -43,7 +43,8 @@ thead {
     border: none;
     margin: auto 0;
     vertical-align: middle;
-    padding: 1.3rem 0rem;
+    white-space: nowrap;
+    padding: 0 0.5rem;
 
     &:not(:last-child) {
       cursor: pointer;
@@ -53,7 +54,7 @@ thead {
     &:hover:not(:last-child) {
       // box-shadow: rgba(0, 255, 255, 7) 0px 50px 26px -28px inset;
       // box-shadow: rgba(0, 255, 255, 7) 0px -40px 40px -42px inset;
-      box-shadow: rgba(0, 255, 255, 7) 0px -40px 26px -28px inset;
+      // box-shadow: rgba(0, 255, 255, 7) 0px -40px 26px -28px inset;
     }
 
     &:first-child {
@@ -102,6 +103,7 @@ tbody {
       position: relative; // needed to apply a z-index
       z-index: 2; // needs to be higher than the z-index on the tr::after element
       border: none;
+      padding: 0.3rem 0.5rem;
 
       &:first-child {
         padding-left: 1.5rem;
@@ -435,3 +437,111 @@ option {
   background-color: transparent;
   cursor: ew-resize !important;
 }
+
+
+
+
+
+
+
+
+
+
+/* Reset */
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   margin: 0;
+//   min-height: 100vh;
+//   font-family: "Open Sans", sans-serif;
+//   font-size: clamp(1.2rem, 3vw, 3rem);
+//   font-weight: 700;
+//   background: #c1f7f5;
+// }
+
+// ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// a {
+//   color: inherit;
+//   text-decoration: none;
+// }
+
+/* Layout */
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// ul {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
+
+// li {
+//   margin: 0 2rem;
+// }
+
+/* Underline styles */
+th div {
+  // display: block;
+  position: relative;
+  padding: 1.3rem 0rem;
+  // padding: 0.2em 0;
+}
+
+th div::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 1rem;
+  background-color: styles.$theme;
+  opacity: 0;
+  transition: opacity 400ms, transform 400ms;
+}
+
+/* Fade in */
+
+// th:hover::after,
+// th:focus::after {
+//   opacity: 1;
+//   transform: translate3d(0, 0.2em, 0);
+// }
+
+/* Slide in */
+th div {
+  overflow: hidden;
+  // padding:
+}
+
+th div::after {
+  opacity: 1;
+  transform: translate3d(-110%, 0, 0);
+}
+
+th:hover div::after,
+th:focus div::after{
+  transform: translate3d(0, 0, 0);
+}
+
+/* Scale from center */
+// th div::after {
+//   opacity: 1;
+//   transform: scale(0);
+//   transform-origin: center;
+// }
+
+// th:hover div::after,
+// th:focus div::after{
+//   transform: scale(1);
+// }
