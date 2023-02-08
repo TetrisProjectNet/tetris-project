@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Tooltip } from 'bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend';
+
+  ngOnInit() {
+    Array.from(document.querySelectorAll('a[data-bs-toggle="tooltip"]'))
+    .forEach(tooltipNode => new Tooltip(tooltipNode))
+  }
 }
