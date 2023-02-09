@@ -1,0 +1,7 @@
+@use '../../../styles.scss' as styles;
+
+.focused {
+    transform: translateY(-145%);
+    font-size: .75em;
+    color: styles.$gray;
+}

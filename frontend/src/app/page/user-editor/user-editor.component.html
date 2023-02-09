@@ -67,7 +67,7 @@
           </div>
         </aside>
 
-        <form class="animate__animated animate__fadeInUp animate__faster col-md-6 col-xl-4 offset-xl-1"
+        <form class="default-form animate__animated animate__fadeInUp animate__faster col-md-6 col-xl-4 offset-xl-1"
           #userForm="ngForm" (ngSubmit)="onUpdate(userForm, user)">
 
           <div class="form-group">
@@ -83,6 +83,24 @@
             <label class="form-label" [class]="usernameClass">Username</label>
             <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
             <!-- <input class="form-control" name="username" [(ngModel)]="user.username" type="username"> -->
+          </div>
+          
+          <div class="form-group">
+            <app-floating-label-input
+              [data]="user.username"
+              [type]="'text'"
+              [name]="'username'"
+              [labelContent]="'Username'"
+            ></app-floating-label-input>
+          </div>
+          
+          <div class="form-group">
+            <app-floating-label-input
+              [data]="user.email"
+              [type]="'email'"
+              [name]="'email'"
+              [labelContent]="'E-mail'"
+            ></app-floating-label-input>
           </div>
 
           <div class="form-group">

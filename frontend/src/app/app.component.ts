@@ -20,7 +20,6 @@ export class AppComponent {
       elem.tooltips.forEach((tooltipNode: any) =>{  
         new Tooltip(tooltipNode.nativeElement);
       })
-
     })
   }
 

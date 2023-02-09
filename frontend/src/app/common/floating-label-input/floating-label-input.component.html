@@ -1,0 +1,3 @@
+<input #inputRef [(ngModel)]="data" class="form-control" [name]="name" [type]="type"
+(focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)">
+<label class="form-label" [class]="inputClass">{{ labelContent }}</label>
