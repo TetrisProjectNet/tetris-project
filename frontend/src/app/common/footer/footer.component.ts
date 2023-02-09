@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { faAngular, faGithub, faGoogle, faInstagram, faLinkedinIn, faSass, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faDatabase, faGamepad, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -32,6 +32,9 @@ import { FaConfig } from '@fortawesome/angular-fontawesome';
 })
 export class FooterComponent implements OnInit {
 
+  @ViewChildren('tooltipRef') tooltipElements!: QueryList<ElementRef>;  
+  tooltips: any;
+
   faGithub = faGithub;
   faLinkedinIn = faLinkedinIn;
   faTwitter = faTwitter;
@@ -59,6 +62,10 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit() {
+    this.tooltips = this.tooltipElements;
   }
 
   goToBottom() {

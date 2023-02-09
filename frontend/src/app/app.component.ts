@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { Tooltip } from 'bootstrap';
+import { FooterComponent } from './common/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,18 @@ import { Tooltip } from 'bootstrap';
 export class AppComponent {
   title = 'frontend';
 
+  @ViewChildren(FooterComponent) footerComp!:QueryList<FooterComponent>;
+
   ngOnInit() {
-    Array.from(document.querySelectorAll('a[data-bs-toggle="tooltip"]'))
-    .forEach(tooltipNode => new Tooltip(tooltipNode))
   }
+
+  ngAfterViewInit() {
+    this.footerComp.forEach(elem => {
+      elem.tooltips.forEach((tooltipNode: any) =>{  
+        new Tooltip(tooltipNode.nativeElement);
+      })
+
+    })
+  }
+
 }

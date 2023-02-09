@@ -491,10 +491,8 @@ option {
 
 /* Underline styles */
 th div {
-  // display: block;
   position: relative;
   padding: 1.3rem 0rem;
-  // padding: 0.2em 0;
 }
 
 th div::after {
@@ -521,7 +519,6 @@ th div::after {
 /* Slide in */
 th div {
   overflow: hidden;
-  // padding:
 }
 
 th div::after {
