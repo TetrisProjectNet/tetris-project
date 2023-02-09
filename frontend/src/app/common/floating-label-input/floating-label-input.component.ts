@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, QueryList, ViewChild, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-floating-label-input',
@@ -11,9 +11,13 @@ export class FloatingLabelInputComponent {
   @ViewChild('inputRef') input!: ElementRef;
 
   @Input() data: any;
+  // @Output() nameChange = new EventEmitter<number>();
   @Input() labelContent: string = '';
   @Input() name: string = '';
   @Input() type: string = '';
+  @Input() disabled: boolean = false;
+  @Input() required: boolean = true;
+  @Input() pattern: string = '';
 
   inputClass: string = '';
   selectedElement: any;

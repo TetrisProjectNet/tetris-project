@@ -115,6 +115,7 @@ export class UserEditorComponent {
   }
 
   onUpdate(form: NgForm, user: User): void {
+    console.log(form.value);
     this.clicked = true;
     if (user.id === 0) {
       this.userService.create(form.value).subscribe(

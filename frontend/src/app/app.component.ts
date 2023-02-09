@@ -17,7 +17,7 @@ export class AppComponent {
 
   ngAfterViewInit() {
     this.footerComp.forEach(elem => {
-      elem.tooltips.forEach((tooltipNode: any) =>{  
+      elem.tooltips.forEach((tooltipNode: any) => {
         new Tooltip(tooltipNode.nativeElement);
       })
     })
