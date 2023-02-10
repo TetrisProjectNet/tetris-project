@@ -10,8 +10,8 @@ export class FloatingLabelInputComponent {
   // @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
   @ViewChild('inputRef') input!: ElementRef;
 
-  @Input() data: any;
-  // @Output() nameChange = new EventEmitter<number>();
+  @Input() inputModel: any;
+  @Output() inputModelChange = new EventEmitter<any>();
   @Input() labelContent: string = '';
   @Input() name: string = '';
   @Input() type: string = '';

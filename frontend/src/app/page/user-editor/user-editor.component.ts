@@ -15,8 +15,7 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class UserEditorComponent {
 
-  // @ViewChild('inputRef') input!: ElementRef;
-  @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
+  // @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
 
   user$: Observable<User> = this.activatedRoute.params.pipe(
     switchMap(params => {
@@ -34,11 +33,11 @@ export class UserEditorComponent {
 
   clicked: boolean = false;
 
-  usernameClass: string = '';
-  emailClass: string = '';
-  roleClass: string = '';
-  coinsClass: string = '';
-  selectedElement: any;
+  // usernameClass: string = '';
+  // emailClass: string = '';
+  // roleClass: string = '';
+  // coinsClass: string = '';
+  // selectedElement: any;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -51,68 +50,68 @@ export class UserEditorComponent {
 
   ngOnInit(): void { }
 
-  ngAfterViewInit() {
-    this.inputs.changes.subscribe(sub => {
-      sub.toArray().forEach((element: any) => {
-        console.log(element.nativeElement);
-        setTimeout(() => {
+  // ngAfterViewInit() {
+  //   this.inputs.changes.subscribe(sub => {
+  //     sub.toArray().forEach((element: any) => {
+  //       console.log(element.nativeElement);
+  //       setTimeout(() => {
 
-          if (element.nativeElement.value != '') {
-            switch (element.nativeElement.name) {
-              case 'username': {
-                this.usernameClass = 'focused';
-                break;
-              }
-              case 'email': {
-                this.emailClass = 'focused';
-                break;
-              }
-              case 'role': {
-                this.roleClass = 'focused';
-                break;
-              }
-              case 'coins': {
-                this.coinsClass = 'focused';
-                break;
-              }
-            }
-          }
+  //         if (element.nativeElement.value != '') {
+  //           switch (element.nativeElement.name) {
+  //             case 'username': {
+  //               this.usernameClass = 'focused';
+  //               break;
+  //             }
+  //             case 'email': {
+  //               this.emailClass = 'focused';
+  //               break;
+  //             }
+  //             case 'role': {
+  //               this.roleClass = 'focused';
+  //               break;
+  //             }
+  //             case 'coins': {
+  //               this.coinsClass = 'focused';
+  //               break;
+  //             }
+  //           }
+  //         }
 
-        }, 1)
-      })
-    });
-  }
+  //       }, 1)
+  //     })
+  //   });
+  // }
 
-  focusToggler(event: Event, className: string): string {
-    event.type == 'focus' ? className = 'focused' : className = '';
+  // focusToggler(event: Event, className: string): string {
+  //   event.type == 'focus' ? className = 'focused' : className = '';
 
-    if (event) {
-      this.selectedElement = event.target;
-    } else {
-      this.selectedElement = null;
-    }
+  //   if (event) {
+  //     this.selectedElement = event.target;
+  //   } else {
+  //     this.selectedElement = null;
+  //   }
 
-    if (this.selectedElement.value != '') {
-      className = 'focused';
-    }
-    return className;
-  }
+  //   if (this.selectedElement.value != '') {
+  //     className = 'focused';
+  //   }
+  //   return className;
+  // }
 
-  usernameFocusToggler(event: Event): void {
-    this.usernameClass = this.focusToggler(event, this.usernameClass)
-  }
+  // usernameFocusToggler(event: Event): void {
+  //   this.usernameClass = this.focusToggler(event, this.usernameClass)
+  // }
 
-  emailFocusToggler(event: Event): void {
-    this.emailClass = this.focusToggler(event, this.emailClass)
-  }
+  // emailFocusToggler(event: Event): void {
+  //   this.emailClass = this.focusToggler(event, this.emailClass)
+  // }
 
-  roleFocusToggler(event: Event): void {
-    this.roleClass = this.focusToggler(event, this.roleClass)
-  }
+  // roleFocusToggler(event: Event): void {
+  //   this.roleClass = this.focusToggler(event, this.roleClass)
+  // }
 
-  coinsFocusToggler(event: Event): void {
-    this.coinsClass = this.focusToggler(event, this.coinsClass)
-  }
+  // coinsFocusToggler(event: Event): void {
+  //   this.coinsClass = this.focusToggler(event, this.coinsClass)
+  // }
 
   onUpdate(form: NgForm, user: User): void {
     console.log(form.value);
@@ -153,6 +152,5 @@ export class UserEditorComponent {
       this.onUnbanOne(id);
     }
   }
-
 
 }

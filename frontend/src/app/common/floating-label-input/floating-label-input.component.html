@@ -1,4 +1,5 @@
-<input #inputRef [(ngModel)]="data" class="form-control" [name]="name" [type]="type"
-  (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)"
-  [disabled]="disabled" [required]="required" [pattern]="pattern">
+<input #inputRef [(ngModel)]="inputModel" (ngModelChange)="inputModelChange.emit(inputModel)"
+    (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)"
+    class="form-control" [name]="name" [type]="type"
+    [disabled]="disabled" [required]="required" [pattern]="pattern">
 <label class="form-label" [class]="inputClass">{{ labelContent }}</label>

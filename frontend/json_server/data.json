@@ -52,11 +52,11 @@
       "id": 2,
       "username": "kdalgleish1",
       "email": "troselli1@xrea.com",
-      "role": "Supervisor",
+      "role": "player",
       "banned": false,
       "joinDate": "27/08/2022",
       "lastOnlineDate": "29/03/2022",
-      "coins": 24,
+      "coins": "24",
       "shopItems": [
         {
           "id": 1,

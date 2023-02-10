@@ -76,7 +76,7 @@
           </div> -->
           <div class="form-group">
             <app-floating-label-input
-              [data]="user.id"
+              [(inputModel)]="user.id"
               [type]="'number'"
               [name]="'#'"
               [labelContent]="'id'"
@@ -92,7 +92,7 @@
           </div> -->
           <div class="form-group">
             <app-floating-label-input
-              [data]="user.username"
+              [(inputModel)]="user.username"
               [type]="'text'"
               [name]="'username'"
               [labelContent]="'Username'"
@@ -107,7 +107,7 @@
           </div> -->
           <div class="form-group">
             <app-floating-label-input
-              [data]="user.email"
+              [(inputModel)]="user.email"
               [type]="'email'"
               [name]="'email'"
               [labelContent]="'E-mail'"
@@ -122,8 +122,7 @@
           </div> -->
           <div class="form-group">
             <app-floating-label-input
-              [data]="user.coins"
-
+              [(inputModel)]="user.coins"
               [type]="'number'"
               [name]="'coins'"
               [labelContent]="'Coins'"
@@ -131,7 +130,8 @@
             ></app-floating-label-input>
           </div>
 
-          <div class="select__wrapper form-group mb-0">
+          <!--     --- !!! VISSZA KELL RAKNI !!! ---     -->
+          <!-- <div class="select__wrapper form-group mb-0">
             <select #inputRef [(ngModel)]="user.role" class="form-select custom-select col-12" name="role" required
               (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)">
               <option hidden disabled selected value=""></option>
@@ -142,7 +142,7 @@
               <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
             </label>
             <label class="form-label" [class]="roleClass">Role</label>
-          </div>
+          </div> -->
 
           <button type="submit" class="game-played btn btn-info col-12 my-3">Save changes</button>
         </form>
