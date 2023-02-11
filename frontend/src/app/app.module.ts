@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './page/home/home/home.component';
-import { HeaderComponent } from './common/nav/header/header.component';
+import { NavbarComponent } from './common/nav/navbar/navbar.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { SignupComponent } from './page/signup/signup.component';
 import { LoginComponent } from './page/login/login.component';
@@ -37,7 +37,7 @@ import { FloatingLabelInputComponent } from './common/floating-label-input/float
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
+    NavbarComponent,
     FooterComponent,
     SignupComponent,
     LoginComponent,
