@@ -2593,6 +2593,20 @@
         20,
         50
       ]
+    },
+    {
+      "id": 101,
+      "username": "1000",
+      "email": "asd10",
+      "password": "",
+      "role": "",
+      "banned": false,
+      "joinDate": "",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": "1000",
+      "shopItems": [],
+      "friends": []
     }
   ],
   "shop": [

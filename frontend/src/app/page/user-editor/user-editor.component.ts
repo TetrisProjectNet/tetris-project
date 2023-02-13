@@ -114,10 +114,10 @@ export class UserEditorComponent {
   // }
 
   onUpdate(form: NgForm, user: User): void {
-    console.log(form.value);
+    console.log(user);
     this.clicked = true;
     if (user.id === 0) {
-      this.userService.create(form.value).subscribe(
+      this.userService.create(user).subscribe(
         () => this.router.navigate(['user']),
         err => console.error(err)
       );

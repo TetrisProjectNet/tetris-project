@@ -1,4 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, Output, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-floating-label-input',
@@ -17,10 +18,12 @@ export class FloatingLabelInputComponent {
   @Input() type: string = '';
   @Input() disabled: boolean = false;
   @Input() required: boolean = true;
-  @Input() pattern: string = '';
+  @Input() pattern: string | RegExp = '';
 
   inputClass: string = '';
   selectedElement: any;
+
+  faTriangleExclamation = faTriangleExclamation;
 
   ngOnInit() {
     console.log('title: ', this.labelContent);

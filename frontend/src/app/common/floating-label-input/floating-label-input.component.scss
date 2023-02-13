@@ -5,3 +5,16 @@
     font-size: .75em;
     color: styles.$gray;
 }
+
+.validation__warning {
+    border: 2px solid darkred;
+    border-radius: 0.2rem;
+    color: red;
+    // padding: 0 0.2rem;
+    padding: 0 0.2rem;
+    // margin-bottom: 0.1rem;
+    // position: absolute;
+    // right: 0;
+    // top: 0.5rem;
+
+}
