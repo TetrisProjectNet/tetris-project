@@ -111,7 +111,8 @@
               [type]="'email'"
               [name]="'email'"
               [labelContent]="'E-mail'"
-              [pattern]="'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$'"
+              [pattern]="'^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$'"
+              [(valid)]="true"
             ></app-floating-label-input>
           </div>
 

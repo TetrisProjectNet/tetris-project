@@ -1,4 +1,4 @@
-import { Component, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { Component, ElementRef, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FaConfig } from '@fortawesome/angular-fontawesome';
@@ -16,7 +16,8 @@ import { UserService } from 'src/app/service/user.service';
 export class UserEditorComponent {
 
   // @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
-
+  // @Input() isValid: any;
+  
   user$: Observable<User> = this.activatedRoute.params.pipe(
     switchMap(params => {
       if (params['id']) {

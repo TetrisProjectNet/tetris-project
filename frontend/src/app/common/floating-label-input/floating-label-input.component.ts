@@ -13,6 +13,10 @@ export class FloatingLabelInputComponent {
 
   @Input() inputModel: any;
   @Output() inputModelChange = new EventEmitter<any>();
+
+  @Input() valid: any;
+  @Output() validChange = new EventEmitter<any>();
+
   @Input() labelContent: string = '';
   @Input() name: string = '';
   @Input() type: string = '';
@@ -26,16 +30,15 @@ export class FloatingLabelInputComponent {
   faTriangleExclamation = faTriangleExclamation;
 
   ngOnInit() {
-    console.log('title: ', this.labelContent);
   }
-
+  
   ngAfterViewInit() {
+    console.log('valid: ', this.input.nativeElement.valid);
     setTimeout(() => {
       if (this.input.nativeElement.value != '') {
-        console.log('asd');
         this.inputClass = 'focused';
       }
-    }, 1)
+    })
 
     // this.input.nativeElement.subscribe((sub: any) => {
     //   // sub.toArray().forEach((element: any) => {

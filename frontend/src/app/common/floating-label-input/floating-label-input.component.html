@@ -1,11 +1,12 @@
-<!-- <p class="text-white">
-    {{ inputRef.valid | json }}
+<p class="text-white">
+    {{ validRef.invalid }}
 
-</p> -->
+</p>
 <input #validRef="ngModel" #inputRef [(ngModel)]="inputModel" (ngModelChange)="inputModelChange.emit(inputModel)"
     (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)"
     class="form-control" [name]="name" [type]="type"
-    [disabled]="disabled" [required]="required" [pattern]="pattern">
+    [disabled]="disabled" [required]="required" [pattern]="pattern"
+    [(valid)]="isValid" (validChange)="isValidChange.emit(validRef.invalid)">
 <label class="form-label" [class]="inputClass">{{ labelContent }}</label>
 <label *ngIf="validRef.invalid && (validRef.dirty || validRef.touched)"
     class="form-label w-100 d-flex align-items-center justify-content-end icon-label">
