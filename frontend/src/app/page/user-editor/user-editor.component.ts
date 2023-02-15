@@ -27,6 +27,8 @@ export class UserEditorComponent {
     })
   );
 
+  validationResults: boolean[] = [];
+
   faCircleChevronDown = faCircleChevronDown;
   faCircleChevronUp = faCircleChevronUp;
   faSquareCaretDown = faSquareCaretDown;
@@ -152,6 +154,12 @@ export class UserEditorComponent {
     } else {
       this.onUnbanOne(id);
     }
+  }
+
+  getValidationData($event: any) {
+    console.log('asdasd');
+    this.validationResults.push($event);
+    console.log(this.validationResults);
   }
 
 }

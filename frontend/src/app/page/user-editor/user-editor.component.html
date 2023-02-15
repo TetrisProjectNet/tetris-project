@@ -112,9 +112,11 @@
               [name]="'email'"
               [labelContent]="'E-mail'"
               [pattern]="'^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$'"
-              [(valid)]="true"
+              
+              (isValidEvent)="getValidationData($event)"
             ></app-floating-label-input>
           </div>
+          <!-- [(valid)]="true" -->
 
           <!-- <div class="form-group">
             <input #inputRef [(ngModel)]="user.coins" class="form-control" name="coins" type="number"

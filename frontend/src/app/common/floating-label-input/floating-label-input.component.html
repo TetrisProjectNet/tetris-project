@@ -6,7 +6,8 @@
     (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)"
     class="form-control" [name]="name" [type]="type"
     [disabled]="disabled" [required]="required" [pattern]="pattern"
-    [(valid)]="isValid" (validChange)="isValidChange.emit(validRef.invalid)">
+    (change)="validate(validRef.invalid)"
+    >
 <label class="form-label" [class]="inputClass">{{ labelContent }}</label>
 <label *ngIf="validRef.invalid && (validRef.dirty || validRef.touched)"
     class="form-label w-100 d-flex align-items-center justify-content-end icon-label">
@@ -14,3 +15,5 @@
         <fa-icon class="me-1" [icon]="faTriangleExclamation"></fa-icon>Invalid
     </span>
 </label>
+<!-- [(valid)]="isValid" (validChange)="isValidChange.emit(validRef.invalid)" -->
+<!-- (change)="validation(validRef.invalid)" -->

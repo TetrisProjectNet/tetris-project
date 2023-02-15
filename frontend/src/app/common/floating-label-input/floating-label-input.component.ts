@@ -13,9 +13,10 @@ export class FloatingLabelInputComponent {
 
   @Input() inputModel: any;
   @Output() inputModelChange = new EventEmitter<any>();
+  @Output() isValidEvent = new EventEmitter<any>();
 
-  @Input() valid: any;
-  @Output() validChange = new EventEmitter<any>();
+  // @Input() valid: any;
+  // @Output() validChange = new EventEmitter<any>();
 
   @Input() labelContent: string = '';
   @Input() name: string = '';
@@ -26,6 +27,7 @@ export class FloatingLabelInputComponent {
 
   inputClass: string = '';
   selectedElement: any;
+  isValidOut: boolean = false;
 
   faTriangleExclamation = faTriangleExclamation;
 
@@ -33,42 +35,13 @@ export class FloatingLabelInputComponent {
   }
   
   ngAfterViewInit() {
-    console.log('valid: ', this.input.nativeElement.valid);
+    // console.log('valid: ', this.input.nativeElement.valid);
     setTimeout(() => {
       if (this.input.nativeElement.value != '') {
         this.inputClass = 'focused';
       }
     })
-
-    // this.input.nativeElement.subscribe((sub: any) => {
-    //   // sub.toArray().forEach((element: any) => {
-    //   console.log('sub ', sub);
-
-    //   if (sub.value != '') {
-    //     // switch (element.nativeElement.name) {
-    //     //   case 'username': {
-    //     //     this.usernameClass = 'focused';
-    //     //     break;
-    //     //   }
-    //     //   case 'email': {
-    //     //     this.emailClass = 'focused';
-    //     //     break;
-    //     //   }
-    //     //   case 'role': {
-    //     //     this.roleClass = 'focused';
-    //     //     break;
-    //     //   }
-    //     //   case 'coins': {
-    //     //     this.coinsClass = 'focused';
-    //     //     break;
-    //     //   }
-    //     // }
-    //   }
-
-    //   // })
-    // });
   }
-
 
   focusToggler(event: Event, className: string): string {
     event.type == 'focus' ? className = 'focused' : className = '';
@@ -87,6 +60,16 @@ export class FloatingLabelInputComponent {
 
   usernameFocusToggler(event: Event): void {
     this.inputClass = this.focusToggler(event, this.inputClass)
+  }
+
+  validate(isValidIn: boolean | null) {
+    // if (!isValidIn) {
+    //   this.isValidOut = false;
+    // } else {
+    //   this.isValidOut = isValidIn;
+    // }
+    console.log('asd123');
+    !isValidIn ? this.isValidOut = false : this.isValidOut = isValidIn;
   }
 
 }
