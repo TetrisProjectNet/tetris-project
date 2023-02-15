@@ -1,12 +1,12 @@
-<p class="text-white">
+<!-- <p class="text-white">
     {{ validRef.invalid }}
 
-</p>
+</p> -->
 <input #validRef="ngModel" #inputRef [(ngModel)]="inputModel" (ngModelChange)="inputModelChange.emit(inputModel)"
     (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)"
     class="form-control" [name]="name" [type]="type"
     [disabled]="disabled" [required]="required" [pattern]="pattern"
-    (change)="validate(validRef.invalid)"
+    (change)="validate(validRef.valid)"
     >
 <label class="form-label" [class]="inputClass">{{ labelContent }}</label>
 <label *ngIf="validRef.invalid && (validRef.dirty || validRef.touched)"

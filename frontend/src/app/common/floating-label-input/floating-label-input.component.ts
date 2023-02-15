@@ -33,7 +33,7 @@ export class FloatingLabelInputComponent {
 
   ngOnInit() {
   }
-  
+
   ngAfterViewInit() {
     // console.log('valid: ', this.input.nativeElement.valid);
     setTimeout(() => {
@@ -68,8 +68,9 @@ export class FloatingLabelInputComponent {
     // } else {
     //   this.isValidOut = isValidIn;
     // }
-    console.log('asd123');
     !isValidIn ? this.isValidOut = false : this.isValidOut = isValidIn;
+    console.log('childParam: ', this.isValidOut);
+    this.isValidEvent.emit(this.isValidOut);
   }
 
 }

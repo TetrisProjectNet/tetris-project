@@ -2607,6 +2607,20 @@
       "coins": "1000",
       "shopItems": [],
       "friends": []
+    },
+    {
+      "id": 102,
+      "username": "Validated data",
+      "email": "validation@finally.huh",
+      "password": "",
+      "role": "",
+      "banned": false,
+      "joinDate": "",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": "100",
+      "shopItems": [],
+      "friends": []
     }
   ],
   "shop": [
