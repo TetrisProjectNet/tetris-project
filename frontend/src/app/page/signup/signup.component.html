@@ -1,34 +1,68 @@
 <div class="login__wrapper d-flex flex-column align-items-center m-0 min-vh-100">
   <h1 class="signup-title game-played animate__animated animate__backInDown text-white text-center mt-5">We are happy to welcome you!</h1>
   <div class="login col-10 col-md-6 col-xl-3 my-4 p-5">
-    <form class="animate__animated animate__fadeInUp animate__faster">
-    <!-- <form (ngSubmit)="onLogin()"> -->
+    <form class="default-form animate__animated animate__fadeInUp animate__faster">
       <div class="form-group">
-        <input class="form-control e-mail" name="username" type="text" (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)">
-        <label class="form-label" [class]="usernameClass">Username</label>
-        <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-        <!-- <input class="form-control" name="username" [(ngModel)]="loginData.username" type="username"> -->
+        <!-- <input class="form-control e-mail" name="username" type="text" (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)">
+        <label class="form-label" [class]="usernameClass">Username</label> -->
+        <app-floating-label-input
+          #usernameInput
+          [(inputModel)]="username"
+          [type]="'text'"
+          [name]="'username'"
+          [labelContent]="'Username'"
+          [pattern]="'^.{3,15}$'"
+        ></app-floating-label-input>
+
       </div>
       <div class="form-group">
-        <input class="form-control e-mail" name="email" type="email" (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
-        <label class="form-label" [class]="emailClass">E-mail</label>
-        <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-        <!-- <input class="form-control" name="email" [(ngModel)]="loginData.email" type="email"> -->
+        <!-- <input class="form-control e-mail" name="email" type="email" (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
+        <label class="form-label" [class]="emailClass">E-mail</label> -->
+        <app-floating-label-input
+          #emailInput
+          [(inputModel)]="email"
+          [type]="'email'"
+          [name]="'email'"
+          [labelContent]="'E-mail'"
+          [pattern]="'^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$'"
+          (isValidEvent)="getValidationData($event)"
+        ></app-floating-label-input>
+        
       </div>
       <div class="form-group">
-        <input class="form-control" name="password" type="password" (focus)="passwordFocusToggler($event)" (blur)="passwordFocusToggler($event)">
-        <label class="form-label" [class]="passwordClass">Password</label>
-        <!-- <input class="form-control" name="password" [(ngModel)]="loginData.password" type="password"> -->
+        <!-- <input class="form-control" name="password" type="password" (focus)="passwordFocusToggler($event)" (blur)="passwordFocusToggler($event)">
+        <label class="form-label" [class]="passwordClass">Password</label> -->
+        <app-floating-label-input
+          #passwordInput
+          [(inputModel)]="password"
+          [type]="'password'"
+          [name]="'password'"
+          [labelContent]="'Password'"
+          [pattern]="'^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{4,30}$'"
+          (isValidEvent)="getValidationData($event)"
+        ></app-floating-label-input>
       </div>
       <div class="form-group">
-        <input class="form-control" name="password" type="password" (focus)="passwordAgainFocusToggler($event)" (blur)="passwordAgainFocusToggler($event)">
-        <label class="form-label" [class]="passwordAgainClass">Password again</label>
-        <!-- <input class="form-control" name="passwordAgain" [(ngModel)]="loginData.passwordAgain" type="passwordAgain"> -->
+        <!-- <input class="form-control" name="password" type="password" (focus)="passwordAgainFocusToggler($event)" (blur)="passwordAgainFocusToggler($event)">
+        <label class="form-label" [class]="passwordAgainClass">Password again</label> -->
+        <app-floating-label-input
+          #passwordAgainInput
+          [(inputModel)]="passwordAgain"
+          [type]="'password'"
+          [name]="'password-again'"
+          [labelContent]="'Password again'"
+          [pattern]="'^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{4,30}$'"
+          (isValidEvent)="getValidationData($event)"
+          [firstPassword]="passwordInput.inputModel"
+        ></app-floating-label-input>
       </div>
-      <div class="mt-3 mb-1">
+      <div class="mt-4 mb-2">
         <small class="no-acc mt-2">Already have an account? <a [routerLink]="['/login']">Login!</a></small>
       </div>
-      <button type="submit" class="game-played btn btn-info col-12 my-3">Sign up</button>
+      <button type="submit" class="game-played btn btn-info col-12 my-3"
+        [disabled]="!(usernameInput.isValid&&emailInput.isValid&&passwordInput.isValid && passwordInput.inputModel==passwordAgainInput.inputModel)">
+        Sign up
+    </button>
     </form>
   </div>
 </div>

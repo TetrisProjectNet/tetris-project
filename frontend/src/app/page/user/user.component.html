@@ -53,9 +53,17 @@
           <fa-icon class="text-center" [icon]="faFilter"></fa-icon>
         </div>
         <div class="phrase__wrapper form-group m-0">
-          <input #inputRef [(ngModel)]="phrase" class="form-control" name="phrase" type="text"
+          <!-- <input #inputRef [(ngModel)]="phrase" class="form-control" name="phrase" type="text"
             (focus)="phraseFocusToggler($event)" (blur)="phraseFocusToggler($event)">
-          <label class="form-label" [class]="phraseClass">Filter</label>
+          <label class="form-label" [class]="phraseClass">Filter</label> -->
+          <app-floating-label-input
+            [(inputModel)]="phrase"
+            [type]="'text'"
+            [name]="'phrase'"
+            [labelContent]="'Filter'"
+            [required]="false"
+          ></app-floating-label-input>
+
         </div>
       </div>
     </div>
@@ -65,9 +73,17 @@
         <fa-icon class="text-center" [icon]="faBars"></fa-icon>
       </div>
       <div class="rows__wrapper form-group m-0">
-        <input #inputRef [(ngModel)]="itemsPerPage" class="form-control pe-0" name="rows" type="number"
+        <!-- <input #inputRef [(ngModel)]="itemsPerPage" class="form-control pe-0" name="rows" type="number"
           (focus)="rowsFocusToggler($event)" (blur)="rowsFocusToggler($event)">
-        <label class="form-label" [class]="rowsClass">Rows</label>
+        <label class="form-label" [class]="rowsClass">Rows</label> -->
+        <app-floating-label-input
+          [(inputModel)]="itemsPerPage"
+          [inputClass]="'pe-0'"
+          [type]="'number'"
+          [name]="'rows'"
+          [labelContent]="'Rows'"
+          [required]="false"
+        ></app-floating-label-input>
       </div>
     </div>
   </section>
@@ -81,7 +97,8 @@
       <thead>
         <tr>
           <th *ngFor="let col of columns; index as i" scope="col" (click)="onColumnSelect(col.key)" draggable="true"
-            (dragstart)="dragStartColumn(i)" (dragover)="allowDrop($event)" (drop)="dropColumn(i)" [class]="draggingClass">
+            (dragstart)="dragStartColumn(i)" (dragover)="allowDrop($event)" (drop)="dropColumn(i)"
+            [class]="draggingClass">
             <div #thContent class="d-flex flex-row ">
               <fa-icon *ngIf="sortColumn==col.key && direction" class="me-1" [icon]="faArrowDownAZ"></fa-icon>
               <fa-icon *ngIf="sortColumn==col.key && !direction" class="me-1" [icon]="faArrowDownZA"></fa-icon>
@@ -94,10 +111,12 @@
       <tbody>
         <tr *ngFor="let user of list | filter:phrase:filterKey | sorter:sortColumn:direction
           | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
-          <ng-container *ngFor="let col of columns; index as i;" draggable="true"
-          (dragstart)="dragStartColumn(i)" (dragover)="allowDrop($event)" (drop)="dropColumn(i)">
-            <td *ngIf="col.key!=='scores' && col.key!=='shopItems' && col.key!=='friends' && col.key!=='banned'">{{ user[col.key] }}</td>
-            <td *ngIf="col.key==='scores' || col.key==='shopItems' || col.key==='friends'">{{ user[col.key].length }}</td>
+          <ng-container *ngFor="let col of columns; index as i;" draggable="true" (dragstart)="dragStartColumn(i)"
+            (dragover)="allowDrop($event)" (drop)="dropColumn(i)">
+            <td *ngIf="col.key!=='scores' && col.key!=='shopItems' && col.key!=='friends' && col.key!=='banned'">{{
+              user[col.key] }}</td>
+            <td *ngIf="col.key==='scores' || col.key==='shopItems' || col.key==='friends'">{{ user[col.key].length }}
+            </td>
             <td *ngIf="col.key==='banned'">
               <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
                 type="checkbox" name="" />

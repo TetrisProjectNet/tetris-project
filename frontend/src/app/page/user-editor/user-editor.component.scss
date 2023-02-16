@@ -59,11 +59,11 @@ option {
   color: styles.$black;
 }
 
-.focused {
-  transform: translateY(-145%);
-  font-size: .75em;
-  color: styles.$gray;
-}
+// .focused {
+//   transform: translateY(-145%);
+//   font-size: .75em;
+//   color: styles.$gray;
+// }
 
 // ----- TOGGLE BUTTON -----
 input[type="checkbox"] {

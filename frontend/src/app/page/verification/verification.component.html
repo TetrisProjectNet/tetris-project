@@ -1,7 +1,7 @@
 <div class="page__wrapper d-flex flex-column align-items-center m-0 min-vh-100">
   <h1 class="signup-title game-played animate__animated animate__backInDown display-6 text-white text-center mt-5 p-0">Email Verification Code</h1>
   <div class="form__wrapper my-5 py-5 d-flex flex-column align-items-center">
-    <form (ngSubmit)="onSubmit()" class="animate__animated animate__fadeInUp animate__faster">
+    <form (ngSubmit)="onSubmit()" class="default-form animate__animated animate__fadeInUp animate__faster">
       <div class="form-group">
         <ng-otp-input class="" [config]="config" ></ng-otp-input> <!-- (onInputChange)="onOtpChange($event)" -->
       </div>

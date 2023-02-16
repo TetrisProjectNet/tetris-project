@@ -13,14 +13,16 @@ export class FloatingLabelInputComponent {
   @Input() inputModel: any;
   @Output() inputModelChange = new EventEmitter<any>();
   @Input() labelContent: string = '';
+  @Input() inputClass: string = '';
   @Input() name: string = '';
   @Input() type: string = '';
   @Input() disabled: boolean = false;
   @Input() required: boolean = true;
   @Input() pattern: string | RegExp = '';
   @Output() isValidEvent = new EventEmitter<any>();
-
-  inputClass: string = '';
+  @Input() firstPassword: string = '';
+  
+  inputFocusClass: string = '';
   selectedElement: any;
   isValid: boolean = false;
 
@@ -32,7 +34,7 @@ export class FloatingLabelInputComponent {
   ngAfterViewInit() {
     setTimeout(() => {
       if (this.input.nativeElement.value != '') {
-        this.inputClass = 'focused';
+        this.inputFocusClass = 'focused';
         if (this.input.nativeElement.value.match(this.input.nativeElement.pattern)) {
           this.isValid = true;
           this.isValidEvent.emit(this.isValid);
@@ -57,7 +59,7 @@ export class FloatingLabelInputComponent {
   }
 
   usernameFocusToggler(event: Event): void {
-    this.inputClass = this.focusToggler(event, this.inputClass)
+    this.inputFocusClass = this.focusToggler(event, this.inputFocusClass)
   }
 
   validate(isValidIn: boolean | null) {

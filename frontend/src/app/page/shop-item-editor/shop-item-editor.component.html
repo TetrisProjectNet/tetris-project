@@ -1,48 +1,90 @@
 <div class="container my-5">
     <div class="row">
       <div *ngIf="(shopItem$ | async) as shopItem" class="col-lg-6 offset-lg-3">
-        <form class="animate__animated animate__fadeInUp animate__faster" #shopItemForm="ngForm"
+        <form class="default-form animate__animated animate__fadeInUp animate__faster" #shopItemForm="ngForm"
           (ngSubmit)="onUpdate(shopItemForm, shopItem)">
-          <!-- <form (ngSubmit)="onLogin()"> -->
 
           <div class="form-group">
-            <input [(ngModel)]="shopItem.id" class="form-control" name="id" type="text" disabled>
-            <label class="focused form-label">#</label>
-            <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-            <!-- <input class="form-control" name="shopItemname" [(ngModel)]="shopItem.shopItemname" type="shopItemname"> -->
+            <!-- <input [(ngModel)]="shopItem.id" class="form-control" name="id" type="text" disabled>
+            <label class="focused form-label">#</label> -->
+            <app-floating-label-input
+              [(inputModel)]="shopItem.id"
+              [type]="'number'"
+              [name]="'#'"
+              [labelContent]="'id'"
+              [disabled]="true"
+              [required]="false"
+            ></app-floating-label-input>
           </div>
 
           <div class="form-group">
-            <input #inputRef [(ngModel)]="shopItem.title" class="form-control" name="title" type="text"
+            <!-- <input #inputRef [(ngModel)]="shopItem.title" class="form-control" name="title" type="text"
               (focus)="titleFocusToggler($event)" (blur)="titleFocusToggler($event)">
-            <label class="form-label" [class]="titleClass">Title</label>
-            <!-- <label class="form-label" [class]="isRed" *ngIf="focus.focus()">E-mail</label> -->
-            <!-- <input class="form-control" name="shopItemname" [(ngModel)]="shopItem.shopItemname" type="shopItemname"> -->
+            <label class="form-label" [class]="titleClass">Title</label> -->
+            <app-floating-label-input
+              #titleInput
+              [(inputModel)]="shopItem.title"
+              [type]="'text'"
+              [name]="'title'"
+              [labelContent]="'Title'"
+              [pattern]="'^.{3,20}$'"
+              (isValidEvent)="getValidationData($event)"
+            ></app-floating-label-input>
           </div>
-
+          
           <div class="form-group">
-            <input #inputRef [(ngModel)]="shopItem.image" class="form-control" name="image" type="text"
-              (focus)="imageFocusToggler($event)" (blur)="imageFocusToggler($event)">
-            <label class="form-label" [class]="imageClass">Image link</label>
+            <!-- <input #inputRef [(ngModel)]="shopItem.image" class="form-control" name="image" type="text"
+            (focus)="imageFocusToggler($event)" (blur)="imageFocusToggler($event)">
+            <label class="form-label" [class]="imageClass">Image link</label> -->
+            <app-floating-label-input
+              [(inputModel)]="shopItem.image"
+              [type]="'text'"
+              [name]="'image'"
+              [labelContent]="'Image link'"
+              (isValidEvent)="getValidationData($event)"
+            ></app-floating-label-input>
           </div>
-
+          
           <div class="form-group">
-            <input #inputRef [(ngModel)]="shopItem.price" class="form-control" name="price" type="number"
-              (focus)="priceFocusToggler($event)" (blur)="priceFocusToggler($event)">
-            <label class="form-label" [class]="priceClass">Price</label>
+            <!-- <input #inputRef [(ngModel)]="shopItem.price" class="form-control" name="price" type="number"
+            (focus)="priceFocusToggler($event)" (blur)="priceFocusToggler($event)">
+            <label class="form-label" [class]="priceClass">Price</label> -->
+            <app-floating-label-input
+              #priceInput
+              [(inputModel)]="shopItem.price"
+              [type]="'number'"
+              [name]="'price'"
+              [labelContent]="'Price'"
+              [pattern]="'^(?:0|[1-9][0-9]{0,5})$'"
+              (isValidEvent)="getValidationData($event)"
+            ></app-floating-label-input>
           </div>
-
+          
           <div class="form-group">
-            <!-- {{ shopItem.color.length }} -->
-            <input #inputRef [(ngModel)]="shopItem.color" class="form-control" name="color" type="color"
-              (focus)="colorFocusToggler($event)" (blur)="colorFocusToggler($event)">
-            <label class="form-label" [class]="colorClass">Color</label>
+            <!-- <input #inputRef [(ngModel)]="shopItem.color" class="form-control" name="color" type="color"
+            (focus)="colorFocusToggler($event)" (blur)="colorFocusToggler($event)">
+            <label class="form-label" [class]="colorClass">Color</label> -->
+            <app-floating-label-input
+              #colorInput
+              [(inputModel)]="shopItem.color"
+              [inputClass]="'color__input'"
+              [type]="'color'"
+              [name]="'color'"
+              [labelContent]="'Color'"              
+            ></app-floating-label-input>
           </div>
-
+          
           <div class="form-group">
-            <input #inputRef [(ngModel)]="shopItem.description" class="form-control" name="description" type="text"
-              (focus)="descriptionFocusToggler($event)" (blur)="descriptionFocusToggler($event)">
-            <label class="form-label" [class]="descriptionClass">Description</label>
+            <!-- <input #inputRef [(ngModel)]="shopItem.description" class="form-control" name="description" type="text"
+            (focus)="descriptionFocusToggler($event)" (blur)="descriptionFocusToggler($event)">
+            <label class="form-label" [class]="descriptionClass">Description</label> -->
+            <app-floating-label-input
+              [(inputModel)]="shopItem.description"              
+              [type]="'description'"
+              [name]="'text'"
+              [labelContent]="'Description'"
+              [required]="false"
+            ></app-floating-label-input>
           </div>
 
           <!-- <div class="form-group">
@@ -58,7 +100,10 @@
             <label class="form-label" [class]="roleClass">Role</label>
           </div> -->
 
-          <button type="submit" class="game-played btn btn-info col-12 my-3">Save changes</button>
+          <button type="submit" class="game-played btn btn-info col-12 my-3"
+            [disabled]="!(titleInput.isValid&&priceInput.isValid&&colorInput.isValid)">
+            Save changes
+          </button>
         </form>
 
       </div>

@@ -2703,6 +2703,14 @@
       "price": 77,
       "color": "#00ddfa",
       "description": ""
+    },
+    {
+      "title": "Simple item",
+      "image": "https://cdn-icons-png.flaticon.com/512/7734/7734009.png",
+      "price": 1,
+      "color": "#f014aa",
+      "description": "",
+      "id": 4
     }
   ]
 }

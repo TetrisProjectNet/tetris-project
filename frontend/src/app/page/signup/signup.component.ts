@@ -7,45 +7,55 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  usernameClass: string = '';
-  emailClass: string = '';
-  passwordClass: string = '';
-  passwordAgainClass: string = '';
-  selectedElement: any;
+  username: string = '';
+  email: string = '';
+  password: string = ''
+  passwordAgain: string = '';
+
+  // usernameClass: string = '';
+  // emailClass: string = '';
+  // passwordClass: string = '';
+  // passwordAgainClass: string = '';
+  // selectedElement: any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  focusToggler(event: Event, className: string): string {
-    event.type == 'focus' ? className= 'focused' : className='';
+  // focusToggler(event: Event, className: string): string {
+  //   event.type == 'focus' ? className= 'focused' : className='';
 
-    if(event) {
-      this.selectedElement = event.target;
-    } else {
-      this.selectedElement = null;
-    }
+  //   if(event) {
+  //     this.selectedElement = event.target;
+  //   } else {
+  //     this.selectedElement = null;
+  //   }
 
-    if (this.selectedElement.value != '') {
-      className= 'focused';
-    }
-    return className;
+  //   if (this.selectedElement.value != '') {
+  //     className= 'focused';
+  //   }
+  //   return className;
+  // }
+
+  // usernameFocusToggler(event: Event): void {
+  //   this.usernameClass = this.focusToggler(event, this.usernameClass)
+  // }
+
+  // emailFocusToggler(event: Event): void {
+  //   this.emailClass = this.focusToggler(event, this.emailClass)
+  // }
+
+  // passwordFocusToggler(event: Event): void {
+  //   this.passwordClass = this.focusToggler(event, this.passwordClass)
+  // }
+
+  // passwordAgainFocusToggler(event: Event): void {
+  //   this.passwordAgainClass = this.focusToggler(event, this.passwordAgainClass)
+  // }
+
+  getValidationData($event: any) {
+    console.log('$event', $event);
   }
 
-  usernameFocusToggler(event: Event): void {
-    this.usernameClass = this.focusToggler(event, this.usernameClass)
-  }
-
-  emailFocusToggler(event: Event): void {
-    this.emailClass = this.focusToggler(event, this.emailClass)
-  }
-
-  passwordFocusToggler(event: Event): void {
-    this.passwordClass = this.focusToggler(event, this.passwordClass)
-  }
-
-  passwordAgainFocusToggler(event: Event): void {
-    this.passwordAgainClass = this.focusToggler(event, this.passwordAgainClass)
-  }
 }

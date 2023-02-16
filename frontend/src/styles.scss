@@ -92,53 +92,66 @@ $red: #ff0000;
       }
     }
 
-    &-control {
-      position: relative;
-      padding: 6px 10px;
-      background: transparent;
-      box-shadow: none;
-      -webkit-box-shadow: none;
-      box-sizing: border-box;
-      border: none;
-      border-radius: 0;
-      border-bottom: 1px solid $theme;
-      transition: box-shadow 0.3s ease-out;
-      z-index: 1;
-      color: $white;
+    // &-control {
+    //   position: relative;
+    //   padding: 6px 10px;
+    //   background: transparent;
+    //   box-shadow: none;
+    //   -webkit-box-shadow: none;
+    //   box-sizing: border-box;
+    //   border: none;
+    //   border-radius: 0;
+    //   border-bottom: 1px solid $theme;
+    //   transition: box-shadow 0.3s ease-out;
+    //   z-index: 1;
+    //   color: $white;
 
-      &:active,
-      &:focus,
-      &:target {
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid $theme;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        border-radius: 0;
-      }
+    //   &:active,
+    //   &:focus,
+    //   &:target {
+    //     background: transparent;
+    //     border: none;
+    //     border-bottom: 1px solid $theme;
+    //     -webkit-box-shadow: none;
+    //     box-shadow: none;
+    //     border-radius: 0;
+    //   }
 
-      &:focus {
-        box-shadow: 0 6px 7px -7px $theme;
-      }
+    //   &:focus {
+    //     box-shadow: 0 6px 7px -7px $theme;
+    //   }
 
-      &:-webkit-autofill {
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: $white;
-      }
+    //   &:-webkit-autofill {
+    //     background-clip: text;
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: $white;
+    //   }
 
-      &:disabled {
-        color: $gray;
-      }
-    }
+    //   &:disabled {
+    //     color: $gray;
+    //   }
+    // }
 
-    &-label {
-      padding: 0 10px;
-      position: absolute;
-      left: 0;
-      top: 0.5rem;
-      color: $white;
-      transition: transform 0.3s ease-out, font-size 0.3s ease-out;
+    // &-label {
+    //   padding: 0 10px;
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0.5rem;
+    //   color: $white;
+    //   transition: transform 0.3s ease-out, font-size 0.3s ease-out;
+    // }
+  }
+}
+
+.no-acc {
+  color: $gray;
+  // line-height: 2.5rem;
+
+  & a {
+    text-decoration: none;
+    color: #ddd;
+    &:hover {
+      color: $theme;
     }
   }
 }

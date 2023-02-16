@@ -136,4 +136,8 @@ export class ShopItemEditorComponent {
     }
   }
 
+  getValidationData($event: any) {
+    console.log('$event', $event);
+  }
+
 }

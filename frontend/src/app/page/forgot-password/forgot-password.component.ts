@@ -8,8 +8,11 @@ import { Router } from '@angular/router';
 })
 export class ForgotPasswordComponent {
 
-  emailClass: string = '';
-  selectedElement: any;
+  email: string = '';
+  email2: string = '';
+
+  // emailClass: string = '';
+  // selectedElement: any;
 
   constructor(
     private router: Router
@@ -18,27 +21,31 @@ export class ForgotPasswordComponent {
   ngOnInit(): void {
   }
 
-  focusToggler(event: Event, className: string): string {
-    event.type == 'focus' ? className= 'focused' : className='';
+  // focusToggler(event: Event, className: string): string {
+  //   event.type == 'focus' ? className= 'focused' : className='';
 
-    if(event) {
-      this.selectedElement = event.target;
-    } else {
-      this.selectedElement = null;
-    }
+  //   if(event) {
+  //     this.selectedElement = event.target;
+  //   } else {
+  //     this.selectedElement = null;
+  //   }
 
-    if (this.selectedElement.value != '') {
-      className= 'focused';
-    }
-    return className;
-  }
+  //   if (this.selectedElement.value != '') {
+  //     className= 'focused';
+  //   }
+  //   return className;
+  // }
 
-  emailFocusToggler(event: Event): void {
-    this.emailClass = this.focusToggler(event, this.emailClass)
-  }
+  // emailFocusToggler(event: Event): void {
+  //   this.emailClass = this.focusToggler(event, this.emailClass)
+  // }
 
   onSubmit(email: string): void {
     this.router.navigate(['/verification'], {state: {data: email}})
+  }
+
+  getValidationData($event: any) {
+    console.log('$event', $event);
   }
 
 }
