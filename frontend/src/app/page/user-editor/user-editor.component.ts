@@ -16,10 +16,6 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class UserEditorComponent {
 
-  @ViewChildren(FloatingLabelInputComponent) floatingLabelInputComponents!: QueryList<FloatingLabelInputComponent>;
-  // @Input() isValid: any;
-  // @ViewChild('floatingLabelInput') input!: ElementRef;
-
   user$: Observable<User> = this.activatedRoute.params.pipe(
     switchMap(params => {
       if (params['id']) {
@@ -56,21 +52,6 @@ export class UserEditorComponent {
   ngOnInit(): void { }
 
   ngAfterViewInit() {
-    this.floatingLabelInputComponents.toArray().forEach(input => {
-      console.log(input.isValidOut);
-    });
-    // this.floatingLabelInputComponents.changes.subscribe(sub => {
-    //   console.log('sub',sub);
-    //   sub.toArray().forEach((element: any) => {
-    //     setTimeout(() => {
-
-    //       console.log(element.nativeElement);
-    //     }, 1);
-    //   })
-    // })
-    // console.log(this.floatingLabelInputComponents);
-
-
   //   this.inputs.changes.subscribe(sub => {
   //     sub.toArray().forEach((element: any) => {
   //       console.log(element.nativeElement);
@@ -175,8 +156,6 @@ export class UserEditorComponent {
 
   getValidationData($event: any) {
     console.log('$event', $event);
-    // this.validationResults.push($event);
-    // console.log(this.validationResults);
   }
 
 }

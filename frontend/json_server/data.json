@@ -2621,6 +2621,62 @@
       "coins": "100",
       "shopItems": [],
       "friends": []
+    },
+    {
+      "id": 103,
+      "username": "as3",
+      "email": "nagyklevi@gmail.com",
+      "password": "",
+      "role": "",
+      "banned": false,
+      "joinDate": "",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": "10",
+      "shopItems": [],
+      "friends": []
+    },
+    {
+      "id": 104,
+      "username": "ads",
+      "email": "asd@asasdasdd.asd",
+      "password": "",
+      "role": "",
+      "banned": false,
+      "joinDate": "",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": "2020120",
+      "shopItems": [],
+      "friends": []
+    },
+    {
+      "id": 105,
+      "username": "asdas",
+      "email": "asdasd@asd.hu",
+      "password": "",
+      "role": "",
+      "banned": false,
+      "joinDate": "",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": "0120012012",
+      "shopItems": [],
+      "friends": []
+    },
+    {
+      "id": 106,
+      "username": "asd",
+      "email": "asda@asdasdas.hu",
+      "password": "",
+      "role": "",
+      "banned": false,
+      "joinDate": "",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": "1",
+      "shopItems": [],
+      "friends": []
     }
   ],
   "shop": [

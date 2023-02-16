@@ -8,26 +8,21 @@ import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 })
 export class FloatingLabelInputComponent {
 
-  // @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
   @ViewChild('inputRef') input!: ElementRef;
 
   @Input() inputModel: any;
   @Output() inputModelChange = new EventEmitter<any>();
-  @Output() isValidEvent = new EventEmitter<any>();
-
-  // @Input() valid: any;
-  // @Output() validChange = new EventEmitter<any>();
-
   @Input() labelContent: string = '';
   @Input() name: string = '';
   @Input() type: string = '';
   @Input() disabled: boolean = false;
   @Input() required: boolean = true;
   @Input() pattern: string | RegExp = '';
+  @Output() isValidEvent = new EventEmitter<any>();
 
   inputClass: string = '';
   selectedElement: any;
-  isValidOut: boolean = false;
+  isValid: boolean = false;
 
   faTriangleExclamation = faTriangleExclamation;
 
@@ -35,10 +30,13 @@ export class FloatingLabelInputComponent {
   }
 
   ngAfterViewInit() {
-    // console.log('valid: ', this.input.nativeElement.valid);
     setTimeout(() => {
       if (this.input.nativeElement.value != '') {
         this.inputClass = 'focused';
+        if (this.input.nativeElement.value.match(this.input.nativeElement.pattern)) {
+          this.isValid = true;
+          this.isValidEvent.emit(this.isValid);
+        }
       }
     })
   }
@@ -63,14 +61,8 @@ export class FloatingLabelInputComponent {
   }
 
   validate(isValidIn: boolean | null) {
-    // if (!isValidIn) {
-    //   this.isValidOut = false;
-    // } else {
-    //   this.isValidOut = isValidIn;
-    // }
-    !isValidIn ? this.isValidOut = false : this.isValidOut = isValidIn;
-    console.log('childParam: ', this.isValidOut);
-    this.isValidEvent.emit(this.isValidOut);
+    !isValidIn ? this.isValid = false : this.isValid = isValidIn;
+    this.isValidEvent.emit(this.isValid);
   }
 
 }

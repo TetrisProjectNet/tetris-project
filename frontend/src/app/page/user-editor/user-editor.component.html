@@ -116,11 +116,7 @@
               [pattern]="'^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$'"
               (isValidEvent)="getValidationData($event)"
             ></app-floating-label-input>
-            <!-- <p *ngFor="let item of validation.isValidEvent | keyvalue" class="text-white">
-              {{ item.key }}
-            </p> -->
           </div>
-          <!-- [(valid)]="true" -->
 
           <!-- <div class="form-group">
             <input #inputRef [(ngModel)]="user.coins" class="form-control" name="coins" type="number"
@@ -134,15 +130,15 @@
               [type]="'number'"
               [name]="'coins'"
               [labelContent]="'Coins'"
-              [pattern]="'^[0-9]{1,10}$'"
+              [pattern]="'^(?:0|[1-9][0-9]{0,9})$'"
               (isValidEvent)="getValidationData($event)"
             ></app-floating-label-input>
           </div>
-          <p class="text-white">
+          <!-- <p class="text-white">
             {{ usernameInput.isValidOut }}
             {{ emailInput.isValidOut }}
             {{ coinsInput.isValidOut }}
-          </p>
+          </p> -->
 
           <!--     --- !!! VISSZA KELL RAKNI !!! ---     -->
           <!-- <div class="select__wrapper form-group mb-0">
@@ -159,7 +155,7 @@
           </div> -->
 
           <button type="submit" class="game-played btn btn-info col-12 my-3"
-            [disabled]="!(usernameInput.isValidOut&&emailInput.isValidOut&&coinsInput.isValidOut)">
+            [disabled]="!(usernameInput.isValid&&emailInput.isValid&&coinsInput.isValid)">
             Save changes
           </button>
         </form>
