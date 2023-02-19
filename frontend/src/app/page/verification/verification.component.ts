@@ -11,6 +11,9 @@ import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 export class VerificationComponent {
 
   email: string = 'email@default.com';
+  code: string = '123456';
+  otpValue: string = '';
+  isButtonDisabled: boolean = true;
 
   config = {
     length: 6,
@@ -35,8 +38,23 @@ export class VerificationComponent {
 
   ngOnInit(): void { }
 
+  onOtpChange(event: any) {
+    this.otpValue = String(event);
+    if (event == this.code) {
+      this.onSubmit();
+    }
+  }
+
   onSubmit(): void {
-    this.router.navigate(['/new-password'])
+    if (this.otpValue != this.code) {
+
+    } else {
+      this.isButtonDisabled = false;
+      setTimeout(() => {
+        this.router.navigate(['/new-password']);
+      }, 500)
+    }
+
   }
 
 }

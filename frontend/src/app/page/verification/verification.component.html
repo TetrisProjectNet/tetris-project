@@ -3,7 +3,7 @@
   <div class="form__wrapper my-5 py-5 d-flex flex-column align-items-center">
     <form (ngSubmit)="onSubmit()" class="default-form animate__animated animate__fadeInUp animate__faster">
       <div class="form-group">
-        <ng-otp-input class="" [config]="config" ></ng-otp-input> <!-- (onInputChange)="onOtpChange($event)" -->
+        <ng-otp-input (onInputChange)="onOtpChange($event)" class="" [config]="config" ></ng-otp-input>
       </div>
 
       <div class="d-flex flex-column">
@@ -15,7 +15,10 @@
 
       </p>
 
-      <button [routerLink]="['/verification']" type="submit" class="game-played btn btn-info col-12 my-4">Submit</button>
+      <button [routerLink]="['/verification']" type="submit" class="game-played btn btn-info col-12 my-4"
+        [disabled]="isButtonDisabled">
+        Submit
+      </button>
     </form>
   </div>
 </div>
