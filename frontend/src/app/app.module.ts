@@ -32,6 +32,7 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { SorterPipe } from './pipe/sorter.pipe';
 import { NgChartsModule } from 'ng2-charts';
 import { FloatingLabelInputComponent } from './common/floating-label-input/floating-label-input.component';
+import {NgxPopperModule} from 'ngx-popper';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { FloatingLabelInputComponent } from './common/floating-label-input/float
     NgxPaginationModule,
     NgOtpInputModule,
     AnimateOnScrollModule.forRoot(),
-    NgChartsModule
+    NgChartsModule,
+    NgxPopperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
