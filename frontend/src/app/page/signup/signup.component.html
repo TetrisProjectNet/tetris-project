@@ -12,6 +12,7 @@
           [name]="'username'"
           [labelContent]="'Username'"
           [pattern]="'^.{3,15}$'"
+          [validGuide]="'Atleast 3 characters!'"
         ></app-floating-label-input>
 
       </div>
@@ -25,9 +26,10 @@
           [name]="'email'"
           [labelContent]="'E-mail'"
           [pattern]="'^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$'"
+          [validGuide]="'Must be a valid email address!'"
           (isValidEvent)="getValidationData($event)"
         ></app-floating-label-input>
-        
+
       </div>
       <div class="form-group">
         <!-- <input class="form-control" name="password" type="password" (focus)="passwordFocusToggler($event)" (blur)="passwordFocusToggler($event)">
@@ -39,6 +41,7 @@
           [name]="'password'"
           [labelContent]="'Password'"
           [pattern]="'^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{4,30}$'"
+          [validGuide]="'Lower case, upper case letter & digit!'"
           (isValidEvent)="getValidationData($event)"
         ></app-floating-label-input>
       </div>
@@ -52,6 +55,7 @@
           [name]="'password-again'"
           [labelContent]="'Password again'"
           [pattern]="'^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{4,30}$'"
+          [validGuide]="'Two passwords must be the same!'"
           (isValidEvent)="getValidationData($event)"
           [firstPassword]="passwordInput.inputModel"
         ></app-floating-label-input>

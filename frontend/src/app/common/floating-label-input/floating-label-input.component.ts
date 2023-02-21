@@ -19,12 +19,16 @@ export class FloatingLabelInputComponent {
   @Input() disabled: boolean = false;
   @Input() required: boolean = true;
   @Input() pattern: string | RegExp = '';
+  @Input() validGuide: string = '';
   @Output() isValidEvent = new EventEmitter<any>();
   @Input() firstPassword: string = '';
-  
+
   inputFocusClass: string = '';
   selectedElement: any;
   isValid: boolean = false;
+  isFocused: boolean = false;
+  isHovered: boolean = false;
+  isValidationActive: boolean = false;
 
   faTriangleExclamation = faTriangleExclamation;
 
@@ -59,6 +63,10 @@ export class FloatingLabelInputComponent {
   }
 
   usernameFocusToggler(event: Event): void {
+    if (event.type == 'blur') {
+      this.isValidationActive = true;
+    }
+    this.isFocused = !this.isFocused;
     this.inputFocusClass = this.focusToggler(event, this.inputFocusClass)
   }
 
@@ -66,5 +74,4 @@ export class FloatingLabelInputComponent {
     !isValidIn ? this.isValid = false : this.isValid = isValidIn;
     this.isValidEvent.emit(this.isValid);
   }
-
 }

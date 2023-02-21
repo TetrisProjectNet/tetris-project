@@ -58,11 +58,11 @@
 }
 
 .validation__warning {
-    border: 2px solid darkred;
-    border-radius: 0.2rem;
-    color: red;
+  color: red;
+    // border: 2px solid darkred;
+    // border-radius: 0.2rem;
     // padding: 0 0.2rem;
-    padding: 0 0.2rem;
+    // padding: 0 0.2rem;
     // margin-bottom: 0.1rem;
     // position: absolute;
     // right: 0;
@@ -76,4 +76,49 @@
     &:hover {
         cursor: pointer;
     }
+}
+
+.val-tooltip {
+  position: fixed;
+  color: #ffffff;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 4px;
+  // font-family: Arial;
+  padding: 3px 6px;
+  font-size: 13px;
+  margin-top: 7px;
+  transform: translateX(0px);
+  z-index: 2;
+  animation: fadeInAnimation ease 0.5s;
+
+  &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid red;
+      position: absolute;
+      left: calc(10px);
+      animation: fadeUpAnimation ease 0.6s;
+      top: -6px;
+    }
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeUpAnimation {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: -6px;
+  }
 }
