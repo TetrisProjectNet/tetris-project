@@ -32,17 +32,3 @@
     </form>
   </div>
 </div>
-
-
-<div [popper]="popper1Content"
-  [popperShowOnStart]="true"
-  [popperTrigger]="'click'"
-  [popperHideOnClickOutside]="true"
-  [popperHideOnScroll]="true"
-  [popperPlacement]="'bottom'">
-  <p class="bold">Hey!</p>
-  <p class="thin">Choose where to put your popper!</p>         
-</div>
-<popper-content #popper1Content>
-  <p class="bold">Popper on bottom</p>
-</popper-content>

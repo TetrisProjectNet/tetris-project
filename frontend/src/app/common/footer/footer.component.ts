@@ -4,6 +4,7 @@ import { faAngular, faGithub, faGoogle, faInstagram, faLinkedinIn, faSass, faTwi
 import { faCode, faDatabase, faGamepad, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons';
 import { FaConfig } from '@fortawesome/angular-fontawesome';
+import { NgxPopperjsTriggers, NgxPopperjsPlacements } from 'ngx-popperjs';
 
 @Component({
   selector: 'app-footer',
@@ -32,8 +33,16 @@ import { FaConfig } from '@fortawesome/angular-fontawesome';
 })
 export class FooterComponent implements OnInit {
 
-  @ViewChildren('tooltipRef') tooltipElements!: QueryList<ElementRef>;  
+  @ViewChildren('tooltipRef') tooltipElements!: QueryList<ElementRef>;
   tooltips: any;
+
+  triggers = NgxPopperjsTriggers;
+  placements = NgxPopperjsPlacements;
+  popperStyles: any = {
+    'background-color': '#070707',
+    'padding': '6px 10px',
+    'border-radius': '4px'
+  }
 
   faGithub = faGithub;
   faLinkedinIn = faLinkedinIn;

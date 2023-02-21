@@ -17,26 +17,35 @@
       </div>
       <!-- Left -->
 
+      <!-- [popper]="'As text'" [popperTrigger]="triggers.hover"
+      [popperPlacement]="placements.BOTTOM"
+      [popperTarget]="inputRef" -->
+
       <!-- Right -->
-      <div>
-        <a href="https://github.com/TetrisProjectNet/tetris-project" #tooltipRef target="_blank" class="me-3 h5"
-          data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+      <div class="d-flex flex-row">
+        <a href="https://github.com/TetrisProjectNet/tetris-project" target="_blank" class="me-3 mb-0 h5" title="Github"
+          [popper]="'GitHub'" [popperTrigger]="triggers.hover" [popperPlacement]="placements.TOP" [popperPositionFixed]="true"
+          [popperStyles]="popperStyles">
           <fa-icon [icon]="faGithub"></fa-icon>
         </a>
-        <a href="https://www.linkedin.com/" #tooltipRef target="_blank" class="me-3 fa-lg" data-bs-toggle="tooltip"
-          data-bs-placement="top" title="LinkedIn">
+        <a href="https://www.linkedin.com/" target="_blank" class="me-3 mb-0 fa-lg" title="LinkedIn"
+          [popper]="'LinkedIn'" [popperTrigger]="triggers.hover" [popperPlacement]="placements.TOP" [popperPositionFixed]="true"
+          [popperStyles]="popperStyles">
           <fa-icon [icon]="faLinkedinIn"></fa-icon>
         </a>
-        <a href="https://www.twitter.com/" #tooltipRef target="_blank" class="me-3 fa-lg" data-bs-toggle="tooltip"
-          data-bs-placement="top" title="Twitter">
+        <a href="https://www.twitter.com/" target="_blank" class="me-3 mb-0 fa-lg" title="Twitter"
+          [popper]="'Twitter'" [popperTrigger]="triggers.hover" [popperPlacement]="placements.TOP" [popperPositionFixed]="true"
+          [popperStyles]="popperStyles">
           <fa-icon [icon]="faTwitter"></fa-icon>
         </a>
-        <a href="https://www.instagram.com/" #tooltipRef target="_blank" class="me-3 fa-lg" data-bs-toggle="tooltip"
-          data-bs-placement="top" title="Instagram">
+        <a href="https://www.instagram.com/" target="_blank" class="me-3 mb-0 fa-lg" title="Instagram"
+          [popper]="'Instagram'" [popperTrigger]="triggers.hover" [popperPlacement]="placements.TOP" [popperPositionFixed]="true"
+          [popperStyles]="popperStyles">
           <fa-icon [icon]="faInstagram"></fa-icon>
         </a>
-        <a href="https://www.google.com/" #tooltipRef target="_blank" class="fa-lg" data-bs-toggle="tooltip"
-          data-bs-placement="top" title="Google">
+        <a href="https://www.google.com/" target="_blank" class="fa-lg" title="Google"
+          [popper]="'Google'" [popperTrigger]="triggers.hover" [popperPlacement]="placements.TOP" [popperPositionFixed]="true"
+          [popperStyles]="popperStyles">
           <fa-icon [icon]="faGoogle"></fa-icon>
         </a>
       </div>
