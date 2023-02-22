@@ -28,6 +28,7 @@
               [name]="'title'"
               [labelContent]="'Title'"
               [pattern]="'^.{3,20}$'"
+              [validGuide]="'Atleast 3 characters!'"
               (isValidEvent)="getValidationData($event)"
             ></app-floating-label-input>
           </div>
@@ -41,6 +42,7 @@
               [type]="'text'"
               [name]="'image'"
               [labelContent]="'Image link'"
+              [validGuide]="'Please enter a link!'"
               (isValidEvent)="getValidationData($event)"
             ></app-floating-label-input>
           </div>
@@ -56,6 +58,7 @@
               [name]="'price'"
               [labelContent]="'Price'"
               [pattern]="'^(?:0|[1-9][0-9]{0,5})$'"
+              [validGuide]="'0 - 999999'"
               (isValidEvent)="getValidationData($event)"
             ></app-floating-label-input>
           </div>

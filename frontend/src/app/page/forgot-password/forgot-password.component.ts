@@ -11,6 +11,8 @@ export class ForgotPasswordComponent {
   email: string = '';
   email2: string = '';
 
+  validGuideMessage: string = 'Please enter an existing email address!';
+
   // emailClass: string = '';
   // selectedElement: any;
 
