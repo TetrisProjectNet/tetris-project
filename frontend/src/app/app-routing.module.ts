@@ -4,6 +4,7 @@ import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.
 import { HomeComponent } from './page/home/home/home.component';
 import { LoginComponent } from './page/login/login.component';
 import { NewPasswordComponent } from './page/new-password/new-password.component';
+import { PrivacyPolicyComponent } from './page/privacy-policy/privacy-policy.component';
 import { ShopItemEditorComponent } from './page/shop-item-editor/shop-item-editor.component';
 import { ShopComponent } from './page/shop/shop.component';
 import { SignupComponent } from './page/signup/signup.component';
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'user/:id',
     component: UserEditorComponent,
+  },
+  {
+    path: 'privacy-policy',
+    component: PrivacyPolicyComponent,
   },
   {
     path: '**',

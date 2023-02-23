@@ -10,6 +10,8 @@ import { faBars, faCircleUser, faCoins, faRightFromBracket, faRightToBracket, fa
 
 export class NavbarComponent implements OnInit {
 
+  isCollapsed: boolean= false;
+
   faRightToBracket = faRightToBracket;
   faRightFromBracket = faRightFromBracket;
   faBars = faBars;
@@ -46,5 +48,7 @@ export class NavbarComponent implements OnInit {
     faConfig.fixedWidth = true;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.isCollapsed);
+  }
 }

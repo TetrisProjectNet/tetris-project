@@ -33,6 +33,7 @@ import { SorterPipe } from './pipe/sorter.pipe';
 import { NgChartsModule } from 'ng2-charts';
 import { FloatingLabelInputComponent } from './common/floating-label-input/floating-label-input.component';
 import { NgxPopperjsModule } from 'ngx-popperjs';
+import { PrivacyPolicyComponent } from './page/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { NgxPopperjsModule } from 'ngx-popperjs';
     EmailHiderPipe,
     FilterPipe,
     SorterPipe,
-    FloatingLabelInputComponent
+    FloatingLabelInputComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
