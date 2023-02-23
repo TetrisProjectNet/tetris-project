@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Observable, switchMap, of } from 'rxjs';
+import { User } from 'src/app/model/user';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  username: string = '';
-  email: string = '';
-  password: string = ''
+  user$: Observable<User> = this.activatedRoute.params.pipe(
+    switchMap(params => {
+      if (params['id']) {
+        return this.userService.get(params['id'])
+      }
+      return of(new User())
+    })
+  );
+
+  // username: string = '';
+  // email: string = '';
+  // password: string = ''
   passwordAgain: string = '';
 
   // usernameClass: string = '';
@@ -18,7 +31,11 @@ export class SignupComponent implements OnInit {
   // passwordAgainClass: string = '';
   // selectedElement: any;
 
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private userService: UserService,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
@@ -53,6 +70,21 @@ export class SignupComponent implements OnInit {
   // passwordAgainFocusToggler(event: Event): void {
   //   this.passwordAgainClass = this.focusToggler(event, this.passwordAgainClass)
   // }
+
+  onCreate(user: User): void {
+    if (user.password !== this.passwordAgain) {
+      console.log('Two passwords are not the same!');
+    } else {
+      console.log(new Date());
+      user.joinDate = new Date();
+      user.coins = 100;
+      user.role = 'player';
+      this.userService.create(user).subscribe({
+        error: err => console.error(err),
+        // complete: () => this.router.navigate(['user']),
+      });
+    }
+  }
 
   getValidationData($event: any) {
     console.log('$event', $event);

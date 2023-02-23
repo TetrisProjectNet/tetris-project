@@ -118,10 +118,15 @@ export class UserEditorComponent {
     console.log(user);
     this.clicked = true;
     if (user.id === 0) {
-      this.userService.create(user).subscribe(
-        () => this.router.navigate(['user']),
-        err => console.error(err)
-      );
+      user.joinDate = new Date();
+      this.userService.create(user).subscribe({
+        error: err => console.error(err),
+        complete: () => this.router.navigate(['user']),
+      });
+      // this.userService.create(user).subscribe(
+      //   err => console.error(err),
+      //   () => this.router.navigate(['user']),
+      // );
     } else {
       this.userService.update(user).subscribe(
         () => this.router.navigate(['user']),

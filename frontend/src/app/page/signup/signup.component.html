@@ -1,13 +1,13 @@
-<div class="login__wrapper d-flex flex-column align-items-center m-0 min-vh-100">
+<div *ngIf="(user$ | async) as user" class="login__wrapper d-flex flex-column align-items-center m-0 min-vh-100">
   <h1 class="signup-title game-played animate__animated animate__backInDown text-white text-center mt-5">We are happy to welcome you!</h1>
   <div class="login col-10 col-md-6 col-xl-3 my-4 p-5">
-    <form class="default-form animate__animated animate__fadeInUp animate__faster">
+    <form (ngSubmit)="onCreate(user)" class="default-form animate__animated animate__fadeInUp animate__faster">
       <div class="form-group">
         <!-- <input class="form-control e-mail" name="username" type="text" (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)">
         <label class="form-label" [class]="usernameClass">Username</label> -->
         <app-floating-label-input
           #usernameInput
-          [(inputModel)]="username"
+          [(inputModel)]="user.username"
           [type]="'text'"
           [name]="'username'"
           [labelContent]="'Username'"
@@ -21,7 +21,7 @@
         <label class="form-label" [class]="emailClass">E-mail</label> -->
         <app-floating-label-input
           #emailInput
-          [(inputModel)]="email"
+          [(inputModel)]="user.email"
           [type]="'email'"
           [name]="'email'"
           [labelContent]="'E-mail'"
@@ -36,7 +36,7 @@
         <label class="form-label" [class]="passwordClass">Password</label> -->
         <app-floating-label-input
           #passwordInput
-          [(inputModel)]="password"
+          [(inputModel)]="user.password"
           [type]="'password'"
           [name]="'password'"
           [labelContent]="'Password'"

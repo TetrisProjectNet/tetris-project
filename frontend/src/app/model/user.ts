@@ -10,8 +10,8 @@ export class User {
   banned: boolean = false;  //  ha szeretnénk banolási lehetőséget
 
   // ----- STATISZTIKÁKHOZ -----
-  joinDate: string = '';
-  lastOnlineDate: string = '';
+  joinDate: any = '';
+  lastOnlineDate: any = '';
   scores?: number[] = [];
 
   // ----- SHOP -----
