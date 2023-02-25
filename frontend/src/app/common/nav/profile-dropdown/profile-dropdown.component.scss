@@ -1,72 +1,37 @@
 @use '../../../../styles'as styles;
 
-.navbar {
-  box-shadow: inset 0 -7px 10px -9px rgba(styles.$theme, 0.8);
-  // box-shadow: 0px 0px 30px 0.5px rgba(0, 255, 255, 0.8); //rgba(0,0,0,0.68)
-  display: block;
-  font-family: game-played;
-  transition: box-shadow 0.5s;
-}
+.dropdown {
+  &-item {
+    &:hover,
+    &:active,
+    &:focus {
+      color: styles.$theme;
+      & fa-icon {
+        color: styles.$white;
+      }
+    }
 
-.navbar-toggler {
-
-  &:focus,
-  &:active,
-  &-icon:focus {
-    outline: none;
-    box-shadow: none;
+    &-text {
+      padding: 4px 16px 4px 12px;
+    }
   }
-}
 
-// ----- LINKS -----
-a:not(.dropdown a) {
-  text-decoration: none;
-  cursor: pointer;
-
-  &:not(:target) {
+  & .dropdown-toggle {
     color: styles.$white;
-  }
 
-  &:hover,
-  &:active,
-  &:focus,
-  &:target {
-    // text-shadow: 0px 0px 3px  orchid;
-    color: styles.$theme;
-    text-shadow: 0px 0px 5px styles.$theme;
-  }
-}
+    &::after {
+      color: styles.$white;
+    }
 
-.active-link {
-  color: styles.$theme !important;
-  text-shadow: 0px 0px 5px styles.$theme;
+    &:hover::after {
+        color: styles.$theme;
+    }
 
-  & fa-icon {
-    color: styles.$white;
+    &:focus::after {
+        color: styles.$theme;
+    }
   }
 }
-
-.navbar-toggler {
-  & span {
-    color: styles.$white;
-  }
-
-  &-icon {
-    stroke: styles.$white;
-  }
-}
-
-
-// ----- COINS -----
-.coins {
-  color: styles.$white;
-  font-size: larger;
-
-  &:hover {
-    color: styles.$white !important;
-  }
-}
-
 
 // ----- LOGIN BUTTON -----
 .content__item {
@@ -146,9 +111,4 @@ a:not(.dropdown a) {
 
 .button--anthe:hover .login__icon {
   color: styles.$theme;
-}
-
-// ----- ON SCROLL -----
-.scroll {
-  box-shadow: inset 0 -7px 10px -9px rgba(styles.$theme, 0.8), 0px 0px 30px 0.5px rgba(styles.$theme, 0.8);
 }

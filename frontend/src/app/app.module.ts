@@ -34,6 +34,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { FloatingLabelInputComponent } from './common/floating-label-input/floating-label-input.component';
 import { NgxPopperjsModule } from 'ngx-popperjs';
 import { PrivacyPolicyComponent } from './page/privacy-policy/privacy-policy.component';
+import { ProfileDropdownComponent } from './common/nav/profile-dropdown/profile-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { PrivacyPolicyComponent } from './page/privacy-policy/privacy-policy.com
     FilterPipe,
     SorterPipe,
     FloatingLabelInputComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    ProfileDropdownComponent
   ],
   imports: [
     BrowserModule,

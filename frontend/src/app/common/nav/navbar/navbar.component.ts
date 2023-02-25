@@ -10,21 +10,21 @@ import { faBars, faCircleUser, faCoins, faRightFromBracket, faRightToBracket, fa
 
 export class NavbarComponent implements OnInit {
 
-  isCollapsed: boolean= false;
+  innerWidth: any;
+  breakpoint: number = 992;
 
   faRightToBracket = faRightToBracket;
   faRightFromBracket = faRightFromBracket;
   faBars = faBars;
   faCoins = faCoins;
-  faCircleUser = faCircleUser;
-  faUser = faUser;
-  faUserGear = faUserGear;
-  faUserShield = faUserShield;
 
   coins = 100;
 
   className: string = '';
 
+  @HostListener('window:resize', []) onResize() {
+    this.innerWidth = window.innerWidth;
+  }
 
   @HostListener('window:scroll', []) onWindowScroll() {
     // do some stuff here when the window is scrolled
@@ -49,6 +49,6 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.isCollapsed);
+    this.innerWidth = window.innerWidth;
   }
 }
