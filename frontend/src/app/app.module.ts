@@ -35,6 +35,8 @@ import { FloatingLabelInputComponent } from './common/floating-label-input/float
 import { NgxPopperjsModule } from 'ngx-popperjs';
 import { PrivacyPolicyComponent } from './page/privacy-policy/privacy-policy.component';
 import { ProfileDropdownComponent } from './common/nav/profile-dropdown/profile-dropdown.component';
+import { ToastrModule } from 'ngx-toastr';
+import { ToastrComponent } from './common/toastr/toastr.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,8 @@ import { ProfileDropdownComponent } from './common/nav/profile-dropdown/profile-
     SorterPipe,
     FloatingLabelInputComponent,
     PrivacyPolicyComponent,
-    ProfileDropdownComponent
+    ProfileDropdownComponent,
+    ToastrComponent
   ],
   imports: [
     BrowserModule,
@@ -89,7 +92,10 @@ import { ProfileDropdownComponent } from './common/nav/profile-dropdown/profile-
     NgOtpInputModule,
     AnimateOnScrollModule.forRoot(),
     NgChartsModule,
-    NgxPopperjsModule
+    NgxPopperjsModule,
+    ToastrModule.forRoot({
+      toastComponent: ToastrComponent,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

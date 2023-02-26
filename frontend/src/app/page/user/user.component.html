@@ -146,7 +146,7 @@
               <button (click)="onEditOne(user)" class="m-1 edit__button btn">
                 <fa-icon [icon]="faUserPen"></fa-icon>
               </button>
-              <button (click)="onDeleteOne(user.id)" class="m-1 delete__button btn">
+              <button (click)="showToast()" class="m-1 delete__button btn"> <!-- onDeleteOne(user.id) -->
                 <fa-icon [icon]="faUserMinus"></fa-icon>
               </button>
             </div>

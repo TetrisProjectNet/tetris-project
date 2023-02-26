@@ -1,0 +1,63 @@
+// .overlay-container {
+//   height: 100px !important;
+//   width: 300px !important;
+//   background-color: #51d21a;
+// }
+
+// .toast-container {
+//   height: 100px !important;
+//   width: 300px !important;
+//   background-color: #51d21a;
+// }
+
+:host {
+  background-color: #FFF;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  border-radius: 3px 3px 3px 3px;
+  color: #000;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+:host.border-blue{
+border-top:4px solid #04c4f3;
+}
+:host.border-green{
+border-top: 4px solid #51d21a;
+}
+:host.border-red{
+border-top: 4px solid red;
+}
+
+.toast-close-button{
+color: #999;
+opacity: 1;
+
+}
+.toast-close-button:hover{
+color: #02ceff;
+}
+
+.custom-title{
+        color: #111;
+    }
+.custom-message{
+color: #333;
+}
+
+
+// .toast {
+//   width: 200px;
+//   height: 200px;
+//   background-color: black;
+// }
+
+// .item {
+//   width: 200px;
+//   height: 200px;
+//   background-color: #51d21a;
+// }

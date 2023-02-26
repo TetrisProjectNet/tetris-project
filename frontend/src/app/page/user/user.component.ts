@@ -1,4 +1,10 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  QueryList,
+  ViewChildren,
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
 import {
@@ -15,6 +21,7 @@ import {
   faUserPlus,
   faUserXmark,
 } from '@fortawesome/free-solid-svg-icons';
+import { ToastrService } from 'ngx-toastr';
 import { delay } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { ConfigService } from 'src/app/service/config.service';
@@ -139,20 +146,22 @@ export class UserComponent implements OnInit {
   faArrowDownAZ = faArrowDownAZ;
   faArrowDownZA = faArrowDownZA;
 
+  toastRef: any;
+
   constructor(
     private config: ConfigService,
     private userService: UserService,
-    private router: Router
+    private router: Router,
+    private toastr: ToastrService
   ) {}
 
   ngOnInit(): void {}
 
   ngAfterViewInit() {
-    this.inputs.changes.subscribe(sub => {
+    this.inputs.changes.subscribe((sub) => {
       sub.toArray().forEach((element: any) => {
         console.log(element.nativeElement);
         setTimeout(() => {
-
           if (element.nativeElement.value != '') {
             switch (element.nativeElement.name) {
               // case 'username': {
@@ -181,9 +190,8 @@ export class UserComponent implements OnInit {
               }
             }
           }
-
-        }, 1)
-      })
+        }, 1);
+      });
     });
   }
 
@@ -193,9 +201,16 @@ export class UserComponent implements OnInit {
 
   onDeleteOne(id: number): void {
     if (window.confirm('Are you sure about deleting this user?')) {
-      this.userService
-        .remove(id)
-        .subscribe(() => (this.list$ = this.userService.getAll()));
+      // console.log(this.userService.remove(id));
+      this.userService.remove(id).subscribe({
+        error: () =>
+          this.toastr.error('We could not delete this item.', 'Error!'),
+        complete: () => {
+          (this.list$ = this.userService.getAll()),
+            this.toastr.success('Hello world!', 'Toastr fun!');
+        },
+      });
+      console.log('asdasd');
     }
   }
 
@@ -217,14 +232,14 @@ export class UserComponent implements OnInit {
 
   checkValue(value: any, id: number) {
     if (value === 'true') {
-      this.onBanOne(id)
+      this.onBanOne(id);
     } else {
       this.onUnbanOne(id);
     }
   }
 
   focusToggler(event: Event, className: string): string {
-    event.type == 'focus' ? className = 'focused' : className = '';
+    event.type == 'focus' ? (className = 'focused') : (className = '');
 
     if (event) {
       this.selectedElement = event.target;
@@ -239,15 +254,15 @@ export class UserComponent implements OnInit {
   }
 
   rowsFocusToggler(event: Event): void {
-    this.rowsClass = this.focusToggler(event, this.rowsClass)
+    this.rowsClass = this.focusToggler(event, this.rowsClass);
   }
 
   phraseFocusToggler(event: Event): void {
-    this.phraseClass = this.focusToggler(event, this.phraseClass)
+    this.phraseClass = this.focusToggler(event, this.phraseClass);
   }
 
   keyFocusToggler(event: Event): void {
-    this.keyClass = this.focusToggler(event, this.keyClass)
+    this.keyClass = this.focusToggler(event, this.keyClass);
   }
 
   onColumnSelect(columnHead: string): void {
@@ -257,7 +272,7 @@ export class UserComponent implements OnInit {
 
   public arrayMove(arr: any[], from: number, to: any) {
     let cutOut = arr.splice(from, 1)[0]; // remove the dragged element at index 'from'
-    arr.splice(to, 0, cutOut);            // insert it at index 'to'
+    arr.splice(to, 0, cutOut); // insert it at index 'to'
   }
 
   public dragStartColumn(index: any) {
@@ -273,4 +288,37 @@ export class UserComponent implements OnInit {
   public dropColumn(index: any) {
     this.arrayMove(this.columns, this.draggedColumnIndex, index);
   }
+
+  showSuccess() {
+    this.toastr.success('Hello world!', 'Toastr fun!');
+  }
+
+  //   openNotyf() {
+  //   const opt = cloneDeep(this.options);
+  //   opt.toastComponent = NotyfToast;
+  //   opt.toastClass = 'notyf confirm';
+  //   // opt.positionClass = 'notyf__wrapper';
+  //   // this.options.newestOnTop = false;
+  //   const { message, title } = this.getMessage();
+  //   const inserted = this.toastr.show(message || 'Success', title, opt);
+  //   if (inserted && inserted.toastId) {
+  //     this.lastInserted.push(inserted.toastId);
+  //   }
+  //   return inserted;
+  // }
+  showToast=()=>{
+    console.log('asd');
+    this.toastRef = this.toastr.show("Test", 'asdasd',{
+      disableTimeOut: true,
+      tapToDismiss: false,
+      toastClass: "ngx-toastr border-red",
+      closeButton: true,
+      positionClass:'toast-bottom-left'
+    });
+  }
+
+  removeToast = () =>{
+    this.toastr.clear(this.toastRef.ToastId);
+  }
+
 }
