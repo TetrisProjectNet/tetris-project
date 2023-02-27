@@ -2607,6 +2607,48 @@
       "coins": 100,
       "shopItems": [],
       "friends": []
+    },
+    {
+      "id": 111,
+      "username": "asd",
+      "email": "asd@asd.hu",
+      "password": "asdD1",
+      "role": "player",
+      "banned": false,
+      "joinDate": "2023-02-27T09:23:25.838Z",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": 100,
+      "shopItems": [],
+      "friends": []
+    },
+    {
+      "id": 112,
+      "username": "asd12355",
+      "email": "asd@asd.hu",
+      "password": "asdD1",
+      "role": "player",
+      "banned": false,
+      "joinDate": "2023-02-27T09:23:31.192Z",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": 100,
+      "shopItems": [],
+      "friends": []
+    },
+    {
+      "id": 113,
+      "username": "asas",
+      "email": "aasd@asd.hu",
+      "password": "asdD1",
+      "role": "player",
+      "banned": false,
+      "joinDate": "2023-02-27T09:32:19.349Z",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": 100,
+      "shopItems": [],
+      "friends": []
     }
   ],
   "shop": [

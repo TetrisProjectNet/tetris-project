@@ -1,63 +1,201 @@
-// .overlay-container {
-//   height: 100px !important;
-//   width: 300px !important;
+// // .overlay-container {
+// //   height: 100px !important;
+// //   width: 300px !important;
+// //   background-color: #51d21a;
+// // }
+
+// // .toast-container {
+// //   height: 100px !important;
+// //   width: 300px !important;
+// //   background-color: #51d21a;
+// // }
+
+// :host {
+//   background-color: #FFF;
+//   position: relative;
+//   overflow: hidden;
+//   margin: 0 0 6px;
+//   padding: 10px 10px 10px 10px;
+//   width: 300px;
+//   border-radius: 3px 3px 3px 3px;
+//   color: #000;
+//   pointer-events: all;
+//   cursor: pointer;
+// }
+
+// :host.border-blue{
+// border-top:4px solid #04c4f3;
+// }
+// :host.border-green{
+// border-top: 4px solid #51d21a;
+// }
+// :host.border-red{
+// border-top: 4px solid red;
+// }
+
+// .toast-close-button{
+// color: #999;
+// opacity: 1;
+
+// }
+// .toast-close-button:hover{
+// color: #02ceff;
+// }
+
+// .custom-title{
+//         color: #111;
+//     }
+// .custom-message{
+// color: #333;
+// }
+
+
+// // .toast {
+// //   width: 200px;
+// //   height: 200px;
+// //   background-color: black;
+// // }
+
+// .border-red {
+//   width: 200px;
+//   height: 200px;
 //   background-color: #51d21a;
 // }
 
-// .toast-container {
-//   height: 100px !important;
-//   width: 300px !important;
-//   background-color: #51d21a;
-// }
+
+
+
+.toast-progress {
+  background-color: cyan;
+  
+}
+
+
+
 
 :host {
-  background-color: #FFF;
   position: relative;
   overflow: hidden;
-  margin: 0 0 6px;
-  padding: 10px 10px 10px 10px;
-  width: 300px;
-  border-radius: 3px 3px 3px 3px;
+  // margin: 0 0 6px;
   color: #000;
   pointer-events: all;
+  background-color: transparent;
   cursor: pointer;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-:host.border-blue{
-border-top:4px solid #04c4f3;
+::ng-deep .toast-container {
+  pointer-events: none;
+  // position: relative;
+  z-index: 999999;
 }
-:host.border-green{
-border-top: 4px solid #51d21a;
+::ng-deep .toast-top-right {
+  top: 12px;
+  right: 12px;
 }
-:host.border-red{
-border-top: 4px solid red;
-}
-
-.toast-close-button{
-color: #999;
-opacity: 1;
-
-}
-.toast-close-button:hover{
-color: #02ceff;
+.toast-close-button {
+  color: #999;
+  opacity: 1;
 }
 
-.custom-title{
-        color: #111;
-    }
-.custom-message{
-color: #333;
+.toast-close-button:hover {
+  color: #02ceff;
+}
+
+::ng-deep .toast-error,
+::ng-deep .toast-info,
+::ng-deep .toast-warning,
+::ng-deep .toast-success {
+  background-image: none;
 }
 
 
-// .toast {
-//   width: 200px;
-//   height: 200px;
-//   background-color: black;
-// }
 
-// .item {
-//   width: 200px;
-//   height: 200px;
-//   background-color: #51d21a;
-// }
+.toaster {
+  display: flex;
+  color: white;
+  background-color: #333333;
+  width: 335px;
+  min-height: 80px;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(100, 100, 100, 0.5);
+  // margin: 5px 30px 5px 0;
+}
+
+.toaster .toast-icon {
+  border-radius: 4px 0 0 4px;
+  margin: 0 !important;
+}
+.toaster .toast-icon.custom-toast-success {
+  background-color: #67be4e;
+}
+.toaster .toast-icon.custom-toast-success #warning-icon,
+.toaster .toast-icon.custom-toast-success #info-icon,
+.toaster .toast-icon.custom-toast-success #error-icon {
+  display: none;
+}
+.toaster .toast-icon.custom-toast-warning {
+  background-color: #ffc825;
+}
+.toaster .toast-icon.custom-toast-warning #success-icon,
+.toaster .toast-icon.custom-toast-warning #info-icon,
+.toaster .toast-icon.custom-toast-warning #error-icon {
+  display: none;
+}
+.toaster .toast-icon.custom-toast-error {
+  background-color: #e9493f;
+}
+.toaster .toast-icon.custom-toast-error #success-icon,
+.toaster .toast-icon.custom-toast-error #info-icon,
+.toaster .toast-icon.custom-toast-error #warning-icon {
+  display: none;
+}
+.toaster .toast-icon.custom-toast-info {
+  background-color: #45a7e7;
+}
+.toaster .toast-icon.custom-toast-info #success-icon,
+.toaster .toast-icon.custom-toast-info #error-icon,
+.toaster .toast-icon.custom-toast-info #warning-icon {
+  display: none;
+}
+
+.toast-icon {
+  width: 50px;
+  position: relative;
+}
+.toast-icon fa-icon {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translate(-40%, -50%);
+}
+
+.toast-title {
+  font-size: 16px;
+}
+
+.toast-message {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.toast-details {
+  margin: 0 10px 0 20px;
+  display: flex;
+  align-items: center;
+  width: 180px;
+}
+
+.close-icon {
+  position: relative;
+}
+.close-icon .toast-close-button {
+  position: absolute;
+  top: 15%;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+}

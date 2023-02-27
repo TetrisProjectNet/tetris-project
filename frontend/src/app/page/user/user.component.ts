@@ -290,7 +290,7 @@ export class UserComponent implements OnInit {
   }
 
   showSuccess() {
-    this.toastr.success('Hello world!', 'Toastr fun!');
+    this.toastr.show('Hello world!', 'Toastr fun!');
   }
 
   //   openNotyf() {
@@ -308,13 +308,15 @@ export class UserComponent implements OnInit {
   // }
   showToast=()=>{
     console.log('asd');
-    this.toastRef = this.toastr.show("Test", 'asdasd',{
+    this.toastRef = this.toastr.show("Test", 'Title',{
       disableTimeOut: true,
       tapToDismiss: false,
-      toastClass: "ngx-toastr border-red",
+      toastClass: "ngx-toastr",
       closeButton: true,
+      progressBar: true,
       positionClass:'toast-bottom-left'
     });
+    console.log(this.toastRef);
   }
 
   removeToast = () =>{
