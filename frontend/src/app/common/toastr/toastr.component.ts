@@ -1,6 +1,7 @@
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 import { Component } from '@angular/core';
-import { faCheck, faSquareCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
+import { faCheck, faSquareCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { Toast, ToastPackage, ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -49,7 +50,9 @@ export class ToastrComponent extends Toast {
   undoString = 'undo';
 
   faSquareCheck = faSquareCheck;
+  faCircleCheck = faCircleCheck;
   faCheck = faCheck;
+  faXmark = faXmark;
 
   // constructor is only necessary when not using AoT
   // constructor(

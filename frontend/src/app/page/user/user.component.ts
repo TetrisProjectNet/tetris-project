@@ -308,13 +308,15 @@ export class UserComponent implements OnInit {
   // }
   showToast=()=>{
     console.log('asd');
-    this.toastRef = this.toastr.show("Test", 'Title',{
-      disableTimeOut: true,
+    this.toastRef = this.toastr.show("New user registered.", 'Success!',{
+      disableTimeOut: false,
       tapToDismiss: false,
-      toastClass: "ngx-toastr",
+      toastClass: "custom-toast-success",
       closeButton: true,
       progressBar: true,
-      positionClass:'toast-bottom-left'
+      positionClass:'toast-bottom-left',
+      timeOut: 50000,
+      extendedTimeOut: 50000
     });
     console.log(this.toastRef);
   }

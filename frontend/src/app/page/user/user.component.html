@@ -14,8 +14,8 @@
 
   <!-- Add new -->
   <div class="m-3">
-    <button [routerLink]="['/', entity, '']" type="button"
-      class="add__new game-played btn fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+    <button  (click)="showToast()"  type="button"
+      class="add__new game-played btn fw-bold text-uppercase col-12 col-xl-10 offset-xl-1"> <!--  [routerLink]="['/', entity, '']"  -->
       <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
       Register user
     </button>
@@ -146,7 +146,7 @@
               <button (click)="onEditOne(user)" class="m-1 edit__button btn">
                 <fa-icon [icon]="faUserPen"></fa-icon>
               </button>
-              <button (click)="showToast()" class="m-1 delete__button btn"> <!-- onDeleteOne(user.id) -->
+              <button class="m-1 delete__button btn"> <!-- onDeleteOne(user.id) -->
                 <fa-icon [icon]="faUserMinus"></fa-icon>
               </button>
             </div>
