@@ -44,11 +44,20 @@
 </div> -->
 
 
-<div class="toaster">
-  <div class="toast-color" [class]="options.toastClass"></div>
+<div class="toaster" [class]="options.toastClass">
+  <div class="toast-line toast-color"></div>
   <div class="toast-details">
-    <div class="toast-icon-container mx-3">
+    <div *ngIf="options.toastClass=='custom-toast-success'" class="toast-icon-container">
       <fa-icon class="text-center" [icon]="faCircleCheck"></fa-icon>
+    </div>
+    <div *ngIf="options.toastClass=='custom-toast-warning'" class="toast-icon-container">
+      <fa-icon class="text-center" [icon]="faCircleExclamation"></fa-icon>
+    </div>
+    <div *ngIf="options.toastClass=='custom-toast-danger'" class="toast-icon-container">
+      <fa-icon class="text-center" [icon]="faCircleXmark"></fa-icon>
+    </div>
+    <div *ngIf="options.toastClass=='custom-toast-info'" class="toast-icon-container">
+      <fa-icon class="text-center" [icon]="faCircleInfo"></fa-icon>
     </div>
     <div class="col-12">
       <div

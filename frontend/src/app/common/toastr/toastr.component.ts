@@ -1,7 +1,7 @@
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 import { Component } from '@angular/core';
-import { faCircleCheck } from '@fortawesome/free-regular-svg-icons';
-import { faCheck, faSquareCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck, faCircleXmark, } from '@fortawesome/free-regular-svg-icons';
+import { faCheck, faCircleExclamation, faCircleInfo, faSquareCheck, faXmark,  faInfo, faExclamation } from '@fortawesome/free-solid-svg-icons';
 import { Toast, ToastPackage, ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -51,6 +51,11 @@ export class ToastrComponent extends Toast {
 
   faSquareCheck = faSquareCheck;
   faCircleCheck = faCircleCheck;
+  faCircleXmark = faCircleXmark;
+  faCircleInfo = faCircleInfo;
+  faInfo = faInfo;
+  faCircleExclamation = faCircleExclamation;
+  faExclamation = faExclamation;
   faCheck = faCheck;
   faXmark = faXmark;
 

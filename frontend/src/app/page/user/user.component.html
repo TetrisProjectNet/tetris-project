@@ -12,10 +12,42 @@
       </div>
     </div>-->
 
+    <div class="m-3">
+      <button (click)="showInfoToast('Did you know?', 'This app is designed for you.')" type="button"
+        class="game-played btn btn-info fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
+        Info
+      </button>
+    </div>
+
+    <div class="m-3">
+      <button (click)="showSuccessToast('Success!', 'New user registered.')" type="button"
+        class="game-played btn btn-success fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
+        Success
+      </button>
+    </div>
+
+    <div class="m-3">
+      <button (click)="showWarningToast('Warning!', 'Don\'t tell your password to anyone!')" type="button"
+        class="game-played btn btn-warning fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
+        Warning
+      </button>
+    </div>
+
+    <div class="m-3">
+      <button (click)="showDangerToast('Error!', 'Something went wrong. Please try again later!')" type="button"
+        class="mb-5 game-played btn btn-danger fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
+        Danger
+      </button>
+    </div>
+
   <!-- Add new -->
   <div class="m-3">
-    <button  (click)="showToast()"  type="button"
-      class="add__new game-played btn fw-bold text-uppercase col-12 col-xl-10 offset-xl-1"> <!--  [routerLink]="['/', entity, '']"  -->
+    <button [routerLink]="['/', entity, '']" type="button"
+      class="add__new game-played btn fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
       <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
       Register user
     </button>
@@ -146,7 +178,7 @@
               <button (click)="onEditOne(user)" class="m-1 edit__button btn">
                 <fa-icon [icon]="faUserPen"></fa-icon>
               </button>
-              <button class="m-1 delete__button btn"> <!-- onDeleteOne(user.id) -->
+              <button (click)="onDeleteOne(user.id)" class="m-1 delete__button btn">
                 <fa-icon [icon]="faUserMinus"></fa-icon>
               </button>
             </div>

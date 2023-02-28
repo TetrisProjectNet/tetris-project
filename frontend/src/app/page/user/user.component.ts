@@ -306,19 +306,56 @@ export class UserComponent implements OnInit {
   //   }
   //   return inserted;
   // }
-  showToast=()=>{
-    console.log('asd');
-    this.toastRef = this.toastr.show("New user registered.", 'Success!',{
+  showSuccessToast=(title: string, message: string)=>{
+    this.toastRef = this.toastr.show(message, title,{
       disableTimeOut: false,
       tapToDismiss: false,
       toastClass: "custom-toast-success",
       closeButton: true,
       progressBar: true,
-      positionClass:'toast-bottom-left',
-      timeOut: 50000,
-      extendedTimeOut: 50000
+      positionClass:'toast-top-right',
+      timeOut: 5000,
+      extendedTimeOut: 2000
     });
-    console.log(this.toastRef);
+  }
+
+  showDangerToast=(title: string, message: string)=>{
+    this.toastRef = this.toastr.show(message, title,{
+      disableTimeOut: false,
+      tapToDismiss: false,
+      toastClass: "custom-toast-danger",
+      closeButton: true,
+      progressBar: true,
+      positionClass:'toast-top-right',
+      timeOut: 5000,
+      extendedTimeOut: 2000
+    });
+  }
+
+  showWarningToast=(title: string, message: string)=>{
+    this.toastRef = this.toastr.show(message, title,{
+      disableTimeOut: false,
+      tapToDismiss: false,
+      toastClass: "custom-toast-warning",
+      closeButton: true,
+      progressBar: true,
+      positionClass:'toast-top-right',
+      timeOut: 5000,
+      extendedTimeOut: 2000
+    });
+  }
+
+  showInfoToast=(title: string, message: string)=>{
+    this.toastRef = this.toastr.show(message, title,{
+      disableTimeOut: false,
+      tapToDismiss: false,
+      toastClass: "custom-toast-info",
+      closeButton: true,
+      progressBar: true,
+      positionClass:'toast-top-right',
+      timeOut: 5000,
+      extendedTimeOut: 2000
+    });
   }
 
   removeToast = () =>{
