@@ -286,6 +286,23 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  ::ng-deep .toast-top-right {
+    top: 60px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+  }
+
+  :host {
+    margin-top: 0.5rem !important;
+  }
+}
+
+@media screen {
+  
+}
+
 
 
 // .toast-progress {

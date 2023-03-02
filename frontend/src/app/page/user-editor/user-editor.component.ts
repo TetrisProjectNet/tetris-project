@@ -7,6 +7,7 @@ import { faCircleChevronDown, faCircleChevronUp, faCircleUser } from '@fortaweso
 import { Observable, switchMap, of } from 'rxjs';
 import { FloatingLabelInputComponent } from 'src/app/common/floating-label-input/floating-label-input.component';
 import { User } from 'src/app/model/user';
+import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
@@ -34,6 +35,8 @@ export class UserEditorComponent {
 
   clicked: boolean = false;
 
+  toastRef: any;
+
   // usernameClass: string = '';
   // emailClass: string = '';
   // roleClass: string = '';
@@ -44,6 +47,7 @@ export class UserEditorComponent {
     private activatedRoute: ActivatedRoute,
     private userService: UserService,
     private router: Router,
+    private toastr: CustomToastrService,
     faConfig: FaConfig
   ) {
     faConfig.fixedWidth = false;
@@ -120,18 +124,30 @@ export class UserEditorComponent {
     if (user.id === 0) {
       user.joinDate = new Date();
       this.userService.create(user).subscribe({
-        error: err => console.error(err),
-        complete: () => this.router.navigate(['user']),
+        error: err => {
+          this.onDanger('Registration failed.<br>Please try again later!');
+          console.error(err);
+        },
+        complete: () => {
+          this.router.navigate(['user']);
+          this.onSuccess('User registered.');
+        },
       });
       // this.userService.create(user).subscribe(
       //   err => console.error(err),
       //   () => this.router.navigate(['user']),
       // );
     } else {
-      this.userService.update(user).subscribe(
-        () => this.router.navigate(['user']),
-        err => console.error(err)
-      );
+      this.userService.update(user).subscribe({
+        error: err => {
+          console.error(err);
+          this.onDanger('Modification failed.<br>Please try again later!');
+        },
+        complete: () => {
+          this.router.navigate(['user']);
+          this.onSuccess('User modified.');
+        }
+      });
     }
   }
 
@@ -161,6 +177,23 @@ export class UserEditorComponent {
 
   getValidationData($event: any) {
     console.log('$event', $event);
+  }
+
+  
+  onSuccess(message: string, title: string = 'Success!') {
+    this.toastr.showSuccessToast(this.toastRef, title, message);
+  }
+  
+  onWarning(message: string, title: string = 'Warning!') {
+    this.toastr.showWarningToast(this.toastRef, title, message);
+  }
+  
+  onDanger(message: string, title: string = 'Error!') {
+    this.toastr.showDangerToast(this.toastRef, title, message);
+  }
+  
+  onInfo(message: string, title: string = 'Info!') {
+    this.toastr.showInfoToast(this.toastRef, title, message);
   }
 
 }

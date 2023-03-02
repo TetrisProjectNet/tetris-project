@@ -25,6 +25,7 @@ import { ToastrService } from 'ngx-toastr';
 import { delay } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { ConfigService } from 'src/app/service/config.service';
+import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
@@ -152,7 +153,8 @@ export class UserComponent implements OnInit {
     private config: ConfigService,
     private userService: UserService,
     private router: Router,
-    private toastr: ToastrService
+    // private toastr: ToastrService,
+    private toastr: CustomToastrService,
   ) {}
 
   ngOnInit(): void {}
@@ -204,10 +206,10 @@ export class UserComponent implements OnInit {
       // console.log(this.userService.remove(id));
       this.userService.remove(id).subscribe({
         error: () =>
-          this.toastr.error('We could not delete this item.', 'Error!'),
+          this.onDanger('We could not delete this user.<br>Please try again later!', 'Something went wrong.'),
         complete: () => {
           (this.list$ = this.userService.getAll()),
-            this.toastr.success('Hello world!', 'Toastr fun!');
+            this.onSuccess('User deleted.');
         },
       });
       console.log('asdasd');
@@ -289,9 +291,9 @@ export class UserComponent implements OnInit {
     this.arrayMove(this.columns, this.draggedColumnIndex, index);
   }
 
-  showSuccess() {
-    this.toastr.show('Hello world!', 'Toastr fun!');
-  }
+  // showSuccess() {
+  //   this.toastr.show('Hello world!', 'Toastr fun!');
+  // }
 
   //   openNotyf() {
   //   const opt = cloneDeep(this.options);
@@ -306,60 +308,20 @@ export class UserComponent implements OnInit {
   //   }
   //   return inserted;
   // }
-  showSuccessToast=(title: string, message: string)=>{
-    this.toastRef = this.toastr.show(message, title,{
-      disableTimeOut: false,
-      tapToDismiss: false,
-      toastClass: "custom-toast-success",
-      closeButton: true,
-      progressBar: true,
-      positionClass:'toast-top-right',
-      timeOut: 5000,
-      extendedTimeOut: 2000
-    });
-  }
 
-  showDangerToast=(title: string, message: string)=>{
-    this.toastRef = this.toastr.show(message, title,{
-      disableTimeOut: false,
-      tapToDismiss: false,
-      toastClass: "custom-toast-danger",
-      closeButton: true,
-      progressBar: true,
-      positionClass:'toast-top-right',
-      timeOut: 5000,
-      extendedTimeOut: 2000
-    });
+  onSuccess(message: string, title: string = 'Success!') {
+    this.toastr.showSuccessToast(this.toastRef, title, message);
   }
-
-  showWarningToast=(title: string, message: string)=>{
-    this.toastRef = this.toastr.show(message, title,{
-      disableTimeOut: false,
-      tapToDismiss: false,
-      toastClass: "custom-toast-warning",
-      closeButton: true,
-      progressBar: true,
-      positionClass:'toast-top-right',
-      timeOut: 5000,
-      extendedTimeOut: 2000
-    });
+  
+  onWarning(message: string, title: string = 'Warning!') {
+    this.toastr.showWarningToast(this.toastRef, title, message);
   }
-
-  showInfoToast=(title: string, message: string)=>{
-    this.toastRef = this.toastr.show(message, title,{
-      disableTimeOut: false,
-      tapToDismiss: false,
-      toastClass: "custom-toast-info",
-      closeButton: true,
-      progressBar: true,
-      positionClass:'toast-top-right',
-      timeOut: 5000,
-      extendedTimeOut: 2000
-    });
+  
+  onDanger(message: string, title: string = 'Error!') {
+    this.toastr.showDangerToast(this.toastRef, title, message);
   }
-
-  removeToast = () =>{
-    this.toastr.clear(this.toastRef.ToastId);
+  
+  onInfo(message: string, title: string = 'Info!') {
+    this.toastr.showInfoToast(this.toastRef, title, message);
   }
-
 }

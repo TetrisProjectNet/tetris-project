@@ -1,4 +1,4 @@
-<div *ngIf="list$ | async as list" class="wrapper">
+<div *ngIf="list$ | async as list" class="wrapper col-xl-10 offset-xl-1 px-3 px-xl-0">
   <!-- Search -->
   <!-- <div class="search bg-light border rounded p-3 m-3">
       <div class="fw-bold text-uppercase text-center pb-3">Szűrés oszlopok szerint</div>
@@ -12,50 +12,52 @@
       </div>
     </div>-->
 
-    <div class="m-3">
-      <button (click)="showInfoToast('Did you know?', 'This app is designed for you.')" type="button"
-        class="game-played btn btn-info fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
-        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
-        Info
-      </button>
-    </div>
 
-    <div class="m-3">
-      <button (click)="showSuccessToast('Success!', 'New user registered.')" type="button"
-        class="game-played btn btn-success fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+    <div class="my-3">
+      <button (click)="onSuccess('New user registered.')" type="button"
+        class="game-played btn btn-success fw-bold text-uppercase w-100">
         <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
         Success
       </button>
     </div>
 
-    <div class="m-3">
-      <button (click)="showWarningToast('Warning!', 'Don\'t tell your password to anyone!')" type="button"
-        class="game-played btn btn-warning fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
-        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
-        Warning
-      </button>
-    </div>
-
-    <div class="m-3">
-      <button (click)="showDangerToast('Error!', 'Something went wrong. Please try again later!')" type="button"
-        class="mb-5 game-played btn btn-danger fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+    <div class="my-3">
+      <button (click)="onDanger('We could not delete this user.<br>Please try again later!')" type="button"
+        class="game-played btn btn-danger fw-bold text-uppercase w-100">
         <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
         Danger
       </button>
     </div>
 
+    <div class="my-3">
+      <button (click)="onWarning('Don\'t tell your password to anyone!', 'Remember!')" type="button"
+        class="game-played btn btn-warning fw-bold text-uppercase w-100">
+        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
+        Warning
+      </button>
+    </div>
+
+    <div class="my-3 mb-5">
+      <button (click)="onInfo('We put a lot of work into this project.', 'Did you know?')" type="button"
+        class="game-played btn btn-info fw-bold text-uppercase w-100">
+        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
+        Info
+      </button>
+    </div>
+
+
   <!-- Add new -->
-  <div class="m-3">
+  <div class="">
     <button [routerLink]="['/', entity, '']" type="button"
-      class="add__new game-played btn fw-bold text-uppercase col-12 col-xl-10 offset-xl-1">
+      class="add__new game-played btn fw-bold text-uppercase w-100">
       <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
       Register user
     </button>
   </div>
 
   <!-- Display options -->
-  <section class="col-xl-10 offset-xl-1 d-flex flex-row justify-content-between pe-3 my-4">
-    <div class="default-form d-flex flex-column flex-md-row ms-3">
+  <section class="d-flex flex-row justify-content-between my-4">
+    <div class="default-form d-flex flex-column flex-md-row">
       <div class="d-flex flex-row me-md-3">
         <div class="input__icon__wrapper d-flex align-items-center justify-content-end">
           <fa-icon class="text-center" [icon]="faKey"></fa-icon>
@@ -121,7 +123,7 @@
   </section>
 
   <!-- List -->
-  <div class="table-responsive col-xl-10 offset-xl-1 px-3">
+  <div class="table-responsive">
     <table class="table table-sm m-0">
       <caption class="text-center game-played">
         List of users
