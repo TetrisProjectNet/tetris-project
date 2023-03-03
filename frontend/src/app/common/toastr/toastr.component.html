@@ -44,9 +44,11 @@
 </div> -->
 
 
-<div class="toaster" [class]="options.toastClass">
+<div #toastr [@flyInOut]="{ value: isActive, params: {translateType: getAnimationTransformValue() }}"
+  class="toaster" [class]="options.toastClass">
   <div class="toast-line toast-color"></div>
   <div class="toast-details">
+    {{ getAnimationTransformValue() }}
     <div *ngIf="options.toastClass=='custom-toast-success'" class="toast-icon-container">
       <fa-icon class="text-center" [icon]="faCircleCheck"></fa-icon>
     </div>
