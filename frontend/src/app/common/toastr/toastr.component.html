@@ -1,54 +1,6 @@
-<!-- <div class="toaster">
-  <div class="toast-icon" [class]="options.toastClass">
-    <fa-icon class="text-center" [icon]="faCheck"></fa-icon>
-  </div>
-  <div class="toast-details">
-    <div>
-      <div
-        *ngIf="title"
-        [class]="options.titleClass"
-        [attr.aria-label]="title"
-        class="custom-title">
-        {{ title }}
-      </div>
-      <div
-        *ngIf="message && options.enableHtml"
-        role="alert"
-        aria-live="polite"
-        class="custom-message"
-        [class]="options.messageClass"
-        [innerHTML]="message"
-      ></div>
-      <div
-        *ngIf="message && !options.enableHtml"
-        role="alert"
-        aria-live="polite"
-        class="custom-message"
-        [class]="options.messageClass"
-        [attr.aria-label]="message">
-        {{ message }}
-      </div>
-    </div>
-  </div>
-  <div class="close-icon">
-    <a
-      *ngIf="options.closeButton"
-      (click)="remove()"
-      class="toast-close-button">
-      &times;
-    </a>
-  </div>
-</div>
-<div *ngIf="options.progressBar">
-  <div class="toast-progress" [style.width]="width + '%'"></div>
-</div> -->
-
-
-<div #toastr [@flyInOut]="{ value: isActive, params: {translateType: getAnimationTransformValue() }}"
-  class="toaster" [class]="options.toastClass">
+<div class="toaster" [class]="options.toastClass">
   <div class="toast-line toast-color"></div>
   <div class="toast-details">
-    <!-- {{ getAnimationTransformValue() }} -->
     <div *ngIf="options.toastClass=='custom-toast-success'" class="toast-icon-container">
       <fa-icon class="text-center" [icon]="faCircleCheck"></fa-icon>
     </div>
