@@ -1,7 +1,7 @@
 <div class="login__wrapper d-flex flex-column align-items-center m-0 min-vh-100">
   <h1 class="signup-title game-played animate__animated animate__backInDown text-white text-center mt-5 p-0">It's nice to see you again!</h1>
   <div class="login col-10 col-md-6 col-xl-3 my-5 p-5">
-    <form class="default-form animate__animated animate__fadeInUp animate__faster">
+    <form (ngSubmit)="onSubmit(usernameInput.inputModel, passwordInput.inputModel)" class="default-form animate__animated animate__fadeInUp animate__faster">
       <div class="form-group">
         <!-- <input class="form-control e-mail" name="email" type="email" (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
         <label class="form-label" [class]="emailClass">E-mail</label> -->

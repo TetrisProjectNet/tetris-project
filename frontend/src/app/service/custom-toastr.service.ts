@@ -63,7 +63,7 @@ export class CustomToastrService {
     });
   }
 
-  removeToast = (toastRef: any, ) =>{
+  removeToast = (toastRef: any) =>{
     this.toastr.clear(toastRef.ToastId);
   }
 

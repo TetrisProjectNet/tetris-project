@@ -155,9 +155,9 @@ export class UserComponent implements OnInit {
     private router: Router,
     // private toastr: ToastrService,
     private toastr: CustomToastrService,
-  ) {}
+  ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   ngAfterViewInit() {
     this.inputs.changes.subscribe((sub) => {
@@ -208,8 +208,8 @@ export class UserComponent implements OnInit {
         error: () =>
           this.onDanger('We could not delete this user.<br>Please try again later!', 'Something went wrong.'),
         complete: () => {
-          (this.list$ = this.userService.getAll()),
-            this.onSuccess('User deleted.');
+          this.list$ = this.userService.getAll();
+          this.onSuccess('User deleted.');
         },
       });
       console.log('asdasd');
@@ -220,7 +220,14 @@ export class UserComponent implements OnInit {
     if (window.confirm('Are you sure about banning this user?')) {
       this.userService
         .ban(id)
-        .subscribe(() => (this.list$ = this.userService.getAll()));
+        .subscribe({
+          error: () =>
+          this.onDanger('We could not ban this user.<br>Please try again later!', 'Something went wrong.'),
+          complete: () => {
+            this.list$ = this.userService.getAll();
+            this.onSuccess('User banned.');
+          }
+        });
     }
   }
 
@@ -228,7 +235,14 @@ export class UserComponent implements OnInit {
     if (window.confirm('Are you sure about unbanning this user?')) {
       this.userService
         .unban(id)
-        .subscribe(() => (this.list$ = this.userService.getAll()));
+        .subscribe({
+          error: () =>
+          this.onDanger('We could not unban this user.<br>Please try again later!', 'Something went wrong.'),
+          complete: () => {
+            this.list$ = this.userService.getAll();
+            this.onSuccess('User unbanned.');
+          }
+        });
     }
   }
 
@@ -312,15 +326,15 @@ export class UserComponent implements OnInit {
   onSuccess(message: string, title: string = 'Success!') {
     this.toastr.showSuccessToast(this.toastRef, title, message);
   }
-  
-  onWarning(message: string, title: string = 'Warning!') {
-    this.toastr.showWarningToast(this.toastRef, title, message);
-  }
-  
+
   onDanger(message: string, title: string = 'Error!') {
     this.toastr.showDangerToast(this.toastRef, title, message);
   }
-  
+
+  onWarning(message: string, title: string = 'Warning!') {
+    this.toastr.showWarningToast(this.toastRef, title, message);
+  }
+
   onInfo(message: string, title: string = 'Info!') {
     this.toastr.showInfoToast(this.toastRef, title, message);
   }

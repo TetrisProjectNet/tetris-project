@@ -5,6 +5,7 @@ import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
 import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Observable, switchMap, of } from 'rxjs';
 import { ShopItem } from 'src/app/model/shop-item';
+import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { ShopService } from 'src/app/service/shop.service';
 
 @Component({
@@ -23,7 +24,10 @@ export class ShopItemEditorComponent {
       }
       return of(new ShopItem())
     })
-    );
+  );
+
+  toastRef: any;
+
 
   faCircleChevronDown = faCircleChevronDown;
   faSquareCaretDown = faSquareCaretDown;
@@ -42,6 +46,7 @@ export class ShopItemEditorComponent {
     private activatedRoute: ActivatedRoute,
     private shopItemService: ShopService,
     private router: Router,
+    private toastr: CustomToastrService
   ) { }
 
   ngOnInit(): void {
@@ -124,20 +129,45 @@ export class ShopItemEditorComponent {
   onUpdate(form: NgForm, shopItem: ShopItem): void {
     this.clicked = true;
     if (shopItem.id === 0) {
-      this.shopItemService.create(form.value).subscribe(
-        () => this.router.navigate(['shop']),
-        err => console.error(err)
-      );
+      this.shopItemService.create(shopItem)
+      .subscribe({
+        error: () => this.onDanger('We could not create the shop item.<br>Please try again later!', 'Something went wrong.'),
+        complete: () => {
+          this.router.navigate(['shop']);
+          this.onSuccess('Shop item created.');
+        }
+      });
     } else {
-      this.shopItemService.update(shopItem).subscribe(
-        () => this.router.navigate(['shop']),
-        err => console.error(err)
-      );
+      this.shopItemService.update(shopItem)
+      .subscribe({
+        error: () => this.onDanger('We could not update the shop item.<br>Please try again later!', 'Something went wrong.'),
+        complete: () => {
+          this.router.navigate(['shop']);
+          this.onSuccess('Shop item updated.');
+        }
+      });
     }
   }
 
   getValidationData($event: any) {
     console.log('$event', $event);
   }
+
+  onSuccess(message: string, title: string = 'Success!') {
+    this.toastr.showSuccessToast(this.toastRef, title, message);
+  }
+
+  onDanger(message: string, title: string = 'Error!') {
+    this.toastr.showDangerToast(this.toastRef, title, message);
+  }
+
+  onWarning(message: string, title: string = 'Warning!') {
+    this.toastr.showWarningToast(this.toastRef, title, message);
+  }
+
+  onInfo(message: string, title: string = 'Info!') {
+    this.toastr.showInfoToast(this.toastRef, title, message);
+  }
+
 
 }

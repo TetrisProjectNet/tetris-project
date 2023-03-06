@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import { faCirclePlus, faCoins, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { ShopItem } from 'src/app/model/shop-item';
+import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { ShopService } from 'src/app/service/shop.service';
 
 @Component({
@@ -15,6 +16,7 @@ export class ShopComponent implements OnInit {
   list$ = this.shopService.getAll();
   entity = 'shop';
   adminView: boolean = true;
+  toastRef: any;
 
   faCoins = faCoins;
   faTrashCan = faTrashCan;
@@ -23,7 +25,8 @@ export class ShopComponent implements OnInit {
 
   constructor(
     private shopService: ShopService,
-    private router: Router
+    private router: Router,
+    private toastr: CustomToastrService
   ) { }
 
   ngOnInit(): void {
@@ -37,7 +40,13 @@ export class ShopComponent implements OnInit {
     if (window.confirm('Are you sure about deleting this item from the shop?')) {
       this.shopService
         .remove(id)
-        .subscribe(() => (this.list$ = this.shopService.getAll()));
+        .subscribe({
+          error: () => this.onDanger('We could delete this shop item.<br>Please try again later!', 'Something went wrong.'),
+          complete: () => {
+            this.list$ = this.shopService.getAll();
+            this.onSuccess('Shop item deleted.');
+          }
+        });
     }
   }
 
@@ -45,7 +54,14 @@ export class ShopComponent implements OnInit {
     if (window.confirm('Are you sure about banning this item from the shop?')) {
       this.shopService
         .ban(id)
-        .subscribe(() => (this.list$ = this.shopService.getAll()));
+        .subscribe({
+          error: () =>
+          this.onDanger('We could not ban this shop item.<br>Please try again later!', 'Something went wrong.'),
+          complete: () => {
+            this.list$ = this.shopService.getAll();
+            this.onSuccess('Shop item banned.');
+          }
+        });
     }
   }
 
@@ -53,8 +69,15 @@ export class ShopComponent implements OnInit {
     if (window.confirm('Are you sure about unbanning this item?')) {
       this.shopService
         .unban(id)
-        .subscribe(() => (this.list$ = this.shopService.getAll()));
-    }
+        .subscribe({
+          error: () =>
+          this.onDanger('We could not unban this shop item.<br>Please try again later!', 'Something went wrong.'),
+          complete: () => {
+            this.list$ = this.shopService.getAll();
+            this.onSuccess('Shop item unbanned.');
+          }
+        });
+      }
   }
 
   checkValue(value: any, id: number) {
@@ -69,5 +92,22 @@ export class ShopComponent implements OnInit {
     this.adminView = value;
     console.log(this.adminView);
   }
+
+  onSuccess(message: string, title: string = 'Success!') {
+    this.toastr.showSuccessToast(this.toastRef, title, message);
+  }
+
+  onDanger(message: string, title: string = 'Error!') {
+    this.toastr.showDangerToast(this.toastRef, title, message);
+  }
+
+  onWarning(message: string, title: string = 'Warning!') {
+    this.toastr.showWarningToast(this.toastRef, title, message);
+  }
+
+  onInfo(message: string, title: string = 'Info!') {
+    this.toastr.showInfoToast(this.toastRef, title, message);
+  }
+
 
 }

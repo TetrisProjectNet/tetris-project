@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 
 @Component({
   selector: 'app-forgot-password',
@@ -13,11 +14,14 @@ export class ForgotPasswordComponent {
 
   validGuideMessage: string = 'Please enter an existing email address!';
 
+  toastRef: any;
+
   // emailClass: string = '';
   // selectedElement: any;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private toastr: CustomToastrService,
   ) { }
 
   ngOnInit(): void {
@@ -43,11 +47,29 @@ export class ForgotPasswordComponent {
   // }
 
   onSubmit(email: string): void {
-    this.router.navigate(['/verification'], {state: {data: email}})
+    this.onSuccess('It will be live for 30 mins.', 'Code sent.');
+    this.router.navigate(['/verification'], {state: {data: email}});
   }
 
   getValidationData($event: any) {
     console.log('$event', $event);
   }
+
+  onSuccess(message: string, title: string = 'Success!') {
+    this.toastr.showSuccessToast(this.toastRef, title, message);
+  }
+
+  onDanger(message: string, title: string = 'Error!') {
+    this.toastr.showDangerToast(this.toastRef, title, message);
+  }
+
+  onWarning(message: string, title: string = 'Warning!') {
+    this.toastr.showWarningToast(this.toastRef, title, message);
+  }
+
+  onInfo(message: string, title: string = 'Info!') {
+    this.toastr.showInfoToast(this.toastRef, title, message);
+  }
+
 
 }
