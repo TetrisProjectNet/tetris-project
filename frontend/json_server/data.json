@@ -2733,6 +2733,20 @@
       "coins": 100,
       "shopItems": [],
       "friends": []
+    },
+    {
+      "id": 120,
+      "username": "asd",
+      "email": "asd@asd.hu",
+      "password": "asdD1",
+      "role": "player",
+      "banned": false,
+      "joinDate": "2023-03-06T18:34:45.932Z",
+      "lastOnlineDate": "",
+      "scores": [],
+      "coins": 100,
+      "shopItems": [],
+      "friends": []
     }
   ],
   "shop": [

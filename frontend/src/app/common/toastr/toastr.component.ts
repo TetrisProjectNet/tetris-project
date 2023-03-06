@@ -8,7 +8,7 @@ import { getAnimations } from '../animations/toastr.animation';
   selector: '[app-toastr]',
   templateUrl: './toastr.component.html',
   styleUrls: ['./toastr.component.scss'],
-  animations: getAnimations(ToastrComponent.prototype.getAnimationType()),
+  animations: getAnimations(ToastrComponent.prototype.onResize()),
   preserveWhitespaces: false,
 })
 

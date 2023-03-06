@@ -179,21 +179,25 @@ export class UserEditorComponent {
     console.log('$event', $event);
   }
 
-  
+
   onSuccess(message: string, title: string = 'Success!') {
-    this.toastr.showSuccessToast(this.toastRef, title, message);
+    this.toastRef = this.toastr.showSuccessToast(title, message);
   }
-  
+
   onWarning(message: string, title: string = 'Warning!') {
-    this.toastr.showWarningToast(this.toastRef, title, message);
+    this.toastRef = this.toastr.showWarningToast(title, message);
   }
-  
+
   onDanger(message: string, title: string = 'Error!') {
-    this.toastr.showDangerToast(this.toastRef, title, message);
+    this.toastRef = this.toastr.showDangerToast(title, message);
   }
-  
+
   onInfo(message: string, title: string = 'Info!') {
-    this.toastr.showInfoToast(this.toastRef, title, message);
+    this.toastRef = this.toastr.showInfoToast(title, message);
+  }
+
+  onRemoveToast() {
+    this.toastr.removeToast(this.toastRef);
   }
 
 }

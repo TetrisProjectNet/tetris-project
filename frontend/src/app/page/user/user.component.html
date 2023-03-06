@@ -15,16 +15,14 @@
 
     <div class="my-3">
       <button (click)="onSuccess('New user registered.')" type="button"
-        class="game-played btn btn-success fw-bold text-uppercase w-100">
-        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
+        class="game-played btn btn-success fw-bold text-uppercase w-100 text-black">
         Success
       </button>
     </div>
 
     <div class="my-3">
       <button (click)="onDanger('We could not delete this user.<br>Please try again later!')" type="button"
-        class="game-played btn btn-danger fw-bold text-uppercase w-100">
-        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
+        class="game-played btn btn-danger fw-bold text-uppercase w-100 text-black">
         Danger
       </button>
     </div>
@@ -32,16 +30,21 @@
     <div class="my-3">
       <button (click)="onWarning('Don\'t tell your password to anyone!', 'Remember!')" type="button"
         class="game-played btn btn-warning fw-bold text-uppercase w-100">
-        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
         Warning
       </button>
     </div>
 
-    <div class="my-3 mb-5">
+    <div class="my-3">
       <button (click)="onInfo('We put a lot of work into this project.', 'Did you know?')" type="button"
         class="game-played btn btn-info fw-bold text-uppercase w-100">
-        <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
         Info
+      </button>
+    </div>
+
+    <div class="my-3 mb-5">
+      <button (click)="onRemoveToast()" type="button"
+        class="game-played btn btn-secondary fw-bold text-uppercase w-100 text-black">
+        Remove
       </button>
     </div>
 

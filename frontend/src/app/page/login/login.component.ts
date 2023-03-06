@@ -34,13 +34,10 @@ export class LoginComponent implements OnInit {
   onSubmit(username: string, password: string): void {
     if (this.username == this.loginData.username && this.password == this.loginData.password){
       this.onRemoveToast();
-      // this.router.navigate(['/home']);
+      this.router.navigate(['/home']);
     } else {
       this.onDanger('Incorrect username or password.')
-
     }
-
-    // this.onSuccess('It will be live for 30 mins.', 'Code sent.');
   }
 
 
@@ -68,24 +65,23 @@ export class LoginComponent implements OnInit {
   // }
 
   onSuccess(message: string, title: string = 'Success!') {
-    this.toastr.showSuccessToast(this.toastRef, title, message);
+    this.toastRef = this.toastr.showSuccessToast(title, message);
   }
 
   onDanger(message: string, title: string = 'Error!') {
-    this.toastr.showDangerToast(this.toastRef, title, message);
+    this.toastRef = this.toastr.showDangerToast(title, message);
   }
 
   onWarning(message: string, title: string = 'Warning!') {
-    this.toastr.showWarningToast(this.toastRef, title, message);
+    this.toastRef = this.toastr.showWarningToast(title, message);
   }
 
   onInfo(message: string, title: string = 'Info!') {
-    this.toastr.showInfoToast(this.toastRef, title, message);
+    this.toastRef = this.toastr.showInfoToast(title, message);
   }
 
   onRemoveToast() {
-    console.log(this.toastRef);
-    // this.toastr.removeToast(this.toastRef);
+    this.toastr.removeToast(this.toastRef);
   }
 
 }

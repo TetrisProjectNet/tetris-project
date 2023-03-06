@@ -10,8 +10,8 @@ export class CustomToastrService {
     private toastr: ToastrService
   ) { }
 
-  showSuccessToast=(toastRef: any, title: string, message: string)=>{
-    toastRef = this.toastr.show(message, title,{
+  showSuccessToast(title: string, message: string) {
+    return this.toastr.show(message, title, {
       disableTimeOut: false,
       tapToDismiss: false,
       toastClass: "custom-toast-success",
@@ -23,8 +23,8 @@ export class CustomToastrService {
     });
   }
 
-  showDangerToast=(toastRef: any, title: string, message: string)=>{
-    toastRef = this.toastr.show(message, title,{
+  showDangerToast(title: string, message: string) {
+    return this.toastr.show(message, title, {
       disableTimeOut: false,
       tapToDismiss: false,
       toastClass: "custom-toast-danger",
@@ -37,8 +37,8 @@ export class CustomToastrService {
     });
   }
 
-  showWarningToast=(toastRef: any, title: string, message: string)=>{
-    toastRef = this.toastr.show(message, title,{
+  showWarningToast(title: string, message: string) {
+    return this.toastr.show(message, title, {
       disableTimeOut: false,
       tapToDismiss: false,
       toastClass: "custom-toast-warning",
@@ -50,8 +50,8 @@ export class CustomToastrService {
     });
   }
 
-  showInfoToast=(toastRef: any, title: string, message: string)=>{
-    toastRef = this.toastr.show(message, title,{
+  showInfoToast(title: string, message: string) {
+    return this.toastr.show(message, title, {
       disableTimeOut: false,
       tapToDismiss: false,
       toastClass: "custom-toast-info",
@@ -63,7 +63,7 @@ export class CustomToastrService {
     });
   }
 
-  removeToast = (toastRef: any) =>{
+  removeToast(toastRef: any) {
     this.toastr.clear(toastRef.ToastId);
   }
 
