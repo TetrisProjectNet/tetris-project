@@ -37,6 +37,7 @@ import { PrivacyPolicyComponent } from './page/privacy-policy/privacy-policy.com
 import { ProfileDropdownComponent } from './common/nav/profile-dropdown/profile-dropdown.component';
 import { ToastrModule } from 'ngx-toastr';
 import { ToastrComponent } from './common/toastr/toastr.component';
+import { ParallaxDirective } from './common/directive/parallax.directive';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { ToastrComponent } from './common/toastr/toastr.component';
     FloatingLabelInputComponent,
     PrivacyPolicyComponent,
     ProfileDropdownComponent,
-    ToastrComponent
+    ToastrComponent,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,
