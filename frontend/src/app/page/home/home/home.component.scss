@@ -1,14 +1,74 @@
 @use '../../../../styles.scss' as styles;
 
+.container {
+  &-1 {
+    height: 90vh;
+    // background-color: chartreuse;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/353/305/288/tetris-cityscape-columbia-video-games-wallpaper-preview.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  &-2 {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
 
-.error-img-container {
-  position: relative;
-  top: -10px;
-  height: 110vh;
+    & .img {
+      position: absolute;
+      height: 100%;
+      width: 100%;    
+      background-image: url("https://wallpapercave.com/wp/wp2675338.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
 
+    & .text {
+      position: absolute;
+      top: 15rem;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+  
+    }
+  }
+}
+
+.foreground {
+  &-1 {
+    background-color: chartreuse;
+    height: 60vh;
+  }
+}
+
+.error-img {
   background-image: url("../../../../assets/img/tetris-errors.jpg");
-  background-size: 100%;
+  background-position: 50% 100%;
+  // background-size: calc(100% - 50px);
   background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  &-container {
+    position: relative;
+    top: -10px;
+    height: 110vh;
+    overflow: hidden;
+  }
+
+  &-text {
+    position: absolute;
+    top: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }  
 
   & .block-container {
     display: flex;
@@ -24,9 +84,15 @@
 
 }
 
+.block {
+  height: 120px;
+  width: 30px;
+  background-color: aquamarine;
+  margin-left: 100px;
+} 
 
 .app-animated-counter__wrapper {
-  margin-bottom: 1500px;
+  // margin-bottom: 1500px;
 }
 
 .content-load {
