@@ -8,31 +8,34 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center top;
+    z-index: 1000 !important;
   }
   &-2 {
     position: relative;
     overflow: hidden;
     height: 100vh;
+    z-index: 1000 !important;
 
     & .img {
-      position: absolute;
+      position: fixed;
       height: 100%;
-      width: 100%;    
+      width: 100%;
       background-image: url("https://wallpapercave.com/wp/wp2675338.jpg");
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center top;
+      z-index: 1000 !important;
     }
 
     & .text {
-      position: absolute;
+      position: fixed;
       top: 15rem;
       margin-left: auto;
       margin-right: auto;
       left: 0;
       right: 0;
       text-align: center;
-  
+
     }
   }
 }
@@ -51,49 +54,45 @@
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  // z-index: 1;
 
   &-container {
-    position: relative;
+    // position: relative;
+    z-index: -10;
     top: -10px;
     height: 110vh;
     overflow: hidden;
   }
 
   &-text {
-    position: absolute;
-    top: 15rem;
+    // z-index: 1;
+    position: fixed;
+    top: 40%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     text-align: center;
-  }  
-
-  & .block-container {
-    display: flex;
-    flex-direction: row;
-
-    & .block {
-      height: 120px;
-      width: 30px;
-      background-color: aquamarine;
-      margin-left: 100px;
-    } 
   }
-
 }
+
+.front {
+  z-index: 1000 !important;
+  // position: fixed;
+}
+
 
 .block {
   height: 120px;
   width: 30px;
   background-color: aquamarine;
   margin-left: 100px;
-} 
-
-.app-animated-counter__wrapper {
-  // margin-bottom: 1500px;
 }
+
+// .app-animated-counter__wrapper {
+  // margin-bottom: 1500px;
+// }
 
 .content-load {
   height: 300px;
@@ -112,3 +111,49 @@
   color: #de3428;
   font-size: 2em;
 }
+
+
+
+
+
+
+// #content{
+//     // overflow: visible;
+//     text-align: center;
+//     font-size: 1.5rem;
+// }
+
+// #container{
+//     width: 100%;
+// }
+
+// #square{
+//     position: fixed;
+//     z-index: 100;
+//     top: 0px;
+//     left: 0px;
+//     width: 100px;
+//     height: 100px;
+//     background-color: green;
+// }
+
+// #rectangle{
+//     position: fixed;
+//     z-index: 100;
+//     bottom: 0px;
+//     left: 50px;
+//     width: 200px;
+//     height: 100px;
+//     background-color: red;
+// }
+
+// #circle{
+//     position: fixed;
+//     z-index: 100;
+//     bottom: 0px;
+//     right: 0px;
+//     width: 100px;
+//     height: 100px;
+//     background-color: yellow;
+//     border-radius: 50px;
+// }
