@@ -24,7 +24,7 @@
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center top;
-      z-index: 1000 !important;
+      z-index: 2;
     }
 
     & .text {
@@ -74,12 +74,14 @@
     left: 0;
     right: 0;
     text-align: center;
+    // color: styles.$theme;
+    // mix-blend-mode:hue;
   }
 }
 
 .front {
-  z-index: 1000 !important;
-  // position: fixed;
+  z-index: 2;
+  position: relative;
 }
 
 

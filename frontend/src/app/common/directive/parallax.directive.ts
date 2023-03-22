@@ -58,6 +58,7 @@ export class ParallaxDirective {
     setTimeout(() =>{
       this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top;
       console.log(this.eleRef.nativeElement.getBoundingClientRect().top);
+      this.eleRef.nativeElement.style.zIndex = 1;
     })
   }
 
