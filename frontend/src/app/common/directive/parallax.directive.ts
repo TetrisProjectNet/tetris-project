@@ -54,18 +54,41 @@ export class ParallaxDirective {
   @Input('ratio') parallaxRatio: number = 1
   initialTop: number = 0;
 
-  constructor(private eleRef: ElementRef) {
-    setTimeout(() =>{
-      this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top;
-      console.log(this.eleRef.nativeElement.getBoundingClientRect().top);
-      this.eleRef.nativeElement.style.zIndex = 1;
-    })
+  constructor(
+    private eleRef: ElementRef
+  ) {  }
+  
+  ngOnInit(): void {
+    console.log('asd', this.eleRef.nativeElement.getBoundingClientRect());
+    console.log('scroll', window.scrollY);
+    console.log('parent: ', this.eleRef.nativeElement.parentElement.getBoundingClientRect().top);
+    if (this.checkVisible(this.eleRef.nativeElement)) {
+      console.log('yes');
+      this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top; // 301.4375
+    } else {
+      this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top * this.parallaxRatio; // 301.4375
+      console.log('no', this.initialTop);
+    }
   }
+
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {
-    // console.log(this.initialTop);
-    this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
+    console.log(window.scrollY);
+    console.log('TOP:', this.eleRef.nativeElement.style.top);
+    // if (window.scrollY > 1450) {
+    //   this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio + window.scrollY)) / 10 + 'px';
+    // }
+    if (this.checkVisible(this.eleRef.nativeElement)) {
+
+    }
+    this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
+  }
+
+  checkVisible(elem: any) {
+    var rect = elem.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
   }
 
 }

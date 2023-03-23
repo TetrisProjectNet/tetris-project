@@ -47,24 +47,33 @@
   }
 }
 
-.error-img {
-  background-image: url("../../../../assets/img/tetris-errors.jpg");
-  background-position: 50% 100%;
-  // background-size: calc(100% - 50px);
-  background-repeat: no-repeat;
-  height: 110%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-
-  // z-index: 1;
-
+.error {
   &-container {
-    // position: relative;
-    z-index: -10;
     top: -10px;
     height: 110vh;
     overflow: hidden;
+  }
+
+  &-img {
+    background-image: url("../../../../assets/img/tetris-errors.jpg");
+    background-position: 50% 100%;
+    // background-size: calc(100% - 50px);
+    background-repeat: no-repeat;
+    height: 110%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+  &-img-2 {
+    background-image: url("../../../../assets/img//mountains.png");
+    background-position: 50% 100%;
+    // background-size: calc(100% - 50px);
+    background-repeat: no-repeat;
+    height: 110%;
+    width: 100%;
+    position: fixed;
+    top: 40%;
   }
 
   &-text {
@@ -87,6 +96,47 @@
 .front {
   z-index: 2;
   position: relative;
+}
+
+.wallpaper {
+  &-container {
+    // margin-top: 60rem;
+    // top: -10px;
+    height: 100vh;
+    // overflow: hidden;
+    // position: relative;
+    transform: translateZ(0);
+  }
+
+  &-img {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp2675338.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 2;
+    // top: 1920;
+    // transform: translateZ(0);
+  }
+  
+  &-text {
+    // z-index: 1;
+    position: fixed;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    // color: styles.$theme;
+    // mix-blend-mode:hue;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+      0px 8px 13px rgba(0,0,0,0.4),
+      0px 18px 23px rgba(0,0,0,0.4);
+  }
 }
 
 
