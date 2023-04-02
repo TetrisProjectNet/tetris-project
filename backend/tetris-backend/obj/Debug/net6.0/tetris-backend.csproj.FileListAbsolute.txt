@@ -1,0 +1,90 @@
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\appsettings.Development.json
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\appsettings.json
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.exe
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.deps.json
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.runtimeconfig.json
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.pdb
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.csproj.AssemblyReference.cache
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.AssemblyInfoInputs.cache
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.AssemblyInfo.cs
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.csproj.CoreCompileInputs.cache
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.MvcApplicationPartsAssemblyInfo.cs
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.MvcApplicationPartsAssemblyInfo.cache
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets\msbuild.tetris-backend.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets\msbuild.build.tetris-backend.props
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.tetris-backend.props
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.tetris-backend.props
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets.build.json
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets.development.json
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\scopedcss\bundle\tetris-backend.styles.css
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.csproj.CopyComplete
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\refint\tetris-backend.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.pdb
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.genruntimeconfig.cache
+D:\Tanulas\Kando\tetris-backend\tetris-backend\obj\Debug\net6.0\ref\tetris-backend.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\AWSSDK.Core.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\DnsClient.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\MongoDB.Bson.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\MongoDB.Driver.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\SharpCompress.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\Snappier.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\ZstdSharp.dll
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+D:\Tanulas\Kando\tetris-backend\tetris-backend\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\appsettings.json
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.exe
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.deps.json
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.runtimeconfig.json
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\tetris-backend.pdb
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\DnsClient.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\Snappier.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.csproj.AssemblyReference.cache
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.AssemblyInfoInputs.cache
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.AssemblyInfo.cs
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.csproj.CoreCompileInputs.cache
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets\msbuild.tetris-backend.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets\msbuild.build.tetris-backend.props
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.tetris-backend.props
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.tetris-backend.props
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\scopedcss\bundle\tetris-backend.styles.css
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.csproj.CopyComplete
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\refint\tetris-backend.dll
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.pdb
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\tetris-backend.genruntimeconfig.cache
+C:\Users\Kovács Levente\Documents\tetris-backend\tetris-backend\obj\Debug\net6.0\ref\tetris-backend.dll

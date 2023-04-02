@@ -14,6 +14,7 @@ export class UserService extends BaseService<User> {
     ) {
     // super(config, http);
     super(http);
-    this.entity = 'user';
+    // this.entity = 'user';
+    this.entity = 'User';
   }
 }

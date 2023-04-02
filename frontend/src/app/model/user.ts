@@ -11,7 +11,7 @@ export class User {
 
   // ----- STATISZTIKÁKHOZ -----
   joinDate: any = '';
-  lastOnlineDate: any = '';
+  lastOnlineDate?: any = '';
   scores?: number[] = [];
 
   // ----- SHOP -----

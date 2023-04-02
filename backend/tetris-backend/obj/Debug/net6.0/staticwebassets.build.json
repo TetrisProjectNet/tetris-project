@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jF2KB1YN6EoaMk52NYubGtHDjTWzyv0diYbckXbBHbo=",
+  "Source": "tetris-backend",
+  "BasePath": "_content/tetris-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

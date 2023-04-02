@@ -13,6 +13,7 @@ export class ShopService extends BaseService<ShopItem> {
   ) {
     // super(config, http);
     super(http);
-    this.entity = 'shop';
+    // this.entity = 'shop';
+    this.entity = 'ShopItem';
   }
 }
