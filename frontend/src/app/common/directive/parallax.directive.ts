@@ -57,31 +57,58 @@ export class ParallaxDirective {
   constructor(
     private eleRef: ElementRef
   ) {  }
-  
+
   ngOnInit(): void {
-    console.log('asd', this.eleRef.nativeElement.getBoundingClientRect());
-    console.log('scroll', window.scrollY);
-    console.log('parent: ', this.eleRef.nativeElement.parentElement.getBoundingClientRect().top);
-    if (this.checkVisible(this.eleRef.nativeElement)) {
-      console.log('yes');
-      this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top; // 301.4375
-    } else {
-      this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top * this.parallaxRatio; // 301.4375
-      console.log('no', this.initialTop);
-    }
+    // console.log('asd', this.eleRef.nativeElement.getBoundingClientRect());
+    // console.log('scroll', window.scrollY);
+    // console.log('parent: ', this.eleRef.nativeElement.parentElement.getBoundingClientRect());
+    // console.log('offsetTop: ', this.eleRef.nativeElement.parentElement.getBoundingClientRect());
+    // console.log(this.checkVisible(this.eleRef.nativeElement));
+
+
+
+    // this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top -
+    // this.eleRef.nativeElement.parentElement.getBoundingClientRect().top;
+
+    this.initialTop = this.eleRef.nativeElement.offsetTop +
+      this.eleRef.nativeElement.parentElement.offsetTop * this.parallaxRatio;
+
+    // if (this.eleRef.nativeElement.parentElement.getBoundingClientRect().top < 0) {
+    //   this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top; // 301.4375
+    // }
+    this.eleRef.nativeElement.style.top = this.initialTop + 'px';
+
+    // if (!this.checkVisible(this.eleRef.nativeElement) || this.eleRef.nativeElement.parentElement.getBoundingClientRect().top > 0) {
+    //   // this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top; // 301.4375
+    //   // this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top -
+    //   //   (this.eleRef.nativeElement.parentElement.getBoundingClientRect().bottom * this.parallaxRatio);
+    // } else {
+    //   // this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top; // 301.4375
+
+    // }
+    // if (this.checkVisible(this.eleRef.nativeElement)) {
+    //   console.log('yes');
+    //   this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top; // 301.4375
+    // } else {
+    //   this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top * this.parallaxRatio; // 301.4375
+    //   console.log('no', this.initialTop);
+    // }
   }
 
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {
-    console.log(window.scrollY);
-    console.log('TOP:', this.eleRef.nativeElement.style.top);
-    // if (window.scrollY > 1450) {
-    //   this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio + window.scrollY)) / 10 + 'px';
-    // }
-    if (this.checkVisible(this.eleRef.nativeElement)) {
+    // console.log('scroll: ', window.scrollY);
+    // console.log('TOP:', this.eleRef.nativeElement.style.top);
+    // // if (window.scrollY > 1450) {
+    // //   this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio + window.scrollY)) / 10 + 'px';
+    // // }
+    // if (!this.checkVisible(this.eleRef.nativeElement)) {
+    //   // this.eleRef.nativeElement.style.display = 'none';
+    // } else {
+    //   // this.eleRef.nativeElement.style.display = 'block';
 
-    }
+    // }
     this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
   }
 

@@ -5,39 +5,40 @@
     height: 90vh;
     // background-color: chartreuse;
     background-image: url("https://c4.wallpaperflare.com/wallpaper/353/305/288/tetris-cityscape-columbia-video-games-wallpaper-preview.jpg");
-    background-size: 100%;
+    // background-size: 100%;
     background-repeat: no-repeat;
     background-position: center top;
+    background-size: cover;
     z-index: 1000 !important;
   }
-  &-2 {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    z-index: 1000 !important;
+  // &-2 {
+  //   position: relative;
+  //   overflow: hidden;
+  //   height: 100vh;
+  //   z-index: 1000 !important;
 
-    & .img {
-      position: fixed;
-      height: 100%;
-      width: 100%;
-      background-image: url("https://wallpapercave.com/wp/wp2675338.jpg");
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center top;
-      z-index: 2;
-    }
+  //   & .img {
+  //     position: fixed;
+  //     height: 100%;
+  //     // width: 100%;
+  //     background-image: url("https://wallpapercave.com/wp/wp2675338.jpg");
+  //     // background-size: 100%;
+  //     background-repeat: no-repeat;
+  //     background-position: 50% 100%;
+  //     z-index: 2;
+  //   }
 
-    & .text {
-      position: fixed;
-      top: 15rem;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      text-align: center;
+  //   & .text {
+  //     position: fixed;
+  //     top: 15rem;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //     left: 0;
+  //     right: 0;
+  //     text-align: center;
 
-    }
-  }
+  //   }
+  // }
 }
 
 .foreground {
@@ -50,7 +51,7 @@
 .error {
   &-container {
     top: -10px;
-    height: 110vh;
+    height: 150vh;
     overflow: hidden;
   }
 
@@ -59,8 +60,8 @@
     background-position: 50% 100%;
     // background-size: calc(100% - 50px);
     background-repeat: no-repeat;
-    height: 110%;
-    width: 100%;
+    height: 110vh;
+    width: 100vw;
     position: fixed;
     top: 0;
   }
@@ -70,8 +71,8 @@
     background-position: 50% 100%;
     // background-size: calc(100% - 50px);
     background-repeat: no-repeat;
-    height: 110%;
-    width: 100%;
+    height: 110vh;
+    width: 100vw;
     position: fixed;
     top: 40%;
   }
@@ -106,6 +107,7 @@
     // overflow: hidden;
     // position: relative;
     transform: translateZ(0);
+    margin-bottom: 20rem;
   }
 
   &-img {
@@ -113,18 +115,56 @@
     height: 100%;
     width: 100%;
     background-image: url("https://wallpapercave.com/wp/wp2675338.jpg");
-    background-size: 100%;
+    // background-size: 100%;
     background-repeat: no-repeat;
     background-position: center top;
     z-index: 2;
     // top: 1920;
     // transform: translateZ(0);
   }
-  
+
+  &-item {
+    position: absolute;
+    bottom: 30%;
+    width: 70%;
+    height: 200px;
+    // margin: 200px auto;
+    padding-top: 75px;
+    background: #272c60;
+    text-align: center;
+    color: #de3428;
+    font-size: 2em;
+    // opacity: 0.9 !important;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    // border: 0.5rem solid white;
+
+  }
+
   &-text {
     // z-index: 1;
     position: fixed;
-    top: 40%;
+    top: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    // color: styles.$theme;
+    // mix-blend-mode:hue;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+      0px 8px 13px rgba(0,0,0,0.4),
+      0px 18px 23px rgba(0,0,0,0.4);
+  }
+
+  &-text-2 {
+    // z-index: 1;
+    position: fixed;
+    top: 20%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -167,6 +207,7 @@
   text-align: center;
   color: #de3428;
   font-size: 2em;
+
 }
 
 
