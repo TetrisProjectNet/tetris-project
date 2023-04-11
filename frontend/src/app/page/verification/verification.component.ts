@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Verification } from 'src/app/model/verification';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
+import { VerificationService } from 'src/app/service/verification.service';
 
 @Component({
   selector: 'app-verification',
@@ -11,7 +13,8 @@ import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 })
 export class VerificationComponent {
 
-  email: string = 'email@default.com';
+  // email: string = 'email@default.com';
+  email: string = 'nagyklevi@gmail.com';
   code: string = '123456';
   otpValue: string = '';
   isButtonDisabled: boolean = true;
@@ -33,6 +36,7 @@ export class VerificationComponent {
   constructor(
     private router: Router,
     private toastr: CustomToastrService,
+    private verificationService: VerificationService,
   ) {
     if (history.state.data != '' && history.state.data != undefined) {
       this.email = history.state.data;
@@ -45,21 +49,43 @@ export class VerificationComponent {
     this.otpValue = String(event);
     console.log(event.length);
     if (event.length == this.config.length) {
+      this.isButtonDisabled = false;
       this.onSubmit();
     }
   }
 
   onSubmit(): void {
-    if (this.otpValue != this.code) {
-      this.onDanger('We could not verify your code.')
-    } else {
-      this.isButtonDisabled = false;
-      setTimeout(() => {
-        this.router.navigate(['/new-password']);
-      }, 500)
-    }
+    let emailsObj = new Verification();
+    this.verificationService.getBasedOnEmail(this.email)
+    .subscribe({
+      next: data => {
+        console.log(data)
+        if (this.otpValue == data.code) {
+          this.router.navigate(['/new-password'], {state: {data: this.email}});
+        } else {
+          this.onDanger('We could not verify your code.');
+        }
+      },
+      error: () => this.onDanger('We could not check your code.<br>Please try again later!', 'Something went wrong.'),
+      // complete: () => {
+      //   this.router.navigate(['shop']);
+      //   this.onSuccess('Shop item updated.');
+      // }
+    });
+
+    // console.log(emailsObj);
+
+    // if (this.otpValue != this.code) {
+    //   this.onDanger('We could not verify your code.')
+    // } else {
+    //   this.isButtonDisabled = false;
+    //   setTimeout(() => {
+    //     this.router.navigate(['/new-password']);
+    //   }, 500)
+    // }
   }
 
+  // toast functions
   onSuccess(message: string, title: string = 'Success!') {
     this.toastRef = this.toastr.showSuccessToast(title, message);
   }

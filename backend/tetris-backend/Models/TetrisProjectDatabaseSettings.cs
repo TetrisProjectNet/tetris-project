@@ -9,5 +9,7 @@
         public string UserCollectionName { get; set; } = null!;
 
         public string ShopItemCollectionName { get; set; } = null!;
+
+        public string VerificationCollectionName { get; set; } = null!;
     }
 }

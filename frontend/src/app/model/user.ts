@@ -2,7 +2,7 @@ import { ShopItem } from "./shop-item";
 
 export class User {
   // ----- ALAPVETŐ -----
-  id: number = 0;
+  id: string = '';
   username: string = '';
   email: string = '';
   password: string = '';

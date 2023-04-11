@@ -36,7 +36,7 @@ export class ShopComponent implements OnInit {
     this.router.navigate(['/', 'shop', shopItem.id]);
   }
 
-  onDeleteOne(id: number): void {
+  onDeleteOne(id: string): void {
     if (window.confirm('Are you sure about deleting this item from the shop?')) {
       this.shopService
         .remove(id)
@@ -50,7 +50,7 @@ export class ShopComponent implements OnInit {
     }
   }
 
-  onBanOne(id: number): void {
+  onBanOne(id: string): void {
     if (window.confirm('Are you sure about banning this item from the shop?')) {
       this.shopService
         .ban(id)
@@ -65,7 +65,7 @@ export class ShopComponent implements OnInit {
     }
   }
 
-  onUnbanOne(id: number): void {
+  onUnbanOne(id: string): void {
     if (window.confirm('Are you sure about unbanning this item?')) {
       this.shopService
         .unban(id)
@@ -80,7 +80,7 @@ export class ShopComponent implements OnInit {
       }
   }
 
-  checkValue(value: any, id: number) {
+  checkValue(value: any, id: string) {
     if (value === 'true') {
       this.onBanOne(id)
     } else {

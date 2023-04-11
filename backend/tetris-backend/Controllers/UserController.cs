@@ -33,6 +33,21 @@ namespace tetris_backend.Controllers
         }
 
 
+        [HttpGet("{email}")]
+        public async Task<ActionResult<User>> GetBasedOnEmail(string email)
+        {
+            var user = await _userService.GetBasedOnEmailAsync(email);
+
+            if (user is null)
+            {
+                return null;
+            }
+
+            return user;
+        }
+
+
+
         [HttpPost]
         public async Task<IActionResult> Post(User newUser)
         {

@@ -8,6 +8,8 @@ import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 })
 export class NewPasswordComponent {
 
+  email: string = '';
+
   password: string = ''
   passwordAgain: string = '';
 
@@ -19,7 +21,11 @@ export class NewPasswordComponent {
 
   constructor(
     private toastr: CustomToastrService,
-  ) { }
+  ) {
+    if (history.state.data != '' && history.state.data != undefined) {
+      this.email = history.state.data;
+    }
+  }
 
   ngOnInit(): void {
     setTimeout(() => {

@@ -1,5 +1,6 @@
-using tetris_backend.Models;
-using tetris_backend.Services;
+global using tetris_backend.Models;
+global using tetris_backend.Services;
+global using tetris_backend.Services.EmailService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,8 @@ builder.Services.Configure<TetrisProjectDatabaseSettings>(
 
 builder.Services.AddSingleton<UserService>();
 builder.Services.AddSingleton<ShopItemService>();
+builder.Services.AddSingleton<VerificationService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

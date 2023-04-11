@@ -121,7 +121,7 @@ export class UserEditorComponent {
   onUpdate(form: NgForm, user: User): void {
     console.log(user);
     this.clicked = true;
-    if (user.id === 0) {
+    if (user.id === '') {
       user.joinDate = new Date();
       this.userService.create(user).subscribe({
         error: err => {
@@ -151,7 +151,7 @@ export class UserEditorComponent {
     }
   }
 
-  onBanOne(id: number): void {
+  onBanOne(id: string): void {
     if (window.confirm('Are you sure about banning this user?')) {
       this.userService
         .ban(id)
@@ -159,7 +159,7 @@ export class UserEditorComponent {
     }
   }
 
-  onUnbanOne(id: number): void {
+  onUnbanOne(id: string): void {
     if (window.confirm('Are you sure about unbanning this user?')) {
       this.userService
         .unban(id)
@@ -167,7 +167,7 @@ export class UserEditorComponent {
     }
   }
 
-  checkValue(value: any, id: number) {
+  checkValue(value: any, id: string) {
     if (value === 'true') {
       this.onBanOne(id)
     } else {

@@ -256,6 +256,15 @@
     font-weight: 500;
     line-height: 15px;
     padding-bottom: 4px;
+
+    & a {
+      text-decoration: none;
+      color: red !important;
+    }
+
+    & a:hover {
+      color: styles.$theme !important;
+    }
   }
 
   &-progress {

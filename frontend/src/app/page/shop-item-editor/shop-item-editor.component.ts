@@ -128,7 +128,7 @@ export class ShopItemEditorComponent {
 
   onUpdate(form: NgForm, shopItem: ShopItem): void {
     this.clicked = true;
-    if (shopItem.id === 0) {
+    if (shopItem.id === '') {
       this.shopItemService.create(shopItem)
       .subscribe({
         error: () => this.onDanger('We could not create the shop item.<br>Please try again later!', 'Something went wrong.'),

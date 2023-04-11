@@ -201,7 +201,7 @@ export class UserComponent implements OnInit {
     this.router.navigate(['/', 'user', user.id]);
   }
 
-  onDeleteOne(id: number): void {
+  onDeleteOne(id: string): void {
     if (window.confirm('Are you sure about deleting this user?')) {
       // console.log(this.userService.remove(id));
       this.userService.remove(id).subscribe({
@@ -216,7 +216,7 @@ export class UserComponent implements OnInit {
     }
   }
 
-  onBanOne(id: number): void {
+  onBanOne(id: string): void {
     if (window.confirm('Are you sure about banning this user?')) {
       this.userService
         .ban(id)
@@ -231,7 +231,7 @@ export class UserComponent implements OnInit {
     }
   }
 
-  onUnbanOne(id: number): void {
+  onUnbanOne(id: string): void {
     if (window.confirm('Are you sure about unbanning this user?')) {
       this.userService
         .unban(id)
@@ -246,7 +246,7 @@ export class UserComponent implements OnInit {
     }
   }
 
-  checkValue(value: any, id: number) {
+  checkValue(value: any, id: string) {
     if (value === 'true') {
       this.onBanOne(id);
     } else {

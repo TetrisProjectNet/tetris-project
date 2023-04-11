@@ -8,16 +8,16 @@ namespace tetris_backend.Services
     {
         private readonly IMongoCollection<User> _userCollection;
 
-        public UserService(IOptions<TetrisProjectDatabaseSettings> bookStoreDatabaseSettings)
+        public UserService(IOptions<TetrisProjectDatabaseSettings> tetrisProjectDatabaseSettings)
         {
             var mongoClient = new MongoClient(
-                bookStoreDatabaseSettings.Value.ConnectionString);
+                tetrisProjectDatabaseSettings.Value.ConnectionString);
 
             var mongoDatabase = mongoClient.GetDatabase(
-                bookStoreDatabaseSettings.Value.DatabaseName);
+                tetrisProjectDatabaseSettings.Value.DatabaseName);
 
             _userCollection = mongoDatabase.GetCollection<User>(
-                bookStoreDatabaseSettings.Value.UserCollectionName);
+                tetrisProjectDatabaseSettings.Value.UserCollectionName);
         }
 
         public async Task<List<User>> GetAsync() =>
@@ -25,6 +25,9 @@ namespace tetris_backend.Services
 
         public async Task<User?> GetAsync(string id) =>
             await _userCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+
+        public async Task<User?> GetBasedOnEmailAsync(string email) =>
+            await _userCollection.Find(x => x.Email == email).FirstOrDefaultAsync();
 
         public async Task CreateAsync(User newUser) =>
             await _userCollection.InsertOneAsync(newUser);

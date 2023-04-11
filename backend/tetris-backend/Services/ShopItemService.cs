@@ -8,16 +8,16 @@ namespace tetris_backend.Services
     {
         private readonly IMongoCollection<ShopItem> _shopItemCollection;
 
-        public ShopItemService(IOptions<TetrisProjectDatabaseSettings> bookStoreDatabaseSettings)
+        public ShopItemService(IOptions<TetrisProjectDatabaseSettings> tetrisProjectDatabaseSettings)
         {
             var mongoClient = new MongoClient(
-                bookStoreDatabaseSettings.Value.ConnectionString);
+                tetrisProjectDatabaseSettings.Value.ConnectionString);
 
             var mongoDatabase = mongoClient.GetDatabase(
-                bookStoreDatabaseSettings.Value.DatabaseName);
+                tetrisProjectDatabaseSettings.Value.DatabaseName);
 
             _shopItemCollection = mongoDatabase.GetCollection<ShopItem>(
-                bookStoreDatabaseSettings.Value.ShopItemCollectionName);
+                tetrisProjectDatabaseSettings.Value.ShopItemCollectionName);
         }
 
         public async Task<List<ShopItem>> GetAsync() =>
