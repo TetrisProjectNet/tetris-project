@@ -6,10 +6,33 @@ namespace tetris_backend.Controllers
     [Route("[controller]")]
     public class VerificationController : ControllerBase
     {
-        private readonly VerificationService _verificationService;
+        private int getRandomInt(int max)
+        {
+            Random rnd = new Random();
+            return rnd.Next(max);
+        }
 
-        public VerificationController(VerificationService verificationService) =>
+        private string generateCode(int length)
+        {
+            string code = "";
+
+            for (int i = 0; i < length; i++)
+            {
+                code += this.getRandomInt(10);
+            }
+
+            return code;
+
+        }
+
+        private readonly VerificationService _verificationService;
+        private readonly IConfiguration _config;
+
+        public VerificationController(VerificationService verificationService, IConfiguration config)
+        {
             _verificationService = verificationService;
+            _config = config;
+        }
 
 
         [HttpGet]
@@ -36,12 +59,18 @@ namespace tetris_backend.Controllers
         {
             var verification = await _verificationService.GetBasedOnEmailAsync(email);
 
-            if (verification is null)
+            if (true)
             {
-                return null;
+                EmailService emailService = new EmailService(_config);
+                EmailDto emailDto = new EmailDto();
+                emailDto.To = email;
+                emailDto.Subject = "Hello!";
+                emailDto.Body = "This is sent from backend.";
+                emailService.SendEmail(emailDto);
+                //return null;
             }
 
-            return verification;
+            return verification;            
         }
 
 
