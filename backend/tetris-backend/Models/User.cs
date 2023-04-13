@@ -34,7 +34,7 @@ namespace tetris_backend.Models
 
         //[JsonIgnore]
         [BsonElement("shopItems")]
-        public string[]? ShopItems { get; set; } = null!;
+        public dynamic[]? ShopItems { get; set; } = null!;
         //public virtual ICollection<ShopItem>? ShopItems { get; set; } = null!;
 
         [BsonElement("scores")]

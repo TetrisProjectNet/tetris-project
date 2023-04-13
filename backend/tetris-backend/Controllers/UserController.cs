@@ -9,14 +9,35 @@ namespace tetris_backend.Controllers
     public class UserController : ControllerBase
     {
         private readonly UserService _userService;
+        private readonly ShopItemService _shopItemService;
 
-        public UserController(UserService userService) =>
+        public UserController(UserService userService, ShopItemService shopItemService)
+        {
             _userService = userService;
+            _shopItemService = shopItemService;
+        }
 
 
         [HttpGet]
-        public async Task<List<User>> Get() =>
-            await _userService.GetAsync();
+        public async Task<List<User>> Get()
+        {
+            var users = await _userService.GetAsync();
+
+            foreach (var user in users)
+            {
+                if (user.ShopItems.Length > 0)
+                {
+                    for (int i = 0; i < user.ShopItems.Length; i++)
+                    {
+                        ShopItem shopItem = await _shopItemService.GetAsync(user.ShopItems[i]);
+                        user.ShopItems[i] = shopItem;
+                    }
+                    user.ShopItems = user.ShopItems.Where(c => c != null).ToArray();
+                }
+            }
+
+            return users;
+        }
 
 
         [HttpGet("{id:length(24)}")]
@@ -27,6 +48,16 @@ namespace tetris_backend.Controllers
             if (user is null)
             {
                 return NotFound();
+            }
+
+            if (user.ShopItems.Length > 0)
+            {
+                for (int i = 0; i < user.ShopItems.Length; i++)
+                {
+                    ShopItem shopItem = await _shopItemService.GetAsync(user.ShopItems[i]);
+                    user.ShopItems[i] = shopItem;
+                }
+                user.ShopItems = user.ShopItems.Where(c => c != null).ToArray();
             }
 
             return user;
@@ -41,6 +72,16 @@ namespace tetris_backend.Controllers
             if (user is null)
             {
                 return null;
+            }
+
+            if (user.ShopItems.Length > 0)
+            {
+                for (int i = 0; i < user.ShopItems.Length; i++)
+                {
+                    ShopItem shopItem = await _shopItemService.GetAsync(user.ShopItems[i]);
+                    user.ShopItems[i] = shopItem;
+                }
+                user.ShopItems = user.ShopItems.Where(c => c != null).ToArray();
             }
 
             return user;
