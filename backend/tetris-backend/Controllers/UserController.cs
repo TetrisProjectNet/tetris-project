@@ -22,6 +22,7 @@ namespace tetris_backend.Controllers
         public async Task<List<User>> Get()
         {
             var users = await _userService.GetAsync();
+            var shopItems = await _shopItemService.GetAsync();
 
             foreach (var user in users)
             {
@@ -29,7 +30,7 @@ namespace tetris_backend.Controllers
                 {
                     for (int i = 0; i < user.ShopItems.Length; i++)
                     {
-                        ShopItem shopItem = await _shopItemService.GetAsync(user.ShopItems[i]);
+                        ShopItem shopItem = shopItems.Find(x => x.Id == user.ShopItems[i]);
                         user.ShopItems[i] = shopItem;
                     }
                     user.ShopItems = user.ShopItems.Where(c => c != null).ToArray();
