@@ -5,7 +5,7 @@ export class User {
   id: string = '';
   username: string = '';
   email: string = '';
-  password: string = '';
+  password?: string = '';
   role: string = '';  //  player / admin
   banned: boolean = false;  //  ha szeretnénk banolási lehetőséget
 

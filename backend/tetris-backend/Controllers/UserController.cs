@@ -1,6 +1,9 @@
 ﻿using tetris_backend.Models;
 using tetris_backend.Services;
 using Microsoft.AspNetCore.Mvc;
+using tetris_backend.DTOModels;
+using System.Text.Json;
+using System.Text.Json.Nodes;
 
 namespace tetris_backend.Controllers
 {
@@ -19,99 +22,193 @@ namespace tetris_backend.Controllers
 
 
         [HttpGet]
-        public async Task<List<User>> Get()
+        public async Task<List<UserDTO>> Get()
         {
-            var users = await _userService.GetAsync();
-            var shopItems = await _shopItemService.GetAsync();
+            var usersDB = await _userService.GetAsync();
+            List<UserDTO> usersDTO = new List<UserDTO>();
 
-            foreach (var user in users)
+            foreach (var userDB in usersDB)
             {
-                if (user.ShopItems.Length > 0)
+                UserDTO userDTO = new UserDTO();
+                userDTO.Id = userDB.id;
+                userDTO.Username = userDB.username;
+                userDTO.Email = userDB.email;
+                userDTO.Role = userDB.role;
+                userDTO.Banned = userDB.banned;
+                userDTO.JoinDate = userDB.joinDate;
+                userDTO.LastOnlineDate = userDB.lastOnlineDate;
+                userDTO.Coins = userDB.coins;
+                userDTO.Scores = userDB.scores;
+                userDTO.Friends = userDB.friends;
+
+                if (userDB.shopItems != null)
                 {
-                    for (int i = 0; i < user.ShopItems.Length; i++)
+                    var shopItems = await _shopItemService.GetAsync();
+                    List<ShopItem> userDTOshopItems = new List<ShopItem>();
+
+                    for (int i = 0; i < userDB.shopItems.Length; i++)
                     {
-                        ShopItem shopItem = shopItems.Find(x => x.Id == user.ShopItems[i]);
-                        user.ShopItems[i] = shopItem;
+                        var shopItem = shopItems.Find(x => x.Id == userDB.shopItems[i]);
+                        if (shopItem != null)
+                        {
+                            userDTOshopItems.Add(shopItem);
+                        }
                     }
-                    user.ShopItems = user.ShopItems.Where(c => c != null).ToArray();
+                    userDTO.ShopItems = userDTOshopItems.ToArray();
                 }
+                usersDTO.Add(userDTO);
             }
 
-            return users;
+            return usersDTO;
         }
 
 
         [HttpGet("{id:length(24)}")]
-        public async Task<ActionResult<User>> Get(string id)
+        public async Task<ActionResult<UserDTO>> Get(string id)
         {
-            var user = await _userService.GetAsync(id);
+            var userDB = await _userService.GetAsync(id);
 
-            if (user is null)
+            if (userDB is null)
             {
                 return NotFound();
             }
 
-            if (user.ShopItems.Length > 0)
+            UserDTO userDTO = new UserDTO();
+            userDTO.Id = userDB.id;
+            userDTO.Username = userDB.username;
+            userDTO.Email = userDB.email;
+            userDTO.Role = userDB.role;
+            userDTO.Banned = userDB.banned;
+            userDTO.JoinDate = userDB.joinDate;
+            userDTO.LastOnlineDate = userDB.lastOnlineDate;
+            userDTO.Coins = userDB.coins;
+            userDTO.Scores = userDB.scores;
+            userDTO.Friends = userDB.friends;
+
+            if (userDB.shopItems.Length > 0)
             {
-                for (int i = 0; i < user.ShopItems.Length; i++)
+                var shopItems = await _shopItemService.GetAsync();
+                List<ShopItem> userDTOshopItems = new List<ShopItem>();
+                for (int i = 0; i < userDB.shopItems.Length; i++)
                 {
-                    ShopItem shopItem = await _shopItemService.GetAsync(user.ShopItems[i]);
-                    user.ShopItems[i] = shopItem;
+                    var shopItem = shopItems.Find(x => x.Id == userDB.shopItems[i]);
+                    if (shopItem != null)
+                    {
+                        userDTOshopItems.Add(shopItem);
+                    }
                 }
-                user.ShopItems = user.ShopItems.Where(c => c != null).ToArray();
+                userDTO.ShopItems = userDTOshopItems.ToArray();
             }
 
-            return user;
+            return userDTO;
         }
 
 
         [HttpGet("{email}")]
-        public async Task<ActionResult<User>> GetBasedOnEmail(string email)
+        public async Task<ActionResult<UserDTO>> GetBasedOnEmail(string email)
         {
-            var user = await _userService.GetBasedOnEmailAsync(email);
+            var userDB = await _userService.GetBasedOnEmailAsync(email);
 
-            if (user is null)
+            if (userDB is null)
             {
                 return null;
             }
 
-            if (user.ShopItems.Length > 0)
+            UserDTO userDTO = new UserDTO();
+            userDTO.Id = userDB.id;
+            userDTO.Username = userDB.username;
+            userDTO.Email = userDB.email;
+            userDTO.Role = userDB.role;
+            userDTO.Banned = userDB.banned;
+            userDTO.JoinDate = userDB.joinDate;
+            userDTO.LastOnlineDate = userDB.lastOnlineDate;
+            userDTO.Coins = userDB.coins;
+            userDTO.Scores = userDB.scores;
+            userDTO.Friends = userDB.friends;
+
+            if (userDB.shopItems.Length > 0)
             {
-                for (int i = 0; i < user.ShopItems.Length; i++)
+                var shopItems = await _shopItemService.GetAsync();
+                List<ShopItem> userDTOshopItems = new List<ShopItem>();
+                for (int i = 0; i < userDB.shopItems.Length; i++)
                 {
-                    ShopItem shopItem = await _shopItemService.GetAsync(user.ShopItems[i]);
-                    user.ShopItems[i] = shopItem;
+                    var shopItem = shopItems.Find(x => x.Id == userDB.shopItems[i]);
+                    if (shopItem != null)
+                    {
+                        userDTOshopItems.Add(shopItem);
+                    }
                 }
-                user.ShopItems = user.ShopItems.Where(c => c != null).ToArray();
+                userDTO.ShopItems = userDTOshopItems.ToArray();
             }
 
-            return user;
+            return userDTO;
         }
 
 
 
         [HttpPost]
-        public async Task<IActionResult> Post(User newUser)
+        public async Task<IActionResult> Post(UserDTO newUserDTO)
         {
-            await _userService.CreateAsync(newUser);
+            User userDB = new User();
+            userDB.username = newUserDTO.Username;
+            userDB.email = newUserDTO.Email;
+            userDB.role = newUserDTO.Role;
+            userDB.banned = newUserDTO.Banned;
+            userDB.joinDate = newUserDTO.JoinDate;
+            userDB.lastOnlineDate = newUserDTO.LastOnlineDate;
+            userDB.coins = newUserDTO.Coins;
+            userDB.scores = newUserDTO.Scores;
+            userDB.friends = newUserDTO.Friends;
 
-            return CreatedAtAction(nameof(Get), new { id = newUser.Id }, newUser);
+            if (newUserDTO.ShopItems.Length > 0)
+            {
+                List<string> shopItemIds = new List<string>();
+                foreach (var item in newUserDTO.ShopItems)
+                {
+                    shopItemIds.Add(item.Id);
+                }
+
+                userDB.shopItems = shopItemIds.ToArray();
+            }
+
+            await _userService.CreateAsync(userDB);
+
+            return CreatedAtAction(nameof(Get), new { id = userDB.id }, userDB);
         }
 
 
         [HttpPatch("{id:length(24)}")]
-        public async Task<IActionResult> Update(string id, User updatedUser)
+        public async Task<IActionResult> Update(string id, UserDTO updatedUserDTO)
         {
-            var user = await _userService.GetAsync(id);
+            var userDB = await _userService.GetAsync(id);
 
-            if (user is null)
+            if (userDB is null)
             {
                 return NotFound();
             }
 
-            updatedUser.Id = user.Id;
+            userDB.username = updatedUserDTO.Username;
+            userDB.email = updatedUserDTO.Email;
+            userDB.role = updatedUserDTO.Role;
+            userDB.banned = updatedUserDTO.Banned;
+            userDB.joinDate = updatedUserDTO.JoinDate;
+            userDB.lastOnlineDate = updatedUserDTO.LastOnlineDate;
+            userDB.coins = updatedUserDTO.Coins;
+            userDB.scores = updatedUserDTO.Scores;
+            userDB.friends = updatedUserDTO.Friends;
 
-            await _userService.UpdateAsync(id, updatedUser);
+            if (updatedUserDTO.ShopItems.Length != userDB.shopItems.Length)
+            {
+                List<string> shopItemIds = new List<string>();
+                foreach (var item in updatedUserDTO.ShopItems)
+                {
+                    shopItemIds.Add(item.Id);
+                }
+
+                userDB.shopItems = shopItemIds.ToArray();
+            }
+
+            await _userService.UpdateAsync(id, userDB);
 
             return NoContent();
         }
