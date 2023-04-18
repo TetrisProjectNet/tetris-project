@@ -29,6 +29,9 @@ namespace tetris_backend.Services
         public async Task<User?> GetBasedOnEmailAsync(string email) =>
             await _userCollection.Find(x => x.email == email).FirstOrDefaultAsync();
 
+        public async Task<User?> GetBasedOnUsernameAsync(string username) =>
+            await _userCollection.Find(x => x.username == username).FirstOrDefaultAsync();
+
         public async Task CreateAsync(User newUser) =>
             await _userCollection.InsertOneAsync(newUser);
 

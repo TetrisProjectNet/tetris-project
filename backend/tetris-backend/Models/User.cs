@@ -15,10 +15,10 @@ namespace tetris_backend.Models
         public string username { get; set; } = null!;
 
         //[BsonElement("passwordHash")]
-        public byte[]? passwordHash { get; set; } = null!;
+        public byte[] passwordHash { get; set; } = null!;
 
         //[BsonElement("passwordSalt")]
-        public byte[]? passwordSalt { get; set; } = null!;
+        public byte[] passwordSalt { get; set; } = null!;
 
         //[BsonElement("email")]
         public string email { get; set; } = null!;

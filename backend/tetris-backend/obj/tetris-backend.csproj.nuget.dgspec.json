@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tanulas\\Kando\\tetris-project\\backend\\tetris-backend\\tetris-backend.csproj": {}
+    "C:\\Users\\Kovács Levente\\Documents\\tetris-project\\backend\\tetris-backend\\tetris-backend.csproj": {}
   },
   "projects": {
-    "D:\\Tanulas\\Kando\\tetris-project\\backend\\tetris-backend\\tetris-backend.csproj": {
+    "C:\\Users\\Kovács Levente\\Documents\\tetris-project\\backend\\tetris-backend\\tetris-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tanulas\\Kando\\tetris-project\\backend\\tetris-backend\\tetris-backend.csproj",
+        "projectUniqueName": "C:\\Users\\Kovács Levente\\Documents\\tetris-project\\backend\\tetris-backend\\tetris-backend.csproj",
         "projectName": "tetris-backend",
-        "projectPath": "D:\\Tanulas\\Kando\\tetris-project\\backend\\tetris-backend\\tetris-backend.csproj",
-        "packagesPath": "C:\\Users\\nagyk\\.nuget\\packages\\",
-        "outputPath": "D:\\Tanulas\\Kando\\tetris-project\\backend\\tetris-backend\\obj\\",
+        "projectPath": "C:\\Users\\Kovács Levente\\Documents\\tetris-project\\backend\\tetris-backend\\tetris-backend.csproj",
+        "packagesPath": "C:\\Users\\Kovács Levente\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kovács Levente\\Documents\\tetris-project\\backend\\tetris-backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nagyk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kovács Levente\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +49,14 @@
               "target": "Package",
               "version": "[3.6.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.29.0, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.17.0, )"
@@ -60,6 +68,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.29.0, )"
             }
           },
           "imports": [

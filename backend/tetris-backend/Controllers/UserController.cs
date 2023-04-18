@@ -4,11 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using tetris_backend.DTOModels;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using Microsoft.AspNetCore.Authorization;
 
 namespace tetris_backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize(Roles = "admin")]
     public class UserController : ControllerBase
     {
         private readonly UserService _userService;
