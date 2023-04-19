@@ -99,10 +99,8 @@ export class SignupComponent implements OnInit {
   // }
 
   signup(user: User) {
-
     user.joinDate = new Date();
     user.coins = 100;
-
     this.authService.register(user).subscribe({
       error: () => this.onDanger('Please try again later!', 'Something went wrong.'),
       complete: () => {

@@ -22,8 +22,9 @@ export class AuthService {
     );
   }
 
-  public login(user: User): Observable<string> {
-    return this.http.post(`${this.apiUrl}Auth/login`, user, {
+  public login(username: string, password: string): Observable<any> {
+    console.log('asdasd', username);
+    return this.http.post(`${this.apiUrl}Auth/login?username=${username}&password=${password}`, {
       responseType: 'text',
     });
   }

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Observable, of, switchMap } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { AuthService } from 'src/app/service/auth.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-login',
@@ -10,6 +12,15 @@ import { CustomToastrService } from 'src/app/service/custom-toastr.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+  // user$: Observable<User> = this.activatedRoute.params.pipe(
+  //   switchMap(params => {
+  //     if (params['id']) {
+  //       return this.userService.get(params['id'])
+  //     }
+  //     return of(new User())
+  //   })
+  // );
 
   loginData = {
     username: 'asd',
@@ -26,6 +37,8 @@ export class LoginComponent implements OnInit {
   // selectedElement: any;
 
   constructor(
+    private activatedRoute: ActivatedRoute,
+    private userService: UserService,
     private router: Router,
     private toastr: CustomToastrService,
     private authService: AuthService,
@@ -34,6 +47,37 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  login(username: string, password: string) {
+    this.authService.login(username, password).subscribe((token: string) => {
+      console.log(token);
+      localStorage.setItem('authToken', token);
+    });
+  }
+
+  // this.authService.login(username, password).subscribe({
+  //   next: (token: string) => {
+  //     localStorage.setItem('authToken', token);
+  //   },
+  //   error: (error) => {this.onDanger('Please try again later!', 'Something went wrong.'), console.log(error);},
+  //   complete: () => {
+  //     // this.router.navigate(['login']);
+  //     this.onSuccess('Successfully logged in!');
+  //     setTimeout(() => {
+  //       this.onWarning('Don\'t tell your password to anyone!', 'Remember!');
+  //     }, 1000)
+  //   }
+
+  // });
+
+
+  getMe() {
+    this.authService.getMe().subscribe((response: any) => {
+      console.log(response);
+    });
+  }
+
+
+
   onSubmit(username: string, password: string): void {
     if (this.username == this.loginData.username && this.password == this.loginData.password){
       this.onRemoveToast();
@@ -41,12 +85,6 @@ export class LoginComponent implements OnInit {
     } else {
       this.onDanger('Incorrect username or password.')
     }
-  }
-
-  login(user: User) {
-    this.authService.login(user).subscribe((token: string) => {
-      localStorage.setItem('authToken', token);
-    });
   }
 
 

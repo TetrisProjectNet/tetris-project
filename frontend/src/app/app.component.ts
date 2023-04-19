@@ -41,10 +41,5 @@ export class AppComponent {
   
 
 
-  getMe() {
-    this.authService.getMe().subscribe((name: string) => {
-      console.log(name);
-    });
-  }
 
 }
