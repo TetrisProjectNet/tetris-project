@@ -18,7 +18,7 @@ import { ShopComponent } from './page/shop/shop.component';
 import { StatisticsComponent } from './page/statistics/statistics.component';
 import { UserComponent } from './page/user/user.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.component';
 import { NewPasswordComponent } from './page/new-password/new-password.component';
@@ -38,6 +38,7 @@ import { ProfileDropdownComponent } from './common/nav/profile-dropdown/profile-
 import { ToastrModule } from 'ngx-toastr';
 import { ToastrComponent } from './common/toastr/toastr.component';
 import { ParallaxDirective } from './common/directive/parallax.directive';
+import { AuthInterceptor } from './service/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -99,7 +100,13 @@ import { ParallaxDirective } from './common/directive/parallax.directive';
       toastComponent: ToastrComponent,
     }),
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

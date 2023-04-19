@@ -2,6 +2,8 @@ import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import * as bootstrap from 'bootstrap';
 import { Tooltip } from 'bootstrap';
 import { FooterComponent } from './common/footer/footer.component';
+import { User } from './model/user';
+import { AuthService } from './service/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +11,16 @@ import { FooterComponent } from './common/footer/footer.component';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'frontend';
 
   @ViewChildren(FooterComponent) footerComp!: QueryList<FooterComponent>;
 
+  title = 'frontend';
+  user = new User();
+
+  constructor(
+    private authService: AuthService
+  ) { }
+  
   ngOnInit() {
     // var tooltipTriggerList = [].slice.call(
     //   document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -29,4 +37,14 @@ export class AppComponent {
     //   })
     // })
   }
+
+  
+
+
+  getMe() {
+    this.authService.getMe().subscribe((name: string) => {
+      console.log(name);
+    });
+  }
+
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from 'src/app/model/user';
+import { AuthService } from 'src/app/service/auth.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 
 @Component({
@@ -26,6 +28,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private router: Router,
     private toastr: CustomToastrService,
+    private authService: AuthService,
   ) { }
 
   ngOnInit(): void {
@@ -38,6 +41,12 @@ export class LoginComponent implements OnInit {
     } else {
       this.onDanger('Incorrect username or password.')
     }
+  }
+
+  login(user: User) {
+    this.authService.login(user).subscribe((token: string) => {
+      localStorage.setItem('authToken', token);
+    });
   }
 
 
