@@ -68,7 +68,7 @@ namespace tetris_backend.Controllers
             //return CreatedAtAction(nameof(UserController.Get), new { id = userDB.id }, userDB);
         }
 
-        [HttpPost("login")]
+        [HttpPost("login/{username}/{password}")]
         public async Task<ActionResult<string>> Login(string username, string password)
         {
             User userDB = await _userService.GetBasedOnUsernameAsync(username);

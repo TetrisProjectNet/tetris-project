@@ -196,3 +196,15 @@ C:\Users\Kovács Levente\Documents\tetris-project\backend\tetris-backend\bin\Deb
 C:\Users\Kovács Levente\Documents\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Scrutor.dll
 C:\Users\Kovács Levente\Documents\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
 C:\Users\Kovács Levente\Documents\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Scrutor.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\Tanulas\Kando\tetris-project\backend\tetris-backend\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

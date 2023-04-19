@@ -16,4 +16,8 @@ export class ProfileDropdownComponent {
   faUserShield = faUserShield;
   faRightFromBracket = faRightFromBracket;
 
+  logout() {
+    localStorage.removeItem('authToken');
+  }
+
 }

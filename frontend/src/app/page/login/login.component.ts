@@ -48,27 +48,24 @@ export class LoginComponent implements OnInit {
   }
 
   login(username: string, password: string) {
-    this.authService.login(username, password).subscribe((token: string) => {
-      console.log(token);
-      localStorage.setItem('authToken', token);
+    // this.authService.login(username, password).subscribe((token: string) => {
+    //   console.log(token);
+    //   localStorage.setItem('authToken', token);
+    // });
+    this.authService.login(username, password).subscribe({
+      next: (token: string) => {
+        localStorage.setItem('authToken', token);
+      },
+      error: (error) => {this.onDanger('Please try again later!', 'Something went wrong.'), console.log(error);},
+      complete: () => {
+        // this.router.navigate(['login']);
+        this.onSuccess('Successfully logged in!');
+        setTimeout(() => {
+          this.onWarning('Don\'t tell your password to anyone!', 'Remember!');
+        }, 1000)
+      }
     });
   }
-
-  // this.authService.login(username, password).subscribe({
-  //   next: (token: string) => {
-  //     localStorage.setItem('authToken', token);
-  //   },
-  //   error: (error) => {this.onDanger('Please try again later!', 'Something went wrong.'), console.log(error);},
-  //   complete: () => {
-  //     // this.router.navigate(['login']);
-  //     this.onSuccess('Successfully logged in!');
-  //     setTimeout(() => {
-  //       this.onWarning('Don\'t tell your password to anyone!', 'Remember!');
-  //     }, 1000)
-  //   }
-
-  // });
-
 
   getMe() {
     this.authService.getMe().subscribe((response: any) => {

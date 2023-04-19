@@ -10,7 +10,7 @@ import { User } from '../model/user';
 export class AuthService {
 
   apiUrl = environment.apiUrl;
-  
+
   constructor(
     private http: HttpClient
   ) { }
@@ -22,9 +22,8 @@ export class AuthService {
     );
   }
 
-  public login(username: string, password: string): Observable<any> {
-    console.log('asdasd', username);
-    return this.http.post(`${this.apiUrl}Auth/login?username=${username}&password=${password}`, {
+  public login(username: string, password: string): Observable<string> {
+    return this.http.post(`${this.apiUrl}Auth/login/${username}/${password}`, null, {
       responseType: 'text',
     });
   }
