@@ -87,7 +87,7 @@ namespace tetris_backend.Controllers
             userDTO.Scores = userDB.scores;
             userDTO.Friends = userDB.friends;
 
-            if (userDB.shopItems.Length > 0)
+            if (userDB.shopItems != null && userDB.shopItems.Length > 0)
             {
                 var shopItems = await _shopItemService.GetAsync();
                 List<ShopItem> userDTOshopItems = new List<ShopItem>();
@@ -128,7 +128,7 @@ namespace tetris_backend.Controllers
             userDTO.Scores = userDB.scores;
             userDTO.Friends = userDB.friends;
 
-            if (userDB.shopItems.Length > 0)
+            if (userDB.shopItems != null && userDB.shopItems.Length > 0)
             {
                 var shopItems = await _shopItemService.GetAsync();
                 List<ShopItem> userDTOshopItems = new List<ShopItem>();
@@ -162,7 +162,7 @@ namespace tetris_backend.Controllers
             userDB.scores = newUserDTO.Scores;
             userDB.friends = newUserDTO.Friends;
 
-            if (newUserDTO.ShopItems.Length > 0)
+            if (newUserDTO.ShopItems != null && newUserDTO.ShopItems.Length > 0)
             {
                 List<string> shopItemIds = new List<string>();
                 foreach (var item in newUserDTO.ShopItems)
@@ -199,15 +199,18 @@ namespace tetris_backend.Controllers
             userDB.scores = updatedUserDTO.Scores;
             userDB.friends = updatedUserDTO.Friends;
 
-            if (updatedUserDTO.ShopItems.Length != userDB.shopItems.Length)
+            if (updatedUserDTO.ShopItems != null)
             {
-                List<string> shopItemIds = new List<string>();
-                foreach (var item in updatedUserDTO.ShopItems)
+                if (updatedUserDTO.ShopItems.Length != userDB.shopItems.Length)
                 {
-                    shopItemIds.Add(item.Id);
-                }
+                    List<string> shopItemIds = new List<string>();
+                    foreach (var item in updatedUserDTO.ShopItems)
+                    {
+                        shopItemIds.Add(item.Id);
+                    }
 
-                userDB.shopItems = shopItemIds.ToArray();
+                    userDB.shopItems = shopItemIds.ToArray();
+                }
             }
 
             await _userService.UpdateAsync(id, userDB);

@@ -12,31 +12,31 @@ namespace tetris_backend.Models
         public string? id { get; set; }
 
         //[BsonElement("username")]
-        public string username { get; set; } = null!;
+        public string? username { get; set; } = null!;
 
         //[BsonElement("passwordHash")]
-        public byte[] passwordHash { get; set; } = null!;
+        public byte[]? passwordHash { get; set; } = null!;
 
         //[BsonElement("passwordSalt")]
-        public byte[] passwordSalt { get; set; } = null!;
+        public byte[]? passwordSalt { get; set; } = null!;
 
         //[BsonElement("email")]
-        public string email { get; set; } = null!;
+        public string? email { get; set; } = null!;
 
         //[BsonElement("role")]
-        public string role { get; set; } = null!;
+        public string? role { get; set; } = null!;
 
         //[BsonElement("banned")]
-        public bool banned { get; set; } = false!;
+        public bool? banned { get; set; } = false!;
 
         //[BsonElement("joinDate")]
-        public string joinDate { get; set; } = null!;
+        public string? joinDate { get; set; } = null!;
 
         //[BsonElement("lastOnlineDate")]
         public string? lastOnlineDate { get; set; } = null!;
 
         //[BsonElement("coins")]
-        public int coins { get; set; } = 0!;
+        public int? coins { get; set; } = 0!;
 
         //[JsonIgnore]
         //[BsonElement("shopItems")]
@@ -48,6 +48,10 @@ namespace tetris_backend.Models
 
         //[BsonElement("friends")]
         public string[]? friends { get; set; } = null!;
+
+        public string? refreshToken { get; set; } = string.Empty;
+        public DateTime? tokenCreated { get; set; }
+        public DateTime? tokenExpires { get; set; }
 
     }
 }

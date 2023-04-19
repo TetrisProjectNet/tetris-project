@@ -1,14 +1,16 @@
 ﻿using tetris_backend.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using System.Security.Claims;
 
 namespace tetris_backend.Services
 {
     public class UserService
     {
         private readonly IMongoCollection<User> _userCollection;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public UserService(IOptions<TetrisProjectDatabaseSettings> tetrisProjectDatabaseSettings)
+        public UserService(IOptions<TetrisProjectDatabaseSettings> tetrisProjectDatabaseSettings, IHttpContextAccessor httpContextAccessor)
         {
             var mongoClient = new MongoClient(
                 tetrisProjectDatabaseSettings.Value.ConnectionString);
@@ -18,6 +20,8 @@ namespace tetris_backend.Services
 
             _userCollection = mongoDatabase.GetCollection<User>(
                 tetrisProjectDatabaseSettings.Value.UserCollectionName);
+
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<List<User>> GetAsync() =>
@@ -40,5 +44,17 @@ namespace tetris_backend.Services
 
         public async Task RemoveAsync(string id) =>
             await _userCollection.DeleteOneAsync(x => x.id == id);
+
+        public object GetLoggedUser()
+        {
+            var id = string.Empty;
+            var name = string.Empty;
+            if (_httpContextAccessor.HttpContext != null)
+            {
+                id = _httpContextAccessor.HttpContext.User.FindFirstValue("id");
+                name = _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Name);
+            }
+            return new { id, name };
+        }
     }
 }

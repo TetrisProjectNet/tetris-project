@@ -17,6 +17,7 @@ builder.Services.AddSingleton<UserService>();
 builder.Services.AddSingleton<ShopItemService>();
 builder.Services.AddSingleton<VerificationService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
