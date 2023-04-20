@@ -33,4 +33,15 @@ export class AuthService {
       responseType: 'text',
     });
   }
+
+  public resetPassword(email: string, newPassword: string, code: string): Observable<string> {
+    return this.http.patch(`${this.apiUrl}Auth/reset-password/${email}/${newPassword}/${code}`, null, {
+      responseType: 'text',
+    });
+  }
+
+  // update(entity: T): Observable<T> {
+  //   return this.http.patch<T>(`${this.apiUrl}${this.entity}/${entity.id}`, entity);
+  // }
+
 }

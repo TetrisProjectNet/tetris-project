@@ -18,11 +18,13 @@ namespace tetris_backend.Controllers
         //public static User userDB = new User();
         private readonly UserService _userService;
         private readonly IConfiguration _configuration;
+        private readonly VerificationService _verificationService;
 
-        public AuthController(UserService userService, IConfiguration configuration)
+        public AuthController(UserService userService, IConfiguration configuration, VerificationService verificationService)
         {
             _userService = userService;
             _configuration = configuration;
+            _verificationService = verificationService;
         }
 
         [HttpGet, Authorize]
@@ -69,46 +71,28 @@ namespace tetris_backend.Controllers
         }
 
 
-        [HttpPatch("reset-password/{email}/{password}")]
-        public async Task<ActionResult<User>> ResetPassword(string email, string password)
+        [HttpPatch("reset-password/{email}/{newPassword}/{code}")]
+        public async Task<ActionResult<User>> ResetPassword(string email, string newPassword, string code)
         {
             var userDB = await _userService.GetBasedOnEmailAsync(email);
+            var verification = await _verificationService.GetBasedOnEmailAsync(email);
 
-            if (userDB == null)
+            if (userDB == null || verification == null)
             {
                 return BadRequest("Email not registered.");
             }
 
-            CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
+            if (verification.Code != code)
+            {
+                return BadRequest("You are not verified.");
+            }
 
-            //userDB.username = request.Username;
-            //userDB.passwordHash = passwordHash;
-            //userDB.passwordSalt = passwordSalt;
-            //userDB.email = request.Email;
-            //userDB.role = request.Role;
-            //userDB.banned = request.Banned;
-            //userDB.joinDate = request.JoinDate;
-            //userDB.lastOnlineDate = request.LastOnlineDate;
-            //userDB.coins = request.Coins;
-            //userDB.scores = request.Scores;
-            //userDB.friends = request.Friends;
-
-            //if (request?.ShopItems != null && request?.ShopItems?.Length > 0)
-            //{
-            //    List<string> shopItemIds = new List<string>();
-            //    foreach (var item in request.ShopItems)
-            //    {
-            //        shopItemIds.Add(item?.Id);
-            //    }
-
-            //    userDB.shopItems = shopItemIds.ToArray();
-            //}
+            CreatePasswordHash(newPassword, out byte[] passwordHash, out byte[] passwordSalt);
 
             await _userService.UpdatePasswordAsync(userDB.id, passwordHash, passwordSalt);
+            await _verificationService.RemoveBasedOnEmailAsync(email);
 
             return Ok("Your password changed.");
-
-            //return CreatedAtAction(nameof(UserController.Get), new { id = userDB.id }, userDB);
         }
 
 

@@ -59,16 +59,16 @@ namespace tetris_backend.Controllers
         {
             var verification = await _verificationService.GetBasedOnEmailAsync(email);
 
-            if (true)
-            {
-                EmailService emailService = new EmailService(_config);
-                EmailDto emailDto = new EmailDto();
-                emailDto.To = email;
-                emailDto.Subject = "Hello!";
-                emailDto.Body = "This is sent from backend.";
-                emailService.SendEmail(emailDto);
-                //return null;
-            }
+            //if (true)
+            //{
+            //    EmailService emailService = new EmailService(_config);
+            //    EmailDto emailDto = new EmailDto();
+            //    emailDto.To = email;
+            //    emailDto.Subject = "Hello!";
+            //    emailDto.Body = "This is sent from backend.";
+            //    emailService.SendEmail(emailDto);
+            //    //return null;
+            //}
 
             return verification;            
         }

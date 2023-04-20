@@ -38,5 +38,8 @@ namespace tetris_backend.Services
         public async Task RemoveAsync(string id) =>
             await _verificationCollection.DeleteOneAsync(x => x.Id == id);
 
+        public async Task RemoveBasedOnEmailAsync(string email) =>
+            await _verificationCollection.DeleteOneAsync(x => x.Email == email);
+
     }
 }
