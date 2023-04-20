@@ -28,6 +28,10 @@ export class BaseService<T extends { id?: string }> {
     return this.http.get<T>(`${this.apiUrl}${this.entity}/${email}`);
   }
 
+  isEmailRegistered(email: string): Observable<T> {
+    return this.http.get<T>(`${this.apiUrl}${this.entity}/is-registered/${email}`);
+  }
+
   create(entity: T): Observable<T> {
     return this.http.post<T>(`${this.apiUrl}${this.entity}`, entity);
   }

@@ -73,11 +73,17 @@ namespace tetris_backend.Controllers
         public async Task<ActionResult<User>> ResetPassword(string email, string password)
         {
             var userDB = await _userService.GetBasedOnEmailAsync(email);
+
+            if (userDB == null)
+            {
+                return BadRequest("Email not registered.");
+            }
+
             CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
 
             //userDB.username = request.Username;
-            userDB.passwordHash = passwordHash;
-            userDB.passwordSalt = passwordSalt;
+            //userDB.passwordHash = passwordHash;
+            //userDB.passwordSalt = passwordSalt;
             //userDB.email = request.Email;
             //userDB.role = request.Role;
             //userDB.banned = request.Banned;
@@ -98,9 +104,9 @@ namespace tetris_backend.Controllers
             //    userDB.shopItems = shopItemIds.ToArray();
             //}
 
-            await _userService.UpdateAsync(userDB.id, userDB);
+            await _userService.UpdatePasswordAsync(userDB.id, passwordHash, passwordSalt);
 
-            return Ok(userDB);
+            return Ok("Your password changed.");
 
             //return CreatedAtAction(nameof(UserController.Get), new { id = userDB.id }, userDB);
         }

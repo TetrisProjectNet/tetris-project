@@ -5,6 +5,7 @@ using tetris_backend.DTOModels;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using Microsoft.AspNetCore.Authorization;
+using MongoDB.Driver;
 
 namespace tetris_backend.Controllers
 {
@@ -145,6 +146,20 @@ namespace tetris_backend.Controllers
         }
 
 
+        [HttpGet("is-registered/{email}")]
+        public async Task<ActionResult<bool>> IsEmailRegistered(string email)
+        {
+            var userDB = await _userService.GetBasedOnEmailAsync(email);
+
+            if (userDB is null)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+
         [Authorize(Roles = "admin")]
         [HttpPost]
         public async Task<IActionResult> Post(UserDTO newUserDTO)
@@ -215,6 +230,7 @@ namespace tetris_backend.Controllers
 
             return NoContent();
         }
+
 
         [Authorize(Roles = "admin")]
         [HttpDelete("{id:length(24)}")]

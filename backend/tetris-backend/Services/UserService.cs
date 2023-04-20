@@ -42,6 +42,10 @@ namespace tetris_backend.Services
         public async Task UpdateAsync(string id, User updatedUser) =>
             await _userCollection.ReplaceOneAsync(x => x.id == id, updatedUser);
 
+        public async Task UpdatePasswordAsync(string id, byte[] passwordHash, byte[] passwordSalt) =>
+            await _userCollection.UpdateOneAsync(x => x.id == id, Builders<User>.Update
+                .Set(u => u.passwordHash, passwordHash).Set(u => u.passwordSalt, passwordSalt));
+
         public async Task RemoveAsync(string id) =>
             await _userCollection.DeleteOneAsync(x => x.id == id);
 

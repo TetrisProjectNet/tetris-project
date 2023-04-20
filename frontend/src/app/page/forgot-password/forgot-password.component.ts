@@ -138,10 +138,11 @@ export class ForgotPasswordComponent {
   // }
 
   onSubmit(email: string): void {
-    this.userService.getBasedOnEmail(email)
+    this.userService.isEmailRegistered(email)
     .subscribe({
-      next: data => {
-        if (data) {
+      next: res => {
+        // console.log('isEmailRegistered', res);
+        if (res) {
           const code = this.generateCode(6);
           const verificationObj = new Verification();
           verificationObj.email = email;
