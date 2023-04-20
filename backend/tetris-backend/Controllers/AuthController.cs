@@ -68,6 +68,44 @@ namespace tetris_backend.Controllers
             //return CreatedAtAction(nameof(UserController.Get), new { id = userDB.id }, userDB);
         }
 
+
+        [HttpPatch("reset-password/{email}/{password}")]
+        public async Task<ActionResult<User>> ResetPassword(string email, string password)
+        {
+            var userDB = await _userService.GetBasedOnEmailAsync(email);
+            CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
+
+            //userDB.username = request.Username;
+            userDB.passwordHash = passwordHash;
+            userDB.passwordSalt = passwordSalt;
+            //userDB.email = request.Email;
+            //userDB.role = request.Role;
+            //userDB.banned = request.Banned;
+            //userDB.joinDate = request.JoinDate;
+            //userDB.lastOnlineDate = request.LastOnlineDate;
+            //userDB.coins = request.Coins;
+            //userDB.scores = request.Scores;
+            //userDB.friends = request.Friends;
+
+            //if (request?.ShopItems != null && request?.ShopItems?.Length > 0)
+            //{
+            //    List<string> shopItemIds = new List<string>();
+            //    foreach (var item in request.ShopItems)
+            //    {
+            //        shopItemIds.Add(item?.Id);
+            //    }
+
+            //    userDB.shopItems = shopItemIds.ToArray();
+            //}
+
+            await _userService.UpdateAsync(userDB.id, userDB);
+
+            return Ok(userDB);
+
+            //return CreatedAtAction(nameof(UserController.Get), new { id = userDB.id }, userDB);
+        }
+
+
         [HttpPost("login/{username}/{password}")]
         public async Task<ActionResult<string>> Login(string username, string password)
         {

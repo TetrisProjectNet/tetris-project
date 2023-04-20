@@ -10,7 +10,7 @@ namespace tetris_backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    [Authorize(Roles = "admin")]
+    
     public class UserController : ControllerBase
     {
         private readonly UserService _userService;
@@ -22,11 +22,12 @@ namespace tetris_backend.Controllers
             _shopItemService = shopItemService;
         }
 
-
+        [Authorize(Roles = "admin")]
         [HttpGet]
         public async Task<List<UserDTO>> Get()
         {
             var usersDB = await _userService.GetAsync();
+            var shopItems = await _shopItemService.GetAsync();
             List<UserDTO> usersDTO = new List<UserDTO>();
 
             foreach (var userDB in usersDB)
@@ -45,9 +46,7 @@ namespace tetris_backend.Controllers
 
                 if (userDB.shopItems != null)
                 {
-                    var shopItems = await _shopItemService.GetAsync();
                     List<ShopItem> userDTOshopItems = new List<ShopItem>();
-
                     for (int i = 0; i < userDB.shopItems.Length; i++)
                     {
                         var shopItem = shopItems.Find(x => x.Id == userDB.shopItems[i]);
@@ -60,11 +59,10 @@ namespace tetris_backend.Controllers
                 }
                 usersDTO.Add(userDTO);
             }
-
             return usersDTO;
         }
 
-
+        [Authorize]
         [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<UserDTO>> Get(string id)
         {
@@ -147,7 +145,7 @@ namespace tetris_backend.Controllers
         }
 
 
-
+        [Authorize(Roles = "admin")]
         [HttpPost]
         public async Task<IActionResult> Post(UserDTO newUserDTO)
         {
@@ -178,7 +176,7 @@ namespace tetris_backend.Controllers
             return CreatedAtAction(nameof(Get), new { id = userDB.id }, userDB);
         }
 
-
+        [Authorize(Roles = "admin")]
         [HttpPatch("{id:length(24)}")]
         public async Task<IActionResult> Update(string id, UserDTO updatedUserDTO)
         {
@@ -218,7 +216,7 @@ namespace tetris_backend.Controllers
             return NoContent();
         }
 
-
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id:length(24)}")]
         public async Task<IActionResult> Delete(string id)
         {
