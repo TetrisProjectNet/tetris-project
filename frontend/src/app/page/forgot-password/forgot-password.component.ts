@@ -147,6 +147,8 @@ export class ForgotPasswordComponent {
           const verificationObj = new Verification();
           verificationObj.email = email;
           verificationObj.code = code;
+          // let date = new Date();
+          // verificationObj.expireAt = date; //date.setSeconds(date.getSeconds() + 10)
           console.log(verificationObj);
 
           this.verificationService.getBasedOnEmail(email)

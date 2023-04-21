@@ -72,11 +72,12 @@ export class ParallaxDirective {
     // this.initialTop = 0;
 
     setTimeout(() => {
-
       this.initialTop = this.eleRef.nativeElement.offsetTop +
         this.eleRef.nativeElement.parentElement.offsetTop * this.parallaxRatio;
         
       this.eleRef.nativeElement.style.top = this.initialTop + 'px';
+      console.log('parallax: ', this.eleRef.nativeElement.style.top);
+
     },1)
 
     // if (this.eleRef.nativeElement.parentElement.getBoundingClientRect().top < 0) {
@@ -100,6 +101,10 @@ export class ParallaxDirective {
     // }
   }
 
+  ngAfterViewInit() {
+    
+  }
+
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll() {
@@ -114,6 +119,7 @@ export class ParallaxDirective {
     //   // this.eleRef.nativeElement.style.display = 'block';
 
     // }
+    console.log('asd');
     this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
   }
 

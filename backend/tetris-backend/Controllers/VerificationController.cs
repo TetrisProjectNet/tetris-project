@@ -78,6 +78,8 @@ namespace tetris_backend.Controllers
         public async Task<IActionResult> Post(Verification newVerification)
         {
             //newVerification.Code = "123456";
+            var date = DateTime.UtcNow;
+            newVerification.ExpireAt = TimeZoneInfo.ConvertTime(date, TimeZoneInfo.Local).AddMinutes(30);
 
             await _verificationService.CreateAsync(newVerification);
 

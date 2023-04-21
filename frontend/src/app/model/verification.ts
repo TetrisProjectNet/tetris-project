@@ -3,3 +3,4 @@ export class Verification {
   email: string = '';
   code?: string = '';
 }
+// expireAt: any = '';
