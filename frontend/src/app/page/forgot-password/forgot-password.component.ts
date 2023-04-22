@@ -6,6 +6,7 @@ import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { EmailService } from 'src/app/service/email.service';
 import { UserService } from 'src/app/service/user.service';
 import { VerificationService } from 'src/app/service/verification.service';
+import EmailTemplate from "src/assets/email.template"
 
 @Component({
   selector: 'app-forgot-password',
@@ -138,6 +139,7 @@ export class ForgotPasswordComponent {
   // }
 
   onSubmit(email: string): void {
+    console.log(EmailTemplate);
     this.userService.isEmailRegistered(email)
     .subscribe({
       next: res => {
@@ -164,7 +166,9 @@ export class ForgotPasswordComponent {
                     const emailObj = new Email();
                     emailObj.to = email;
                     emailObj.subject = `[tetris-project] Please verify your identity! - ${new Date().toLocaleString()}`;
-                    emailObj.body = `This email is sent from full stack api. <br>Your code is: <h1 style="color: aqua;">${code}</h1>`;
+                    // emailObj.body = `This email is sent from full stack api. <br>Your code is: <h1 style="color: aqua;">${code}</h1>`;
+                    // EmailTemplate.code = code;
+                    emailObj.body = EmailTemplate.generateTemplateWithCode(code);
                     console.log(emailObj);
 
                     this.sendEmail(emailObj);
@@ -182,7 +186,9 @@ export class ForgotPasswordComponent {
                     const emailObj = new Email();
                     emailObj.to = email;
                     emailObj.subject = `[tetris-project] Please verify your identity! - ${new Date().toLocaleString()}`;
-                    emailObj.body = `This email is sent from full stack api. <br>Your code is: <h1 style="color: aqua;">${code}</h1>`;
+                    // emailObj.body = `This email is sent from full stack api. <br>Your code is: <h1 style="color: aqua;">${code}</h1>`;
+                    // EmailTemplate.code = code;
+                    emailObj.body = EmailTemplate.generateTemplateWithCode(code);
                     console.log(emailObj);
 
                     this.sendEmail(emailObj);
