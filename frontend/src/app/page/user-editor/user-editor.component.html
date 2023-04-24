@@ -157,6 +157,19 @@
             </label>
             <label class="form-label" [class]="roleClass">Role</label>
           </div> -->
+          
+          <div class="select__wrapper form-group mb-0">
+            <app-floating-label-select
+              #coinsInput
+              [(selectModel)]="user.role"
+              [name]="'role'"
+              [labelContent]="'Role'"
+              [options]="{
+                admin: 'Admin',
+                player: 'Player'
+              }"
+            ></app-floating-label-select>
+          </div>
 
           <button type="submit" class="game-played btn btn-info col-12 my-3"
             [disabled]="!(usernameInput.isValid&&emailInput.isValid&&coinsInput.isValid)">

@@ -69,7 +69,7 @@ export class LoginComponent implements OnInit {
 
   getMe() {
     this.authService.getMe().subscribe((response: any) => {
-      console.log(response);
+      console.log(JSON.parse(response).id);
     });
   }
 

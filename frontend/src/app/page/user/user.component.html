@@ -66,7 +66,24 @@
           <fa-icon class="text-center" [icon]="faKey"></fa-icon>
         </div>
         <div class="select__wrapper form-group my-0">
-          <select #inputRef [(ngModel)]="filterKey" class="form-select custom-select col-12" name="key" required
+          <app-floating-label-select
+            #coinsInput
+            [(selectModel)]="filterKey"
+            [name]="'key'"
+            [labelContent]="'Key'"
+            [doesContainEmpty]="true"
+            [options]="{
+              username: 'Username',
+              email: 'Email',
+              coins: 'Coins',
+              joinDate: 'Join date',
+              lastOnlineDate: 'Last online',
+              role: 'Role',
+              banned: 'Banned'
+            }"
+          ></app-floating-label-select>
+
+          <!-- <select #inputRef [(ngModel)]="filterKey" class="form-select custom-select col-12" name="key" required
             (focus)="keyFocusToggler($event)" (blur)="keyFocusToggler($event)">
             <option selected value=""></option>
             <option value="id">Id</option>
@@ -77,11 +94,11 @@
             <option value="lastOnlineDate">Last online</option>
             <option value="role">Role</option>
             <option value="banned">Banned</option>
-          </select>
-          <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
+          </select> -->
+          <!-- <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
             <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
-          </label>
-          <label class="form-label" [class]="keyClass">Key</label>
+          </label> -->
+          <!-- <label class="form-label" [class]="keyClass">Key</label> -->
         </div>
       </div>
 

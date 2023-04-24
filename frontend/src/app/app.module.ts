@@ -39,6 +39,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { ToastrComponent } from './common/toastr/toastr.component';
 import { ParallaxDirective } from './common/directive/parallax.directive';
 import { AuthInterceptor } from './service/auth.interceptor';
+import { FloatingLabelSelectComponent } from './common/floating-label-select/floating-label-select.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { AuthInterceptor } from './service/auth.interceptor';
     PrivacyPolicyComponent,
     ProfileDropdownComponent,
     ToastrComponent,
-    ParallaxDirective
+    ParallaxDirective,
+    FloatingLabelSelectComponent
   ],
   imports: [
     BrowserModule,

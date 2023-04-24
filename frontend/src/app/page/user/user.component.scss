@@ -325,14 +325,14 @@ input:checked[type="checkbox"] {
 
 
   // ----- ONLY NEEDED FOR SELEECT FOR NOW -----
-  &-label {
-    padding: 0 10px;
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    color: styles.$white;
-    transition: transform 0.3s ease-out, font-size 0.3s ease-out;
-  }
+  // &-label {
+  //   padding: 0 10px;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0.5rem;
+  //   color: styles.$white;
+  //   transition: transform 0.3s ease-out, font-size 0.3s ease-out;
+  // }
 }
 
 // .focused {
@@ -341,53 +341,53 @@ input:checked[type="checkbox"] {
 //   color: styles.$gray;
 // }
 
-select {
-  position: relative;
-  padding: 6px 10px;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid styles.$theme;
-  transition: box-shadow 0.3s ease-out;
-  z-index: 1;
-  color: styles.$white;
+// select {
+//   position: relative;
+//   padding: 6px 10px;
+//   appearance: none;
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+//   background: transparent;
+//   box-shadow: none;
+//   -webkit-box-shadow: none;
+//   box-sizing: border-box;
+//   border: none;
+//   border-radius: 0;
+//   border-bottom: 1px solid styles.$theme;
+//   transition: box-shadow 0.3s ease-out;
+//   z-index: 1;
+//   color: styles.$white;
 
-  &__wrapper {
-    height: min-content;
-  }
+//   &__wrapper {
+//     height: min-content;
+//   }
 
-  &:focus,
-  &:active,
-  &:target {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    outline: none;
-    border-bottom: 1px solid styles.$theme;
-    box-shadow: 0 6px 7px -7px styles.$theme;
-  }
+//   &:focus,
+//   &:active,
+//   &:target {
+//     box-shadow: none;
+//     -webkit-box-shadow: none;
+//     outline: none;
+//     border-bottom: 1px solid styles.$theme;
+//     box-shadow: 0 6px 7px -7px styles.$theme;
+//   }
 
-  &:hover {
-    cursor: pointer;
+//   &:hover {
+//     cursor: pointer;
 
-    &+.form-label {
-      color: styles.$theme;
-    }
-  }
+//     &+.form-label {
+//       color: styles.$theme;
+//     }
+//   }
 
-  &:focus+.form-label {
-    color: styles.$theme;
-  }
-}
+//   &:focus+.form-label {
+//     color: styles.$theme;
+//   }
+// }
 
-option {
-  color: styles.$black;
-}
+// option {
+//   color: styles.$black;
+// }
 
 .select__wrapper {
   width: 236px;
