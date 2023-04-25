@@ -50,7 +50,9 @@ namespace tetris_backend.Models
         public string[]? friends { get; set; } = null!;
 
         public string? refreshToken { get; set; } = string.Empty;
+
         public DateTime? tokenCreated { get; set; }
+
         public DateTime? tokenExpires { get; set; }
 
     }

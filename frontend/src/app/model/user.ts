@@ -21,6 +21,7 @@ export class User {
   //  ha szeretnénk 1v1-et, vagy barátok listáját megjeleníteni (ez szerintem elég lehet csak weben)
   friends?: User[] = [];  //  barátok id-jeinek tömbje
 
+  refreshToken?: string = '';
   //  ha szeretnénk visszajátszási lehetőséget
   // games?: number[] = [];  //  játékok id-jeinek tömbje
 }

@@ -191,7 +191,7 @@ namespace tetris_backend.Controllers
             return CreatedAtAction(nameof(Get), new { id = userDB.id }, userDB);
         }
 
-        [Authorize(Roles = "admin")]
+        [Authorize]
         [HttpPatch("{id:length(24)}")]
         public async Task<IActionResult> Update(string id, UserDTO updatedUserDTO)
         {

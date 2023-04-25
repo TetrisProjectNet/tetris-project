@@ -25,14 +25,14 @@
     <!-- PROFILE DROPDOWN ON SMALL SCREEN -->
     <app-profile-dropdown *ngIf="loggedObjet.user && innerWidth<breakpoint" class="ms-auto me-2" [userIconClass]="'fa-lg'"></app-profile-dropdown>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <button class="navbar-toggler" [class]="isLoggedClass" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="small py-auto">Menu </span>
       <span class="small bold">
         <fa-icon [icon]="faBars"></fa-icon>
       </span>
     </button>
-    <div #collapsing class="collapse navbar-collapse d-lg-flex justify-content-between me-lg-3" id="navbarNav">
+    <div #collapsing class="collapse navbar-collapse d-lg-flex justify-content-between me-1" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/shop']" routerLinkActive="active-link" data-bs-toggle="collapse"
@@ -61,7 +61,7 @@
       </ul>
 
       <div class="d-flex flex-row">
-        <a  *ngIf="loggedObjet.user" class="nav-item coins d-flex align-items-center me-auto me-lg-0" [routerLink]="['/shop']"
+        <a *ngIf="loggedObjet.user" class="nav-item coins d-flex align-items-center me-3" [routerLink]="['/shop']"
           data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
           {{ loggedObjet.user.coins }}<fa-icon class="ms-1" [icon]="faCoins"></fa-icon>
         </a>

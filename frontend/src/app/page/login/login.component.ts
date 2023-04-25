@@ -61,19 +61,21 @@ export class LoginComponent implements OnInit {
       },
       error: (error) => {
         if (error.error == 'Error.') {
-          this.onDanger('Please try again later!', 'Something went wrong.');
+          this.onDanger('Please try again!', 'Invalid data.');
         }
         if (error.error == 'This account is banned.') {
           this.onWarning('Bans are permanent.', 'Account is banned!');
-
         }
       },
       complete: () => {
-        // this.router.navigate(['login']);
+        this.router.navigate(['/home']),
         this.onSuccess('Successfully logged in!');
+        this.authService.setLoginData();
         setTimeout(() => {
-          this.onWarning('Don\'t tell your password to anyone!', 'Remember!');
-        }, 1000)
+          if (this.authService.isLogged) {
+            this.onWarning('Don\'t tell your password to anyone!', 'Remember!');
+          }
+        }, 6000)
       }
     });
   }

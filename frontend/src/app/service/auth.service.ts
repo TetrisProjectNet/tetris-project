@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { User } from '../model/user';
@@ -13,25 +14,14 @@ export class AuthService {
 
   loggedUser$: BehaviorSubject<User | null> = new BehaviorSubject<User | null>(null);
 
+  isLogged: boolean = false;
+
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private router: Router,
   ) {
     const token = localStorage.getItem('authToken');
-    if (token) {
-      console.log('token is yes');
-      // const loginObject = JSON.parse(token);
-      // console.log('loginObject: ', loginObject);
-      // this.access_token$.next(loginObject.accessToken);
-      // this.loggedUser$.next(loginObject.user);
-
-      this.getMe().subscribe({
-        next: (loginObject: User) => {
-          console.log('loginObject: ', loginObject);
-          this.loggedUser$.next(loginObject);
-        }
-      })
-    }
-
+    token ? this.setLoginData() : this.resetLoginData();
   }
 
   public register(user: User): Observable<any> {
@@ -61,6 +51,32 @@ export class AuthService {
     return this.http.patch(`${this.apiUrl}/reset-password/${email}/${newPassword}/${code}`, null, {
       responseType: 'text',
     });
+  }
+
+  public setLoginData() {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      this.getMe().subscribe({
+        next: (loginObject: User) => {
+          this.loggedUser$.next(loginObject);
+        }
+      })
+
+      // this.loggedUser$.subscribe({
+      //   next: (user: any) => {
+      //     if (user) {
+      //       this.isLogged = true;
+      //     } else {
+      //       this.isLogged = false;
+      //     }
+      //   }
+      // })
+    }
+  }
+
+  public resetLoginData() {
+    this.loggedUser$.next(null);
+    this.isLogged = false;
   }
 
   // update(entity: T): Observable<T> {

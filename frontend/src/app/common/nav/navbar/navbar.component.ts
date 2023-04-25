@@ -12,7 +12,9 @@ import { AuthService } from 'src/app/service/auth.service';
 export class NavbarComponent implements OnInit {
 
   loggedUser$ = this.authService.loggedUser$;
-  alwaysTrue: boolean = true;
+  isLogged = this.authService.isLogged;
+  isLoggedClass: string = 'ms-auto';
+  // alwaysTrue: boolean = true;
   innerWidth: any;
   breakpoint: number = 992;
 
