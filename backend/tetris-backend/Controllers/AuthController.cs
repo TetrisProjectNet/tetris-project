@@ -148,12 +148,16 @@ namespace tetris_backend.Controllers
 
             if (userDB == null)
             {
-                return BadRequest("User not found.");
+                return BadRequest("Error.");
+            }
+            else if ((bool)userDB.banned)
+            {
+                return BadRequest("This account is banned.");
             }
 
             if (!VerifyPasswordHash(password, userDB.passwordHash, userDB.passwordSalt))
             {
-                return BadRequest("Wrong password.");
+                return BadRequest("Error.");
             }
 
             string token = CreateToken(userDB);

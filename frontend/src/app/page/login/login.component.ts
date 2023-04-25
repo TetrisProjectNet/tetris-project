@@ -59,7 +59,15 @@ export class LoginComponent implements OnInit {
       next: (token: string) => {
         localStorage.setItem('authToken', token);
       },
-      error: (error) => {this.onDanger('Please try again later!', 'Something went wrong.'), console.log(error);},
+      error: (error) => {
+        if (error.error == 'Error.') {
+          this.onDanger('Please try again later!', 'Something went wrong.');
+        }
+        if (error.error == 'This account is banned.') {
+          this.onWarning('Bans are permanent.', 'Account is banned!');
+
+        }
+      },
       complete: () => {
         // this.router.navigate(['login']);
         this.onSuccess('Successfully logged in!');
