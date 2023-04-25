@@ -4,6 +4,16 @@ main {
   font-size: 14px;
 }
 
+.title {
+  & h1 {
+    font-size: 40px;
+  }
+  & p {
+    text-transform:uppercase;
+    font-size: 20.9px;
+  }
+}
+
 .admin-view {
   &__wrapper {
     height: 2rem;
@@ -12,6 +22,10 @@ main {
   &-label {
     color: styles.$gray;
   }
+}
+
+.cards__wrapper {
+  margin: 2rem 0 10rem;
 }
 
 .card__wrapper {
@@ -64,10 +78,16 @@ main {
   top: 40%;
   width: 100%;
   height: 100%;
-  background: styles.$darker;
+  background: #171717;
   transform: skewY(352deg);
   transition: 0.5s;
 }
+
+// .test {
+//   font-size: 100px;
+//   color: rgba(styles.$theme, 0.03)
+// }
+
 
 .card:hover::before {
   top: 40%;
@@ -82,8 +102,8 @@ main {
   font-family: game-played;
   font-weight: 600;
   font-size: 2.5rem;
-  color: rgba(0, 0, 0, 0.1);
-  padding-left: 2rem;
+  color: rgba(0, 0, 0, 0.2);
+  padding-left: 2.1rem;
 }
 
 .card .imgBox {
@@ -228,7 +248,7 @@ input[type="checkbox"] {
     left: 1.4em;
     width: 5px;
     height: 1.5px;
-    background: aqua;
+    background: styles.$theme;
     border-radius: 1px;
     transition: .5s;
   }
