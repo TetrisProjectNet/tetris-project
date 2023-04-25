@@ -17,13 +17,13 @@
   </div>
 </nav> -->
 
-<nav class="navbar fixed-top navbar-expand-lg bg-dark" [class]="className">
+<nav *ngIf="{user: loggedUser$ | async} as loggedObjet" class="navbar fixed-top navbar-expand-lg bg-dark" [class]="className">
   <div class="container-fluid justify-content-start">
     <a class="navbar-brand active" [routerLink]="['/home']" routerLinkActive="active-link" data-bs-toggle="collapse"
       data-bs-target=".navbar-collapse.show">Home</a>
 
     <!-- PROFILE DROPDOWN ON SMALL SCREEN -->
-    <app-profile-dropdown *ngIf="innerWidth<breakpoint" class="ms-auto me-2" [userIconClass]="'fa-lg'"></app-profile-dropdown>
+    <app-profile-dropdown *ngIf="loggedObjet.user && innerWidth<breakpoint" class="ms-auto me-2" [userIconClass]="'fa-lg'"></app-profile-dropdown>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,23 +50,23 @@
           <a class="nav-link" [routerLink]="['/']" data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse.show">More</a>
         </li>
-        <li class="nav-item">
+        <li *ngIf="!loggedObjet.user" class="nav-item">
           <a class="nav-link" [routerLink]="['/signup']" routerLinkActive="active-link" data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse.show">Sign up</a>
         </li>
-        <li class="nav-item">
+        <li *ngIf="loggedObjet.user?.role=='admin'" class="nav-item">
           <a class="nav-link" [routerLink]="['/user']" routerLinkActive="active-link" data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse.show">Users</a>
         </li>
       </ul>
 
       <div class="d-flex flex-row">
-        <a class="nav-item coins d-flex align-items-center me-auto me-lg-0" [routerLink]="['/shop']"
+        <a  *ngIf="loggedObjet.user" class="nav-item coins d-flex align-items-center me-auto me-lg-0" [routerLink]="['/shop']"
           data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-          {{ coins }}<fa-icon class="ms-1 me-3" [icon]="faCoins"></fa-icon>
+          {{ loggedObjet.user.coins }}<fa-icon class="ms-1" [icon]="faCoins"></fa-icon>
         </a>
 
-        <div class="nav-item content__item my-2 my-lg-0">
+        <div  *ngIf="!loggedObjet.user" class="nav-item content__item my-2 my-lg-0">
           <button class="button button--anthe" [routerLink]="['/login']" data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse.show">
             <span>
@@ -82,7 +82,7 @@
       </button> -->
     </div>
     <!-- PROFILE DROPDOWN ON WIDE SCREEN -->
-    <app-profile-dropdown *ngIf="innerWidth>=breakpoint" [userIconClass]="'fa-xl'" class="me-2"></app-profile-dropdown>
+    <app-profile-dropdown *ngIf="loggedObjet.user && innerWidth>=breakpoint" [userIconClass]="'fa-xl'" class="me-2"></app-profile-dropdown>
 
   </div>
 </nav>

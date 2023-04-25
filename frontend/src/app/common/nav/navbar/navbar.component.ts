@@ -1,6 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { FaConfig } from '@fortawesome/angular-fontawesome';
 import { faBars, faCircleUser, faCoins, faRightFromBracket, faRightToBracket, faUser, faUserGear, faUserShield } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +11,8 @@ import { faBars, faCircleUser, faCoins, faRightFromBracket, faRightToBracket, fa
 
 export class NavbarComponent implements OnInit {
 
+  loggedUser$ = this.authService.loggedUser$;
+  alwaysTrue: boolean = true;
   innerWidth: any;
   breakpoint: number = 992;
 
@@ -43,7 +46,8 @@ export class NavbarComponent implements OnInit {
   }
 
   constructor(
-    faConfig: FaConfig
+    faConfig: FaConfig,
+    private authService: AuthService,
   ) {
     faConfig.fixedWidth = true;
   }

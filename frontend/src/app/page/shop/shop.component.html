@@ -1,6 +1,6 @@
 <main>
   <div class="container">
-    <div class="admin-view__wrapper d-flex justify-content-end align-items-center mt-4 mb-3">
+    <div *ngIf="isAdmin" class="admin-view__wrapper d-flex justify-content-end align-items-center mt-4 mb-3">
       <label class="admin-view-label form-label mb-0 me-2">Switch to {{ adminView ? 'user' : 'admin' }} view</label>
       <input [(ngModel)]="adminView" type="checkbox" name="" />
     </div>
@@ -8,7 +8,7 @@
     <section *ngIf="list$ | async as list" class="d-flex flex-row flex-wrap mb-5"> <!-- flex-column flex-md-row flex-wrap mb-5 -->
 
       <div *ngFor="let shopItem of list" class="card__wrapper col-6 col-md-3 col-lg-3 col-xl-2">  <!-- col-md-6 col-lg-4 col-xl-3 -->
-        <button *ngIf="adminView" (click)="onDeleteOne(shopItem.id)" class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
+        <button *ngIf="isAdmin && adminView" (click)="onDeleteOne(shopItem.id)" class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
         <div class="card m-3" [ngStyle]="{ 'background-color': shopItem.color }">
           <div class="imgBox">
             <img [src]="shopItem.image" alt="mouse corsair" class="mouse">
@@ -19,12 +19,12 @@
             </div>
             <h2 class="price">{{ shopItem.price }}<fa-icon class="ms-1" [icon]="faCoins"></fa-icon></h2>
             <button class="buy">Buy Now</button>
-            <button *ngIf="adminView" (click)="onEditOne(shopItem)" class="buy">Edit</button>
+            <button *ngIf="isAdmin && adminView" (click)="onEditOne(shopItem)" class="buy">Edit</button>
           </div>
         </div>
       </div>
 
-      <div *ngIf="adminView" class="add-new-card__wrapper col-6 col-md-3 col-lg-3 col-xl-2">
+      <div *ngIf="isAdmin && adminView" class="add-new-card__wrapper col-6 col-md-3 col-lg-3 col-xl-2">
         <div class="add-new-card card m-3">
           <div class="imgBox add-new__wrapper">
             <!-- <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"

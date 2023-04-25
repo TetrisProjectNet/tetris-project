@@ -1,4 +1,4 @@
-<div class="dropdown my-auto">
+<div *ngIf="loggedUser$ | async as loggedObjet" class="dropdown my-auto">
   <a class="nav-link dropdown-toggle px-0" href="#" id="navbarDarkDropdownMenuLink" role="button"
     data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
     <fa-icon class="profile__icon" [class]="userIconClass" [icon]="faCircleUser"></fa-icon>
@@ -6,12 +6,12 @@
   <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
     <li class="my-2">
       <p class="dropdown-item-text text-nowrap">
-        <fa-icon class="me-3 fa-lg" [icon]="faUser"></fa-icon>bestplayer
+        <fa-icon class="me-3 fa-lg" [icon]="faUser"></fa-icon>{{ loggedObjet.username }}
       </p>
       <hr class="mx-3">
     </li>
     <li>
-      <a class="dropdown-item" [routerLink]="['/user/1']" routerLinkActive="active-link">
+      <a class="dropdown-item" [routerLink]="['/user/', loggedObjet.id]" routerLinkActive="active-link">
         <fa-icon class="me-3" [icon]="faUserGear"></fa-icon>
         Profile
       </a>

@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import { faCirclePlus, faCoins, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { ShopItem } from 'src/app/model/shop-item';
+import { User } from 'src/app/model/user';
+import { AuthService } from 'src/app/service/auth.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { ShopService } from 'src/app/service/shop.service';
 
@@ -12,6 +14,9 @@ import { ShopService } from 'src/app/service/shop.service';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
+
+  loggedUser$ = this.authService.loggedUser$;
+  isAdmin: boolean = false;
 
   list$ = this.shopService.getAll();
   entity = 'shop';
@@ -26,10 +31,20 @@ export class ShopComponent implements OnInit {
   constructor(
     private shopService: ShopService,
     private router: Router,
-    private toastr: CustomToastrService
+    private toastr: CustomToastrService,
+    private authService: AuthService,
   ) { }
 
   ngOnInit(): void {
+    if (this.loggedUser$) {
+      this.loggedUser$.subscribe({
+        next: (data: any) => {
+          if (data?.role == 'admin') {
+            this.isAdmin = true;
+          }
+        }
+      })
+    }
   }
 
   onEditOne(shopItem: ShopItem): void {

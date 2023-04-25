@@ -22,6 +22,8 @@ export class LoginComponent implements OnInit {
   //   })
   // );
 
+  loggedUser$ = this.authService.loggedUser$;
+
   loginData = {
     username: 'asd',
     password: 'asdD1'
@@ -45,6 +47,7 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    // this.user$.subscribe((response: any) => console.log('user', response));
   }
 
   login(username: string, password: string) {

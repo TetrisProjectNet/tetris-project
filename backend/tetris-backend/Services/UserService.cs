@@ -49,7 +49,7 @@ namespace tetris_backend.Services
         public async Task RemoveAsync(string id) =>
             await _userCollection.DeleteOneAsync(x => x.id == id);
 
-        public object GetLoggedUser()
+        public string GetLoggedUser()
         {
             var id = string.Empty;
             var name = string.Empty;
@@ -58,7 +58,7 @@ namespace tetris_backend.Services
                 id = _httpContextAccessor.HttpContext.User.FindFirstValue("id");
                 name = _httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Name);
             }
-            return new { id, name };
+            return id;
         }
     }
 }

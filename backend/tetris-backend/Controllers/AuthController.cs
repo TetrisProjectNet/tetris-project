@@ -19,20 +19,65 @@ namespace tetris_backend.Controllers
         private readonly UserService _userService;
         private readonly IConfiguration _configuration;
         private readonly VerificationService _verificationService;
+        private readonly ShopItemService _shopItemService;
 
-        public AuthController(UserService userService, IConfiguration configuration, VerificationService verificationService)
+        public AuthController(UserService userService, IConfiguration configuration, VerificationService verificationService, ShopItemService shopItemService)
         {
             _userService = userService;
             _configuration = configuration;
             _verificationService = verificationService;
+            _shopItemService = shopItemService;
         }
 
+        //[HttpGet, Authorize]
+        //public ActionResult<string> GetLoggedUser()
+        //{
+        //    var userName = _userService.GetLoggedUser();
+        //    return Ok(userName);
+        //}
+
         [HttpGet, Authorize]
-        public ActionResult<string> GetLoggedUser()
+        public async Task<ActionResult<UserDTO>> GetLoggedUserAsync()
         {
-            var userName = _userService.GetLoggedUser();
-            return Ok(userName);
+            var id = _userService.GetLoggedUser();
+            var userDB = await _userService.GetAsync(id);
+            var shopItems = await _shopItemService.GetAsync();
+
+            if (userDB is null)
+            {
+                return NotFound();
+            }
+
+            UserDTO userDTO = new UserDTO();
+            userDTO.Id = userDB.id;
+            userDTO.Username = userDB.username;
+            userDTO.Email = userDB.email;
+            userDTO.Role = userDB.role;
+            userDTO.Banned = userDB.banned;
+            userDTO.JoinDate = userDB.joinDate;
+            userDTO.LastOnlineDate = userDB.lastOnlineDate;
+            userDTO.Coins = userDB.coins;
+            userDTO.Scores = userDB.scores;
+            userDTO.Friends = userDB.friends;
+
+            if (userDB.shopItems != null && userDB.shopItems.Length > 0)
+            {
+                List<ShopItem> userDTOshopItems = new List<ShopItem>();
+                for (int i = 0; i < userDB.shopItems.Length; i++)
+                {
+                    var shopItem = shopItems.Find(x => x.Id == userDB.shopItems[i]);
+                    if (shopItem != null)
+                    {
+                        userDTOshopItems.Add(shopItem);
+                    }
+                }
+                userDTO.ShopItems = userDTOshopItems.ToArray();
+            }
+
+            return userDTO;
         }
+
+
 
         [HttpPost("register")]
         public async Task<ActionResult<User>> Register(UserDTO request)
@@ -171,6 +216,7 @@ namespace tetris_backend.Controllers
 
         private string CreateToken(User userDB)
         {
+
             List<Claim> claims = new List<Claim>
             {
                 new Claim("id", userDB.id),

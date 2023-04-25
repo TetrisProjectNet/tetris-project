@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { faCircleUser, faRightFromBracket, faUser, faUserGear, faUserShield } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-profile-dropdown',
@@ -8,6 +9,8 @@ import { faCircleUser, faRightFromBracket, faUser, faUserGear, faUserShield } fr
 })
 export class ProfileDropdownComponent {
 
+  loggedUser$ = this.authService.loggedUser$;
+
   @Input() userIconClass: string = '';
 
   faCircleUser = faCircleUser;
@@ -15,6 +18,11 @@ export class ProfileDropdownComponent {
   faUserGear = faUserGear;
   faUserShield = faUserShield;
   faRightFromBracket = faRightFromBracket;
+
+  constructor(
+    private authService: AuthService,
+  ) {  }
+
 
   logout() {
     localStorage.removeItem('authToken');

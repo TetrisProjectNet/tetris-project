@@ -23,7 +23,7 @@ namespace tetris_backend.Controllers
             _shopItemService = shopItemService;
         }
 
-        [Authorize(Roles = "admin")]
+        [Authorize]
         [HttpGet]
         public async Task<List<UserDTO>> Get()
         {
@@ -68,6 +68,7 @@ namespace tetris_backend.Controllers
         public async Task<ActionResult<UserDTO>> Get(string id)
         {
             var userDB = await _userService.GetAsync(id);
+            var shopItems = await _shopItemService.GetAsync();
 
             if (userDB is null)
             {
@@ -88,7 +89,6 @@ namespace tetris_backend.Controllers
 
             if (userDB.shopItems != null && userDB.shopItems.Length > 0)
             {
-                var shopItems = await _shopItemService.GetAsync();
                 List<ShopItem> userDTOshopItems = new List<ShopItem>();
                 for (int i = 0; i < userDB.shopItems.Length; i++)
                 {
@@ -109,6 +109,7 @@ namespace tetris_backend.Controllers
         public async Task<ActionResult<UserDTO>> GetBasedOnEmail(string email)
         {
             var userDB = await _userService.GetBasedOnEmailAsync(email);
+            var shopItems = await _shopItemService.GetAsync();
 
             if (userDB is null)
             {
@@ -129,7 +130,6 @@ namespace tetris_backend.Controllers
 
             if (userDB.shopItems != null && userDB.shopItems.Length > 0)
             {
-                var shopItems = await _shopItemService.GetAsync();
                 List<ShopItem> userDTOshopItems = new List<ShopItem>();
                 for (int i = 0; i < userDB.shopItems.Length; i++)
                 {
