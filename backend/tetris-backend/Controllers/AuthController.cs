@@ -78,10 +78,22 @@ namespace tetris_backend.Controllers
         }
 
 
-
         [HttpPost("register")]
         public async Task<ActionResult<User>> Register(UserDTO request)
         {
+            var userByUsername = await _userService.GetBasedOnUsernameAsync(request.Username);
+            var userByEmail = await _userService.GetBasedOnEmailAsync(request.Email);
+
+            if (userByUsername != null)
+            {
+                return BadRequest("This username is already in use.");
+            }
+
+            if (userByEmail != null)
+            {
+                return BadRequest("This email address is already registered.");
+            }
+
             User userDB = new User();
             CreatePasswordHash(request.Password, out byte[] passwordHash, out byte[] passwordSalt);
 
