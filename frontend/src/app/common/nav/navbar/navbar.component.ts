@@ -14,6 +14,8 @@ export class NavbarComponent implements OnInit {
   loggedUser$ = this.authService.loggedUser$;
   isLogged = this.authService.isLogged;
   isLoggedClass: string = 'ms-auto';
+
+
   // alwaysTrue: boolean = true;
   innerWidth: any;
   breakpoint: number = 992;

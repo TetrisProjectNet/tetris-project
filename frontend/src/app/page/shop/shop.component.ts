@@ -69,36 +69,45 @@ export class ShopComponent implements OnInit {
   }
 
   onBuyOne(shopItem: ShopItem) {
-    this.loggedUser$.subscribe({
-      next: (user: any) => {
-        console.log('hallo');
-        if (user) {
-          if (user.coins > shopItem.price) {
-            if (window.confirm('Are you sure you want to buy this skin?')) {
-              user.coins = user.coins - shopItem.price;
-              console.log('shopItem ', user.shopItems);
-              if (!user.shopItems) {
-                user.shopItems = [shopItem];
-              } else {
-                user.shopItems.toArray().push(shopItem);
-              }
-              this.userService.update(user).subscribe({
-                error: err => {
-                  console.error(err);
-                  this.onDanger('Purchase failed.<br>Please try again later!');
-                },
-                complete: () => {
-                  // this.router.navigate(['user']);
-                  this.onSuccess('You\'ve got a new amazing skin!.', 'Yeeey!');
+    if (this.loggedUser$.value) {
+      this.loggedUser$.subscribe({
+        next: (user: any) => {
+          // console.log('hallo');
+          if (user) {
+            if (user.coins > shopItem.price) {
+              if (window.confirm('Are you sure you want to buy this skin?')) {
+                user.coins = user.coins - shopItem.price;
+                console.log('shopItem ', user.shopItems);
+                if (!user.shopItems) {
+                  console.log('shop items are null');
+                  user.shopItems = [shopItem];
+                } else {
+                  console.log('shop items are not null');
+                  user.shopItems.push(shopItem);
                 }
-              });
+                console.log('shopItem ', user.shopItems);
+                this.userService.update(user).subscribe({
+                  error: err => {
+                    console.error(err);
+                    this.onDanger('Purchase failed.<br>Please try again later!');
+                  },
+                  complete: () => {
+                    // this.router.navigate(['user']);
+                    this.onSuccess('You\'ve got a new amazing skin.', 'Yeeey!');
+                  }
+                });
+              }
+            } else {
+              this.onWarning('You don\'t have enough coins.');
             }
-          } else {
-            this.onWarning('You don\'t have enough coins.');
           }
         }
-      }
-    })
+      })
+    } else {
+      this.onInfo('Please login to be able to buy this item!', 'Wellcome to the shop!')
+      // console.log('this.loggedUser$ is false', this.loggedUser$);
+    }
+
   }
 
   checkIfPurchased(shopItemId: string) {
@@ -119,7 +128,7 @@ export class ShopComponent implements OnInit {
         }
         return false;
       }
-    )  
+    )
   }
 
   onEditOne(shopItem: ShopItem): void {

@@ -140,17 +140,10 @@ tbody {
 .admin__buttons {
 
   & button {
-    // width: 2.6rem;
-    // height: 2.2rem;
-    // padding: 0;
-    // background-color: styles.$white;
     color: styles.$white;
-
-    // &:hover {}
   }
 
   & .ban__button:hover {
-    // color: styles.$ban-color;
 
     & fa-icon {
       filter: tableButtonShadowGenerator(styles.$ban-color);
@@ -158,7 +151,6 @@ tbody {
   }
 
   & .unban__button:hover {
-    // color: styles.$unban-color;
 
     & fa-icon {
       filter: tableButtonShadowGenerator(styles.$unban-color);
@@ -166,7 +158,6 @@ tbody {
   }
 
   & .edit__button:hover {
-    // color: styles.$edit-color;
 
     & fa-icon {
       filter: tableButtonShadowGenerator(styles.$edit-color);
