@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import { faCirclePlus, faCoins, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { Observable } from 'rxjs';
 import { ShopItem } from 'src/app/model/shop-item';
 import { User } from 'src/app/model/user';
 import { AuthService } from 'src/app/service/auth.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { ShopService } from 'src/app/service/shop.service';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-shop',
@@ -17,6 +19,23 @@ export class ShopComponent implements OnInit {
 
   loggedUser$ = this.authService.loggedUser$;
   isAdmin: boolean = false;
+  // loggedUsersShopItems$: Observable<string[]> = this.loggedUser$.subscribe({
+  //   next: (user: any) => {
+  //     if (user) {
+  //       if (!user.shopItems) {
+  //         return [];
+  //       } else {
+  //         let shopItemList: any[] = [];
+  //         user.shopItems.map((shopItem: any) => {
+  //           shopItemList.push(shopItem.id);
+  //         })
+  //         console.log('shopitemList: ', shopItemList);
+  //         return shopItemList;
+  //       }
+  //     }
+  //     return [];
+  //   }
+  // })
 
   list$ = this.shopService.getAll();
   entity = 'shop';
@@ -33,6 +52,8 @@ export class ShopComponent implements OnInit {
     private router: Router,
     private toastr: CustomToastrService,
     private authService: AuthService,
+    private userService: UserService,
+
   ) { }
 
   ngOnInit(): void {
@@ -45,6 +66,60 @@ export class ShopComponent implements OnInit {
         }
       })
     }
+  }
+
+  onBuyOne(shopItem: ShopItem) {
+    this.loggedUser$.subscribe({
+      next: (user: any) => {
+        console.log('hallo');
+        if (user) {
+          if (user.coins > shopItem.price) {
+            if (window.confirm('Are you sure you want to buy this skin?')) {
+              user.coins = user.coins - shopItem.price;
+              console.log('shopItem ', user.shopItems);
+              if (!user.shopItems) {
+                user.shopItems = [shopItem];
+              } else {
+                user.shopItems.toArray().push(shopItem);
+              }
+              this.userService.update(user).subscribe({
+                error: err => {
+                  console.error(err);
+                  this.onDanger('Purchase failed.<br>Please try again later!');
+                },
+                complete: () => {
+                  // this.router.navigate(['user']);
+                  this.onSuccess('You\'ve got a new amazing skin!.', 'Yeeey!');
+                }
+              });
+            }
+          } else {
+            this.onWarning('You don\'t have enough coins.');
+          }
+        }
+      }
+    })
+  }
+
+  checkIfPurchased(shopItemId: string) {
+    this.loggedUser$.subscribe((user: any) => {
+        if (user) {
+          if (!user.shopItems) {
+            return false;
+          } else {
+            let shopItemList: any[] = [];
+            user.shopItems.map((shopItem: any) => {
+              shopItemList.push(shopItem.id);
+            })
+            // console.log('shopitemList: ', shopItemList);
+            // console.log('shopitemId: ', shopItemId);
+            console.log('shopitemIncludes: ', shopItemList.includes(shopItemId));
+            return shopItemList.includes(shopItemId);
+          }
+        }
+        return false;
+      }
+    )  
   }
 
   onEditOne(shopItem: ShopItem): void {

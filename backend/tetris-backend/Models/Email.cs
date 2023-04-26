@@ -1,6 +1,6 @@
 ﻿namespace tetris_backend.Models
 {
-    public class EmailDto
+    public class Email
     {
         public string To { get; set; } = string.Empty;
         public string Subject { get; set; } = string.Empty;

@@ -15,16 +15,19 @@
 
       <div *ngFor="let shopItem of list" class="card__wrapper col-6 col-md-4 col-lg-3 col-xxl-2">  <!-- col-md-6 col-lg-4 col-xl-3 -->
         <button *ngIf="isAdmin && adminView" (click)="onDeleteOne(shopItem.id)" class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
-        <div class="card m-3" [ngStyle]="{ 'background-color': shopItem.color }">
+        <div *ngIf="{user: loggedUser$ | async} as loggedObject" class="card m-3" [ngStyle]="{ 'background-color': shopItem.color }">
           <div class="imgBox">
             <img [src]="shopItem.image" alt="mouse corsair" class="mouse">
           </div>
           <div class="contentBox">
             <div class="title__wrapper">
               <h3 class="text-center">{{ shopItem.title }}</h3>
+              <!-- <h3 class="text-center">{{ shopItem | json }}</h3> -->
             </div>
             <h2 class="price">{{ shopItem.price }}<fa-icon class="ms-1" [icon]="faCoins"></fa-icon></h2>
-            <button class="buy">Buy Now</button>
+            <!-- <button *ngIf="checkIfPurchased(shopItem.id)" (click)="onBuyOne(shopItem)" class="buy">Buy Now</button> -->
+            <button *ngIf="!loggedObject.user?.shopItems?.includes(shopItem)" (click)="onBuyOne(shopItem)" class="buy">Buy Now</button>
+            <button *ngIf="loggedObject.user?.shopItems?.includes(shopItem)" (click)="onBuyOne(shopItem)" class="purchased" disabled>Purchased</button>
             <button *ngIf="isAdmin && adminView" (click)="onEditOne(shopItem)" class="buy">Edit</button>
           </div>
         </div>
@@ -53,3 +56,8 @@
 
 <!-- EGÉR LINK
 https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png -->
+
+
+
+<!-- [ { "ID": "644833FCAA58AC57C2B66A49", "INDEX": 0, "TITLE": "SIMPLE ITEM", "IMAGE": "HTTPS://CDN-ICONS-PNG.FLATICON.COM/512/7734/7734009.PNG", "PRICE": 1, "COLOR": "#F014AA", "DESCRIPTION": "" } ]
+{ "ID": "644833FCAA58AC57C2B66A49", "INDEX": 0, "TITLE": "SIMPLE ITEM", "IMAGE": "HTTPS://CDN-ICONS-PNG.FLATICON.COM/512/7734/7734009.PNG", "PRICE": 1, "COLOR": "#F014AA", "DESCRIPTION": "" } -->

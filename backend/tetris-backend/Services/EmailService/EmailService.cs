@@ -14,7 +14,7 @@ namespace tetris_backend.Services.EmailService
             _config = config;
         }
 
-        public void SendEmail(EmailDto request)
+        public void SendEmail(Email request)
         {
             var email = new MimeMessage();
             email.From.Add(MailboxAddress.Parse(_config.GetSection("EmailUsername").Value));

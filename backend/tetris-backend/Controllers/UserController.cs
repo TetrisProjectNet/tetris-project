@@ -214,7 +214,7 @@ namespace tetris_backend.Controllers
 
             if (updatedUserDTO.ShopItems != null)
             {
-                if (updatedUserDTO.ShopItems.Length != userDB.shopItems.Length)
+                if (updatedUserDTO.ShopItems.Length != userDB?.shopItems?.Length)
                 {
                     List<string> shopItemIds = new List<string>();
                     foreach (var item in updatedUserDTO.ShopItems)

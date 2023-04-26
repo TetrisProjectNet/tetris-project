@@ -15,7 +15,7 @@ namespace tetris_backend.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendEmail(EmailDto request)
+        public IActionResult SendEmail(Email request)
         {
             _emailService.SendEmail(request);
             return Ok();

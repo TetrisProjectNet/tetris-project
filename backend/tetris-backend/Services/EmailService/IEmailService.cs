@@ -2,6 +2,6 @@
 {
     public interface IEmailService
     {
-        void SendEmail(EmailDto request);
+        void SendEmail(Email request);
     }
 }

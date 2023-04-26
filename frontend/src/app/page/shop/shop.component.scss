@@ -184,6 +184,27 @@ main {
   opacity: 1;
 }
 
+.card .contentBox .purchased {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 0.4rem 1rem;
+  margin-top: 0.5rem;
+  color: styles.$black;
+  text-decoration: none;
+  background: styles.$theme;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .purchased {
+  top: 0;
+  opacity: 1;
+}
+
 .mouse {
   height: 100px;
   width: auto;
