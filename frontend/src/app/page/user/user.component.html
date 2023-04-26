@@ -1,4 +1,4 @@
-<div *ngIf="list$ | async as list" class="wrapper col-xl-10 offset-xl-1 px-3 px-xl-0">
+<div class="wrapper col-xl-10 offset-xl-1 px-3 px-xl-0">
   <!-- Search -->
   <!-- <div class="search bg-light border rounded p-3 m-3">
       <div class="fw-bold text-uppercase text-center pb-3">Szűrés oszlopok szerint</div>
@@ -13,7 +13,7 @@
     </div>-->
 
 
-    <div class="my-3">
+    <!-- <div class="my-3">
       <button (click)="onSuccess('New user registered.')" type="button"
         class="game-played btn btn-success fw-bold text-uppercase w-100 text-black">
         Success
@@ -46,13 +46,13 @@
         class="game-played btn btn-secondary fw-bold text-uppercase w-100 text-black">
         Remove
       </button>
-    </div>
+    </div> -->
 
 
   <!-- Add new -->
   <div class="">
     <button [routerLink]="['/', entity, '']" type="button"
-      class="add__new game-played btn fw-bold text-uppercase w-100">
+      class="add__new game-played btn fw-bold text-uppercase w-100 mt-4">
       <fa-icon class="me-1" [icon]="faUserPlus"></fa-icon>
       Register user
     </button>
@@ -162,14 +162,14 @@
           <th></th>
         </tr>
       </thead>
-      <tbody>
+      <tbody *ngIf="list$ | async as list">
         <tr *ngFor="let user of list | filter:phrase:filterKey | sorter:sortColumn:direction
           | paginate: { itemsPerPage: itemsPerPage, currentPage: p }" class="align-middle">
           <ng-container *ngFor="let col of columns; index as i;" draggable="true" (dragstart)="dragStartColumn(i)"
             (dragover)="allowDrop($event)" (drop)="dropColumn(i)">
             <td *ngIf="col.key!=='scores' && col.key!=='shopItems' && col.key!=='friends' && col.key!=='banned'">{{
-              user[col.key] }}</td>
-            <td *ngIf="col.key==='scores' || col.key==='shopItems' || col.key==='friends'">{{ user[col.key].length }}
+              user[col.key] | xPipe:col.pipes:col.pipeArgs }}</td>
+            <td *ngIf="col.key==='scores' || col.key==='shopItems' || col.key==='friends'">{{ user[col.key]?.length }}
             </td>
             <td *ngIf="col.key==='banned'">
               <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"

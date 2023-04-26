@@ -7,6 +7,7 @@ import { faCircleChevronDown, faCircleChevronUp, faCircleUser } from '@fortaweso
 import { Observable, switchMap, of } from 'rxjs';
 import { FloatingLabelInputComponent } from 'src/app/common/floating-label-input/floating-label-input.component';
 import { User } from 'src/app/model/user';
+import { AuthService } from 'src/app/service/auth.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { UserService } from 'src/app/service/user.service';
 
@@ -48,6 +49,7 @@ export class UserEditorComponent {
     private userService: UserService,
     private router: Router,
     private toastr: CustomToastrService,
+    private authService: AuthService,
     faConfig: FaConfig
   ) {
     faConfig.fixedWidth = false;
@@ -123,7 +125,7 @@ export class UserEditorComponent {
     this.clicked = true;
     if (user.id === '') {
       user.joinDate = new Date();
-      this.userService.create(user).subscribe({
+      this.authService.register(user).subscribe({
         error: err => {
           this.onDanger('Registration failed.<br>Please try again later!');
           console.error(err);

@@ -16,7 +16,7 @@ export interface ITableColumn {
 export class ConfigService {
 
   userTableColumns: ITableColumn[] = [
-    { key: 'id', title: '#' },
+    { key: 'id', title: '#', pipes: [ConfigService.curveLongString], pipeArgs: [[0, 3]] },
     { key: 'username', title: 'Username' },
     { key: 'email', title: 'Email' },
     { key: 'joinDate', title: 'Join date' },
@@ -30,4 +30,18 @@ export class ConfigService {
   ];
 
   constructor() { }
+
+  static curveLongString(
+    data: string,
+    start: number,
+    end: number,
+    curve: string = '...'
+  ): string {
+    if (data.length > end) {
+
+      return data ? data.slice(start, end) + curve : data;
+    }
+    return data;
+  }
+
 }

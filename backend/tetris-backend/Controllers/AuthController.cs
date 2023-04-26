@@ -119,6 +119,10 @@ namespace tetris_backend.Controllers
 
                 userDB.shopItems = shopItemIds.ToArray();
             }
+            else
+            {
+                userDB.shopItems = Array.Empty<string>();
+            }
 
             await _userService.CreateAsync(userDB);
 

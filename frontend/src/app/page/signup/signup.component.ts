@@ -99,12 +99,20 @@ export class SignupComponent implements OnInit {
   // }
 
   signup(user: User) {
-    user.joinDate = new Date();
+    user.joinDate = new Date().toLocaleDateString("en-US");
     user.coins = 100;
     this.authService.register(user).subscribe({
-      error: () => this.onDanger('Please try again later!', 'Something went wrong.'),
+      error: (error) => {
+        if (error.error = 'This username is already in use.') {
+          this.onDanger(error, 'Error!');
+        } else if (error.error = 'This email address is already registered.') {
+          this.onDanger(error, 'Error!');
+        } else {
+          this.onDanger('Please try again later!', 'Something went wrong.');
+        }
+      },
       complete: () => {
-        // this.router.navigate(['login']);
+        this.router.navigate(['/login']);
         this.onSuccess('Your account has been singed up.');
         setTimeout(() => {
           this.onWarning('Don\'t tell your password to anyone!', 'Remember!');
