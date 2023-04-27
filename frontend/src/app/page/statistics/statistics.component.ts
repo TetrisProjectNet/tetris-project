@@ -27,33 +27,48 @@ export class StatisticsComponent implements OnInit {
   pieChartDatasets: any = [ {
     data: [],
     backgroundColor: [],
-    borderWidth: 0,
+    borderWidth: 3,
     borderColor: '#212121',
+    offset: 0,
     hoverOffset: 10,
     borderRadius: 0,
   } ];
-  pieChartLegend = true;
+  pieChartLegend = false;
   pieChartPlugins = [];
   // borderWidth = 0;
 
   // Radar
   radarChartOptions: ChartOptions<'radar'> = {
     responsive: true,
+    plugins: {
+      legend: {
+        labels: {
+          color: '#999'
+        }
+      }
+    },
+    scales: {
+      r: {
+        ticks: {
+          color: 'rgba(0, 255, 255, 0.2)',
+          backdropColor: '#212121'
+        },
+        grid: {
+          color: 'rgba(0, 255, 255, 0.1)'
+        },
+        pointLabels: {
+          color: '#999'
+        }
+      }
+    }
   };
   radarChartLabels: any = [];
-  radarChartDatasets: any = [ {
-    data: [],
-    backgroundColor: [],
-    borderWidth: 0,
-    borderColor: '#212121',
-    hoverOffset: 10,
-    borderRadius: 0,
-  } ];
+  radarChartDatasets: any = [  ];
   radarChartLegend = true;
   radarChartPlugins = [];
-  // borderWidth = 0;
 
-  
+  radarData: any;
+
 
   faStar = faStar;
 
@@ -105,15 +120,99 @@ export class StatisticsComponent implements OnInit {
   }
 
   getRadarChartConfig() {
+    let data = {
+      labels: [
+        'Eating',
+        'Drinking',
+        'Sleeping',
+        'Designing',
+        'Coding',
+        'Cycling',
+        'Running'
+      ],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [65, 59, 90, 81, 56, 55, 40],
+        fill: true,
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgb(255, 99, 132)',
+        pointBackgroundColor: 'rgb(255, 99, 132)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(255, 99, 132)'
+      }, {
+        label: 'My Second Dataset',
+        data: [28, 48, 40, 19, 96, 27, 100],
+        fill: true,
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgb(54, 162, 235)',
+        pointBackgroundColor: 'rgb(54, 162, 235)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(54, 162, 235)'
+      }]
+    };
+
     let lastGameCount = 7;
-    this.list$.subscribe((allUsers) => {
-      this.loggedUser$.subscribe((loggedUser) => {
+    this.loggedUser$.subscribe((loggedUser) => {
+      if (loggedUser && loggedUser.scores && loggedUser.scores.length >= 7) {
+        this.list$.subscribe((allUsers) => {
+          let avgScores: number[] = [0, 0, 0, 0, 0, 0, 0];
+          let divider = 0;
+          allUsers.map(oneUser => {
+            if (oneUser.scores && oneUser?.scores?.length >= 7) {
+              let j = 0;
+              for (let i = oneUser.scores.length - 1; i > oneUser.scores.length - 8; i--) {
+                avgScores[j] += oneUser.scores[i];
+                j++;
+              }
+              divider++;
+            }
+          })
 
-        this.pieChartLabels = [];
+          let avgUserData = {
+            data: [0, 0, 0, 0, 0, 0, 0],
+            label: '',
+            backgroundColor: '',
+            hoverBackgroundColor: '',
+            borderColor: '',
+            labelColor: '#999',
+            borderWidth: 2,
+            fill: true,
+            order: 2
+          }
+          avgScores = avgScores.map(avgScore => Math.round(avgScore / divider));
 
-      })
+          avgUserData.data = avgScores;
+          avgUserData.backgroundColor = 'rgba(255, 99, 132, 0.2)';
+          avgUserData.hoverBackgroundColor = 'rgba(255, 99, 132, 0.4)';
+          avgUserData.borderColor = 'rgb(255, 99, 132)';
+          avgUserData.label = 'Avg Player';
+
+          this.radarChartDatasets.push(avgUserData);
+          this.radarChartLabels = ['Latest', '2nd', '3rd', '4th', '5th', '6th', '7th'];
+
+          let loggedUserData = {
+            data: loggedUser.scores,
+            label: `${loggedUser.username}`,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            hoverBackgroundColor: 'rgba(54, 162, 235, 0.4)',
+            borderColor: 'rgb(54, 162, 235)',
+            borderWidth: 2,
+            fill: true,
+            order: 1
+          }
+          this.radarChartDatasets.push(loggedUserData);
+
+          // loggedUser.scores?.map(score => {
+          // })
+
+        })
+
+      }
     })
   }
+
 
   // public radarChartOptions: ChartConfiguration<'radar'>['options'] = {
   //   responsive: true,
