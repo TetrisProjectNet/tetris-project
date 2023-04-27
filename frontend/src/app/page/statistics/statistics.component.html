@@ -113,8 +113,8 @@
     </div>
   </div>
 
-  <div #container data-aos="fade-up" class="col-10 col-md-8 col-lg-4 pb-5">
-    <canvas *ngIf="loaded && container.classList.contains('aos-animate')" baseChart
+  <div #pieContainer data-aos="fade-up" class="col-10 col-md-8 col-lg-4 pb-5">
+    <canvas *ngIf="loaded && pieContainer.classList.contains('aos-animate')" baseChart
       [type]="'pie'"
       [datasets]="pieChartDatasets"
       [labels]="pieChartLabels"
@@ -122,6 +122,25 @@
       [plugins]="pieChartPlugins"
       [legend]="pieChartLegend">
     </canvas>
+  </div>
+
+  <div #radarRontainer data-aos="fade-up" class="col-10 col-md-8 col-lg-4 pb-5">
+    <canvas baseChart
+      [type]="'radar'"
+      [datasets]="radarChartDatasets"
+      [labels]="radarChartLabels"
+      [options]="radarChartOptions"
+      >
+    </canvas>
+
+    <!-- <canvas *ngIf="loaded && container.classList.contains('aos-animate')" baseChart
+      [type]="'pie'"
+      [datasets]="pieChartDatasets"
+      [labels]="pieChartLabels"
+      [options]="pieChartOptions"
+      [plugins]="pieChartPlugins"
+      [legend]="pieChartLegend">
+    </canvas> -->
   </div>
 
 </div>

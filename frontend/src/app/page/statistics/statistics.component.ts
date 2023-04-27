@@ -3,8 +3,9 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { UserService } from 'src/app/service/user.service';
 import * as AOS from 'aos';
 import { ChartOptions } from 'chart.js/dist/types/index';
-import { ChartDataset } from 'chart.js';
+import { ChartConfiguration, ChartDataset } from 'chart.js';
 import { ShopItem } from 'src/app/model/shop-item';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-statistics',
@@ -15,7 +16,9 @@ export class StatisticsComponent implements OnInit {
 
   list$ = this.userService.getAll();
   chartData: ChartDataset[] = [];
+  loggedUser$ = this.authService.loggedUser$;
 
+  loaded: boolean = false;
   // Pie
   pieChartOptions: ChartOptions<'pie'> = {
     responsive: true,
@@ -24,20 +27,39 @@ export class StatisticsComponent implements OnInit {
   pieChartDatasets: any = [ {
     data: [],
     backgroundColor: [],
-    borderWidth: 5,
+    borderWidth: 0,
     borderColor: '#212121',
     hoverOffset: 10,
     borderRadius: 0,
   } ];
   pieChartLegend = true;
   pieChartPlugins = [];
-  borderWidth = 0;
-  loaded: boolean = false;
+  // borderWidth = 0;
+
+  // Radar
+  radarChartOptions: ChartOptions<'radar'> = {
+    responsive: true,
+  };
+  radarChartLabels: any = [];
+  radarChartDatasets: any = [ {
+    data: [],
+    backgroundColor: [],
+    borderWidth: 0,
+    borderColor: '#212121',
+    hoverOffset: 10,
+    borderRadius: 0,
+  } ];
+  radarChartLegend = true;
+  radarChartPlugins = [];
+  // borderWidth = 0;
+
+  
 
   faStar = faStar;
 
   constructor(
     private userService: UserService,
+    private authService: AuthService,
   ) { }
 
   ngOnInit(): void {
@@ -47,8 +69,13 @@ export class StatisticsComponent implements OnInit {
       easing: 'ease-in-sine'
     });
 
+    this.getPieChartConfig();
+    this.getRadarChartConfig();
+  }
+
+  getPieChartConfig() {
     this.list$.subscribe((data) => {
-      data = data.slice(0,5);
+      // data = data.slice(0,5);
       let sortedData: any = {
         Itemless: [0, 'rgba(0, 0, 0, 0.3)']
       };
@@ -75,7 +102,28 @@ export class StatisticsComponent implements OnInit {
       this.loaded = true;
 
     });
-
   }
+
+  getRadarChartConfig() {
+    let lastGameCount = 7;
+    this.list$.subscribe((allUsers) => {
+      this.loggedUser$.subscribe((loggedUser) => {
+
+        this.pieChartLabels = [];
+
+      })
+    })
+  }
+
+  // public radarChartOptions: ChartConfiguration<'radar'>['options'] = {
+  //   responsive: true,
+  // };
+  // public radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
+
+  // public radarChartDatasets: ChartConfiguration<'radar'>['data']['datasets'] = [
+  //   { data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A' },
+  //   { data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B' }
+  // ];
+
 
 }
