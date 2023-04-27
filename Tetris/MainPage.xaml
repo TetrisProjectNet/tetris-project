@@ -4,8 +4,8 @@
              xmlns:tetris="clr-namespace:Tetris"
              x:Class="Tetris.MainPage"
              Title=""
-             BackgroundImageSource="loginbackg.png"
-             IconImageSource="tetrisicon2.png"
+             BackgroundImageSource="loginback.png"
+             IconImageSource="tetrisicon.png"
              xmlns:controls="clr-namespace:Tetris.Controls">
 
     <ContentPage.Content>

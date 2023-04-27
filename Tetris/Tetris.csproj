@@ -50,9 +50,8 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Tetris.ttf" />
-	  <None Remove="Resources\Images\backbutton.png" />
-	  <None Remove="Resources\Images\loginback.svg" />
-	  <None Remove="Resources\Images\loginbackg.svg" />
+	  <None Remove="Resources\Images\loginback.png" />
+	  <None Remove="Resources\Images\menuback.svg" />
 	  <None Remove="Resources\Images\tetrispieces.png" />
 	</ItemGroup>
 

@@ -24,9 +24,11 @@ public partial class MainPage : ContentPage
 
         if (username == "test" && password == "test")
         {
+            Thread.Sleep(250);
             await Navigation.PushAsync(new MenuPage());
         } else
         {
+            Thread.Sleep(250);
             await DisplayAlert("Error", "Invalid username or password", "OK");
         }
     }
