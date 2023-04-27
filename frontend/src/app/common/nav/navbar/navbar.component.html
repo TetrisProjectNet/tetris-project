@@ -25,7 +25,7 @@
     <!-- PROFILE DROPDOWN ON SMALL SCREEN -->
     <app-profile-dropdown *ngIf="loggedObject.user && innerWidth<breakpoint" class="ms-auto me-2" [userIconClass]="'fa-lg'"></app-profile-dropdown>
 
-    <button class="navbar-toggler" [class]="isLoggedClass" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <button class="navbar-toggler" [class]="loggedObject.user ? '' : 'ms-auto'" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="small py-auto">Menu </span>
       <span class="small bold">

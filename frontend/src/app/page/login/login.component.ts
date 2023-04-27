@@ -61,10 +61,11 @@ export class LoginComponent implements OnInit {
       },
       error: (error) => {
         if (error.error == 'Error.') {
-          this.onDanger('Please try again!', 'Invalid data.');
-        }
-        if (error.error == 'This account is banned.') {
+          this.onDanger('Wrong username or password.', 'Invalid data.');
+        } else if (error.error == 'This account is banned.') {
           this.onWarning('Bans are permanent.', 'Account is banned!');
+        } else {
+          this.onDanger('Please try again later!', 'Something went wrong.');
         }
       },
       complete: () => {
