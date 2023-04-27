@@ -6,6 +6,37 @@
     <div appParallax [ratio]="0.8" class="error-img-2"></div>
   </div>
 
+  <section class="shop__wrapper white-text d-flex flex-column flex-lg-row">
+    <div class="shop__wrapper__text text-center p-4 d-flex flex-column justify-content-lg-center">
+      <div>
+        <h2 class="game-played display-2 mt-5 mt-lg-0">tetris-shop</h2>
+        <p class="display-6">Buy some awesome skins!</p>
+        <p class="mt-5">We high recommend you signing up to be able to purchase items in our shop.</p>
+        <button class="buy" [routerLink]="['/signup']" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+        data-aos-offset="0" data-aos-duration="800">Sign-up!</button>
+      </div>
+    </div>
+
+    <div class="shop__wrapper__cards">
+      <div class="shop__card__wrapper-1" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"
+        data-aos-offset="60" data-aos-duration="800">
+        <img class="shop__card" src="../../../../assets/img/colorful-dia-card.png" alt="">
+      </div>
+      <div class="shop__card__wrapper-2" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"
+        data-aos-offset="30" data-aos-delay="200" data-aos-duration="800">
+        <img class="shop__card" src="../../../../assets/img/blue-dia-card.png" alt="">
+      </div>
+      <div class="shop__card__wrapper-3" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"
+        data-aos-offset="0" data-aos-delay="400" data-aos-duration="800">
+        <img class="shop__card" src="../../../../assets/img/fancy-flower-card.png" alt="">
+      </div>
+    </div>
+    
+  </section>
+
+
+
+
   <!-- <div class="app-animated-counter__wrapper">
     <app-animated-counter></app-animated-counter>
   </div> -->
@@ -29,6 +60,10 @@
 
     <!-- <h1 appParallax [ratio]="0.4" class="wallpaper-text display-2 game-played text-center text-white mt-0">it's awesome!</h1> -->
   </div>
+
+
+
+
   <!-- <div  class="error-container">
     <div appParallax [ratio]="0.5" class="error-img"></div>
     <h1 appParallax [ratio]="0.3" class="error-text display-1 game-played text-center text-white mt-0">tetris project</h1>

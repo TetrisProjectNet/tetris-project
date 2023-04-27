@@ -11,6 +11,7 @@
     background-size: cover;
     z-index: 1000 !important;
   }
+
   // &-2 {
   //   position: relative;
   //   overflow: hidden;
@@ -88,9 +89,9 @@
     text-align: center;
     // color: styles.$theme;
     // mix-blend-mode:hue;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
-      0px 8px 13px rgba(0,0,0,0.4),
-      0px 18px 23px rgba(0,0,0,0.4);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.8),
+      0px 8px 13px rgba(0, 0, 0, 0.4),
+      0px 18px 23px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -156,9 +157,9 @@
     z-index: 2;
     // color: styles.$theme;
     // mix-blend-mode:hue;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
-      0px 8px 13px rgba(0,0,0,0.4),
-      0px 18px 23px rgba(0,0,0,0.4);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.8),
+      0px 8px 13px rgba(0, 0, 0, 0.4),
+      0px 18px 23px rgba(0, 0, 0, 0.4);
   }
 
   &-text-2 {
@@ -173,9 +174,9 @@
     z-index: 2;
     // color: styles.$theme;
     // mix-blend-mode:hue;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
-      0px 8px 13px rgba(0,0,0,0.4),
-      0px 18px 23px rgba(0,0,0,0.4);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.8),
+      0px 8px 13px rgba(0, 0, 0, 0.4),
+      0px 18px 23px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -188,7 +189,7 @@
 }
 
 // .app-animated-counter__wrapper {
-  // margin-bottom: 1500px;
+// margin-bottom: 1500px;
 // }
 
 .content-load {
@@ -211,7 +212,99 @@
 }
 
 
+.shop {
+  &__wrapper {
+    height: 101vh;
+    width: 100%;
+    background-color: styles.$background-color;
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
 
+    &__text {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+
+      .buy {
+        padding: 0.4rem 1rem;
+        margin-top: 0.5rem;
+        color: styles.$black;
+        text-decoration: none;
+        background: styles.$gold;
+        border-radius: 30px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+
+    &__cards {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.2);
+      // margin: 0 auto;
+    }
+  }
+
+  &__card {
+    height: 15rem;
+
+    &__wrapper-1 {
+      position: absolute;
+      top: 5%;
+      right: 35%;
+    }
+
+    &__wrapper-2 {
+      position: absolute;
+      top: 13%;
+      right: 30%;
+    }
+
+    &__wrapper-3 {
+      position: absolute;
+      top: 21%;
+      right: 25%;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+
+  .shop {
+    &__wrapper__cards {
+      width: 600px;
+    }
+
+    &__card {
+      height: 20rem;
+
+      &__wrapper-1 {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+      }
+
+      &__wrapper-2 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+
+      &__wrapper-3 {
+        position: absolute;
+        top: 35%;
+        left: 30%;
+      }
+    }
+  }
+
+}
 
 
 
