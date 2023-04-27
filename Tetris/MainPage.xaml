@@ -1,41 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Tetris.MainPage">
+             xmlns:tetris="clr-namespace:Tetris"
+             x:Class="Tetris.MainPage"
+             Title=""
+             BackgroundImageSource="loginbackg.png"
+             IconImageSource="tetrisicon2.png"
+             xmlns:controls="clr-namespace:Tetris.Controls">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="700"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+            <StackLayout Grid.Row="0" VerticalOptions="EndAndExpand">
+                <Label FontSize="150" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="T" FontFamily="Tetris.ttf" TextColor="#ff0000"/>
+                            <Span Text="E" FontFamily="Tetris.ttf" TextColor="#ff7f00"/>
+                            <Span Text="T" FontFamily="Tetris.ttf" TextColor="#ffff00"/>
+                            <Span Text="R" FontFamily="Tetris.ttf" TextColor="#00ff00"/>
+                            <Span Text="I" FontFamily="Tetris.ttf" TextColor="#00ffff"/>
+                            <Span Text="S" FontFamily="Tetris.ttf" TextColor="#800080"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <Frame Grid.Row="1" BackgroundColor="#FAF9F6"
+                         HorizontalOptions="Center" VerticalOptions="Center"
+                         WidthRequest="400" HeightRequest="700"
+                         Margin="0, 75, 0, 0"
+                         BorderColor="#FAF9F6"
+                         CornerRadius="5">
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                <StackLayout>
+                    <Label Text="Login" FontSize="Large" FontAttributes="Bold" Margin="0, 40, 0, 0" HorizontalTextAlignment="Center" TextColor="Black"/>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                    <Entry x:Name="usernameEntry" Placeholder="Username" Margin="30, 30, 30, 0" TextColor="Black"/>
+                    <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Margin="30, 10, 30, 0" TextColor="Black"/>
 
-        </VerticalStackLayout>
-    </ScrollView>
+                    <Button Text="Login" BackgroundColor="#9625E4" TextColor="White" 
+                            Margin="30, 40, 30, 0" Clicked="OnLoginButtonClicked"/>
+
+                    <StackLayout Orientation="Vertical" Margin="30, 5, 30, 0" >
+                        <controls:HyperlinkLabel Text="Forgot your password?" FontSize="13" HorizontalTextAlignment="Center" TextColor="Blue" Url="https://www.google.com"/>
+                    </StackLayout>
+
+                    <Button Text="Register" BackgroundColor="MediumPurple" TextColor="White" 
+                            Margin="30, 20, 30, 250" Clicked="OnRegisterButtonClicked" />
+                    <Label Text="Tetris Project" HorizontalOptions="Center" TextColor="Black"/>
+                    <Label Text="2023" HorizontalOptions="Center" TextColor="Black"/>
+                </StackLayout>
+
+            </Frame>
+
+            <StackLayout Grid.Row="2"/>
+        </Grid>
+    </ContentPage.Content>
 
 </ContentPage>

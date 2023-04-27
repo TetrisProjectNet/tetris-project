@@ -1,24 +1,40 @@
-﻿namespace Tetris;
+﻿using CommunityToolkit.Mvvm.Input;
+
+namespace Tetris;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
-	}
+        NavigationPage.SetHasBackButton(this, false);
+        NavigationPage.SetHasNavigationBar(this, false);
+    }
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    private void OnRegisterButtonClicked(object sender, EventArgs e)
+    {
+        var uri = new Uri("https://www.google.com");
+        Launcher.OpenAsync(uri);
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+    private async void OnLoginButtonClicked(object sender, EventArgs e)
+    {
+        string username = usernameEntry.Text;
+        string password = passwordEntry.Text;
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        if (username == "test" && password == "test")
+        {
+            await Navigation.PushAsync(new MenuPage());
+        } else
+        {
+            await DisplayAlert("Error", "Invalid username or password", "OK");
+        }
+    }
+
+    private void OnForgotPasswordButtonClicked(object sender, EventArgs e)
+    {
+        var uri = new Uri("https://www.google.com");
+        Launcher.OpenAsync(uri);
+    }
 }
 
