@@ -877,6 +877,21 @@
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\backbutton.scale-100.png">
       <PackagePath>backbutton.scale-100.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-100.png">
+      <PackagePath>circuit.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-125.png">
+      <PackagePath>circuit.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-150.png">
+      <PackagePath>circuit.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-200.png">
+      <PackagePath>circuit.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-400.png">
+      <PackagePath>circuit.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -891,6 +906,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\endless.scale-100.png">
+      <PackagePath>endless.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginback.scale-100.png">
       <PackagePath>loginback.scale-100.png</PackagePath>
@@ -967,6 +985,36 @@
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforegroundimage.scale-400.png">
       <PackagePath>loginforegroundimage.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-100.png">
+      <PackagePath>menuback.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-125.png">
+      <PackagePath>menuback.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-150.png">
+      <PackagePath>menuback.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-200.png">
+      <PackagePath>menuback.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-400.png">
+      <PackagePath>menuback.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-100.png">
+      <PackagePath>menubackg.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-125.png">
+      <PackagePath>menubackg.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-150.png">
+      <PackagePath>menubackg.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-200.png">
+      <PackagePath>menubackg.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-400.png">
+      <PackagePath>menubackg.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\spectrum.scale-100.png">
       <PackagePath>spectrum.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -981,6 +1029,54 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\spectrum.scale-400.png">
       <PackagePath>spectrum.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-100.png">
+      <PackagePath>test.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-125.png">
+      <PackagePath>test.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-150.png">
+      <PackagePath>test.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-200.png">
+      <PackagePath>test.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-400.png">
+      <PackagePath>test.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-100.png">
+      <PackagePath>test3.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-125.png">
+      <PackagePath>test3.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-150.png">
+      <PackagePath>test3.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-200.png">
+      <PackagePath>test3.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-400.png">
+      <PackagePath>test3.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test4.scale-100.png">
+      <PackagePath>test4.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-100.png">
+      <PackagePath>test5.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-125.png">
+      <PackagePath>test5.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-150.png">
+      <PackagePath>test5.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-200.png">
+      <PackagePath>test5.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-400.png">
+      <PackagePath>test5.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisicon.ico">
       <PackagePath>tetrisicon.ico</PackagePath>
