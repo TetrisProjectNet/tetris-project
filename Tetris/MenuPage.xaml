@@ -3,5 +3,81 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tetris.MenuPage"
              Title=""
-             BackgroundImageSource="menuback.png">
+             BackgroundImageSource="menubackground.png">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="500"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="700"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="EndAndExpand">
+                <Label FontSize="150" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="T" FontFamily="Tetris.ttf" TextColor="#ff0000"/>
+                            <Span Text="E" FontFamily="Tetris.ttf" TextColor="#ff7f00"/>
+                            <Span Text="T" FontFamily="Tetris.ttf" TextColor="#ffff00"/>
+                            <Span Text="R" FontFamily="Tetris.ttf" TextColor="#00ff00"/>
+                            <Span Text="I" FontFamily="Tetris.ttf" TextColor="#00ffff"/>
+                            <Span Text="S" FontFamily="Tetris.ttf" TextColor="#800080"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+
+            <Frame Grid.Row="2" Grid.Column="1" HeightRequest="400" WidthRequest="610" BackgroundColor="Transparent" BorderColor="Transparent">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Frame Grid.Row="0" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                        <StackLayout>
+                            <Image Margin="0, -40, -40, 0" Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
+                            <Label TextColor="White" FontAttributes="Bold" Margin="0, -70, 170, 0" FontSize="32" Text="New game" WidthRequest="200" HeightRequest="50" HorizontalOptions="End" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="NewGameButtonClicked"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="1" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                        <StackLayout>
+                            <Image Margin="0, -40, -40, 0" Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
+                            <Label TextColor="White" FontAttributes="Bold" Margin="0, -70, 170, 0" FontSize="32" Text="Statistics" WidthRequest="200" HeightRequest="50" HorizontalOptions="End" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="StatisticsButtonClicked"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="2" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                        <StackLayout>
+                            <Image Margin="0, -40, -40, 0" Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
+                            <Label TextColor="White" FontAttributes="Bold" Margin="0, -70, 170, 0" FontSize="32" Text="Shop" WidthRequest="200" HeightRequest="50" HorizontalOptions="End" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ShopButtonClicked"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Frame Grid.Row="3" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                        <StackLayout>
+                            <Image Margin="0, -40, -40, 0" Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
+                            <Label TextColor="White" FontAttributes="Bold" Margin="0, -70, 170, 0" FontSize="32" Text="Settings" WidthRequest="200" HeightRequest="50" HorizontalOptions="End" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SettingsButtonClicked"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
