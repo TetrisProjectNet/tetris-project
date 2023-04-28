@@ -8,4 +8,24 @@ public partial class MenuPage : ContentPage
         NavigationPage.SetHasBackButton(this, false);
         NavigationPage.SetHasNavigationBar(this, false);
     }
+
+    private void NewGameButtonClicked(object sender, TappedEventArgs e)
+    {
+
+    }
+
+    private void StatisticsButtonClicked(object sender, TappedEventArgs e)
+    {
+
+    }
+
+    private void ShopButtonClicked(object sender, TappedEventArgs e)
+    {
+
+    }
+
+    private async void SettingsButtonClicked(object sender, TappedEventArgs e)
+    {
+        await DisplayAlert("Error", "Not implemented yet!", "OK");
+    }
 }

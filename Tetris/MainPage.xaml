@@ -4,7 +4,7 @@
              xmlns:tetris="clr-namespace:Tetris"
              x:Class="Tetris.MainPage"
              Title=""
-             BackgroundImageSource="loginback.png"
+             BackgroundImageSource="loginbackground.png"
              IconImageSource="tetrisicon.png"
              xmlns:controls="clr-namespace:Tetris.Controls">
 
@@ -33,7 +33,7 @@
 
             <Frame Grid.Row="1" BackgroundColor="#FAF9F6"
                          HorizontalOptions="Center" VerticalOptions="Center"
-                         WidthRequest="400" HeightRequest="700"
+                         WidthRequest="400" HeightRequest="500"
                          Margin="0, 75, 0, 0"
                          BorderColor="#FAF9F6"
                          CornerRadius="5">

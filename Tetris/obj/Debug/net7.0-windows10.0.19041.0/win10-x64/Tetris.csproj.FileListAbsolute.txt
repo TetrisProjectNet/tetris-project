@@ -238,7 +238,6 @@ C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-w
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.423.11508.dll
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -435,3 +434,16 @@ C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-w
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-150.png
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-200.png
 C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-400.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.523.17405.dll
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginbackground.scale-100.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-100.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-125.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-150.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-200.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-400.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-100.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-125.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-150.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-200.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-400.png
+C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileicon.scale-100.png
