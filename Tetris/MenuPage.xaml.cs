@@ -28,4 +28,9 @@ public partial class MenuPage : ContentPage
     {
         await DisplayAlert("Error", "Not implemented yet!", "OK");
     }
+
+    private async void ProfileButtonClicked(object sender, TappedEventArgs e)
+    {
+        await DisplayAlert("Error", "Not implemented yet!", "OK");
+    }
 }

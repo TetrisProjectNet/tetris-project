@@ -1,6 +1,16 @@
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
 Tetris.ttf
+abstractpaper.scale-100.png
+abstractpaper.scale-125.png
+abstractpaper.scale-150.png
+abstractpaper.scale-200.png
+abstractpaper.scale-400.png
+abstractpaper2.scale-100.png
+abstractpaper2.scale-125.png
+abstractpaper2.scale-150.png
+abstractpaper2.scale-200.png
+abstractpaper2.scale-400.png
 appicon.ico
 appiconLargeTile.scale-100.png
 appiconLargeTile.scale-125.png
@@ -53,6 +63,7 @@ circuit.scale-125.png
 circuit.scale-150.png
 circuit.scale-200.png
 circuit.scale-400.png
+coinicon.scale-100.png
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
