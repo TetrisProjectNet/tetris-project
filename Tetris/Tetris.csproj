@@ -50,6 +50,8 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Tetris.ttf" />
+	  <None Remove="Resources\Images\abstractpaper2.svg" />
+	  <None Remove="Resources\Images\coinicon.png" />
 	  <None Remove="Resources\Images\loginbackground.png" />
 	  <None Remove="Resources\Images\menubackground.svg" />
 	  <None Remove="Resources\Images\nnneon.svg" />

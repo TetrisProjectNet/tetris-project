@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-C1EPUJG</Machine>
+    <Machine>DESKTOP-8E6PPUS</Machine>
     <WindowsUser>Hunter</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -30,773 +30,773 @@
     <AppXManifest Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-28T09:43:14.708</Modified>
+      <Modified>2023-04-28T11:36:06.532</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-27T10:04:40.018</Modified>
+      <Modified>2023-04-28T11:34:36.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.runtimeconfig.json">
       <PackagePath>Tetris.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-27T10:04:39.955</Modified>
+      <Modified>2023-04-28T10:05:56.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.dll">
       <PackagePath>Tetris.dll</PackagePath>
-      <Modified>2023-04-28T09:43:11.609</Modified>
+      <Modified>2023-04-28T11:36:04.874</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Tetris.exe</PackagePath>
-      <Modified>2023-04-28T09:43:11.654</Modified>
+      <Modified>2023-04-28T11:36:04.883</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
-      <Modified>2023-03-24T17:46:14.000</Modified>
+      <Modified>2023-02-16T01:18:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.VisualBasic.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.VisualBasic.Core.dll">
       <PackagePath>Microsoft.VisualBasic.Core.dll</PackagePath>
-      <Modified>2023-03-24T17:46:16.000</Modified>
+      <Modified>2023-02-16T01:18:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.VisualBasic.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.Win32.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.Win32.Registry.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.Win32.Registry.dll">
       <PackagePath>Microsoft.Win32.Registry.dll</PackagePath>
-      <Modified>2023-03-24T17:46:18.000</Modified>
+      <Modified>2023-02-16T01:18:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.AppContext.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Buffers.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Buffers.dll">
       <PackagePath>System.Buffers.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Collections.Concurrent.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Collections.Concurrent.dll">
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
-      <Modified>2023-03-24T17:46:20.000</Modified>
+      <Modified>2023-02-16T01:18:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Collections.Immutable.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
-      <Modified>2023-03-24T17:46:24.000</Modified>
+      <Modified>2023-02-16T01:18:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Collections.NonGeneric.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Collections.NonGeneric.dll">
       <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
-      <Modified>2023-03-24T17:46:26.000</Modified>
+      <Modified>2023-02-16T01:18:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Collections.Specialized.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Collections.Specialized.dll">
       <PackagePath>System.Collections.Specialized.dll</PackagePath>
-      <Modified>2023-03-24T17:46:28.000</Modified>
+      <Modified>2023-02-16T01:18:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Collections.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
-      <Modified>2023-03-24T17:46:22.000</Modified>
+      <Modified>2023-02-16T01:18:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ComponentModel.Annotations.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ComponentModel.Annotations.dll">
       <PackagePath>System.ComponentModel.Annotations.dll</PackagePath>
-      <Modified>2023-03-24T17:46:30.000</Modified>
+      <Modified>2023-02-16T01:18:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ComponentModel.DataAnnotations.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ComponentModel.EventBasedAsync.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ComponentModel.EventBasedAsync.dll">
       <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
-      <Modified>2023-03-24T17:46:34.000</Modified>
+      <Modified>2023-02-16T01:18:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ComponentModel.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ComponentModel.Primitives.dll">
       <PackagePath>System.ComponentModel.Primitives.dll</PackagePath>
-      <Modified>2023-03-24T17:46:36.000</Modified>
+      <Modified>2023-02-16T01:18:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ComponentModel.TypeConverter.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ComponentModel.TypeConverter.dll">
       <PackagePath>System.ComponentModel.TypeConverter.dll</PackagePath>
-      <Modified>2023-03-24T17:46:38.000</Modified>
+      <Modified>2023-02-16T01:18:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ComponentModel.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ComponentModel.dll">
       <PackagePath>System.ComponentModel.dll</PackagePath>
-      <Modified>2023-03-24T17:46:32.000</Modified>
+      <Modified>2023-02-16T01:18:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Configuration.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Configuration.dll">
       <PackagePath>System.Configuration.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Console.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Console.dll">
       <PackagePath>System.Console.dll</PackagePath>
-      <Modified>2023-03-24T17:46:40.000</Modified>
+      <Modified>2023-02-16T01:18:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Core.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Core.dll">
       <PackagePath>System.Core.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Data.Common.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Data.Common.dll">
       <PackagePath>System.Data.Common.dll</PackagePath>
-      <Modified>2023-03-24T17:46:44.000</Modified>
+      <Modified>2023-02-16T01:18:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Data.DataSetExtensions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Data.DataSetExtensions.dll">
       <PackagePath>System.Data.DataSetExtensions.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Data.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Data.dll">
       <PackagePath>System.Data.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.Contracts.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.Contracts.dll">
       <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.Debug.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.DiagnosticSource.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.DiagnosticSource.dll">
       <PackagePath>System.Diagnostics.DiagnosticSource.dll</PackagePath>
-      <Modified>2023-03-24T17:46:46.000</Modified>
+      <Modified>2023-02-16T01:18:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.FileVersionInfo.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.FileVersionInfo.dll">
       <PackagePath>System.Diagnostics.FileVersionInfo.dll</PackagePath>
-      <Modified>2023-03-24T17:46:48.000</Modified>
+      <Modified>2023-02-16T01:19:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.Process.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.Process.dll">
       <PackagePath>System.Diagnostics.Process.dll</PackagePath>
-      <Modified>2023-03-24T17:46:50.000</Modified>
+      <Modified>2023-02-16T01:19:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.StackTrace.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.StackTrace.dll">
       <PackagePath>System.Diagnostics.StackTrace.dll</PackagePath>
-      <Modified>2023-03-24T17:46:52.000</Modified>
+      <Modified>2023-02-16T01:19:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.TextWriterTraceListener.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.TextWriterTraceListener.dll">
       <PackagePath>System.Diagnostics.TextWriterTraceListener.dll</PackagePath>
-      <Modified>2023-03-24T17:46:54.000</Modified>
+      <Modified>2023-02-16T01:19:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.Tools.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.Tools.dll">
       <PackagePath>System.Diagnostics.Tools.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.TraceSource.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.TraceSource.dll">
       <PackagePath>System.Diagnostics.TraceSource.dll</PackagePath>
-      <Modified>2023-03-24T17:46:56.000</Modified>
+      <Modified>2023-02-16T01:19:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Diagnostics.Tracing.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.Tracing.dll">
       <PackagePath>System.Diagnostics.Tracing.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Drawing.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Drawing.Primitives.dll">
       <PackagePath>System.Drawing.Primitives.dll</PackagePath>
-      <Modified>2023-03-24T17:46:58.000</Modified>
+      <Modified>2023-02-16T01:19:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Drawing.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Drawing.dll">
       <PackagePath>System.Drawing.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Dynamic.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Dynamic.Runtime.dll">
       <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Formats.Asn1.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Formats.Asn1.dll">
       <PackagePath>System.Formats.Asn1.dll</PackagePath>
-      <Modified>2023-03-24T17:47:00.000</Modified>
+      <Modified>2023-02-16T01:19:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Formats.Tar.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Formats.Tar.dll">
       <PackagePath>System.Formats.Tar.dll</PackagePath>
-      <Modified>2023-03-24T17:47:02.000</Modified>
+      <Modified>2023-02-16T01:19:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Globalization.Calendars.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Globalization.Calendars.dll">
       <PackagePath>System.Globalization.Calendars.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Globalization.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Globalization.Extensions.dll">
       <PackagePath>System.Globalization.Extensions.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Globalization.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Globalization.dll">
       <PackagePath>System.Globalization.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.Compression.Brotli.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.Compression.Brotli.dll">
       <PackagePath>System.IO.Compression.Brotli.dll</PackagePath>
-      <Modified>2023-03-24T17:47:04.000</Modified>
+      <Modified>2023-02-16T01:19:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.Compression.FileSystem.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.Compression.FileSystem.dll">
       <PackagePath>System.IO.Compression.FileSystem.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.Compression.ZipFile.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.Compression.ZipFile.dll">
       <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
-      <Modified>2023-03-24T17:47:08.000</Modified>
+      <Modified>2023-02-16T01:19:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.Compression.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.Compression.dll">
       <PackagePath>System.IO.Compression.dll</PackagePath>
-      <Modified>2023-03-24T17:47:06.000</Modified>
+      <Modified>2023-02-16T01:19:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.AccessControl.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.AccessControl.dll">
       <PackagePath>System.IO.FileSystem.AccessControl.dll</PackagePath>
-      <Modified>2023-03-24T17:47:10.000</Modified>
+      <Modified>2023-02-16T01:19:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.DriveInfo.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.DriveInfo.dll">
       <PackagePath>System.IO.FileSystem.DriveInfo.dll</PackagePath>
-      <Modified>2023-03-24T17:47:12.000</Modified>
+      <Modified>2023-02-16T01:19:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.Primitives.dll">
       <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.Watcher.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.Watcher.dll">
       <PackagePath>System.IO.FileSystem.Watcher.dll</PackagePath>
-      <Modified>2023-03-24T17:47:14.000</Modified>
+      <Modified>2023-02-16T01:19:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.FileSystem.dll">
       <PackagePath>System.IO.FileSystem.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.IsolatedStorage.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.IsolatedStorage.dll">
       <PackagePath>System.IO.IsolatedStorage.dll</PackagePath>
-      <Modified>2023-03-24T17:47:16.000</Modified>
+      <Modified>2023-02-16T01:19:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.MemoryMappedFiles.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.MemoryMappedFiles.dll">
       <PackagePath>System.IO.MemoryMappedFiles.dll</PackagePath>
-      <Modified>2023-03-24T17:47:18.000</Modified>
+      <Modified>2023-02-16T01:19:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.Pipes.AccessControl.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.Pipes.AccessControl.dll">
       <PackagePath>System.IO.Pipes.AccessControl.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.Pipes.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.Pipes.dll">
       <PackagePath>System.IO.Pipes.dll</PackagePath>
-      <Modified>2023-03-24T17:47:20.000</Modified>
+      <Modified>2023-02-16T01:19:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.UnmanagedMemoryStream.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.UnmanagedMemoryStream.dll">
       <PackagePath>System.IO.UnmanagedMemoryStream.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.IO.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.dll">
       <PackagePath>System.IO.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Linq.Expressions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Linq.Expressions.dll">
       <PackagePath>System.Linq.Expressions.dll</PackagePath>
-      <Modified>2023-03-24T17:47:26.000</Modified>
+      <Modified>2023-02-16T01:20:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Linq.Parallel.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Linq.Parallel.dll">
       <PackagePath>System.Linq.Parallel.dll</PackagePath>
-      <Modified>2023-03-24T17:47:30.000</Modified>
+      <Modified>2023-02-16T01:20:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Linq.Queryable.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Linq.Queryable.dll">
       <PackagePath>System.Linq.Queryable.dll</PackagePath>
-      <Modified>2023-03-24T17:47:32.000</Modified>
+      <Modified>2023-02-16T01:20:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Linq.dll">
       <PackagePath>System.Linq.dll</PackagePath>
-      <Modified>2023-03-24T17:47:22.000</Modified>
+      <Modified>2023-02-16T01:20:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Memory.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Memory.dll">
       <PackagePath>System.Memory.dll</PackagePath>
-      <Modified>2023-03-24T17:47:34.000</Modified>
+      <Modified>2023-02-16T01:20:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Http.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Http.Json.dll">
       <PackagePath>System.Net.Http.Json.dll</PackagePath>
-      <Modified>2023-03-24T17:47:38.000</Modified>
+      <Modified>2023-02-16T01:20:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Http.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
-      <Modified>2023-03-24T17:47:36.000</Modified>
+      <Modified>2023-02-16T01:20:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.HttpListener.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.HttpListener.dll">
       <PackagePath>System.Net.HttpListener.dll</PackagePath>
-      <Modified>2023-03-24T17:47:40.000</Modified>
+      <Modified>2023-02-16T01:20:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Mail.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Mail.dll">
       <PackagePath>System.Net.Mail.dll</PackagePath>
-      <Modified>2023-03-24T17:47:42.000</Modified>
+      <Modified>2023-02-16T01:20:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.NameResolution.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.NameResolution.dll">
       <PackagePath>System.Net.NameResolution.dll</PackagePath>
-      <Modified>2023-03-24T17:47:44.000</Modified>
+      <Modified>2023-02-16T01:20:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.NetworkInformation.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.NetworkInformation.dll">
       <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
-      <Modified>2023-03-24T17:47:46.000</Modified>
+      <Modified>2023-02-16T01:20:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Ping.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Ping.dll">
       <PackagePath>System.Net.Ping.dll</PackagePath>
-      <Modified>2023-03-24T17:47:48.000</Modified>
+      <Modified>2023-02-16T01:20:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Primitives.dll">
       <PackagePath>System.Net.Primitives.dll</PackagePath>
-      <Modified>2023-03-24T17:47:50.000</Modified>
+      <Modified>2023-02-16T01:20:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Quic.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Quic.dll">
       <PackagePath>System.Net.Quic.dll</PackagePath>
-      <Modified>2023-03-24T17:47:52.000</Modified>
+      <Modified>2023-02-16T01:20:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Requests.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Requests.dll">
       <PackagePath>System.Net.Requests.dll</PackagePath>
-      <Modified>2023-03-24T17:47:54.000</Modified>
+      <Modified>2023-02-16T01:20:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Security.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Security.dll">
       <PackagePath>System.Net.Security.dll</PackagePath>
-      <Modified>2023-03-24T17:47:56.000</Modified>
+      <Modified>2023-02-16T01:21:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.ServicePoint.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.ServicePoint.dll">
       <PackagePath>System.Net.ServicePoint.dll</PackagePath>
-      <Modified>2023-03-24T17:47:58.000</Modified>
+      <Modified>2023-02-16T01:21:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.Sockets.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.Sockets.dll">
       <PackagePath>System.Net.Sockets.dll</PackagePath>
-      <Modified>2023-03-24T17:48:00.000</Modified>
+      <Modified>2023-02-16T01:21:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.WebClient.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.WebClient.dll">
       <PackagePath>System.Net.WebClient.dll</PackagePath>
-      <Modified>2023-03-24T17:48:02.000</Modified>
+      <Modified>2023-02-16T01:21:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.WebHeaderCollection.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.WebHeaderCollection.dll">
       <PackagePath>System.Net.WebHeaderCollection.dll</PackagePath>
-      <Modified>2023-03-24T17:48:04.000</Modified>
+      <Modified>2023-02-16T01:21:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.WebProxy.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.WebProxy.dll">
       <PackagePath>System.Net.WebProxy.dll</PackagePath>
-      <Modified>2023-03-24T17:48:06.000</Modified>
+      <Modified>2023-02-16T01:21:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.WebSockets.Client.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.WebSockets.Client.dll">
       <PackagePath>System.Net.WebSockets.Client.dll</PackagePath>
-      <Modified>2023-03-24T17:48:08.000</Modified>
+      <Modified>2023-02-16T01:21:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.WebSockets.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.WebSockets.dll">
       <PackagePath>System.Net.WebSockets.dll</PackagePath>
-      <Modified>2023-03-24T17:48:10.000</Modified>
+      <Modified>2023-02-16T01:21:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Net.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Net.dll">
       <PackagePath>System.Net.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Numerics.Vectors.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Numerics.Vectors.dll">
       <PackagePath>System.Numerics.Vectors.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Numerics.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Numerics.dll">
       <PackagePath>System.Numerics.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ObjectModel.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ObjectModel.dll">
       <PackagePath>System.ObjectModel.dll</PackagePath>
-      <Modified>2023-03-24T17:48:12.000</Modified>
+      <Modified>2023-02-16T01:21:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Private.CoreLib.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Private.CoreLib.dll">
       <PackagePath>System.Private.CoreLib.dll</PackagePath>
-      <Modified>2023-03-24T17:19:50.000</Modified>
+      <Modified>2023-02-16T00:40:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Private.DataContractSerialization.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
-      <Modified>2023-03-24T17:48:16.000</Modified>
+      <Modified>2023-02-16T01:21:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Private.Uri.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
-      <Modified>2023-03-24T17:48:18.000</Modified>
+      <Modified>2023-02-16T01:21:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Private.Xml.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Private.Xml.Linq.dll">
       <PackagePath>System.Private.Xml.Linq.dll</PackagePath>
-      <Modified>2023-03-24T17:48:26.000</Modified>
+      <Modified>2023-02-16T01:21:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Private.Xml.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Private.Xml.dll">
       <PackagePath>System.Private.Xml.dll</PackagePath>
-      <Modified>2023-03-24T17:48:22.000</Modified>
+      <Modified>2023-02-16T01:21:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.DispatchProxy.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.DispatchProxy.dll">
       <PackagePath>System.Reflection.DispatchProxy.dll</PackagePath>
-      <Modified>2023-03-24T17:48:28.000</Modified>
+      <Modified>2023-02-16T01:21:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.Emit.ILGeneration.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.Emit.ILGeneration.dll">
       <PackagePath>System.Reflection.Emit.ILGeneration.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.Emit.Lightweight.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.Emit.Lightweight.dll">
       <PackagePath>System.Reflection.Emit.Lightweight.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.Emit.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.Emit.dll">
       <PackagePath>System.Reflection.Emit.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.Extensions.dll">
       <PackagePath>System.Reflection.Extensions.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.Metadata.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.Metadata.dll">
       <PackagePath>System.Reflection.Metadata.dll</PackagePath>
-      <Modified>2023-03-24T17:48:30.000</Modified>
+      <Modified>2023-02-16T01:21:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.Primitives.dll">
       <PackagePath>System.Reflection.Primitives.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.TypeExtensions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.TypeExtensions.dll">
       <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
-      <Modified>2023-03-24T17:48:32.000</Modified>
+      <Modified>2023-02-16T01:22:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Reflection.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Reflection.dll">
       <PackagePath>System.Reflection.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Resources.Reader.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Resources.Reader.dll">
       <PackagePath>System.Resources.Reader.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Resources.ResourceManager.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Resources.ResourceManager.dll">
       <PackagePath>System.Resources.ResourceManager.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Resources.Writer.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Resources.Writer.dll">
       <PackagePath>System.Resources.Writer.dll</PackagePath>
-      <Modified>2023-03-24T17:48:34.000</Modified>
+      <Modified>2023-02-16T01:22:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.CompilerServices.VisualC.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.CompilerServices.VisualC.dll">
       <PackagePath>System.Runtime.CompilerServices.VisualC.dll</PackagePath>
-      <Modified>2023-03-24T17:48:36.000</Modified>
+      <Modified>2023-02-16T01:22:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Extensions.dll">
       <PackagePath>System.Runtime.Extensions.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Handles.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Handles.dll">
       <PackagePath>System.Runtime.Handles.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.InteropServices.JavaScript.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.InteropServices.JavaScript.dll">
       <PackagePath>System.Runtime.InteropServices.JavaScript.dll</PackagePath>
-      <Modified>2023-03-24T17:48:38.000</Modified>
+      <Modified>2023-02-16T01:22:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.InteropServices.RuntimeInformation.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.InteropServices.RuntimeInformation.dll">
       <PackagePath>System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.InteropServices.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.InteropServices.dll">
       <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
-      <Modified>2023-03-24T17:48:38.000</Modified>
+      <Modified>2023-02-16T01:22:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Intrinsics.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Intrinsics.dll">
       <PackagePath>System.Runtime.Intrinsics.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Loader.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Loader.dll">
       <PackagePath>System.Runtime.Loader.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Numerics.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Numerics.dll">
       <PackagePath>System.Runtime.Numerics.dll</PackagePath>
-      <Modified>2023-03-24T17:48:40.000</Modified>
+      <Modified>2023-02-16T01:22:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.Formatters.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.Formatters.dll">
       <PackagePath>System.Runtime.Serialization.Formatters.dll</PackagePath>
-      <Modified>2023-03-24T17:48:42.000</Modified>
+      <Modified>2023-02-16T01:22:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.Json.dll">
       <PackagePath>System.Runtime.Serialization.Json.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.Primitives.dll">
       <PackagePath>System.Runtime.Serialization.Primitives.dll</PackagePath>
-      <Modified>2023-03-24T17:48:44.000</Modified>
+      <Modified>2023-02-16T01:22:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.Xml.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.Xml.dll">
       <PackagePath>System.Runtime.Serialization.Xml.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.Serialization.dll">
       <PackagePath>System.Runtime.Serialization.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.AccessControl.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.AccessControl.dll">
       <PackagePath>System.Security.AccessControl.dll</PackagePath>
-      <Modified>2023-03-24T17:48:46.000</Modified>
+      <Modified>2023-02-16T01:22:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Claims.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Claims.dll">
       <PackagePath>System.Security.Claims.dll</PackagePath>
-      <Modified>2023-03-24T17:48:48.000</Modified>
+      <Modified>2023-02-16T01:22:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Algorithms.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Algorithms.dll">
       <PackagePath>System.Security.Cryptography.Algorithms.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Cng.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Cng.dll">
       <PackagePath>System.Security.Cryptography.Cng.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Csp.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Csp.dll">
       <PackagePath>System.Security.Cryptography.Csp.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Encoding.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Encoding.dll">
       <PackagePath>System.Security.Cryptography.Encoding.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.OpenSsl.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.OpenSsl.dll">
       <PackagePath>System.Security.Cryptography.OpenSsl.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Primitives.dll">
       <PackagePath>System.Security.Cryptography.Primitives.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.X509Certificates.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.X509Certificates.dll">
       <PackagePath>System.Security.Cryptography.X509Certificates.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.dll">
       <PackagePath>System.Security.Cryptography.dll</PackagePath>
-      <Modified>2023-03-24T17:48:52.000</Modified>
+      <Modified>2023-02-16T01:22:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Principal.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Principal.Windows.dll">
       <PackagePath>System.Security.Principal.Windows.dll</PackagePath>
-      <Modified>2023-03-24T17:48:54.000</Modified>
+      <Modified>2023-02-16T01:22:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.Principal.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Principal.dll">
       <PackagePath>System.Security.Principal.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.SecureString.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.SecureString.dll">
       <PackagePath>System.Security.SecureString.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Security.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.dll">
       <PackagePath>System.Security.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ServiceModel.Web.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ServiceModel.Web.dll">
       <PackagePath>System.ServiceModel.Web.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ServiceProcess.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ServiceProcess.dll">
       <PackagePath>System.ServiceProcess.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Text.Encoding.CodePages.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Text.Encoding.CodePages.dll">
       <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
-      <Modified>2023-03-24T17:48:56.000</Modified>
+      <Modified>2023-02-16T01:22:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Text.Encoding.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Text.Encoding.Extensions.dll">
       <PackagePath>System.Text.Encoding.Extensions.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Text.Encoding.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Text.Encoding.dll">
       <PackagePath>System.Text.Encoding.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Text.Encodings.Web.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Text.Encodings.Web.dll">
       <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
-      <Modified>2023-03-24T17:48:58.000</Modified>
+      <Modified>2023-02-16T01:22:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Text.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Text.Json.dll">
       <PackagePath>System.Text.Json.dll</PackagePath>
-      <Modified>2023-03-24T17:49:00.000</Modified>
+      <Modified>2023-02-16T01:22:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Text.RegularExpressions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Text.RegularExpressions.dll">
       <PackagePath>System.Text.RegularExpressions.dll</PackagePath>
-      <Modified>2023-03-24T17:49:02.000</Modified>
+      <Modified>2023-02-16T01:22:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.Channels.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.Channels.dll">
       <PackagePath>System.Threading.Channels.dll</PackagePath>
-      <Modified>2023-03-24T17:49:04.000</Modified>
+      <Modified>2023-02-16T01:23:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.Overlapped.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.Overlapped.dll">
       <PackagePath>System.Threading.Overlapped.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.Tasks.Dataflow.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.Tasks.Dataflow.dll">
       <PackagePath>System.Threading.Tasks.Dataflow.dll</PackagePath>
-      <Modified>2023-03-24T17:49:08.000</Modified>
+      <Modified>2023-02-16T01:23:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.Tasks.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.Tasks.Extensions.dll">
       <PackagePath>System.Threading.Tasks.Extensions.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.Tasks.Parallel.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.Tasks.Parallel.dll">
       <PackagePath>System.Threading.Tasks.Parallel.dll</PackagePath>
-      <Modified>2023-03-24T17:49:10.000</Modified>
+      <Modified>2023-02-16T01:23:18.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.Tasks.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.Tasks.dll">
       <PackagePath>System.Threading.Tasks.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.Thread.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.Thread.dll">
       <PackagePath>System.Threading.Thread.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.ThreadPool.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.ThreadPool.dll">
       <PackagePath>System.Threading.ThreadPool.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.Timer.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.Timer.dll">
       <PackagePath>System.Threading.Timer.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Threading.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.dll">
       <PackagePath>System.Threading.dll</PackagePath>
-      <Modified>2023-03-24T17:49:06.000</Modified>
+      <Modified>2023-02-16T01:23:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Transactions.Local.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Transactions.Local.dll">
       <PackagePath>System.Transactions.Local.dll</PackagePath>
-      <Modified>2023-03-24T17:49:12.000</Modified>
+      <Modified>2023-02-16T01:23:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Transactions.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Transactions.dll">
       <PackagePath>System.Transactions.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.ValueTuple.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.ValueTuple.dll">
       <PackagePath>System.ValueTuple.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Web.HttpUtility.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Web.HttpUtility.dll">
       <PackagePath>System.Web.HttpUtility.dll</PackagePath>
-      <Modified>2023-03-24T17:49:14.000</Modified>
+      <Modified>2023-02-16T01:23:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Web.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Web.dll">
       <PackagePath>System.Web.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.dll">
       <PackagePath>System.Windows.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.Linq.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.Linq.dll">
       <PackagePath>System.Xml.Linq.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.ReaderWriter.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.ReaderWriter.dll">
       <PackagePath>System.Xml.ReaderWriter.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.Serialization.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.Serialization.dll">
       <PackagePath>System.Xml.Serialization.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.XDocument.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.XDocument.dll">
       <PackagePath>System.Xml.XDocument.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.XPath.XDocument.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.XPath.XDocument.dll">
       <PackagePath>System.Xml.XPath.XDocument.dll</PackagePath>
-      <Modified>2023-03-24T17:49:16.000</Modified>
+      <Modified>2023-02-16T01:23:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.XPath.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.XPath.dll">
       <PackagePath>System.Xml.XPath.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.XmlDocument.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.XmlDocument.dll">
       <PackagePath>System.Xml.XmlDocument.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.XmlSerializer.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.Xml.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xml.dll">
       <PackagePath>System.Xml.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\System.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.dll">
       <PackagePath>System.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\WindowsBase.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\WindowsBase.dll">
       <PackagePath>WindowsBase.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\mscorlib.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\mscorlib.dll">
       <PackagePath>mscorlib.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\netstandard.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Runtime.win\7.0.81\lib\net7.0-windows10.0.19041\Microsoft.Maui.dll">
+    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Runtime.win\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.dll">
       <PackagePath>Microsoft.Maui.dll</PackagePath>
-      <Modified>2023-03-21T23:08:22.000</Modified>
+      <Modified>2023-01-19T15:24:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Runtime.win\7.0.81\lib\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
+    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Runtime.win\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.dll">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.dll</PackagePath>
-      <Modified>2023-03-21T23:08:32.000</Modified>
+      <Modified>2023-01-19T15:23:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Runtime.win\7.0.81\lib\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
+    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Runtime.win\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
       <PackagePath>Microsoft.Maui.Controls.Xaml.dll</PackagePath>
-      <Modified>2023-03-21T23:07:48.000</Modified>
+      <Modified>2023-01-19T15:23:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Runtime.win\7.0.81\lib\net7.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
+    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Runtime.win\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
       <PackagePath>Microsoft.Maui.Controls.dll</PackagePath>
-      <Modified>2023-03-21T23:08:32.000</Modified>
+      <Modified>2023-01-19T15:23:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Essentials.Runtime.win\7.0.81\lib\net7.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
+    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Essentials.Runtime.win\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Essentials.dll">
       <PackagePath>Microsoft.Maui.Essentials.dll</PackagePath>
-      <Modified>2023-03-21T23:08:10.000</Modified>
+      <Modified>2023-01-19T15:23:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\Microsoft.DiaSymReader.Native.amd64.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\Microsoft.DiaSymReader.Native.amd64.dll">
       <PackagePath>Microsoft.DiaSymReader.Native.amd64.dll</PackagePath>
       <Modified>2023-01-12T21:11:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\System.IO.Compression.Native.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\System.IO.Compression.Native.dll">
       <PackagePath>System.IO.Compression.Native.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\clretwrc.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\clretwrc.dll">
       <PackagePath>clretwrc.dll</PackagePath>
-      <Modified>2023-03-24T17:14:12.000</Modified>
+      <Modified>2023-02-16T00:31:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\clrgc.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\clrgc.dll">
       <PackagePath>clrgc.dll</PackagePath>
-      <Modified>2023-03-24T17:10:32.000</Modified>
+      <Modified>2023-02-16T00:26:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\clrjit.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\clrjit.dll">
       <PackagePath>clrjit.dll</PackagePath>
-      <Modified>2023-03-24T17:11:36.000</Modified>
+      <Modified>2023-02-16T00:27:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\coreclr.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\coreclr.dll">
       <PackagePath>coreclr.dll</PackagePath>
-      <Modified>2023-03-24T17:16:02.000</Modified>
+      <Modified>2023-02-16T00:34:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\createdump.exe">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\createdump.exe">
       <PackagePath>createdump.exe</PackagePath>
-      <Modified>2023-03-24T17:13:58.000</Modified>
+      <Modified>2023-02-16T00:31:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\hostfxr.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\hostfxr.dll">
       <PackagePath>hostfxr.dll</PackagePath>
-      <Modified>2023-03-24T17:42:10.000</Modified>
+      <Modified>2023-02-16T01:11:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\hostpolicy.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\hostpolicy.dll">
       <PackagePath>hostpolicy.dll</PackagePath>
-      <Modified>2023-03-24T17:42:24.000</Modified>
+      <Modified>2023-02-16T01:11:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\mscordaccore.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\mscordaccore.dll">
       <PackagePath>mscordaccore.dll</PackagePath>
-      <Modified>2023-03-24T17:22:34.000</Modified>
+      <Modified>2023-02-16T00:43:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\mscordaccore_amd64_amd64_7.0.523.17405.dll">
-      <PackagePath>mscordaccore_amd64_amd64_7.0.523.17405.dll</PackagePath>
-      <Modified>2023-03-24T17:22:34.000</Modified>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\mscordaccore_amd64_amd64_7.0.423.11508.dll">
+      <PackagePath>mscordaccore_amd64_amd64_7.0.423.11508.dll</PackagePath>
+      <Modified>2023-02-16T00:43:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\mscordbi.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\mscordbi.dll">
       <PackagePath>mscordbi.dll</PackagePath>
-      <Modified>2023-03-24T17:22:12.000</Modified>
+      <Modified>2023-02-16T00:43:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\mscorrc.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\mscorrc.dll">
       <PackagePath>mscorrc.dll</PackagePath>
-      <Modified>2023-03-24T17:14:14.000</Modified>
+      <Modified>2023-02-16T00:31:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\native\msquic.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\msquic.dll">
       <PackagePath>msquic.dll</PackagePath>
-      <Modified>2023-03-24T17:19:10.000</Modified>
+      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.28\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -850,13 +850,13 @@
       <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
       <Modified>2022-10-04T20:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.maui.graphics\7.0.81\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.maui.graphics\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.dll">
       <PackagePath>Microsoft.Maui.Graphics.dll</PackagePath>
-      <Modified>2023-03-22T01:08:08.000</Modified>
+      <Modified>2023-01-19T17:23:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\7.0.81\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
-      <Modified>2023-03-22T01:08:50.000</Modified>
+      <Modified>2023-01-19T17:24:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -928,751 +928,795 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.deps.json">
       <PackagePath>Tetris.deps.json</PackagePath>
-      <Modified>2023-04-28T09:43:14.236</Modified>
+      <Modified>2023-04-28T11:36:06.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\winuiex\2.1.0\lib\net6.0-windows10.0.18362\WinUIEx.pri">
       <PackagePath>WinUIEx.pri</PackagePath>
       <Modified>2023-01-03T23:25:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.81\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
+    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.59\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
-      <Modified>2023-03-21T23:00:36.000</Modified>
+      <Modified>2023-01-19T15:17:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.81\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
+    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.59\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.pri">
       <PackagePath>Microsoft.Maui.Controls.pri</PackagePath>
-      <Modified>2023-03-21T22:59:58.000</Modified>
+      <Modified>2023-01-19T15:17:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Ref.win\7.0.81\ref\net7.0-windows10.0.19041\Microsoft.Maui.pri">
+    <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Ref.win\7.0.59\ref\net7.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
-      <Modified>2023-03-21T22:59:00.000</Modified>
+      <Modified>2023-01-19T15:16:40.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2023-04-27T06:13:34.375</Modified>
+      <Modified>2023-04-02T11:52:02.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.223</Modified>
+      <Modified>2023-04-02T11:53:15.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.223</Modified>
+      <Modified>2023-04-02T11:53:15.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.223</Modified>
+      <Modified>2023-04-02T11:53:15.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.223</Modified>
+      <Modified>2023-04-02T11:53:15.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.223</Modified>
+      <Modified>2023-04-02T11:53:16.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2023-04-27T06:13:39.104</Modified>
+      <Modified>2023-04-02T11:52:02.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2023-04-27T06:13:39.105</Modified>
+      <Modified>2023-04-02T11:52:02.052</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\Tetris.ttf">
       <PackagePath>Tetris.ttf</PackagePath>
-      <Modified>2023-04-27T06:13:39.105</Modified>
+      <Modified>2022-03-09T23:19:47.366</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper.scale-100.png">
+      <PackagePath>abstractpaper.scale-100.png</PackagePath>
+      <Modified>2023-04-28T10:22:46.445</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper.scale-125.png">
+      <PackagePath>abstractpaper.scale-125.png</PackagePath>
+      <Modified>2023-04-28T10:22:47.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper.scale-150.png">
+      <PackagePath>abstractpaper.scale-150.png</PackagePath>
+      <Modified>2023-04-28T10:22:49.544</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper.scale-200.png">
+      <PackagePath>abstractpaper.scale-200.png</PackagePath>
+      <Modified>2023-04-28T10:22:52.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper.scale-400.png">
+      <PackagePath>abstractpaper.scale-400.png</PackagePath>
+      <Modified>2023-04-28T10:23:04.264</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-100.png">
+      <PackagePath>abstractpaper2.scale-100.png</PackagePath>
+      <Modified>2023-04-28T11:08:19.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-125.png">
+      <PackagePath>abstractpaper2.scale-125.png</PackagePath>
+      <Modified>2023-04-28T11:08:21.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-150.png">
+      <PackagePath>abstractpaper2.scale-150.png</PackagePath>
+      <Modified>2023-04-28T11:08:22.843</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-200.png">
+      <PackagePath>abstractpaper2.scale-200.png</PackagePath>
+      <Modified>2023-04-28T11:08:25.618</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-400.png">
+      <PackagePath>abstractpaper2.scale-400.png</PackagePath>
+      <Modified>2023-04-28T11:08:36.923</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-04-27T06:13:39.106</Modified>
+      <Modified>2023-04-26T21:49:30.973</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.106</Modified>
+      <Modified>2023-04-26T21:49:31.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.106</Modified>
+      <Modified>2023-04-26T21:49:31.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.107</Modified>
+      <Modified>2023-04-26T21:49:31.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.107</Modified>
+      <Modified>2023-04-26T21:49:31.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.107</Modified>
+      <Modified>2023-04-26T21:49:31.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.107</Modified>
+      <Modified>2023-04-26T21:49:31.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.107</Modified>
+      <Modified>2023-04-26T21:49:31.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.108</Modified>
+      <Modified>2023-04-26T21:49:31.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.108</Modified>
+      <Modified>2023-04-26T21:49:31.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.108</Modified>
+      <Modified>2023-04-26T21:49:31.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.108</Modified>
+      <Modified>2023-04-26T21:49:31.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.108</Modified>
+      <Modified>2023-04-26T21:49:31.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.109</Modified>
+      <Modified>2023-04-26T21:49:31.085</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.109</Modified>
+      <Modified>2023-04-26T21:49:31.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.109</Modified>
+      <Modified>2023-04-26T21:49:31.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.109</Modified>
+      <Modified>2023-04-26T21:49:30.992</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.109</Modified>
+      <Modified>2023-04-26T21:49:30.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.110</Modified>
+      <Modified>2023-04-26T21:49:31.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.110</Modified>
+      <Modified>2023-04-26T21:49:31.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.110</Modified>
+      <Modified>2023-04-26T21:49:31.023</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.110</Modified>
+      <Modified>2023-04-26T21:49:31.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.110</Modified>
+      <Modified>2023-04-26T21:49:31.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.111</Modified>
+      <Modified>2023-04-26T21:49:31.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.111</Modified>
+      <Modified>2023-04-26T21:49:31.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.111</Modified>
+      <Modified>2023-04-26T21:49:31.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.111</Modified>
+      <Modified>2023-04-26T21:49:31.199</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.111</Modified>
+      <Modified>2023-04-26T21:49:31.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.112</Modified>
+      <Modified>2023-04-26T21:49:31.221</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.112</Modified>
+      <Modified>2023-04-26T21:49:31.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.112</Modified>
+      <Modified>2023-04-26T21:49:31.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.112</Modified>
+      <Modified>2023-04-26T21:49:31.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.112</Modified>
+      <Modified>2023-04-26T21:49:31.161</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.112</Modified>
+      <Modified>2023-04-26T21:49:31.167</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.113</Modified>
+      <Modified>2023-04-26T21:49:31.174</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.113</Modified>
+      <Modified>2023-04-26T21:49:31.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.113</Modified>
+      <Modified>2023-04-26T21:49:31.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.113</Modified>
+      <Modified>2023-04-26T21:49:31.124</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.113</Modified>
+      <Modified>2023-04-26T21:49:31.130</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.114</Modified>
+      <Modified>2023-04-26T21:49:31.137</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.114</Modified>
+      <Modified>2023-04-26T21:49:31.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.114</Modified>
+      <Modified>2023-04-26T21:49:31.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.114</Modified>
+      <Modified>2023-04-26T21:49:31.285</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.115</Modified>
+      <Modified>2023-04-26T21:49:31.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.115</Modified>
+      <Modified>2023-04-26T21:49:31.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.115</Modified>
+      <Modified>2023-04-26T21:49:31.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\backbutton.scale-100.png">
       <PackagePath>backbutton.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.115</Modified>
+      <Modified>2023-04-27T01:15:05.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-100.png">
       <PackagePath>circuit.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.117</Modified>
+      <Modified>2023-04-27T03:33:13.870</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-125.png">
       <PackagePath>circuit.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.119</Modified>
+      <Modified>2023-04-27T03:33:14.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-150.png">
       <PackagePath>circuit.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.121</Modified>
+      <Modified>2023-04-27T03:33:14.566</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-200.png">
       <PackagePath>circuit.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.124</Modified>
+      <Modified>2023-04-27T03:33:15.148</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\circuit.scale-400.png">
       <PackagePath>circuit.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.131</Modified>
+      <Modified>2023-04-27T03:33:17.370</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\coinicon.scale-100.png">
+      <PackagePath>coinicon.scale-100.png</PackagePath>
+      <Modified>2023-04-28T11:07:31.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.131</Modified>
+      <Modified>2023-04-26T21:22:34.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.132</Modified>
+      <Modified>2023-04-26T21:22:34.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.132</Modified>
+      <Modified>2023-04-26T21:22:34.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.132</Modified>
+      <Modified>2023-04-26T21:22:34.992</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.133</Modified>
+      <Modified>2023-04-26T21:22:35.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\endless.scale-100.png">
       <PackagePath>endless.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.135</Modified>
+      <Modified>2023-04-27T03:03:03.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginback.scale-100.png">
       <PackagePath>loginback.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.138</Modified>
+      <Modified>2023-04-27T03:10:08.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginback.scale-125.png">
       <PackagePath>loginback.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.139</Modified>
+      <Modified>2023-04-27T02:52:35.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginback.scale-150.png">
       <PackagePath>loginback.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.141</Modified>
+      <Modified>2023-04-27T02:52:36.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginback.scale-200.png">
       <PackagePath>loginback.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.145</Modified>
+      <Modified>2023-04-27T02:52:36.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginback.scale-400.png">
       <PackagePath>loginback.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.151</Modified>
+      <Modified>2023-04-27T02:52:38.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginbackg.scale-100.png">
       <PackagePath>loginbackg.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.152</Modified>
+      <Modified>2023-04-27T03:12:45.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginbackg.scale-125.png">
       <PackagePath>loginbackg.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.154</Modified>
+      <Modified>2023-04-27T03:12:46.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginbackg.scale-150.png">
       <PackagePath>loginbackg.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.156</Modified>
+      <Modified>2023-04-27T03:12:46.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginbackg.scale-200.png">
       <PackagePath>loginbackg.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.159</Modified>
+      <Modified>2023-04-27T03:12:47.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginbackg.scale-400.png">
       <PackagePath>loginbackg.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.165</Modified>
+      <Modified>2023-04-27T03:12:48.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginbackground.scale-100.png">
       <PackagePath>loginbackground.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:34.372</Modified>
+      <Modified>2023-04-28T09:57:51.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginblob.scale-100.png">
       <PackagePath>loginblob.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.166</Modified>
+      <Modified>2023-04-26T21:23:46.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginblob.scale-125.png">
       <PackagePath>loginblob.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.166</Modified>
+      <Modified>2023-04-26T21:22:35.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginblob.scale-150.png">
       <PackagePath>loginblob.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.167</Modified>
+      <Modified>2023-04-26T21:22:35.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginblob.scale-200.png">
       <PackagePath>loginblob.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.167</Modified>
+      <Modified>2023-04-26T21:22:35.236</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginblob.scale-400.png">
       <PackagePath>loginblob.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.168</Modified>
+      <Modified>2023-04-26T21:22:35.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforeground.scale-100.png">
       <PackagePath>loginforeground.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.168</Modified>
+      <Modified>2023-04-26T21:22:34.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforeground.scale-125.png">
       <PackagePath>loginforeground.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.168</Modified>
+      <Modified>2023-04-26T21:22:34.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforeground.scale-150.png">
       <PackagePath>loginforeground.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.169</Modified>
+      <Modified>2023-04-26T21:22:34.950</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforeground.scale-200.png">
       <PackagePath>loginforeground.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.169</Modified>
+      <Modified>2023-04-26T21:22:34.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforeground.scale-400.png">
       <PackagePath>loginforeground.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.170</Modified>
+      <Modified>2023-04-26T21:22:35.023</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforegroundimage.scale-100.png">
       <PackagePath>loginforegroundimage.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.170</Modified>
+      <Modified>2023-04-26T21:00:51.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforegroundimage.scale-125.png">
       <PackagePath>loginforegroundimage.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.170</Modified>
+      <Modified>2023-04-26T21:00:51.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforegroundimage.scale-150.png">
       <PackagePath>loginforegroundimage.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.171</Modified>
+      <Modified>2023-04-26T21:00:51.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforegroundimage.scale-200.png">
       <PackagePath>loginforegroundimage.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.171</Modified>
+      <Modified>2023-04-26T21:00:51.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginforegroundimage.scale-400.png">
       <PackagePath>loginforegroundimage.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.172</Modified>
+      <Modified>2023-04-26T21:00:51.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-100.png">
       <PackagePath>menuback.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:21:24.763</Modified>
+      <Modified>2023-04-27T03:35:35.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-125.png">
       <PackagePath>menuback.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:21:24.917</Modified>
+      <Modified>2023-04-27T03:35:35.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-150.png">
       <PackagePath>menuback.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:21:25.125</Modified>
+      <Modified>2023-04-27T03:35:36.208</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-200.png">
       <PackagePath>menuback.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:21:25.477</Modified>
+      <Modified>2023-04-27T03:35:36.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menuback.scale-400.png">
       <PackagePath>menuback.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:21:26.820</Modified>
+      <Modified>2023-04-27T03:35:39.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-100.png">
       <PackagePath>menubackg.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.187</Modified>
+      <Modified>2023-04-27T03:06:53.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-125.png">
       <PackagePath>menubackg.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.187</Modified>
+      <Modified>2023-04-27T03:06:53.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-150.png">
       <PackagePath>menubackg.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.188</Modified>
+      <Modified>2023-04-27T03:06:53.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-200.png">
       <PackagePath>menubackg.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.188</Modified>
+      <Modified>2023-04-27T03:06:53.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackg.scale-400.png">
       <PackagePath>menubackg.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.188</Modified>
+      <Modified>2023-04-27T03:06:53.479</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-100.png">
       <PackagePath>menubackground.scale-100.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.669</Modified>
+      <Modified>2023-04-28T11:08:18.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-125.png">
       <PackagePath>menubackground.scale-125.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.828</Modified>
+      <Modified>2023-04-28T11:08:19.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-150.png">
       <PackagePath>menubackground.scale-150.png</PackagePath>
-      <Modified>2023-04-27T10:04:37.053</Modified>
+      <Modified>2023-04-28T11:08:19.523</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-200.png">
       <PackagePath>menubackground.scale-200.png</PackagePath>
-      <Modified>2023-04-27T10:04:37.437</Modified>
+      <Modified>2023-04-28T11:08:20.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-400.png">
       <PackagePath>menubackground.scale-400.png</PackagePath>
-      <Modified>2023-04-27T10:04:38.718</Modified>
+      <Modified>2023-04-28T11:08:22.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-100.png">
       <PackagePath>nnneon.scale-100.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.605</Modified>
+      <Modified>2023-04-28T11:08:18.571</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-125.png">
       <PackagePath>nnneon.scale-125.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.688</Modified>
+      <Modified>2023-04-28T11:08:18.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-150.png">
       <PackagePath>nnneon.scale-150.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.802</Modified>
+      <Modified>2023-04-28T11:08:18.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-200.png">
       <PackagePath>nnneon.scale-200.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.999</Modified>
+      <Modified>2023-04-28T11:08:19.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-400.png">
       <PackagePath>nnneon.scale-400.png</PackagePath>
-      <Modified>2023-04-27T10:04:37.839</Modified>
+      <Modified>2023-04-28T11:08:21.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileicon.scale-100.png">
       <PackagePath>profileicon.scale-100.png</PackagePath>
-      <Modified>2023-04-27T07:23:37.211</Modified>
+      <Modified>2023-04-28T09:57:51.107</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\spectrum.scale-100.png">
       <PackagePath>spectrum.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.189</Modified>
+      <Modified>2023-04-26T21:34:39.154</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\spectrum.scale-125.png">
       <PackagePath>spectrum.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.191</Modified>
+      <Modified>2023-04-26T21:34:39.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\spectrum.scale-150.png">
       <PackagePath>spectrum.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.193</Modified>
+      <Modified>2023-04-26T21:34:39.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\spectrum.scale-200.png">
       <PackagePath>spectrum.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.196</Modified>
+      <Modified>2023-04-26T21:34:40.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\spectrum.scale-400.png">
       <PackagePath>spectrum.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.202</Modified>
+      <Modified>2023-04-26T21:34:42.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-100.png">
       <PackagePath>test.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.203</Modified>
+      <Modified>2023-04-27T03:02:36.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-125.png">
       <PackagePath>test.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.203</Modified>
+      <Modified>2023-04-27T03:02:36.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-150.png">
       <PackagePath>test.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.203</Modified>
+      <Modified>2023-04-27T03:02:36.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-200.png">
       <PackagePath>test.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.204</Modified>
+      <Modified>2023-04-27T03:02:36.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test.scale-400.png">
       <PackagePath>test.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.204</Modified>
+      <Modified>2023-04-27T03:02:36.575</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-100.png">
       <PackagePath>test3.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.204</Modified>
+      <Modified>2023-04-27T03:11:36.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-125.png">
       <PackagePath>test3.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.205</Modified>
+      <Modified>2023-04-27T03:11:36.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-150.png">
       <PackagePath>test3.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.205</Modified>
+      <Modified>2023-04-27T03:11:36.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-200.png">
       <PackagePath>test3.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.205</Modified>
+      <Modified>2023-04-27T03:11:36.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test3.scale-400.png">
       <PackagePath>test3.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.205</Modified>
+      <Modified>2023-04-27T03:11:36.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test4.scale-100.png">
       <PackagePath>test4.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.209</Modified>
+      <Modified>2023-04-27T03:05:57.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-100.png">
       <PackagePath>test5.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.212</Modified>
+      <Modified>2023-04-27T03:10:08.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-125.png">
       <PackagePath>test5.scale-125.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.212</Modified>
+      <Modified>2023-04-27T03:09:50.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-150.png">
       <PackagePath>test5.scale-150.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.212</Modified>
+      <Modified>2023-04-27T03:09:50.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-200.png">
       <PackagePath>test5.scale-200.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.213</Modified>
+      <Modified>2023-04-27T03:09:50.130</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\test5.scale-400.png">
       <PackagePath>test5.scale-400.png</PackagePath>
-      <Modified>2023-04-27T06:13:39.213</Modified>
+      <Modified>2023-04-27T03:09:50.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisicon.ico">
       <PackagePath>tetrisicon.ico</PackagePath>
-      <Modified>2023-04-27T10:04:36.446</Modified>
+      <Modified>2023-04-28T11:08:18.290</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-100.png">
       <PackagePath>tetrisiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.670</Modified>
+      <Modified>2023-04-28T11:08:18.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-125.png">
       <PackagePath>tetrisiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.679</Modified>
+      <Modified>2023-04-28T11:08:18.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-150.png">
       <PackagePath>tetrisiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.690</Modified>
+      <Modified>2023-04-28T11:08:18.802</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-200.png">
       <PackagePath>tetrisiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.709</Modified>
+      <Modified>2023-04-28T11:08:18.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-400.png">
       <PackagePath>tetrisiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.781</Modified>
+      <Modified>2023-04-28T11:08:18.954</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.510</Modified>
+      <Modified>2023-04-28T11:08:18.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.513</Modified>
+      <Modified>2023-04-28T11:08:18.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.524</Modified>
+      <Modified>2023-04-28T11:08:18.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.516</Modified>
+      <Modified>2023-04-28T11:08:18.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.519</Modified>
+      <Modified>2023-04-28T11:08:18.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.492</Modified>
+      <Modified>2023-04-28T11:08:18.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.495</Modified>
+      <Modified>2023-04-28T11:08:18.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.507</Modified>
+      <Modified>2023-04-28T11:08:18.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.498</Modified>
+      <Modified>2023-04-28T11:08:18.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.501</Modified>
+      <Modified>2023-04-28T11:08:18.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-100.png">
       <PackagePath>tetrisiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.455</Modified>
+      <Modified>2023-04-28T11:08:18.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-125.png">
       <PackagePath>tetrisiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.459</Modified>
+      <Modified>2023-04-28T11:08:18.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-150.png">
       <PackagePath>tetrisiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.462</Modified>
+      <Modified>2023-04-28T11:08:18.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-200.png">
       <PackagePath>tetrisiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.465</Modified>
+      <Modified>2023-04-28T11:08:18.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-400.png">
       <PackagePath>tetrisiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.469</Modified>
+      <Modified>2023-04-28T11:08:18.332</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-16.png">
       <PackagePath>tetrisiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.472</Modified>
+      <Modified>2023-04-28T11:08:18.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-24.png">
       <PackagePath>tetrisiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.475</Modified>
+      <Modified>2023-04-28T11:08:18.343</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-256.png">
       <PackagePath>tetrisiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.488</Modified>
+      <Modified>2023-04-28T11:08:18.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-32.png">
       <PackagePath>tetrisiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.478</Modified>
+      <Modified>2023-04-28T11:08:18.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-48.png">
       <PackagePath>tetrisiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.481</Modified>
+      <Modified>2023-04-28T11:08:18.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-100.png">
       <PackagePath>tetrisiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.571</Modified>
+      <Modified>2023-04-28T11:08:18.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-125.png">
       <PackagePath>tetrisiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.576</Modified>
+      <Modified>2023-04-28T11:08:18.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-150.png">
       <PackagePath>tetrisiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.581</Modified>
+      <Modified>2023-04-28T11:08:18.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-200.png">
       <PackagePath>tetrisiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.587</Modified>
+      <Modified>2023-04-28T11:08:18.589</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-400.png">
       <PackagePath>tetrisiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.603</Modified>
+      <Modified>2023-04-28T11:08:18.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-100.png">
       <PackagePath>tetrisiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.547</Modified>
+      <Modified>2023-04-28T11:08:18.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-125.png">
       <PackagePath>tetrisiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.551</Modified>
+      <Modified>2023-04-28T11:08:18.502</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-150.png">
       <PackagePath>tetrisiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.555</Modified>
+      <Modified>2023-04-28T11:08:18.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-200.png">
       <PackagePath>tetrisiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.561</Modified>
+      <Modified>2023-04-28T11:08:18.520</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-400.png">
       <PackagePath>tetrisiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.567</Modified>
+      <Modified>2023-04-28T11:08:18.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-100.png">
       <PackagePath>tetrisiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.528</Modified>
+      <Modified>2023-04-28T11:08:18.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-125.png">
       <PackagePath>tetrisiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.531</Modified>
+      <Modified>2023-04-28T11:08:18.456</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-150.png">
       <PackagePath>tetrisiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.535</Modified>
+      <Modified>2023-04-28T11:08:18.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-200.png">
       <PackagePath>tetrisiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.538</Modified>
+      <Modified>2023-04-28T11:08:18.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-400.png">
       <PackagePath>tetrisiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.542</Modified>
+      <Modified>2023-04-28T11:08:18.485</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-100.png">
       <PackagePath>tetrisiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.608</Modified>
+      <Modified>2023-04-28T11:08:18.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-125.png">
       <PackagePath>tetrisiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.615</Modified>
+      <Modified>2023-04-28T11:08:18.650</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-150.png">
       <PackagePath>tetrisiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.623</Modified>
+      <Modified>2023-04-28T11:08:18.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-200.png">
       <PackagePath>tetrisiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.634</Modified>
+      <Modified>2023-04-28T11:08:18.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-400.png">
       <PackagePath>tetrisiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-04-27T10:04:36.663</Modified>
+      <Modified>2023-04-28T11:08:18.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrispieces.scale-100.png">
       <PackagePath>tetrispieces.scale-100.png</PackagePath>
-      <Modified>2023-04-27T06:13:34.374</Modified>
+      <Modified>2023-04-26T21:10:49.292</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

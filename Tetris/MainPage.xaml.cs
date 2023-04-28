@@ -25,7 +25,7 @@ public partial class MainPage : ContentPage
         if (username == "test" && password == "test")
         {
             Thread.Sleep(250);
-            await Navigation.PushAsync(new MenuPage());
+            await Navigation.PushAsync(new MenuPage(), false);
         } else
         {
             Thread.Sleep(250);
