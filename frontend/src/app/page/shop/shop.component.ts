@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/service/auth.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { ShopService } from 'src/app/service/shop.service';
 import { UserService } from 'src/app/service/user.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-shop',
@@ -57,6 +58,13 @@ export class ShopComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    AOS.init({
+      duration: 600,
+      offset: 130,
+      easing: 'ease-in-sine',
+      anchorPlacement: 'bottom-bottom',
+    });
+
     if (this.loggedUser$) {
       this.loggedUser$.subscribe({
         next: (data: any) => {

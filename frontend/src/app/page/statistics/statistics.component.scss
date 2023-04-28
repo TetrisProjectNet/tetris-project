@@ -1,9 +1,23 @@
 @use '../../../styles'as styles;
 
-.wrapper {
-  // padding: 3rem 0;
-  font-family: verdana;
+.container {
+  min-height: 100vh;
 }
+
+.title {
+  & h1 {
+    font-size: 40px;
+  }
+  & p {
+    text-transform:uppercase;
+    font-size: 20.9px;
+  }
+}
+
+.scores__wrapper {
+  padding: 4rem 0 0;
+}
+
 
 .table {
   color: styles.$white;
@@ -92,4 +106,14 @@ tbody {
       border: none;
     }
   }
+}
+
+.radar__wrapper {
+  min-height: 600px;
+  width: 100%;
+}
+
+.pie__wrapper {
+  min-height: 600px;
+  width: 100%;
 }

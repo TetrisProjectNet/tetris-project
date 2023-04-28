@@ -2,7 +2,7 @@
   <div class="row">
     <div *ngIf="(user$ | async) as user">
       <main class="d-flex flex-column flex-md-row">
-        <aside class="user-data verdana col-md-6">
+        <aside *ngIf="user.id" class="user-data verdana col-md-6">
           <div class="offset-xl-1">
             <h2 class="user-title">
               <fa-icon class="me-3" [icon]="faCircleUser"></fa-icon>{{ user.username }}
@@ -74,12 +74,12 @@
             <input [(ngModel)]="user.id" class="form-control" name="id" type="text" disabled>
             <label class="focused form-label">#</label>
           </div> -->
-          <div class="form-group">
+          <div *ngIf="user.id" class="form-group">
             <app-floating-label-input
               [(inputModel)]="user.id"
               [type]="'text'"
               [name]="'#'"
-              [labelContent]="'id'"
+              [labelContent]="'Id'"
               [disabled]="true"
               [required]="false"
             ></app-floating-label-input>
@@ -157,7 +157,7 @@
             </label>
             <label class="form-label" [class]="roleClass">Role</label>
           </div> -->
-          
+
           <div class="select__wrapper form-group mb-0">
             <app-floating-label-select
               #coinsInput

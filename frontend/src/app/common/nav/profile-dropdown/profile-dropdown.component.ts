@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { faCircleUser, faRightFromBracket, faUser, faUserGear, faUserShield } from '@fortawesome/free-solid-svg-icons';
 import { AuthService } from 'src/app/service/auth.service';
 import { UserService } from 'src/app/service/user.service';
@@ -23,6 +24,7 @@ export class ProfileDropdownComponent {
   constructor(
     private authService: AuthService,
     private userService: UserService,
+    private router: Router,
   ) {  }
 
 
@@ -37,6 +39,8 @@ export class ProfileDropdownComponent {
               complete: () => {
                 localStorage.removeItem('authToken');
                 this.authService.resetLoginData();
+                window.location.reload();
+                // this.router.navigate(['/home']);
               }
             })
           }

@@ -63,8 +63,8 @@ export class NewPasswordComponent {
           this.router.navigate(['/forgot-password']);
         },
         complete: () => {
-          // this.router.navigate(['shop']);
           this.onSuccess('Your password has been changed.');
+          this.router.navigate(['/login']);
         }
       });
 

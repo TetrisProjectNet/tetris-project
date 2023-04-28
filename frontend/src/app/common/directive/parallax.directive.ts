@@ -57,16 +57,16 @@ export class ParallaxDirective {
   constructor(
     private eleRef: ElementRef
   ) {  }
-  
+
   ngOnInit(): void {
     // console.log('asd', this.eleRef.nativeElement.getBoundingClientRect());
     // console.log('scroll', window.scrollY);
     // console.log('parent: ', this.eleRef.nativeElement.parentElement.getBoundingClientRect());
     // console.log('offsetTop: ', this.eleRef.nativeElement.parentElement.getBoundingClientRect());
     // console.log(this.checkVisible(this.eleRef.nativeElement));
-    
-    
-    
+
+
+
     // this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top -
     // this.eleRef.nativeElement.parentElement.getBoundingClientRect().top;
     // this.initialTop = 0;
@@ -74,9 +74,9 @@ export class ParallaxDirective {
     setTimeout(() => {
       this.initialTop = this.eleRef.nativeElement.offsetTop +
         this.eleRef.nativeElement.parentElement.offsetTop * this.parallaxRatio;
-        
+
       this.eleRef.nativeElement.style.top = this.initialTop + 'px';
-      console.log('parallax: ', this.eleRef.nativeElement.style.top);
+      // console.log('parallax: ', this.eleRef.nativeElement.style.top);
 
     },1)
 
@@ -102,7 +102,7 @@ export class ParallaxDirective {
   }
 
   ngAfterViewInit() {
-    
+
   }
 
 
@@ -119,14 +119,14 @@ export class ParallaxDirective {
     //   // this.eleRef.nativeElement.style.display = 'block';
 
     // }
-    console.log('asd');
+    // console.log('asd');
     this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
   }
 
-  checkVisible(elem: any) {
-    var rect = elem.getBoundingClientRect();
-    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
-  }
+  // checkVisible(elem: any) {
+  //   var rect = elem.getBoundingClientRect();
+  //   var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+  //   return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+  // }
 
 }

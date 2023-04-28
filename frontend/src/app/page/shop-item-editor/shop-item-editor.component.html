@@ -4,14 +4,14 @@
         <form class="default-form animate__animated animate__fadeInUp animate__faster" #shopItemForm="ngForm"
           (ngSubmit)="onUpdate(shopItemForm, shopItem)">
 
-          <div class="form-group">
+          <div *ngIf="shopItem.id" class="form-group">
             <!-- <input [(ngModel)]="shopItem.id" class="form-control" name="id" type="text" disabled>
             <label class="focused form-label">#</label> -->
             <app-floating-label-input
               [(inputModel)]="shopItem.id"
-              [type]="'number'"
+              [type]="'text'"
               [name]="'#'"
-              [labelContent]="'id'"
+              [labelContent]="'Id'"
               [disabled]="true"
               [required]="false"
             ></app-floating-label-input>

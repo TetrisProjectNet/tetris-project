@@ -3,7 +3,7 @@
 
     <section class="title white-text text-center">
       <h1 class="game-played mt-4 animate__animated animate__backInDown">tetris-shop</h1>
-      <p class="animate__animated animate__zoomIn animate__delay-2s">Buy some awesome skins!</p>
+      <p data-aos="zoom-in-up" data-aos-offset="0" data-aos-delay="900">Buy some awesome skins!</p>
     </section>
 
     <div *ngIf="isAdmin" class="admin-view__wrapper d-flex justify-content-end align-items-center mt-4 mb-3">
@@ -26,8 +26,8 @@
             </div>
             <h2 class="price">{{ shopItem.price }}<fa-icon class="ms-1" [icon]="faCoins"></fa-icon></h2>
             <!-- <button *ngIf="checkIfPurchased(shopItem.id)" (click)="onBuyOne(shopItem)" class="buy">Buy Now</button> -->
-            <button *ngIf="!loggedObject.user?.shopItems?.includes(shopItem)" (click)="onBuyOne(shopItem)" class="buy">Buy Now</button>
-            <button *ngIf="loggedObject.user?.shopItems?.includes(shopItem)" (click)="onBuyOne(shopItem)" class="purchased" disabled>Purchased</button>
+            <button *ngIf="!(loggedObject.user | shopItemFilter:shopItem)" (click)="onBuyOne(shopItem)" class="buy">Buy Now</button>
+            <button *ngIf="loggedObject.user | shopItemFilter:shopItem" (click)="onBuyOne(shopItem)" class="purchased" disabled>Purchased</button>
             <button *ngIf="isAdmin && adminView" (click)="onEditOne(shopItem)" class="buy">Edit</button>
           </div>
         </div>

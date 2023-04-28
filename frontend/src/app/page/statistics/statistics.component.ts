@@ -81,7 +81,8 @@ export class StatisticsComponent implements OnInit {
     AOS.init({
       duration: 600,
       offset: 130,
-      easing: 'ease-in-sine'
+      easing: 'ease-in-sine',
+      anchorPlacement: 'bottom-bottom',
     });
 
     this.getPieChartConfig();

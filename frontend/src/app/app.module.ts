@@ -41,6 +41,7 @@ import { ParallaxDirective } from './common/directive/parallax.directive';
 import { AuthInterceptor } from './service/auth.interceptor';
 import { FloatingLabelSelectComponent } from './common/floating-label-select/floating-label-select.component';
 import { XPipePipe } from './pipe/x-pipe.pipe';
+import { ShopItemFilterPipe } from './pipe/shop-item-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { XPipePipe } from './pipe/x-pipe.pipe';
     ToastrComponent,
     ParallaxDirective,
     FloatingLabelSelectComponent,
-    XPipePipe
+    XPipePipe,
+    ShopItemFilterPipe
   ],
   imports: [
     BrowserModule,

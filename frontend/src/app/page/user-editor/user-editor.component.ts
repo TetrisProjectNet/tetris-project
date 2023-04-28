@@ -124,7 +124,7 @@ export class UserEditorComponent {
     console.log(user);
     this.clicked = true;
     if (user.id === '') {
-      user.joinDate = new Date();
+      user.joinDate = new Date().toLocaleDateString("en-US");
       this.authService.register(user).subscribe({
         error: err => {
           this.onDanger('Registration failed.<br>Please try again later!');
