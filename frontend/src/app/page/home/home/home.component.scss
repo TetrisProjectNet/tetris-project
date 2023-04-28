@@ -49,33 +49,46 @@
   }
 }
 
+.parallax__img {
+  background-position: 50% 100%;
+  // background-size: calc(100% - 50px);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 110vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+
+}
+
 .error {
   &-container {
     top: -10px;
-    height: 150vh;
+    height: 200vh;
     overflow: hidden;
   }
 
   &-img {
-    background-image: url("../../../../assets/img/tetris-errors.jpg");
-    background-position: 50% 100%;
-    // background-size: calc(100% - 50px);
-    background-repeat: no-repeat;
-    height: 110vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
+    // background-image: url("../../../../assets/img/tetris-errors.jpg");
+    background-image: url("../../../../assets/img/tetris-background-1.png");
+  }
+  
+  &-img-2 {
+    // background-image: url("../../../../assets/img//mountains.png");
+    background-image: url("../../../../assets/img/tetris-background-2.png");
+    // top: 40%;
   }
 
-  &-img-2 {
-    background-image: url("../../../../assets/img//mountains.png");
-    background-position: 50% 100%;
-    // background-size: calc(100% - 50px);
-    background-repeat: no-repeat;
-    height: 110vh;
-    width: 100vw;
-    position: fixed;
-    top: 40%;
+  &-img-3 {
+    background-image: url("../../../../assets/img/tetris-background-3.png");
+  }
+
+  &-img-4 {
+    background-image: url("../../../../assets/img/tetris-background-4.png");
+  }
+
+  &-img-5 {
+    background-image: url("../../../../assets/img/tetris-background-5.png");
   }
 
   &-text {
@@ -214,7 +227,7 @@
 
 .shop {
   &__wrapper {
-    height: 101vh;
+    height: 110vh;
     width: 100%;
     background-color: styles.$background-color;
     z-index: 3;
@@ -268,6 +281,88 @@
       top: 21%;
       right: 25%;
     }
+  }
+}
+
+
+.changelog {
+  &__wrapper {
+    height: 110vh;
+    width: 100%;
+    background-color: styles.$background-color;
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
+    
+    &__text {
+      height: 100%;
+      width: 100%;
+      // background-color: rgba(0, 0, 0, 0.2);
+
+      & h5 {
+        // margin-top: 5rem;
+        margin: 4rem 0 1.5rem 0;
+      }
+      
+      & ul {
+        
+        & li {
+          list-style: none;
+          margin-bottom: 1.1rem;
+          
+          & span {
+            color: black;
+            padding: 0.08rem 0.6rem 0.15rem 0.6rem;
+            border-radius: 1rem;
+            font-size: smaller;
+            margin-right: 0.3rem;
+          }
+
+          & .new {
+            background-color: styles.$theme;
+          }
+          
+          & .improved {
+            background-color: styles.$gold;
+          }
+          
+          & .fixed {
+            background-color: styles.$silver;
+          }
+        }
+      }
+
+      // .buy {
+      //   padding: 0.4rem 1rem;
+      //   margin-top: 0.5rem;
+      //   color: styles.$black;
+      //   text-decoration: none;
+      //   background: styles.$gold;
+      //   border-radius: 30px;
+      //   font-size: 0.8rem;
+      //   text-transform: uppercase;
+      //   letter-spacing: 1px;
+      // }
+    }
+
+    &__cards {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      // background-color: rgba(0, 0, 0, 0.2);
+      // margin: 0 auto;
+    }
+  }
+
+  &__card {
+    // height: 15rem;
+
+    &__wrapper-1 {
+      // position: absolute;
+      // top: 5%;
+      // right: 35%;
+    }
+
   }
 }
 
