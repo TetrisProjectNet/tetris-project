@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { User } from '../model/user';
 
 @Injectable({
   providedIn: 'root'
@@ -44,12 +45,12 @@ export class BaseService<T extends { id?: string }> {
     return this.http.delete<T>(`${this.apiUrl}${this.entity}/${id}`);
   }
 
-  ban(id: string): Observable<T> {
-    return this.http.patch<T>(`${this.apiUrl}${this.entity}/${id}`, {'banned': true});
+  ban(entity: T): Observable<T> {
+    return this.http.patch<T>(`${this.apiUrl}${this.entity}/${entity.id}`, entity);
   }
 
-  unban(id: string): Observable<T> {
-    return this.http.patch<T>(`${this.apiUrl}${this.entity}/${id}`, {'banned': false});
+  unban(entity: T): Observable<T> {
+    return this.http.patch<T>(`${this.apiUrl}${this.entity}/${entity.id}`, entity);
   }
 
 }

@@ -149,10 +149,10 @@ export class ShopComponent implements OnInit {
     }
   }
 
-  onBanOne(id: string): void {
+  onBanOne(shopItem: ShopItem): void {
     if (window.confirm('Are you sure about banning this item from the shop?')) {
       this.shopService
-        .ban(id)
+        .ban(shopItem)
         .subscribe({
           error: () =>
           this.onDanger('We could not ban this shop item.<br>Please try again later!', 'Something went wrong.'),
@@ -164,10 +164,10 @@ export class ShopComponent implements OnInit {
     }
   }
 
-  onUnbanOne(id: string): void {
+  onUnbanOne(shopItem: ShopItem): void {
     if (window.confirm('Are you sure about unbanning this item?')) {
       this.shopService
-        .unban(id)
+        .unban(shopItem)
         .subscribe({
           error: () =>
           this.onDanger('We could not unban this shop item.<br>Please try again later!', 'Something went wrong.'),
@@ -179,11 +179,11 @@ export class ShopComponent implements OnInit {
       }
   }
 
-  checkValue(value: any, id: string) {
+  checkValue(value: any, shopItem: ShopItem) {
     if (value === 'true') {
-      this.onBanOne(id)
+      this.onBanOne(shopItem)
     } else {
-      this.onUnbanOne(id);
+      this.onUnbanOne(shopItem);
     }
   }
 

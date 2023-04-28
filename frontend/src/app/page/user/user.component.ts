@@ -216,10 +216,10 @@ export class UserComponent implements OnInit {
     }
   }
 
-  onBanOne(id: string): void {
+  onBanOne(user: User): void {
     if (window.confirm('Are you sure about banning this user?')) {
       this.userService
-        .ban(id)
+        .ban(user)
         .subscribe({
           error: () =>
           this.onDanger('We could not ban this user.<br>Please try again later!', 'Something went wrong.'),
@@ -231,10 +231,10 @@ export class UserComponent implements OnInit {
     }
   }
 
-  onUnbanOne(id: string): void {
+  onUnbanOne(user: User): void {
     if (window.confirm('Are you sure about unbanning this user?')) {
       this.userService
-        .unban(id)
+        .unban(user)
         .subscribe({
           error: () =>
           this.onDanger('We could not unban this user.<br>Please try again later!', 'Something went wrong.'),
@@ -246,11 +246,11 @@ export class UserComponent implements OnInit {
     }
   }
 
-  checkValue(value: any, id: string) {
+  checkValue(value: any, user: User) {
     if (value === 'true') {
-      this.onBanOne(id);
+      this.onBanOne(user);
     } else {
-      this.onUnbanOne(id);
+      this.onUnbanOne(user);
     }
   }
 

@@ -172,7 +172,7 @@
             <td *ngIf="col.key==='scores' || col.key==='shopItems' || col.key==='friends'">{{ user[col.key]?.length }}
             </td>
             <td *ngIf="col.key==='banned'">
-              <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
+              <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user)"
                 type="checkbox" name="" />
             </td>
             <!-- <td>{{ user.scores.length }}</td>

@@ -153,27 +153,27 @@ export class UserEditorComponent {
     }
   }
 
-  onBanOne(id: string): void {
+  onBanOne(user: User): void {
     if (window.confirm('Are you sure about banning this user?')) {
       this.userService
-        .ban(id)
-        .subscribe(() => (this.user$ = this.userService.get(id)));
+        .ban(user)
+        .subscribe(() => (this.user$ = this.userService.get(user.id)));
     }
   }
 
-  onUnbanOne(id: string): void {
+  onUnbanOne(user: User): void {
     if (window.confirm('Are you sure about unbanning this user?')) {
       this.userService
-        .unban(id)
-        .subscribe(() => (this.user$ = this.userService.get(id)));
+        .unban(user)
+        .subscribe(() => (this.user$ = this.userService.get(user.id)));
     }
   }
 
-  checkValue(value: any, id: string) {
+  checkValue(value: any, user: User) {
     if (value === 'true') {
-      this.onBanOne(id)
+      this.onBanOne(user)
     } else {
-      this.onUnbanOne(id);
+      this.onUnbanOne(user);
     }
   }
 
