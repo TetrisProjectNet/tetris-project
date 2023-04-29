@@ -26,6 +26,9 @@ export class UserEditorComponent {
       return of(new User())
     })
   );
+  loggedUser$ = this.authService.loggedUser$;
+
+  isAdmin: boolean = false;
 
   isButtonDisabled: boolean = true;
 
@@ -55,7 +58,17 @@ export class UserEditorComponent {
     faConfig.fixedWidth = false;
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    if (this.loggedUser$) {
+      this.loggedUser$.subscribe({
+        next: (data: any) => {
+          if (data?.role == 'admin') {
+            this.isAdmin = true;
+          }
+        }
+      })
+    }
+  }
 
   ngAfterViewInit() {
   //   this.inputs.changes.subscribe(sub => {

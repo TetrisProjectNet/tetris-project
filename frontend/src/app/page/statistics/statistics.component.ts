@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket, faStar } from '@fortawesome/free-solid-svg-icons';
 import { UserService } from 'src/app/service/user.service';
 import * as AOS from 'aos';
 import { ChartOptions } from 'chart.js/dist/types/index';
@@ -33,7 +33,7 @@ export class StatisticsComponent implements OnInit {
     hoverOffset: 10,
     borderRadius: 0,
   } ];
-  pieChartLegend = false;
+  pieChartLegend = true;
   pieChartPlugins = [];
   // borderWidth = 0;
 
@@ -71,6 +71,7 @@ export class StatisticsComponent implements OnInit {
 
 
   faStar = faStar;
+  faRightToBracket = faRightToBracket;
 
   constructor(
     private userService: UserService,
@@ -80,7 +81,7 @@ export class StatisticsComponent implements OnInit {
   ngOnInit(): void {
     AOS.init({
       duration: 600,
-      offset: 130,
+      offset: 0,
       easing: 'ease-in-sine',
       anchorPlacement: 'bottom-bottom',
     });
