@@ -22,7 +22,6 @@ namespace tetris_backend.Controllers
             }
 
             return code;
-
         }
 
         private readonly VerificationService _verificationService;
@@ -58,17 +57,6 @@ namespace tetris_backend.Controllers
         public async Task<ActionResult<Verification>> GetBasedOnEmail(string email)
         {
             var verification = await _verificationService.GetBasedOnEmailAsync(email);
-
-            //if (true)
-            //{
-            //    EmailService emailService = new EmailService(_config);
-            //    EmailDto emailDto = new EmailDto();
-            //    emailDto.To = email;
-            //    emailDto.Subject = "Hello!";
-            //    emailDto.Body = "This is sent from backend.";
-            //    emailService.SendEmail(emailDto);
-            //    //return null;
-            //}
 
             return verification;            
         }

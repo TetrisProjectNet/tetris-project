@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using tetris_backend.Models;
 using tetris_backend.Services;
 
@@ -33,6 +35,7 @@ namespace tetris_backend.Controllers
         }
 
 
+        [Authorize(Roles = "admin")]
         [HttpPost]
         public async Task<IActionResult> Post(ShopItem newShopItem)
         {
@@ -42,6 +45,7 @@ namespace tetris_backend.Controllers
         }
 
 
+        [Authorize(Roles = "admin")]
         [HttpPatch("{id:length(24)}")]
         public async Task<IActionResult> Update(string id, ShopItem updatedShopItem)
         {
@@ -60,6 +64,7 @@ namespace tetris_backend.Controllers
         }
 
 
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id:length(24)}")]
         public async Task<IActionResult> Delete(string id)
         {

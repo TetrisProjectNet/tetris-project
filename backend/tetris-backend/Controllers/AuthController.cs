@@ -127,8 +127,6 @@ namespace tetris_backend.Controllers
             await _userService.CreateAsync(userDB);
 
             return Ok(userDB);
-
-            //return CreatedAtAction(nameof(UserController.Get), new { id = userDB.id }, userDB);
         }
 
 
@@ -184,6 +182,8 @@ namespace tetris_backend.Controllers
             return Ok(token);
         }
 
+
+        [Authorize]
         [HttpPost("refresh-token")]
         public async Task<ActionResult<string>> RefreshToken(string id)
         {

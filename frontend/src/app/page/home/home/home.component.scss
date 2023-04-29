@@ -72,7 +72,7 @@
     // background-image: url("../../../../assets/img/tetris-errors.jpg");
     background-image: url("../../../../assets/img/tetris-background-1.png");
   }
-  
+
   &-img-2 {
     // background-image: url("../../../../assets/img//mountains.png");
     background-image: url("../../../../assets/img/tetris-background-2.png");
@@ -303,7 +303,7 @@
     z-index: 3;
     position: relative;
     overflow: hidden;
-    
+
     &__text {
       height: 100%;
       width: 100%;
@@ -313,13 +313,13 @@
         // margin-top: 5rem;
         margin: 1.5rem 0 0.7em 0;
       }
-      
+
       & ul {
-        
+
         & li {
           list-style: none;
           margin-bottom: 1.1rem;
-          
+
           & span {
             color: black;
             padding: 0.08rem 0.6rem 0.15rem 0.6rem;
@@ -331,11 +331,11 @@
           & .new {
             background-color: styles.$theme;
           }
-          
+
           & .improved {
             background-color: styles.$gold;
           }
-          
+
           & .fixed {
             background-color: styles.$silver;
           }
@@ -368,7 +368,7 @@
     z-index: 3;
     position: relative;
     overflow: hidden;
-    
+
     &__text {
       height: 100%;
       width: 100%;
@@ -378,13 +378,13 @@
         // margin-top: 5rem;
         margin: 1.5rem 0 0.7em 0;
       }
-      
+
       & ul {
-        
+
         & li {
           list-style: none;
           margin-bottom: 1.1rem;
-          
+
           & span {
             color: black;
             padding: 0.08rem 0.6rem 0.15rem 0.6rem;
@@ -396,11 +396,11 @@
           & .new {
             background-color: styles.$theme;
           }
-          
+
           & .improved {
             background-color: styles.$gold;
           }
-          
+
           & .fixed {
             background-color: styles.$silver;
           }

@@ -40,8 +40,8 @@
           [type]="'password'"
           [name]="'password'"
           [labelContent]="'Password'"
-          [pattern]="'^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{4,30}$'"
-          [validGuide]="'Lower case, upper case letter & digit!'"
+          [pattern]="'^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,30}$'"
+          [validGuide]="'Min. 6 chars, lower case, upper case letter & digit!'"
           (isValidEvent)="getValidationData($event)"
         ></app-floating-label-input>
       </div>
@@ -54,7 +54,7 @@
           [type]="'password'"
           [name]="'password-again'"
           [labelContent]="'Password again'"
-          [pattern]="'^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{4,30}$'"
+          [pattern]="'^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,30}$'"
           [validGuide]="'Two passwords must be the same!'"
           (isValidEvent)="getValidationData($event)"
           [firstPassword]="passwordInput.inputModel"

@@ -1,8 +1,8 @@
 import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { faAngular, faGithub, faGoogle, faInstagram, faLinkedinIn, faSass, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faDatabase, faGamepad, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons';
+import { faAngular, faBootstrap, faFontAwesome, faGithub, faGoogle, faInstagram, faLinkedinIn, faSass, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faChartPie, faCode, faDatabase, faGamepad, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpen, faFileCode } from '@fortawesome/free-regular-svg-icons';
 import { FaConfig } from '@fortawesome/angular-fontawesome';
 import { NgxPopperjsTriggers, NgxPopperjsPlacements } from 'ngx-popperjs';
 
@@ -57,6 +57,10 @@ export class FooterComponent implements OnInit {
   faDatabase = faDatabase;
   faCode = faCode;
   faGamepad = faGamepad;
+  faFileCode = faFileCode;
+  faFontAwesome = faFontAwesome;
+  faBootstrap = faBootstrap;
+  faChartPie = faChartPie;
 
   isOpen = true;
 

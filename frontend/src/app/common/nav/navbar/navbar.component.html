@@ -52,7 +52,7 @@
         </li>
         <li *ngIf="!loggedObject.user" class="nav-item">
           <a class="nav-link" [routerLink]="['/signup']" routerLinkActive="active-link" data-bs-toggle="collapse"
-            data-bs-target=".navbar-collapse.show">Sign up</a>
+            data-bs-target=".navbar-collapse.show">Sign-up</a>
         </li>
         <li *ngIf="loggedObject.user?.role=='admin'" class="nav-item">
           <a class="nav-link" [routerLink]="['/user']" routerLinkActive="active-link" data-bs-toggle="collapse"
