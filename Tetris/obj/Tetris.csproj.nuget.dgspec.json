@@ -98,6 +98,14 @@
               "target": "Package",
               "version": "[7.0.59, )"
             },
+            "SharpHook": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "SharpHook.Reactive": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.3, )"
@@ -240,6 +248,14 @@
               "target": "Package",
               "version": "[7.0.59, )"
             },
+            "SharpHook": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "SharpHook.Reactive": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.3, )"
@@ -326,6 +342,14 @@
             "Microsoft.Maui.Graphics.Skia": {
               "target": "Package",
               "version": "[7.0.59, )"
+            },
+            "SharpHook": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "SharpHook.Reactive": {
+              "target": "Package",
+              "version": "[4.2.0, )"
             },
             "SkiaSharp": {
               "target": "Package",
@@ -430,6 +454,14 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "SharpHook": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "SharpHook.Reactive": {
+              "target": "Package",
+              "version": "[4.2.0, )"
             },
             "SkiaSharp": {
               "target": "Package",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zwtDfI0TjvuQUXGuF8TYgOznXbWVEegfYzdrcQJ9qCYCUwa3Cdb8kDMhXJ7Zu+PsTMsuHdBmxK/c3ZYhfkNeiQ==",
+  "dgSpecHash": "F3abGbqh4AY6aX2qO1FYIREU2kuMPq+v3xt98oey3akWQteJDylK/VdKcFXlIaQab0CTw/BJ8IbsTtBiwGMSyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hunter\\source\\repos\\TetrisGame\\tetris-project\\Tetris\\Tetris.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,8 @@
     "C:\\Users\\Hunter\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\opentk\\3.1.0\\opentk.3.1.0.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\opentk.glcontrol\\3.1.0\\opentk.glcontrol.3.1.0.nupkg.sha512",
+    "C:\\Users\\Hunter\\.nuget\\packages\\sharphook\\4.2.0\\sharphook.4.2.0.nupkg.sha512",
+    "C:\\Users\\Hunter\\.nuget\\packages\\sharphook.reactive\\4.2.0\\sharphook.reactive.4.2.0.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\skiasharp\\2.88.3\\skiasharp.2.88.3.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\skiasharp.nativeassets.android\\2.88.3\\skiasharp.nativeassets.android.2.88.3.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\skiasharp.nativeassets.ios\\2.88.3\\skiasharp.nativeassets.ios.2.88.3.nupkg.sha512",
@@ -40,6 +42,7 @@
     "C:\\Users\\Hunter\\.nuget\\packages\\skiasharp.views.winui\\2.88.3\\skiasharp.views.winui.2.88.3.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\skiasharp.views.wpf\\2.88.3\\skiasharp.views.wpf.2.88.3.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512",
+    "C:\\Users\\Hunter\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\winuiex\\2.1.0\\winuiex.2.1.0.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\Hunter\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",

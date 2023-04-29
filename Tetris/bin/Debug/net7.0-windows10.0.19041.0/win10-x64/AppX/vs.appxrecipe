@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-29T15:25:39.933</Modified>
+      <Modified>2023-04-29T23:43:56.133</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-29T15:22:51.865</Modified>
+      <Modified>2023-04-29T23:43:54.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.runtimeconfig.json">
       <PackagePath>Tetris.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-28T19:57:21.297</Modified>
+      <Modified>2023-04-29T23:43:54.348</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.dll">
       <PackagePath>Tetris.dll</PackagePath>
-      <Modified>2023-04-29T15:25:37.513</Modified>
+      <Modified>2023-04-29T23:34:53.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Tetris.exe</PackagePath>
-      <Modified>2023-04-29T15:25:37.544</Modified>
+      <Modified>2023-04-29T23:34:53.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -57,10 +57,6 @@
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.VisualBasic.Core.dll">
       <PackagePath>Microsoft.VisualBasic.Core.dll</PackagePath>
       <Modified>2023-02-16T01:18:04.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.VisualBasic.dll">
-      <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
-      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
@@ -189,10 +185,6 @@
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Drawing.Primitives.dll">
       <PackagePath>System.Drawing.Primitives.dll</PackagePath>
       <Modified>2023-02-16T01:19:18.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Drawing.dll">
-      <PackagePath>System.Drawing.dll</PackagePath>
-      <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Dynamic.Runtime.dll">
       <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
@@ -710,10 +702,6 @@
       <PackagePath>System.dll</PackagePath>
       <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\WindowsBase.dll">
-      <PackagePath>WindowsBase.dll</PackagePath>
-      <Modified>2023-02-16T00:43:58.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\mscorlib.dll">
       <PackagePath>mscorlib.dll</PackagePath>
       <Modified>2023-02-16T00:43:58.000</Modified>
@@ -721,6 +709,222 @@
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\netstandard.dll">
       <PackagePath>netstandard.dll</PackagePath>
       <Modified>2023-02-16T00:43:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Accessibility.dll">
+      <PackagePath>Accessibility.dll</PackagePath>
+      <Modified>2023-02-17T20:22:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\DirectWriteForwarder.dll">
+      <PackagePath>DirectWriteForwarder.dll</PackagePath>
+      <Modified>2023-02-18T17:34:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.VisualBasic.Forms.dll">
+      <PackagePath>Microsoft.VisualBasic.Forms.dll</PackagePath>
+      <Modified>2023-02-18T17:34:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.VisualBasic.dll">
+      <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
+      <Modified>2023-02-17T20:23:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.Win32.Registry.AccessControl.dll">
+      <PackagePath>Microsoft.Win32.Registry.AccessControl.dll</PackagePath>
+      <Modified>2023-02-18T17:34:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
+      <Modified>2023-02-18T17:34:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationCore.dll">
+      <PackagePath>PresentationCore.dll</PackagePath>
+      <Modified>2023-02-18T17:34:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework-SystemCore.dll">
+      <PackagePath>PresentationFramework-SystemCore.dll</PackagePath>
+      <Modified>2023-02-18T17:34:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework-SystemData.dll">
+      <PackagePath>PresentationFramework-SystemData.dll</PackagePath>
+      <Modified>2023-02-18T17:34:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework-SystemDrawing.dll">
+      <PackagePath>PresentationFramework-SystemDrawing.dll</PackagePath>
+      <Modified>2023-02-18T17:34:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework-SystemXml.dll">
+      <PackagePath>PresentationFramework-SystemXml.dll</PackagePath>
+      <Modified>2023-02-18T17:34:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework-SystemXmlLinq.dll">
+      <PackagePath>PresentationFramework-SystemXmlLinq.dll</PackagePath>
+      <Modified>2023-02-18T17:34:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework.Aero.dll">
+      <PackagePath>PresentationFramework.Aero.dll</PackagePath>
+      <Modified>2023-02-18T17:34:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework.Aero2.dll">
+      <PackagePath>PresentationFramework.Aero2.dll</PackagePath>
+      <Modified>2023-02-18T17:34:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework.AeroLite.dll">
+      <PackagePath>PresentationFramework.AeroLite.dll</PackagePath>
+      <Modified>2023-02-18T17:34:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework.Classic.dll">
+      <PackagePath>PresentationFramework.Classic.dll</PackagePath>
+      <Modified>2023-02-18T17:34:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework.Luna.dll">
+      <PackagePath>PresentationFramework.Luna.dll</PackagePath>
+      <Modified>2023-02-18T17:34:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework.Royale.dll">
+      <PackagePath>PresentationFramework.Royale.dll</PackagePath>
+      <Modified>2023-02-18T17:34:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationFramework.dll">
+      <PackagePath>PresentationFramework.dll</PackagePath>
+      <Modified>2023-02-18T17:34:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\PresentationUI.dll">
+      <PackagePath>PresentationUI.dll</PackagePath>
+      <Modified>2023-02-18T17:34:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ReachFramework.dll">
+      <PackagePath>ReachFramework.dll</PackagePath>
+      <Modified>2023-02-18T17:34:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
+      <Modified>2023-02-18T17:34:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
+      <Modified>2023-02-18T17:34:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Design.dll">
+      <PackagePath>System.Design.dll</PackagePath>
+      <Modified>2023-02-17T20:24:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.EventLog.Messages.dll">
+      <PackagePath>System.Diagnostics.EventLog.Messages.dll</PackagePath>
+      <Modified>2023-02-16T00:42:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.EventLog.dll">
+      <PackagePath>System.Diagnostics.EventLog.dll</PackagePath>
+      <Modified>2023-02-18T17:34:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Diagnostics.PerformanceCounter.dll">
+      <PackagePath>System.Diagnostics.PerformanceCounter.dll</PackagePath>
+      <Modified>2023-02-18T17:34:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.DirectoryServices.dll">
+      <PackagePath>System.DirectoryServices.dll</PackagePath>
+      <Modified>2023-02-18T17:34:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2023-02-18T17:34:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Drawing.Design.dll">
+      <PackagePath>System.Drawing.Design.dll</PackagePath>
+      <Modified>2023-02-17T20:24:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Drawing.dll">
+      <PackagePath>System.Drawing.dll</PackagePath>
+      <Modified>2023-02-17T20:24:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.IO.Packaging.dll">
+      <PackagePath>System.IO.Packaging.dll</PackagePath>
+      <Modified>2023-02-18T17:34:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Printing.dll">
+      <PackagePath>System.Printing.dll</PackagePath>
+      <Modified>2023-02-18T17:34:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Resources.Extensions.dll">
+      <PackagePath>System.Resources.Extensions.dll</PackagePath>
+      <Modified>2023-02-18T17:34:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Pkcs.dll">
+      <PackagePath>System.Security.Cryptography.Pkcs.dll</PackagePath>
+      <Modified>2023-02-18T17:34:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
+      <Modified>2023-02-18T17:34:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Cryptography.Xml.dll">
+      <PackagePath>System.Security.Cryptography.Xml.dll</PackagePath>
+      <Modified>2023-02-18T17:34:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Security.Permissions.dll">
+      <PackagePath>System.Security.Permissions.dll</PackagePath>
+      <Modified>2023-02-18T17:34:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Threading.AccessControl.dll">
+      <PackagePath>System.Threading.AccessControl.dll</PackagePath>
+      <Modified>2023-02-18T17:34:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.Controls.Ribbon.dll">
+      <PackagePath>System.Windows.Controls.Ribbon.dll</PackagePath>
+      <Modified>2023-02-18T17:34:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.Extensions.dll">
+      <PackagePath>System.Windows.Extensions.dll</PackagePath>
+      <Modified>2023-02-18T17:34:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.Forms.Design.Editors.dll">
+      <PackagePath>System.Windows.Forms.Design.Editors.dll</PackagePath>
+      <Modified>2023-02-17T20:24:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.Forms.Design.dll">
+      <PackagePath>System.Windows.Forms.Design.dll</PackagePath>
+      <Modified>2023-02-18T17:34:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.Forms.Primitives.dll">
+      <PackagePath>System.Windows.Forms.Primitives.dll</PackagePath>
+      <Modified>2023-02-18T17:34:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.Forms.dll">
+      <PackagePath>System.Windows.Forms.dll</PackagePath>
+      <Modified>2023-02-18T17:34:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.Input.Manipulations.dll">
+      <PackagePath>System.Windows.Input.Manipulations.dll</PackagePath>
+      <Modified>2023-02-18T17:34:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Windows.Presentation.dll">
+      <PackagePath>System.Windows.Presentation.dll</PackagePath>
+      <Modified>2023-02-18T17:34:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\System.Xaml.dll">
+      <PackagePath>System.Xaml.dll</PackagePath>
+      <Modified>2023-02-18T17:34:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\UIAutomationClient.dll">
+      <PackagePath>UIAutomationClient.dll</PackagePath>
+      <Modified>2023-02-18T17:34:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\UIAutomationClientSideProviders.dll">
+      <PackagePath>UIAutomationClientSideProviders.dll</PackagePath>
+      <Modified>2023-02-18T17:35:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\UIAutomationProvider.dll">
+      <PackagePath>UIAutomationProvider.dll</PackagePath>
+      <Modified>2023-02-18T17:35:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\UIAutomationTypes.dll">
+      <PackagePath>UIAutomationTypes.dll</PackagePath>
+      <Modified>2023-02-18T17:35:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\WindowsBase.dll">
+      <PackagePath>WindowsBase.dll</PackagePath>
+      <Modified>2023-02-18T17:35:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\WindowsFormsIntegration.dll">
+      <PackagePath>WindowsFormsIntegration.dll</PackagePath>
+      <Modified>2023-02-18T17:35:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Runtime.win\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.dll">
       <PackagePath>Microsoft.Maui.dll</PackagePath>
@@ -798,6 +1002,910 @@
       <PackagePath>msquic.dll</PackagePath>
       <Modified>2023-02-16T00:43:58.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\D3DCompiler_47_cor3.dll">
+      <PackagePath>D3DCompiler_47_cor3.dll</PackagePath>
+      <Modified>2022-10-19T14:45:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\PenImc_cor3.dll">
+      <PackagePath>PenImc_cor3.dll</PackagePath>
+      <Modified>2023-02-17T22:18:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\PresentationNative_cor3.dll">
+      <PackagePath>PresentationNative_cor3.dll</PackagePath>
+      <Modified>2022-10-07T03:04:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\vcruntime140_cor3.dll">
+      <PackagePath>vcruntime140_cor3.dll</PackagePath>
+      <Modified>2023-02-08T11:35:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\native\wpfgfx_cor3.dll">
+      <PackagePath>wpfgfx_cor3.dll</PackagePath>
+      <Modified>2023-02-17T22:20:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>cs\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\PresentationCore.resources.dll">
+      <PackagePath>cs\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\PresentationFramework.resources.dll">
+      <PackagePath>cs\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\PresentationUI.resources.dll">
+      <PackagePath>cs\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\ReachFramework.resources.dll">
+      <PackagePath>cs\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>cs\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>cs\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>cs\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\System.Windows.Forms.resources.dll">
+      <PackagePath>cs\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>cs\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\System.Xaml.resources.dll">
+      <PackagePath>cs\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\UIAutomationClient.resources.dll">
+      <PackagePath>cs\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>cs\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\UIAutomationProvider.resources.dll">
+      <PackagePath>cs\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\UIAutomationTypes.resources.dll">
+      <PackagePath>cs\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\WindowsBase.resources.dll">
+      <PackagePath>cs\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\cs\WindowsFormsIntegration.resources.dll">
+      <PackagePath>cs\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>de\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\PresentationCore.resources.dll">
+      <PackagePath>de\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\PresentationFramework.resources.dll">
+      <PackagePath>de\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\PresentationUI.resources.dll">
+      <PackagePath>de\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\ReachFramework.resources.dll">
+      <PackagePath>de\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>de\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>de\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>de\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\System.Windows.Forms.resources.dll">
+      <PackagePath>de\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>de\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\System.Xaml.resources.dll">
+      <PackagePath>de\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\UIAutomationClient.resources.dll">
+      <PackagePath>de\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>de\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\UIAutomationProvider.resources.dll">
+      <PackagePath>de\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\UIAutomationTypes.resources.dll">
+      <PackagePath>de\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\WindowsBase.resources.dll">
+      <PackagePath>de\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\de\WindowsFormsIntegration.resources.dll">
+      <PackagePath>de\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>es\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\PresentationCore.resources.dll">
+      <PackagePath>es\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\PresentationFramework.resources.dll">
+      <PackagePath>es\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\PresentationUI.resources.dll">
+      <PackagePath>es\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\ReachFramework.resources.dll">
+      <PackagePath>es\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>es\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>es\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>es\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\System.Windows.Forms.resources.dll">
+      <PackagePath>es\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>es\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\System.Xaml.resources.dll">
+      <PackagePath>es\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\UIAutomationClient.resources.dll">
+      <PackagePath>es\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>es\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\UIAutomationProvider.resources.dll">
+      <PackagePath>es\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\UIAutomationTypes.resources.dll">
+      <PackagePath>es\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\WindowsBase.resources.dll">
+      <PackagePath>es\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\es\WindowsFormsIntegration.resources.dll">
+      <PackagePath>es\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>fr\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\PresentationCore.resources.dll">
+      <PackagePath>fr\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\PresentationFramework.resources.dll">
+      <PackagePath>fr\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\PresentationUI.resources.dll">
+      <PackagePath>fr\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\ReachFramework.resources.dll">
+      <PackagePath>fr\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>fr\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>fr\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>fr\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\System.Windows.Forms.resources.dll">
+      <PackagePath>fr\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>fr\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\System.Xaml.resources.dll">
+      <PackagePath>fr\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\UIAutomationClient.resources.dll">
+      <PackagePath>fr\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>fr\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\UIAutomationProvider.resources.dll">
+      <PackagePath>fr\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\UIAutomationTypes.resources.dll">
+      <PackagePath>fr\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\WindowsBase.resources.dll">
+      <PackagePath>fr\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\fr\WindowsFormsIntegration.resources.dll">
+      <PackagePath>fr\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>it\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\PresentationCore.resources.dll">
+      <PackagePath>it\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\PresentationFramework.resources.dll">
+      <PackagePath>it\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\PresentationUI.resources.dll">
+      <PackagePath>it\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\ReachFramework.resources.dll">
+      <PackagePath>it\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>it\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>it\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>it\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\System.Windows.Forms.resources.dll">
+      <PackagePath>it\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>it\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\System.Xaml.resources.dll">
+      <PackagePath>it\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\UIAutomationClient.resources.dll">
+      <PackagePath>it\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>it\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\UIAutomationProvider.resources.dll">
+      <PackagePath>it\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\UIAutomationTypes.resources.dll">
+      <PackagePath>it\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\WindowsBase.resources.dll">
+      <PackagePath>it\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\it\WindowsFormsIntegration.resources.dll">
+      <PackagePath>it\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>ja\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\PresentationCore.resources.dll">
+      <PackagePath>ja\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\PresentationFramework.resources.dll">
+      <PackagePath>ja\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\PresentationUI.resources.dll">
+      <PackagePath>ja\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\ReachFramework.resources.dll">
+      <PackagePath>ja\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>ja\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>ja\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>ja\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\System.Windows.Forms.resources.dll">
+      <PackagePath>ja\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>ja\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\System.Xaml.resources.dll">
+      <PackagePath>ja\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\UIAutomationClient.resources.dll">
+      <PackagePath>ja\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>ja\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\UIAutomationProvider.resources.dll">
+      <PackagePath>ja\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\UIAutomationTypes.resources.dll">
+      <PackagePath>ja\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\WindowsBase.resources.dll">
+      <PackagePath>ja\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ja\WindowsFormsIntegration.resources.dll">
+      <PackagePath>ja\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>ko\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\PresentationCore.resources.dll">
+      <PackagePath>ko\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\PresentationFramework.resources.dll">
+      <PackagePath>ko\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\PresentationUI.resources.dll">
+      <PackagePath>ko\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\ReachFramework.resources.dll">
+      <PackagePath>ko\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>ko\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>ko\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>ko\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\System.Windows.Forms.resources.dll">
+      <PackagePath>ko\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>ko\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\System.Xaml.resources.dll">
+      <PackagePath>ko\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\UIAutomationClient.resources.dll">
+      <PackagePath>ko\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>ko\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\UIAutomationProvider.resources.dll">
+      <PackagePath>ko\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\UIAutomationTypes.resources.dll">
+      <PackagePath>ko\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\WindowsBase.resources.dll">
+      <PackagePath>ko\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ko\WindowsFormsIntegration.resources.dll">
+      <PackagePath>ko\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>pl\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\PresentationCore.resources.dll">
+      <PackagePath>pl\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\PresentationFramework.resources.dll">
+      <PackagePath>pl\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\PresentationUI.resources.dll">
+      <PackagePath>pl\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\ReachFramework.resources.dll">
+      <PackagePath>pl\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>pl\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>pl\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>pl\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\System.Windows.Forms.resources.dll">
+      <PackagePath>pl\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>pl\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\System.Xaml.resources.dll">
+      <PackagePath>pl\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\UIAutomationClient.resources.dll">
+      <PackagePath>pl\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>pl\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\UIAutomationProvider.resources.dll">
+      <PackagePath>pl\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\UIAutomationTypes.resources.dll">
+      <PackagePath>pl\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\WindowsBase.resources.dll">
+      <PackagePath>pl\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pl\WindowsFormsIntegration.resources.dll">
+      <PackagePath>pl\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>pt-BR\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\PresentationCore.resources.dll">
+      <PackagePath>pt-BR\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\PresentationFramework.resources.dll">
+      <PackagePath>pt-BR\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\PresentationUI.resources.dll">
+      <PackagePath>pt-BR\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\ReachFramework.resources.dll">
+      <PackagePath>pt-BR\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>pt-BR\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>pt-BR\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>pt-BR\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\System.Windows.Forms.resources.dll">
+      <PackagePath>pt-BR\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>pt-BR\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\System.Xaml.resources.dll">
+      <PackagePath>pt-BR\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\UIAutomationClient.resources.dll">
+      <PackagePath>pt-BR\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>pt-BR\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\UIAutomationProvider.resources.dll">
+      <PackagePath>pt-BR\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\UIAutomationTypes.resources.dll">
+      <PackagePath>pt-BR\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\WindowsBase.resources.dll">
+      <PackagePath>pt-BR\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\pt-BR\WindowsFormsIntegration.resources.dll">
+      <PackagePath>pt-BR\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>ru\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\PresentationCore.resources.dll">
+      <PackagePath>ru\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\PresentationFramework.resources.dll">
+      <PackagePath>ru\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\PresentationUI.resources.dll">
+      <PackagePath>ru\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\ReachFramework.resources.dll">
+      <PackagePath>ru\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>ru\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>ru\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>ru\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\System.Windows.Forms.resources.dll">
+      <PackagePath>ru\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>ru\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\System.Xaml.resources.dll">
+      <PackagePath>ru\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\UIAutomationClient.resources.dll">
+      <PackagePath>ru\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>ru\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\UIAutomationProvider.resources.dll">
+      <PackagePath>ru\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\UIAutomationTypes.resources.dll">
+      <PackagePath>ru\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\WindowsBase.resources.dll">
+      <PackagePath>ru\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\ru\WindowsFormsIntegration.resources.dll">
+      <PackagePath>ru\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>tr\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\PresentationCore.resources.dll">
+      <PackagePath>tr\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\PresentationFramework.resources.dll">
+      <PackagePath>tr\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\PresentationUI.resources.dll">
+      <PackagePath>tr\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\ReachFramework.resources.dll">
+      <PackagePath>tr\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>tr\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>tr\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>tr\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\System.Windows.Forms.resources.dll">
+      <PackagePath>tr\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>tr\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\System.Xaml.resources.dll">
+      <PackagePath>tr\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\UIAutomationClient.resources.dll">
+      <PackagePath>tr\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>tr\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\UIAutomationProvider.resources.dll">
+      <PackagePath>tr\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\UIAutomationTypes.resources.dll">
+      <PackagePath>tr\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\WindowsBase.resources.dll">
+      <PackagePath>tr\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\tr\WindowsFormsIntegration.resources.dll">
+      <PackagePath>tr\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>zh-Hans\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\PresentationCore.resources.dll">
+      <PackagePath>zh-Hans\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\PresentationFramework.resources.dll">
+      <PackagePath>zh-Hans\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\PresentationUI.resources.dll">
+      <PackagePath>zh-Hans\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\ReachFramework.resources.dll">
+      <PackagePath>zh-Hans\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>zh-Hans\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>zh-Hans\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>zh-Hans\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\System.Windows.Forms.resources.dll">
+      <PackagePath>zh-Hans\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>zh-Hans\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\System.Xaml.resources.dll">
+      <PackagePath>zh-Hans\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\UIAutomationClient.resources.dll">
+      <PackagePath>zh-Hans\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>zh-Hans\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\UIAutomationProvider.resources.dll">
+      <PackagePath>zh-Hans\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\UIAutomationTypes.resources.dll">
+      <PackagePath>zh-Hans\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\WindowsBase.resources.dll">
+      <PackagePath>zh-Hans\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hans\WindowsFormsIntegration.resources.dll">
+      <PackagePath>zh-Hans\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>zh-Hant\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\PresentationCore.resources.dll">
+      <PackagePath>zh-Hant\PresentationCore.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\PresentationFramework.resources.dll">
+      <PackagePath>zh-Hant\PresentationFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\PresentationUI.resources.dll">
+      <PackagePath>zh-Hant\PresentationUI.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\ReachFramework.resources.dll">
+      <PackagePath>zh-Hant\ReachFramework.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>zh-Hant\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:22:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>zh-Hant\System.Windows.Forms.Design.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>zh-Hant\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:22:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\System.Windows.Forms.resources.dll">
+      <PackagePath>zh-Hant\System.Windows.Forms.resources.dll</PackagePath>
+      <Modified>2023-02-17T20:23:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>zh-Hant\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\System.Xaml.resources.dll">
+      <PackagePath>zh-Hant\System.Xaml.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:18:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\UIAutomationClient.resources.dll">
+      <PackagePath>zh-Hant\UIAutomationClient.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>zh-Hant\UIAutomationClientSideProviders.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:20:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\UIAutomationProvider.resources.dll">
+      <PackagePath>zh-Hant\UIAutomationProvider.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\UIAutomationTypes.resources.dll">
+      <PackagePath>zh-Hant\UIAutomationTypes.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\WindowsBase.resources.dll">
+      <PackagePath>zh-Hant\WindowsBase.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsdesktop.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\zh-Hant\WindowsFormsIntegration.resources.dll">
+      <PackagePath>zh-Hant\WindowsFormsIntegration.resources.dll</PackagePath>
+      <Modified>2023-02-17T22:21:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.28\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
       <Modified>2022-11-16T01:34:44.000</Modified>
@@ -861,10 +1969,6 @@
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2023-01-19T17:24:14.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.win32.systemevents\4.5.0\runtimes\win\lib\netcoreapp2.0\Microsoft.Win32.SystemEvents.dll">
-      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
-      <Modified>2018-05-15T13:29:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -930,6 +2034,14 @@
       <PackagePath>OpenTK.GLControl.dll</PackagePath>
       <Modified>2019-08-04T15:08:06.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\sharphook\4.2.0\lib\net7.0\SharpHook.dll">
+      <PackagePath>SharpHook.dll</PackagePath>
+      <Modified>2023-04-08T16:45:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\sharphook.reactive\4.2.0\lib\net7.0\SharpHook.Reactive.dll">
+      <PackagePath>SharpHook.Reactive.dll</PackagePath>
+      <Modified>2023-04-08T16:45:54.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp\2.88.3\lib\net6.0\SkiaSharp.dll">
       <PackagePath>SkiaSharp.dll</PackagePath>
       <Modified>2022-10-03T22:36:52.000</Modified>
@@ -966,9 +2078,9 @@
       <PackagePath>SkiaSharp.Views.WPF.dll</PackagePath>
       <Modified>2022-10-03T22:37:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\system.drawing.common\4.5.1\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll">
-      <PackagePath>System.Drawing.Common.dll</PackagePath>
-      <Modified>2018-09-18T19:38:14.000</Modified>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\system.reactive\5.0.0\lib\net5.0-windows10.0.19041\System.Reactive.dll">
+      <PackagePath>System.Reactive.dll</PackagePath>
+      <Modified>2020-11-10T16:22:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\winuiex\2.1.0\lib\net6.0-windows10.0.18362\WinUIEx.dll">
       <PackagePath>WinUIEx.dll</PackagePath>
@@ -982,13 +2094,17 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\sharphook\4.2.0\runtimes\win-x64\native\uiohook.dll">
+      <PackagePath>uiohook.dll</PackagePath>
+      <Modified>2023-04-08T16:43:22.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.nativeassets.win32\2.88.3\runtimes\win-x64\native\libSkiaSharp.dll">
       <PackagePath>libSkiaSharp.dll</PackagePath>
       <Modified>2022-10-03T22:36:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.deps.json">
       <PackagePath>Tetris.deps.json</PackagePath>
-      <Modified>2023-04-29T15:25:39.507</Modified>
+      <Modified>2023-04-29T23:43:55.671</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\winuiex\2.1.0\lib\net6.0-windows10.0.18362\WinUIEx.pri">
       <PackagePath>WinUIEx.pri</PackagePath>
@@ -1064,23 +2180,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-100.png">
       <PackagePath>abstractpaper2.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:29.556</Modified>
+      <Modified>2023-04-29T15:26:51.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-125.png">
       <PackagePath>abstractpaper2.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:31.124</Modified>
+      <Modified>2023-04-29T15:26:52.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-150.png">
       <PackagePath>abstractpaper2.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:33.191</Modified>
+      <Modified>2023-04-29T15:26:54.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-200.png">
       <PackagePath>abstractpaper2.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:36.337</Modified>
+      <Modified>2023-04-29T15:26:57.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-400.png">
       <PackagePath>abstractpaper2.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:47.755</Modified>
+      <Modified>2023-04-29T15:27:09.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
@@ -1464,43 +2580,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-100.png">
       <PackagePath>menubackground.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.711</Modified>
+      <Modified>2023-04-29T15:26:50.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-125.png">
       <PackagePath>menubackground.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:29.076</Modified>
+      <Modified>2023-04-29T15:26:50.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-150.png">
       <PackagePath>menubackground.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:29.542</Modified>
+      <Modified>2023-04-29T15:26:51.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-200.png">
       <PackagePath>menubackground.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:30.271</Modified>
+      <Modified>2023-04-29T15:26:52.085</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-400.png">
       <PackagePath>menubackground.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:33.160</Modified>
+      <Modified>2023-04-29T15:26:54.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-100.png">
       <PackagePath>nnneon.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.560</Modified>
+      <Modified>2023-04-29T15:26:50.219</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-125.png">
       <PackagePath>nnneon.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.751</Modified>
+      <Modified>2023-04-29T15:26:50.398</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-150.png">
       <PackagePath>nnneon.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.990</Modified>
+      <Modified>2023-04-29T15:26:50.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-200.png">
       <PackagePath>nnneon.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:29.408</Modified>
+      <Modified>2023-04-29T15:26:51.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-400.png">
       <PackagePath>nnneon.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:30.914</Modified>
+      <Modified>2023-04-29T15:26:52.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pattern.scale-100.png">
       <PackagePath>pattern.scale-100.png</PackagePath>
@@ -1668,187 +2784,187 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisicon.ico">
       <PackagePath>tetrisicon.ico</PackagePath>
-      <Modified>2023-04-29T15:22:28.209</Modified>
+      <Modified>2023-04-29T15:26:49.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-100.png">
       <PackagePath>tetrisiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.747</Modified>
+      <Modified>2023-04-29T15:26:50.419</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-125.png">
       <PackagePath>tetrisiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.775</Modified>
+      <Modified>2023-04-29T15:26:50.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-150.png">
       <PackagePath>tetrisiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.803</Modified>
+      <Modified>2023-04-29T15:26:50.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-200.png">
       <PackagePath>tetrisiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.840</Modified>
+      <Modified>2023-04-29T15:26:50.516</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-400.png">
       <PackagePath>tetrisiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.980</Modified>
+      <Modified>2023-04-29T15:26:50.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.355</Modified>
+      <Modified>2023-04-29T15:26:50.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.360</Modified>
+      <Modified>2023-04-29T15:26:50.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.386</Modified>
+      <Modified>2023-04-29T15:26:50.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.366</Modified>
+      <Modified>2023-04-29T15:26:50.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.373</Modified>
+      <Modified>2023-04-29T15:26:50.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.317</Modified>
+      <Modified>2023-04-29T15:26:49.970</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.323</Modified>
+      <Modified>2023-04-29T15:26:49.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.349</Modified>
+      <Modified>2023-04-29T15:26:50.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.330</Modified>
+      <Modified>2023-04-29T15:26:49.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.338</Modified>
+      <Modified>2023-04-29T15:26:49.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-100.png">
       <PackagePath>tetrisiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.227</Modified>
+      <Modified>2023-04-29T15:26:49.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-125.png">
       <PackagePath>tetrisiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.233</Modified>
+      <Modified>2023-04-29T15:26:49.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-150.png">
       <PackagePath>tetrisiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.240</Modified>
+      <Modified>2023-04-29T15:26:49.900</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-200.png">
       <PackagePath>tetrisiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.247</Modified>
+      <Modified>2023-04-29T15:26:49.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-400.png">
       <PackagePath>tetrisiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.256</Modified>
+      <Modified>2023-04-29T15:26:49.919</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-16.png">
       <PackagePath>tetrisiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.263</Modified>
+      <Modified>2023-04-29T15:26:49.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-24.png">
       <PackagePath>tetrisiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.270</Modified>
+      <Modified>2023-04-29T15:26:49.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-256.png">
       <PackagePath>tetrisiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.312</Modified>
+      <Modified>2023-04-29T15:26:49.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-32.png">
       <PackagePath>tetrisiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.292</Modified>
+      <Modified>2023-04-29T15:26:49.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-48.png">
       <PackagePath>tetrisiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.298</Modified>
+      <Modified>2023-04-29T15:26:49.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-100.png">
       <PackagePath>tetrisiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.492</Modified>
+      <Modified>2023-04-29T15:26:50.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-125.png">
       <PackagePath>tetrisiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.504</Modified>
+      <Modified>2023-04-29T15:26:50.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-150.png">
       <PackagePath>tetrisiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.514</Modified>
+      <Modified>2023-04-29T15:26:50.195</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-200.png">
       <PackagePath>tetrisiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.528</Modified>
+      <Modified>2023-04-29T15:26:50.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-400.png">
       <PackagePath>tetrisiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.563</Modified>
+      <Modified>2023-04-29T15:26:50.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-100.png">
       <PackagePath>tetrisiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.441</Modified>
+      <Modified>2023-04-29T15:26:50.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-125.png">
       <PackagePath>tetrisiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.447</Modified>
+      <Modified>2023-04-29T15:26:50.119</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-150.png">
       <PackagePath>tetrisiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.457</Modified>
+      <Modified>2023-04-29T15:26:50.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-200.png">
       <PackagePath>tetrisiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.468</Modified>
+      <Modified>2023-04-29T15:26:50.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-400.png">
       <PackagePath>tetrisiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.482</Modified>
+      <Modified>2023-04-29T15:26:50.158</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-100.png">
       <PackagePath>tetrisiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.394</Modified>
+      <Modified>2023-04-29T15:26:50.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-125.png">
       <PackagePath>tetrisiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.401</Modified>
+      <Modified>2023-04-29T15:26:50.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-150.png">
       <PackagePath>tetrisiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.409</Modified>
+      <Modified>2023-04-29T15:26:50.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-200.png">
       <PackagePath>tetrisiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.421</Modified>
+      <Modified>2023-04-29T15:26:50.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-400.png">
       <PackagePath>tetrisiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.432</Modified>
+      <Modified>2023-04-29T15:26:50.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-100.png">
       <PackagePath>tetrisiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.580</Modified>
+      <Modified>2023-04-29T15:26:50.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-125.png">
       <PackagePath>tetrisiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.600</Modified>
+      <Modified>2023-04-29T15:26:50.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-150.png">
       <PackagePath>tetrisiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.621</Modified>
+      <Modified>2023-04-29T15:26:50.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-200.png">
       <PackagePath>tetrisiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.643</Modified>
+      <Modified>2023-04-29T15:26:50.324</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-400.png">
       <PackagePath>tetrisiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-04-29T15:22:28.724</Modified>
+      <Modified>2023-04-29T15:26:50.393</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrispieces.scale-100.png">
       <PackagePath>tetrispieces.scale-100.png</PackagePath>

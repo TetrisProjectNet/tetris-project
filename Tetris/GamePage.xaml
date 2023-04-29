@@ -101,7 +101,7 @@
                        Margin="0, -20, 0, 0">
                     <Label FontFamily="Tetris" Text="Points" FontSize="40" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                 </Frame>
-                <Label Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Center" TextColor="White" Text="0" FontSize="50" FontFamily="Tetris" Margin="0, -37, 0, 0"/>
+                <Label x:Name="PointsLabel" Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Center" TextColor="White" Text="0" FontSize="50" FontFamily="Tetris" Margin="0, -37, 0, 0"/>
             </Grid>
         </Frame>
     </Grid>
