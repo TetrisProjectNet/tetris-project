@@ -29,6 +29,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<Platforms>AnyCPU;x64</Platforms>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -49,10 +50,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\redtile.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <None Remove="Resources\Fonts\Tetris.ttf" />
 	  <None Remove="Resources\Images\abstractpaper2.svg" />
 	  <None Remove="Resources\Images\coinicon.png" />
@@ -60,7 +57,6 @@
 	  <None Remove="Resources\Images\menubackground.svg" />
 	  <None Remove="Resources\Images\nnneon.svg" />
 	  <None Remove="Resources\Images\profileicon.png" />
-	  <None Remove="Resources\Images\redtile.png" />
 	  <None Remove="Resources\Images\tetrispieces.png" />
 	</ItemGroup>
 
@@ -68,6 +64,8 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Maui.Graphics.Skia" Version="7.0.59" />
+		<PackageReference Include="SharpHook" Version="4.2.0" />
+		<PackageReference Include="SharpHook.Reactive" Version="4.2.0" />
 		<PackageReference Include="SkiaSharp" Version="2.88.3" />
 		<PackageReference Include="SkiaSharp.Views" Version="2.88.3" />
 		<PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.3" />
@@ -78,10 +76,6 @@
 	  <PackageReference Include="WinUIEx">
 	    <Version>2.1.0</Version>
 	  </PackageReference>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Resource Include="Resources\Images\redtile.png" />
 	</ItemGroup>
 
 	<ItemGroup>
