@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Hosting;
 using Microsoft.Maui.LifecycleEvents;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 #if WINDOWS
 using Microsoft.UI;
@@ -22,7 +23,8 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 fonts.AddFont("Tetris.ttf");
-            });
+            })
+            .UseSkiaSharp();
 
 #if WINDOWS
         builder.ConfigureLifecycleEvents(events =>

@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-28T11:36:06.532</Modified>
+      <Modified>2023-04-29T15:25:39.933</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-28T11:34:36.934</Modified>
+      <Modified>2023-04-29T15:22:51.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.runtimeconfig.json">
       <PackagePath>Tetris.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-28T10:05:56.018</Modified>
+      <Modified>2023-04-28T19:57:21.297</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.dll">
       <PackagePath>Tetris.dll</PackagePath>
-      <Modified>2023-04-28T11:36:04.874</Modified>
+      <Modified>2023-04-29T15:25:37.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Tetris.exe</PackagePath>
-      <Modified>2023-04-28T11:36:04.883</Modified>
+      <Modified>2023-04-29T15:25:37.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.4\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -854,9 +854,17 @@
       <PackagePath>Microsoft.Maui.Graphics.dll</PackagePath>
       <Modified>2023-01-19T17:23:52.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.maui.graphics.skia\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.Skia.dll">
+      <PackagePath>Microsoft.Maui.Graphics.Skia.dll</PackagePath>
+      <Modified>2023-01-19T17:24:14.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\7.0.59\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2023-01-19T17:24:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.win32.systemevents\4.5.0\runtimes\win\lib\netcoreapp2.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
+      <Modified>2018-05-15T13:29:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -914,6 +922,54 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\opentk\3.1.0\lib\net20\OpenTK.dll">
+      <PackagePath>OpenTK.dll</PackagePath>
+      <Modified>2019-08-04T15:08:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\opentk.glcontrol\3.1.0\lib\net20\OpenTK.GLControl.dll">
+      <PackagePath>OpenTK.GLControl.dll</PackagePath>
+      <Modified>2019-08-04T15:08:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp\2.88.3\lib\net6.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2022-10-03T22:36:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.views\2.88.3\lib\net462\SkiaSharp.Views.Desktop.dll">
+      <PackagePath>SkiaSharp.Views.Desktop.dll</PackagePath>
+      <Modified>2022-10-03T22:37:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.views.desktop.common\2.88.3\lib\netcoreapp3.1\SkiaSharp.Views.Desktop.Common.dll">
+      <PackagePath>SkiaSharp.Views.Desktop.Common.dll</PackagePath>
+      <Modified>2022-10-03T22:36:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.views.gtk2\2.88.3\lib\net462\SkiaSharp.Views.Gtk.dll">
+      <PackagePath>SkiaSharp.Views.Gtk.dll</PackagePath>
+      <Modified>2022-10-03T22:37:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.views.maui.controls\2.88.3\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Controls.dll</PackagePath>
+      <Modified>2022-10-03T22:36:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.views.maui.core\2.88.3\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Core.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Core.dll</PackagePath>
+      <Modified>2022-10-03T22:37:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.views.windowsforms\2.88.3\lib\netcoreapp3.1\SkiaSharp.Views.WindowsForms.dll">
+      <PackagePath>SkiaSharp.Views.WindowsForms.dll</PackagePath>
+      <Modified>2022-10-03T22:36:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.views.winui\2.88.3\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
+      <PackagePath>SkiaSharp.Views.Windows.dll</PackagePath>
+      <Modified>2022-10-03T22:36:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.views.wpf\2.88.3\lib\netcoreapp3.1\SkiaSharp.Views.WPF.dll">
+      <PackagePath>SkiaSharp.Views.WPF.dll</PackagePath>
+      <Modified>2022-10-03T22:37:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\system.drawing.common\4.5.1\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2018-09-18T19:38:14.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\winuiex\2.1.0\lib\net6.0-windows10.0.18362\WinUIEx.dll">
       <PackagePath>WinUIEx.dll</PackagePath>
       <Modified>2023-01-03T23:24:58.000</Modified>
@@ -926,9 +982,13 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\skiasharp.nativeassets.win32\2.88.3\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2022-10-03T22:36:56.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Tetris.deps.json">
       <PackagePath>Tetris.deps.json</PackagePath>
-      <Modified>2023-04-28T11:36:06.336</Modified>
+      <Modified>2023-04-29T15:25:39.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\.nuget\packages\winuiex\2.1.0\lib\net6.0-windows10.0.18362\WinUIEx.pri">
       <PackagePath>WinUIEx.pri</PackagePath>
@@ -1004,23 +1064,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-100.png">
       <PackagePath>abstractpaper2.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:19.497</Modified>
+      <Modified>2023-04-29T15:22:29.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-125.png">
       <PackagePath>abstractpaper2.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:21.110</Modified>
+      <Modified>2023-04-29T15:22:31.124</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-150.png">
       <PackagePath>abstractpaper2.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:22.843</Modified>
+      <Modified>2023-04-29T15:22:33.191</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-200.png">
       <PackagePath>abstractpaper2.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:25.618</Modified>
+      <Modified>2023-04-29T15:22:36.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\abstractpaper2.scale-400.png">
       <PackagePath>abstractpaper2.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:36.923</Modified>
+      <Modified>2023-04-29T15:22:47.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
@@ -1404,47 +1464,83 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-100.png">
       <PackagePath>menubackground.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.710</Modified>
+      <Modified>2023-04-29T15:22:28.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-125.png">
       <PackagePath>menubackground.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:19.031</Modified>
+      <Modified>2023-04-29T15:22:29.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-150.png">
       <PackagePath>menubackground.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:19.523</Modified>
+      <Modified>2023-04-29T15:22:29.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-200.png">
       <PackagePath>menubackground.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:20.371</Modified>
+      <Modified>2023-04-29T15:22:30.271</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\menubackground.scale-400.png">
       <PackagePath>menubackground.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:22.894</Modified>
+      <Modified>2023-04-29T15:22:33.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-100.png">
       <PackagePath>nnneon.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.571</Modified>
+      <Modified>2023-04-29T15:22:28.560</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-125.png">
       <PackagePath>nnneon.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.726</Modified>
+      <Modified>2023-04-29T15:22:28.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-150.png">
       <PackagePath>nnneon.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.925</Modified>
+      <Modified>2023-04-29T15:22:28.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-200.png">
       <PackagePath>nnneon.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:19.343</Modified>
+      <Modified>2023-04-29T15:22:29.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\nnneon.scale-400.png">
       <PackagePath>nnneon.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:21.005</Modified>
+      <Modified>2023-04-29T15:22:30.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pattern.scale-100.png">
+      <PackagePath>pattern.scale-100.png</PackagePath>
+      <Modified>2023-04-28T17:52:51.996</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pattern.scale-125.png">
+      <PackagePath>pattern.scale-125.png</PackagePath>
+      <Modified>2023-04-28T17:52:51.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pattern.scale-150.png">
+      <PackagePath>pattern.scale-150.png</PackagePath>
+      <Modified>2023-04-28T17:52:51.999</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pattern.scale-200.png">
+      <PackagePath>pattern.scale-200.png</PackagePath>
+      <Modified>2023-04-28T17:52:52.001</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pattern.scale-400.png">
+      <PackagePath>pattern.scale-400.png</PackagePath>
+      <Modified>2023-04-28T17:52:52.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\patternbrick.scale-100.png">
+      <PackagePath>patternbrick.scale-100.png</PackagePath>
+      <Modified>2023-04-28T17:51:26.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\prismtest.scale-100.png">
+      <PackagePath>prismtest.scale-100.png</PackagePath>
+      <Modified>2023-04-29T15:22:08.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profileicon.scale-100.png">
       <PackagePath>profileicon.scale-100.png</PackagePath>
       <Modified>2023-04-28T09:57:51.107</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\redtile.scale-100.png">
+      <PackagePath>redtile.scale-100.png</PackagePath>
+      <Modified>2023-04-28T21:09:59.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\redtilet.scale-100.png">
+      <PackagePath>redtilet.scale-100.png</PackagePath>
+      <Modified>2023-04-28T22:07:02.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\spectrum.scale-100.png">
       <PackagePath>spectrum.scale-100.png</PackagePath>
@@ -1530,189 +1626,229 @@
       <PackagePath>test5.scale-400.png</PackagePath>
       <Modified>2023-04-27T03:09:50.412</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testback.scale-100.png">
+      <PackagePath>testback.scale-100.png</PackagePath>
+      <Modified>2023-04-28T17:43:18.511</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testback.scale-125.png">
+      <PackagePath>testback.scale-125.png</PackagePath>
+      <Modified>2023-04-28T17:43:18.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testback.scale-150.png">
+      <PackagePath>testback.scale-150.png</PackagePath>
+      <Modified>2023-04-28T17:43:19.276</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testback.scale-200.png">
+      <PackagePath>testback.scale-200.png</PackagePath>
+      <Modified>2023-04-28T17:43:20.045</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testback.scale-400.png">
+      <PackagePath>testback.scale-400.png</PackagePath>
+      <Modified>2023-04-28T17:43:22.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testbackgr.scale-100.png">
+      <PackagePath>testbackgr.scale-100.png</PackagePath>
+      <Modified>2023-04-29T15:20:33.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testbackgr.scale-125.png">
+      <PackagePath>testbackgr.scale-125.png</PackagePath>
+      <Modified>2023-04-29T15:20:33.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testbackgr.scale-150.png">
+      <PackagePath>testbackgr.scale-150.png</PackagePath>
+      <Modified>2023-04-29T15:20:33.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testbackgr.scale-200.png">
+      <PackagePath>testbackgr.scale-200.png</PackagePath>
+      <Modified>2023-04-29T15:20:33.305</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\testbackgr.scale-400.png">
+      <PackagePath>testbackgr.scale-400.png</PackagePath>
+      <Modified>2023-04-29T15:20:33.599</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisicon.ico">
       <PackagePath>tetrisicon.ico</PackagePath>
-      <Modified>2023-04-28T11:08:18.290</Modified>
+      <Modified>2023-04-29T15:22:28.209</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-100.png">
       <PackagePath>tetrisiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.756</Modified>
+      <Modified>2023-04-29T15:22:28.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-125.png">
       <PackagePath>tetrisiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.774</Modified>
+      <Modified>2023-04-29T15:22:28.775</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-150.png">
       <PackagePath>tetrisiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.802</Modified>
+      <Modified>2023-04-29T15:22:28.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-200.png">
       <PackagePath>tetrisiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.833</Modified>
+      <Modified>2023-04-29T15:22:28.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLargeTile.scale-400.png">
       <PackagePath>tetrisiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.954</Modified>
+      <Modified>2023-04-29T15:22:28.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.412</Modified>
+      <Modified>2023-04-29T15:22:28.355</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.418</Modified>
+      <Modified>2023-04-29T15:22:28.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.442</Modified>
+      <Modified>2023-04-29T15:22:28.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.425</Modified>
+      <Modified>2023-04-29T15:22:28.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>tetrisiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.431</Modified>
+      <Modified>2023-04-29T15:22:28.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.377</Modified>
+      <Modified>2023-04-29T15:22:28.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.383</Modified>
+      <Modified>2023-04-29T15:22:28.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.406</Modified>
+      <Modified>2023-04-29T15:22:28.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.389</Modified>
+      <Modified>2023-04-29T15:22:28.330</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>tetrisiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.395</Modified>
+      <Modified>2023-04-29T15:22:28.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-100.png">
       <PackagePath>tetrisiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.305</Modified>
+      <Modified>2023-04-29T15:22:28.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-125.png">
       <PackagePath>tetrisiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.310</Modified>
+      <Modified>2023-04-29T15:22:28.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-150.png">
       <PackagePath>tetrisiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.316</Modified>
+      <Modified>2023-04-29T15:22:28.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-200.png">
       <PackagePath>tetrisiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.323</Modified>
+      <Modified>2023-04-29T15:22:28.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.scale-400.png">
       <PackagePath>tetrisiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.332</Modified>
+      <Modified>2023-04-29T15:22:28.256</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-16.png">
       <PackagePath>tetrisiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.337</Modified>
+      <Modified>2023-04-29T15:22:28.263</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-24.png">
       <PackagePath>tetrisiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.343</Modified>
+      <Modified>2023-04-29T15:22:28.270</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-256.png">
       <PackagePath>tetrisiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.366</Modified>
+      <Modified>2023-04-29T15:22:28.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-32.png">
       <PackagePath>tetrisiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.349</Modified>
+      <Modified>2023-04-29T15:22:28.292</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconLogo.targetsize-48.png">
       <PackagePath>tetrisiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.355</Modified>
+      <Modified>2023-04-29T15:22:28.298</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-100.png">
       <PackagePath>tetrisiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.547</Modified>
+      <Modified>2023-04-29T15:22:28.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-125.png">
       <PackagePath>tetrisiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.559</Modified>
+      <Modified>2023-04-29T15:22:28.504</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-150.png">
       <PackagePath>tetrisiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.570</Modified>
+      <Modified>2023-04-29T15:22:28.514</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-200.png">
       <PackagePath>tetrisiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.589</Modified>
+      <Modified>2023-04-29T15:22:28.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconMediumTile.scale-400.png">
       <PackagePath>tetrisiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.628</Modified>
+      <Modified>2023-04-29T15:22:28.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-100.png">
       <PackagePath>tetrisiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.493</Modified>
+      <Modified>2023-04-29T15:22:28.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-125.png">
       <PackagePath>tetrisiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.502</Modified>
+      <Modified>2023-04-29T15:22:28.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-150.png">
       <PackagePath>tetrisiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.511</Modified>
+      <Modified>2023-04-29T15:22:28.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-200.png">
       <PackagePath>tetrisiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.520</Modified>
+      <Modified>2023-04-29T15:22:28.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconSmallTile.scale-400.png">
       <PackagePath>tetrisiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.536</Modified>
+      <Modified>2023-04-29T15:22:28.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-100.png">
       <PackagePath>tetrisiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.448</Modified>
+      <Modified>2023-04-29T15:22:28.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-125.png">
       <PackagePath>tetrisiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.456</Modified>
+      <Modified>2023-04-29T15:22:28.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-150.png">
       <PackagePath>tetrisiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.462</Modified>
+      <Modified>2023-04-29T15:22:28.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-200.png">
       <PackagePath>tetrisiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.472</Modified>
+      <Modified>2023-04-29T15:22:28.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconStoreLogo.scale-400.png">
       <PackagePath>tetrisiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.485</Modified>
+      <Modified>2023-04-29T15:22:28.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-100.png">
       <PackagePath>tetrisiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.638</Modified>
+      <Modified>2023-04-29T15:22:28.580</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-125.png">
       <PackagePath>tetrisiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.650</Modified>
+      <Modified>2023-04-29T15:22:28.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-150.png">
       <PackagePath>tetrisiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.665</Modified>
+      <Modified>2023-04-29T15:22:28.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-200.png">
       <PackagePath>tetrisiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.684</Modified>
+      <Modified>2023-04-29T15:22:28.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrisiconWideTile.scale-400.png">
       <PackagePath>tetrisiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-04-28T11:08:18.741</Modified>
+      <Modified>2023-04-29T15:22:28.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hunter\source\repos\TetrisGame\tetris-project\Tetris\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tetrispieces.scale-100.png">
       <PackagePath>tetrispieces.scale-100.png</PackagePath>

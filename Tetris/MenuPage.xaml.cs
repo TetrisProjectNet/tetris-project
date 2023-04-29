@@ -9,9 +9,10 @@ public partial class MenuPage : ContentPage
         NavigationPage.SetHasNavigationBar(this, false);
     }
 
-    private void NewGameButtonClicked(object sender, TappedEventArgs e)
+    private async void NewGameButtonClicked(object sender, TappedEventArgs e)
     {
-
+        Thread.Sleep(250);
+        await Navigation.PushAsync(new GamePage(), false);
     }
 
     private void StatisticsButtonClicked(object sender, TappedEventArgs e)

@@ -94,6 +94,26 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+            "Microsoft.Maui.Graphics.Skia": {
+              "target": "Package",
+              "version": "[7.0.59, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Maui.Core": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -215,6 +235,26 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Microsoft.Maui.Graphics.Skia": {
+              "target": "Package",
+              "version": "[7.0.59, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Maui.Core": {
+              "target": "Package",
+              "version": "[2.88.3, )"
             }
           },
           "imports": [
@@ -282,6 +322,26 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Microsoft.Maui.Graphics.Skia": {
+              "target": "Package",
+              "version": "[7.0.59, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Maui.Core": {
+              "target": "Package",
+              "version": "[2.88.3, )"
             }
           },
           "imports": [
@@ -351,6 +411,10 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+            "Microsoft.Maui.Graphics.Skia": {
+              "target": "Package",
+              "version": "[7.0.59, )"
+            },
             "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
               "target": "Package",
               "version": "[7.0.59, )",
@@ -366,6 +430,22 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Maui.Controls": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Maui.Core": {
+              "target": "Package",
+              "version": "[2.88.3, )"
             },
             "WinUIEx": {
               "target": "Package",

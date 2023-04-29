@@ -42,7 +42,7 @@
                     <Label Text="Login" FontSize="Large" FontAttributes="Bold" Margin="0, 40, 0, 0" HorizontalTextAlignment="Center" TextColor="Black"/>
 
                     <Entry x:Name="usernameEntry" Placeholder="Username" Margin="30, 30, 30, 0" TextColor="Black"/>
-                    <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Margin="30, 10, 30, 0" TextColor="Black"/>
+                    <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Margin="30, 10, 30, 0" TextColor="Black" Completed="PasswordEntry_OnCompleted"/>
 
                     <Button Text="Login" BackgroundColor="#9625E4" TextColor="White" 
                             Margin="30, 40, 30, 0" Clicked="OnLoginButtonClicked"/>
