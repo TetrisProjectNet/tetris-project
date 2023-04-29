@@ -33,10 +33,9 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void OnForgotPasswordButtonClicked(object sender, EventArgs e)
+    private void PasswordEntry_OnCompleted(object sender, EventArgs e)
     {
-        var uri = new Uri("https://www.google.com");
-        Launcher.OpenAsync(uri);
+        OnLoginButtonClicked(this, e);
     }
 }
 
