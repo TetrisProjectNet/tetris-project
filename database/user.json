@@ -1,0 +1,2268 @@
+[{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b538"
+  },
+  "username": "dfolder1",
+  "passwordHash": null,
+  "passwordSalt": null,
+  "email": "dsieur1@wufoo.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "13/11/2022",
+  "lastOnlineDate": "23/02/2022",
+  "coins": 3353,
+  "shopItems": [],
+  "scores": [
+    8146
+  ],
+  "friends": [],
+  "refreshToken": "",
+  "tokenCreated": null,
+  "tokenExpires": null
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b539"
+  },
+  "username": "ckalisz2",
+  "email": "ebailey2@last.fm",
+  "role": "player",
+  "banned": false,
+  "joinDate": "20/11/2022",
+  "lastOnlineDate": "09/05/2022",
+  "coins": 6756,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    1828,
+    6054,
+    5285,
+    6877
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b53a"
+  },
+  "username": "cstellin3",
+  "email": "ileavry3@pcworld.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "09/12/2022",
+  "lastOnlineDate": "02/08/2022",
+  "coins": 834,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    1860,
+    2622,
+    6779
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b53b"
+  },
+  "username": "abaribal4",
+  "email": "smcgreay4@usda.gov",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "01/01/2023",
+  "lastOnlineDate": "10/05/2022",
+  "coins": 3149,
+  "shopItems": [],
+  "scores": [
+    4046
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b53e"
+  },
+  "username": "eboullin7",
+  "passwordHash": null,
+  "passwordSalt": null,
+  "email": "dbusek7@infoseek.co.jp",
+  "role": "player",
+  "banned": false,
+  "joinDate": "24/06/2022",
+  "lastOnlineDate": "04/07/2022",
+  "coins": 2876,
+  "shopItems": [],
+  "scores": [
+    7640
+  ],
+  "friends": [],
+  "refreshToken": "",
+  "tokenCreated": null,
+  "tokenExpires": null
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b540"
+  },
+  "username": "dmclardie9",
+  "passwordHash": null,
+  "passwordSalt": null,
+  "email": "ogoodburn9@jimdo.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "06/12/2022",
+  "lastOnlineDate": "06/12/2022",
+  "coins": 4985,
+  "shopItems": [],
+  "scores": [
+    5469,
+    2828
+  ],
+  "friends": [],
+  "refreshToken": "",
+  "tokenCreated": null,
+  "tokenExpires": null
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b541"
+  },
+  "username": "bironmongera",
+  "email": "fduncombea@ucsd.edu",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "16/04/2022",
+  "lastOnlineDate": "05/07/2022",
+  "coins": 6412,
+  "shopItems": [],
+  "scores": [
+    2223,
+    2426,
+    9189,
+    5447,
+    6507
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b542"
+  },
+  "username": "aspillerb",
+  "passwordHash": null,
+  "passwordSalt": null,
+  "email": "cemanuelib@blogger.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "05/09/2022",
+  "lastOnlineDate": "20/05/2022",
+  "coins": 7973,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    6096,
+    6912,
+    7304,
+    9545,
+    4377
+  ],
+  "friends": [],
+  "refreshToken": "",
+  "tokenCreated": null,
+  "tokenExpires": null
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b543"
+  },
+  "username": "bjikovskyc",
+  "email": "bmiddletonc@merriam-webster.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "14/11/2022",
+  "lastOnlineDate": "31/05/2022",
+  "coins": 9643,
+  "shopItems": [],
+  "scores": [
+    2817,
+    3721,
+    9583,
+    2709,
+    5012
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b544"
+  },
+  "username": "kolyunind",
+  "email": "akennerleyd@umich.edu",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "06/12/2022",
+  "lastOnlineDate": "15/10/2022",
+  "coins": 1229,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b545"
+  },
+  "username": "dlorentze",
+  "email": "rnowake@globo.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "10/07/2022",
+  "lastOnlineDate": "25/09/2022",
+  "coins": 5209,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b546"
+  },
+  "username": "tsloeyf",
+  "email": "esextonef@homestead.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "07/04/2022",
+  "lastOnlineDate": "26/10/2022",
+  "coins": 3089,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    6619,
+    9942,
+    4091
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b547"
+  },
+  "username": "kwhorallg",
+  "email": "rgreenwoodg@squarespace.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "24/04/2022",
+  "lastOnlineDate": "31/05/2022",
+  "coins": 6183,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    3691,
+    4031,
+    6833,
+    2245
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b548"
+  },
+  "username": "jdaymenth",
+  "email": "ccrowesth@shutterfly.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "03/01/2023",
+  "lastOnlineDate": "05/04/2022",
+  "coins": 4396,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    8938,
+    4808,
+    69
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b549"
+  },
+  "username": "keltringhami",
+  "email": "dpaqueti@ovh.net",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "30/09/2022",
+  "lastOnlineDate": "09/05/2022",
+  "coins": 6645,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b54a"
+  },
+  "username": "tfusseyj",
+  "email": "lpetcheyj@gov.uk",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "19/04/2022",
+  "lastOnlineDate": "04/02/2022",
+  "coins": 3552,
+  "shopItems": [],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b54b"
+  },
+  "username": "wblackbroughk",
+  "passwordHash": null,
+  "passwordSalt": null,
+  "email": "lsuffek@boston.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "21/07/2022",
+  "lastOnlineDate": "02/09/2022",
+  "coins": 8013,
+  "shopItems": [],
+  "scores": [
+    5115,
+    7211,
+    8173
+  ],
+  "friends": [],
+  "refreshToken": "",
+  "tokenCreated": null,
+  "tokenExpires": null
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b54c"
+  },
+  "username": "ygambiel",
+  "email": "wpasbyl@examiner.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "01/03/2022",
+  "lastOnlineDate": "09/05/2022",
+  "coins": 9185,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    379,
+    1479,
+    3269
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b54d"
+  },
+  "username": "lpaudinm",
+  "email": "mhartzenbergm@eventbrite.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "22/01/2022",
+  "lastOnlineDate": "17/02/2022",
+  "coins": 6279,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    3161,
+    5661,
+    1800,
+    5602
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b54e"
+  },
+  "username": "snorthcottn",
+  "email": "radnamn@thetimes.co.uk",
+  "role": "player",
+  "banned": true,
+  "joinDate": "09/04/2022",
+  "lastOnlineDate": "18/11/2022",
+  "coins": 6932,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    8925,
+    2953,
+    6795
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b54f"
+  },
+  "username": "khalliwello",
+  "email": "hlomasnao@wix.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "06/08/2022",
+  "lastOnlineDate": "21/02/2022",
+  "coins": 723,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    9602,
+    5806,
+    3605,
+    4762
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b550"
+  },
+  "username": "aleiskp",
+  "email": "kplacidep@nbcnews.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "09/08/2022",
+  "lastOnlineDate": "14/06/2022",
+  "coins": 7600,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    6226,
+    4004,
+    9572,
+    1680,
+    296
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b551"
+  },
+  "username": "tclooneyq",
+  "email": "hledgerq@gizmodo.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "20/07/2022",
+  "lastOnlineDate": "14/04/2022",
+  "coins": 7393,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    1651,
+    8508,
+    1093,
+    936,
+    5966
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b552"
+  },
+  "username": "rduberryr",
+  "email": "cflemingr@51.la",
+  "role": "player",
+  "banned": true,
+  "joinDate": "09/01/2023",
+  "lastOnlineDate": "22/12/2022",
+  "coins": 1135,
+  "shopItems": [],
+  "scores": [
+    2289,
+    243,
+    3915
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b553"
+  },
+  "username": "cgiacomellos",
+  "email": "hbullards@linkedin.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "12/12/2022",
+  "lastOnlineDate": "02/11/2022",
+  "coins": 3229,
+  "shopItems": [],
+  "scores": [
+    9022
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b554"
+  },
+  "username": "bbaudinellit",
+  "email": "hcroxfordt@shop-pro.jp",
+  "role": "player",
+  "banned": false,
+  "joinDate": "30/07/2022",
+  "lastOnlineDate": "11/09/2022",
+  "coins": 2165,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    9380,
+    3499
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b555"
+  },
+  "username": "sbrentu",
+  "email": "dgwynu@amazon.co.jp",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "23/12/2022",
+  "lastOnlineDate": "28/01/2022",
+  "coins": 7351,
+  "shopItems": [],
+  "scores": [
+    8248,
+    7083,
+    1390
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b556"
+  },
+  "username": "bediev",
+  "email": "rlenchenkov@bing.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "09/08/2022",
+  "lastOnlineDate": "29/01/2022",
+  "coins": 3510,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    6897
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b557"
+  },
+  "username": "emaccaguew",
+  "email": "evalettw@gizmodo.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "05/04/2022",
+  "lastOnlineDate": "27/11/2022",
+  "coins": 8784,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    7107,
+    3841,
+    9137
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b558"
+  },
+  "username": "arevellex",
+  "email": "gtunnockx@mozilla.org",
+  "role": "player",
+  "banned": false,
+  "joinDate": "26/10/2022",
+  "lastOnlineDate": "31/07/2022",
+  "coins": 9572,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    3019,
+    7785,
+    7265
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b559"
+  },
+  "username": "vwhittay",
+  "email": "amackibbony@jiathis.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "23/06/2022",
+  "lastOnlineDate": "10/11/2022",
+  "coins": 333,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    5717,
+    33,
+    4003
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b55a"
+  },
+  "username": "hkinnachz",
+  "email": "jlamontz@sbwire.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "02/10/2022",
+  "lastOnlineDate": "19/05/2022",
+  "coins": 8269,
+  "shopItems": [],
+  "scores": [
+    1107,
+    5508,
+    5447,
+    5257,
+    2782
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b55b"
+  },
+  "username": "nesmond10",
+  "email": "lpoor10@jigsy.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "23/09/2022",
+  "lastOnlineDate": "22/02/2022",
+  "coins": 9206,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b55c"
+  },
+  "username": "rgladeche11",
+  "email": "aannesley11@facebook.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "26/06/2022",
+  "lastOnlineDate": "01/12/2022",
+  "coins": 3493,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    4884,
+    4901
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b55d"
+  },
+  "username": "kkilgallen12",
+  "email": "odufton12@bbc.co.uk",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "07/01/2023",
+  "lastOnlineDate": "19/01/2022",
+  "coins": 2017,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    2083,
+    9494,
+    1353,
+    503
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b55e"
+  },
+  "username": "mdalwood13",
+  "email": "zliddington13@china.com.cn",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "10/07/2022",
+  "lastOnlineDate": "15/11/2022",
+  "coins": 2413,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    1006,
+    3205,
+    8399,
+    3110,
+    9552
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b55f"
+  },
+  "username": "bmenier14",
+  "email": "tlocksley14@weebly.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "03/10/2022",
+  "lastOnlineDate": "03/05/2022",
+  "coins": 8933,
+  "shopItems": [],
+  "scores": [
+    7292,
+    255,
+    3804
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b560"
+  },
+  "username": "nduddell15",
+  "email": "pwansbury15@soup.io",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "31/01/2022",
+  "lastOnlineDate": "27/05/2022",
+  "coins": 8294,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    6059,
+    674
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b561"
+  },
+  "username": "bbowdidge16",
+  "email": "mdines16@sogou.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "04/02/2022",
+  "lastOnlineDate": "05/05/2022",
+  "coins": 4486,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    4788,
+    1495,
+    3490
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b562"
+  },
+  "username": "kslegg17",
+  "email": "dvaz17@dagondesign.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "28/02/2022",
+  "lastOnlineDate": "13/02/2022",
+  "coins": 9895,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b563"
+  },
+  "username": "ivideneev18",
+  "email": "nhanscome18@paginegialle.it",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "08/04/2022",
+  "lastOnlineDate": "25/10/2022",
+  "coins": 3231,
+  "shopItems": [],
+  "scores": [
+    3611,
+    3811,
+    1371
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b564"
+  },
+  "username": "tdeboy19",
+  "email": "jyouings19@arstechnica.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "05/03/2022",
+  "lastOnlineDate": "19/08/2022",
+  "coins": 9060,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b565"
+  },
+  "username": "sind1a",
+  "passwordHash": null,
+  "passwordSalt": null,
+  "email": "ljasik1a@liveinternet.ru",
+  "role": "player",
+  "banned": false,
+  "joinDate": "10/02/2022",
+  "lastOnlineDate": "17/12/2022",
+  "coins": 4140,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [],
+  "friends": [],
+  "refreshToken": "",
+  "tokenCreated": null,
+  "tokenExpires": null
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b566"
+  },
+  "username": "pplak1b",
+  "email": "tfassman1b@nih.gov",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "08/03/2022",
+  "lastOnlineDate": "22/12/2022",
+  "coins": 5708,
+  "shopItems": [],
+  "scores": [
+    6739,
+    2407
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b567"
+  },
+  "username": "jdrohan1c",
+  "email": "gfagg1c@github.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "11/05/2022",
+  "lastOnlineDate": "11/11/2022",
+  "coins": 9816,
+  "shopItems": [],
+  "scores": [
+    5201,
+    5529,
+    7096
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b568"
+  },
+  "username": "amoscon1d",
+  "email": "fdear1d@privacy.gov.au",
+  "role": "player",
+  "banned": false,
+  "joinDate": "10/12/2022",
+  "lastOnlineDate": "10/05/2022",
+  "coins": 5585,
+  "shopItems": [],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b569"
+  },
+  "username": "jsaxton1e",
+  "email": "ccameron1e@omniture.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "08/04/2022",
+  "lastOnlineDate": "12/12/2022",
+  "coins": 3852,
+  "shopItems": [],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b56a"
+  },
+  "username": "ksebright1f",
+  "email": "npartlett1f@oaic.gov.au",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "14/03/2022",
+  "lastOnlineDate": "07/03/2022",
+  "coins": 3271,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    1333
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b56b"
+  },
+  "username": "mjendrassik1g",
+  "email": "hpetyt1g@theatlantic.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "29/12/2022",
+  "lastOnlineDate": "16/04/2022",
+  "coins": 8854,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    1884,
+    6455,
+    2972,
+    2574,
+    6949
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b56c"
+  },
+  "username": "oarnholz1h",
+  "email": "fgroll1h@wix.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "11/01/2023",
+  "lastOnlineDate": "16/03/2022",
+  "coins": 8726,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    7355,
+    7785,
+    1726,
+    1041,
+    7279
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b56d"
+  },
+  "username": "zterris1i",
+  "email": "awanek1i@tuttocitta.it",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "30/09/2022",
+  "lastOnlineDate": "18/01/2022",
+  "coins": 2319,
+  "shopItems": [],
+  "scores": [
+    848,
+    4110
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b56e"
+  },
+  "username": "snipper1j",
+  "email": "ladamo1j@buzzfeed.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "05/07/2022",
+  "lastOnlineDate": "23/03/2022",
+  "coins": 4087,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    101,
+    816,
+    5830
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b56f"
+  },
+  "username": "hsavoury1k",
+  "email": "zmendonca1k@reddit.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "13/09/2022",
+  "lastOnlineDate": "24/01/2022",
+  "coins": 7821,
+  "shopItems": [],
+  "scores": [
+    965,
+    9666,
+    5431
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b570"
+  },
+  "username": "gwiddall1l",
+  "email": "cpeto1l@opensource.org",
+  "role": "player",
+  "banned": true,
+  "joinDate": "23/03/2022",
+  "lastOnlineDate": "02/09/2022",
+  "coins": 9267,
+  "shopItems": [],
+  "scores": [
+    1916,
+    4397,
+    9105,
+    5274
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b571"
+  },
+  "username": "acourtliff1m",
+  "email": "ctweddle1m@google.ru",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "19/08/2022",
+  "lastOnlineDate": "01/09/2022",
+  "coins": 8987,
+  "shopItems": [],
+  "scores": [
+    4965,
+    8717,
+    8978,
+    7212,
+    7272
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b572"
+  },
+  "username": "coakman1n",
+  "email": "nboylin1n@i2i.jp",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "31/08/2022",
+  "lastOnlineDate": "11/01/2023",
+  "coins": 5975,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    7012,
+    7719,
+    4256,
+    8366
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b573"
+  },
+  "username": "rpierro1o",
+  "email": "pregus1o@chronoengine.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "05/01/2023",
+  "lastOnlineDate": "09/01/2023",
+  "coins": 1856,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b574"
+  },
+  "username": "skubecka1p",
+  "email": "gslite1p@phpbb.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "29/04/2022",
+  "lastOnlineDate": "21/09/2022",
+  "coins": 2233,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    6861
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b575"
+  },
+  "username": "wjamblin1q",
+  "email": "fsandbrook1q@cbslocal.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "14/10/2022",
+  "lastOnlineDate": "22/07/2022",
+  "coins": 1557,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    9230
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b576"
+  },
+  "username": "jqueripel1r",
+  "email": "charkes1r@mozilla.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "18/11/2022",
+  "lastOnlineDate": "11/03/2022",
+  "coins": 6910,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    4933,
+    4344,
+    2939
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b577"
+  },
+  "username": "smarney1s",
+  "email": "smccaffrey1s@umich.edu",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "13/01/2023",
+  "lastOnlineDate": "28/02/2022",
+  "coins": 8565,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    7137,
+    2917
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b578"
+  },
+  "username": "adavidovich1t",
+  "email": "cmartensen1t@wufoo.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "24/12/2022",
+  "lastOnlineDate": "09/09/2022",
+  "coins": 9108,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    3321
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b579"
+  },
+  "username": "lfogarty1u",
+  "email": "avasilmanov1u@sphinn.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "23/12/2022",
+  "lastOnlineDate": "02/04/2022",
+  "coins": 4821,
+  "shopItems": [],
+  "scores": [
+    93
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b57a"
+  },
+  "username": "rmuirden1v",
+  "email": "rmcentee1v@msu.edu",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "07/04/2022",
+  "lastOnlineDate": "07/10/2022",
+  "coins": 7177,
+  "shopItems": [],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b57b"
+  },
+  "username": "frayworth1w",
+  "email": "rdumper1w@feedburner.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "09/01/2023",
+  "lastOnlineDate": "17/05/2022",
+  "coins": 3523,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    4813,
+    6368
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b57c"
+  },
+  "username": "pbissatt1x",
+  "email": "tleale1x@nydailynews.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "09/03/2022",
+  "lastOnlineDate": "02/03/2022",
+  "coins": 8368,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b57d"
+  },
+  "username": "jexton1y",
+  "email": "rtubbles1y@infoseek.co.jp",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "29/12/2022",
+  "lastOnlineDate": "27/12/2022",
+  "coins": 2529,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    553
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b57e"
+  },
+  "username": "efranklin1z",
+  "email": "ckunisch1z@tiny.cc",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "20/05/2022",
+  "lastOnlineDate": "23/08/2022",
+  "coins": 4229,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    2099,
+    6749,
+    8229,
+    4377,
+    6272
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b57f"
+  },
+  "username": "rfoulsham20",
+  "email": "rkealey20@skyrock.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "14/09/2022",
+  "lastOnlineDate": "11/11/2022",
+  "coins": 3949,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    6136,
+    9464
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b580"
+  },
+  "username": "hzarfati21",
+  "email": "swatson21@people.com.cn",
+  "role": "player",
+  "banned": false,
+  "joinDate": "25/05/2022",
+  "lastOnlineDate": "27/02/2022",
+  "coins": 4033,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b581"
+  },
+  "username": "oviner22",
+  "email": "aghio22@newsvine.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "25/07/2022",
+  "lastOnlineDate": "09/08/2022",
+  "coins": 8969,
+  "shopItems": [],
+  "scores": [
+    46,
+    4667,
+    4100,
+    7295,
+    1496
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b582"
+  },
+  "username": "cmacneilley23",
+  "email": "sgarrat23@taobao.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "15/02/2022",
+  "lastOnlineDate": "24/09/2022",
+  "coins": 1099,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    9684,
+    9334
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b583"
+  },
+  "username": "kfarrington24",
+  "email": "pmacvey24@narod.ru",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "14/03/2022",
+  "lastOnlineDate": "20/08/2022",
+  "coins": 2837,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    8643
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b584"
+  },
+  "username": "kgrabham25",
+  "email": "lfitzer25@ftc.gov",
+  "role": "player",
+  "banned": false,
+  "joinDate": "24/07/2022",
+  "lastOnlineDate": "23/05/2022",
+  "coins": 1734,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    8252,
+    2960,
+    5165,
+    3628
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b585"
+  },
+  "username": "polechnowicz26",
+  "email": "rcrutchfield26@surveymonkey.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "07/02/2022",
+  "lastOnlineDate": "09/07/2022",
+  "coins": 2320,
+  "shopItems": [],
+  "scores": [
+    3905
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b586"
+  },
+  "username": "tberrill27",
+  "email": "mcarbry27@technorati.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "12/05/2022",
+  "lastOnlineDate": "12/10/2022",
+  "coins": 4912,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    7394,
+    4025,
+    9208,
+    7211,
+    3722
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b587"
+  },
+  "username": "jjakubowski28",
+  "email": "jcorcoran28@freewebs.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "06/12/2022",
+  "lastOnlineDate": "06/05/2022",
+  "coins": 3362,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    6437,
+    7580,
+    934
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b588"
+  },
+  "username": "wbott29",
+  "email": "zmcarley29@huffingtonpost.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "24/10/2022",
+  "lastOnlineDate": "10/12/2022",
+  "coins": 7747,
+  "shopItems": [],
+  "scores": [
+    3627,
+    9899,
+    7421,
+    1898
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b589"
+  },
+  "username": "gkerby2a",
+  "email": "ggunston2a@tumblr.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "04/06/2022",
+  "lastOnlineDate": "01/01/2023",
+  "coins": 1596,
+  "shopItems": [],
+  "scores": [
+    8996,
+    8564,
+    9829,
+    922,
+    2853
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b58a"
+  },
+  "username": "sohannen2b",
+  "email": "ssandall2b@reddit.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "26/07/2022",
+  "lastOnlineDate": "20/07/2022",
+  "coins": 6755,
+  "shopItems": [],
+  "scores": [
+    6852,
+    6460,
+    5724,
+    4007,
+    2597
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b58b"
+  },
+  "username": "amanuele2c",
+  "email": "shurlston2c@cam.ac.uk",
+  "role": "player",
+  "banned": true,
+  "joinDate": "05/08/2022",
+  "lastOnlineDate": "26/06/2022",
+  "coins": 8984,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    9146
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b58c"
+  },
+  "username": "rrollings2d",
+  "email": "fcalder2d@wsj.com",
+  "role": "player",
+  "banned": true,
+  "joinDate": "04/06/2022",
+  "lastOnlineDate": "09/12/2022",
+  "coins": 9944,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    4175,
+    9441
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b58d"
+  },
+  "username": "sdoggerell2e",
+  "email": "afarens2e@ocn.ne.jp",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "07/08/2022",
+  "lastOnlineDate": "27/07/2022",
+  "coins": 4556,
+  "shopItems": [],
+  "scores": [
+    6970,
+    6652
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b58e"
+  },
+  "username": "mcrosetto2f",
+  "email": "zcelez2f@bigcartel.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "23/04/2022",
+  "lastOnlineDate": "16/11/2022",
+  "coins": 8731,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    3613,
+    7601,
+    5716,
+    5962,
+    566
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b58f"
+  },
+  "username": "leadie2g",
+  "email": "lglader2g@miibeian.gov.cn",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "15/10/2022",
+  "lastOnlineDate": "19/05/2022",
+  "coins": 1764,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    5995,
+    4486,
+    9126,
+    4777,
+    6299
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b590"
+  },
+  "username": "kdunkerley2h",
+  "email": "kfinley2h@army.mil",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "13/12/2022",
+  "lastOnlineDate": "20/06/2022",
+  "coins": 5327,
+  "shopItems": [],
+  "scores": [
+    2149
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b591"
+  },
+  "username": "bjenckes2i",
+  "email": "mkydde2i@webmd.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "27/08/2022",
+  "lastOnlineDate": "26/05/2022",
+  "coins": 5662,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b592"
+  },
+  "username": "mstradling2j",
+  "email": "rmallinder2j@pagesperso-orange.fr",
+  "role": "player",
+  "banned": true,
+  "joinDate": "09/05/2022",
+  "lastOnlineDate": "05/07/2022",
+  "coins": 7370,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    5933,
+    5571
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b593"
+  },
+  "username": "hseiler2k",
+  "email": "jjinda2k@skyrock.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "15/09/2022",
+  "lastOnlineDate": "03/12/2022",
+  "coins": 2798,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b594"
+  },
+  "username": "awhitman2l",
+  "email": "awilbud2l@domainmarket.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "16/10/2022",
+  "lastOnlineDate": "04/08/2022",
+  "coins": 2609,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b595"
+  },
+  "username": "abarcke2m",
+  "email": "adrinkel2m@techcrunch.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "08/03/2022",
+  "lastOnlineDate": "10/05/2022",
+  "coins": 1508,
+  "shopItems": [],
+  "scores": [
+    8900,
+    7794,
+    2854,
+    4703
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b596"
+  },
+  "username": "tsarre2n",
+  "email": "mchadwin2n@usda.gov",
+  "role": "player",
+  "banned": true,
+  "joinDate": "05/07/2022",
+  "lastOnlineDate": "11/01/2023",
+  "coins": 9489,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [
+    3763
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b597"
+  },
+  "username": "dsouley2o",
+  "email": "thinners2o@delicious.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "24/07/2022",
+  "lastOnlineDate": "20/06/2022",
+  "coins": 3612,
+  "shopItems": [
+    "63e7bf190121b63bcd37b4ce",
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf4b0121b63bcd37b4cf"
+  ],
+  "scores": [],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b598"
+  },
+  "username": "smunnis2p",
+  "email": "tkelloway2p@yahoo.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "24/06/2022",
+  "lastOnlineDate": "04/11/2022",
+  "coins": 3488,
+  "shopItems": [
+    "63e7bf4b0121b63bcd37b4cf",
+    "63e7bf550121b63bcd37b4d0",
+    "63e7bf190121b63bcd37b4ce"
+  ],
+  "scores": [
+    8127,
+    5257,
+    900
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b599"
+  },
+  "username": "pdalgetty2q",
+  "email": "rbrookes2q@macromedia.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "06/10/2022",
+  "lastOnlineDate": "02/01/2023",
+  "coins": 7949,
+  "shopItems": [],
+  "scores": [
+    8685,
+    7318
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "63e7c19a0121b63bcd37b59a"
+  },
+  "username": "hsaffell2r",
+  "email": "aallibon2r@oakley.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "05/09/2022",
+  "lastOnlineDate": "20/06/2022",
+  "coins": 2778,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    1241,
+    2366,
+    874
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "6448e49deb2be52dee5702cd"
+  },
+  "username": "reset2",
+  "passwordHash": {
+    "$binary": {
+      "base64": "g0XPk/f6FMwsztcCz6jWJRldSwGSk6sWLGj9mLfzCUgbo6YHiaFHo9Hcs8FSND9IqTIHpQCnXxIxK6WDnmz9eg==",
+      "subType": "00"
+    }
+  },
+  "passwordSalt": {
+    "$binary": {
+      "base64": "dchfhhYEjlAZSKdGOygxPDGU+UYRUhO1LMmoP2DqiPUoU8vfGZEBkRtbtj9wRN4XHWS3oE3EoatQR5xAPIpi9LUgjf4+UWsfrcc7WHBYhFhiHBXlXQV+TZfrxc8yQIuWmM23FCUc6K+tPn25XPpeCJl/41KjEBKOUYjHtCSxYw0=",
+      "subType": "00"
+    }
+  },
+  "email": "reset2@asd.hu",
+  "role": "player",
+  "banned": false,
+  "joinDate": "2023-04-26T08:45:17.062Z",
+  "lastOnlineDate": "",
+  "coins": 100,
+  "shopItems": [],
+  "scores": [],
+  "friends": [],
+  "refreshToken": "",
+  "tokenCreated": null,
+  "tokenExpires": null
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd10b"
+  },
+  "username": "mkempson0",
+  "email": "elampkin0@senate.gov",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "28/02/2022",
+  "lastOnlineDate": "06/02/2022",
+  "coins": 353,
+  "shopItems": [
+    "644833fcaa58ac57c2b66a49"
+  ],
+  "scores": [
+    1880,
+    5812,
+    3535,
+    6444,
+    9979,
+    6187,
+    6544,
+    7200,
+    5170
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd10c"
+  },
+  "username": "dglasgow1",
+  "email": "mocloney1@wisc.edu",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "20/01/2022",
+  "lastOnlineDate": "30/11/2022",
+  "coins": 3509,
+  "shopItems": [
+    "64483422aa58ac57c2b66a4a3bcd37b4cf",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    6113,
+    1492,
+    4073,
+    8865,
+    9974,
+    1555,
+    5596,
+    9086,
+    1197,
+    9514
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd10d"
+  },
+  "username": "ifearn2",
+  "email": "ggotecliffe2@ibm.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "18/10/2022",
+  "lastOnlineDate": "03/04/2022",
+  "coins": 4668,
+  "shopItems": [
+    "644833fcaa58ac57c2b66a49",
+    "63e7bf550121b63bcd37b4d0",
+    "64483422aa58ac57c2b66a4a3bcd37b4cf"
+  ],
+  "scores": [
+    6331,
+    6284,
+    6031,
+    6587,
+    8868,
+    2289,
+    8689,
+    8815
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd10e"
+  },
+  "username": "cpolsin3",
+  "email": "mhindrick3@globo.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "14/10/2022",
+  "lastOnlineDate": "22/10/2022",
+  "coins": 5325,
+  "shopItems": [
+    "64483422aa58ac57c2b66a4a3bcd37b4cf",
+    "644833fcaa58ac57c2b66a49"
+  ],
+  "scores": [
+    9711,
+    5012,
+    5296,
+    7650,
+    4119,
+    5638,
+    2365,
+    1906,
+    7870,
+    358
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd10f"
+  },
+  "username": "gsteketee4",
+  "email": "tdorran4@bluehost.com",
+  "role": "admin",
+  "banned": true,
+  "joinDate": "30/08/2022",
+  "lastOnlineDate": "12/05/2022",
+  "coins": 7812,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    3899,
+    7490,
+    1027,
+    538,
+    15,
+    7051,
+    9743,
+    6724,
+    2428,
+    4060
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd110"
+  },
+  "username": "fsuerz5",
+  "email": "mbader5@marriott.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "29/12/2022",
+  "lastOnlineDate": "31/01/2022",
+  "coins": 5075,
+  "shopItems": [
+    "644833fcaa58ac57c2b66a49",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    9288,
+    2770,
+    2967,
+    3070,
+    3263,
+    1538,
+    9701,
+    2029,
+    6014
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd111"
+  },
+  "username": "gscarf6",
+  "email": "vcooksey6@marriott.com",
+  "role": "player",
+  "banned": false,
+  "joinDate": "29/07/2022",
+  "lastOnlineDate": "08/09/2022",
+  "coins": 8645,
+  "shopItems": [
+    "64483422aa58ac57c2b66a4a3bcd37b4cf"
+  ],
+  "scores": [
+    6424,
+    8668,
+    7824,
+    5770,
+    26,
+    4895,
+    1164,
+    2514
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd112"
+  },
+  "username": "rwoolveridge7",
+  "email": "oclorley7@nyu.edu",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "07/07/2022",
+  "lastOnlineDate": "18/10/2022",
+  "coins": 2746,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "644833fcaa58ac57c2b66a49",
+    "64483422aa58ac57c2b66a4a3bcd37b4cf"
+  ],
+  "scores": [
+    6046,
+    9033,
+    5265,
+    4759,
+    8208,
+    2246,
+    6865,
+    2984,
+    6080
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd113"
+  },
+  "username": "elampet8",
+  "email": "msteanyng8@liveinternet.ru",
+  "role": "player",
+  "banned": true,
+  "joinDate": "18/12/2022",
+  "lastOnlineDate": "22/06/2022",
+  "coins": 3794,
+  "shopItems": [
+    "63e7bf550121b63bcd37b4d0",
+    "64483422aa58ac57c2b66a4a3bcd37b4cf",
+    "644833fcaa58ac57c2b66a49"
+  ],
+  "scores": [
+    2658,
+    3910,
+    3735,
+    2846,
+    3621,
+    9103,
+    8212
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644abcfc17889384cd5bd114"
+  },
+  "username": "rrubberts9",
+  "email": "acoskerry9@mysql.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "11/05/2022",
+  "lastOnlineDate": "28/01/2022",
+  "coins": 8790,
+  "shopItems": [
+    "644833fcaa58ac57c2b66a49",
+    "64483422aa58ac57c2b66a4a3bcd37b4cf",
+    "63e7bf550121b63bcd37b4d0"
+  ],
+  "scores": [
+    5013,
+    1757,
+    3701,
+    3837,
+    7090,
+    4809,
+    60,
+    862,
+    250,
+    6893
+  ],
+  "friends": []
+},{
+  "_id": {
+    "$oid": "644ec134a662a27230e5430f"
+  },
+  "username": "Player",
+  "passwordHash": {
+    "$binary": {
+      "base64": "Fj93bVVDkWFUUdaOgyyoJnSSLc0A+U+Jd4y36aAVXpmqnF7mqt2xwPPbatTOq+4dlg9KWtL2P97vXFPXhRAtAw==",
+      "subType": "00"
+    }
+  },
+  "passwordSalt": {
+    "$binary": {
+      "base64": "xUEf9hhwYpCf5sv3S8c5UXT/8J6wKmChg5KobwuHeLRjogLRSgbX9FisDPDoSDPlW45PslA+c9jYEpLiMCCRg0Xkk1LcOJS4vfSCgQsMJ1SkMwhoEaGwtXsdRe0mZC+9YbCG3NzIgF9ifVHw+yLTxfNIEPdMWJQne8gvI31J2eA=",
+      "subType": "00"
+    }
+  },
+  "email": "kovacsl6@kkszki.hu",
+  "role": "player",
+  "banned": false,
+  "joinDate": "4/30/2023",
+  "lastOnlineDate": "4/30/2023",
+  "coins": 100,
+  "shopItems": [],
+  "scores": [],
+  "friends": [],
+  "refreshToken": "9O77b71IrBl5XZflQo3zWVaVP47AlL7d9sv/6RUiJm2tW1QMdFqypECiOtdbOna4/Xt3RfSEW53rZVGBnW7Kjw==",
+  "tokenCreated": {
+    "$date": "2023-04-30T19:27:57.141Z"
+  },
+  "tokenExpires": {
+    "$date": "2023-05-07T19:27:57.141Z"
+  }
+},{
+  "_id": {
+    "$oid": "644ec27fa662a27230e54310"
+  },
+  "username": "Admin",
+  "passwordHash": {
+    "$binary": {
+      "base64": "tz6StUQAfo3GcJ/zor1BzfHuCn5/T6zHhLH+iXMnN9t+wgCng+n6SYsU3HwuyY2QNePq1OlBGv3ird1ltrEKwA==",
+      "subType": "00"
+    }
+  },
+  "passwordSalt": {
+    "$binary": {
+      "base64": "3x9qEpTbg0Jgo7h4oGTU9ACOfM9bLEnitSz7xdMFSfDE7b/cbUrkrQ6a3R6vbOLjg5bHrBR+kxnPrdHzhQckCcdqHldYKMtuskQNhigRxgKpZ+YpoX0+6UN/g7xeAzeGmAbuTlfTxXEv9qzhBRVlKY2zaxC1++C2WjDOPFhz1iU=",
+      "subType": "00"
+    }
+  },
+  "email": "nagyklevi@gmail.com",
+  "role": "admin",
+  "banned": false,
+  "joinDate": "4/30/2023",
+  "lastOnlineDate": "4/30/2023",
+  "coins": 100,
+  "shopItems": [],
+  "scores": [],
+  "friends": [],
+  "refreshToken": "Eb26zXfHyzijHp9g50zbWzLEvtJoo59RHXr5H2HHHKgM0xZw/rP8mX2oH3S2/+Rm2DjJ5L9pv65NRSAskEUm3g==",
+  "tokenCreated": {
+    "$date": "2023-04-30T19:38:07.461Z"
+  },
+  "tokenExpires": {
+    "$date": "2023-05-07T19:38:07.461Z"
+  }
+},{
+  "_id": {
+    "$oid": "644ec384a662a27230e54313"
+  },
+  "username": "Banned",
+  "passwordHash": {
+    "$binary": {
+      "base64": "jly07CIwaKKMz3nweOMzWq4JAqTyI46uMEn6WpV5sMu1DPTlCSAULjRoyElQSdwso8Lz8m4d/G3SAeoMKnjKLQ==",
+      "subType": "00"
+    }
+  },
+  "passwordSalt": {
+    "$binary": {
+      "base64": "Qd8M12oRSscJ76h8Ndxi+Q70JlgOZFDbcqSXZcrN0ZAqQhKPfGbZUJRd/MT6ANB5ueCld2kK9Y/NCe4BO2xuN0Uav37ETXJHQ4HcBYvwVQv7VaEsHDZyAwUnRc2cCgjrUzzHRZM5k/jEKJicA/ztfRtV+OSt7S2u0xlgD3+1goQ=",
+      "subType": "00"
+    }
+  },
+  "email": "banned@banned.hu",
+  "role": "player",
+  "banned": true,
+  "joinDate": "4/30/2023",
+  "lastOnlineDate": "",
+  "coins": 100,
+  "shopItems": [],
+  "scores": [],
+  "friends": [],
+  "refreshToken": "",
+  "tokenCreated": null,
+  "tokenExpires": null
+}]

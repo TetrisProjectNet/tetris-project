@@ -1,0 +1,2 @@
+MongoDB connection string to vs code and MongoDB Compass.
+mongodb+srv://tetrisprojectnet:<password>@tetris-project.ybfu19k.mongodb.net/test
