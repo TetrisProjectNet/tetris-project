@@ -10,10 +10,12 @@ namespace Tetris.Game
     {
         private readonly Block[][] blocks = new Block[][]
         {
-            new Block[] { new(0, 0, 5), new(1, 0, 5), new(1, 1, 5), new(2, 1, 5) }
+            new Block[] { new(0, 0, 5), new(1, 0, 5), new(1, 1, 5), new(2, 1, 5) },
+            new Block[] { new(1, 1, 5), new(1, 2, 5), new(2, 0, 5), new(2, 1, 5) },
+            new Block[] { new(0, 1, 5), new(1, 1, 5), new(1, 2, 5), new(2, 2, 5) },
+            new Block[] { new(0, 1, 5), new(0, 2, 5), new(1, 0, 5), new(1, 1, 5) },
         };
         
-        public int stateNumber = 0;
         public override Block[][] Blocks => blocks;
     }
 }

@@ -26,15 +26,11 @@
         </Grid.ColumnDefinitions>
 
         <Frame Grid.Row="1" Grid.Column="0"
-               HeightRequest="250"
+               HeightRequest="270"
                WidthRequest="350">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="80"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+            <StackLayout>
                 <Frame Grid.Row="0"
-                       HeightRequest="75"
+                       HeightRequest="80"
                        BackgroundColor="DarkGray"
                        WidthRequest="350"
                        VerticalOptions="Start"
@@ -42,7 +38,16 @@
                        Margin="0, -30, 0, 0">
                     <Label FontFamily="Tetris" Text="Hold" FontSize="40" HorizontalOptions="Center" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                 </Frame>
-            </Grid>
+                <Image Grid.Row="1"
+                       Source="fullorange.png"
+                       x:Name="HoldImage"
+                       WidthRequest="240"
+                       HeightRequest="240"
+                       Aspect="AspectFit"
+                       Margin="0, 30, 0, 0"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
         </Frame>
 
         <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="EndAndExpand" Margin="0, 20, 0, 0">
@@ -63,15 +68,11 @@
         <controls:SKCanvasView Grid.Row="1" Grid.Column="1" PaintSurface="OnPaintSurface" x:Name="canvasView" HeightRequest="821" WidthRequest="411" Margin="0, 50, 0, 0"/>
 
         <Frame Grid.Row="1" Grid.Column="2"
-               HeightRequest="250"
+               HeightRequest="275"
                WidthRequest="350">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="85"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+            <StackLayout>
                 <Frame Grid.Row="0"
-                       HeightRequest="70"
+                       HeightRequest="80"
                        BackgroundColor="DarkGray"
                        WidthRequest="350"
                        VerticalOptions="Start"
@@ -79,7 +80,16 @@
                        Margin="0, -30, 0, 0">
                     <Label FontFamily="Tetris" Text="Next" FontSize="40" HorizontalOptions="Center" VerticalOptions="End" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                 </Frame>
-            </Grid>
+                <Image Grid.Row="1"
+                       Source="transparenttile.png"
+                       x:Name="NextImage"
+                       WidthRequest="240"
+                       HeightRequest="240"
+                       Aspect="AspectFit"
+                       Margin="0, 30, 0, 0"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
         </Frame>
 
         <Frame Grid.Row="2" Grid.Column="2"
