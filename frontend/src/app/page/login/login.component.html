@@ -11,6 +11,7 @@
           [type]="'text'"
           [name]="'username'"
           [labelContent]="'Username'"
+          [inputId]="'selenium__login__username'"
         ></app-floating-label-input>
       </div>
       <div class="form-group">
@@ -22,13 +23,14 @@
           [type]="'password'"
           [name]="'password'"
           [labelContent]="'Password'"
+          [inputId]="'selenium__login__password'"
         ></app-floating-label-input>
       </div>
       <div class="d-flex flex-column">
         <small class="no-acc mt-2">Forgot password? <a [routerLink]="['/forgot-password']">Click here!</a></small>
         <small class="no-acc mt-2">Don't have an account yet? <a [routerLink]="['/signup']">Sign up!</a></small>
       </div>
-      <button type="submit" class="game-played btn btn-info col-12 my-4">Login</button>
+      <button type="submit" class="game-played btn btn-info col-12 my-4" id="selenium__login__submit">Login</button>
     </form>
     <!-- <button (click)="getMe()" class="game-played btn btn-info col-12 my-4">getme</button>
     <div class="text-white">

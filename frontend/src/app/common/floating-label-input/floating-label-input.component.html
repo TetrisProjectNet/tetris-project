@@ -1,7 +1,7 @@
 <input #validRef="ngModel" #inputRef [(ngModel)]="inputModel" (ngModelChange)="inputModelChange.emit(inputModel)"
     (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)"
     (mouseenter)="isHovered=!isHovered" (mouseleave)="isHovered=!isHovered"
-    class="form-control" [class]="inputClass" [name]="name" [type]="type"
+    class="form-control" [id]="inputId" [class]="inputClass" [name]="name" [type]="type"
     [disabled]="disabled" [required]="required" [pattern]="pattern"
     (keyup)="validate(validRef.valid)">
 <label class="form-label" [class]="inputFocusClass">{{ labelContent }}</label>

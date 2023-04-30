@@ -14,6 +14,7 @@ export class FloatingLabelInputComponent {
   @Output() inputModelChange = new EventEmitter<any>();
   @Input() labelContent: string = '';
   @Input() inputClass: string = '';
+  @Input() inputId: string = '';
   @Input() name: string = '';
   @Input() type: string = '';
   @Input() disabled: boolean = false;
