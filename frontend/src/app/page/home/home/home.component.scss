@@ -1,5 +1,9 @@
 @use '../../../../styles.scss' as styles;
 
+.home__wrapper {
+  overflow: hidden;
+}
+
 .container {
   &-1 {
     height: 90vh;
@@ -74,23 +78,23 @@
 
 .tetris {
   &-img-1 {
-    background-image: url("../../../../assets/img/PNG/tetrises-1.png");
+    background-image: url("../../../../assets/img/WEBP/tetrises-1.webp");
   }
 
   &-img-2 {
-    background-image: url("../../../../assets/img/PNG/tetrises-2.png");
+    background-image: url("../../../../assets/img/WEBP/tetrises-2.webp");
   }
 
   &-img-3 {
-    background-image: url("../../../../assets/img/PNG/tetrises-3.png");
+    background-image: url("../../../../assets/img/WEBP/tetrises-3.webp");
   }
 
   &-img-4 {
-    background-image: url("../../../../assets/img/PNG/tetrises-4.png");
+    background-image: url("../../../../assets/img/WEBP/tetrises-4.webp");
   }
 
   &-img-5 {
-    background-image: url("../../../../assets/img/PNG/tetrises-5.png");
+    background-image: url("../../../../assets/img/WEBP/tetrises-5.webp");
   }
 
 
