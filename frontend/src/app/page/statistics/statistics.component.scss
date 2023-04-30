@@ -1,13 +1,8 @@
 @use '../../../styles'as styles;
 
-.page__wrapper {
-  min-height: 100vh;
-  min-width: 100vh;
-}
-
 .not__logged__wrapper {
   min-height: 100vh;
-  min-width: 100vh;
+  min-width: 90vw;
 }
 
 main {
