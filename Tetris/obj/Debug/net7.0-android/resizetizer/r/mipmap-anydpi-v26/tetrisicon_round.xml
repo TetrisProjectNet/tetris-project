@@ -1,1 +1,0 @@
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android"><background android:drawable="@mipmap/tetrisicon_background" /><foreground android:drawable="@mipmap/tetrisicon_foreground" /></adaptive-icon>

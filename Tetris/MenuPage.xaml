@@ -58,7 +58,7 @@
                            Aspect="AspectFit"
                            VerticalOptions="Center"
                            Margin="20, 0, 10, 0"/>
-                    <Label Text="Profile"
+                    <Label Text="Jackson"
                            TextColor="White"
                            FontSize="24"
                            VerticalOptions="Center"

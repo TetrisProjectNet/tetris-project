@@ -13,7 +13,6 @@ namespace Tetris.Game
             new Block[] { new(1, 0, 6), new(2, 0, 6), new(1, 1, 6), new(2, 1, 6) }
         };
         
-        public int stateNumber = 0;
         public override Block[][] Blocks => blocks;
     }
 }

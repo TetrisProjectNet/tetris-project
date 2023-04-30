@@ -6,7 +6,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-        MainPage = new NavigationPage(new GamePage());
+        MainPage = new NavigationPage(new MainPage());
     }
 
     protected override Window CreateWindow(IActivationState activationState)
