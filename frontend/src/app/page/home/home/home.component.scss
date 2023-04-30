@@ -61,6 +61,41 @@
 
 }
 
+.parallax__tetris {
+  background-position: 50% 0%;
+  // background-size: calc(100% - 50px);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 110vh;
+  width: 100vw;
+  position: fixed;
+  top: -800px;
+}
+
+.tetris {
+  &-img-1 {
+    background-image: url("../../../../assets/img/PNG/tetrises-1.png");
+  }
+
+  &-img-2 {
+    background-image: url("../../../../assets/img/PNG/tetrises-2.png");
+  }
+
+  &-img-3 {
+    background-image: url("../../../../assets/img/PNG/tetrises-3.png");
+  }
+
+  &-img-4 {
+    background-image: url("../../../../assets/img/PNG/tetrises-4.png");
+  }
+
+  &-img-5 {
+    background-image: url("../../../../assets/img/PNG/tetrises-5.png");
+  }
+
+
+}
+
 .error {
   &-container {
     top: -10px;
@@ -68,28 +103,47 @@
     overflow: hidden;
   }
 
+  // &-img {
+  //   background-image: url("../../../../assets/img/tetris-background-1.png");
+  // }
+
+  // &-img-2 {
+  //   background-image: url("../../../../assets/img/tetris-background-2.png");
+  // }
+
+  // &-img-3 {
+  //   background-image: url("../../../../assets/img/tetris-background-3.png");
+  // }
+
+  // &-img-4 {
+  //   background-image: url("../../../../assets/img/tetris-background-4.png");
+  // }
+
+  // &-img-5 {
+  //   background-image: url("../../../../assets/img/tetris-background-5.png");
+  // }
+
   &-img {
-    // background-image: url("../../../../assets/img/tetris-errors.jpg");
-    background-image: url("../../../../assets/img/tetris-background-1.png");
+    background-image: url("../../../../assets/img/WEBP/tetris-background-1.webp");
   }
 
   &-img-2 {
-    // background-image: url("../../../../assets/img//mountains.png");
-    background-image: url("../../../../assets/img/tetris-background-2.png");
-    // top: 40%;
+    background-image: url("../../../../assets/img/WEBP/tetris-background-2.webp");
   }
 
   &-img-3 {
-    background-image: url("../../../../assets/img/tetris-background-3.png");
+    background-image: url("../../../../assets/img/WEBP/tetris-background-3.webp");
   }
 
   &-img-4 {
-    background-image: url("../../../../assets/img/tetris-background-4.png");
+    background-position: 50% 110%;
+    background-image: url("../../../../assets/img/WEBP/tetris-background-4.webp");
   }
 
   &-img-5 {
-    background-image: url("../../../../assets/img/tetris-background-5.png");
+    background-image: url("../../../../assets/img/WEBP/tetris-background-5.webp");
   }
+
 
   &-text {
     // z-index: 1;

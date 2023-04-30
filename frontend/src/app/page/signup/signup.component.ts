@@ -103,10 +103,10 @@ export class SignupComponent implements OnInit {
     user.coins = 100;
     this.authService.register(user).subscribe({
       error: (error) => {
-        if (error.error = 'This username is already in use.') {
-          this.onDanger(error, 'Error!');
-        } else if (error.error = 'This email address is already registered.') {
-          this.onDanger(error, 'Error!');
+        if (error.error == 'This username is already in use.') {
+          this.onDanger('This username is already in use.', 'Error!');
+        } else if (error.error == 'This email address is already registered.') {
+          this.onDanger('This email address is already registered.', 'Error!');
         } else {
           this.onDanger('Please try again later!', 'Something went wrong.');
         }
@@ -120,7 +120,7 @@ export class SignupComponent implements OnInit {
       }
     });
   }
-  
+
   onCreate(user: User): void {
     if (user.password !== this.passwordAgain) {
       console.log('Two passwords are not the same!');
