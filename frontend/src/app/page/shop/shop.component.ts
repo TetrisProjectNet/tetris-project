@@ -102,6 +102,7 @@ export class ShopComponent implements OnInit {
                   complete: () => {
                     // this.router.navigate(['user']);
                     this.onSuccess('You\'ve got a new amazing skin.', 'Yeeey!');
+                    location.reload()
                   }
                 });
               }
