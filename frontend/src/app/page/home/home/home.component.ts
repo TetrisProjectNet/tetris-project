@@ -8,7 +8,9 @@ import * as AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    // window.location.reload();
+  }
 
   ngOnInit(): void {
     AOS.init({

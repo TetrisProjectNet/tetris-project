@@ -157,7 +157,7 @@ export class StatisticsComponent implements OnInit {
 
     let lastGameCount = 7;
     this.loggedUser$.subscribe((loggedUser) => {
-      if (loggedUser && loggedUser.scores && loggedUser.scores.length >= 7) {
+      if (loggedUser && loggedUser?.scores && loggedUser?.scores?.length >= 7) {
         this.list$.subscribe((allUsers) => {
           let avgScores: number[] = [0, 0, 0, 0, 0, 0, 0];
           let divider = 0;
@@ -195,7 +195,7 @@ export class StatisticsComponent implements OnInit {
           this.radarChartLabels = ['Latest', '2nd', '3rd', '4th', '5th', '6th', '7th'];
 
           let loggedUserData = {
-            data: loggedUser.scores,
+            data: loggedUser.scores?.slice(loggedUser.scores.length-7),
             label: `${loggedUser.username}`,
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
             hoverBackgroundColor: 'rgba(54, 162, 235, 0.4)',
