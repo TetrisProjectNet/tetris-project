@@ -5,12 +5,12 @@ namespace Tetris;
 
 public partial class MenuPage : ContentPage
 {
-	public MenuPage(string token)
+	public MenuPage()
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
         NavigationPage.SetHasNavigationBar(this, false);
-        GetUserData(token);
+        GetUserData();
     }
 
     private async void NewGameButtonClicked(object sender, TappedEventArgs e)
@@ -39,11 +39,12 @@ public partial class MenuPage : ContentPage
         await DisplayAlert("Error", "Not implemented yet!", "OK");
     }
 
-    private protected async Task GetUserData(string token)
+    private protected async Task GetUserData()
     {
         HttpClient httpClient = new HttpClient();
+        string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
 
-        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", token);
+        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", oauthToken);
 
         var response = await httpClient.GetAsync("https://localhost:7041/Auth");
 

@@ -93,12 +93,14 @@ public partial class GamePage : ContentPage
         return _nextId;
     }
 
-    private async Task UpdatePoints()
+    private async Task UpdatePointsAndCoins()
     {
         var pointsDisplay = (Label)FindByName("PointsLabel");
+        var coinsDisplay = (Label)FindByName("CoinsLabel");
         await MainThread.InvokeOnMainThreadAsync(async () =>
         {
             pointsDisplay.Text = $"{_clearedRows * 65}";
+            coinsDisplay.Text = $"{_clearedRows * 6}";
         });
     }
 
@@ -388,7 +390,7 @@ public partial class GamePage : ContentPage
             _currentOffset = new BlockPosition(3, 0);
             _currentPiece = tetrisPieces[_nextId];
             _nextId = GetRandomTetrisPieceId(random);
-            await UpdatePoints();
+            await UpdatePointsAndCoins();
             var nextImage = (Image)FindByName("NextImage");
             await UpdateImageSource(nextImage, _nextId);
         }
@@ -440,6 +442,14 @@ public partial class GamePage : ContentPage
         _gameRunning = false;
         _gameOver = true;
         RedrawTetris();
+        SendGameDataToServer();
+    }
+
+    public async void SendGameDataToServer()
+    {
+        string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
+
+
     }
 
     private void RedrawTetris()

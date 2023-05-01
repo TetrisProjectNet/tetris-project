@@ -26,11 +26,12 @@
 
         <Frame Grid.Row="1" Grid.Column="0"
                HeightRequest="275"
-               WidthRequest="350">
+               WidthRequest="350"
+               BackgroundColor="Black">
             <StackLayout>
                 <Frame Grid.Row="0"
                        HeightRequest="80"
-                       BackgroundColor="DarkGray"
+                       BackgroundColor="DimGray"
                        WidthRequest="350"
                        VerticalOptions="Start"
                        CornerRadius="0"
@@ -68,11 +69,12 @@
 
         <Frame Grid.Row="1" Grid.Column="2"
                HeightRequest="275"
-               WidthRequest="350">
+               WidthRequest="350"
+               BackgroundColor="Black">
             <StackLayout>
                 <Frame Grid.Row="0"
                        HeightRequest="80"
-                       BackgroundColor="DarkGray"
+                       BackgroundColor="DimGray"
                        WidthRequest="350"
                        VerticalOptions="Start"
                        CornerRadius="0"
@@ -91,27 +93,48 @@
             </StackLayout>
         </Frame>
 
-        <Frame Grid.Row="2" Grid.Column="2"
-               HeightRequest="150"
-               WidthRequest="350"
-               HorizontalOptions="End"
-               VerticalOptions="End">
-            <Grid>
+        <StackLayout Orientation="Vertical"
+                     Grid.Row="2" Grid.Column="2"
+                     HeightRequest="160"
+                     WidthRequest="180"
+                     BackgroundColor="Transparent"
+                     HorizontalOptions="EndAndExpand"
+                     VerticalOptions="EndAndExpand">
+            <!--<Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="85"/>
+                    <RowDefinition Height="50"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Frame Grid.Row="0"
-                       HeightRequest="70"
-                       BackgroundColor="DarkGray"
-                       WidthRequest="350"
-                       VerticalOptions="Start"
-                       CornerRadius="0"
-                       Margin="0, -20, 0, 0">
-                    <Label FontFamily="Tetris" Text="Points" FontSize="40" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                </Frame>
-                <Label x:Name="PointsLabel" Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Center" TextColor="White" Text="0" FontSize="50" FontFamily="Tetris" Margin="0, -37, 0, 0"/>
+
+                <Label TextColor="White" Grid.Row="0" x:Name="PointsLabel" Text="0" FontFamily="Tetris" FontSize="40" HorizontalOptions="Start" VerticalOptions="Center" HorizontalTextAlignment="End" VerticalTextAlignment="Center"/>
+                <StackLayout Grid.Row="1" Orientation="Horizontal">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="80"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label TextColor="White" Grid.Column="0" x:Name="CoinsLabel" Text="0" FontFamily="Tetris" FontSize="40" HorizontalOptions="Start" VerticalOptions="Center" HorizontalTextAlignment="End" VerticalTextAlignment="Center"/>
+                        <Image HeightRequest="40" Grid.Column="1" x:Name="coinicon" Source="coinicon.png" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                    </Grid>
+                </StackLayout>
+            </Grid>-->
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+
+                <Label TextColor="White" Grid.Row="0" Grid.Column="0" x:Name="PointsLabel" Text="0" FontFamily="Tetris" FontSize="40" HorizontalOptions="EndAndExpand" VerticalOptions="Center" HorizontalTextAlignment="End" VerticalTextAlignment="Center"/>
+
+                <Label TextColor="White" Grid.Row="1" Grid.Column="0" x:Name="CoinsLabel" Text="0" FontFamily="Tetris" FontSize="40" HorizontalOptions="EndAndExpand" VerticalOptions="Center" HorizontalTextAlignment="End" VerticalTextAlignment="Center"/>
+                <Image HeightRequest="40" Grid.Row="1" Grid.Column="1" x:Name="coinicon" Source="coinicon.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
             </Grid>
-        </Frame>
+        </StackLayout>
     </Grid>
 </ContentPage>

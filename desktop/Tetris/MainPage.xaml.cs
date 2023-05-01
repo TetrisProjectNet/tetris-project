@@ -39,15 +39,16 @@ public partial class MainPage : ContentPage
 
             if (response.IsSuccessStatusCode)
             {
-                var authContent = await response.Content.ReadAsStringAsync();
+                var authToken = await response.Content.ReadAsStringAsync();
 
-                await Navigation.PushAsync(new MenuPage(authContent), false);
+                await Navigation.PushAsync(new MenuPage(), false);
 
-                var payload = authContent.Split('.')[1];
+                var payload = authToken.Split('.')[1];
                 var jsonBytes = ParseBase64WithoutPadding(payload);
                 var keyValuePairs = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
 
-                AuthorizedUser user = new AuthorizedUser(keyValuePairs["id"].ToString(), keyValuePairs[ClaimTypes.Name].ToString(), keyValuePairs[ClaimTypes.Role].ToString(), authContent, new DateTime(Convert.ToInt64(keyValuePairs["exp"].ToString())));
+                AuthorizedUser user = new AuthorizedUser(keyValuePairs["id"].ToString(), keyValuePairs[ClaimTypes.Name].ToString(), keyValuePairs[ClaimTypes.Role].ToString(), authToken, new DateTime(Convert.ToInt64(keyValuePairs["exp"].ToString())));
+                await SecureStorage.Default.SetAsync("oauth_token", authToken);
             }
         }
         catch (Exception e)
