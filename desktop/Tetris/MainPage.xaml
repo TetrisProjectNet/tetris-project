@@ -44,25 +44,25 @@
                     <controls:HyperlinkLabel Text="Privacy Policy" FontSize="13" HorizontalTextAlignment="Center" TextColor="Blue" Url="https://www.google.com" Margin="0, 0, 0, 10"/>
 
                     <StackLayout Orientation="Horizontal">
-                        <Entry x:Name="usernameEntry" Placeholder="Username" Margin="30, 0, 0, 0" TextColor="Black" HorizontalOptions="Start" WidthRequest="300"/>
+                        <controls:AuthEntry BackgroundColor="#FAF9F6" x:Name="usernameEntry" Placeholder="Username" Margin="30, 0, 0, 0" TextColor="Black" PlaceholderColor="Black" HorizontalOptions="Start" WidthRequest="300"/>
                         <Image x:Name="usernameFail" Source="redmark.png" HeightRequest="30" HorizontalOptions="End" Margin="-5, 0, 0, 0" IsVisible="false"/>
                     </StackLayout>
 
                     <StackLayout Orientation="Horizontal">
-                        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Margin="30, 0, 0, 0" TextColor="Black" Completed="PasswordEntry_OnCompleted" HorizontalOptions="Start" WidthRequest="300"/>
+                        <controls:AuthEntry BackgroundColor="#FAF9F6" x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Margin="30, 0, 0, 0" TextColor="Black" PlaceholderColor="Black" Completed="PasswordEntry_OnCompleted" HorizontalOptions="Start" WidthRequest="300"/>
                         <Image x:Name="passwordFail" Source="redmark.png" HeightRequest="30" HorizontalOptions="End" Margin="-5, 0, 0, 0" IsVisible="false"/>
                     </StackLayout>
 
                     <Label x:Name="successLogin" FontFamily="Tetris" Margin="0, 20, 0, -20" FontSize="16" Text="Logged in, you will be redirected soon!" TextColor="Green" HorizontalOptions="Center" IsVisible="false"/>
 
-                    <Button Text="Login" BackgroundColor="#9625E4" TextColor="White" 
+                    <Button Text="Login" BackgroundColor="#9625E4" TextColor="#FAF9F6" 
                             Margin="30, 30, 30, 0" Clicked="OnLoginButtonClicked"/>
 
                     <StackLayout Orientation="Vertical" Margin="30, 5, 30, 0" >
                         <controls:HyperlinkLabel Text="Forgot your password?" FontSize="13" HorizontalTextAlignment="Center" TextColor="Blue" Url="https://www.google.com"/>
                     </StackLayout>
 
-                    <Button Text="Register" BackgroundColor="MediumPurple" TextColor="White" 
+                    <Button Text="Register" BackgroundColor="MediumPurple" TextColor="#FAF9F6" 
                             Margin="30, 20, 30, 250" Clicked="OnRegisterButtonClicked" />
                     <Label Text="Tetris Project" HorizontalOptions="Center" TextColor="Black"/>
                     <Label Text="2023" HorizontalOptions="Center" TextColor="Black"/>
