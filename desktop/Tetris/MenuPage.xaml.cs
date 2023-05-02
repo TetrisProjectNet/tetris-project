@@ -1,11 +1,14 @@
 using SharpHook;
+using System.Linq;
 using System.Net.Http.Headers;
+using System.Reactive.Linq;
 
 namespace Tetris;
 
 public partial class MenuPage : ContentPage
 {
-	public MenuPage()
+
+    public MenuPage()
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);

@@ -1,7 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Controls.PlatformConfiguration;
 using Microsoft.Maui.Hosting;
 using Microsoft.Maui.LifecycleEvents;
 using SkiaSharp.Views.Maui.Controls.Hosting;
+using System.Security.Cryptography.X509Certificates;
 
 #if WINDOWS
 using Microsoft.UI;
@@ -15,6 +18,7 @@ public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
+
 		var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
@@ -38,6 +42,8 @@ public static class MauiProgram
                     AppWindow winuiAppWindow = AppWindow.GetFromWindowId(win32WindowsId);
                     if(winuiAppWindow.Presenter is OverlappedPresenter p) {
                         p.Maximize();
+                        var xpos = winuiAppWindow.Position.X;
+                        var ypos = winuiAppWindow.Position.X;
                     } else {
                         const int width = 1200;
                         const int height = 800;
@@ -48,5 +54,5 @@ public static class MauiProgram
         });
 #endif
         return builder.Build();
-	}
+    }
 }

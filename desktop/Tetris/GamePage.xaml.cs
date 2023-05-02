@@ -53,6 +53,12 @@ public partial class GamePage : ContentPage
     private bool _gameQuit;
     private bool _gameStart = true;
 
+    public static Point GetAppWindowPosition() {
+        var window = Application.Current.Windows[0];
+        var x = ((IWindow)window).X + 8;
+        var y = ((IWindow)window).Y + 8;
+        return new Point(x, y);
+    }
     public GamePage()
     {
         InitializeComponent();
@@ -227,8 +233,9 @@ public partial class GamePage : ContentPage
     }
 
     public bool IsInBoundingBox(SKPoint point, SKPoint point2, MouseHookEventArgs e) {
-        if (e.Data.X > point.X && e.Data.X < point2.X &&
-                e.Data.Y > point.Y && e.Data.Y < point2.Y) return true;
+        Point windowPoint = GetAppWindowPosition();
+        if (e.Data.X > point.X + windowPoint.X && e.Data.X < point2.X + windowPoint.X &&
+                e.Data.Y > point.Y + windowPoint.Y && e.Data.Y < point2.Y + windowPoint.Y) return true;
         return false;
     }
 
