@@ -70,9 +70,8 @@ public partial class GamePage : ContentPage
 
     public async Task StartGame()
     {
-        Thread keyThread = CreateKeypressListener();
-        keyThread.IsBackground = true;
-        keyThread.Start();
+        var hook = CreateKeypressListener();
+        if (!hook.IsRunning) hook.RunAsync();
         await Task.Run(StartCountBack).ContinueWith(t => {
             _gameStart = false;
         });
@@ -133,17 +132,14 @@ public partial class GamePage : ContentPage
         });
     }
 
-    public Thread CreateKeypressListener()
+    public TaskPoolGlobalHook CreateKeypressListener()
     {
-        var thread = new Thread(() =>
-        {
-            var hook = new TaskPoolGlobalHook();
-            hook.KeyPressed += OnKeyPressed;
-            hook.KeyReleased += OnKeyReleased;
-            hook.MouseClicked += OnMouseClicked;
-            hook.Run();
-        });
-        return thread;
+        var hook = SingletonHook.Instance;
+        hook.KeyPressed += OnKeyPressed;
+        hook.KeyReleased += OnKeyReleased;
+        hook.MouseClicked += OnMouseClicked;
+
+        return hook;
     }
 
     public async Task StartCountBack()
