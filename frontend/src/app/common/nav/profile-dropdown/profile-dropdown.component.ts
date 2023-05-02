@@ -32,15 +32,20 @@ export class ProfileDropdownComponent {
       next: (user: any) => {
           if (user) {
             user.lastOnlineDate = new Date().toLocaleDateString("en-US");
-            
+
             this.userService.update(user).subscribe({
-              error: err => console.log(err),
+              next: () => {
+                localStorage.removeItem('authToken');
+                this.authService.resetLoginData();
+              },
+              error: err => console.log('logout error: ', err),
               complete: () => {
                 localStorage.removeItem('authToken');
                 this.authService.resetLoginData();
+                this.router.navigate(['/home']);
               }
             })
-            
+
           }
       }
     })

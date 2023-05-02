@@ -14,6 +14,7 @@ driver.get('http://localhost:4200/home')
 driver.switch_to.window(driver.current_window_handle)
 time.sleep(1)
 
+# without login
 shopNavLink = driver.find_element(By.ID, "selenium__shop")
 shopNavLink.click()
 time.sleep(3)
@@ -41,9 +42,12 @@ time.sleep(0.5)
 loginButton.click()
 time.sleep(3)
 
+# as a player
+shopNavLink = driver.find_element(By.ID, "selenium__shop")
 shopNavLink.click()
 time.sleep(3)
 
+statisticsNavLink = driver.find_element(By.ID, "selenium__statistics")
 statisticsNavLink.click()
 time.sleep(3)
 
@@ -55,11 +59,7 @@ logoutButton = driver.find_element(By.ID, "selenium__logout")
 logoutButton.click()
 time.sleep(3)
 
-# Need this bacause page reloads on logout
-shopNavLink = driver.find_element(By.ID, "selenium__shop")
-statisticsNavLink = driver.find_element(By.ID, "selenium__statistics")
 loginNavLink = driver.find_element(By.ID, "selenium__login")
-
 loginNavLink.click()
 time.sleep(0.5)
 
@@ -73,9 +73,12 @@ loginPassword.send_keys("Lolasd123")
 loginButton.click()
 time.sleep(3)
 
+# as an admin
+shopNavLink = driver.find_element(By.ID, "selenium__shop")
 shopNavLink.click()
 time.sleep(3)
 
+statisticsNavLink = driver.find_element(By.ID, "selenium__statistics")
 statisticsNavLink.click()
 time.sleep(3)
 
