@@ -4,7 +4,9 @@
     class="form-control" [id]="inputId" [class]="inputClass" [name]="name" [type]="type"
     [disabled]="disabled" [required]="required" [pattern]="pattern"
     (keyup)="validate(validRef.valid)">
-<label class="form-label" [class]="inputFocusClass">{{ labelContent }}</label>
+<label class="form-label" [class]="inputFocusClass">
+    {{ labelContent }}<sup *ngIf="required && !disabled" class="required__star">*</sup>
+</label>
 <label *ngIf="isValidationActive && ((validRef.invalid && (validRef.dirty || validRef.touched)) || (firstPassword && (validRef.value != firstPassword)))"
     class="form-label w-100 d-flex align-items-center justify-content-end icon-label">
     <fa-icon class="validation__warning fa-lg" [icon]="faTriangleExclamation"></fa-icon>

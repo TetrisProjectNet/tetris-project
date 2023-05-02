@@ -12,8 +12,8 @@
           [pattern]="'^.{3,15}$'"
           [validGuide]="'Atleast 3 characters!'"
         ></app-floating-label-input>
-
       </div>
+
       <div class="form-group">
         <app-floating-label-input
           #emailInput
@@ -25,8 +25,8 @@
           [validGuide]="'Must be a valid email address!'"
           (isValidEvent)="getValidationData($event)"
         ></app-floating-label-input>
-
       </div>
+
       <div class="form-group">
         <app-floating-label-input
           #passwordInput
@@ -39,6 +39,7 @@
           (isValidEvent)="getValidationData($event)"
         ></app-floating-label-input>
       </div>
+
       <div class="form-group">
         <app-floating-label-input
           #passwordAgainInput
@@ -52,10 +53,16 @@
           [firstPassword]="passwordInput.inputModel"
         ></app-floating-label-input>
       </div>
-      <div class="mt-4 mb-2">
+
+      <!-- <div class="mt-4 mb-2">
+        <small class="no-acc mt-2">Already have an account? <a [routerLink]="['/login']">Login!</a></small>
+      </div> -->
+      <div class="d-flex flex-column">
+        <small class="no-acc mt-2"><sup class="red-text">*</sup> Marked fields are required.</small>
         <small class="no-acc mt-2">Already have an account? <a [routerLink]="['/login']">Login!</a></small>
       </div>
-      <button type="submit" class="game-played btn btn-info col-12 my-3"
+
+      <button type="submit" class="game-played btn btn-info col-12 my-4"
         [disabled]="!(usernameInput.isValid&&emailInput.isValid&&passwordInput.isValid && passwordInput.inputModel==passwordAgainInput.inputModel)">
         Sign up
     </button>

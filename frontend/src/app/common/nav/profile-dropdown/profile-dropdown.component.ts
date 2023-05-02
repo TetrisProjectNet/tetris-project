@@ -34,12 +34,13 @@ export class ProfileDropdownComponent {
             user.lastOnlineDate = new Date().toLocaleDateString("en-US");
             
             this.userService.update(user).subscribe({
+              error: err => console.log(err),
               complete: () => {
                 localStorage.removeItem('authToken');
                 this.authService.resetLoginData();
-                window.location.reload();
               }
             })
+            
           }
       }
     })

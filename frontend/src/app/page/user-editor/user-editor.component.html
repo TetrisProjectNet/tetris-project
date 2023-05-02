@@ -124,7 +124,7 @@
             ></app-floating-label-input>
           </div>
 
-          <div *ngIf="isAdmin" class="select__wrapper form-group mb-0">
+          <div *ngIf="isAdmin" class="select__wrapper form-group">
             <app-floating-label-select
               #coinsInput
               [(selectModel)]="user.role"
@@ -134,11 +134,14 @@
                 admin: 'Admin',
                 player: 'Player'
               }"
-
             ></app-floating-label-select>
           </div>
 
-          <button type="submit" class="game-played btn btn-info col-12 my-3"
+          <div class="d-flex flex-column">
+            <small class="no-acc mt-2"><sup class="red-text">*</sup> Marked fields are required.</small>
+          </div>
+
+          <button type="submit" class="game-played btn btn-info col-12 my-4"
             [disabled]="!(usernameInput.isValid&&emailInput.isValid&&coinsInput.isValid)">
             Save changes
           </button>

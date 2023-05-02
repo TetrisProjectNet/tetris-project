@@ -48,14 +48,8 @@ export class LoginComponent implements OnInit {
         }
       },
       complete: () => {
-        this.router.navigate(['/home']),
-        this.onSuccess('Successfully logged in!');
         this.authService.setLoginData();
-        setTimeout(() => {
-          if (this.authService.isLogged) {
-            this.onWarning('Don\'t tell your password to anyone!', 'Remember!');
-          }
-        }, 6000)
+        this.router.navigate(['/home']);
       }
     });
   }

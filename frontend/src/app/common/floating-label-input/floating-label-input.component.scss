@@ -48,6 +48,11 @@
         top: 0.5rem;
         color: styles.$white;
         transition: transform 0.3s ease-out, font-size 0.3s ease-out;
+
+        & sup {
+          color: styles.$red;
+          margin-left: 2px;
+        }
     }
 }
 
@@ -55,10 +60,6 @@
     transform: translateY(-145%);
     font-size: .75em;
     color: styles.$gray;
-}
-
-.validation__warning {
-  color: red;
 }
 
 .color__input {
@@ -70,11 +71,15 @@
     }
 }
 
+.validation__warning {
+  color: styles.$red;
+}
+
 .val-tooltip {
   position: fixed;
   color: #ffffff;
-  background-color: red;
-  border: 1px solid red;
+  background-color: styles.$red;
+  border: 1px solid styles.$red;
   border-radius: 4px;
   padding: 3px 6px;
   font-size: 13px;
@@ -89,7 +94,7 @@
       height: 0;
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
-      border-bottom: 6px solid red;
+      border-bottom: 6px solid styles.$red;
       position: absolute;
       left: calc(10px);
       animation: fadeUpAnimation ease 0.6s;
