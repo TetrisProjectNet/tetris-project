@@ -29,14 +29,15 @@ public partial class MenuPage : ContentPage
 
     }
 
-    private async void SettingsButtonClicked(object sender, TappedEventArgs e)
+    private void SettingsButtonClicked(object sender, TappedEventArgs e)
     {
-        await DisplayAlert("Error", "Not implemented yet!", "OK");
+        var uri = new Uri("https://www.google.com");
+        Launcher.OpenAsync(uri);
     }
 
-    private async void ProfileButtonClicked(object sender, TappedEventArgs e)
+    private void ProfileButtonClicked(object sender, TappedEventArgs e)
     {
-        await DisplayAlert("Error", "Not implemented yet!", "OK");
+
     }
 
     private protected async Task GetUserData()
