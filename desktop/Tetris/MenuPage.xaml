@@ -48,7 +48,7 @@
                    Padding="12"
                    CornerRadius="8"
                    BorderColor="Transparent"
-                   WidthRequest="200"
+                   WidthRequest="370"
                    HeightRequest="50"
                    VerticalOptions="Start"
                    HorizontalOptions="End">
@@ -57,13 +57,15 @@
                            WidthRequest="40"
                            HeightRequest="40"
                            Aspect="AspectFit"
+                           HorizontalOptions="EndAndExpand"
                            VerticalOptions="Center"
-                           Margin="20, 0, 10, 0"/>
+                           Margin="0, 0, 15, 0"/>
                     <Label Text="..."
                            x:Name="usernameLabel"
                            TextColor="White"
                            FontSize="24"
                            VerticalOptions="Center"
+                           HorizontalOptions="End"
                            FontFamily="Tetris"/>
                 </StackLayout>
                 <Frame.GestureRecognizers>

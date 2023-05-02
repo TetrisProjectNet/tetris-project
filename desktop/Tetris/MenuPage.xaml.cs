@@ -58,7 +58,7 @@ public partial class MenuPage : ContentPage
             Label coinsLabel = (Label)FindByName("coinsLabel");
             Label usernameLabel = (Label)FindByName("usernameLabel");
             coinsLabel.Text = coins;
-            usernameLabel.Text = name;
+            usernameLabel.Text = "JacksonDiazDeDante";
         }
     }
 }
