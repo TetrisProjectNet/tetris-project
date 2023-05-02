@@ -39,9 +39,9 @@ public partial class MainPage : ContentPage
 
             if (response.IsSuccessStatusCode)
             {
+                SetLoginSuccessState();
+                await Task.Delay(1200);
                 var authToken = await response.Content.ReadAsStringAsync();
-
-                await Navigation.PushAsync(new MenuPage(), false);
 
                 var payload = authToken.Split('.')[1];
                 var jsonBytes = ParseBase64WithoutPadding(payload);
@@ -49,12 +49,23 @@ public partial class MainPage : ContentPage
 
                 AuthorizedUser user = new AuthorizedUser(keyValuePairs["id"].ToString(), keyValuePairs[ClaimTypes.Name].ToString(), keyValuePairs[ClaimTypes.Role].ToString(), authToken, new DateTime(Convert.ToInt64(keyValuePairs["exp"].ToString())));
                 await SecureStorage.Default.SetAsync("oauth_token", authToken);
+                await Navigation.PushAsync(new MenuPage(), false);
+            } else {
+                Image usernameFail = (Image)FindByName("usernameFail");
+                Image passwordFail = (Image)FindByName("passwordFail");
+                usernameFail.IsVisible = true;
+                passwordFail.IsVisible = true;
             }
         }
         catch (Exception e)
         {
             throw;
         }
+    }
+
+    public void SetLoginSuccessState() {
+        Label successLabel = (Label)FindByName("successLogin");
+        successLabel.IsVisible = true;
     }
 
     public byte[] ParseBase64WithoutPadding(string base64)

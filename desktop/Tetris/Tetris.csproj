@@ -57,6 +57,7 @@
 	  <None Remove="Resources\Images\menubackground.svg" />
 	  <None Remove="Resources\Images\nnneon.svg" />
 	  <None Remove="Resources\Images\profileicon.png" />
+	  <None Remove="Resources\Images\redmark.png" />
 	  <None Remove="Resources\Images\tetrispieces.png" />
 	</ItemGroup>
 
