@@ -3,6 +3,7 @@
   <div class="form__wrapper my-5 py-5 d-flex flex-column align-items-center">
     <form (ngSubmit)="onSubmit()" class="default-form animate__animated animate__fadeInUp animate__faster">
       <div class="form-group">
+        <!-- Six digit otp input -->
         <ng-otp-input (onInputChange)="onOtpChange($event)" class="" [config]="config" ></ng-otp-input>
       </div>
 
@@ -10,10 +11,6 @@
         <small class="no-acc">Enter the 6-digit code sent to {{ email | emailHider }}</small>
         <small class="no-acc mt-2"><a data-bs-toggle="modal" data-bs-target="#staticBackdrop">Not receiving code?</a></small>
       </div>
-
-      <p class="">
-
-      </p>
 
       <button [routerLink]="['/verification']" type="submit" class="game-played btn btn-info col-12 my-4"
         [disabled]="isButtonDisabled">
@@ -45,15 +42,3 @@
     </div>
   </div>
 </div>
-
-<!-- Didn't receive email code?
-We sent a code to your email. If you have not received the code after several attempts, please try：
-1.
-Check if it is in your junk/spam mail
-2.
-Ensure your email address is nag***@gmail.com
-3.
-The message may be delayed for a few minutes, please try again after 10 minutes.
-4.
-Set up a whitelist of email addresses.How to set email whitelists.
-I understand -->

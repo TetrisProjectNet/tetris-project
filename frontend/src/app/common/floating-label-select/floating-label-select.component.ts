@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
-import { faSquareCaretDown, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faSquareCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-floating-label-select',
@@ -39,10 +39,6 @@ export class FloatingLabelSelectComponent {
     setTimeout(() => {
       if (this.select.nativeElement.value != '') {
         this.selectFocusClass = 'focused';
-        // if (this.select.nativeElement.value.match(this.select.nativeElement.pattern)) {
-        //   this.isValid = true;
-        //   this.isValidEvent.emit(this.isValid);
-        // }
       }
     })
   }

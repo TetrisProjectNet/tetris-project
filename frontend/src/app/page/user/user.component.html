@@ -1,53 +1,4 @@
 <div class="wrapper col-xl-10 offset-xl-1 px-3 px-xl-0">
-  <!-- Search -->
-  <!-- <div class="search bg-light border rounded p-3 m-3">
-      <div class="fw-bold text-uppercase text-center pb-3">Szűrés oszlopok szerint</div>
-      <div class="search d-flex flex-row">
-        <span class="fw-bold text-uppercase col-1 pt-2">Oszlop :</span>
-        <select class="form-control border col" [(ngModel)]="filterKey">
-          <option *ngFor="let key of filterKeys" [value]="[key[0]]">{{key[1]}}</option>
-        </select>
-        <input [(ngModel)]="phrase" class="filter-search border rounded col-6 px-3 ms-3" type="text"
-          placeholder="Keresés . . .">
-      </div>
-    </div>-->
-
-
-    <!-- <div class="my-3">
-      <button (click)="onSuccess('New user registered.')" type="button"
-        class="game-played btn btn-success fw-bold text-uppercase w-100 text-black">
-        Success
-      </button>
-    </div>
-
-    <div class="my-3">
-      <button (click)="onDanger('We could not delete this user.<br>Please try again later!')" type="button"
-        class="game-played btn btn-danger fw-bold text-uppercase w-100 text-black">
-        Danger
-      </button>
-    </div>
-
-    <div class="my-3">
-      <button (click)="onWarning('Don\'t tell your password to anyone!', 'Remember!')" type="button"
-        class="game-played btn btn-warning fw-bold text-uppercase w-100">
-        Warning
-      </button>
-    </div>
-
-    <div class="my-3">
-      <button (click)="onInfo('We put a lot of work into this project.', 'Did you know?')" type="button"
-        class="game-played btn btn-info fw-bold text-uppercase w-100">
-        Info
-      </button>
-    </div>
-
-    <div class="my-3 mb-5">
-      <button (click)="onRemoveToast()" type="button"
-        class="game-played btn btn-secondary fw-bold text-uppercase w-100 text-black">
-        Remove
-      </button>
-    </div> -->
-
 
   <!-- Add new -->
   <div class="">
@@ -58,7 +9,7 @@
     </button>
   </div>
 
-  <!-- Display options -->
+  <!-- Options -->
   <section class="default-form d-flex flex-row justify-content-between my-4">
     <div class="d-flex flex-column flex-md-row">
       <div class="d-flex flex-row me-md-3">
@@ -82,23 +33,6 @@
               banned: 'Banned'
             }"
           ></app-floating-label-select>
-
-          <!-- <select #inputRef [(ngModel)]="filterKey" class="form-select custom-select col-12" name="key" required
-            (focus)="keyFocusToggler($event)" (blur)="keyFocusToggler($event)">
-            <option selected value=""></option>
-            <option value="id">Id</option>
-            <option value="username">Username</option>
-            <option value="email">Email</option>
-            <option value="coins">Coins</option>
-            <option value="joinDate">Join date</option>
-            <option value="lastOnlineDate">Last online</option>
-            <option value="role">Role</option>
-            <option value="banned">Banned</option>
-          </select> -->
-          <!-- <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
-            <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
-          </label> -->
-          <!-- <label class="form-label" [class]="keyClass">Key</label> -->
         </div>
       </div>
 
@@ -107,9 +41,6 @@
           <fa-icon class="text-center" [icon]="faFilter"></fa-icon>
         </div>
         <div class="phrase__wrapper form-group m-0">
-          <!-- <input #inputRef [(ngModel)]="phrase" class="form-control" name="phrase" type="text"
-            (focus)="phraseFocusToggler($event)" (blur)="phraseFocusToggler($event)">
-          <label class="form-label" [class]="phraseClass">Filter</label> -->
           <app-floating-label-input
             [(inputModel)]="phrase"
             [type]="'text'"
@@ -117,7 +48,6 @@
             [labelContent]="'Filter'"
             [required]="false"
           ></app-floating-label-input>
-
         </div>
       </div>
     </div>
@@ -127,9 +57,6 @@
         <fa-icon class="text-center" [icon]="faBars"></fa-icon>
       </div>
       <div class="rows__wrapper form-group m-0">
-        <!-- <input #inputRef [(ngModel)]="itemsPerPage" class="form-control pe-0" name="rows" type="number"
-          (focus)="rowsFocusToggler($event)" (blur)="rowsFocusToggler($event)">
-        <label class="form-label" [class]="rowsClass">Rows</label> -->
         <app-floating-label-input
           [(inputModel)]="itemsPerPage"
           [inputClass]="'pe-0'"
@@ -175,25 +102,6 @@
               <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user)"
                 type="checkbox" name="" />
             </td>
-            <!-- <td>{{ user.scores.length }}</td>
-            <td> {{ user.shopItems.length }}</td>
-            <td> {{ user.friends.length }}</td> -->
-            <!-- <td>{{ user.id }}</td>
-            <td>{{ user.username }}</td>
-            <td>{{ user.email }}</td>
-            <td>{{ user.joinDate }}</td>
-            <td>{{ user.lastOnlineDate }}</td>
-            <td>{{ user.scores.length }}</td>
-            <td>{{ user.coins }}</td> -->
-            <!-- <td> <p *ngFor="let index of user.shopItems">{{ index.title }}</p> </td> -->
-            <!-- <td> {{ user.shopItems.length }}</td>
-            <td> {{ user.friends.length }}</td>
-            <td>{{ user.role }}</td> -->
-            <!-- <td>
-              <input [(ngModel)]="user.banned" (change)="checkValue(user.banned ? 'true' : 'false', user.id)"
-                type="checkbox" name="" />
-            </td> -->
-            <!-- {{ user.banned }} <br> -->
           </ng-container>
           <td>
             <div class="admin__buttons d-flex flex-row">

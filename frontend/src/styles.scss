@@ -102,61 +102,11 @@ $danger: #e9493f;
         margin-top: 30px;
       }
     }
-
-    // &-control {
-    //   position: relative;
-    //   padding: 6px 10px;
-    //   background: transparent;
-    //   box-shadow: none;
-    //   -webkit-box-shadow: none;
-    //   box-sizing: border-box;
-    //   border: none;
-    //   border-radius: 0;
-    //   border-bottom: 1px solid $theme;
-    //   transition: box-shadow 0.3s ease-out;
-    //   z-index: 1;
-    //   color: $white;
-
-    //   &:active,
-    //   &:focus,
-    //   &:target {
-    //     background: transparent;
-    //     border: none;
-    //     border-bottom: 1px solid $theme;
-    //     -webkit-box-shadow: none;
-    //     box-shadow: none;
-    //     border-radius: 0;
-    //   }
-
-    //   &:focus {
-    //     box-shadow: 0 6px 7px -7px $theme;
-    //   }
-
-    //   &:-webkit-autofill {
-    //     background-clip: text;
-    //     -webkit-background-clip: text;
-    //     -webkit-text-fill-color: $white;
-    //   }
-
-    //   &:disabled {
-    //     color: $gray;
-    //   }
-    // }
-
-    // &-label {
-    //   padding: 0 10px;
-    //   position: absolute;
-    //   left: 0;
-    //   top: 0.5rem;
-    //   color: $white;
-    //   transition: transform 0.3s ease-out, font-size 0.3s ease-out;
-    // }
   }
 }
 
 .no-acc {
   color: $gray;
-  // line-height: 2.5rem;
 
   & a {
     text-decoration: none;
@@ -166,7 +116,6 @@ $danger: #e9493f;
     }
   }
 }
-
 
 // ----- LOGIN BUTTON -----
 .content__item {
@@ -213,7 +162,6 @@ $danger: #e9493f;
 }
 
 .button--anthe {
-  // font-family: bely-display, sans-serif;
   font-family: game-played;
   color: $white;
   background: none;
@@ -247,3 +195,65 @@ $danger: #e9493f;
 .button--anthe:hover .login__icon {
   color: $theme;
 }
+// ----- LOGIN BUTTON END -----
+
+// ----- TOGGLE BUTTON -----
+input[type="checkbox"] {
+  margin-left: 4px;
+  position: relative;
+  width: 3rem;
+  height: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background: linear-gradient(0deg, #333, #000);
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 1rem;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98, .96);
+    transition: .5s;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 1.4em;
+    width: 5px;
+    height: 1.5px;
+    background: aqua;
+    border-radius: 1px;
+    transition: .5s;
+  }
+}
+
+input:checked[type="checkbox"] {
+
+  &:nth-of-type(1) {
+    background: linear-gradient(0deg, #e67e22, #f39c12);
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1);
+  }
+
+  &:before {
+    left: 1rem;
+  }
+
+  &:after {
+    left: 2.42rem;
+  }
+}
+// ----- TOGGLE BUTTON END -----

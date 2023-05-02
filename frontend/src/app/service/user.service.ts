@@ -9,12 +9,9 @@ import { BaseService } from './base.service';
 export class UserService extends BaseService<User> {
 
   constructor(
-    // public override config: ConfigService,
     public override http: HttpClient
     ) {
-    // super(config, http);
     super(http);
-    // this.entity = 'user';
     this.entity = 'User';
   }
 }

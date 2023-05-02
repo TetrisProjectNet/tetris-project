@@ -5,35 +5,12 @@
   padding: 10vh 0;
   transform: skewY(-3deg);
   background: linear-gradient(-45deg, styles.$theme-2, styles.$white, styles.$theme-2);
-
-  // transform: rotate(-0deg);
-
-  // background: repeating-linear-gradient(
-  //   45deg,
-  // styles.$theme-2 0 18px,
-  // dimgrey 18px 20px
-  // )
-  // repeating-linear-gradient(
-  // 45deg,
-  // styles.$theme-2 0 19px,
-  // dimgrey 19px 20px
-  // )
 }
-
-// background-color: #e5e5f7;
-// opacity: 0.8;
-// background-image:  linear-gradient(#21223d 1.6px, transparent 1.6px), linear-gradient(to right, #21223d 1.6px, #e5e5f7 1.6px);
-// background-size: 32px 32px;
-
-// rgba(0, 0, 0, 0.2),
-// rgba(0, 0, 0, 0.2) 10px,
-// rgba(0, 0, 0, 0.3) 10px,
-// rgba(0, 0, 0, 0.3) 20px
 
 .container {
   background-color: styles.$theme;
   font-family: game-played;
-  box-shadow: 0px 0px 100px 16px rgba(styles.$theme, 0.95); //rgba(0,0,0,0.68)
+  box-shadow: 0px 0px 100px 16px rgba(styles.$theme, 0.95);
   border: 8px double rgba(255, 255, 255, 0.5);
   border-radius: 40px;
 }
@@ -46,7 +23,3 @@
 .bar {
   background-color: styles.$theme-2;
 }
-
-// circle-progress {
-//   font-family: game-played-outline;
-// }

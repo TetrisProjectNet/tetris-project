@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { User } from '../model/user';
@@ -18,7 +17,6 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    private router: Router,
   ) {
     const token = localStorage.getItem('authToken');
     token ? this.setLoginData() : this.resetLoginData();
@@ -61,16 +59,6 @@ export class AuthService {
           this.loggedUser$.next(loginObject);
         }
       })
-
-      // this.loggedUser$.subscribe({
-      //   next: (user: any) => {
-      //     if (user) {
-      //       this.isLogged = true;
-      //     } else {
-      //       this.isLogged = false;
-      //     }
-      //   }
-      // })
     }
   }
 
@@ -79,19 +67,4 @@ export class AuthService {
     this.isLogged = false;
   }
 
-  // update(entity: T): Observable<T> {
-  //   return this.http.patch<T>(`${this.apiUrl}${this.entity}/${entity.id}`, entity);
-  // }
-
 }
-
-
-
-// eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDEzODkwOTIyM2UzMTAxMjA2MzgwMiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJyZXNldDEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImV4cCI6MTY4MjQ4ODgwNH0.1RwQzB_737WKybQFcu9JLlJ8iGKAo9mQyHbOaB4FBi75gflesDcFP4C2Lm4622US3RvkM6pAf4ZiHznXDm31Yw
-// eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDEzODkwOTIyM2UzMTAxMjA2MzgwMiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJyZXNldDEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImV4cCI6MTY4MjQ4ODk3NH0.awLSSxQOaszDIPsQ5ZcjTPB_4Faacg9-pdJJfwRlAhXJrDDKt4FhL4xbZRWvNReLbO0CoOBiuPU_nAX8gv8ESw
-
-// {
-//   "id": "644138909223e31012063802",
-//   "name": "reset1"
-// }
-// eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDEzODkwOTIyM2UzMTAxMjA2MzgwMiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhc2QiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJhZG1pbiIsImV4cCI6MTY4MjQ4OTA3N30.fzvO0BY7niZ9qNlccXOxWROhCUQESX5gWNR-CGlRdnguJVQXfRlodGvfBnHJnbQ3hNI_pKWLVDb6QK_BdhnRdg

@@ -18,10 +18,6 @@ export class NewPasswordComponent {
 
   toastRef: any;
 
-  // passwordClass: string = '';
-  // passwordAgainClass: string = '';
-  // selectedElement: any;
-
   constructor(
     private toastr: CustomToastrService,
     private router: Router,
@@ -43,21 +39,11 @@ export class NewPasswordComponent {
   }
 
   onSubmit(password: string, passwordAgain: string): void {
-    // let emailsObj = new Verification();
     if (password !== passwordAgain) {
       this.onDanger('Password and password again do not match.');
     } else {
-
       this.authService.resetPassword(this.email, password, this.code)
       .subscribe({
-        // next: data => {
-        //   console.log(data)
-        //   if (this.otpValue == data.code) {
-        //     this.router.navigate(['/new-password'], {state: {data: this.email}});
-        //   } else {
-        //     this.onDanger('We could not verify your code.');
-        //   }
-        // },
         error: () => {
           this.onDanger('We could not change your password.<br>Please send us your email again!');
           this.router.navigate(['/forgot-password']);
@@ -67,34 +53,8 @@ export class NewPasswordComponent {
           this.router.navigate(['/login']);
         }
       });
-
     }
-
   }
-
-
-  // focusToggler(event: Event, className: string): string {
-  //   event.type == 'focus' ? className= 'focused' : className='';
-
-  //   if(event) {
-  //     this.selectedElement = event.target;
-  //   } else {
-  //     this.selectedElement = null;
-  //   }
-
-  //   if (this.selectedElement.value != '') {
-  //     className= 'focused';
-  //   }
-  //   return className;
-  // }
-
-  // passwordFocusToggler(event: Event): void {
-  //   this.passwordClass = this.focusToggler(event, this.passwordClass)
-  // }
-
-  // passwordAgainFocusToggler(event: Event): void {
-  //   this.passwordAgainClass = this.focusToggler(event, this.passwordAgainClass)
-  // }
 
   getValidationData($event: any) {
     console.log('$event', $event);

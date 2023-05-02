@@ -27,7 +27,6 @@ import { ShopItemEditorComponent } from './page/shop-item-editor/shop-item-edito
 import { VerificationComponent } from './page/verification/verification.component';
 import { NgOtpInputModule } from 'ng-otp-input';
 import { EmailHiderPipe } from './pipe/email-hider.pipe';
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { FilterPipe } from './pipe/filter.pipe';
 import { SorterPipe } from './pipe/sorter.pipe';
 import { NgChartsModule } from 'ng2-charts';
@@ -99,7 +98,6 @@ import { ShopItemFilterPipe } from './pipe/shop-item-filter.pipe';
     FormsModule,
     NgxPaginationModule,
     NgOtpInputModule,
-    AnimateOnScrollModule.forRoot(),
     NgChartsModule,
     NgxPopperjsModule,
     ToastrModule.forRoot({

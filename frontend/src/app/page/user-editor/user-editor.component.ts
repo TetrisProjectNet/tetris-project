@@ -1,11 +1,9 @@
-import { Component, ElementRef, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FaConfig } from '@fortawesome/angular-fontawesome';
 import { faSquareCaretDown } from '@fortawesome/free-regular-svg-icons';
 import { faCircleChevronDown, faCircleChevronUp, faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import { Observable, switchMap, of } from 'rxjs';
-import { FloatingLabelInputComponent } from 'src/app/common/floating-label-input/floating-label-input.component';
 import { User } from 'src/app/model/user';
 import { AuthService } from 'src/app/service/auth.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
@@ -26,26 +24,16 @@ export class UserEditorComponent {
       return of(new User())
     })
   );
+
   loggedUser$ = this.authService.loggedUser$;
-
   isAdmin: boolean = false;
-
-  isButtonDisabled: boolean = true;
 
   faCircleChevronDown = faCircleChevronDown;
   faCircleChevronUp = faCircleChevronUp;
   faSquareCaretDown = faSquareCaretDown;
   faCircleUser = faCircleUser;
 
-  clicked: boolean = false;
-
   toastRef: any;
-
-  // usernameClass: string = '';
-  // emailClass: string = '';
-  // roleClass: string = '';
-  // coinsClass: string = '';
-  // selectedElement: any;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -70,93 +58,22 @@ export class UserEditorComponent {
     }
   }
 
-  ngAfterViewInit() {
-  //   this.inputs.changes.subscribe(sub => {
-  //     sub.toArray().forEach((element: any) => {
-  //       console.log(element.nativeElement);
-  //       setTimeout(() => {
-
-  //         if (element.nativeElement.value != '') {
-  //           switch (element.nativeElement.name) {
-  //             case 'username': {
-  //               this.usernameClass = 'focused';
-  //               break;
-  //             }
-  //             case 'email': {
-  //               this.emailClass = 'focused';
-  //               break;
-  //             }
-  //             case 'role': {
-  //               this.roleClass = 'focused';
-  //               break;
-  //             }
-  //             case 'coins': {
-  //               this.coinsClass = 'focused';
-  //               break;
-  //             }
-  //           }
-  //         }
-
-  //       }, 1)
-  //     })
-  //   });
-  // }
-
-  // focusToggler(event: Event, className: string): string {
-  //   event.type == 'focus' ? className = 'focused' : className = '';
-
-  //   if (event) {
-  //     this.selectedElement = event.target;
-  //   } else {
-  //     this.selectedElement = null;
-  //   }
-
-  //   if (this.selectedElement.value != '') {
-  //     className = 'focused';
-  //   }
-  //   return className;
-  // }
-
-  // usernameFocusToggler(event: Event): void {
-  //   this.usernameClass = this.focusToggler(event, this.usernameClass)
-  // }
-
-  // emailFocusToggler(event: Event): void {
-  //   this.emailClass = this.focusToggler(event, this.emailClass)
-  // }
-
-  // roleFocusToggler(event: Event): void {
-  //   this.roleClass = this.focusToggler(event, this.roleClass)
-  // }
-
-  // coinsFocusToggler(event: Event): void {
-  //   this.coinsClass = this.focusToggler(event, this.coinsClass)
-  }
-
-  onUpdate(form: NgForm, user: User): void {
-    console.log(user);
-    this.clicked = true;
+  onUpdate(user: User): void {
     if (user.id === '') {
       user.joinDate = new Date().toLocaleDateString("en-US");
       this.authService.register(user).subscribe({
         error: err => {
-          this.onDanger('Registration failed.<br>Please try again later!');
-          console.error(err);
+          this.onDanger(`Registration failed.<br>${err.error}`);
         },
         complete: () => {
           this.router.navigate(['user']);
           this.onSuccess('User registered.');
         },
       });
-      // this.userService.create(user).subscribe(
-      //   err => console.error(err),
-      //   () => this.router.navigate(['user']),
-      // );
     } else {
       this.userService.update(user).subscribe({
         error: err => {
-          console.error(err);
-          this.onDanger('Modification failed.<br>Please try again later!');
+          this.onDanger(`Modification failed.<br>${err.error}`);
         },
         complete: () => {
           this.router.navigate(['user']).then(() => location.reload());
@@ -193,7 +110,6 @@ export class UserEditorComponent {
   getValidationData($event: any) {
     console.log('$event', $event);
   }
-
 
   onSuccess(message: string, title: string = 'Success!') {
     this.toastRef = this.toastr.showSuccessToast(title, message);

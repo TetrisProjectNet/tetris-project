@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import { faCirclePlus, faCoins, faTrashCan } from '@fortawesome/free-solid-svg-icons';
-import { Observable } from 'rxjs';
 import { ShopItem } from 'src/app/model/shop-item';
-import { User } from 'src/app/model/user';
 import { AuthService } from 'src/app/service/auth.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
 import { ShopService } from 'src/app/service/shop.service';
@@ -20,23 +18,6 @@ export class ShopComponent implements OnInit {
 
   loggedUser$ = this.authService.loggedUser$;
   isAdmin: boolean = false;
-  // loggedUsersShopItems$: Observable<string[]> = this.loggedUser$.subscribe({
-  //   next: (user: any) => {
-  //     if (user) {
-  //       if (!user.shopItems) {
-  //         return [];
-  //       } else {
-  //         let shopItemList: any[] = [];
-  //         user.shopItems.map((shopItem: any) => {
-  //           shopItemList.push(shopItem.id);
-  //         })
-  //         console.log('shopitemList: ', shopItemList);
-  //         return shopItemList;
-  //       }
-  //     }
-  //     return [];
-  //   }
-  // })
 
   list$ = this.shopService.getAll();
   entity = 'shop';
@@ -54,7 +35,6 @@ export class ShopComponent implements OnInit {
     private toastr: CustomToastrService,
     private authService: AuthService,
     private userService: UserService,
-
   ) { }
 
   ngOnInit(): void {
@@ -77,34 +57,31 @@ export class ShopComponent implements OnInit {
   }
 
   onBuyOne(shopItem: ShopItem) {
+
     if (this.loggedUser$.value) {
       this.loggedUser$.subscribe({
         next: (user: any) => {
-          // console.log('hallo');
           if (user) {
             if (user.coins > shopItem.price) {
               if (window.confirm('Are you sure you want to buy this skin?')) {
                 user.coins = user.coins - shopItem.price;
-                console.log('shopItem ', user.shopItems);
+                
                 if (!user.shopItems) {
-                  console.log('shop items are null');
                   user.shopItems = [shopItem];
                 } else {
-                  console.log('shop items are not null');
                   user.shopItems.push(shopItem);
                 }
-                console.log('shopItem ', user.shopItems);
+
                 this.userService.update(user).subscribe({
                   error: err => {
-                    console.error(err);
                     this.onDanger('Purchase failed.<br>Please try again later!');
                   },
                   complete: () => {
-                    // this.router.navigate(['user']);
                     this.onSuccess('You\'ve got a new amazing skin.', 'Yeeey!');
                     location.reload()
                   }
                 });
+
               }
             } else {
               this.onWarning('You don\'t have enough coins.');
@@ -114,7 +91,6 @@ export class ShopComponent implements OnInit {
       })
     } else {
       this.onInfo('Please login to be able to buy this item!', 'Wellcome to the shop!')
-      // console.log('this.loggedUser$ is false', this.loggedUser$);
     }
 
   }
@@ -129,9 +105,6 @@ export class ShopComponent implements OnInit {
             user.shopItems.map((shopItem: any) => {
               shopItemList.push(shopItem.id);
             })
-            // console.log('shopitemList: ', shopItemList);
-            // console.log('shopitemId: ', shopItemId);
-            console.log('shopitemIncludes: ', shopItemList.includes(shopItemId));
             return shopItemList.includes(shopItemId);
           }
         }
@@ -185,7 +158,7 @@ export class ShopComponent implements OnInit {
             this.onSuccess('Shop item unbanned.');
           }
         });
-      }
+    }
   }
 
   checkValue(value: any, shopItem: ShopItem) {
@@ -198,7 +171,6 @@ export class ShopComponent implements OnInit {
 
   toggleView(value: any) {
     this.adminView = value;
-    console.log(this.adminView);
   }
 
   onSuccess(message: string, title: string = 'Success!') {
@@ -220,6 +192,5 @@ export class ShopComponent implements OnInit {
   onRemoveToast() {
     this.toastr.removeToast(this.toastRef);
   }
-
 
 }

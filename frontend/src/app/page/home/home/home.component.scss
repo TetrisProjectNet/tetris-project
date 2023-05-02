@@ -7,49 +7,11 @@
 .container {
   &-1 {
     height: 90vh;
-    // background-color: chartreuse;
     background-image: url("https://c4.wallpaperflare.com/wallpaper/353/305/288/tetris-cityscape-columbia-video-games-wallpaper-preview.jpg");
-    // background-size: 100%;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     z-index: 1000 !important;
-  }
-
-  // &-2 {
-  //   position: relative;
-  //   overflow: hidden;
-  //   height: 100vh;
-  //   z-index: 1000 !important;
-
-  //   & .img {
-  //     position: fixed;
-  //     height: 100%;
-  //     // width: 100%;
-  //     background-image: url("https://wallpapercave.com/wp/wp2675338.jpg");
-  //     // background-size: 100%;
-  //     background-repeat: no-repeat;
-  //     background-position: 50% 100%;
-  //     z-index: 2;
-  //   }
-
-  //   & .text {
-  //     position: fixed;
-  //     top: 15rem;
-  //     margin-left: auto;
-  //     margin-right: auto;
-  //     left: 0;
-  //     right: 0;
-  //     text-align: center;
-
-  //   }
-  // }
-}
-
-.foreground {
-  &-1 {
-    background-color: chartreuse;
-    height: 60vh;
   }
 }
 
@@ -107,26 +69,6 @@
     overflow: hidden;
   }
 
-  // &-img {
-  //   background-image: url("../../../../assets/img/tetris-background-1.png");
-  // }
-
-  // &-img-2 {
-  //   background-image: url("../../../../assets/img/tetris-background-2.png");
-  // }
-
-  // &-img-3 {
-  //   background-image: url("../../../../assets/img/tetris-background-3.png");
-  // }
-
-  // &-img-4 {
-  //   background-image: url("../../../../assets/img/tetris-background-4.png");
-  // }
-
-  // &-img-5 {
-  //   background-image: url("../../../../assets/img/tetris-background-5.png");
-  // }
-
   &-img {
     background-image: url("../../../../assets/img/WEBP/tetris-background-1.webp");
   }
@@ -150,7 +92,6 @@
 
 
   &-text {
-    // z-index: 1;
     position: fixed;
     top: 40%;
     margin-left: auto;
@@ -158,127 +99,10 @@
     left: 0;
     right: 0;
     text-align: center;
-    // color: styles.$theme;
-    // mix-blend-mode:hue;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.8),
       0px 8px 13px rgba(0, 0, 0, 0.4),
       0px 18px 23px rgba(0, 0, 0, 0.4);
   }
-}
-
-.front {
-  z-index: 2;
-  position: relative;
-}
-
-.wallpaper {
-  &-container {
-    // margin-top: 60rem;
-    // top: -10px;
-    height: 100vh;
-    // overflow: hidden;
-    // position: relative;
-    transform: translateZ(0);
-    margin-bottom: 20rem;
-  }
-
-  &-img {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-image: url("https://wallpapercave.com/wp/wp2675338.jpg");
-    // background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    z-index: 2;
-    // top: 1920;
-    // transform: translateZ(0);
-  }
-
-  &-item {
-    position: absolute;
-    bottom: 30%;
-    width: 70%;
-    height: 200px;
-    // margin: 200px auto;
-    padding-top: 75px;
-    background: #272c60;
-    text-align: center;
-    color: #de3428;
-    font-size: 2em;
-    // opacity: 0.9 !important;
-    z-index: 2;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    // border: 0.5rem solid white;
-
-  }
-
-  &-text {
-    // z-index: 1;
-    position: fixed;
-    top: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 2;
-    // color: styles.$theme;
-    // mix-blend-mode:hue;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.8),
-      0px 8px 13px rgba(0, 0, 0, 0.4),
-      0px 18px 23px rgba(0, 0, 0, 0.4);
-  }
-
-  &-text-2 {
-    // z-index: 1;
-    position: fixed;
-    top: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 2;
-    // color: styles.$theme;
-    // mix-blend-mode:hue;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.8),
-      0px 8px 13px rgba(0, 0, 0, 0.4),
-      0px 18px 23px rgba(0, 0, 0, 0.4);
-  }
-}
-
-
-.block {
-  height: 120px;
-  width: 30px;
-  background-color: aquamarine;
-  margin-left: 100px;
-}
-
-// .app-animated-counter__wrapper {
-// margin-bottom: 1500px;
-// }
-
-.content-load {
-  height: 300px;
-  width: max-content;
-  background-color: styles.$gold;
-  margin: 0 auto 300px;
-}
-
-.item {
-  width: 200px;
-  height: 200px;
-  // margin: 200px auto;
-  padding-top: 75px;
-  background: #272c60;
-  text-align: center;
-  color: #de3428;
-  font-size: 2em;
 }
 
 .gold__buttom {
@@ -306,18 +130,6 @@
       height: 100%;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.2);
-
-      // .buy {
-      //   padding: 0.4rem 1rem;
-      //   margin-top: 0.5rem;
-      //   color: styles.$black;
-      //   text-decoration: none;
-      //   background: styles.$gold;
-      //   border-radius: 30px;
-      //   font-size: 0.8rem;
-      //   text-transform: uppercase;
-      //   letter-spacing: 1px;
-      // }
     }
 
     &__cards {
@@ -325,7 +137,6 @@
       width: 100%;
       position: relative;
       background-color: rgba(0, 0, 0, 0.2);
-      // margin: 0 auto;
     }
   }
 
@@ -365,10 +176,8 @@
     &__text {
       height: 100%;
       width: 100%;
-      // background-color: rgba(0, 0, 0, 0.2);
 
       & h5 {
-        // margin-top: 5rem;
         margin: 1.5rem 0 0.7em 0;
       }
 
@@ -411,79 +220,8 @@
 
   &__card {
     max-width: 100%;
-
-    &__wrapper-1 {
-    }
-
   }
 }
-
-.admin {
-  &__wrapper {
-    min-height: 110vh;
-    width: 100%;
-    background-color: styles.$background-color;
-    z-index: 3;
-    position: relative;
-    overflow: hidden;
-
-    &__text {
-      height: 100%;
-      width: 100%;
-      // background-color: rgba(0, 0, 0, 0.2);
-
-      & h5 {
-        // margin-top: 5rem;
-        margin: 1.5rem 0 0.7em 0;
-      }
-
-      & ul {
-
-        & li {
-          list-style: none;
-          margin-bottom: 1.1rem;
-
-          & span {
-            color: black;
-            padding: 0.08rem 0.6rem 0.15rem 0.6rem;
-            border-radius: 1rem;
-            font-size: smaller;
-            margin-right: 0.3rem;
-          }
-
-          & .new {
-            background-color: styles.$theme;
-          }
-
-          & .improved {
-            background-color: styles.$gold;
-          }
-
-          & .fixed {
-            background-color: styles.$silver;
-          }
-        }
-      }
-    }
-
-    &__img {
-      height: 100%;
-      width: 100%;
-      position: relative;
-      margin: auto;
-    }
-  }
-  &__img {
-    max-width: 100%;
-    // transform: skewY(3deg);
-
-    &__wrapper-1 {
-    }
-
-  }
-}
-
-
 
 @media only screen and (min-width: 992px) {
 
@@ -517,51 +255,65 @@
   }
 
   .changelog__wrapper__text h5 {
-    // margin-top: 5rem;
     margin: 4rem 0 1.5rem 0;
   }
 
 }
 
-
-
-// #content{
-//     // overflow: visible;
-//     text-align: center;
-//     font-size: 1.5rem;
-// }
-
-// #container{
+// .admin {
+//   &__wrapper {
+//     min-height: 110vh;
 //     width: 100%;
-// }
+//     background-color: styles.$background-color;
+//     z-index: 3;
+//     position: relative;
+//     overflow: hidden;
 
-// #square{
-//     position: fixed;
-//     z-index: 100;
-//     top: 0px;
-//     left: 0px;
-//     width: 100px;
-//     height: 100px;
-//     background-color: green;
-// }
+//     &__text {
+//       height: 100%;
+//       width: 100%;
 
-// #rectangle{
-//     position: fixed;
-//     z-index: 100;
-//     bottom: 0px;
-//     left: 50px;
-//     width: 200px;
-//     height: 100px;
-//     background-color: red;
-// }
+//       & h5 {
+//         margin: 1.5rem 0 0.7em 0;
+//       }
 
-// #circle{
-//     position: fixed;
-//     z-index: 100;
-//     bottom: 0px;
-//     right: 0px;
-//     width: 100px;
-//     height: 100px;
-//     background-color: yellow;
-//     border-radius: 50px;
+//       & ul {
+
+//         & li {
+//           list-style: none;
+//           margin-bottom: 1.1rem;
+
+//           & span {
+//             color: black;
+//             padding: 0.08rem 0.6rem 0.15rem 0.6rem;
+//             border-radius: 1rem;
+//             font-size: smaller;
+//             margin-right: 0.3rem;
+//           }
+
+//           & .new {
+//             background-color: styles.$theme;
+//           }
+
+//           & .improved {
+//             background-color: styles.$gold;
+//           }
+
+//           & .fixed {
+//             background-color: styles.$silver;
+//           }
+//         }
+//       }
+//     }
+
+//     &__img {
+//       height: 100%;
+//       width: 100%;
+//       position: relative;
+//       margin: auto;
+//     }
+//   }
+//   &__img {
+//     max-width: 100%;
+//   }
 // }

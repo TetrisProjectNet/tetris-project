@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { FaConfig } from '@fortawesome/angular-fontawesome';
-import { faBars, faCircleUser, faCoins, faRightFromBracket, faRightToBracket, faUser, faUserGear, faUserShield } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCoins, faRightFromBracket, faRightToBracket, faUser, faUserGear, faUserShield } from '@fortawesome/free-solid-svg-icons';
 import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
@@ -15,8 +15,6 @@ export class NavbarComponent implements OnInit {
   isLogged = this.authService.isLogged;
   isLoggedClass: string = 'ms-auto';
 
-
-  // alwaysTrue: boolean = true;
   innerWidth: any;
   breakpoint: number = 992;
 
@@ -34,19 +32,13 @@ export class NavbarComponent implements OnInit {
   }
 
   @HostListener('window:scroll', []) onWindowScroll() {
-    // do some stuff here when the window is scrolled
-    // console.log('asd');
     const verticalOffset =
       window.pageYOffset ||
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-      // console.log(verticalOffset);
 
       verticalOffset != 0 ? this.className = 'scroll' : this.className = '';
-    // if () {
-    //   this.className = 'scroll';
-    // }
   }
 
   constructor(

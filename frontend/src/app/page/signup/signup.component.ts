@@ -24,16 +24,7 @@ export class SignupComponent implements OnInit {
 
   toastRef: any;
 
-  // username: string = '';
-  // email: string = '';
-  // password: string = ''
   passwordAgain: string = '';
-
-  // usernameClass: string = '';
-  // emailClass: string = '';
-  // passwordClass: string = '';
-  // passwordAgainClass: string = '';
-  // selectedElement: any;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -44,63 +35,13 @@ export class SignupComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+
   }
-
-  // focusToggler(event: Event, className: string): string {
-  //   event.type == 'focus' ? className= 'focused' : className='';
-
-  //   if(event) {
-  //     this.selectedElement = event.target;
-  //   } else {
-  //     this.selectedElement = null;
-  //   }
-
-  //   if (this.selectedElement.value != '') {
-  //     className= 'focused';
-  //   }
-  //   return className;
-  // }
-
-  // usernameFocusToggler(event: Event): void {
-  //   this.usernameClass = this.focusToggler(event, this.usernameClass)
-  // }
-
-  // emailFocusToggler(event: Event): void {
-  //   this.emailClass = this.focusToggler(event, this.emailClass)
-  // }
-
-  // passwordFocusToggler(event: Event): void {
-  //   this.passwordClass = this.focusToggler(event, this.passwordClass)
-  // }
-
-  // passwordAgainFocusToggler(event: Event): void {
-  //   this.passwordAgainClass = this.focusToggler(event, this.passwordAgainClass)
-  // }
-
-
-  // {
-  //   "id": "string",
-  //   "username": "string",
-  //   "password": "string",
-  //   "email": "string",
-  //   "role": "string",
-  //   "banned": true,
-  //   "joinDate": "string",
-  //   "lastOnlineDate": "string",
-  //   "coins": 0,
-  //   "shopItems": [
-  //   ],
-  //   "scores": [
-  //     0
-  //   ],
-  //   "friends": [
-  //     "string"
-  //   ]
-  // }
 
   signup(user: User) {
     user.joinDate = new Date().toLocaleDateString("en-US");
     user.coins = 100;
+
     this.authService.register(user).subscribe({
       error: (error) => {
         if (error.error == 'This username is already in use.') {
@@ -119,13 +60,13 @@ export class SignupComponent implements OnInit {
         }, 1000)
       }
     });
+
   }
 
   onCreate(user: User): void {
     if (user.password !== this.passwordAgain) {
-      console.log('Two passwords are not the same!');
+      this.onDanger('Two passwords are not the same.', 'Error!');
     } else {
-      console.log(new Date());
       user.joinDate = new Date();
       user.coins = 100;
       user.role = 'player';
@@ -140,7 +81,6 @@ export class SignupComponent implements OnInit {
           }, 1000)
         }
       });
-
     }
   }
 

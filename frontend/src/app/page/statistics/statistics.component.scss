@@ -31,15 +31,10 @@ main {
 
 .table {
   color: styles.$white;
-
-  // &-responsive {
-  //   min-height: 630px;
-  // }
 }
 
 // TH
 thead {
-  // background-color: rgba(0, 152, 121, 0.2);
   background-color: rgba(0, 0, 0, 0.3);
   text-align: left;
   position: sticky;
@@ -58,8 +53,6 @@ thead {
     }
 
     &:hover:not(:last-child) {
-      // box-shadow: rgba(0, 255, 255, 7) 0px 50px 26px -28px inset;
-      // box-shadow: rgba(0, 255, 255, 7) 0px -40px 40px -42px inset;
       box-shadow: rgba(0, 255, 255, 7) 0px -40px 26px -28px inset;
     }
 
@@ -74,7 +67,7 @@ thead {
     &::after {
       content: '';
       position: absolute;
-      z-index: -1; // Add a z-index below z-index on TD so you can still select data from your table rows :)
+      z-index: -1;
       top: 0px;
       left: 0px;
       width: 100%;
@@ -100,7 +93,7 @@ tbody {
     &::after {
       content: '';
       position: absolute;
-      z-index: 1; // Add a z-index below z-index on TD so you can still select data from your table rows :)
+      z-index: 1;
       top: 0px;
       left: 0px;
       width: 100%;
