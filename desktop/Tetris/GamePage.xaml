@@ -65,7 +65,7 @@
             </Label>
         </StackLayout>
 
-        <controls:SKCanvasView Grid.Row="1" Grid.Column="1" PaintSurface="OnPaintSurface" x:Name="canvasView" HeightRequest="821" WidthRequest="411" Margin="0, 50, 0, 0"/>
+        <controls:SKCanvasView Grid.Row="1" Grid.Column="1" PaintSurface="OnPaintSurface" IgnorePixelScaling="true" x:Name="canvasView" HeightRequest="821" WidthRequest="411" Margin="0, 50, 0, 0"/>
 
         <Frame Grid.Row="1" Grid.Column="2"
                HeightRequest="275"

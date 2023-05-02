@@ -1,5 +1,6 @@
 ﻿using SkiaSharp;
 using SkiaSharp.Views.Maui;
+using SkiaSharp.Views.Maui.Controls;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -29,13 +30,17 @@ namespace Tetris.Drawables
             "..\\..\\..\\..\\..\\Resources\\Fonts\\Tetris.ttf"));
 
         private int _startCounter = 7;
+        public int StartCounter {
+            get => _startCounter;
+            set => _startCounter = value;
+        }
 
-        public void Draw(SKCanvas canvas, TetrisPiece currentPiece, BlockPosition currentOffset, int[,] GameGrid, bool gameOver)
+        public void Draw(SKCanvas canvas, TetrisPiece currentPiece, BlockPosition currentOffset, int[,] GameGrid, bool gameOver, bool gamePaused, bool gameStart)
         {
             ClearCanvas(canvas);
             drawGridTable(canvas);
 
-            if (_startCounter > 0) {
+            if (_startCounter > 0 && gameStart) {
                 DrawStartTime(canvas);
                 _startCounter--;
                 return;
@@ -43,7 +48,15 @@ namespace Tetris.Drawables
 
             DrawGameGrid(canvas, GameGrid);
             DrawPiece(canvas, currentPiece, currentPiece.stateNumber, currentOffset);
-            if (gameOver) DrawGameEnd(canvas);
+            if (gameOver) {
+                DrawGameStopped(canvas, "Game Over");
+                DrawGameStoppedButtons(canvas, "Restart");
+                _startCounter = 4;
+            }
+            if (gamePaused) {
+                DrawGameStopped(canvas, "Paused");
+                DrawGameStoppedButtons(canvas, "Resume");
+            }
         }
 
         public void DrawStartTime(SKCanvas canvas)
@@ -113,7 +126,7 @@ namespace Tetris.Drawables
             }
         }
 
-        public void DrawGameEnd(SKCanvas canvas)
+        public void DrawGameStopped(SKCanvas canvas, string stoppedReason)
         {
             SKPaint rectPaint = new SKPaint();
             rectPaint.Color = new SKColor(11, 11, 12, 230);
@@ -141,7 +154,34 @@ namespace Tetris.Drawables
                 150,
                 rectPaint);
 
-            canvas.DrawText($"Game Over!", canvas.DeviceClipBounds.Width / 2, canvas.DeviceClipBounds.Height / 3 + 30, paint);
+            canvas.DrawText($"{stoppedReason}", canvas.DeviceClipBounds.Width / 2, canvas.DeviceClipBounds.Height / 3 + 30, paint);
+        }
+
+        public void DrawGameStoppedButtons(SKCanvas canvas, string stoppedOption) {
+            SKPaint rectPaint = new SKPaint();
+            rectPaint.Color = new SKColor(11, 11, 12, 230);
+
+            SKPaint paint = new SKPaint {
+                Color = new SKColor(0, 255, 0),
+                TextAlign = SKTextAlign.Center,
+                TextSize = 40,
+                Typeface = tetrisFont,
+            };
+
+            canvas.DrawRect(canvas.DeviceClipBounds.Width / 2 + 30, // 235
+                canvas.DeviceClipBounds.Height / 3 + 100, // 373
+                canvas.DeviceClipBounds.Width / 3 + 39, // 156
+                85,
+                rectPaint);
+
+            canvas.DrawRect(0,
+                canvas.DeviceClipBounds.Height / 3 + 100,
+                canvas.DeviceClipBounds.Width / 3 + 40,
+                85,
+                rectPaint);
+
+            canvas.DrawText($"Quit", 325, 429, paint);
+            canvas.DrawText($"{stoppedOption}", 89, 429, paint);
         }
     }
 }
