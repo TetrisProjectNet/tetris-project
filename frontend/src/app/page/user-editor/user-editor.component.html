@@ -2,6 +2,7 @@
   <div class="row">
     <div *ngIf="(user$ | async) as user">
       <main class="d-flex flex-column flex-md-row justify-content-center">
+        <!-- User info -->
         <aside *ngIf="user.id" class="user-data verdana col-md-6 p-2">
           <div class="offset-xl-1">
             <h2 class="user-title">
@@ -69,13 +70,10 @@
           </div>
         </aside>
 
-        <form *ngIf="isAdmin" #userForm="ngForm" (ngSubmit)="onUpdate(userForm, user)"
+        <!-- User edit -->
+        <form *ngIf="isAdmin" #userForm="ngForm" (ngSubmit)="onUpdate(user)"
           class="default-form animate__animated animate__fadeInUp animate__faster col-md-6 col-xl-4 offset-xl-1 p-2">
 
-          <!-- <div class="form-group">
-            <input [(ngModel)]="user.id" class="form-control" name="id" type="text" disabled>
-            <label class="focused form-label">#</label>
-          </div> -->
           <div *ngIf="user.id" class="form-group">
             <app-floating-label-input
               [(inputModel)]="user.id"
@@ -87,11 +85,6 @@
             ></app-floating-label-input>
           </div>
 
-          <!-- <div class="form-group">
-            <input #inputRef [(ngModel)]="user.username" class="form-control" name="username" type="text"
-              (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)">
-            <label class="form-label" [class]="usernameClass">Username</label>
-          </div> -->
           <div class="form-group">
             <app-floating-label-input
               #usernameInput
@@ -105,11 +98,6 @@
             ></app-floating-label-input>
           </div>
 
-          <!-- <div class="form-group">
-            <input #inputRef [(ngModel)]="user.email" class="form-control" name="email" type="email"
-              (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
-            <label class="form-label" [class]="emailClass">E-mail</label>
-          </div> -->
           <div class="form-group">
             <app-floating-label-input
               #emailInput
@@ -123,11 +111,6 @@
             ></app-floating-label-input>
           </div>
 
-          <!-- <div class="form-group">
-            <input #inputRef [(ngModel)]="user.coins" class="form-control" name="coins" type="number"
-            (focus)="coinsFocusToggler($event)" (blur)="coinsFocusToggler($event)">
-            <label class="form-label" [class]="coinsClass">Coins</label>
-          </div> -->
           <div class="form-group">
             <app-floating-label-input
               #coinsInput
@@ -140,27 +123,8 @@
               (isValidEvent)="getValidationData($event)"
             ></app-floating-label-input>
           </div>
-          <!-- <p class="text-white">
-            {{ usernameInput.isValidOut }}
-            {{ emailInput.isValidOut }}
-            {{ coinsInput.isValidOut }}
-          </p> -->
 
-          <!--     --- !!! VISSZA KELL RAKNI !!! ---     -->
-          <!-- <div class="select__wrapper form-group mb-0">
-            <select #inputRef [(ngModel)]="user.role" class="form-select custom-select col-12" name="role" required
-              (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)">
-              <option hidden disabled selected value=""></option>
-              <option value="player">Player</option>
-              <option value="admin">Admin</option>
-            </select>
-            <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
-              <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
-            </label>
-            <label class="form-label" [class]="roleClass">Role</label>
-          </div> -->
-
-          <div *ngIf="isAdmin" class="select__wrapper form-group mb-0">
+          <div *ngIf="isAdmin" class="select__wrapper form-group">
             <app-floating-label-select
               #coinsInput
               [(selectModel)]="user.role"
@@ -170,23 +134,22 @@
                 admin: 'Admin',
                 player: 'Player'
               }"
-
             ></app-floating-label-select>
           </div>
 
-          <button type="submit" class="game-played btn btn-info col-12 my-3"
+          <div class="d-flex flex-column">
+            <small class="no-acc mt-2"><sup class="red-text">*</sup> Marked fields are required.</small>
+          </div>
+
+          <button type="submit" class="game-played btn btn-info col-12 my-4"
             [disabled]="!(usernameInput.isValid&&emailInput.isValid&&coinsInput.isValid)">
             Save changes
           </button>
         </form>
 
-        <form *ngIf="!isAdmin" #userForm="ngForm" (ngSubmit)="onUpdate(userForm, user)"
+        <form *ngIf="!isAdmin" #userForm="ngForm" (ngSubmit)="onUpdate(user)"
           class="default-form animate__animated animate__fadeInUp animate__faster col-md-6 col-xl-4 offset-xl-1 p-2">
 
-          <!-- <div class="form-group">
-            <input [(ngModel)]="user.id" class="form-control" name="id" type="text" disabled>
-            <label class="focused form-label">#</label>
-          </div> -->
           <div *ngIf="user.id" class="form-group">
             <app-floating-label-input
               [(inputModel)]="user.id"
@@ -198,17 +161,6 @@
             ></app-floating-label-input>
           </div>
 
-          <!-- <div class="form-group">
-            <input #inputRef [(ngModel)]="user.username" class="form-control" name="username" type="text"
-              (focus)="usernameFocusToggler($event)" (blur)="usernameFocusToggler($event)">
-            <label class="form-label" [class]="usernameClass">Username</label>
-          </div> -->
-
-          <!-- <div class="form-group">
-            <input #inputRef [(ngModel)]="user.email" class="form-control" name="email" type="email"
-              (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
-            <label class="form-label" [class]="emailClass">E-mail</label>
-          </div> -->
           <div class="form-group">
             <app-floating-label-input
               #emailInput
@@ -223,11 +175,6 @@
             ></app-floating-label-input>
           </div>
 
-          <!-- <div class="form-group">
-            <input #inputRef [(ngModel)]="user.coins" class="form-control" name="coins" type="number"
-            (focus)="coinsFocusToggler($event)" (blur)="coinsFocusToggler($event)">
-            <label class="form-label" [class]="coinsClass">Coins</label>
-          </div> -->
           <div class="form-group">
             <app-floating-label-input
               #coinsInput
@@ -241,25 +188,7 @@
               [disabled]="true"
             ></app-floating-label-input>
           </div>
-          <!-- <p class="text-white">
-            {{ usernameInput.isValidOut }}
-            {{ emailInput.isValidOut }}
-            {{ coinsInput.isValidOut }}
-          </p> -->
 
-          <!--     --- !!! VISSZA KELL RAKNI !!! ---     -->
-          <!-- <div class="select__wrapper form-group mb-0">
-            <select #inputRef [(ngModel)]="user.role" class="form-select custom-select col-12" name="role" required
-              (focus)="roleFocusToggler($event)" (blur)="roleFocusToggler($event)">
-              <option hidden disabled selected value=""></option>
-              <option value="player">Player</option>
-              <option value="admin">Admin</option>
-            </select>
-            <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
-              <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
-            </label>
-            <label class="form-label" [class]="roleClass">Role</label>
-          </div> -->
           <div class="form-group">
             <app-floating-label-input
               #usernameInput
@@ -273,12 +202,12 @@
             ></app-floating-label-input>
           </div>
 
-
           <button type="submit" class="game-played btn btn-info col-12 my-3"
             [disabled]="!(usernameInput.isValid&&emailInput.isValid&&coinsInput.isValid)">
             Save changes
           </button>
         </form>
+        
       </main>
     </div>
   </div>

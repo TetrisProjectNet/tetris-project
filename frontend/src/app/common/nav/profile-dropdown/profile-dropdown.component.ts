@@ -27,22 +27,20 @@ export class ProfileDropdownComponent {
     private router: Router,
   ) {  }
 
-
   logout() {
     this.loggedUser$.subscribe({
       next: (user: any) => {
-          // console.log(user);
           if (user) {
-            // user.refreshToken = '';
             user.lastOnlineDate = new Date().toLocaleDateString("en-US");
+            
             this.userService.update(user).subscribe({
+              error: err => console.log(err),
               complete: () => {
                 localStorage.removeItem('authToken');
                 this.authService.resetLoginData();
-                window.location.reload();
-                // this.router.navigate(['/home']);
               }
             })
+            
           }
       }
     })

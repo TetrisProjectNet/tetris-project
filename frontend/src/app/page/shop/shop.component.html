@@ -11,23 +11,28 @@
       <input [(ngModel)]="adminView" type="checkbox" name="" />
     </div>
 
-    <section *ngIf="list$ | async as list" class="cards__wrapper d-flex flex-row flex-wrap"> <!-- flex-column flex-md-row flex-wrap mb-5 -->
+    <section *ngIf="list$ | async as list" class="cards__wrapper d-flex flex-row flex-wrap">
 
-      <div *ngFor="let shopItem of list" class="card__wrapper col-6 col-md-4 col-lg-3 col-xxl-2">  <!-- col-md-6 col-lg-4 col-xl-3 -->
-        <button *ngIf="isAdmin && adminView" (click)="onDeleteOne(shopItem.id)" class="close"><fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon></button>
-        <div *ngIf="{user: loggedUser$ | async} as loggedObject" class="card m-3" [ngStyle]="{ 'background-color': shopItem.color }">
+      <div *ngFor="let shopItem of list" class="card__wrapper col-6 col-md-4 col-lg-3 col-xxl-2">
+        <button *ngIf="isAdmin && adminView" (click)="onDeleteOne(shopItem.id)" class="close">
+          <fa-icon class="login__icon" [icon]="faTrashCan"></fa-icon>
+        </button>
+        <div *ngIf="{user: loggedUser$ | async} as loggedObject" class="card m-3"
+          [ngStyle]="{ 'background-color': shopItem.color }">
           <div class="imgBox">
             <img [src]="shopItem.image" alt="mouse corsair" class="mouse">
           </div>
           <div class="contentBox">
             <div class="title__wrapper">
               <h3 class="text-center">{{ shopItem.title }}</h3>
-              <!-- <h3 class="text-center">{{ shopItem | json }}</h3> -->
             </div>
             <h2 class="price">{{ shopItem.price }}<fa-icon class="ms-1" [icon]="faCoins"></fa-icon></h2>
-            <!-- <button *ngIf="checkIfPurchased(shopItem.id)" (click)="onBuyOne(shopItem)" class="buy">Buy Now</button> -->
-            <button *ngIf="!(loggedObject.user | shopItemFilter:shopItem)" (click)="onBuyOne(shopItem)" class="buy">Buy Now</button>
-            <button *ngIf="loggedObject.user | shopItemFilter:shopItem" (click)="onBuyOne(shopItem)" class="purchased" disabled>Purchased</button>
+            <button *ngIf="!(loggedObject.user | shopItemFilter:shopItem)" (click)="onBuyOne(shopItem)" class="buy">
+              Buy Now
+            </button>
+            <button *ngIf="loggedObject.user | shopItemFilter:shopItem" (click)="onBuyOne(shopItem)" class="purchased" disabled>
+              Purchased
+            </button>
             <button *ngIf="isAdmin && adminView" (click)="onEditOne(shopItem)" class="buy">Edit</button>
           </div>
         </div>
@@ -36,8 +41,6 @@
       <div *ngIf="isAdmin && adminView" class="add-new-card__wrapper col-6 col-md-4 col-lg-3 col-xxl-2">
         <div class="add-new-card card m-3">
           <div class="imgBox add-new__wrapper">
-            <!-- <img src="https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png"
-              alt="mouse corsair" class="mouse"> -->
               <fa-icon class="add-new__icon my-auto" [icon]="faSquarePlus"></fa-icon>
           </div>
           <div class="contentBox">
@@ -54,10 +57,5 @@
   </div>
 </main>
 
-<!-- EGÉR LINK
+<!-- MOUSE LINK
 https://www.corsair.com/corsairmedia/sys_master/productcontent/CH-9300011-NA-M65_PRO_RGB_BLK_04.png -->
-
-
-
-<!-- [ { "ID": "644833FCAA58AC57C2B66A49", "INDEX": 0, "TITLE": "SIMPLE ITEM", "IMAGE": "HTTPS://CDN-ICONS-PNG.FLATICON.COM/512/7734/7734009.PNG", "PRICE": 1, "COLOR": "#F014AA", "DESCRIPTION": "" } ]
-{ "ID": "644833FCAA58AC57C2B66A49", "INDEX": 0, "TITLE": "SIMPLE ITEM", "IMAGE": "HTTPS://CDN-ICONS-PNG.FLATICON.COM/512/7734/7734009.PNG", "PRICE": 1, "COLOR": "#F014AA", "DESCRIPTION": "" } -->

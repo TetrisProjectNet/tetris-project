@@ -28,19 +28,10 @@ export class ShopItemEditorComponent {
 
   toastRef: any;
 
-
   faCircleChevronDown = faCircleChevronDown;
   faSquareCaretDown = faSquareCaretDown;
 
   clicked: boolean = false;
-
-  titleClass: string = '';
-  imageClass: string = '';
-  priceClass: string = '';
-  colorClass: string = 'focused';
-  descriptionClass: string = '';
-  selectedElement: any;
-  intitialValue: string = '10';
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -49,84 +40,9 @@ export class ShopItemEditorComponent {
     private toastr: CustomToastrService
   ) { }
 
-  ngOnInit(): void {
-    // this.titleFocusToggler('clicked');
-  }
+  ngOnInit(): void {  }
 
-  ngAfterViewInit() {
-
-    this.inputs.changes.subscribe(sub =>{
-      sub.toArray().forEach((element: any) => {
-        setTimeout(()=>{
-
-          if (element.nativeElement.value != '' || element.nativeElement.value === '#ffffff') {
-            switch(element.nativeElement.name) {
-              case 'title': {
-                this.titleClass = 'focused';
-                break;
-              }
-              case 'image': {
-                this.imageClass = 'focused';
-                break;
-              }
-              case 'price': {
-                this.priceClass = 'focused';
-                break;
-              }
-              case 'color': {
-                console.log('colored focused');
-                this.colorClass = 'focused';
-                break;
-              }
-              case 'description': {
-                this.descriptionClass = 'focused';
-                break;
-              }
-            }
-          }
-
-        }, 1)
-      })
-    });
-
-  }
-
-  focusToggler(event: Event, className: string): string {
-    event.type == 'focus' ? className= 'focused' : className='';
-
-    if(event) {
-      this.selectedElement = event.target;
-    } else {
-      this.selectedElement = null;
-    }
-
-    if (this.selectedElement.value != '') {
-      className= 'focused';
-    }
-    return className;
-  }
-
-  titleFocusToggler(event: Event): void {
-    this.titleClass = this.focusToggler(event, this.titleClass)
-  }
-
-  imageFocusToggler(event: Event): void {
-    this.imageClass = this.focusToggler(event, this.imageClass)
-  }
-
-  priceFocusToggler(event: Event): void {
-    this.priceClass = this.focusToggler(event, this.priceClass)
-  }
-
-  colorFocusToggler(event: Event): void {
-    this.colorClass = this.focusToggler(event, this.colorClass)
-  }
-
-  descriptionFocusToggler(event: Event): void {
-    this.descriptionClass = this.focusToggler(event, this.descriptionClass)
-  }
-
-  onUpdate(form: NgForm, shopItem: ShopItem): void {
+  onUpdate(shopItem: ShopItem): void {
     this.clicked = true;
     if (shopItem.id === '') {
       this.shopItemService.create(shopItem)

@@ -1,17 +1,14 @@
 <select #selectRef [(ngModel)]="selectModel" (ngModelChange)="selectModelChange.emit(selectModel)" [class]="selectClass"
     [name]="name" [required]="required" class="form-select custom-select col-12" (focus)="selectFocusToggler($event)"
-    (blur)="selectFocusToggler($event)">
-    <!-- <option *ngIf="isInitEmpty" hidden disabled selected value=""></option> -->
-    <!-- <option value="player">Player</option>
-        <option value="admin">Admin</option> -->
-        
+    (blur)="selectFocusToggler($event)">        
     <option *ngIf="doesContainEmpty" value=""></option>
     <option *ngFor="let item of options | keyvalue" [value]="item.key" [selected]="!isInitEmpty && selectModel==item.key ? true : null">
         {{ item.value }}
     </option>
-    <!-- <option value=""></option> -->
 </select>
 <label class="form-label w-100 d-flex align-items-end justify-content-end icon-label">
     <fa-icon class="select__icon" [icon]="faSquareCaretDown"></fa-icon>
 </label>
-<label class="form-label" [class]="selectFocusClass">{{ labelContent }}</label>
+<label class="form-label" [class]="selectFocusClass">
+    {{ labelContent }}<sup *ngIf="required" class="required__star">*</sup>
+</label>

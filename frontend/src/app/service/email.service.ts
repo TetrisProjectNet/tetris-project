@@ -8,12 +8,9 @@ import { BaseService } from './base.service';
 })
 export class EmailService extends BaseService<Email> {
   constructor(
-    // public override config: ConfigService,
     public override http: HttpClient
   ) {
-    // super(config, http);
     super(http);
-    // this.entity = 'user';
     this.entity = 'Email';
   }
 }

@@ -21,8 +21,6 @@ import {
   faUserPlus,
   faUserXmark,
 } from '@fortawesome/free-solid-svg-icons';
-import { ToastrService } from 'ngx-toastr';
-import { delay } from 'rxjs';
 import { User } from 'src/app/model/user';
 import { ConfigService } from 'src/app/service/config.service';
 import { CustomToastrService } from 'src/app/service/custom-toastr.service';
@@ -34,80 +32,6 @@ import { UserService } from 'src/app/service/user.service';
   styleUrls: ['./user.component.scss'],
 })
 export class UserComponent implements OnInit {
-  // {
-  //   "user": [
-  //     {
-  //       "id": 1,
-  //       "username": "bconnew0",
-  //       "email": "mbedford0@diigo.com",
-  //       "role": "Subcontractor",
-  //       "banned": true
-  //     },
-  //     {
-  //       "id": 2,
-  //       "username": "ffabler1",
-  //       "email": "gparley1@salon.com",
-  //       "role": "Construction Foreman",
-  //       "banned": true
-  //     },
-  //     {
-  //       "id": 3,
-  //       "username": "ecrewther2",
-  //       "email": "mpilmore2@paginegialle.it",
-  //       "role": "Construction Manager",
-  //       "banned": false
-  //     },
-  //     {
-  //       "id": 4,
-  //       "username": "csessions3",
-  //       "email": "orobottham3@theglobeandmail.com",
-  //       "role": "Estimator",
-  //       "banned": false
-  //     },
-  //     {
-  //       "id": 5,
-  //       "username": "ssmiths4",
-  //       "email": "kbatchan4@sohu.com",
-  //       "role": "Architect",
-  //       "banned": false
-  //     },
-  //     {
-  //       "id": 6,
-  //       "username": "jwakely5",
-  //       "email": "egavrielli5@i2i.jp",
-  //       "role": "Construction Expeditor",
-  //       "banned": false
-  //     },
-  //     {
-  //       "id": 7,
-  //       "username": "khorick6",
-  //       "email": "ryair6@uiuc.edu",
-  //       "role": "Engineer",
-  //       "banned": false
-  //     },
-  //     {
-  //       "id": 8,
-  //       "username": "vleadbeater7",
-  //       "email": "mspaduzza7@spiegel.de",
-  //       "role": "Project Manager",
-  //       "banned": false
-  //     },
-  //     {
-  //       "id": 9,
-  //       "username": "wgoldman8",
-  //       "email": "jpaskerful8@guardian.co.uk",
-  //       "role": "Architect",
-  //       "banned": false
-  //     },
-  //     {
-  //       "id": 10,
-  //       "username": "skomorowski9",
-  //       "email": "mclausen9@archive.org",
-  //       "role": "Project Manager",
-  //       "banned": false
-  //     }
-  //   ]
-  // }
 
   @ViewChildren('inputRef') inputs!: QueryList<ElementRef>;
 
@@ -159,43 +83,6 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  ngAfterViewInit() {
-    this.inputs.changes.subscribe((sub) => {
-      sub.toArray().forEach((element: any) => {
-        console.log(element.nativeElement);
-        setTimeout(() => {
-          if (element.nativeElement.value != '') {
-            switch (element.nativeElement.name) {
-              // case 'username': {
-              //   this.usernameClass = 'focused';
-              //   break;
-              // }
-              // case 'email': {
-              //   this.emailClass = 'focused';
-              //   break;
-              // }
-              // case 'role': {
-              //   this.roleClass = 'focused';
-              //   break;
-              // }
-              case 'rows': {
-                this.rowsClass = 'focused';
-                break;
-              }
-              case 'phrase': {
-                this.phraseClass = 'focused';
-                break;
-              }
-              case 'key': {
-                this.keyClass = 'focused';
-                break;
-              }
-            }
-          }
-        }, 1);
-      });
-    });
-  }
 
   onEditOne(user: User): void {
     this.router.navigate(['/', 'user', user.id]);
@@ -203,7 +90,6 @@ export class UserComponent implements OnInit {
 
   onDeleteOne(id: string): void {
     if (window.confirm('Are you sure about deleting this user?')) {
-      // console.log(this.userService.remove(id));
       this.userService.remove(id).subscribe({
         error: () =>
           this.onDanger('We could not delete this user.<br>Please try again later!', 'Something went wrong.'),
@@ -212,7 +98,6 @@ export class UserComponent implements OnInit {
           this.onSuccess('User deleted.');
         },
       });
-      console.log('asdasd');
     }
   }
 
@@ -254,33 +139,6 @@ export class UserComponent implements OnInit {
     }
   }
 
-  focusToggler(event: Event, className: string): string {
-    event.type == 'focus' ? (className = 'focused') : (className = '');
-
-    if (event) {
-      this.selectedElement = event.target;
-    } else {
-      this.selectedElement = null;
-    }
-
-    if (this.selectedElement.value != '') {
-      className = 'focused';
-    }
-    return className;
-  }
-
-  rowsFocusToggler(event: Event): void {
-    this.rowsClass = this.focusToggler(event, this.rowsClass);
-  }
-
-  phraseFocusToggler(event: Event): void {
-    this.phraseClass = this.focusToggler(event, this.phraseClass);
-  }
-
-  keyFocusToggler(event: Event): void {
-    this.keyClass = this.focusToggler(event, this.keyClass);
-  }
-
   onColumnSelect(columnHead: string): void {
     this.sortColumn = columnHead;
     this.direction = !this.direction;
@@ -304,24 +162,6 @@ export class UserComponent implements OnInit {
   public dropColumn(index: any) {
     this.arrayMove(this.columns, this.draggedColumnIndex, index);
   }
-
-  // showSuccess() {
-  //   this.toastr.show('Hello world!', 'Toastr fun!');
-  // }
-
-  //   openNotyf() {
-  //   const opt = cloneDeep(this.options);
-  //   opt.toastComponent = NotyfToast;
-  //   opt.toastClass = 'notyf confirm';
-  //   // opt.positionClass = 'notyf__wrapper';
-  //   // this.options.newestOnTop = false;
-  //   const { message, title } = this.getMessage();
-  //   const inserted = this.toastr.show(message || 'Success', title, opt);
-  //   if (inserted && inserted.toastId) {
-  //     this.lastInserted.push(inserted.toastId);
-  //   }
-  //   return inserted;
-  // }
 
   onSuccess(message: string, title: string = 'Success!') {
     this.toastRef = this.toastr.showSuccessToast(title, message);

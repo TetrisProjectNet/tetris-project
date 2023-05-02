@@ -3,26 +3,24 @@
   <div class="login col-10 col-md-6 col-xl-3 my-5 p-5">
     <form (ngSubmit)="login(usernameInput.inputModel, passwordInput.inputModel)" class="default-form animate__animated animate__fadeInUp animate__faster">
       <div class="form-group">
-        <!-- <input class="form-control e-mail" name="email" type="email" (focus)="emailFocusToggler($event)" (blur)="emailFocusToggler($event)">
-        <label class="form-label" [class]="emailClass">E-mail</label> -->
         <app-floating-label-input
           #usernameInput
           [(inputModel)]="username"
           [type]="'text'"
           [name]="'username'"
           [labelContent]="'Username'"
+          [required]="false"
           [inputId]="'selenium__login__username'"
         ></app-floating-label-input>
       </div>
       <div class="form-group">
-        <!-- <input class="form-control" name="password" type="password" (focus)="passwordFocusToggler($event)" (blur)="passwordFocusToggler($event)">
-        <label class="form-label" [class]="passwordClass">Password</label> -->
         <app-floating-label-input
           #passwordInput
           [(inputModel)]="password"
           [type]="'password'"
           [name]="'password'"
           [labelContent]="'Password'"
+          [required]="false"
           [inputId]="'selenium__login__password'"
         ></app-floating-label-input>
       </div>
@@ -32,9 +30,5 @@
       </div>
       <button type="submit" class="game-played btn btn-info col-12 my-4" id="selenium__login__submit">Login</button>
     </form>
-    <!-- <button (click)="getMe()" class="game-played btn btn-info col-12 my-4">getme</button>
-    <div class="text-white">
-      {{loggedUser$ | async | json}}
-    </div> -->
   </div>
 </div>

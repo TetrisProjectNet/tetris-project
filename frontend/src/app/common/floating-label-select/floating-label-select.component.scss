@@ -51,6 +51,11 @@ select {
     top: 0.5rem;
     color: styles.$white;
     transition: transform 0.3s ease-out, font-size 0.3s ease-out;
+
+    & sup {
+        color: styles.$red;
+        margin-left: 2px;
+    }
 }
 
 option {

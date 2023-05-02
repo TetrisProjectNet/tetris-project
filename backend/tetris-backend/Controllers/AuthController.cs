@@ -15,7 +15,6 @@ namespace tetris_backend.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        //public static User userDB = new User();
         private readonly UserService _userService;
         private readonly IConfiguration _configuration;
         private readonly VerificationService _verificationService;
@@ -29,12 +28,6 @@ namespace tetris_backend.Controllers
             _shopItemService = shopItemService;
         }
 
-        //[HttpGet, Authorize]
-        //public ActionResult<string> GetLoggedUser()
-        //{
-        //    var userName = _userService.GetLoggedUser();
-        //    return Ok(userName);
-        //}
 
         [HttpGet, Authorize]
         public async Task<ActionResult<UserDTO>> GetLoggedUserAsync()

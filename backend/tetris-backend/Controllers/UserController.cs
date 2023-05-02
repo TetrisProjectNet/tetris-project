@@ -23,6 +23,7 @@ namespace tetris_backend.Controllers
             _shopItemService = shopItemService;
         }
 
+
         [Authorize]
         [HttpGet]
         public async Task<List<UserDTO>> Get()
@@ -62,6 +63,7 @@ namespace tetris_backend.Controllers
             }
             return usersDTO;
         }
+
 
         [Authorize]
         [HttpGet("{id:length(24)}")]
@@ -190,6 +192,7 @@ namespace tetris_backend.Controllers
 
             return CreatedAtAction(nameof(Get), new { id = userDB.id }, userDB);
         }
+
 
         [Authorize]
         [HttpPatch("{id:length(24)}")]

@@ -34,6 +34,5 @@ namespace tetris_backend.Services
 
         public async Task RemoveAsync(string id) =>
             await _shopItemCollection.DeleteOneAsync(x => x.Id == id);
-
     }
 }
