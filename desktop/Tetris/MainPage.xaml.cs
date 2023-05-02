@@ -16,7 +16,7 @@ public partial class MainPage : ContentPage
 
     private void OnRegisterButtonClicked(object sender, EventArgs e)
     {
-        var uri = new Uri("https://www.google.com");
+        var uri = new Uri("https://tetris-project-net-2.web.app/signup");
         Launcher.OpenAsync(uri);
     }
 

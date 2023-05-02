@@ -1,3 +1,6 @@
+using Mopups.Interfaces;
+using Mopups.Pages;
+using Mopups.Services;
 using SharpHook;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -7,13 +10,12 @@ namespace Tetris;
 
 public partial class MenuPage : ContentPage
 {
-
     public MenuPage()
 	{
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
         NavigationPage.SetHasNavigationBar(this, false);
-        GetUserData();
+        //GetUserData();
     }
 
     private async void NewGameButtonClicked(object sender, TappedEventArgs e)
@@ -24,18 +26,18 @@ public partial class MenuPage : ContentPage
 
     private void StatisticsButtonClicked(object sender, TappedEventArgs e)
     {
-
+        var uri = new Uri("https://tetris-project-net-2.web.app/statistics");
+        Launcher.OpenAsync(uri);
     }
 
     private void ShopButtonClicked(object sender, TappedEventArgs e)
     {
-
+        MopupService.Instance.PushAsync(new ShopPopupPage());
     }
 
     private void SettingsButtonClicked(object sender, TappedEventArgs e)
     {
-        var uri = new Uri("https://www.google.com");
-        Launcher.OpenAsync(uri);
+
     }
 
     private void ProfileButtonClicked(object sender, TappedEventArgs e)
