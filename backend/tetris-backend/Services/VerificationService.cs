@@ -52,6 +52,5 @@ namespace tetris_backend.Services
 
         public async Task RemoveBasedOnEmailAsync(string email) =>
             await _verificationCollection.DeleteOneAsync(x => x.Email == email);
-
     }
 }

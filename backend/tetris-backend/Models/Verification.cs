@@ -17,17 +17,7 @@ namespace tetris_backend.Models
         [BsonElement("code")]
         public string? Code { get; set; } = null!;
 
-        //[BsonElement("createdAt")]
-        //public string? CreatedAt { get; set; } = null!;
-
         [BsonElement("expireAt")]
         public DateTime ExpireAt { get; set; }
-
-
     }
-
-    //var indexKeysDefinition = Builders<MongoLogMessage>.IndexKeys.Ascending("ExpireAt");
-    //var indexOptions = new CreateIndexOptions { **ExpireAfter = new TimeSpan(0, 0, 0) * * };
-    //var indexModel = new CreateIndexModel<MongoLogMessage>(indexKeysDefinition, indexOptions);
-    //_mongoCollection.Indexes.CreateOne(indexModel);
 }
