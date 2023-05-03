@@ -5,6 +5,8 @@ using SharpHook;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Reactive.Linq;
+using System.Text.Json;
+using Tetris.Models;
 
 namespace Tetris;
 
@@ -15,7 +17,7 @@ public partial class MenuPage : ContentPage
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
         NavigationPage.SetHasNavigationBar(this, false);
-        //GetUserData();
+        GetUserData();
     }
 
     private async void NewGameButtonClicked(object sender, TappedEventArgs e)
@@ -58,13 +60,11 @@ public partial class MenuPage : ContentPage
         {
             var authContent = await response.Content.ReadAsStringAsync();
 
-            var keyValuePairs = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, object>>(authContent);
-            string coins = keyValuePairs["coins"].ToString();
-            string name = keyValuePairs["username"].ToString();
+            User user = JsonSerializer.Deserialize<User>(authContent);
             Label coinsLabel = (Label)FindByName("coinsLabel");
             Label usernameLabel = (Label)FindByName("usernameLabel");
-            coinsLabel.Text = coins;
-            usernameLabel.Text = name;
+            coinsLabel.Text = user.Coins.ToString();
+            usernameLabel.Text = user.Username;
         }
     }
 }

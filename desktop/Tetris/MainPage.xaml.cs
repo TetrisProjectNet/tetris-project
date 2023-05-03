@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using System.Net.Http.Json;
 using System.Security.Claims;
+using System.Text.Json;
 using Tetris.Models;
 
 namespace Tetris;
@@ -45,7 +46,7 @@ public partial class MainPage : ContentPage
 
                 var payload = authToken.Split('.')[1];
                 var jsonBytes = ParseBase64WithoutPadding(payload);
-                var keyValuePairs = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
+                var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
 
                 AuthorizedUser user = new AuthorizedUser(keyValuePairs["id"].ToString(), keyValuePairs[ClaimTypes.Name].ToString(), keyValuePairs[ClaimTypes.Role].ToString(), authToken, new DateTime(Convert.ToInt64(keyValuePairs["exp"].ToString())));
                 await SecureStorage.Default.SetAsync("oauth_token", authToken);
