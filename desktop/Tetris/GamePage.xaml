@@ -6,7 +6,7 @@
              xmlns:controls="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
              xmlns:drawables="clr-namespace:Tetris.Drawables"
              Title=""
-             BackgroundImageSource="loginbackground.png">
+             BackgroundImageSource="gametheme.png">
 
     <ContentPage.Resources>
         <drawables:TetrisGridDrawable x:Key="tetrisGridDrawable"/>
@@ -27,7 +27,8 @@
         <Frame Grid.Row="1" Grid.Column="0"
                HeightRequest="275"
                WidthRequest="350"
-               BackgroundColor="Black">
+               BackgroundColor="#222123"
+               Margin="0, -85, 0, 0">
             <StackLayout>
                 <Frame Grid.Row="0"
                        HeightRequest="80"
@@ -70,7 +71,8 @@
         <Frame Grid.Row="1" Grid.Column="2"
                HeightRequest="275"
                WidthRequest="350"
-               BackgroundColor="Black">
+               BackgroundColor="#222123"
+               Margin="0, -85, 0, 0">
             <StackLayout>
                 <Frame Grid.Row="0"
                        HeightRequest="80"

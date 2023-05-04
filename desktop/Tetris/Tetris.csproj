@@ -53,7 +53,10 @@
 	  <None Remove="Resources\Fonts\Tetris.ttf" />
 	  <None Remove="Resources\Images\abstractpaper2.svg" />
 	  <None Remove="Resources\Images\coinicon.png" />
+	  <None Remove="Resources\Images\cubetest.png" />
+	  <None Remove="Resources\Images\gametheme.png" />
 	  <None Remove="Resources\Images\loginbackground.png" />
+	  <None Remove="Resources\Images\maintheme.png" />
 	  <None Remove="Resources\Images\menubackground.svg" />
 	  <None Remove="Resources\Images\nnneon.svg" />
 	  <None Remove="Resources\Images\profileicon.png" />
@@ -83,6 +86,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="CardPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\CardPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="GamePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -90,6 +99,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ShopPopupPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\CardView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

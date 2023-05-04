@@ -33,14 +33,13 @@ public static class MauiProgram
                 options.TracesSampleRate = 1.0;
             })
             .ConfigureMopups()
+            .RegisterViewModels()
             .ConfigureFonts(fonts => {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 fonts.AddFont("Tetris.ttf");
             })
             .UseSkiaSharp();
-
-        builder.Services.AddSingleton<GamePage>();
 
 
 #if WINDOWS
@@ -67,5 +66,14 @@ public static class MauiProgram
         });
 #endif
         return builder.Build();
+    }
+
+    public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder) {
+        mauiAppBuilder.Services.AddSingleton<GamePage>();
+        mauiAppBuilder.Services.AddSingleton<IPopupNavigation>(MopupService.Instance);
+        mauiAppBuilder.Services.AddSingleton<MainPage>();
+        mauiAppBuilder.Services.AddSingleton<ShopPopupPage>();
+
+        return mauiAppBuilder;
     }
 }

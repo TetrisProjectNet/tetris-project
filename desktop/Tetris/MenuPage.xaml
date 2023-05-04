@@ -4,7 +4,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Tetris.MenuPage"
              Title=""
-             BackgroundImageSource="abstractpaper2.png">
+             BackgroundImageSource="maintheme.png">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -74,7 +74,7 @@
             </Frame>
 
             <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="Center">
-                <Label WidthRequest="700" FontSize="150" HorizontalTextAlignment="Center">
+                <Label x:Name="TetrisLabel" WidthRequest="700" FontSize="150" HorizontalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="T" FontFamily="Tetris.ttf" TextColor="#ff0000"/>
@@ -92,7 +92,7 @@
                            HorizontalOptions="Start"/>
             </StackLayout>
 
-            <Frame Grid.Row="2" Grid.Column="1" HeightRequest="500" WidthRequest="610" BackgroundColor="Transparent" BorderColor="Transparent" Margin="0, 200, 0, 0">
+            <Frame Grid.Row="2" Grid.Column="1" HeightRequest="500" WidthRequest="670" BackgroundColor="Transparent" BorderColor="Transparent" Margin="0, 200, 0, 0" ZIndex="20">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -101,49 +101,54 @@
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Frame Grid.Row="0" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                    <Frame Grid.Row="0" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20">
                         <StackLayout Orientation="Horizontal">
                             <Image Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
                             <Label FontFamily="Tetris" TextColor="White" FontAttributes="Bold" Margin="95, 10, 0, 0" FontSize="32" Text="New game" WidthRequest="200" HeightRequest="50" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="NewGameButtonClicked"/>
+                            <PointerGestureRecognizer PointerEntered="HoverBeganMenuButton" PointerExited="HoverEndedMenuButton"/>
                         </Frame.GestureRecognizers>
                     </Frame>
-                    <Frame Grid.Row="1" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                    <Frame Grid.Row="1" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20">
                         <StackLayout Orientation="Horizontal">
                             <Image Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
                             <Label FontFamily="Tetris" TextColor="White" FontAttributes="Bold" Margin="95, 10, 0, 0" FontSize="32" Text="Statistics" WidthRequest="200" HeightRequest="50" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="StatisticsButtonClicked"/>
+                            <PointerGestureRecognizer PointerEntered="HoverBeganMenuButton" PointerExited="HoverEndedMenuButton"/>
                         </Frame.GestureRecognizers>
                     </Frame>
-                    <Frame Grid.Row="2" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                    <Frame Grid.Row="2" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20">
                         <StackLayout Orientation="Horizontal">
                             <Image Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
                             <Label FontFamily="Tetris" TextColor="White" FontAttributes="Bold" Margin="95, 10, 0, 0" FontSize="32" Text="Shop" WidthRequest="200" HeightRequest="50" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="ShopButtonClicked"/>
+                            <PointerGestureRecognizer PointerEntered="HoverBeganMenuButton" PointerExited="HoverEndedMenuButton"/>
                         </Frame.GestureRecognizers>
                     </Frame>
-                    <Frame Grid.Row="3" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                    <Frame Grid.Row="3" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20">
                         <StackLayout Orientation="Horizontal">
                             <Image Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
                             <Label FontFamily="Tetris" TextColor="White" FontAttributes="Bold" Margin="95, 10, 0, 0" FontSize="32" Text="Settings" WidthRequest="200" HeightRequest="50" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="SettingsButtonClicked"/>
+                            <PointerGestureRecognizer PointerEntered="HoverBeganMenuButton" PointerExited="HoverEndedMenuButton"/>
                         </Frame.GestureRecognizers>
                     </Frame>
-                    <Frame Grid.Row="4" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent">
+                    <Frame Grid.Row="4" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20">
                         <StackLayout Orientation="Horizontal">
                             <Image Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
                             <Label FontFamily="Tetris" TextColor="White" FontAttributes="Bold" Margin="95, 10, 0, 0" FontSize="32" Text="Quit" WidthRequest="200" HeightRequest="50" HorizontalTextAlignment="Center"/>
                         </StackLayout>
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="SettingsButtonClicked"/>
+                            <TapGestureRecognizer Tapped="QuitButtonClicked"/>
+                            <PointerGestureRecognizer PointerEntered="HoverBeganMenuButton" PointerExited="HoverEndedMenuButton"/>
                         </Frame.GestureRecognizers>
                     </Frame>
                 </Grid>

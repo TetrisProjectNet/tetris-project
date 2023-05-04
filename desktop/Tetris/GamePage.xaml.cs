@@ -9,6 +9,10 @@ using SharpHook;
 using SharpHook.Native;
 using SharpHook.Reactive;
 using System.Threading;
+using System.Net.Http.Headers;
+using System.Text.Json;
+using Tetris.Models;
+using System.Text;
 
 namespace Tetris;
 
@@ -570,9 +574,33 @@ public partial class GamePage : ContentPage
 
     public async void SendGameDataToServer()
     {
+        HttpClient httpClient = new HttpClient();
         string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
 
+        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", oauthToken);
 
+        var response = await httpClient.GetAsync("https://localhost:7041/Auth");
+
+        if (response.IsSuccessStatusCode) {
+            var authContent = await response.Content.ReadAsStringAsync();
+
+            UserDTO user = JsonSerializer.Deserialize<UserDTO>(authContent);
+
+            int[] newArray = new int[user.Scores.Length + 1];
+            Array.Copy(user.Scores, newArray, user.Scores.Length);
+            newArray[newArray.Length - 1] = _clearedRows * 65;
+
+            user.Scores = newArray;
+            user.Coins = user.Coins + _clearedRows * 6;
+
+            var json = JsonSerializer.Serialize(user);
+
+            var request = new HttpRequestMessage(new HttpMethod("PATCH"), $"https://localhost:7041/User/{user.Id}") {
+                Content = new StringContent(json, Encoding.UTF8, "application/json-patch+json")
+            };
+
+            response = await httpClient.SendAsync(request);
+        }
     }
 
     private void RedrawTetris()
