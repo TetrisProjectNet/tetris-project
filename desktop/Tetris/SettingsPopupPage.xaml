@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:mopupsanimation="clr-namespace:Mopups.Animations;assembly=Mopups"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             xmlns:controls="clr-namespace:Tetris.Controls"
+             xmlns:views="clr-namespace:Tetris.Models"
+             x:Class="Tetris.SettingsPopupPage"
+             CloseWhenBackgroundIsClicked="True"
+             Title="SettingsPopupPage" BackgroundColor="#90000000">
+
+    <mopups:PopupPage.Animation>
+        <mopupsanimation:ScaleAnimation
+            DurationIn="500"
+            EasingIn="Bounce"
+            PositionIn="Bottom"
+            PositionOut="Center"
+            ScaleIn="1"
+            ScaleOut="0.7">
+        </mopupsanimation:ScaleAnimation>
+    </mopups:PopupPage.Animation>
+
+    <Border WidthRequest="1400" HeightRequest="860" BackgroundColor="White" HorizontalOptions="Center" StrokeThickness="-1" Stroke="#413F3F">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="40, 0, 0, 40"/>
+        </Border.StrokeShape>
+        <Border.GestureRecognizers>
+            <TapGestureRecognizer Tapped="MenuBackgroundTapped"/>
+        </Border.GestureRecognizers>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <HorizontalStackLayout Grid.Row="0" BackgroundColor="#161616" Padding="0" Margin="0, 0, 0, 0" ZIndex="1">
+                <Button BackgroundColor="#2F0766" HorizontalOptions="StartAndExpand" HeightRequest="52" WidthRequest="160" Text="&lt; Back" FontFamily="Tetris" FontSize="30" Margin="-1, 0, 0, 0" Pressed="BackButtonClicked" TextColor="White">
+                    <Button.GestureRecognizers>
+                        <PointerGestureRecognizer PointerEntered="BackButtonHoverBegan" PointerExited="BackButtonHoverEnd"/>
+                    </Button.GestureRecognizers>
+                </Button>
+            </HorizontalStackLayout>
+            <Border Grid.Row="1" Margin="0, -63, 0, 0" WidthRequest="400" HeightRequest="110" ZIndex="2" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="#2F0766" StrokeThickness="-5" Stroke="#2F0766">
+                <Label FontFamily="Tetris" FontSize="52" Text="Settings" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Border>
+
+            <Border Grid.Row="1" HeightRequest="815" WidthRequest="1400" BackgroundColor="#1C1C1C" ZIndex="1" Stroke="#1C1C1C">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="215"/>
+                        <RowDefinition Height="350"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="1350"/>
+                        <ColumnDefinition Width="25"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Grid Grid.Row="1" Grid.Column="1" x:Name="CardGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="90"/>
+                            <RowDefinition Height="55"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" FontFamily="Tetris" FontSize="32" Text="Volume" TextColor="White" HorizontalOptions="StartAndExpand" VerticalOptions="Start"/>
+                        <Grid Grid.Row="1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="45"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="130"/>
+                                    <ColumnDefinition Width="500"/>
+                                    <ColumnDefinition Width="90"/>
+                            </Grid.ColumnDefinitions>
+                                    
+                            <Label x:Name="MusicLabel" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" FontSize="25" Text="Music" TextColor="White" FontFamily="Tetris" Margin="30, 10, 0, 0"/>
+                            <Slider Grid.Row="0" Grid.Column="1" Minimum="0" Maximum="0.2" Value="0.1" ThumbImageSource="settingssliderthumb.png" WidthRequest="475" ZIndex="20" HorizontalOptions="End" Margin="10, 10, 0, 0" x:Name="MusicSlider" ValueChanged="MusicSlider_ValueChanged" MinimumTrackColor="#b50707"/>
+                            <Label x:Name="MusicValue" Grid.Row="0" Grid.Column="2" HorizontalOptions="StartAndExpand" FontSize="25" FontFamily="Tetris" Margin="15, 10, 0, 0"/>
+
+                            <Label x:Name="SFXLabel" Grid.Row="1" Grid.Column="0" HorizontalOptions="StartAndExpand" FontSize="25" Text="SFX" TextColor="White" FontFamily="Tetris" Margin="30, 10, 0, 0"/>
+                            <Slider Grid.Row="1" Grid.Column="1" Minimum="0" Maximum="0.2" Value="0.1" ThumbImageSource="settingssliderthumb.png" WidthRequest="475" ZIndex="20" HorizontalOptions="EndAndExpand" Margin="10, 10, 0, 0" x:Name="SFXSlider" ValueChanged="SFXSlider_ValueChanged" MinimumTrackColor="#b50707"/>
+                            <Label x:Name="SFXValue" Grid.Row="1" Grid.Column="2" HorizontalOptions="StartAndExpand" FontSize="25" FontFamily="Tetris" Margin="15, 10, 0, 0"/>
+                        </Grid>
+                            
+
+                        <Label Grid.Row="2" FontFamily="Tetris" FontSize="32" Text="Skins used" TextColor="White" HorizontalOptions="StartAndExpand" VerticalOptions="Start" Margin="0, 20, 0, 0"/>
+                    </Grid>
+
+                    <HorizontalStackLayout x:Name="CardStack" Grid.Row="2" Grid.Column="1" Margin="0, 0, 0, 0" VerticalOptions="StartAndExpand">
+                        <!--<skia:SKLottieView x:Name="switchButton" Source="settingsswitch2.json" HeightRequest="250" RepeatCount="-1" RepeatMode="Restart" IsAnimationEnabled="False">
+                            <skia:SKLottieView.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="LottieTapped"/>
+                            </skia:SKLottieView.GestureRecognizers>
+                        </skia:SKLottieView>-->
+                    </HorizontalStackLayout>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</mopups:PopupPage>

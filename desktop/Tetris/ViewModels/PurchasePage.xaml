@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:mopupsanimation="clr-namespace:Mopups.Animations;assembly=Mopups"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             x:Class="Tetris.ViewModels.PurchasePage"
+             Title="PurchasePage" BackgroundColor="#90000000">
+
+    <mopups:PopupPage.Animation>
+        <mopupsanimation:ScaleAnimation
+            DurationIn="200"
+            EasingIn="Bounce"
+            PositionIn="Bottom"
+            PositionOut="Center"
+            ScaleIn="1"
+            ScaleOut="0.5">
+        </mopupsanimation:ScaleAnimation>
+    </mopups:PopupPage.Animation>
+
+    <Grid>
+        <skia:SKLottieView VerticalOptions="Center" x:Name="PurchaseAnimation" Source="shoppurchase.json" HeightRequest="120" RepeatCount="1" RepeatMode="Restart" IsAnimationEnabled="False" ZIndex="20"/>
+
+        <Border IsVisible="False" x:Name="PurchaseTextBorder" Margin="0, 0, 0, 0" BackgroundColor="#161616" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="0" HeightRequest="250" Stroke="#161616" StrokeThickness="3" ZIndex="1" StrokeShape="RoundRectangle 5">
+            <VerticalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="0, 40, 0, 0">
+                <Label x:Name="PopupMessage1" FontFamily="Tetris" FontSize="22" TextColor="#E5E5CB" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="85, 0, 0, 0"/>
+                <Label x:Name="PopupMessage2" FontFamily="Tetris" FontSize="22" TextColor="#E5E5CB" HorizontalOptions="StartAndExpand" VerticalOptions="Center" Margin="85, 3, 0, 0"/>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border IsVisible="False" x:Name="PurchaseTitleBorder" Margin="0, -240, 0, 0" WidthRequest="0" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="#2F0766" StrokeThickness="-5" Stroke="#2F0766" ZIndex="2">
+            <Label x:Name="TitleLabel" FontFamily="Tetris" FontSize="36" Text="Purchase" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center" ZIndex="20" Margin="-2, -8, 0, 0" HeightRequest="40"/>
+        </Border>
+
+        <Border IsVisible="False" x:Name="PurchaseOkBorder" Grid.Column="2" BackgroundColor="#0a9118" Stroke="#0a9118" StrokeThickness="0" HorizontalOptions="Center" WidthRequest="0" HeightRequest="50" Margin="0, 210, 0, 0" ZIndex="3" VerticalOptions="Center">
+            <Label FontFamily="Tetris" FontSize="28" Text="Ok" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OkButtonTapped"/>
+            </Border.GestureRecognizers>
+        </Border>
+    </Grid>
+</mopups:PopupPage>

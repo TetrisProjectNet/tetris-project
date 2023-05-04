@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:mopupsanimation="clr-namespace:Mopups.Animations;assembly=Mopups"
+             xmlns:views="clr-namespace:Tetris.Models"
+             x:Class="Tetris.CardPopupPage"
+             CloseWhenBackgroundIsClicked="True"
+             Title="CardPopupPage" BackgroundColor="#90000000">
+
+    <Grid x:Name="Card">
+        
+    </Grid>
+</mopups:PopupPage>

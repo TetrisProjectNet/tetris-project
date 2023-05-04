@@ -17,7 +17,7 @@ namespace Tetris.Models {
         public string Title { get; private set; }
 
         [JsonPropertyName("image")]
-        public string Image { get; private set; }
+        public string Image { get; set; }
 
         [JsonPropertyName("price")]
         public int Price { get; private set; }

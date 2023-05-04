@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:mopupsanimation="clr-namespace:Mopups.Animations;assembly=Mopups"
+             x:Class="Tetris.ViewModels.BuyConfirmPage"
+             Title="BuyConfirmPage" BackgroundColor="#90000000">
+
+    <mopups:PopupPage.Animation>
+        <mopupsanimation:ScaleAnimation
+            DurationIn="250"
+            EasingIn="Bounce"
+            PositionIn="Bottom"
+            PositionOut="Center"
+            ScaleIn="1"
+            ScaleOut="0.5">
+        </mopupsanimation:ScaleAnimation>
+    </mopups:PopupPage.Animation>
+
+    <Grid HeightRequest="250" WidthRequest="600" HorizontalOptions="Center" VerticalOptions="Center">
+        
+        <Border Margin="0, 50, 0, 0" BackgroundColor="#161616" VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="600" HeightRequest="150" Stroke="#161616" StrokeThickness="0" ZIndex="1">
+            <Label FontFamily="Tetris" FontSize="24" Text="Are you sure you want to purchase this item?" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Border>
+        
+        <Border Margin="0, 30, 0, 0" WidthRequest="200" HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="#2F0766" StrokeThickness="-5" Stroke="#2F0766" ZIndex="2">
+            <Label FontFamily="Tetris" FontSize="36" Text="Confirm" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center" ZIndex="20" Margin="-2, -8, 0, 0"/>
+        </Border>
+
+        <HorizontalStackLayout VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="400" HeightRequest="50" Margin="0, 160, 0, 0" ZIndex="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" BackgroundColor="#7a0e0c" Stroke="#7a0e0c" StrokeThickness="0" HorizontalOptions="End" WidthRequest="150" HeightRequest="50">
+                    <Label FontFamily="Tetris" FontSize="28" Text="No" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="DeclinePurchase"/>
+                    </Border.GestureRecognizers>
+                </Border>
+                <Border Grid.Column="2" BackgroundColor="#0a9118" Stroke="#0a9118" StrokeThickness="0" HorizontalOptions="Start" WidthRequest="150" HeightRequest="50">
+                    <Label FontFamily="Tetris" FontSize="28" Text="Yes" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ConfirmPurchase"/>
+                    </Border.GestureRecognizers>
+                </Border>
+            </Grid>
+        </HorizontalStackLayout>
+
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>-->
+
+        <!--<Border Grid.Row="0" Margin="0, 20, 0, 0" WidthRequest="200" HeightRequest="100" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="#2F0766" StrokeThickness="-5" Stroke="#2F0766" ZIndex="100">
+            <Label FontFamily="Tetris" FontSize="36" Text="Confirm Purchase" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center" ZIndex="20"/>
+        </Border>
+
+        <Border Grid.Row="1" BackgroundColor="#161616" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="600" HeightRequest="150" Stroke="#161616" StrokeThickness="0" ZIndex="1">
+            <Label FontFamily="Tetris" FontSize="24" Text="jkdsajkdsajdsadajs" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Border>-->
+
+        <!--<HorizontalStackLayout Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="400" HeightRequest="50" Margin="0, -30, 0, 0" ZIndex="100">
+            <Border BackgroundColor="#00ff00" Stroke="#00ff00" StrokeThickness="0" HorizontalOptions="StartAndExpand" WidthRequest="150" HeightRequest="50" Margin="0, 0, 0, 25">
+                <Label FontFamily="Tetris" FontSize="28" Text="Yes" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Border>
+            <Border BackgroundColor="#ff0000" Stroke="#ff0000" StrokeThickness="0" HorizontalOptions="EndAndExpand" WidthRequest="150" HeightRequest="50" Margin="25, 0, 0, 0">
+                <Label FontFamily="Tetris" FontSize="28" Text="No" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Border>
+        </HorizontalStackLayout>-->
+    </Grid>
+</mopups:PopupPage>

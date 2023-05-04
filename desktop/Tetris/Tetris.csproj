@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+	
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
@@ -52,28 +52,64 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Tetris.ttf" />
 	  <None Remove="Resources\Images\abstractpaper2.svg" />
+	  <None Remove="Resources\Images\checkmarkyes.json" />
 	  <None Remove="Resources\Images\coinicon.png" />
+	  <None Remove="Resources\Images\cubetest.png" />
+	  <None Remove="Resources\Images\gametheme.png" />
+	  <None Remove="Resources\Images\itemusedx.png" />
 	  <None Remove="Resources\Images\loginbackground.png" />
+	  <None Remove="Resources\Images\logout.png" />
+	  <None Remove="Resources\Images\maintheme.png" />
 	  <None Remove="Resources\Images\menubackground.svg" />
 	  <None Remove="Resources\Images\nnneon.svg" />
 	  <None Remove="Resources\Images\profileicon.png" />
-	  <None Remove="Resources\Images\redmark.png" />
+	  <None Remove="Resources\Images\searchicon.png" />
+	  <None Remove="Resources\Images\settingsdarkbluearrow.png" />
+	  <None Remove="Resources\Images\settingsgreenarrow.png" />
+	  <None Remove="Resources\Images\settingslightbluearrow.png" />
+	  <None Remove="Resources\Images\settingsorangearrow.png" />
+	  <None Remove="Resources\Images\settingspurplearrow.png" />
+	  <None Remove="Resources\Images\settingsredarrow.png" />
+	  <None Remove="Resources\Images\settingssliderthumb.png" />
+	  <None Remove="Resources\Images\settingsyellowarrow.png" />
 	  <None Remove="Resources\Images\tetrispieces.png" />
+	  <None Remove="Resources\Images\warning.png" />
+	  <None Remove="Resources\Raw\gamebackgroundmusic.mp3" />
+	  <None Remove="Resources\Raw\gamepieceplaced.wav" />
+	  <None Remove="Resources\Raw\menubackgroundmusic.mp3" />
+	  <None Remove="Resources\Raw\menubuttonhover.wav" />
+	  <None Remove="Resources\Raw\settingsswitch.json" />
+	  <None Remove="Resources\Raw\settingsswitch2.json" />
+	  <None Remove="Resources\Raw\shoploading.json" />
+	  <None Remove="Resources\Raw\shoppurchase.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Raw\checkmarkyes.json" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+		<PackageReference Include="InputKit.Maui" Version="4.3.0" />
+		<PackageReference Include="MetroLog.Maui" Version="2.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Maui.Graphics.Skia" Version="7.0.59" />
 		<PackageReference Include="Mopups" Version="1.1.0" />
+		<PackageReference Include="Plugin.Maui.Audio" Version="1.0.0" />
 		<PackageReference Include="Sentry" Version="3.31.0" />
 		<PackageReference Include="Sentry.Maui" Version="3.31.0" />
 		<PackageReference Include="SharpHook" Version="4.2.0" />
 		<PackageReference Include="SharpHook.Reactive" Version="4.2.0" />
 		<PackageReference Include="SkiaSharp" Version="2.88.3" />
+		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
 		<PackageReference Include="SkiaSharp.Views" Version="2.88.3" />
 		<PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.3" />
 		<PackageReference Include="SkiaSharp.Views.Maui.Core" Version="2.88.3" />
+		<PackageReference Include="Syncfusion.Maui.Core" Version="21.2.4" />
+		<PackageReference Include="Syncfusion.Maui.Inputs" Version="21.2.4" />
+		<PackageReference Include="UraniumUI" Version="2.5.0-pre.3" />
+		<PackageReference Include="UraniumUI.Icons.MaterialIcons" Version="2.4.6" />
+		<PackageReference Include="UraniumUI.Material" Version="2.5.0-pre.3" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-windows10.0.19041.0'">
@@ -83,6 +119,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="CardPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SettingsPopupPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\BuyConfirmPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\CardPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="GamePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -90,6 +138,18 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ShopPopupPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\CardView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\PurchasePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\SettingsCardView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\SettingsDropDownItem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

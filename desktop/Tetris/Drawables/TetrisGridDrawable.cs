@@ -9,11 +9,10 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Tetris.Game;
+using Tetris.References;
 
-namespace Tetris.Drawables
-{
-    internal class TetrisGridDrawable : SKDrawable
-    {
+namespace Tetris.Drawables {
+    internal class TetrisGridDrawable : SKDrawable {
         private readonly SKBitmap[] pieceImages = new SKBitmap[]
         {
             SKBitmap.Decode(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\..\\..\\Resources\\Images\\transparenttile.png")),
@@ -26,7 +25,7 @@ namespace Tetris.Drawables
             SKBitmap.Decode(Path.Combine(AppContext.BaseDirectory, "..\\..\\..\\..\\..\\Game\\Images\\darkbluetile.png"))
         };
 
-        private SKTypeface tetrisFont =  SKTypeface.FromFile(Path.Combine(AppContext.BaseDirectory,
+        private SKTypeface tetrisFont = SKTypeface.FromFile(Path.Combine(AppContext.BaseDirectory,
             "..\\..\\..\\..\\..\\Resources\\Fonts\\Tetris.ttf"));
 
         private int _startCounter = 7;
@@ -35,8 +34,7 @@ namespace Tetris.Drawables
             set => _startCounter = value;
         }
 
-        public void Draw(SKCanvas canvas, TetrisPiece currentPiece, BlockPosition currentOffset, int[,] GameGrid, bool gameOver, bool gamePaused, bool gameStart)
-        {
+        public void Draw(SKCanvas canvas, TetrisPiece currentPiece, BlockPosition currentOffset, int[,] GameGrid, bool gameOver, bool gamePaused, bool gameStart) {
             ClearCanvas(canvas);
             drawGridTable(canvas);
 
@@ -59,12 +57,9 @@ namespace Tetris.Drawables
             }
         }
 
-        public void DrawStartTime(SKCanvas canvas)
-        {
+        public void DrawStartTime(SKCanvas canvas) {
 
-
-            SKPaint paint = new SKPaint
-            {
+            SKPaint paint = new SKPaint {
                 Color = SKColors.White,
                 TextAlign = SKTextAlign.Center,
                 TextSize = 105,
@@ -78,10 +73,8 @@ namespace Tetris.Drawables
             canvas.DrawText($"..{_startCounter - 1}..", canvas.DeviceClipBounds.Width / 2, canvas.DeviceClipBounds.Height / 2, paint);
         }
 
-        public void drawGridTable(SKCanvas canvas)
-        {
-            SKPaint paint = new SKPaint
-            {
+        public void drawGridTable(SKCanvas canvas) {
+            SKPaint paint = new SKPaint {
                 Style = SKPaintStyle.Stroke,
                 Color = new SKColor(22, 22, 22),
                 StrokeWidth = 1
@@ -92,47 +85,56 @@ namespace Tetris.Drawables
             canvas.DrawLine(canvas.DeviceClipBounds.Width - 1, canvas.DeviceClipBounds.Height - 1, canvas.DeviceClipBounds.Width - 1, 0, paint);
             canvas.DrawLine(canvas.DeviceClipBounds.Width - 1, 0, 0, 0, paint);
 
-            for (int i = 0; i < canvas.DeviceClipBounds.Width - 1; i++)
-            {
+            for (int i = 0; i < canvas.DeviceClipBounds.Width - 1; i++) {
                 canvas.DrawLine(i * 41, 0, i * 41, canvas.DeviceClipBounds.Height - 1, paint);
             }
 
-            for (int i = 0; i < canvas.DeviceClipBounds.Height - 1; i++)
-            {
+            for (int i = 0; i < canvas.DeviceClipBounds.Height - 1; i++) {
                 canvas.DrawLine(0, i * 41, canvas.DeviceClipBounds.Width, i * 41, paint);
             }
         }
 
-        public void ClearCanvas(SKCanvas canvas)
-        {
+        public void ClearCanvas(SKCanvas canvas) {
             canvas.Clear(new SKColor(7, 7, 7));
         }
 
-        public void DrawPiece(SKCanvas canvas, TetrisPiece piece, int stateNumber, BlockPosition currentOffset)
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                canvas.DrawBitmap(pieceImages[piece.Blocks[stateNumber][i].Id], new SKPoint(1 + (piece.Blocks[stateNumber][i].position.X + currentOffset.X) * 41, 1 + (piece.Blocks[stateNumber][i].position.Y + currentOffset.Y) * 41));
+        public void DrawPiece(SKCanvas canvas, TetrisPiece piece, int stateNumber, BlockPosition currentOffset) {
+            string saved = Preferences.Default.Get($"skinsUsed", "0000000");
+            char skinUsed = saved[ShopItemIdReferences.SettingsIdToTile[piece.Blocks[0][0].Id - 1]];
+            int skinId = Preferences.Default.Get($"skinSlot{ShopItemIdReferences.SettingsIdToTile[piece.Blocks[0][0].Id - 1]}", -1);
+            SKBitmap bitmap;
+
+            for (int i = 0; i < 4; i++) {
+                if (skinId == -1 || skinUsed == '0') {
+                    canvas.DrawBitmap(pieceImages[piece.Blocks[stateNumber][i].Id], new SKPoint(1 + (piece.Blocks[stateNumber][i].position.X + currentOffset.X) * 41, 1 + (piece.Blocks[stateNumber][i].position.Y + currentOffset.Y) * 41));
+                    continue;
+                }
+                string path = ShopItemIdReferences.TilePaths[skinId];
+                bitmap = SKBitmap.Decode(path);
+                canvas.DrawBitmap(bitmap, new SKPoint(1 + (piece.Blocks[stateNumber][i].position.X + currentOffset.X) * 41, 1 + (piece.Blocks[stateNumber][i].position.Y + currentOffset.Y) * 41));
+                //canvas.DrawBitmap(pieceImages[piece.Blocks[stateNumber][i].Id], new SKPoint(1 + (piece.Blocks[stateNumber][i].position.X + currentOffset.X) * 41, 1 + (piece.Blocks[stateNumber][i].position.Y + currentOffset.Y) * 41));
+
             }
         }
 
-        public void DrawGameGrid(SKCanvas canvas, int[,] GameGrid)
-        {
+        public void DrawGameGrid(SKCanvas canvas, int[,] GameGrid) {
             for (int i = 0; i < GameGrid.GetLength(0); i++) {
                 for (int j = 0; j < GameGrid.GetLength(1); j++) {
                     if (GameGrid[i, j] == 0) continue;
+                    if (GameGrid[i, j] >= 100) {
+                        canvas.DrawBitmap(SKBitmap.Decode(ShopItemIdReferences.TilePaths[GameGrid[i, j] - 100]), new SKPoint(1 + j * 41, 1 + i * 41));
+                        continue;
+                    }
                     canvas.DrawBitmap(pieceImages[GameGrid[i, j]], new SKPoint(1 + j * 41, 1 + i * 41));
                 }
             }
         }
 
-        public void DrawGameStopped(SKCanvas canvas, string stoppedReason)
-        {
+        public void DrawGameStopped(SKCanvas canvas, string stoppedReason) {
             SKPaint rectPaint = new SKPaint();
             rectPaint.Color = new SKColor(11, 11, 12, 230);
 
-            SKPaint paint = new SKPaint
-            {
+            SKPaint paint = new SKPaint {
                 Color = new SKColor(0, 255, 0),
                 TextAlign = SKTextAlign.Center,
                 TextSize = 65,

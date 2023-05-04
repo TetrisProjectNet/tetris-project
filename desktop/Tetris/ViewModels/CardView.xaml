@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tetris.ViewModels.CardView"
+             xmlns:viewmodel="clr-namespace:Tetris.ViewModels"
+             x:DataType="viewmodel:CardViewModel">
+
+    <Border
+            Grid.Row="{Binding Row}"
+            Grid.Column="{Binding Column}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="240"
+            HeightRequest="340"
+            Stroke="#1C1C1C"
+            BackgroundColor="#161616"
+            StrokeThickness="-1"
+            StrokeShape="RoundRectangle 10"
+            ZIndex="1">
+        <Border.GestureRecognizers>
+            <PointerGestureRecognizer PointerEntered="HoverBeganCard" PointerExited="HoverEndedCard"/>
+            <TapGestureRecognizer Command="{Binding TapCommand}"/>
+        </Border.GestureRecognizers>
+        <Border.Shadow>
+            <Shadow Brush="Black"
+                    Offset="5, 5"
+                    Opacity=".7"/>
+        </Border.Shadow>
+
+        <Grid ZIndex="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="160"/>
+                <RowDefinition Height="300"/>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="NameLabel" Grid.Row="0" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Text="{Binding Name}" FontSize="25" FontFamily="Tetris" Margin="0, 5, 0, 0"/>
+            <Image x:Name="CardImage" Grid.Row="0" Source="{Binding ImageString}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="200" Margin="{Binding ImageMargin}" ZIndex="20"/>
+
+            <Rectangle Grid.Row="1"
+                       BackgroundColor="{Binding RectColor1}"
+                       WidthRequest="250"
+                       HeightRequest="70"
+                       ZIndex="4"
+                       Rotation="50"
+                       Margin="-165, 90, 0, 0"
+                       x:Name="Rect1"/>
+
+            <Rectangle Grid.Row="1"
+                       BackgroundColor="#1C1C1C"
+                       WidthRequest="210"
+                       HeightRequest="140"
+                       ZIndex="2"
+                       Rotation="50"
+                       Margin="-240, 20, 0, 0"/>
+            <Rectangle Grid.Row="1"
+                       BackgroundColor="{Binding RectColor3}"
+                       WidthRequest="300"
+                       HeightRequest="20"
+                       ZIndex="4"
+                       Rotation="50"
+                       Margin="-100, -30, 0, 0"
+                       x:Name="Rect3"/>
+
+            <Rectangle Grid.Row="1"
+                       BackgroundColor="{Binding RectColor4}"
+                       WidthRequest="245"
+                       HeightRequest="20"
+                       ZIndex="4"
+                       Margin="0, 20, 0, 0"
+                       VerticalOptions="Start"
+                       x:Name="Rect4"/>
+            
+            <StackLayout x:Name="BuyStackButton" Orientation="Horizontal" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" ZIndex="20" BackgroundColor="Transparent"
+                         Margin="110, -15, 25, 0" WidthRequest="150" HeightRequest="30">
+                <StackLayout.GestureRecognizers>
+                    <PointerGestureRecognizer PointerEntered="HoverBeganBuy" PointerExited="HoverEndedBuy"/>
+                    <TapGestureRecognizer Tapped="BuyButtonTapEvent"/>
+                </StackLayout.GestureRecognizers>
+                <Label x:Name="CoinLabel" FontFamily="Tetris" Text="{Binding CoinCount}" HorizontalOptions="EndAndExpand" TextColor="White" FontSize="30" VerticalOptions="Center" Margin="0, -3, 5, 0" CharacterSpacing="3"/>
+                <Image Margin="0, 0, 2, 0" Source="coinicon.png" HorizontalOptions="End" HeightRequest="30"/>
+            </StackLayout>
+        </Grid>
+    </Border>
+</ContentView>

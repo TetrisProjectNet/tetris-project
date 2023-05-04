@@ -6,7 +6,7 @@
              xmlns:controls="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
              xmlns:drawables="clr-namespace:Tetris.Drawables"
              Title=""
-             BackgroundImageSource="loginbackground.png">
+             BackgroundImageSource="gametheme.png">
 
     <ContentPage.Resources>
         <drawables:TetrisGridDrawable x:Key="tetrisGridDrawable"/>
@@ -27,7 +27,8 @@
         <Frame Grid.Row="1" Grid.Column="0"
                HeightRequest="275"
                WidthRequest="350"
-               BackgroundColor="Black">
+               BackgroundColor="#222123"
+               Margin="0, -50, 0, 0">
             <StackLayout>
                 <Frame Grid.Row="0"
                        HeightRequest="80"
@@ -65,12 +66,17 @@
             </Label>
         </StackLayout>
 
-        <controls:SKCanvasView Grid.Row="1" Grid.Column="1" PaintSurface="OnPaintSurface" IgnorePixelScaling="true" x:Name="canvasView" HeightRequest="821" WidthRequest="411" Margin="0, 50, 0, 0"/>
+        <controls:SKCanvasView Grid.Row="1" Grid.Column="1" PaintSurface="OnPaintSurface" IgnorePixelScaling="true" x:Name="canvasView" HeightRequest="821" WidthRequest="411" Margin="0, 50, 0, 0">
+            <controls:SKCanvasView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </controls:SKCanvasView.GestureRecognizers>
+        </controls:SKCanvasView>
 
         <Frame Grid.Row="1" Grid.Column="2"
                HeightRequest="275"
                WidthRequest="350"
-               BackgroundColor="Black">
+               BackgroundColor="#222123"
+               Margin="0, -50, 0, 0">
             <StackLayout>
                 <Frame Grid.Row="0"
                        HeightRequest="80"
@@ -95,7 +101,7 @@
 
         <StackLayout Orientation="Vertical"
                      Grid.Row="2" Grid.Column="2"
-                     HeightRequest="160"
+                     HeightRequest="140"
                      WidthRequest="180"
                      BackgroundColor="Transparent"
                      HorizontalOptions="EndAndExpand"
@@ -130,7 +136,7 @@
                     <ColumnDefinition Width="50"/>
                 </Grid.ColumnDefinitions>
 
-                <Label TextColor="White" Grid.Row="0" Grid.Column="0" x:Name="PointsLabel" Text="0" FontFamily="Tetris" FontSize="40" HorizontalOptions="EndAndExpand" VerticalOptions="Center" HorizontalTextAlignment="End" VerticalTextAlignment="Center"/>
+                <Label TextColor="White" Grid.Row="0" Grid.Column="0" x:Name="PointsLabel" Text="0" FontFamily="Tetris" FontSize="40" HorizontalOptions="EndAndExpand" VerticalOptions="Center" HorizontalTextAlignment="End" VerticalTextAlignment="Center" Margin="0, -13, 0, 0"/>
 
                 <Label TextColor="White" Grid.Row="1" Grid.Column="0" x:Name="CoinsLabel" Text="0" FontFamily="Tetris" FontSize="40" HorizontalOptions="EndAndExpand" VerticalOptions="Center" HorizontalTextAlignment="End" VerticalTextAlignment="Center"/>
                 <Image HeightRequest="40" Grid.Row="1" Grid.Column="1" x:Name="coinicon" Source="coinicon.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
