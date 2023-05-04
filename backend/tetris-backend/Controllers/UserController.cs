@@ -6,6 +6,7 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using Microsoft.AspNetCore.Authorization;
 using MongoDB.Driver;
+using Org.BouncyCastle.Asn1.Ocsp;
 
 namespace tetris_backend.Controllers
 {
@@ -203,6 +204,19 @@ namespace tetris_backend.Controllers
             if (userDB is null)
             {
                 return NotFound();
+            }
+
+            var userByUsername = await _userService.GetBasedOnUsernameAsync(updatedUserDTO.Username);
+            var userByEmail = await _userService.GetBasedOnEmailAsync(updatedUserDTO.Email);
+
+            if (userByUsername != null && userByUsername.id != updatedUserDTO.Id)
+            {
+                return BadRequest("This username is already in use.");
+            }
+
+            if (userByEmail != null && userByEmail.id != updatedUserDTO.Id)
+            {
+                return BadRequest("This email address is already registered.");
             }
 
             userDB.username = updatedUserDTO.Username;

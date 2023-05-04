@@ -63,7 +63,7 @@ export class UserEditorComponent {
       user.joinDate = new Date().toLocaleDateString("en-US");
       this.authService.register(user).subscribe({
         error: err => {
-          this.onDanger(`Registration failed.<br>${err.error}`);
+          this.onDanger(err.error, 'Registration failed.');
         },
         complete: () => {
           this.router.navigate(['user']);
@@ -73,7 +73,7 @@ export class UserEditorComponent {
     } else {
       this.userService.update(user).subscribe({
         error: err => {
-          this.onDanger(`Modification failed.<br>${err.error}`);
+          this.onDanger(err.error, 'Modification failed.');
         },
         complete: () => {
           this.router.navigate(['user']).then(() => location.reload());
