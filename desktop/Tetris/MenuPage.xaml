@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Tetris.MenuPage"
              Title=""
              BackgroundImageSource="abstractpaper2.png">
@@ -32,7 +33,8 @@
                            HeightRequest="40"
                            Aspect="AspectFit"
                            VerticalOptions="Center"/>
-                    <Label Text="6666"
+                    <Label Text="0"
+                           x:Name="coinsLabel"
                            TextColor="White"
                            FontSize="28"
                            VerticalOptions="Center"
@@ -47,7 +49,7 @@
                    Padding="12"
                    CornerRadius="8"
                    BorderColor="Transparent"
-                   WidthRequest="200"
+                   WidthRequest="370"
                    HeightRequest="50"
                    VerticalOptions="Start"
                    HorizontalOptions="End">
@@ -56,12 +58,14 @@
                            WidthRequest="40"
                            HeightRequest="40"
                            Aspect="AspectFit"
+                           HorizontalOptions="EndAndExpand"
                            VerticalOptions="Center"
-                           Margin="20, 0, 10, 0"/>
-                    <Label Text="Jackson"
+                           Margin="0, 0, 15, 0"/>
+                    <Label x:Name="usernameLabel"
                            TextColor="White"
                            FontSize="24"
                            VerticalOptions="Center"
+                           HorizontalOptions="End"
                            FontFamily="Tetris"/>
                 </StackLayout>
                 <Frame.GestureRecognizers>
@@ -144,6 +148,114 @@
                     </Frame>
                 </Grid>
             </Frame>
+
+            <!--<Frame Grid.Row="2" ZIndex="1">
+                <Border WidthRequest="240"
+                        HeightRequest="340"
+                        Stroke="Black"
+                        BackgroundColor="#2F0766"
+                        StrokeThickness="-1"
+                        StrokeShape="RoundRectangle 10"
+                        ZIndex="1">
+                    <Border.Shadow>
+                        <Shadow Brush="Black"
+                                Offset="5, 5"
+                                Opacity=".7"/>
+                    </Border.Shadow>
+
+                    <Grid ZIndex="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="300"/>
+                        </Grid.RowDefinitions>
+
+                        --><!--<Border Grid.Row="1" Grid.Column="0"
+                                WidthRequest="240"
+                                HeightRequest="330"
+                                Stroke="#4aa37d"
+                                BackgroundColor="#4aa37d"
+                                StrokeThickness="0"
+                                StrokeShape="Polygon -2 210, 100 330, -2, 330"
+                                Margin="0, -130, 0, 0"
+                                ZIndex="20"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start">
+
+                            <Border/>
+                            
+                        </Border>--><!--
+
+                        <Label Grid.Row="0" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Text="Diamond Blocks" FontSize="25" FontFamily="Tetris" Margin="0, 5, 0, 0"/>
+                        <Image Grid.Row="0" Source="fullred.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="200" Margin="50, 150, 0 , 0" ZIndex="20"/>
+
+                        <Rectangle Grid.Row="1"
+                                   BackgroundColor="#4aa37d"
+                                   WidthRequest="250"
+                                   HeightRequest="70"
+                                   ZIndex="4"
+                                   Rotation="50"
+                                   Margin="-165, 90, 0, 0"/>
+
+                        <Rectangle Grid.Row="1"
+                                   BackgroundColor="Black"
+                                   WidthRequest="210"
+                                   HeightRequest="140"
+                                   ZIndex="2"
+                                   Rotation="50"
+                                   Margin="-240, 20, 0, 0"/>
+
+                        --><!--<Border Grid.Row="1" Grid.Column="0"
+                                WidthRequest="240"
+                                HeightRequest="360"
+                                Stroke="#4aa37d"
+                                BackgroundColor="#4aa37d"
+                                StrokeThickness="0"
+                                StrokeShape="Polygon -2 200, 130 360, -2, 223"
+                                Margin="0, -160, 0, 0"
+                                ZIndex="4"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start">
+                            <Border/>
+
+                        </Border>
+
+                        <Border Grid.Row="1" Grid.Column="0"
+                                WidthRequest="240"
+                                HeightRequest="360"
+                                Stroke="#4aa37d"
+                                BackgroundColor="#4aa37d"
+                                StrokeThickness="0"
+                                StrokeShape="Polygon 130 332, -25 166, 130 351"
+                                Margin="2, -130, 0, 0"
+                                ZIndex="4"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start">
+                            <Border/>
+
+                        </Border>--><!--
+                        <Rectangle Grid.Row="1"
+                                   BackgroundColor="#4aa37d"
+                                   WidthRequest="300"
+                                   HeightRequest="20"
+                                   ZIndex="4"
+                                   Rotation="50"
+                                   Margin="-100, -30, 0, 0"/>
+
+                        <Rectangle Grid.Row="1"
+                                   BackgroundColor="#4aa37d"
+                                   WidthRequest="245"
+                                   HeightRequest="20"
+                                   ZIndex="4"
+                                   Margin="0, 20, 0, 0"
+                                   VerticalOptions="Start"/>
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" ZIndex="20" BackgroundColor="Transparent"
+                                     Margin="110, -15, 25, 0" WidthRequest="150" HeightRequest="30">
+                            <Label FontFamily="Tetris" Text="1000" HorizontalOptions="EndAndExpand" TextColor="White" FontSize="30" VerticalOptions="Center" Margin="0, -3, 5, 0" CharacterSpacing="3"/>
+                            <Image Margin="0, 0, 2, 0" Source="coinicon.png" HorizontalOptions="End" HeightRequest="30"/>
+                        </StackLayout>
+                    </Grid>
+                </Border>
+            </Frame>-->
         </Grid>
     </ContentPage.Content>
 </ContentPage>
