@@ -8,6 +8,11 @@ using Tetris.Game;
 using SharpHook;
 using SharpHook.Native;
 using SharpHook.Reactive;
+using System.Threading;
+using System.Net.Http.Headers;
+using System.Text.Json;
+using Tetris.Models;
+using System.Text;
 
 namespace Tetris;
 
@@ -16,13 +21,13 @@ public partial class GamePage : ContentPage
     private int[,] GameGrid = new int[20, 10];
     private TetrisPiece[] tetrisPieces = new TetrisPiece[]
     {
-        new IPiece(),
-        new JPiece(),
-        new LPiece(),
-        new OPiece(),
         new SPiece(),
+        new IPiece(),
+        new LPiece(),
         new TPiece(),
         new ZPiece(),
+        new OPiece(),
+        new JPiece(),
     };
 
     private readonly string[] FullPieces = new string[]
@@ -37,98 +42,124 @@ public partial class GamePage : ContentPage
     };
 
     private TetrisPiece _currentPiece;
-    private TetrisPiece _nextPiece;
     private BlockPosition _currentOffset = new(3, 0);
     private Random random = new Random();
     private int _nextId = -1;
-    private bool _placed;
+    private bool _switchAvailable = true;
     private bool rotationHold;
+    private bool escapeHold;
     private int _points;
     private int _clearedRows;
+    private int _heldPieceId = -1;
     private bool _gameOver;
     private bool _gameRunning;
+    private bool _gamePaused;
+    private bool _gameQuit;
+    private bool _gameStart = true;
 
+    public static Point GetAppWindowPosition() {
+        var window = Application.Current.Windows[0];
+        var x = ((IWindow)window).X + 8;
+        var y = ((IWindow)window).Y + 8;
+        return new Point(x, y);
+    }
     public GamePage()
     {
         InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
         NavigationPage.SetHasNavigationBar(this, false);
 
-        Task.Run(GameLoop);
-    }
-
-    public async void GameLoop()
-    {
-        CreateKeypressListener();
-        await StartCountBack();
-        
-        await StartGame();
+        Task.Run(StartGame);
     }
 
     public async Task StartGame()
     {
-        _clearedRows = 0;
-        var pointsDisplay = (Label)FindByName("PointsLabel");
-        var nextImage = (Image)FindByName("NextImage");
-        _gameRunning = true;
-        _nextPiece = GetRandomTetrisPiece(random);
-        _currentPiece = _nextPiece;
-        _nextPiece = GetRandomTetrisPiece(random);
+        var hook = CreateKeypressListener();
+        if (!hook.IsRunning) hook.RunAsync();
+        await Task.Run(StartCountBack).ContinueWith(t => {
+            _gameStart = false;
+        });
 
-        while (_gameRunning) {
+        await GameLoop();
+    }
+
+    public async Task GameLoop()
+    {
+        _clearedRows = 0;
+        _gameRunning = true;
+        _nextId = GetRandomTetrisPieceId(random);
+        _currentPiece = tetrisPieces[_nextId];
+        _nextId = GetRandomTetrisPieceId(random);
+        var nextImage = (Image)FindByName("NextImage");
+        await UpdateImageSource(nextImage, _nextId);
+
+        while (!_gameQuit) {
+            if (_gameStart) {
+                await StartCountBack();
+                await UpdateImageSource(nextImage, _nextId);
+                _gameRunning = true;
+            }
+            if (!_gameRunning) continue;
             RedrawTetris();
             await Task.Delay(1000);
-            MovePieceDown();
+            if (_gameRunning) MovePieceDown();
             RedrawTetris();
-            await updatePoints(pointsDisplay);
-            await updateNextImage(nextImage);
         }
     }
 
-    private TetrisPiece GetRandomTetrisPiece(Random random)
+    private int GetRandomTetrisPieceId(Random random)
     {
         int index = _nextId;
         do {
             _nextId = random.Next(tetrisPieces.Length);
         } while (index == _nextId);
-        
-        _placed = false;
-        return tetrisPieces[_nextId];
+
+        return _nextId;
     }
 
-    private async Task updatePoints(Label pointsDisplay)
+    private async Task UpdatePointsAndCoins()
+    {
+        var pointsDisplay = (Label)FindByName("PointsLabel");
+        var coinsDisplay = (Label)FindByName("CoinsLabel");
+        await MainThread.InvokeOnMainThreadAsync(async () =>
+        {
+            pointsDisplay.Text = $"{_clearedRows * 65}";
+            coinsDisplay.Text = $"{_clearedRows * 6}";
+        });
+    }
+
+    private async Task UpdateImageSource(Image image, int id)
     {
         await MainThread.InvokeOnMainThreadAsync(async () =>
         {
-            pointsDisplay.Text = (_nextId).ToString();
+            image.Source = FullPieces[id];
         });
     }
 
-    private async Task updateNextImage(Image image)
+    public TaskPoolGlobalHook CreateKeypressListener()
     {
-        await MainThread.InvokeOnMainThreadAsync(async () =>
-        {
-            image.Source = FullPieces[_nextId];
-        });
-    }
+        var hook = SingletonHook.Instance;
+        hook.KeyPressed += OnKeyPressed;
+        hook.KeyReleased += OnKeyReleased;
+        hook.MouseClicked += OnMouseClicked;
 
-    public void CreateKeypressListener()
-    {
-        var thread = new Thread(() =>
-        {
-            var hook = new TaskPoolGlobalHook();
-            hook.KeyPressed += OnKeyPressed;
-            hook.KeyReleased += OnKeyReleased;
-            hook.Run();
-        });
-
-        thread.IsBackground = true;
-        thread.Start();
+        return hook;
     }
 
     public async Task StartCountBack()
     {
         int delayedSeconds = 0;
+        
+        if (_nextId != -1) {
+            while (delayedSeconds != 5) {
+                await Task.Delay(1000);
+                RedrawTetris();
+                delayedSeconds++;
+            }
+            _gameStart = false;
+            return;
+        }
+
         while (delayedSeconds != 3)
         {
             await Task.Delay(1000);
@@ -139,6 +170,14 @@ public partial class GamePage : ContentPage
 
     void OnKeyReleased(object sender, KeyboardHookEventArgs e)
     {
+        if (_gamePaused) {
+            if (e.Data.KeyCode == KeyCode.VcEscape) {
+                MainThread.BeginInvokeOnMainThread(() => {
+                    if (escapeHold) escapeHold = false;
+                });
+            }
+        }
+        if (!_gameRunning) return;
         if (e.Data.KeyCode == KeyCode.VcW)
         {
             MainThread.BeginInvokeOnMainThread(() =>
@@ -148,8 +187,72 @@ public partial class GamePage : ContentPage
         }
     }
 
+    void OnMouseClicked(object sender, MouseHookEventArgs e)
+    {
+        if (_gamePaused || _gameOver) {
+            bool inCanvas = checkForCanvasPress(e);
+            if (inCanvas) checkForButtonPress(e);
+            return;
+        }
+        if (!_gameRunning) return;
+        if (!_switchAvailable) return;
+        if (e.Data.Button == MouseButton.Button2)
+        {
+            MainThread.BeginInvokeOnMainThread(() =>
+            {
+                SwitchHeldPiece();
+                RedrawTetris();
+            });
+        }
+    }
+
+    public bool checkForCanvasPress(MouseHookEventArgs e) {
+        if (!(e.Data.Button == MouseButton.Button1)) return false;
+        if (IsInBoundingBox(new SKPoint(755, 180), new SKPoint(1166, 1001), e)) return true;
+        return false;
+    }
+
+    public void checkForButtonPress(MouseHookEventArgs e) {
+        if (IsInBoundingBox(new SKPoint(755, 553), new SKPoint(931, 637), e)) {
+            if (!_gameOver) {
+                _gameRunning = true;
+                _gamePaused = false;
+                escapeHold = false;
+            } else {
+                RestartGame();
+            }
+            return;
+        }
+        if (IsInBoundingBox(new SKPoint(990, 553), new SKPoint(1166, 637), e)) {
+            _gameQuit = true;
+            MainThread.BeginInvokeOnMainThread(() => {
+                Navigation.PopAsync(false);
+            });
+            return;
+        }
+    }
+
+    public bool IsInBoundingBox(SKPoint point, SKPoint point2, MouseHookEventArgs e) {
+        Point windowPoint = GetAppWindowPosition();
+        if (e.Data.X > point.X + windowPoint.X && e.Data.X < point2.X + windowPoint.X &&
+                e.Data.Y > point.Y + windowPoint.Y && e.Data.Y < point2.Y + windowPoint.Y) return true;
+        return false;
+    }
+
     void OnKeyPressed(object sender, KeyboardHookEventArgs e)
     {
+        if (_gamePaused && !escapeHold) {
+            if (e.Data.KeyCode == KeyCode.VcEscape) {
+                MainThread.BeginInvokeOnMainThread(() => {
+                    if (!_gameOver) {
+                        _gamePaused = !_gamePaused;
+                        _gameRunning = true;
+                    }
+                    RedrawTetris();
+                });
+            }
+        }
+        if (!_gameRunning) return;
         if (e.Data.KeyCode == KeyCode.VcD)
         {
             MainThread.BeginInvokeOnMainThread(() =>
@@ -193,6 +296,17 @@ public partial class GamePage : ContentPage
                     RotatePiece();
                     RedrawTetris();
                 }
+            });
+        }
+
+        if (e.Data.KeyCode == KeyCode.VcEscape) {
+            MainThread.BeginInvokeOnMainThread(() => {
+                if (!_gameOver) {
+                    _gamePaused = !_gamePaused;
+                    _gameRunning = !_gameRunning;
+                    escapeHold = true;
+                }
+                RedrawTetris();
             });
         }
     }
@@ -341,16 +455,41 @@ public partial class GamePage : ContentPage
         return true;
     }
 
-    public void PieceHasBeenSet()
+    public async void SwitchHeldPiece()
     {
-        _placed = true;
+        var holdImage = (Image)FindByName("HoldImage");
+        var nextImage = (Image)FindByName("NextImage");
+        if (_heldPieceId == -1)
+        {
+            _switchAvailable = false;
+            _currentOffset = new BlockPosition(3, 0);
+            _heldPieceId = _currentPiece.Blocks[0][0].Id - 1;
+            _currentPiece = tetrisPieces[_nextId];
+            _nextId = GetRandomTetrisPieceId(random);
+            await UpdateImageSource(holdImage, _heldPieceId);
+            await UpdateImageSource(nextImage, _nextId);
+            return;
+        }
+        _switchAvailable = false;
+        TetrisPiece tmp = _currentPiece;
+        _currentPiece = tetrisPieces[_heldPieceId];
+        _heldPieceId = tmp.Blocks[0][0].Id - 1;
+        await UpdateImageSource(holdImage, _heldPieceId);
+    }
+
+    public async void PieceHasBeenSet()
+    {
+        _switchAvailable = true;
         SaveCurrentPieceData();
         HandleRowManagement();
         if (_currentOffset.X == 3 && _currentOffset.Y == 0) GameOverHandler();
         if (!_gameOver) {
             _currentOffset = new BlockPosition(3, 0);
-            _currentPiece = _nextPiece;
-            _nextPiece = GetRandomTetrisPiece(random);
+            _currentPiece = tetrisPieces[_nextId];
+            _nextId = GetRandomTetrisPieceId(random);
+            await UpdatePointsAndCoins();
+            var nextImage = (Image)FindByName("NextImage");
+            await UpdateImageSource(nextImage, _nextId);
         }
     }
 
@@ -386,6 +525,14 @@ public partial class GamePage : ContentPage
         }
     }
 
+    public void ClearGrid() {
+        for (int i = 0; i < GameGrid.GetLength(0); i++) {
+            for (int j = 0; j < GameGrid.GetLength(1); j++) {
+                GameGrid[i, j] = 0;
+            }
+        }
+    }
+
     public void MoveDownGrid(int row)
     {
         for (int i = row - 1; i > 0; i--) {
@@ -400,6 +547,60 @@ public partial class GamePage : ContentPage
         _gameRunning = false;
         _gameOver = true;
         RedrawTetris();
+        SendGameDataToServer();
+    }
+
+    public async void RestartGame() {
+        ClearGrid();
+        _heldPieceId = -1;
+        _switchAvailable = true;
+        _gamePaused = false;
+        _gameOver = false;
+        _gameStart = true;
+        _switchAvailable = true;
+        _clearedRows = 0;
+        _heldPieceId = -1;
+        _nextId = GetRandomTetrisPieceId(random);
+        _currentPiece = tetrisPieces[_nextId];
+        _nextId = GetRandomTetrisPieceId(random);
+
+        await MainThread.InvokeOnMainThreadAsync(async () => {
+            var nextImage = (Image)FindByName("NextImage");
+            var holdImage = (Image)FindByName("HoldImage");
+            HoldImage.Source = "transparenttile.png";
+            NextImage.Source = "transparenttile.png";
+        });
+    }
+
+    public async void SendGameDataToServer()
+    {
+        HttpClient httpClient = new HttpClient();
+        string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
+
+        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", oauthToken);
+
+        var response = await httpClient.GetAsync("https://localhost:7041/Auth");
+
+        if (response.IsSuccessStatusCode) {
+            var authContent = await response.Content.ReadAsStringAsync();
+
+            UserDTO user = JsonSerializer.Deserialize<UserDTO>(authContent);
+
+            int[] newArray = new int[user.Scores.Length + 1];
+            Array.Copy(user.Scores, newArray, user.Scores.Length);
+            newArray[newArray.Length - 1] = _clearedRows * 65;
+
+            user.Scores = newArray;
+            user.Coins = user.Coins + _clearedRows * 6;
+
+            var json = JsonSerializer.Serialize(user);
+
+            var request = new HttpRequestMessage(new HttpMethod("PATCH"), $"https://localhost:7041/User/{user.Id}") {
+                Content = new StringContent(json, Encoding.UTF8, "application/json-patch+json")
+            };
+
+            response = await httpClient.SendAsync(request);
+        }
     }
 
     private void RedrawTetris()
@@ -425,6 +626,6 @@ public partial class GamePage : ContentPage
         SKCanvas canvas = args.Surface.Canvas;
         TetrisGridDrawable drawable = (TetrisGridDrawable)Resources["tetrisGridDrawable"];
         
-        drawable.Draw(canvas, _currentPiece, _currentOffset, GameGrid, _gameOver);
+        drawable.Draw(canvas, _currentPiece, _currentOffset, GameGrid, _gameOver, _gamePaused, _gameStart);
     }
 }

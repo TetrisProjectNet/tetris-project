@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:mopupsanimation="clr-namespace:Mopups.Animations;assembly=Mopups"
+             xmlns:views="clr-namespace:Tetris.Models"
+             x:Class="Tetris.ShopPopupPage"
+             CloseWhenBackgroundIsClicked="True"
+             Title="ShopPopupPage" BackgroundColor="#90000000">
+
+    <mopups:PopupPage.Animation>
+        <mopupsanimation:ScaleAnimation
+            DurationIn="500"
+            EasingIn="Bounce"
+            PositionIn="Bottom"
+            PositionOut="Center"
+            ScaleIn="1"
+            ScaleOut="0.7">
+        </mopupsanimation:ScaleAnimation>
+    </mopups:PopupPage.Animation>
+
+    <Border WidthRequest="1400" HeightRequest="860" BackgroundColor="White" HorizontalOptions="Center" StrokeThickness="-1" Stroke="#413F3F">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="40, 0, 0, 40"/>
+        </Border.StrokeShape>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+            <HorizontalStackLayout Grid.Row="0" BackgroundColor="#161616" Padding="0" Margin="0, 0, 0, 0" ZIndex="1">
+                <Button BackgroundColor="#2F0766" HorizontalOptions="StartAndExpand" HeightRequest="52" WidthRequest="160" Text="&lt; Back" FontFamily="Tetris" FontSize="30" Margin="-1, 0, 0, 0" Pressed="BackButtonClicked" TextColor="White"/>
+                <Button BackgroundColor="#2F0766" HorizontalOptions="StartAndExpand" HeightRequest="52" WidthRequest="160" Text="Sort" FontFamily="Tetris" FontSize="30" Margin="20, 0, 0, 0" Pressed="SortButtonClicked" TextColor="White"/>
+            </HorizontalStackLayout>
+            <Border Grid.Row="1" Margin="0, -63, 0, 0" WidthRequest="300" HeightRequest="110" ZIndex="2" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="#2F0766" StrokeThickness="-5" Stroke="#2F0766">
+                <Label FontFamily="Tetris" FontSize="52" Text="Shop" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Border>
+
+            <Border Grid.Row="1" HeightRequest="815" WidthRequest="1400" BackgroundColor="#1C1C1C" ZIndex="1" Stroke="#1C1C1C">
+                <ScrollView VerticalScrollBarVisibility="Always">
+                    <Grid x:Name="CardGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="380"/>
+                            <RowDefinition Height="380"/>
+                            <RowDefinition Height="380"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="25"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="270"/>
+                            <ColumnDefinition Width="25"/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ScrollView>
+            </Border>
+        </Grid>
+    </Border>
+</mopups:PopupPage>

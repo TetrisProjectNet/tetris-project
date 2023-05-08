@@ -1,7 +1,14 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Controls.PlatformConfiguration;
 using Microsoft.Maui.Hosting;
 using Microsoft.Maui.LifecycleEvents;
+using Mopups.Hosting;
+using Mopups.Interfaces;
+using Mopups.Services;
+using Sentry;
 using SkiaSharp.Views.Maui.Controls.Hosting;
+using System.Security.Cryptography.X509Certificates;
 
 #if WINDOWS
 using Microsoft.UI;
@@ -15,16 +22,25 @@ public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
 	{
+
 		var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
+            .UseSentry(options => {
+                options.Dsn = "https://96c831253c874fe1b78b17ac5c66f0b2@o4505120905494528.ingest.sentry.io/4505122966601728";
+
+                options.Debug = true;
+                options.TracesSampleRate = 1.0;
+            })
+            .ConfigureMopups()
+            .RegisterViewModels()
+            .ConfigureFonts(fonts => {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 fonts.AddFont("Tetris.ttf");
             })
             .UseSkiaSharp();
+
 
 #if WINDOWS
         builder.ConfigureLifecycleEvents(events =>
@@ -38,6 +54,8 @@ public static class MauiProgram
                     AppWindow winuiAppWindow = AppWindow.GetFromWindowId(win32WindowsId);
                     if(winuiAppWindow.Presenter is OverlappedPresenter p) {
                         p.Maximize();
+                        var xpos = winuiAppWindow.Position.X;
+                        var ypos = winuiAppWindow.Position.X;
                     } else {
                         const int width = 1200;
                         const int height = 800;
@@ -48,5 +66,14 @@ public static class MauiProgram
         });
 #endif
         return builder.Build();
-	}
+    }
+
+    public static MauiAppBuilder RegisterViewModels(this MauiAppBuilder mauiAppBuilder) {
+        mauiAppBuilder.Services.AddSingleton<GamePage>();
+        mauiAppBuilder.Services.AddSingleton<IPopupNavigation>(MopupService.Instance);
+        mauiAppBuilder.Services.AddSingleton<MainPage>();
+        mauiAppBuilder.Services.AddSingleton<ShopPopupPage>();
+
+        return mauiAppBuilder;
+    }
 }

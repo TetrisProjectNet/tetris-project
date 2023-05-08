@@ -53,10 +53,14 @@
 	  <None Remove="Resources\Fonts\Tetris.ttf" />
 	  <None Remove="Resources\Images\abstractpaper2.svg" />
 	  <None Remove="Resources\Images\coinicon.png" />
+	  <None Remove="Resources\Images\cubetest.png" />
+	  <None Remove="Resources\Images\gametheme.png" />
 	  <None Remove="Resources\Images\loginbackground.png" />
+	  <None Remove="Resources\Images\maintheme.png" />
 	  <None Remove="Resources\Images\menubackground.svg" />
 	  <None Remove="Resources\Images\nnneon.svg" />
 	  <None Remove="Resources\Images\profileicon.png" />
+	  <None Remove="Resources\Images\redmark.png" />
 	  <None Remove="Resources\Images\tetrispieces.png" />
 	</ItemGroup>
 
@@ -64,6 +68,9 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Maui.Graphics.Skia" Version="7.0.59" />
+		<PackageReference Include="Mopups" Version="1.1.0" />
+		<PackageReference Include="Sentry" Version="3.31.0" />
+		<PackageReference Include="Sentry.Maui" Version="3.31.0" />
 		<PackageReference Include="SharpHook" Version="4.2.0" />
 		<PackageReference Include="SharpHook.Reactive" Version="4.2.0" />
 		<PackageReference Include="SkiaSharp" Version="2.88.3" />
@@ -79,10 +86,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="CardPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\CardPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="GamePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MenuPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ShopPopupPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewModels\CardView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
