@@ -2,15 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
              x:Class="Tetris.MenuPage"
+             xmlns:local="clr-namespace:Tetris.ViewModels"
              Title=""
              BackgroundImageSource="maintheme.png">
+
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="200"/>
                 <RowDefinition Height="400"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -40,7 +44,8 @@
                            VerticalOptions="Center"
                            FontFamily="Tetris"
                            VerticalTextAlignment="Center"
-                           Margin="10, 0, 0, 0"/>
+                           Margin="10, 0, 0, 0"
+                           CharacterSpacing="1"/>
                 </StackLayout>
             </Frame>
 
@@ -75,6 +80,7 @@
 
             <StackLayout Grid.Row="1" Grid.Column="1" VerticalOptions="Center">
                 <Label x:Name="TetrisLabel" WidthRequest="700" FontSize="150" HorizontalTextAlignment="Center">
+                <Label x:Name="TetrisLabel" WidthRequest="700" FontSize="150" HorizontalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="T" FontFamily="Tetris.ttf" TextColor="#ff0000"/>
@@ -93,6 +99,7 @@
             </StackLayout>
 
             <Frame Grid.Row="2" Grid.Column="1" HeightRequest="500" WidthRequest="670" BackgroundColor="Transparent" BorderColor="Transparent" Margin="0, 200, 0, 0" ZIndex="20">
+            <Frame Grid.Row="2" Grid.Column="1" HeightRequest="500" WidthRequest="670" BackgroundColor="Transparent" BorderColor="Transparent" Margin="0, 200, 0, 0" ZIndex="20">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -102,6 +109,7 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Frame Grid.Row="0" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20">
+                    <Frame Grid.Row="0" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20">
                         <StackLayout Orientation="Horizontal">
                             <Image Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
                             <Label FontFamily="Tetris" TextColor="White" FontAttributes="Bold" Margin="95, 10, 0, 0" FontSize="32" Text="New game" WidthRequest="200" HeightRequest="50" HorizontalTextAlignment="Center"/>
@@ -109,9 +117,10 @@
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="NewGameButtonClicked"/>
                             <PointerGestureRecognizer PointerEntered="HoverBeganMenuButton" PointerExited="HoverEndedMenuButton"/>
+                            <PointerGestureRecognizer PointerEntered="HoverBeganMenuButton" PointerExited="HoverEndedMenuButton"/>
                         </Frame.GestureRecognizers>
                     </Frame>
-                    <Frame Grid.Row="1" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20">
+                    <Frame Grid.Row="1" HeightRequest="62" WidthRequest="600" BackgroundColor="#2e2d30" BorderColor="Transparent" ZIndex="20" ZIndex="20">
                         <StackLayout Orientation="Horizontal">
                             <Image Source="nnneon.png" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start"/>
                             <Label FontFamily="Tetris" TextColor="White" FontAttributes="Bold" Margin="95, 10, 0, 0" FontSize="32" Text="Statistics" WidthRequest="200" HeightRequest="50" HorizontalTextAlignment="Center"/>
@@ -153,6 +162,30 @@
                     </Frame>
                 </Grid>
             </Frame>
+
+            <Border x:Name="LogoutBorder" Grid.Row="3" Grid.Column="2" BackgroundColor="Transparent" HeightRequest="60" WidthRequest="200" VerticalOptions="End" HorizontalOptions="End" StrokeThickness="0" StrokeShape="RoundRectangle 10">
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="logoutLabel"
+                       Text="Logout"
+                       TextColor="White"
+                       FontSize="32"
+                       VerticalOptions="Center"
+                       HorizontalOptions="EndAndExpand"
+                       FontFamily="Tetris"
+                       Margin="0, 0, 5, 0"/>
+                    <Image Source="logout.png"
+                       WidthRequest="40"
+                       HeightRequest="40"
+                       Aspect="AspectFit"
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"
+                       Margin="0, 0, 5, 0"/>
+                </StackLayout>
+                <Border.GestureRecognizers>
+                    <PointerGestureRecognizer PointerEntered="HoverBeganLogoutButton" PointerExited="HoverEndedLogoutButton"/>
+                    <TapGestureRecognizer Tapped="LogoutTapped"/>
+                </Border.GestureRecognizers>
+            </Border>
 
             <!--<Frame Grid.Row="2" ZIndex="1">
                 <Border WidthRequest="240"

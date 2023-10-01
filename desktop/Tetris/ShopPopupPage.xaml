@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
              xmlns:mopupsanimation="clr-namespace:Mopups.Animations;assembly=Mopups"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
              xmlns:views="clr-namespace:Tetris.Models"
              x:Class="Tetris.ShopPopupPage"
              CloseWhenBackgroundIsClicked="True"
@@ -10,6 +11,7 @@
 
     <mopups:PopupPage.Animation>
         <mopupsanimation:ScaleAnimation
+            DurationIn="500"
             DurationIn="500"
             EasingIn="Bounce"
             PositionIn="Bottom"
@@ -30,32 +32,48 @@
         </Grid.RowDefinitions>
 
             <HorizontalStackLayout Grid.Row="0" BackgroundColor="#161616" Padding="0" Margin="0, 0, 0, 0" ZIndex="1">
-                <Button BackgroundColor="#2F0766" HorizontalOptions="StartAndExpand" HeightRequest="52" WidthRequest="160" Text="&lt; Back" FontFamily="Tetris" FontSize="30" Margin="-1, 0, 0, 0" Pressed="BackButtonClicked" TextColor="White"/>
-                <Button BackgroundColor="#2F0766" HorizontalOptions="StartAndExpand" HeightRequest="52" WidthRequest="160" Text="Sort" FontFamily="Tetris" FontSize="30" Margin="20, 0, 0, 0" Pressed="SortButtonClicked" TextColor="White"/>
+                <Button BackgroundColor="#2F0766" HorizontalOptions="StartAndExpand" HeightRequest="52" WidthRequest="160" Text="&lt; Back" FontFamily="Tetris" FontSize="30" Margin="-1, 0, 0, 0" Pressed="BackButtonClicked" TextColor="White">
+                    <Button.GestureRecognizers>
+                        <PointerGestureRecognizer PointerEntered="ButtonHoverBegan" PointerExited="ButtonHoverEnd"/>
+                    </Button.GestureRecognizers>
+                </Button>
+                <Button BackgroundColor="#2F0766" HorizontalOptions="StartAndExpand" HeightRequest="52" WidthRequest="160" Text="Sort" FontFamily="Tetris" FontSize="30" Margin="20, 0, 0, 0" Pressed="SortButtonClicked" TextColor="White">
+                    <Button.GestureRecognizers>
+                        <PointerGestureRecognizer PointerEntered="ButtonHoverBegan" PointerExited="ButtonHoverEnd"/>
+                    </Button.GestureRecognizers>
+                </Button>
             </HorizontalStackLayout>
             <Border Grid.Row="1" Margin="0, -63, 0, 0" WidthRequest="300" HeightRequest="110" ZIndex="2" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="#2F0766" StrokeThickness="-5" Stroke="#2F0766">
                 <Label FontFamily="Tetris" FontSize="52" Text="Shop" TextColor="#E5E5CB" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Border>
+            <HorizontalStackLayout Grid.Row="0" BackgroundColor="#161616" Padding="0" Margin="0, 0, 0, 0" ZIndex="1" HorizontalOptions="EndAndExpand">
+                <Image Source="searchicon.png" WidthRequest="30" HorizontalOptions="End" VerticalOptions="Center"/>
+                <Entry BackgroundColor="Transparent" x:Name="SearchEntry" Placeholder="Search" PlaceholderColor="White" Margin="0, 0, 0, 0" TextColor="White" Completed="SearchEntry_Completed" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="150"/>
+            </HorizontalStackLayout>
 
             <Border Grid.Row="1" HeightRequest="815" WidthRequest="1400" BackgroundColor="#1C1C1C" ZIndex="1" Stroke="#1C1C1C">
                 <ScrollView VerticalScrollBarVisibility="Always">
-                    <Grid x:Name="CardGrid">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="35"/>
-                            <RowDefinition Height="380"/>
-                            <RowDefinition Height="380"/>
-                            <RowDefinition Height="380"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="25"/>
-                            <ColumnDefinition Width="270"/>
-                            <ColumnDefinition Width="270"/>
-                            <ColumnDefinition Width="270"/>
-                            <ColumnDefinition Width="270"/>
-                            <ColumnDefinition Width="270"/>
-                            <ColumnDefinition Width="25"/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
+                    <VerticalStackLayout x:Name="CardGridStack">
+                        <skia:SKLottieView x:Name="LoadingAnimation" VerticalOptions="Center" Source="shoploading.json" HeightRequest="300" RepeatCount="30" RepeatMode="Restart" IsAnimationEnabled="True" ZIndex="20" Margin="0, 250, 0, 0"/>
+                        <Grid x:Name="CardGrid" ZIndex="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="35"/>
+                                <RowDefinition Height="380"/>
+                                <RowDefinition Height="380"/>
+                                <RowDefinition Height="380"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="25"/>
+                                <ColumnDefinition Width="270"/>
+                                <ColumnDefinition Width="270"/>
+                                <ColumnDefinition Width="270"/>
+                                <ColumnDefinition Width="270"/>
+                                <ColumnDefinition Width="270"/>
+                                <ColumnDefinition Width="25"/>
+                            </Grid.ColumnDefinitions>
+
+                        </Grid>
+                    </VerticalStackLayout>
                 </ScrollView>
             </Border>
         </Grid>

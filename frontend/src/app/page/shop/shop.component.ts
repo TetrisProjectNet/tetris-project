@@ -59,13 +59,15 @@ export class ShopComponent implements OnInit {
   onBuyOne(shopItem: ShopItem) {
 
     if (this.loggedUser$.value) {
+      let reloads = 0;
       this.loggedUser$.subscribe({
         next: (user: any) => {
-          if (user) {
-            if (user.coins > shopItem.price) {
+          reloads++;
+          if (user && reloads == 1) {
+            if (user.coins >= shopItem.price) {
               if (window.confirm('Are you sure you want to buy this skin?')) {
                 user.coins = user.coins - shopItem.price;
-                
+
                 if (!user.shopItems) {
                   user.shopItems = [shopItem];
                 } else {
@@ -78,7 +80,7 @@ export class ShopComponent implements OnInit {
                   },
                   complete: () => {
                     this.onSuccess('You\'ve got a new amazing skin.', 'Yeeey!');
-                    location.reload()
+                    this.authService.setLoginData();
                   }
                 });
 

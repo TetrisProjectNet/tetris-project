@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tetris.ViewModels.SettingsCardView"
+             xmlns:viewmodel="clr-namespace:Tetris.ViewModels"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             x:DataType="viewmodel:SettingsCardViewModel">
+
+    <VerticalStackLayout>
+        <Border HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="180"
+            HeightRequest="275"
+            Stroke="#1C1C1C"
+            BackgroundColor="#161616"
+            StrokeThickness="-1"
+            StrokeShape="RoundRectangle 10"
+            ZIndex="1"
+            Margin="0, 0, 15, 0">
+            <Border.Shadow>
+                <Shadow Brush="Black"
+                    Offset="5, 5"
+                    Opacity=".7"/>
+            </Border.Shadow>
+            <Border.GestureRecognizers>
+                <PointerGestureRecognizer PointerEntered="SettingsCardHoverBegan" PointerExited="SettingsCardHoverEnd"/>
+            </Border.GestureRecognizers>
+
+            <Grid ZIndex="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="160"/>
+                    <RowDefinition Height="300"/>
+                </Grid.RowDefinitions>
+
+                <Label x:Name="NameLabel" Grid.Row="0" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Text="{Binding Name}" FontSize="19" FontFamily="Tetris" Margin="0, 5, 0, 0"/>
+                <Image x:Name="CardImage" Grid.Row="0" Source="{Binding ImageString}" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="160" Margin="{Binding ImageMargin}" ZIndex="20"/>
+
+                <Rectangle Grid.Row="1"
+                       BackgroundColor="{Binding RectColor}"
+                       WidthRequest="300"
+                       HeightRequest="20"
+                       ZIndex="4"
+                       Rotation="50"
+                       Margin="-90, -60, 0, 0"
+                       x:Name="Rect3"/>
+                <skia:SKLottieView VerticalOptions="StartAndExpand" Margin="10, 40, 0, 0" Grid.Row="1" x:Name="switchButton" Source="settingsswitch2.json" HeightRequest="65" RepeatCount="-1" RepeatMode="Restart" IsAnimationEnabled="False" ZIndex="20">
+                    <skia:SKLottieView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="LottieTapped"/>
+                    </skia:SKLottieView.GestureRecognizers>
+                </skia:SKLottieView>
+            </Grid>
+        </Border>
+        <Border HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="180" HeightRequest="40" Stroke="#1C1C1C" BackgroundColor="#161616" StrokeThickness="-1" ZIndex="1" Margin="0, 15, 15, 0">
+            <HorizontalStackLayout>
+                <Label x:Name="SelectLabel" Margin="15, 0, 0, 0" BackgroundColor="Transparent" TextColor="White" FontFamily="Tetris" FontSize="19" VerticalOptions="Center" Text="Select" HorizontalOptions="StartAndExpand"/>
+                <Image Source="{Binding ArrowImage}" HeightRequest="25" HorizontalOptions="End" Margin="60, 7, 0, 10"/>
+            </HorizontalStackLayout>
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="SelectTap"/>
+                <PointerGestureRecognizer PointerEntered="SelectMenuHoverBegan" PointerExited="SelectMenuHoverEnd"/>
+            </Border.GestureRecognizers>
+        </Border>
+        <Border x:Name="SelectMenu" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="180" HeightRequest="120" Stroke="#1C1C1C" BackgroundColor="#161616" StrokeThickness="-1" ZIndex="1" Margin="0, 0, 15, 0" IsVisible="False">
+            <ScrollView VerticalScrollBarVisibility="Always">
+                <VerticalStackLayout x:Name="SelectStack">
+                </VerticalStackLayout>
+            </ScrollView>
+        </Border>
+    </VerticalStackLayout>
+</ContentView>

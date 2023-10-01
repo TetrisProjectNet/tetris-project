@@ -2,8 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tetris="clr-namespace:Tetris"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
+             xmlns:validation="clr-namespace:InputKit.Shared.Validations;assembly=InputKit.Maui"
+             xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
              x:Class="Tetris.MainPage"
              Title=""
+             BackgroundImageSource="maintheme.png"
              BackgroundImageSource="maintheme.png"
              IconImageSource="tetrisicon.png"
              xmlns:controls="clr-namespace:Tetris.Controls">
@@ -13,9 +19,13 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="300"/>
                 <RowDefinition Height="500"/>
+                <RowDefinition Height="300"/>
+                <RowDefinition Height="500"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
+            <StackLayout Grid.Row="0" VerticalOptions="Start">
+                <Label x:Name="TetrisLabel" FontSize="150" HorizontalTextAlignment="Center">
             <StackLayout Grid.Row="0" VerticalOptions="Start">
                 <Label x:Name="TetrisLabel" FontSize="150" HorizontalTextAlignment="Center">
                     <Label.FormattedText>
@@ -31,7 +41,7 @@
                 </Label>
             </StackLayout>
 
-            <Label Grid.Row="0" Text="Welcome Back!" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Start" FontSize="80" FontFamily="Tetris" CharacterSpacing="1" Margin="0, 170, 0, 0"/>
+            <Label Grid.Row="0" Text="Welcome Back!" VerticalTextAlignment="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Start" FontSize="80" FontFamily="Tetris" CharacterSpacing="1" Margin="0, 170, 0, 0" TextColor="White"/>
 
             <Frame Grid.Row="1" BackgroundColor="#2e2d30"
                          HorizontalOptions="Center" VerticalOptions="Center"
@@ -42,10 +52,10 @@
 
                 <StackLayout>
                     <Label FontFamily="Tetris" Text="Login" FontSize="45" FontAttributes="Bold" Margin="0, 10, 0, 20" HorizontalTextAlignment="Center" TextColor="White"/>
-                    <Label Text="By logging in, setting up your account and accept our" FontSize="13" HorizontalTextAlignment="Center" TextColor="White"/>
+                    <Label Text="By logging in, you setting up your account and accept our" FontSize="13" HorizontalTextAlignment="Center" TextColor="White"/>
                     <controls:HyperlinkLabel Text="Privacy Policy" FontSize="13" HorizontalTextAlignment="Center" TextColor="CadetBlue" Url="https://tetris-project-net-2.web.app/privacy-policy" Margin="0, 0, 0, 10"/>
 
-                    <StackLayout Orientation="Horizontal">
+                    <!--<StackLayout Orientation="Horizontal">
                         <controls:AuthEntry BackgroundColor="#2e2d30" x:Name="usernameEntry" Placeholder="Username" Margin="30, 0, 0, 0" TextColor="White" PlaceholderColor="White" HorizontalOptions="Start" WidthRequest="300"/>
                         <Image x:Name="usernameFail" Source="redmark.png" HeightRequest="30" HorizontalOptions="End" Margin="-5, 0, 0, 0" IsVisible="false"/>
                     </StackLayout>
@@ -53,19 +63,34 @@
                     <StackLayout Orientation="Horizontal">
                         <controls:AuthEntry BackgroundColor="#2e2d30" x:Name="passwordEntry" Placeholder="Password" IsPassword="True" Margin="30, 0, 0, 0" TextColor="White" PlaceholderColor="White" Completed="PasswordEntry_OnCompleted" HorizontalOptions="Start" WidthRequest="300"/>
                         <Image x:Name="passwordFail" Source="redmark.png" HeightRequest="30" HorizontalOptions="End" Margin="-5, 0, 0, 0" IsVisible="false"/>
+                    </StackLayout>-->
+
+                    <StackLayout x:Name="usernameStack" Orientation="Horizontal" WidthRequest="360" IsVisible="true">
+                        <material:TextField x:Name="usernameEntry" Title="Username" Icon="{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Person}}" Margin="10, 0, 10, 0" BorderColor="#945f5d" AccentColor="#FF0000" WidthRequest="340"/>
+                        <Image x:Name="usernameFail" Source="warning.png" HeightRequest="30" HorizontalOptions="End" Margin="-50, 5, 0, 0" IsVisible="false"/>
+                    </StackLayout>
+
+                    <StackLayout x:Name="passwordStack" Orientation="Horizontal" WidthRequest="360" IsVisible="true">
+                        <material:TextField x:Name="passwordEntry" Title="Password" Icon="{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Password}}" IsPassword="True" Margin="10, 0, 10, 0" BorderColor="#945f5d" AccentColor="#FF0000" Completed="PasswordEntry_OnCompleted" WidthRequest="340"/>
+                        <Image x:Name="passwordFail" Source="warning.png" HeightRequest="30" HorizontalOptions="End" Margin="-50, 5, 0, 0" IsVisible="false"/>
                     </StackLayout>
 
                     <Label x:Name="successLogin" FontFamily="Tetris" Margin="0, 20, 0, -20" FontSize="16" Text="Logged in, you will be redirected soon!" TextColor="Green" HorizontalOptions="Center" IsVisible="false"/>
 
-                    <Button Text="Login" BackgroundColor="#9625E4" TextColor="#FAF9F6" 
+                    <Button x:Name="LoginButton" Text="Login" BackgroundColor="#9625E4" TextColor="#FAF9F6" 
                             Margin="30, 30, 30, 0" Clicked="OnLoginButtonClicked"/>
 
+                    
                     <StackLayout Orientation="Vertical" Margin="30, 5, 30, 0" >
                         <controls:HyperlinkLabel Text="Forgot your password?" FontSize="13" HorizontalTextAlignment="Center" TextColor="CadetBlue" Url="https://tetris-project-net-2.web.app/forgot-password"/>
                     </StackLayout>
 
                     <Button Text="Register" BackgroundColor="MediumPurple" TextColor="#FAF9F6" 
                             Margin="30, 20, 30, 250" Clicked="OnRegisterButtonClicked"/>
+
+                    <Frame HeightRequest="200" WidthRequest="200" ZIndex="30" Margin="0, -280, 0, 0" BorderColor="Transparent" BackgroundColor="Transparent">
+                        <skia:SKLottieView x:Name="AutomaticLoginAnimation" VerticalOptions="Center" Source="checkmarkyes.json" HeightRequest="80" RepeatCount="-1" RepeatMode="Restart" IsAnimationEnabled="False" ZIndex="20"/>
+                    </Frame>
                 </StackLayout>
 
             </Frame>

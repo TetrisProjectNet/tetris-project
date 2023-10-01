@@ -42,6 +42,8 @@ namespace Tetris.ViewModels {
         [ObservableProperty]
         bool layered;
 
+        public bool bought = false;
+
         public CardViewModel(int row, int column, string name, string imageString, Color rectColor1, Color rectColor3, Color rectColor4, int coinCount, bool layered) {
             this.row = row;
             this.column = column;
@@ -52,6 +54,7 @@ namespace Tetris.ViewModels {
             this.rectColor4 = rectColor4;
             this.coinCount = coinCount;
             this.layered = layered;
+            if (rectColor1.Equals(Color.FromArgb("#AA3434"))) bought = true;
 
             if (imageString.Contains("I.png")) this.imageMargin = new Thickness(0, 150, 0, 0);
             if (imageString.Contains("O.png")) this.imageMargin = new Thickness(20, 150, 0, 0);

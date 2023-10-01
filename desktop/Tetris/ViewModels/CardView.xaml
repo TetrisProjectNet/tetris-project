@@ -74,6 +74,7 @@
                          Margin="110, -15, 25, 0" WidthRequest="150" HeightRequest="30">
                 <StackLayout.GestureRecognizers>
                     <PointerGestureRecognizer PointerEntered="HoverBeganBuy" PointerExited="HoverEndedBuy"/>
+                    <TapGestureRecognizer Tapped="BuyButtonTapEvent"/>
                 </StackLayout.GestureRecognizers>
                 <Label x:Name="CoinLabel" FontFamily="Tetris" Text="{Binding CoinCount}" HorizontalOptions="EndAndExpand" TextColor="White" FontSize="30" VerticalOptions="Center" Margin="0, -3, 5, 0" CharacterSpacing="3"/>
                 <Image Margin="0, 0, 2, 0" Source="coinicon.png" HorizontalOptions="End" HeightRequest="30"/>

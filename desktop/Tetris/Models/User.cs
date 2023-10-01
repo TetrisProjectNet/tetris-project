@@ -38,7 +38,7 @@ namespace Tetris.Models {
         public ShopItem[]? ShopItems { get; set; }
 
         //public List<Tuple<ShopItem, int>>? ShopItemsModified { get; set; }
-        public int[]? shopItemsUsed { get; set; }
+        public int[][]? shopItemsUsed { get; set; }
 
         [JsonPropertyName("scores")]
         public int[]? Scores { get; set; }
@@ -56,6 +56,7 @@ namespace Tetris.Models {
             Banned = banned;
             JoinDate = joinDate;
             ShopItems = shopItems;
+            ShopItems = shopItems;
             LastOnlineDate = lastOnlineDate;
             Coins = coins;
             Scores = scores;
@@ -68,12 +69,19 @@ namespace Tetris.Models {
             //    ShopItemsModified.Add(new Tuple<ShopItem, int>(shopItems[i], random.Next(0, 5)));
             //}
 
-            if (shopItems is null) return;
-            shopItemsUsed = new int[shopItems.Length];
+            //if (shopItems is null) return;
+            //shopItemsUsed = new int[shopItems.Length];
 
-            Random random = new Random();
-            for (int i = 0; i < shopItems.Length; i++) {
-                shopItemsUsed[i] = random.Next(0, 7);
+            //Random random = new Random();
+            //for (int i = 0; i < shopItems.Length; i++) {
+            //    shopItemsUsed[i] = random.Next(0, 7);
+            //}
+
+            if (shopItemsUsed is null) {
+                shopItemsUsed = new int[7][];
+                for (int i = 0; i < shopItemsUsed.Length; i++) {
+                    shopItemsUsed[i] = new int[] {0, 1};
+                }
             }
         }
     }
