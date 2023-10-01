@@ -7,7 +7,7 @@ export const environment = {
   // apiUrl: 'http://localhost:3000/'
   // apiUrl: 'http://192.168.50.17:3000/'
   // apiUrl: 'http://192.168.1.101:3000/'
-  apiUrl: 'https://localhost:7041/'
+  apiUrl: 'https://tetris.kando-dev.eu/',
 };
 
 /*

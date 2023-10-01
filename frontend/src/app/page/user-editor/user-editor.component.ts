@@ -76,7 +76,7 @@ export class UserEditorComponent {
           this.onDanger(`Modification failed.<br>${err.error}`);
         },
         complete: () => {
-          this.router.navigate(['user']).then(() => location.reload());
+          this.router.navigate(['user']);
           this.onSuccess('User modified.');
         }
       });
