@@ -1,9 +1,6 @@
 {
-  "functions": {
-    "source": "functions"
-  },
   "hosting": {
-    "site": "tetris-project-net-2",
+    "site": "tetris-project-net",
     "public": "dist",
     "ignore": [
       "firebase.json",

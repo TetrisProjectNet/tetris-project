@@ -14,7 +14,7 @@ export const environment = {
     projectId: "tetris-project-net-1",
     storageBucket: "tetris-project-net-1.appspot.com",
     messagingSenderId: "498840282506",
-    appId: "1:498840282506:web:b75f7ea13b9b63118fd473"
+    appId: "1:498840282506:web:f4c80ca60921eb0a8fd473"
   }
 };
 
