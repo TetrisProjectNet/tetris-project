@@ -41,6 +41,7 @@ import { AuthInterceptor } from './service/auth.interceptor';
 import { FloatingLabelSelectComponent } from './common/floating-label-select/floating-label-select.component';
 import { XPipePipe } from './pipe/x-pipe.pipe';
 import { ShopItemFilterPipe } from './pipe/shop-item-filter.pipe';
+import { HasRoleGuard } from './guard/has-role.guard';
 
 @NgModule({
   declarations: [
@@ -110,6 +111,7 @@ import { ShopItemFilterPipe } from './pipe/shop-item-filter.pipe';
       useClass: AuthInterceptor,
       multi: true,
     },
+    HasRoleGuard
   ],
   bootstrap: [AppComponent]
 })

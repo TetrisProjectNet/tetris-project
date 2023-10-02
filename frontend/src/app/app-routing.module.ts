@@ -12,6 +12,7 @@ import { StatisticsComponent } from './page/statistics/statistics.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
 import { UserComponent } from './page/user/user.component';
 import { VerificationComponent } from './page/verification/verification.component';
+import { HasRoleGuard } from './guard/has-role.guard';
 
 const routes: Routes = [
   {
@@ -53,6 +54,7 @@ const routes: Routes = [
   {
     path: 'user',
     component: UserComponent,
+    canActivate: [HasRoleGuard]
   },
   {
     path: 'user/:id',
