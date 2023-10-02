@@ -134,14 +134,14 @@
 
     <!-- RADAR-CHART -->
     <div class="radar__wrapper d-flex justify-content-center align-items-center flex-column" *ngIf="loggedObject.user != null">
-      <h2 *ngIf="loggedObject.user.scores!.length >= 7" data-aos="zoom-in-down" data-aos-offset="500" data-aos-delay="50" class="white-text game-played text-center mb-4">
+      <h2 *ngIf="loggedObject.user.scores!.length >= 7" data-aos="zoom-in-down" data-aos-offset="200" data-aos-delay="50" class="white-text game-played text-center mb-4">
         Your last 7 games compared to the average user's
       </h2>
-      <h2 *ngIf="loggedObject.user.scores!.length < 7" data-aos="zoom-in-down" data-aos-offset="500" data-aos-delay="50" class="white-text game-played text-center mb-4">
+      <h2 *ngIf="loggedObject.user.scores!.length < 7" data-aos="zoom-in-down" data-aos-offset="200" data-aos-delay="50" class="white-text game-played text-center mb-4">
         If you have played atleast seven games we display your last seven scores here compared to the average user's
       </h2>
       <div *ngIf="loggedObject.user.scores!.length >= 7" #radarRontainer data-aos="zoom-in" data-aos-delay="50"
-          data-aos-offset="400" class="col-10 col-md-8 col-lg-4 pb-5">
+          data-aos-offset="100" class="col-10 col-md-8 col-lg-4 pb-5">
         <canvas baseChart class="w-100 h-100"
           [type]="'radar'"
           [datasets]="radarChartDatasets"
